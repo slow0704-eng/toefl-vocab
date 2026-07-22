@@ -135,6 +135,24 @@
   .w-item .flags{display:flex;flex-direction:column;gap:6px;align-items:center}
   .w-item .flags button{border:none;background:none;font-size:20px;color:var(--faint);padding:2px}
   .w-item .flags .star.on{color:var(--star)} .w-item .flags .known.on{color:var(--good)}
+  /* 목록형 보기 */
+  .w-list{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden}
+  .w-row{display:flex;align-items:center;gap:10px;padding:11px 14px;border-bottom:1px solid var(--border);cursor:pointer}
+  .w-row:last-child{border-bottom:none}
+  .w-row:hover{background:var(--surface-2)}
+  .w-row .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+  .w-row .dot.l1{background:var(--lv1)} .w-row .dot.l2{background:var(--lv2)} .w-row .dot.l3{background:var(--lv3)}
+  .w-row .w{font-size:15px;font-weight:800;letter-spacing:-.2px;flex-shrink:0;min-width:34%}
+  .w-row .w .p{font-size:11px;color:var(--faint);font-weight:600;margin-left:5px}
+  .w-row .k{font-size:14px;color:var(--dim);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;transition:.15s}
+  .w-row.known .w{color:var(--good)}
+  .w-row .acts{display:flex;gap:2px;flex-shrink:0}
+  .w-row .acts button{border:none;background:none;font-size:16px;color:var(--faint);padding:2px 3px;line-height:1}
+  .w-row .acts .star.on{color:var(--star)} .w-row .acts .known.on{color:var(--good)}
+  body.hide-ko .w-row .k:not(.show),body.hide-ko .w-item .k:not(.show){filter:blur(5px);opacity:.75}
+  .w-detail{padding:0 14px 13px;border-bottom:1px solid var(--border);font-size:13px;color:var(--dim);background:var(--surface-2)}
+  .w-detail .e b{color:var(--accent);font-weight:700}
+  .w-detail div{margin-top:4px}
   .badge-known{font-size:11px;font-weight:700;color:var(--good);background:var(--good-weak);padding:2px 8px;border-radius:99px}
   .empty{text-align:center;color:var(--dim);padding:50px 20px}
   .count-line{color:var(--faint);font-size:12.5px;margin:0 0 12px 2px}
@@ -261,6 +279,11 @@
       <button data-filter="star" aria-pressed="false">⭐ 즐겨찾기</button>
     </div>
     <div class="lv-row" id="browse-lv"></div>
+    <div class="filter-row" id="browse-view">
+      <button data-view="card" aria-pressed="true">🗂 카드형</button>
+      <button data-view="list" aria-pressed="false">☰ 목록형</button>
+      <button id="browse-hide" aria-pressed="false">🙈 뜻 가리기</button>
+    </div>
     <div class="count-line" id="browse-count"></div>
     <div id="browse-list"></div>
   </section>
@@ -461,12 +484,29 @@
   }
 
   // ---- 단어장 ----
+  const VIEW_KEY="toefl-vocab-browse-view";
   let browseFilter="all", browseLv=0;
+  let browseView = (()=>{ try{ return localStorage.getItem(VIEW_KEY)==="list"?"list":"card"; }catch(e){ return "card"; } })();
   $("browse-search").addEventListener("input",renderBrowse);
   $("browse-filter").querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
     $("browse-filter").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
     browseFilter=b.dataset.filter; renderBrowse();
   }));
+  $("browse-view").querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>{
+    $("browse-view").querySelectorAll("[data-view]").forEach(x=>x.setAttribute("aria-pressed",x===b));
+    browseView=b.dataset.view; try{ localStorage.setItem(VIEW_KEY,browseView); }catch(e){}
+    renderBrowse();
+  }));
+  $("browse-hide").addEventListener("click",()=>{
+    const on=$("browse-hide").getAttribute("aria-pressed")==="true";
+    $("browse-hide").setAttribute("aria-pressed",!on);
+    $("browse-hide").textContent = on ? "🙈 뜻 가리기" : "👁 뜻 보이기";
+    document.body.classList.toggle("hide-ko",!on);
+    renderBrowse();
+  });
+  function syncBrowseView(){
+    $("browse-view").querySelectorAll("[data-view]").forEach(x=>x.setAttribute("aria-pressed",x.dataset.view===browseView));
+  }
   function renderBrowse(){
     const q=($("browse-search").value||"").trim().toLowerCase();
     let list=WORDS.filter(w=>{
@@ -480,6 +520,7 @@
     $("browse-count").textContent=list.length+"개 단어";
     const box=$("browse-list");
     if(!list.length){ box.innerHTML='<div class="empty">해당하는 단어가 없습니다.</div>'; return; }
+    if(browseView==="list"){ renderBrowseList(list,box); return; }
     box.innerHTML=list.map(w=>{
       const ex=boldWord(w.ex,w.word);
       return '<div class="w-item"><div class="main">'+
@@ -492,6 +533,36 @@
         '<button data-speak="'+esc(w.word)+'" style="border:none;background:none;font-size:18px;color:var(--faint)">🔊</button>'+
         '</div></div>';
     }).join('');
+    box.querySelectorAll("[data-star]").forEach(b=>b.addEventListener("click",()=>{ const w=b.dataset.star; store.star[w]=!isStar(w); if(!store.star[w])delete store.star[w]; save(); renderBrowse(); }));
+    box.querySelectorAll("[data-known]").forEach(b=>b.addEventListener("click",()=>{ const w=b.dataset.known; store.known[w]=!isKnown(w); if(!store.known[w])delete store.known[w]; save(); updateProgress(); renderBrowse(); }));
+    box.querySelectorAll("[data-speak]").forEach(b=>b.addEventListener("click",()=>speak(b.dataset.speak)));
+    box.querySelectorAll(".w-item .k").forEach(k=>k.addEventListener("click",()=>k.classList.add("show")));
+  }
+
+  // 목록형: 한 줄에 단어–뜻, 행을 누르면 영영뜻·예문 펼침
+  function renderBrowseList(list,box){
+    box.innerHTML='<div class="w-list">'+list.map((w,i)=>
+      '<div class="w-row'+(isKnown(w.word)?" known":"")+'" data-i="'+i+'">'+
+        '<span class="dot '+LV[w.level].c+'" title="'+LV[w.level].n+'"></span>'+
+        '<span class="w">'+esc(w.word)+'<span class="p">'+esc(w.pos)+'</span></span>'+
+        '<span class="k">'+esc(w.ko)+'</span>'+
+        '<span class="acts">'+
+          '<button class="star '+(isStar(w.word)?"on":"")+'" data-star="'+esc(w.word)+'">'+(isStar(w.word)?"★":"☆")+'</button>'+
+          '<button class="known '+(isKnown(w.word)?"on":"")+'" data-known="'+esc(w.word)+'">✓</button>'+
+          '<button data-speak="'+esc(w.word)+'">🔊</button>'+
+        '</span>'+
+      '</div>'+
+      '<div class="w-detail" data-d="'+i+'" style="display:none">'+
+        '<div class="e">'+esc(w.en)+'</div><div class="e">“'+boldWord(w.ex,w.word)+'”</div>'+
+      '</div>').join('')+'</div>';
+    box.querySelectorAll(".w-row").forEach(row=>{
+      row.addEventListener("click",e=>{
+        if(e.target.closest("button"))return;
+        row.querySelector(".k").classList.add("show");
+        const d=box.querySelector('[data-d="'+row.dataset.i+'"]');
+        d.style.display = d.style.display==="none" ? "block" : "none";
+      });
+    });
     box.querySelectorAll("[data-star]").forEach(b=>b.addEventListener("click",()=>{ const w=b.dataset.star; store.star[w]=!isStar(w); if(!store.star[w])delete store.star[w]; save(); renderBrowse(); }));
     box.querySelectorAll("[data-known]").forEach(b=>b.addEventListener("click",()=>{ const w=b.dataset.known; store.known[w]=!isKnown(w); if(!store.known[w])delete store.known[w]; save(); updateProgress(); renderBrowse(); }));
     box.querySelectorAll("[data-speak]").forEach(b=>b.addEventListener("click",()=>speak(b.dataset.speak)));
@@ -627,6 +698,7 @@
   buildLvChips($("flash-lv"),flashLv,selectFlashLv);
   buildLvChips($("quiz-lv"),quizLv,selectQuizLv);
   buildLvChips($("browse-lv"),browseLv,selectBrowseLv);
+  syncBrowseView();
   updateProgress();
   rebuildOrder();
   renderCard();
