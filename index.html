@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TOEFL 단어 · 스피킹 학습 · Vocab & Speaking Trainer</title>
-<meta name="description" content="난이도별 TOEFL 어휘 500개 + 오픽/토플 스피킹 예시답변" />
+<title>영어 시험 올인원 · TOEFL 어휘 + 오픽·토익스피킹·토플 스피킹/라이팅/리딩</title>
+<meta name="description" content="난이도별 TOEFL 어휘 500개 + 오픽 상세주제별 예시답변, 토익스피킹 파트별 모범답변, 토플 스피킹 템플릿·라이팅 에세이·리딩 유형 정리" />
 <style>
   :root{
     --bg:#f4f6fb; --surface:#fff; --surface-2:#eef1f7; --border:#e2e6ef;
@@ -145,7 +145,9 @@
   .sp-badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
   .exam-badge{font-size:11px;font-weight:800;padding:2px 9px;border-radius:99px}
   .exam-badge.opic{color:#fff;background:var(--accent)} .exam-badge.toefl{color:#fff;background:var(--accent-2)}
+  .exam-badge.toeic{color:#fff;background:#0ea5e9} .exam-badge.write{color:#fff;background:#e11d48} .exam-badge.read{color:#fff;background:#059669}
   .cat-badge{font-size:11px;font-weight:700;padding:2px 9px;border-radius:99px;color:var(--dim);background:var(--surface-2);border:1px solid var(--border)}
+  .topic-badge{font-size:11px;font-weight:800;padding:2px 9px;border-radius:99px;color:var(--accent);background:var(--accent-weak);border:1px solid transparent}
   .lvl-badge{font-size:11px;font-weight:700;padding:2px 9px;border-radius:99px;color:var(--star);background:transparent;border:1px solid var(--star)}
   .sp-q{font-size:15px;font-weight:700;line-height:1.5}
   .sp-toggle{flex-shrink:0;font-size:14px;color:var(--faint);transition:transform .2s;margin-top:2px}
@@ -182,7 +184,7 @@
 <body>
 <header>
   <div class="wrap bar">
-    <div class="brand"><span class="logo">📖</span><span>TOEFL Vocab<span style="color:var(--faint);font-weight:600"> · Speaking</span></span></div>
+    <div class="brand"><span class="logo">📖</span><span>영어시험 올인원<span style="color:var(--faint);font-weight:600"> · 어휘 &amp; 스피킹 &amp; 라이팅</span></span></div>
     <div class="spacer"></div>
     <button class="icon-btn" id="shuffle-btn" title="섞기">🔀</button>
     <button class="icon-btn" id="theme-btn" title="테마">🌙</button>
@@ -202,7 +204,7 @@
     <button role="tab" aria-selected="true" data-tab="flash">🃏 카드</button>
     <button role="tab" aria-selected="false" data-tab="quiz">✍️ 퀴즈</button>
     <button role="tab" aria-selected="false" data-tab="browse">📚 단어장</button>
-    <button role="tab" aria-selected="false" data-tab="speak">🎤 말하기</button>
+    <button role="tab" aria-selected="false" data-tab="speak">🎤 스피킹·라이팅·리딩</button>
   </div>
 
   <!-- 플래시카드 -->
@@ -264,14 +266,18 @@
   <section class="panel" id="panel-speak">
     <div class="search-box">
       <span class="ic">🔎</span>
-      <input id="speak-search" type="search" placeholder="주제·질문 검색 (예: 여행, movie)…" />
+      <input id="speak-search" type="search" placeholder="주제·질문 검색 (예: 여행, movie, 요가)…" />
     </div>
     <div class="filter-row" id="speak-exam">
       <button data-exam="all" aria-pressed="true">전체</button>
       <button data-exam="OPIc" aria-pressed="false">🗣 OPIc</button>
-      <button data-exam="TOEFL" aria-pressed="false">🎓 TOEFL Speaking</button>
+      <button data-exam="TOEIC" aria-pressed="false">💼 토익스피킹</button>
+      <button data-exam="TOEFL" aria-pressed="false">🎓 토플 스피킹</button>
+      <button data-exam="TOEFL Writing" aria-pressed="false">✍️ 토플 라이팅</button>
+      <button data-exam="TOEFL Reading" aria-pressed="false">📖 토플 리딩</button>
     </div>
     <div class="filter-row" id="speak-cat"></div>
+    <div class="filter-row" id="speak-topic"></div>
     <div class="count-line" id="speak-count"></div>
     <div id="speak-list"></div>
   </section>
@@ -279,7 +285,7 @@
 
 <footer>
   <div class="wrap">
-    TOEFL 어휘 <span id="foot-total"></span>개(난이도별) + 오픽·토플 스피킹 예시답변 <span id="foot-speak"></span>개 · 진행 상황 자동 저장
+    TOEFL 어휘 <span id="foot-total"></span>개(난이도별) + 오픽·토익스피킹·토플(스피킹/라이팅/리딩) 문항 <span id="foot-speak"></span>개 · 진행 상황 자동 저장
     <div class="toolbar-mini"><button id="reset-btn">↺ 학습 기록 초기화</button></div>
   </div>
 </footer>
@@ -294,6 +300,8 @@
   const LS_KEY = "toefl-vocab-progress-v1";
   const THEME_KEY = "toefl-vocab-theme";
   const LV = {1:{n:"기초",c:"l1"},2:{n:"중급",c:"l2"},3:{n:"고급",c:"l3"}};
+  const EXAM_CLS = {"OPIc":"opic","TOEFL":"toefl","TOEIC":"toeic","TOEFL Writing":"write","TOEFL Reading":"read"};
+  const EXAM_NAME = {"OPIc":"OPIc","TOEFL":"TOEFL Speaking","TOEIC":"TOEIC Speaking","TOEFL Writing":"TOEFL Writing","TOEFL Reading":"TOEFL Reading"};
 
   let store = load();
   function load(){ try{ return JSON.parse(localStorage.getItem(LS_KEY)) || {known:{},star:{}}; }catch(e){ return {known:{},star:{}}; } }
@@ -462,43 +470,58 @@
   }
 
   // ---- 말하기 ----
-  let speakExam="all", speakCat="all";
-  const speakCats = Array.from(new Set(TOPICS.map(t=>t.category).filter(Boolean)));
+  let speakExam="all", speakCat="all", speakTopic="all";
   $("speak-search").addEventListener("input",renderSpeak);
   $("speak-exam").querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
     $("speak-exam").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
-    speakExam=b.dataset.exam; speakCat="all"; buildSpeakCats(); renderSpeak();
+    speakExam=b.dataset.exam; speakCat="all"; speakTopic="all"; buildSpeakCats(); buildSpeakTopics(); renderSpeak();
   }));
+  const byExam = t => speakExam==="all"||t.exam===speakExam;
   function buildSpeakCats(){
-    const cats=Array.from(new Set(TOPICS.filter(t=>speakExam==="all"||t.exam===speakExam).map(t=>t.category).filter(Boolean)));
-    $("speak-cat").innerHTML='<button data-cat="all" aria-pressed="true">전체 주제</button>'+
+    const cats=Array.from(new Set(TOPICS.filter(byExam).map(t=>t.category).filter(Boolean)));
+    $("speak-cat").innerHTML='<button data-cat="all" aria-pressed="true">전체 분류</button>'+
       cats.map(c=>'<button data-cat="'+esc(c)+'" aria-pressed="false">'+esc(c)+'</button>').join('');
     $("speak-cat").querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
       $("speak-cat").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
-      speakCat=b.dataset.cat; renderSpeak();
+      speakCat=b.dataset.cat; speakTopic="all"; buildSpeakTopics(); renderSpeak();
+    }));
+  }
+  function buildSpeakTopics(){
+    const box=$("speak-topic");
+    const tops=speakCat==="all"?[]:Array.from(new Set(TOPICS.filter(t=>byExam(t)&&t.category===speakCat).map(t=>t.topic).filter(Boolean)));
+    if(tops.length<2){ box.innerHTML=""; box.style.display="none"; return; }
+    box.style.display="flex";
+    box.innerHTML='<button data-top="all" aria-pressed="true">전체 상세주제</button>'+
+      tops.map(c=>'<button data-top="'+esc(c)+'" aria-pressed="false">'+esc(c)+'</button>').join('');
+    box.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
+      box.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+      speakTopic=b.dataset.top; renderSpeak();
     }));
   }
   function renderSpeak(){
     const q=($("speak-search").value||"").trim().toLowerCase();
     const list=TOPICS.filter(t=>{
-      if(speakExam!=="all"&&t.exam!==speakExam)return false;
+      if(!byExam(t))return false;
       if(speakCat!=="all"&&t.category!==speakCat)return false;
-      if(q&&!((t.question||"").toLowerCase().includes(q)||(t.category||"").toLowerCase().includes(q)||(t.answerEn||"").toLowerCase().includes(q)||(t.answerKo||"").includes(q)))return false;
+      if(speakTopic!=="all"&&t.topic!==speakTopic)return false;
+      if(q&&!((t.question||"").toLowerCase().includes(q)||(t.category||"").toLowerCase().includes(q)||(t.topic||"").toLowerCase().includes(q)||(t.answerEn||"").toLowerCase().includes(q)||(t.answerKo||"").includes(q)))return false;
       return true;
     });
-    $("speak-count").textContent=list.length+"개 주제";
+    $("speak-count").textContent=list.length+"개 문항";
     const box=$("speak-list");
     if(!list.length){ box.innerHTML='<div class="empty">해당하는 주제가 없습니다.</div>'; return; }
     box.innerHTML=list.map((t,i)=>{
-      const examCls=t.exam==="TOEFL"?"toefl":"opic";
+      const examCls=EXAM_CLS[t.exam]||"opic";
+      const examName=EXAM_NAME[t.exam]||t.exam;
       const kx=(t.keyExpressions||[]).map(k=>'<div><b>'+esc(k.en)+'</b><span>'+esc(k.ko)+'</span></div>').join('');
       return '<div class="sp-item" data-i="'+i+'">'+
         '<div class="sp-head">'+
           '<div style="flex:1;min-width:0">'+
-            '<div class="sp-badges"><span class="exam-badge '+examCls+'">'+esc(t.exam)+'</span>'+
+            '<div class="sp-badges"><span class="exam-badge '+examCls+'">'+esc(examName)+'</span>'+
               (t.category?'<span class="cat-badge">'+esc(t.category)+'</span>':'')+
+              (t.topic?'<span class="topic-badge">'+esc(t.topic)+'</span>':'')+
               (t.targetLevel?'<span class="lvl-badge">'+esc(t.targetLevel)+'</span>':'')+'</div>'+
-            '<div class="sp-q">'+esc(t.question)+'</div>'+
+            '<div class="sp-q">'+esc(t.question).replace(/\n/g,"<br/>")+'</div>'+
           '</div>'+
           '<div class="sp-toggle">▼</div>'+
         '</div>'+
@@ -555,7 +578,7 @@
   buildLvChips($("flash-lv"),flashLv,selectFlashLv);
   buildLvChips($("quiz-lv"),quizLv,selectQuizLv);
   buildLvChips($("browse-lv"),browseLv,selectBrowseLv);
-  buildSpeakCats();
+  buildSpeakCats(); buildSpeakTopics();
   updateProgress();
   rebuildOrder();
   renderCard();
