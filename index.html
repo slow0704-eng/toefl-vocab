@@ -44,8 +44,9 @@
   .bar{height:10px;background:var(--surface-2);border-radius:99px;overflow:hidden}
   .bar > i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));border-radius:99px;transition:width .4s ease}
 
-  .tabs{display:flex;gap:6px;background:var(--surface-2);padding:5px;border-radius:14px;margin:16px 0}
-  .tabs button{flex:1;border:none;background:transparent;color:var(--dim);font-weight:700;font-size:13.5px;padding:10px 6px;border-radius:10px;transition:.15s;white-space:nowrap}
+  .tabs{display:flex;gap:6px;background:var(--surface-2);padding:5px;border-radius:14px;margin:16px 0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{flex:1 0 auto;border:none;background:transparent;color:var(--dim);font-weight:700;font-size:13.5px;padding:10px 10px;border-radius:10px;transition:.15s;white-space:nowrap}
   .tabs button[aria-selected="true"]{background:var(--surface);color:var(--accent);box-shadow:var(--shadow)}
 
   .panel{display:none}
@@ -204,7 +205,9 @@
     <button role="tab" aria-selected="true" data-tab="flash">🃏 카드</button>
     <button role="tab" aria-selected="false" data-tab="quiz">✍️ 퀴즈</button>
     <button role="tab" aria-selected="false" data-tab="browse">📚 단어장</button>
-    <button role="tab" aria-selected="false" data-tab="speak">🎤 스피킹·라이팅·리딩</button>
+    <button role="tab" aria-selected="false" data-tab="speak">🎤 스피킹</button>
+    <button role="tab" aria-selected="false" data-tab="write">✍️ 라이팅</button>
+    <button role="tab" aria-selected="false" data-tab="read">📖 리딩</button>
   </div>
 
   <!-- 플래시카드 -->
@@ -262,7 +265,7 @@
     <div id="browse-list"></div>
   </section>
 
-  <!-- 말하기 -->
+  <!-- 스피킹 -->
   <section class="panel" id="panel-speak">
     <div class="search-box">
       <span class="ic">🔎</span>
@@ -273,13 +276,35 @@
       <button data-exam="OPIc" aria-pressed="false">🗣 OPIc</button>
       <button data-exam="TOEIC" aria-pressed="false">💼 토익스피킹</button>
       <button data-exam="TOEFL" aria-pressed="false">🎓 토플 스피킹</button>
-      <button data-exam="TOEFL Writing" aria-pressed="false">✍️ 토플 라이팅</button>
-      <button data-exam="TOEFL Reading" aria-pressed="false">📖 토플 리딩</button>
     </div>
     <div class="filter-row" id="speak-cat"></div>
     <div class="filter-row" id="speak-topic"></div>
     <div class="count-line" id="speak-count"></div>
     <div id="speak-list"></div>
+  </section>
+
+  <!-- 라이팅 -->
+  <section class="panel" id="panel-write">
+    <div class="search-box">
+      <span class="ic">🔎</span>
+      <input id="write-search" type="search" placeholder="주제·문제 검색 (예: AI, 환경)…" />
+    </div>
+    <div class="filter-row" id="write-cat"></div>
+    <div class="filter-row" id="write-topic"></div>
+    <div class="count-line" id="write-count"></div>
+    <div id="write-list"></div>
+  </section>
+
+  <!-- 리딩 -->
+  <section class="panel" id="panel-read">
+    <div class="search-box">
+      <span class="ic">🔎</span>
+      <input id="read-search" type="search" placeholder="유형·지문 검색 (예: inference, 천문)…" />
+    </div>
+    <div class="filter-row" id="read-cat"></div>
+    <div class="filter-row" id="read-topic"></div>
+    <div class="count-line" id="read-count"></div>
+    <div id="read-list"></div>
   </section>
 </main>
 
@@ -379,11 +404,14 @@
       document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute("aria-selected",x===b));
       document.querySelectorAll('.panel').forEach(p=>p.classList.remove("active"));
       $("panel-"+b.dataset.tab).classList.add("active");
-      document.body.classList.toggle("speaking-mode", b.dataset.tab==="speak");
+      const tab=b.dataset.tab;
+      document.body.classList.toggle("speaking-mode", tab==="speak"||tab==="write"||tab==="read");
       stopSpeak();
-      if(b.dataset.tab==="quiz") startQuiz();
-      if(b.dataset.tab==="browse") renderBrowse();
-      if(b.dataset.tab==="speak") renderSpeak();
+      if(tab==="quiz") startQuiz();
+      if(tab==="browse") renderBrowse();
+      if(tab==="speak") renderSpeak();
+      if(tab==="write") renderWrite();
+      if(tab==="read") renderRead();
     });
   });
 
@@ -469,46 +497,55 @@
     box.querySelectorAll("[data-speak]").forEach(b=>b.addEventListener("click",()=>speak(b.dataset.speak)));
   }
 
-  // ---- 말하기 ----
-  let speakExam="all", speakCat="all", speakTopic="all";
-  $("speak-search").addEventListener("input",renderSpeak);
-  $("speak-exam").querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
-    $("speak-exam").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
-    speakExam=b.dataset.exam; speakCat="all"; speakTopic="all"; buildSpeakCats(); buildSpeakTopics(); renderSpeak();
-  }));
-  const byExam = t => speakExam==="all"||t.exam===speakExam;
-  function buildSpeakCats(){
-    const cats=Array.from(new Set(TOPICS.filter(byExam).map(t=>t.category).filter(Boolean)));
-    $("speak-cat").innerHTML='<button data-cat="all" aria-pressed="true">전체 분류</button>'+
-      cats.map(c=>'<button data-cat="'+esc(c)+'" aria-pressed="false">'+esc(c)+'</button>').join('');
-    $("speak-cat").querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
-      $("speak-cat").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
-      speakCat=b.dataset.cat; speakTopic="all"; buildSpeakTopics(); renderSpeak();
-    }));
-  }
-  function buildSpeakTopics(){
-    const box=$("speak-topic");
-    const tops=speakCat==="all"?[]:Array.from(new Set(TOPICS.filter(t=>byExam(t)&&t.category===speakCat).map(t=>t.topic).filter(Boolean)));
-    if(tops.length<2){ box.innerHTML=""; box.style.display="none"; return; }
-    box.style.display="flex";
-    box.innerHTML='<button data-top="all" aria-pressed="true">전체 상세주제</button>'+
-      tops.map(c=>'<button data-top="'+esc(c)+'" aria-pressed="false">'+esc(c)+'</button>').join('');
-    box.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
-      box.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
-      speakTopic=b.dataset.top; renderSpeak();
-    }));
-  }
-  function renderSpeak(){
-    const q=($("speak-search").value||"").trim().toLowerCase();
-    const list=TOPICS.filter(t=>{
+  // ---- 스피킹 · 라이팅 · 리딩 (공용 패널) ----
+  // prefix: DOM id 접두사, exams: 이 패널이 다루는 시험 목록, playLabel: 음성 버튼 문구
+  function makeExamPanel(prefix, exams, opt){
+    opt = opt || {};
+    const POOL = TOPICS.filter(t=>exams.indexOf(t.exam)>=0);
+    let fExam="all", fCat="all", fTopic="all";
+    const byExam = t => fExam==="all"||t.exam===fExam;
+    const examBox = $(prefix+"-exam");
+
+    $(prefix+"-search").addEventListener("input",render);
+    if(exams.length>1 && examBox){
+      examBox.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
+        examBox.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+        fExam=b.dataset.exam; fCat="all"; fTopic="all"; buildCats(); buildTopics(); render();
+      }));
+    }
+
+    function buildCats(){
+      const cats=Array.from(new Set(POOL.filter(byExam).map(t=>t.category).filter(Boolean)));
+      $(prefix+"-cat").innerHTML='<button data-cat="all" aria-pressed="true">전체 분류</button>'+
+        cats.map(c=>'<button data-cat="'+esc(c)+'" aria-pressed="false">'+esc(c)+'</button>').join('');
+      $(prefix+"-cat").querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
+        $(prefix+"-cat").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+        fCat=b.dataset.cat; fTopic="all"; buildTopics(); render();
+      }));
+    }
+    function buildTopics(){
+      const box=$(prefix+"-topic");
+      const tops=fCat==="all"?[]:Array.from(new Set(POOL.filter(t=>byExam(t)&&t.category===fCat).map(t=>t.topic).filter(Boolean)));
+      if(tops.length<2){ box.innerHTML=""; box.style.display="none"; return; }
+      box.style.display="flex";
+      box.innerHTML='<button data-top="all" aria-pressed="true">전체 상세주제</button>'+
+        tops.map(c=>'<button data-top="'+esc(c)+'" aria-pressed="false">'+esc(c)+'</button>').join('');
+      box.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
+        box.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+        fTopic=b.dataset.top; render();
+      }));
+    }
+    function render(){
+    const q=($(prefix+"-search").value||"").trim().toLowerCase();
+    const list=POOL.filter(t=>{
       if(!byExam(t))return false;
-      if(speakCat!=="all"&&t.category!==speakCat)return false;
-      if(speakTopic!=="all"&&t.topic!==speakTopic)return false;
+      if(fCat!=="all"&&t.category!==fCat)return false;
+      if(fTopic!=="all"&&t.topic!==fTopic)return false;
       if(q&&!((t.question||"").toLowerCase().includes(q)||(t.category||"").toLowerCase().includes(q)||(t.topic||"").toLowerCase().includes(q)||(t.answerEn||"").toLowerCase().includes(q)||(t.answerKo||"").includes(q)))return false;
       return true;
     });
-    $("speak-count").textContent=list.length+"개 문항";
-    const box=$("speak-list");
+    $(prefix+"-count").textContent=list.length+"개 문항";
+    const box=$(prefix+"-list");
     if(!list.length){ box.innerHTML='<div class="empty">해당하는 주제가 없습니다.</div>'; return; }
     box.innerHTML=list.map((t,i)=>{
       const examCls=EXAM_CLS[t.exam]||"opic";
@@ -527,10 +564,11 @@
         '</div>'+
         '<div class="sp-body">'+
           '<div class="sp-controls">'+
-            '<button data-act="play">▶ 원어민 음성</button>'+
+            '<button data-act="play">▶ '+PLAY+'</button>'+
             '<button data-act="stop">■ 정지</button>'+
-            '<button data-act="ko" aria-pressed="false">🇰🇷 한글 번역</button>'+
+            '<button data-act="ko" aria-pressed="false">🇰🇷 '+KO_LABEL+'</button>'+
           '</div>'+
+          (ANS_TITLE?'<div class="sp-sec-title">'+ANS_TITLE+'</div>':'')+
           '<div class="ans en-text">'+esc(t.answerEn).replace(/\n/g,"<br/>")+'</div>'+
           '<div class="ans ko-text" style="display:none;margin-top:10px">'+esc(t.answerKo).replace(/\n/g,"<br/>")+'</div>'+
           (kx?'<div class="sp-sec-title">💡 핵심 표현</div><div class="kx">'+kx+'</div>':'')+
@@ -541,12 +579,23 @@
     box.querySelectorAll(".sp-item").forEach(item=>{
       const t=list[parseInt(item.dataset.i,10)];
       item.querySelector(".sp-head").addEventListener("click",()=>{ const open=item.classList.toggle("open"); if(!open)stopSpeak(); });
-      item.querySelector('[data-act="play"]').addEventListener("click",e=>{ e.stopPropagation(); const btn=e.currentTarget; btn.textContent="🔊 재생 중…"; speak(t.answerEn,{rate:.92,onend:()=>btn.textContent="▶ 원어민 음성"}); });
-      item.querySelector('[data-act="stop"]').addEventListener("click",e=>{ e.stopPropagation(); stopSpeak(); item.querySelector('[data-act="play"]').textContent="▶ 원어민 음성"; });
+      item.querySelector('[data-act="play"]').addEventListener("click",e=>{ e.stopPropagation(); const btn=e.currentTarget; btn.textContent="🔊 재생 중…"; speak(t.answerEn,{rate:.92,onend:()=>btn.textContent="▶ "+PLAY}); });
+      item.querySelector('[data-act="stop"]').addEventListener("click",e=>{ e.stopPropagation(); stopSpeak(); item.querySelector('[data-act="play"]').textContent="▶ "+PLAY; });
       const koBtn=item.querySelector('[data-act="ko"]');
       koBtn.addEventListener("click",e=>{ e.stopPropagation(); const on=koBtn.getAttribute("aria-pressed")==="true"; koBtn.setAttribute("aria-pressed",!on); item.querySelector(".ko-text").style.display=on?"none":"block"; });
     });
+    }
+
+    const PLAY = opt.playLabel || "원어민 음성";
+    const KO_LABEL = opt.koLabel || "한글 번역";
+    const ANS_TITLE = opt.ansTitle || "";
+    buildCats(); buildTopics();
+    return render;
   }
+
+  const renderSpeak = makeExamPanel("speak",["OPIc","TOEIC","TOEFL"]);
+  const renderWrite  = makeExamPanel("write",["TOEFL Writing"],{playLabel:"에세이 낭독",ansTitle:"📝 모범 답안"});
+  const renderRead   = makeExamPanel("read",["TOEFL Reading"],{playLabel:"영어 해설 듣기",koLabel:"한글 해설",ansTitle:"✅ 정답·풀이"});
 
   // ---- 초기화 ----
   $("reset-btn").addEventListener("click",()=>{ if(confirm("모든 학습 기록(외움/즐겨찾기)을 지울까요?")){ store={known:{},star:{}}; save(); updateProgress(); renderCard(); if($("panel-browse").classList.contains("active"))renderBrowse(); toast("학습 기록을 초기화했습니다"); } });
@@ -578,7 +627,6 @@
   buildLvChips($("flash-lv"),flashLv,selectFlashLv);
   buildLvChips($("quiz-lv"),quizLv,selectQuizLv);
   buildLvChips($("browse-lv"),browseLv,selectBrowseLv);
-  buildSpeakCats(); buildSpeakTopics();
   updateProgress();
   rebuildOrder();
   renderCard();
