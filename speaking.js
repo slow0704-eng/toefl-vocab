@@ -5958,7 +5958,7 @@ window.SPEAKING_TOPICS = [
     "category": "문제 유형",
     "topic": "사실 정보(Factual Information)",
     "question": "Honeybee colonies regulate the temperature of their nests with remarkable precision. During the brood-rearing season, workers maintain the central comb at approximately 35 degrees Celsius, a range that permits normal larval development. When the interior grows too warm, foragers collect water and spread thin films of it across the comb surface; evaporation then draws heat away. When temperatures fall, bees decouple their wing muscles from the wings and vibrate the muscles rapidly, generating metabolic heat without flight. Colonies that fail to sustain this narrow band produce adults with deformed wings and impaired learning ability. Because thermoregulation consumes substantial energy, hives with larger honey reserves survive prolonged cold spells far more reliably than depleted ones.\n\nAccording to the paragraph, how do honeybees cool their nest?\n(A) By fanning cool air in from outside the hive\n(B) By spreading water on the comb so that evaporation removes heat\n(C) By reducing the number of larvae being reared\n(D) By vibrating their wing muscles more slowly",
-    "targetLevel": "25–30점",
+    "targetLevel": "사실 정보",
     "answerEn": "The correct answer is (B). The passage states directly that foragers collect water and spread thin films of it across the comb, and that evaporation then draws heat away. Choice (D) is wrong because muscle vibration is described as a heating mechanism, not a cooling one, and the passage never mentions slowing it down. Factual Information answers are always paraphrases of one explicit sentence, so the reader should locate that sentence rather than reason from outside knowledge.",
     "answerKo": "정답은 (B)입니다. 지문은 일벌이 물을 모아 벌집 표면에 얇게 펴 바르고, 그 증발열로 열을 빼앗는다고 명시합니다. (D)는 근육 진동을 언급하지만 이는 '가열' 수단이며 속도를 늦춘다는 서술도 없어 오답입니다. 사실 정보 유형 전략: 문제의 키워드(cool, nest)를 지문에서 그대로 찾아 그 문장만 정확히 해석하고, 정답은 반드시 그 문장의 패러프레이즈여야 합니다. 지문에 없는 상식적 추론을 더하면 함정에 걸립니다.",
     "keyExpressions": [
@@ -5990,7 +5990,7 @@ window.SPEAKING_TOPICS = [
     "category": "문제 유형",
     "topic": "부정 사실 정보(Negative Factual)",
     "question": "The Roman concrete used in harbor construction differed fundamentally from modern Portland cement. Builders combined volcanic ash from the Bay of Naples with lime and seawater, producing a mortar that hardened underwater rather than being weakened by it. Chemical analysis shows that seawater slowly dissolved components of the ash, allowing rare interlocking crystals to grow inside the cracks. As a result, Roman marine structures often became stronger over centuries, while modern reinforced concrete typically degrades within decades as steel bars corrode. The Romans also poured concrete into wooden forms placed directly on the seabed, avoiding the need for enormous cut stones. However, the mixture cured slowly and could not bear heavy loads immediately.\n\nAccording to the paragraph, all of the following are true of Roman concrete EXCEPT:\n(A) It contained volcanic ash mixed with lime.\n(B) It could harden in the presence of seawater.\n(C) It gained strength as crystals formed in its cracks.\n(D) It reached full load-bearing strength very quickly.",
-    "targetLevel": "25–30점",
+    "targetLevel": "부정 사실 정보",
     "answerEn": "The correct answer is (D). The final sentence states the opposite: the mixture cured slowly and could not bear heavy loads immediately. Choices (A), (B), and (C) each restate explicit statements about ash and lime, underwater hardening, and interlocking crystals in cracks. Choice (C) is the most tempting distractor because the word crystals appears in an unfamiliar chemical context, but it is verified in the third sentence and therefore cannot be the exception.",
     "answerKo": "정답은 (D)입니다. 마지막 문장에서 로마 콘크리트는 '천천히 굳고 즉시 하중을 견딜 수 없었다'고 했으므로 (D)는 지문과 정반대입니다. (A)(B)(C)는 각각 화산재와 석회 배합, 바닷물 속 경화, 균열 속 결정 성장으로 모두 확인됩니다. 부정 사실 유형 전략: 정답을 '찾는' 것이 아니라 나머지 세 개를 지문에서 '지워 나가는' 문제입니다. 선택지 옆에 O/X를 표시하며 근거 문장의 위치를 함께 메모하세요.",
     "keyExpressions": [
@@ -6022,7 +6022,7 @@ window.SPEAKING_TOPICS = [
     "category": "문제 유형",
     "topic": "추론(Inference)",
     "question": "Tree rings from bristlecone pines in the White Mountains record annual growth with unusual fidelity. In years of adequate moisture, cells formed in spring are wide and thin-walled; in drought years the entire ring may narrow to a few cells. Researchers cross-date living trees against dead wood preserved on the arid slopes, extending continuous chronologies back nearly nine thousand years. Yet the same aridity that preserves the wood also limits the species to sites where competition is minimal. Below about 3,000 meters, faster-growing conifers displace bristlecones entirely, and no ancient specimens have been recovered from those elevations.\n\nWhich of the following can be inferred from the paragraph about bristlecone pines?\n(A) They grow faster than other conifers in moist soils.\n(B) Long chronologies from these trees are unlikely to be built from low-elevation sites.\n(C) Their rings cannot be used to measure past rainfall.\n(D) They have been extinct below 3,000 meters for nine thousand years.",
-    "targetLevel": "25–30점",
+    "targetLevel": "추론",
     "answerEn": "The correct answer is (B). Since no ancient specimens survive below 3,000 meters and bristlecones are displaced there by other conifers, the old wood needed for long chronologies must come from high, arid sites. Choice (D) overstates the evidence: the passage says no ancient specimens have been recovered, which is not the same as proving the species was absent or extinct for nine thousand years. A valid inference is a small, necessary step from stated facts, never a dramatic extension of them.",
     "answerKo": "정답은 (B)입니다. 3,000미터 아래에서는 고목 표본이 발견되지 않고 다른 침엽수에 밀려난다고 했으므로, 장기 연대기는 저지대 표본으로 만들기 어렵다는 결론이 논리적으로 따라옵니다. (D)는 '발견되지 않았다'를 '멸종했다'로 과장한 전형적 오답입니다. 추론 유형 전략: 정답은 지문 문장에서 한 걸음만 나아간 '반드시 참'인 진술입니다. 선택지를 읽고 '이게 거짓이면 지문이 모순되는가?'를 자문하세요. 모순되지 않으면 오답입니다.",
     "keyExpressions": [
@@ -6054,7 +6054,7 @@ window.SPEAKING_TOPICS = [
     "category": "문제 유형",
     "topic": "수사적 의도(Rhetorical Purpose)",
     "question": "Economists once assumed that consumers evaluate prices in absolute terms. Experimental work has undermined this view. In one study, shoppers told that an identical calculator was 10 dollars cheaper at a store twenty minutes away were willing to make the trip when the item cost 25 dollars, but not when it cost 500 dollars. The saving was the same in both cases; only the reference price changed. Similar reversals appear in decisions about insurance deductibles and airline upgrades. Such findings suggest that value is judged relative to a mental anchor rather than measured against a fixed internal scale.\n\nWhy does the author mention the calculator study?\n(A) To show that shoppers dislike traveling long distances\n(B) To provide concrete evidence that price judgments depend on a reference point\n(C) To argue that economists should stop studying consumer behavior\n(D) To compare the cost of calculators with the cost of insurance",
-    "targetLevel": "25–30점",
+    "targetLevel": "수사적 의도",
     "answerEn": "The correct answer is (B). The example follows the claim that the absolute-price view has been undermined and precedes the conclusion that value is judged relative to a mental anchor, so it functions as supporting evidence for that claim. Choice (A) restates a surface detail of the experiment rather than its rhetorical function in the argument. Purpose questions ask what a detail does for the author, not what the detail says.",
     "answerKo": "정답은 (B)입니다. 계산기 실험은 '절대 가격 가정이 무너졌다'는 주장 뒤, '가치는 심리적 기준점에 상대적으로 판단된다'는 결론 앞에 놓여 있으므로 주장을 뒷받침하는 구체적 증거 역할을 합니다. (A)는 실험의 표면적 내용을 그대로 옮긴 오답입니다. 수사적 의도 전략: 해당 문장 자체가 아니라 '앞뒤 문장과의 관계'를 봅니다. 앞 문장의 주장을 예시로 뒷받침하는지, 반례로 반박하는지, 대조하는지를 먼저 정하고 선택지를 봅니다.",
     "keyExpressions": [
@@ -6086,7 +6086,7 @@ window.SPEAKING_TOPICS = [
     "category": "문제 유형",
     "topic": "어휘(Vocabulary)",
     "question": "Coral reefs occupy less than one percent of the ocean floor yet shelter roughly a quarter of all marine species. This concentration of life rests on a fragile partnership: the coral animal houses microscopic algae that supply most of its energy through photosynthesis. When water temperatures rise even one or two degrees above the summer maximum, the corals expel these algae, losing both color and their principal food source. Reefs can recover if conditions improve within weeks, but repeated episodes leave skeletons that erode rapidly under wave action. Restoration projects that transplant heat-tolerant strains have shown modest success on small patches.\n\nThe word expel in the passage is closest in meaning to\n(A) absorb\n(B) drive out\n(C) nourish\n(D) reproduce",
-    "targetLevel": "25–30점",
+    "targetLevel": "어휘",
     "answerEn": "The correct answer is (B). The clause that follows explains that the corals lose both color and their principal food source, which only makes sense if the algae are forced out of the coral tissue. Choice (A) is the exact opposite and would contradict the stated loss of the food source. Vocabulary questions can always be solved from context even when the word is unfamiliar, because the sentence supplies a consequence or a contrast that fixes the meaning.",
     "answerKo": "정답은 (B)입니다. 바로 뒤에 '색과 주요 먹이원을 모두 잃는다'는 결과가 나오므로 expel은 조류를 몸 밖으로 '내보내다'라는 뜻임이 확정됩니다. (A) absorb(흡수하다)는 정반대라 결과절과 모순됩니다. 어휘 유형 전략: 단어를 안다고 바로 고르지 말고 반드시 문장에 대입해 읽어 보세요. 특히 다의어는 문맥이 뜻을 결정합니다. 결과(so, thus), 대조(but, while), 동격(that is, or) 신호를 단서로 삼습니다.",
     "keyExpressions": [
@@ -6118,7 +6118,7 @@ window.SPEAKING_TOPICS = [
     "category": "문제 유형",
     "topic": "지시 대상(Reference)",
     "question": "Early photographic portraits required sitters to remain motionless for up to a minute, and studios devised iron braces to steady the head. Painters initially dismissed the new medium as mere mechanical copying. Yet within two decades many of them were using photographs as preparatory studies, freeing models from long sessions and allowing artists to capture fleeting gestures. Critics complained that this practice encouraged laziness, but it also expanded the range of poses that could be represented convincingly. By the 1870s the two media had grown so entangled that some exhibition juries required painters to declare whether photographs had been consulted.\n\nThe word them in the passage refers to\n(A) sitters\n(B) studios\n(C) painters\n(D) photographs",
-    "targetLevel": "25–30점",
+    "targetLevel": "지시 대상",
     "answerEn": "The correct answer is (C). The sentence says that many of them were using photographs as preparatory studies, and the immediately preceding sentence has painters as its subject; substituting painters produces a coherent contrast signaled by Yet. Choice (D) fails because photographs is the object of the verb in the same clause, so the pronoun cannot also refer to it. Testing each candidate by substitution and checking grammatical number is the fastest reliable method.",
     "answerKo": "정답은 (C)입니다. 앞 문장의 주어가 painters이고, '그러나(Yet) 20년 안에 그들 중 다수가 사진을 밑그림으로 사용했다'는 대조 구조가 성립합니다. (D)는 같은 절에서 photographs가 이미 목적어로 쓰였으므로 대명사가 가리킬 수 없습니다. 지시 대상 전략: 후보를 직접 대입해 읽고, 단수/복수 일치와 앞 문장의 주어를 우선 확인하세요. 대명사는 대개 가장 가까운 '문법적으로 맞는' 명사를 가리킵니다.",
     "keyExpressions": [
@@ -6150,7 +6150,7 @@ window.SPEAKING_TOPICS = [
     "category": "문제 유형",
     "topic": "문장 재진술(Sentence Simplification)",
     "question": "Although irrigation dramatically raised crop yields across the arid plains, the practice gradually deposited salts in the topsoil, so that fields abandoned after a century of watering often supported less vegetation than the untouched desert around them.\n\nWhich of the sentences below best expresses the essential information in the highlighted sentence? Incorrect choices change the meaning in important ways or leave out essential information.\n(A) Irrigation increased harvests but left salt in the soil, eventually making long-watered fields less productive than nearby desert.\n(B) Farmers on the arid plains abandoned irrigation because the desert produced more vegetation than their fields.\n(C) Salt deposits formed in the topsoil of the desert, which prevented irrigation from raising crop yields.\n(D) After a century, irrigation raised yields so much that surrounding desert land was cultivated as well.",
-    "targetLevel": "25–30점",
+    "targetLevel": "문장 재진술",
     "answerEn": "The correct answer is (A). It preserves all three essential elements: the benefit (higher yields), the hidden cost (salt accumulation), and the outcome (abandoned fields poorer than surrounding desert). Choice (C) is wrong because it reverses the causal order, claiming salt prevented yields from rising, whereas the original says yields did rise before salinization took effect. Correct simplifications keep the logical connectors of the original even when almost every content word is replaced.",
     "answerKo": "정답은 (A)입니다. 원문의 세 핵심 요소인 (1) 관개의 이점(수확 증가), (2) 대가(염분 축적), (3) 결과(폐경지가 주변 사막보다 못함)를 모두 보존합니다. (C)는 인과 순서를 뒤집어 '염분 때문에 수확이 늘지 못했다'고 하므로 오답입니다. 문장 재진술 전략: 원문에서 주절-종속절 관계와 접속사(Although, so that)를 먼저 표시하고, 선택지가 그 논리 관계를 그대로 유지하는지만 따지세요. 어려운 단어의 유무는 판단 기준이 아닙니다.",
     "keyExpressions": [
@@ -6182,7 +6182,7 @@ window.SPEAKING_TOPICS = [
     "category": "문제 유형",
     "topic": "문장 삽입(Insert Text)",
     "question": "Look at the four squares [A][B][C][D] that indicate where the following sentence could be added to the passage.\n\nInserted sentence: This limitation kept early lighthouses useful only in clear weather.\n\nBefore the nineteenth century, lighthouse keepers burned coal or oil in open braziers at the top of a tower. [A] The light produced was bright at close range but scattered in every direction, so that only a small fraction ever reached a ship at sea. [B] The introduction of the Fresnel lens changed the calculation entirely. [C] Its concentric rings of glass bent stray beams into a single horizontal band visible more than thirty kilometers away. [D] Within a generation, most major coastlines had been refitted.\n\nWhere would the sentence best fit?\n(A) Square A\n(B) Square B\n(C) Square C\n(D) Square D",
-    "targetLevel": "25–30점",
+    "targetLevel": "문장 삽입",
     "answerEn": "The correct answer is (B). The demonstrative phrase This limitation must point back to a stated shortcoming, and the sentence before square B describes light scattering so that only a small fraction reached ships. Square C is wrong because the Fresnel lens has already been introduced there, so a sentence about the weakness of the older system would interrupt the new topic. Insert Text questions are solved by tracking pronouns, demonstratives, and transition words rather than by general topic matching.",
     "answerKo": "정답은 (B)입니다. 삽입 문장의 This limitation은 앞에 '한계'가 명시되어야 성립하는데, B 앞 문장이 빛이 사방으로 흩어져 배에는 극히 일부만 도달한다는 한계를 설명합니다. (C)는 이미 프레넬 렌즈라는 새 화제가 시작된 뒤라 구식 시스템의 약점을 넣으면 흐름이 끊깁니다. 문장 삽입 전략: 삽입 문장의 지시어(This, Such, These, it, however, therefore)를 먼저 찾고, 그 지시어가 가리킬 대상이 '바로 앞'에 있는 자리를 고릅니다.",
     "keyExpressions": [
@@ -6214,7 +6214,7 @@ window.SPEAKING_TOPICS = [
     "category": "문제 유형",
     "topic": "지문 요약(Prose Summary)",
     "question": "Passage summary context: The passage explains how the domestication of the horse transformed life on the Eurasian steppe. It describes archaeological evidence from bit wear on ancient teeth, the shift from hunting horses for meat to riding them, the resulting expansion of herding territory, and the later military consequences once the composite bow allowed mounted archery.\n\nDirections: An introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage.\n\nIntroductory sentence: The domestication of the horse reshaped economic and military life across the Eurasian steppe.\n(A) Wear patterns on excavated teeth provide physical evidence that horses were being bridled and ridden.\n(B) Riding allowed herders to manage far larger territories and animal populations than before.\n(C) Horse meat had a slightly different fat composition from that of cattle.\n(D) The combination of riding and the composite bow gave steppe peoples a lasting military advantage.\n(E) Some excavation sites are located near modern national borders.\n(F) Wooden wagons were sometimes decorated with carved animal figures.",
-    "targetLevel": "25–30점",
+    "targetLevel": "지문 요약",
     "answerEn": "The correct answers are (A), (B), and (D). Each corresponds to one major section of the passage: the evidence for domestication, the economic expansion of herding, and the military consequences of mounted archery. Choice (C) is a minor factual detail that supports no larger claim, and choice (E) is true of many sites but irrelevant to the argument. Prose Summary rewards choices that match paragraph-level main ideas, not memorable small facts.",
     "answerKo": "정답은 (A), (B), (D)입니다. 각각 지문의 세 축인 '가축화의 물증(치아 마모)', '유목 영역의 경제적 확장', '기마 궁술이 낳은 군사적 결과'에 대응합니다. (C)는 지엽적 세부사항, (E)는 논지와 무관한 사실, (F)는 지문의 주제와 연결되지 않는 정보입니다. 지문 요약 전략: 각 단락을 읽으며 한 줄 요지를 메모해 두었다가, 그 요지와 짝지어지는 선택지 세 개를 고릅니다. '맞는 말'과 '중요한 말'을 구분하는 것이 핵심입니다.",
     "keyExpressions": [
@@ -6246,7 +6246,7 @@ window.SPEAKING_TOPICS = [
     "category": "문제 유형",
     "topic": "표 채우기(Fill in a Table)",
     "question": "Passage summary context: The passage contrasts two theories of how the Moon formed. The capture theory holds that the Moon formed elsewhere in the solar system and was later pulled into Earth orbit; it struggles to explain the identical oxygen isotope ratios of lunar and terrestrial rocks. The giant-impact theory holds that a Mars-sized body struck the early Earth, ejecting mantle material that coalesced into the Moon; it explains the isotope match and the Moon's small iron core, though it requires a narrow range of collision speeds.\n\nDirections: Complete the table by matching each statement with the theory it describes. TWO choices will not be used.\nCategories: Capture Theory / Giant-Impact Theory\n(A) Proposes that the Moon originated in a different region of the solar system\n(B) Accounts for the Moon's unusually small iron core\n(C) Has difficulty explaining matching oxygen isotope ratios\n(D) Requires the impacting body to have struck within a limited range of speeds\n(E) Claims the Moon is older than the Sun\n(F) Depends on material thrown out from Earth's mantle\n(G) States that the Moon has no measurable gravity",
-    "targetLevel": "25–30점",
+    "targetLevel": "표 채우기",
     "answerEn": "Capture Theory takes (A) and (C); Giant-Impact Theory takes (B), (D), and (F). Choices (E) and (G) are unused because neither claim appears in the passage and both contradict basic facts it assumes. The most common error is placing (C) under the impact theory, since isotope ratios are discussed in both descriptions, but the passage assigns the difficulty specifically to the capture model, which the impact model instead resolves.",
     "answerKo": "정답은 포획설 = (A), (C) / 거대 충돌설 = (B), (D), (F)이며 (E), (G)는 사용하지 않습니다. 가장 흔한 실수는 (C)를 충돌설에 넣는 것인데, 산소 동위원소 문제는 포획설이 '설명하기 어려운' 난점이고 충돌설은 오히려 이를 해결합니다. 표 채우기 전략: 지문을 읽을 때부터 두 대상의 대조축(기원, 증거, 약점)을 표로 메모해 두면 문제 풀이 시간이 절반으로 줄어듭니다. 선택지의 긍정/부정 방향(explains vs. has difficulty explaining)을 반드시 확인하세요.",
     "keyExpressions": [
@@ -6592,5 +6592,5765 @@ window.SPEAKING_TOPICS = [
       }
     ],
     "tips": "기술사 지문은 첫 문장에서 통념을 부정하는 경우가 많으므로, 그 부정문이 곧 지문 전체의 주제문입니다. 발명가 이름과 연도보다 '무엇이 성패를 갈랐는가'라는 판단 기준을 잡으세요. 지문 요약 문제에서는 기술적 세부가 아니라 제도·법·상업 요인을 담은 선택지가 정답이 됩니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "북극제비갈매기의 장거리 이주",
+    "question": "The Arctic tern undertakes the longest annual migration documented in the animal kingdom, traveling from breeding grounds in the high Arctic to feeding areas near the Antarctic pack ice and back again. Early estimates of this journey were derived from banding records, which yielded only scattered recovery points and therefore underestimated the total distance. The introduction of miniature geolocators, devices light enough to be carried by a bird weighing barely one hundred grams, transformed the picture. Tracking data revealed that terns do not follow a straight path but instead trace an elongated S-shaped route across the Atlantic.\n\nThis apparent detour is not wasteful. By drifting with prevailing wind systems rather than opposing them, the birds substantially reduce the energetic cost of flight. Researchers calculate that the additional distance is more than offset by the savings in metabolic expenditure, an arrangement that allows the terns to arrive at their destination with fat reserves largely intact.\n\nAccording to the passage, why do Arctic terns follow an S-shaped route rather than a direct one?\n(A) The direct route passes over land masses that offer no feeding opportunities.\n(B) Riding prevailing winds lowers the energy required for the journey.\n(C) Geolocators are unable to record perfectly straight flight paths.\n(D) Terns must avoid the Antarctic pack ice during part of the year.",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The second paragraph states directly that 'by drifting with prevailing wind systems rather than opposing them, the birds substantially reduce the energetic cost of flight,' and that the extra distance is 'more than offset by the savings in metabolic expenditure.' Choice (C) misuses the mention of geolocators, which are described as revealing the route, not distorting it. The passage never claims the instruments introduce error; it says banding records underestimated distance. Therefore only (B) is supported.",
+    "answerKo": "정답 (B). 근거는 두 번째 단락 첫 두 문장으로, 탁월풍을 타고 이동하면 비행의 에너지 비용이 크게 줄어들며 추가 거리는 대사 에너지 절약으로 상쇄된다고 명시한다. (C)는 지오로케이터 언급을 오용한 오답으로, 지문에서 기기는 경로를 '밝혀낸' 도구일 뿐 오차의 원인이 아니다. 지문 요지: 북극제비갈매기의 우회 경로는 낭비가 아니라 에너지 효율을 극대화한 전략이다.",
+    "keyExpressions": [
+      {
+        "en": "undertake a migration",
+        "ko": "이주를 감행하다"
+      },
+      {
+        "en": "banding records",
+        "ko": "가락지 표지 기록"
+      },
+      {
+        "en": "geolocator",
+        "ko": "위치 추적 장치"
+      },
+      {
+        "en": "prevailing wind systems",
+        "ko": "탁월풍 계"
+      },
+      {
+        "en": "metabolic expenditure",
+        "ko": "대사 에너지 소비"
+      }
+    ],
+    "tips": "사실 정보 유형은 반드시 지문에 명시된 문장 하나로 정답이 확정된다. 질문의 핵심어(여기서는 S-shaped route, why)를 지문에서 스캔해 해당 문단을 찾고, 그 주변 1~2문장만 정밀 독해하라. 함정은 지문에 등장한 단어를 그대로 쓰되 인과관계를 뒤집는 보기((C)처럼 기기 언급을 왜곡)이다. 단어가 같다고 정답이 아니라, 관계가 같아야 정답이다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "꿀벌의 8자 춤 의사소통",
+    "question": "Honeybee colonies face a formidable allocation problem: thousands of foragers must be distributed among patches of nectar that vary in quality and that may lie kilometers from the hive. The solution is a symbolic display known as the waggle dance. A returning forager runs in a straight line on the vertical comb while vibrating her abdomen, then loops back and repeats the maneuver. The angle of the straight run relative to gravity encodes the direction of the food source relative to the sun, and the duration of the run corresponds to distance.\n\nWhat makes the dance remarkable is that recruits cannot see the display in the darkness of the hive; they detect it through vibration and air currents. Skeptics once argued that recruits simply followed the odor clinging to the dancer. Decisive evidence came from experiments with mechanical bees, which had no floral scent yet still directed naive foragers to the indicated coordinates.\n\nWhy does the author mention 'experiments with mechanical bees'?\n(A) To show that artificial devices are more reliable than living foragers\n(B) To explain how bees perceive vibration in a dark hive\n(C) To provide evidence refuting the claim that recruits rely on odor\n(D) To illustrate the difficulty of measuring the duration of a waggle run",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(C) The sentence immediately preceding introduces skeptics who argued that recruits merely followed odor; the mechanical-bee experiments are then offered as 'decisive evidence' because the devices 'had no floral scent yet still directed naive foragers.' The rhetorical function is thus refutation of the odor hypothesis. Choice (B) is attractive because darkness and vibration appear nearby, but the mechanical bees are introduced after that point and serve the odor debate, not the perception mechanism.",
+    "answerKo": "정답 (C). 근거는 마지막 두 문장으로, 앞 문장에서 '냄새 추종설'이라는 반론이 제시되고 곧바로 기계 벌 실험이 '결정적 증거'로 등장한다. 향이 없는데도 유인이 성공했으므로 냄새설을 반박하는 기능이다. (B)는 바로 앞의 어둠·진동 언급과 위치가 가까워 매력적이지만, 기계 벌은 지각 방식이 아니라 논쟁 해결을 위해 도입되었다. 지문 요지: 8자 춤은 방향과 거리를 부호화한 상징적 의사소통이며 냄새로 환원되지 않는다.",
+    "keyExpressions": [
+      {
+        "en": "allocation problem",
+        "ko": "자원 배분 문제"
+      },
+      {
+        "en": "forager",
+        "ko": "채집벌"
+      },
+      {
+        "en": "encode",
+        "ko": "부호화하다"
+      },
+      {
+        "en": "recruit",
+        "ko": "새로 동원된 개체"
+      },
+      {
+        "en": "decisive evidence",
+        "ko": "결정적 증거"
+      }
+    ],
+    "tips": "수사적 의도 유형은 '무슨 내용인가'가 아니라 '왜 여기에 놓였는가'를 묻는다. 해당 문장 바로 앞 문장을 반드시 읽어라. 앞에 반론·의문·주장이 나오면 뒤 문장은 대개 반박 또는 근거 제시다. 함정은 문장 내용을 정확히 요약했지만 기능이 틀린 보기다. Skeptics, however, decisive 같은 신호어를 표시해 두면 기능 판단이 쉬워진다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "치타와 가젤의 추격 군비경쟁",
+    "question": "Predator and prey are often described as locked in an evolutionary arms race, each exerting selective pressure on the other. The cheetah and the Thomson's gazelle offer a textbook illustration. Cheetahs possess semi-retractable claws, an enlarged heart, and a flexible spine that together permit brief bursts of extraordinary acceleration. Gazelles, by contrast, have evolved not for raw speed but for maneuverability, capable of abrupt lateral turns that a sprinting cheetah cannot match without losing traction.\n\nRecent telemetry studies complicate the simple speed narrative. Collars fitted with accelerometers show that successful hunts rarely reach the cheetah's theoretical maximum velocity. Instead, outcomes hinge on the predator's ability to decelerate and change direction in the final seconds. This finding suggests that the arms race has been waged less over top speed than over agility, a conclusion that had eluded observers relying on stopwatch measurements of straight-line chases.\n\nIt can be inferred from the passage that earlier research on cheetah hunting\n(A) overestimated the importance of maximum running speed\n(B) failed to identify the gazelle as the cheetah's principal prey\n(C) relied primarily on accelerometer data collected from collars\n(D) concluded that cheetahs rarely succeed in capturing gazelles",
+    "targetLevel": "추론",
+    "answerEn": "(A) The passage says telemetry 'complicates the simple speed narrative' and that agility, not top speed, decides outcomes, adding that this conclusion 'had eluded observers relying on stopwatch measurements of straight-line chases.' The unstated but necessary implication is that earlier work placed too much weight on maximum speed. Choice (C) reverses the chronology: accelerometer collars belong to the recent studies, not the earlier ones. Nothing addresses overall capture rates, so (D) is unsupported.",
+    "answerKo": "정답 (A). 근거는 두 번째 단락으로, 최신 원격 측정이 '속도 서사를 복잡하게 만들며' 결정 요인은 민첩성이고 이 결론이 스톱워치 기반 관찰자들에게는 보이지 않았다고 한다. 따라서 이전 연구는 최고 속도를 과대평가했다는 추론이 성립한다. (C)는 시점을 뒤집은 오답으로, 가속도계 목걸이는 최신 연구의 도구다. 지문 요지: 포식-피식 군비경쟁의 축은 속도가 아니라 민첩성이었다.",
+    "keyExpressions": [
+      {
+        "en": "evolutionary arms race",
+        "ko": "진화적 군비경쟁"
+      },
+      {
+        "en": "selective pressure",
+        "ko": "선택압"
+      },
+      {
+        "en": "maneuverability",
+        "ko": "기동성, 방향 전환 능력"
+      },
+      {
+        "en": "telemetry",
+        "ko": "원격 측정"
+      },
+      {
+        "en": "hinge on",
+        "ko": "~에 달려 있다"
+      }
+    ],
+    "tips": "추론 유형의 정답은 지문에 '쓰여 있지 않지만 반드시 참'인 문장이다. 상상하지 말고, 지문 문장 하나를 한 걸음만 밀어라. 특히 had eluded, unlike earlier, until recently 같은 대조 표현은 과거 연구의 한계를 암시하는 결정적 단서다. 함정은 시간 순서를 뒤바꾼 보기((C))와 지문 범위를 벗어난 일반화((D))다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "대벌레의 은폐 위장",
+    "question": "Crypsis, the ability to avoid detection, is among the most widespread antipredator strategies in the insect world. Stick insects of the order Phasmatodea represent an extreme case: their bodies are elongated and cylindrical, their coloration matches dead twigs, and some species bear lateral flanges resembling leaf scars. Morphology alone, however, is insufficient. A perfectly twig-shaped insect that moved normally would betray itself instantly, since visual predators such as birds are exquisitely sensitive to motion.\n\nConsequently, stick insects have evolved a suite of behaviors that reinforce their appearance. They remain motionless for long intervals, adopt postures that align the body with adjacent branches, and, when they must move, sway rhythmically in a manner that mimics vegetation stirred by wind. This coupling of form and behavior underscores a general principle: camouflage is not a static property of an organism but a performance sustained through time.\n\nThe word 'betray' in the passage is closest in meaning to\n(A) abandon\n(B) reveal\n(C) weaken\n(D) imitate",
+    "targetLevel": "어휘",
+    "answerEn": "(B) In context, an insect that moved normally 'would betray itself instantly' to motion-sensitive birds, meaning it would expose or disclose its own presence. 'Reveal' captures precisely this sense. Choice (A) reflects the more common everyday meaning of betray, to abandon or be disloyal to someone, which makes no sense with the reflexive object and the following clause about predators detecting motion. Context, not frequency of usage, determines the answer.",
+    "answerKo": "정답 (B). 근거는 첫 단락 마지막 문장으로, 정상적으로 움직이는 개체는 움직임에 민감한 새들에게 '즉시 자신을 betray'한다고 했으므로 '드러내다, 노출하다'의 뜻이다. (A) abandon은 betray의 일상적 의미(배신하다)에 이끌린 함정으로, 재귀 목적어 itself 및 포식자 탐지라는 문맥과 맞지 않는다. 지문 요지: 위장은 형태만이 아니라 행동으로 지속되는 수행이다.",
+    "keyExpressions": [
+      {
+        "en": "crypsis",
+        "ko": "은폐, 몸 숨기기"
+      },
+      {
+        "en": "antipredator strategy",
+        "ko": "포식자 회피 전략"
+      },
+      {
+        "en": "coloration",
+        "ko": "체색, 색 무늬"
+      },
+      {
+        "en": "remain motionless",
+        "ko": "미동도 하지 않다"
+      },
+      {
+        "en": "sway rhythmically",
+        "ko": "리듬감 있게 흔들리다"
+      }
+    ],
+    "tips": "어휘 유형은 사전적 1순위 뜻을 고르는 문제가 아니라 문맥 대입 문제다. 반드시 보기 단어를 원문 문장에 넣어 읽어 보라. 다의어일수록 흔한 뜻이 함정으로 배치된다. 앞뒤 문장의 논리 연결어(since, consequently)와 목적어의 성격(여기서는 itself)을 확인하면 의미가 좁혀진다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "땅다람쥐의 겨울잠 생리",
+    "question": "Hibernation in the arctic ground squirrel involves physiological changes that would be lethal in most mammals. Core body temperature falls below the freezing point of water, reaching roughly minus three degrees Celsius, while the heart beats only a few times per minute. The animal accomplishes this without ice formation in its tissues, apparently by purging its blood of particles that would serve as nucleation sites.\n\nYet torpor is not continuous. Every two or three weeks the squirrel rewarms to normal temperature for a period of half a day before cooling again. These arousals consume the majority of the energy budget of the entire winter, which presents an evolutionary puzzle. Several explanations have been proposed; the leading hypothesis holds that periodic rewarming permits the restoration of cellular processes, such as immune surveillance and the repair of neural connections, that cannot proceed at subzero temperatures.\n\nThe word 'These' in the passage refers to\n(A) physiological changes\n(B) nucleation sites\n(C) arousals\n(D) explanations",
+    "targetLevel": "지시 대상",
+    "answerEn": "(C) The preceding sentence describes how the squirrel 'rewarms to normal temperature for a period of half a day,' and the following clause states that 'These arousals consume the majority of the energy budget,' so the referent is the periodic rewarming events. Choice (A) is too distant and belongs to the first paragraph, which concerns torpor itself rather than the interruptions. The noun immediately following the pronoun-like determiner confirms the reference within the same sentence.",
+    "answerKo": "정답 (C). 근거는 두 번째 단락 두 번째 문장으로, 2~3주마다 정상 체온으로 재가온되는 사건이 앞에 서술되고 이어 'These arousals'가 겨울 에너지 예산의 대부분을 소비한다고 한다. (A)는 첫 단락의 생리 변화로 거리가 멀고 화제가 다르다. 지문 요지: 극지 땅다람쥐는 영하의 동면을 견디지만 주기적 각성이라는 값비싼 대가를 치르며, 이는 세포 기능 회복을 위한 것으로 보인다.",
+    "keyExpressions": [
+      {
+        "en": "hibernation",
+        "ko": "동면"
+      },
+      {
+        "en": "core body temperature",
+        "ko": "심부 체온"
+      },
+      {
+        "en": "torpor",
+        "ko": "휴면 상태, 대사 저하 상태"
+      },
+      {
+        "en": "arousal",
+        "ko": "각성, 깨어남"
+      },
+      {
+        "en": "energy budget",
+        "ko": "에너지 수지"
+      }
+    ],
+    "tips": "지시 대상 유형은 대개 바로 앞 한두 문장 안에 답이 있다. 지시어를 후보 명사로 각각 바꿔 넣고 문장이 자연스러운지 확인하라. 수(단수·복수)와 격이 일치해야 하므로 These 같은 복수형은 복수 명사만 후보가 된다. 함정은 문단이 다른 먼 명사이거나, 형태는 맞지만 의미상 주어가 될 수 없는 명사다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "산호와 조류의 공생",
+    "question": "Reef-building corals owe their ecological dominance to a partnership with single-celled algae called zooxanthellae, which reside inside the coral's tissues. The algae harvest sunlight and transfer as much as ninety percent of the resulting carbohydrates to the host, while the coral supplies inorganic nitrogen and a sheltered position in the sunlit shallows. This exchange allows reefs to flourish in tropical waters that are otherwise nutrient-poor, a paradox long noted by oceanographers.\n\nThe association is nonetheless fragile. When water temperatures rise even one or two degrees above the summer maximum, the algae produce damaging oxygen radicals and the coral expels them, a process visible as bleaching. A bleached colony is not immediately dead, but it is starving, and unless the water cools quickly enough for recolonization to occur, mortality follows within weeks.\n\nWhich of the sentences below best expresses the essential information in the highlighted sentence? 'A bleached colony is not immediately dead, but it is starving, and unless the water cools quickly enough for recolonization to occur, mortality follows within weeks.'\n(A) Bleached corals die instantly once their algae have been expelled from the tissues.\n(B) Bleaching kills corals only when the surrounding water fails to warm sufficiently.\n(C) A bleached colony survives at first but will die within weeks unless cooling allows the algae to return.\n(D) Corals that regain their algae still starve because cooling water slows their recovery.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(C) The original contains three elements: the colony is not dead at once, it is starving, and death follows in weeks without cooling and recolonization. Choice (C) preserves all three relationships accurately. Choice (B) inverts the condition, since the passage requires the water to cool, not warm, for survival. Choice (A) contradicts 'not immediately dead,' and (D) reverses the outcome of successful recolonization.",
+    "answerKo": "정답 (C). 원문은 (1) 즉사하지 않음 (2) 굶주림 상태 (3) 냉각과 재정착이 없으면 수 주 내 사망이라는 세 요소로 구성되며 (C)가 이를 모두 유지한다. (B)는 조건을 뒤집어 '물이 충분히 따뜻해지지 않으면'이라 했으므로 정반대다. (A)는 not immediately dead와 모순된다. 지문 요지: 산호-조류 공생은 빈영양 해역의 번성을 가능하게 하지만 수온 상승에 극도로 취약하다.",
+    "keyExpressions": [
+      {
+        "en": "zooxanthellae",
+        "ko": "황록공생조류"
+      },
+      {
+        "en": "reside inside",
+        "ko": "~ 안에 서식하다"
+      },
+      {
+        "en": "nutrient-poor",
+        "ko": "영양분이 부족한"
+      },
+      {
+        "en": "expel",
+        "ko": "배출하다, 내쫓다"
+      },
+      {
+        "en": "recolonization",
+        "ko": "재정착"
+      }
+    ],
+    "tips": "문장 재진술 유형은 원문을 논리 단위로 쪼갠 뒤 각 보기가 그 단위를 모두 보존하는지 대조한다. 특히 unless, but, only if 같은 조건·역접 표현은 방향이 뒤집힌 함정 보기의 단골 재료다. 세부어를 그대로 베낀 보기보다, 관계가 동일한 보기를 골라라. 정보를 새로 추가한 보기는 무조건 오답이다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "제왕나비의 세대 간 이주",
+    "question": "The monarch butterfly of eastern North America performs a migration that no individual completes twice. Butterflies emerging in late summer enter a state of reproductive diapause and fly as far as four thousand kilometers to a handful of fir forests in central Mexico. [1] There they cluster on trunks and branches through the winter. [2] In spring the same individuals begin the return journey but breed and die along the way, so that it is their great-grandchildren who arrive in Canada. [3] The navigational problem is therefore acute, since no monarch can learn the route from experience. [4]\n\nExperimental work indicates that monarchs use a time-compensated sun compass, integrating the position of the sun with an internal clock housed in the antennae. Butterflies whose antennae were painted black lost their directional orientation while continuing to fly normally, demonstrating that the clock, rather than vision alone, supplies the crucial input.\n\nLook at the four squares that indicate where the following sentence could be added to the passage: 'The information must instead be encoded genetically.'\nWhere would the sentence best fit?\n(A) [1]\n(B) [2]\n(C) [3]\n(D) [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(D) The inserted sentence begins with 'instead,' which requires an immediately preceding statement of what is ruled out. Square [4] follows the claim that 'no monarch can learn the route from experience,' so 'instead' contrasts learning with genetic encoding, and the sentence also sets up the mechanistic discussion that follows. Choice (C) is tempting but places the sentence before the statement it contrasts with, leaving 'instead' without an antecedent.",
+    "answerKo": "정답 (D). 삽입 문장의 instead는 앞에 배제되는 대안이 먼저 제시되어야 성립한다. [4] 직전 문장이 '어떤 제왕나비도 경험으로 경로를 배울 수 없다'이므로 학습 대 유전적 부호화의 대조가 자연스럽고, 이어지는 기제 설명으로도 매끄럽게 연결된다. (C)는 대조 대상 문장보다 앞이라 instead가 가리킬 내용이 없다. 지문 요지: 세대를 넘는 제왕나비 이주는 학습이 아닌 유전적 프로그램과 태양 나침반에 의존한다.",
+    "keyExpressions": [
+      {
+        "en": "reproductive diapause",
+        "ko": "생식 휴면"
+      },
+      {
+        "en": "cluster on",
+        "ko": "~에 무리 지어 모이다"
+      },
+      {
+        "en": "time-compensated sun compass",
+        "ko": "시간 보정 태양 나침반"
+      },
+      {
+        "en": "directional orientation",
+        "ko": "방향 정위"
+      },
+      {
+        "en": "encode genetically",
+        "ko": "유전적으로 부호화하다"
+      }
+    ],
+    "tips": "문장 삽입은 삽입 문장의 연결 신호어(instead, therefore, such, this, however)를 먼저 확인하는 것이 핵심이다. 신호어가 요구하는 '앞 내용'을 만족하는 자리를 찾으면 대개 한 곳으로 좁혀진다. 삽입 후에는 반드시 뒤 문장과의 연결까지 읽어 보라. 함정은 화제어가 비슷해 보이는 한 칸 앞자리다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "잎꾼개미 군체의 계급 분화",
+    "question": "Colonies of leafcutter ants exhibit one of the most elaborate divisions of labor known outside human societies. Workers vary in body size by a factor of more than two hundred in mass, and each size class performs characteristic tasks. The largest individuals, sometimes called soldiers, defend the nest and cut tough vegetation; medium workers transport leaf fragments; and the smallest tend the fungus gardens on which the colony feeds.\n\nThis polymorphism is not fixed at hatching by genetics alone. Nutrition during the larval stage determines adult size, and the colony adjusts the proportions of each caste in response to demand. When experimenters removed all large workers from laboratory colonies, the remaining ants shifted larval provisioning and restored the missing size class within a few generations. Such flexibility indicates that caste ratios function as a regulated variable rather than a fixed developmental outcome.\n\nAccording to the passage, all of the following are true of leafcutter ant colonies EXCEPT:\n(A) Different worker size classes perform different tasks.\n(B) Larval nutrition influences the body size of adult workers.\n(C) Colonies can replace a missing size class after it is removed.\n(D) Caste membership is determined entirely by an individual's genes.",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) The passage explicitly states that 'this polymorphism is not fixed at hatching by genetics alone' and that larval nutrition determines adult size, so genetic determination is contradicted rather than supported. Choices (A), (B), and (C) each restate information given in the first and second paragraphs. Choice (C) may seem uncertain, but the removal experiment shows restoration 'within a few generations,' making it true and therefore not the answer.",
+    "answerKo": "정답 (D). 지문은 다형성이 '유전만으로 부화 시 고정되지 않는다'고 명시하고 유충기 영양이 성체 크기를 결정한다고 했으므로 (D)는 지문과 모순된다. (A)(B)(C)는 각각 첫 단락의 계급별 업무, 두 번째 단락의 영양 결정, 제거 실험 결과로 확인된다. 지문 요지: 잎꾼개미의 계급 비율은 고정된 발생 결과가 아니라 수요에 따라 조절되는 변수다.",
+    "keyExpressions": [
+      {
+        "en": "division of labor",
+        "ko": "분업"
+      },
+      {
+        "en": "size class",
+        "ko": "크기 계급"
+      },
+      {
+        "en": "polymorphism",
+        "ko": "다형성"
+      },
+      {
+        "en": "provisioning",
+        "ko": "먹이 공급"
+      },
+      {
+        "en": "regulated variable",
+        "ko": "조절되는 변수"
+      }
+    ],
+    "tips": "부정 사실 정보는 '지문에 있는 것 3개'를 지우는 소거법으로 푼다. 각 보기를 지문에서 확인한 위치를 표시하며 지워 나가고, 끝까지 근거를 못 찾거나 지문과 반대인 것이 정답이다. 함정은 entirely, always, only 같은 극단 수식어로 지문의 조건부 진술을 절대화한 보기다. 시간이 아깝더라도 네 보기를 모두 대조해야 안전하다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "베이츠 의태와 경고색",
+    "question": "Aposematism, the advertisement of chemical defense through conspicuous coloration, appears at first to be self-defeating: an animal that makes itself visible should be eaten more often. The strategy succeeds because predators learn. After a few unpleasant encounters with a bitter-tasting, boldly patterned insect, a young bird avoids that pattern thereafter, and the survivors of the lesson enjoy lasting protection.\n\nThis learned aversion creates an opportunity for deception. Batesian mimics are palatable species that resemble defended models closely enough to inherit their protection without paying the metabolic cost of toxin synthesis. The arrangement is inherently unstable, however. As mimics become numerous relative to models, predators encounter edible individuals often enough that the association between pattern and unpalatability weakens, and selection against the shared signal intensifies. Mimicry therefore persists only where models remain sufficiently abundant.\n\nWhich of the following can be inferred about a Batesian mimic population that grows much larger than its model population?\n(A) The mimics will begin to synthesize toxins of their own.\n(B) The protective value of the shared warning pattern will decline.\n(C) Predators will stop learning from unpleasant encounters entirely.\n(D) The model species will evolve a more conspicuous coloration.",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage states that as mimics grow numerous relative to models, predators meet edible individuals often enough that 'the association between pattern and unpalatability weakens,' which means the pattern protects less well. Choice (A) contradicts the definition of Batesian mimics as species that avoid the metabolic cost of toxin synthesis. Choice (C) overstates the text, which describes a weakened association rather than an end to learning altogether.",
+    "answerKo": "정답 (B). 근거는 두 번째 단락 후반으로, 의태자가 모델보다 많아지면 포식자가 먹을 수 있는 개체를 자주 만나 '무늬와 불쾌함의 연합이 약화된다'고 했다. 이는 경고 무늬의 보호 효과 감소를 뜻한다. (A)는 독 생산 비용을 치르지 않는다는 의태자의 정의와 모순된다. (C)는 연합 약화를 학습 중단으로 과장한 오답이다. 지문 요지: 베이츠 의태는 모델이 충분히 흔할 때만 유지되는 빈도 의존적 전략이다.",
+    "keyExpressions": [
+      {
+        "en": "aposematism",
+        "ko": "경고색"
+      },
+      {
+        "en": "conspicuous coloration",
+        "ko": "눈에 띄는 체색"
+      },
+      {
+        "en": "learned aversion",
+        "ko": "학습된 회피"
+      },
+      {
+        "en": "palatable",
+        "ko": "먹을 만한, 맛있는"
+      },
+      {
+        "en": "inherently unstable",
+        "ko": "본질적으로 불안정한"
+      }
+    ],
+    "tips": "추론 문제에서 '정도의 과장'은 가장 흔한 함정이다. weakens를 stop entirely로 바꾸는 (C) 같은 보기를 조심하라. 또한 지문 내 정의(여기서는 mimic = 독을 만들지 않는 종)와 충돌하는 보기는 즉시 소거된다. 정답은 언제나 지문 문장에서 한 칸만 이동한, 온건한 진술이다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "미어캣의 보초 행동",
+    "question": "In meerkat groups, one individual regularly climbs to an elevated position and scans for predators while the others forage. This sentinel emits alarm calls that differ according to the type and urgency of the threat, sending the group into burrows or into a defensive cluster. Because the sentinel does not feed while on duty and is itself highly visible, the behavior was long treated as a classic case of altruism sustained by kin selection.\n\nCareful observation has since suggested a more self-interested account. Sentinels take up their posts only after they have eaten their fill, and an individual on a raised perch is usually the first to detect a predator and the closest to shelter. Under this interpretation the guard incurs little net cost and may even gain, which would explain why sentinel duty requires no enforcement and why unrelated immigrants perform it as readily as relatives.\n\nAccording to the passage, which observation weakens the view that sentinel behavior is altruistic?\n(A) Sentinels produce alarm calls that vary with the type of threat.\n(B) Sentinels take their position only after they have finished feeding.\n(C) Meerkats retreat into burrows when an alarm call is given.\n(D) Sentinels occupy positions that are highly visible to predators.",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The second paragraph offers the self-interested account and lists as its first piece of evidence that 'sentinels take up their posts only after they have eaten their fill,' which removes the supposed feeding cost. Choice (D) states something true of the passage but appears in the first paragraph as part of the case FOR altruism, since visibility is presented as a cost. The question asks specifically what weakens the altruism view, so (D) is the reverse of the answer.",
+    "answerKo": "정답 (B). 근거는 두 번째 단락 두 번째 문장으로, 보초는 배를 채운 뒤에야 임무를 맡는다는 관찰이 '먹이 손실'이라는 비용 전제를 무너뜨린다. (D)는 지문에 있는 사실이지만 첫 단락에서 이타성 주장의 근거(비용)로 제시되므로 질문의 방향과 정반대다. 지문 요지: 미어캣 보초 행동은 이타성보다 낮은 순비용의 자기 이익으로 더 잘 설명될 수 있다.",
+    "keyExpressions": [
+      {
+        "en": "sentinel",
+        "ko": "보초, 감시자"
+      },
+      {
+        "en": "alarm call",
+        "ko": "경계음"
+      },
+      {
+        "en": "kin selection",
+        "ko": "혈연 선택"
+      },
+      {
+        "en": "eat one's fill",
+        "ko": "배불리 먹다"
+      },
+      {
+        "en": "incur a cost",
+        "ko": "비용을 치르다"
+      }
+    ],
+    "tips": "사실 정보 문제라도 질문이 방향(강화/약화, 지지/반박)을 지정하면 단순 일치 검색은 위험하다. 지문이 두 입장으로 나뉘는 구조(과거 견해 대 최근 견해)에서는 각 단락이 어느 편의 근거인지 표시해 두어라. 함정은 '지문에 있으나 반대 진영의 근거'인 보기다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "무화과와 무화과말벌의 상리공생",
+    "question": "Few mutualisms are as tightly integrated as that between fig trees and fig wasps. The fig is not a fruit but an enclosed inflorescence lined internally with hundreds of tiny flowers. A female wasp, carrying pollen from her natal fig, forces her way through a narrow entrance, losing her wings and antennae in the process. Inside she pollinates some flowers and lays eggs in others, where her larvae consume developing seeds.\n\nThe relationship thus rests on a conflict of interest: the tree benefits from seeds, the wasp from offspring, and each gamete converted into a wasp is a seed lost. Stability is maintained by sanctions. In many species, a fig that receives eggs but no pollen is aborted by the tree before the larvae mature, so a wasp that cheats destroys her own brood. The mechanism aligns the interests of the partners without requiring either to act against its immediate advantage.\n\nWhich of the sentences below best expresses the essential information in the highlighted sentence? 'In many species, a fig that receives eggs but no pollen is aborted by the tree before the larvae mature, so a wasp that cheats destroys her own brood.'\n(A) Trees abort figs at random, which occasionally kills the larvae of cheating wasps.\n(B) Because unpollinated figs are dropped early, wasps that fail to pollinate lose their offspring.\n(C) Wasps that lay no eggs are punished by the tree, which prevents the fig from ripening.\n(D) Larvae mature more slowly in figs that have received pollen from another tree.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(B) The original links two facts causally: figs with eggs but no pollen are aborted early, and consequently a non-pollinating wasp loses her brood. Choice (B) preserves both the condition and the consequence. Choice (A) inserts randomness, which contradicts the sanction mechanism the paragraph is describing. Choice (C) reverses the condition, since the punished behavior is failing to pollinate, not failing to lay eggs.",
+    "answerKo": "정답 (B). 원문은 '알은 있으나 꽃가루가 없는 무화과는 조기 낙과된다'와 '따라서 속임수를 쓴 말벌은 자기 새끼를 잃는다'는 조건-결과 구조이며 (B)가 둘을 모두 보존한다. (A)는 무작위성을 넣어 제재 기제라는 논지와 모순된다. (C)는 조건을 뒤바꿔 산란 실패를 처벌 대상으로 삼았다. 지문 요지: 무화과-말벌 공생은 이해충돌을 제재 기제로 안정화한다.",
+    "keyExpressions": [
+      {
+        "en": "mutualism",
+        "ko": "상리공생"
+      },
+      {
+        "en": "inflorescence",
+        "ko": "꽃차례"
+      },
+      {
+        "en": "conflict of interest",
+        "ko": "이해 상충"
+      },
+      {
+        "en": "sanction",
+        "ko": "제재"
+      },
+      {
+        "en": "brood",
+        "ko": "한배 새끼"
+      }
+    ],
+    "tips": "재진술 문제에서는 인과 방향과 조건절의 주체를 표시하라. '~하지 않으면 벌을 받는다'를 '~하면 벌을 받는다'로 뒤집는 보기가 반드시 하나 들어간다. 또 원문에 없는 random, always, more slowly 같은 새로운 정보가 들어가면 오답 신호다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "연어의 회귀와 후각 각인",
+    "question": "Pacific salmon hatch in freshwater streams, migrate to the open ocean, and after several years return to spawn in the very tributary where they were born, often with an accuracy of a few hundred meters. Two distinct navigational problems must be solved. Crossing thousands of kilometers of featureless ocean appears to rely on the geomagnetic field, whose intensity and inclination vary predictably with latitude and provide a coarse map.\n\nThe final stage is different. Once a salmon reaches the coastal river mouth, magnetic cues are far too broad to distinguish one tributary from another. Here the fish depends on olfaction. As juveniles, salmon imprint on the specific chemical signature of their home stream during a brief sensitive period, and as adults they follow that odor upstream. Experiments in which the olfactory nerves were blocked produced fish that reached the correct river system but then wandered among its branches.\n\nDirections: Complete the table by matching each statement with the navigational stage it describes.\nOceanic stage:\nRiver stage:\n(A) Relies on variation in the intensity and inclination of the earth's magnetic field\n(B) Depends on a chemical signature learned during a sensitive period in youth\n(C) Provides only a coarse map across thousands of kilometers\n(D) Is disrupted when the olfactory nerves are blocked\n(E) Causes salmon to grow more rapidly than freshwater relatives\n(F) Requires discrimination among branches of a single river system",
+    "targetLevel": "표 채우기",
+    "answerEn": "Oceanic stage: (A), (C). River stage: (B), (D), (F). The first paragraph assigns the geomagnetic field and the coarse map explicitly to the open-ocean crossing, while the second paragraph attributes imprinted odor, nerve-blocking disruption, and discrimination among tributaries to the final freshwater stage. Choice (E) is a plausible-sounding statement about growth that the passage never makes, so it belongs in neither column. Category questions reward strict sourcing over general plausibility.",
+    "answerKo": "정답: 대양 단계 (A)(C) / 하천 단계 (B)(D)(F). 첫 단락은 지자기장의 세기와 복각, 그리고 '거친 지도'를 대양 횡단에 배정하고, 두 번째 단락은 각인된 냄새, 후각 신경 차단 실험, 지류 구별을 하천 단계에 배정한다. (E)는 성장 속도에 관한 그럴듯한 진술이지만 지문에 전혀 없으므로 어느 쪽에도 들어가지 않는다. 지문 요지: 연어 회귀는 지자기 항법과 후각 각인이라는 두 단계 기제로 이루어진다.",
+    "keyExpressions": [
+      {
+        "en": "tributary",
+        "ko": "지류"
+      },
+      {
+        "en": "geomagnetic field",
+        "ko": "지자기장"
+      },
+      {
+        "en": "inclination",
+        "ko": "복각, 기울기"
+      },
+      {
+        "en": "olfaction",
+        "ko": "후각"
+      },
+      {
+        "en": "imprint on",
+        "ko": "~에 각인되다"
+      }
+    ],
+    "tips": "표 채우기는 지문이 두세 범주로 명확히 나뉜 구조일 때 출제된다. 각 단락에 범주 이름을 적어 두고 보기를 하나씩 해당 단락으로 보내라. 지문에 아예 없는 진술이 한두 개 섞여 있으므로, '맞는 말 같다'가 아니라 '지문에 있다'를 기준으로 판단해야 한다. 배점이 크므로 확실한 것부터 배치하고 애매한 것은 마지막에 소거로 처리하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "박쥐 반향정위와 나방의 대응",
+    "question": "Insectivorous bats locate prey by emitting ultrasonic pulses and analyzing the returning echoes, a system precise enough to detect a wire thinner than a human hair. As bats radiated during the Eocene, this capability imposed intense selection on nocturnal insects, and several moth lineages independently evolved ears tuned to the frequencies bats produce.\n\nDetection alone, however, buys little time. Moths that hear a distant bat simply turn and fly away, but a moth that hears the rapid pulse train of an attacking bat performs an erratic dive toward the ground. More striking still, tiger moths answer the bat's call with ultrasonic clicks of their own. The function of these clicks was debated for decades. High-speed recordings eventually showed that dense click trains disrupt the timing information in the returning echo, causing the bat to misjudge distance, a genuine case of sonar jamming rather than mere warning.\n\nWhy does the author mention 'a wire thinner than a human hair'?\n(A) To explain what materials researchers use in laboratory experiments\n(B) To emphasize how precise the bat's echolocation system is\n(C) To suggest that bats often mistake wires for insect prey\n(D) To contrast bat hearing with the hearing of tiger moths",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The detail appears in a clause describing the echolocation system as 'precise enough to detect a wire thinner than a human hair,' which functions as a concrete illustration of the system's resolution. Choice (A) is tempting because wires are indeed used in such tests, but the passage never discusses laboratory materials or methods; the phrase serves an illustrative, not procedural, purpose. Vivid details in TOEFL passages usually dramatize a general claim made in the same sentence.",
+    "answerKo": "정답 (B). 해당 표현은 '사람 머리카락보다 가는 철사도 탐지할 만큼 정밀한' 이라는 수식 구조 안에 있으므로 반향정위 시스템의 정밀도를 구체적으로 예시하는 기능이다. (A)는 실제 실험에서 철사를 쓰기 때문에 매력적이지만, 지문은 실험 재료나 절차를 전혀 다루지 않는다. 지문 요지: 박쥐의 정밀한 반향정위는 나방의 청각과 초음파 재밍이라는 대응 진화를 낳았다.",
+    "keyExpressions": [
+      {
+        "en": "echolocation",
+        "ko": "반향정위"
+      },
+      {
+        "en": "ultrasonic pulse",
+        "ko": "초음파 펄스"
+      },
+      {
+        "en": "impose selection on",
+        "ko": "~에 선택압을 가하다"
+      },
+      {
+        "en": "erratic dive",
+        "ko": "불규칙한 급강하"
+      },
+      {
+        "en": "jamming",
+        "ko": "방해 전파, 교란"
+      }
+    ],
+    "tips": "구체적 수치나 생생한 비유가 인용되면 십중팔구 '앞뒤 일반 진술을 강조·예시하기 위해'가 정답이다. 그 표현이 들어 있는 문장의 주절을 먼저 읽어라. 함정은 그 소재에 관한 상식(철사=실험 도구)을 끌어와 만든 보기다. 지문 밖 지식은 정답 근거가 될 수 없다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "곰의 겨울잠과 대사 절약",
+    "question": "Whether bears truly hibernate has been disputed, since their body temperature falls only a few degrees, far less than the dramatic cooling seen in ground squirrels. By a strict thermal definition, bears are merely dormant. By a metabolic definition, however, they are exemplary hibernators: oxygen consumption drops to roughly one quarter of the resting rate, a reduction disproportionate to the modest change in temperature.\n\nThe physiological feats involved are considerable. A denning bear neither eats nor drinks nor eliminates waste for as long as five months. Urea produced by protein breakdown is recycled into new amino acids rather than excreted, which conserves nitrogen and prevents toxic accumulation. Perhaps most remarkably, bears emerge with bone density and muscle mass largely preserved, whereas comparable immobility in humans produces severe atrophy. The mechanisms underlying this preservation are now the object of intense biomedical interest.\n\nAn introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage.\nIntroductory sentence: Bears represent an unusual and physiologically remarkable form of winter dormancy.\n(A) Bears qualify as hibernators under a metabolic definition even though their body temperature drops only slightly.\n(B) Denning bears go months without food, water, or waste elimination, recycling urea into amino acids.\n(C) Ground squirrels cool far more dramatically than bears do during the winter months.\n(D) Bears retain bone and muscle during dormancy in ways that humans confined to immobility do not.\n(E) Oxygen consumption is measured as a standard indicator of metabolic rate in mammals.\n(F) Biomedical researchers have already developed treatments based on bear physiology.",
+    "targetLevel": "지문 요약",
+    "answerEn": "(A), (B), (D). These three capture the passage's main claims: the definitional argument resolved in favor of metabolic criteria, the extreme fasting and nitrogen recycling, and the preservation of bone and muscle. Choice (C) is true but is a supporting comparison used only to set up the definitional problem, making it a minor detail rather than a main idea. Choice (F) overstates the final sentence, which says only that the mechanisms are an object of interest, not that treatments exist.",
+    "answerKo": "정답 (A)(B)(D). 각각 정의 논쟁의 결론(대사 기준으로는 전형적 동면), 수개월 절식과 요소 재활용, 골밀도·근육량 보존이라는 세 주요 논지를 담는다. (C)는 사실이지만 정의 문제를 도입하기 위한 비교 세부에 불과하다. (F)는 '생의학적 관심 대상'이라는 마지막 문장을 '이미 치료법 개발'로 과장했다. 지문 요지: 곰의 겨울잠은 체온이 아니라 대사와 조직 보존의 관점에서 볼 때 놀라운 현상이다.",
+    "keyExpressions": [
+      {
+        "en": "dormant",
+        "ko": "휴면 상태의"
+      },
+      {
+        "en": "oxygen consumption",
+        "ko": "산소 소비량"
+      },
+      {
+        "en": "disproportionate to",
+        "ko": "~에 비해 불균형적인"
+      },
+      {
+        "en": "urea",
+        "ko": "요소"
+      },
+      {
+        "en": "atrophy",
+        "ko": "위축, 소모"
+      }
+    ],
+    "tips": "지문 요약은 '사실이냐'가 아니라 '주요 논지냐'를 묻는다. 각 단락의 주제문 하나씩을 골라 보기와 대조하면 대개 세 개가 남는다. 함정은 두 가지로, 지문에 있으나 세부에 불과한 보기((C))와, 마지막 문장을 한 단계 과장한 보기((F))다. 비교 대상으로만 등장한 소재는 요약에 넣지 않는 것이 원칙이다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "생물학·동물 행동",
+    "topic": "흰개미와 장내 미생물",
+    "question": "Wood is an unpromising diet. Cellulose is difficult to break down, and lignin, the polymer that stiffens plant cell walls, resists digestion almost entirely. Termites nonetheless thrive on it, and for most of the twentieth century their success was attributed to enzymes secreted by protists in the hindgut. That account is now understood to be incomplete, because the protists themselves harbor bacteria that supply key enzymatic steps as well as the nitrogen the diet lacks.\n\nThe result is a nested arrangement of dependencies, and its fragility is instructive. A termite deprived of its gut community starves surrounded by food, and the community is not inherited through eggs; newly molted individuals must acquire it by consuming fluid from the anus of a nestmate. This requirement helps account for the obligatory social life of termites, since an isolated individual could never reestablish the partnership that its digestion demands.\n\nAccording to the passage, all of the following are true of the termite gut community EXCEPT:\n(A) It includes bacteria living within the protists.\n(B) It supplies nitrogen that the termite's diet lacks.\n(C) It is transmitted from a parent to its eggs.\n(D) It must be acquired again after an individual molts.",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(C) The second paragraph states explicitly that the community 'is not inherited through eggs,' so transmission from parent to egg is contradicted by the text. Choices (A) and (B) restate the first paragraph, which says the protists themselves harbor bacteria supplying enzymatic steps and nitrogen. Choice (D) restates the requirement that newly molted individuals obtain fluid from a nestmate, and is therefore true.",
+    "answerKo": "정답 (C). 근거는 두 번째 단락으로, 장내 군집은 '알을 통해 유전되지 않는다'고 명시하므로 부모에서 알로 전달된다는 진술은 지문과 정면으로 충돌한다. (A)와 (B)는 첫 단락의 '원생생물이 세균을 품고 있으며 효소 단계와 질소를 공급한다'는 문장으로 확인된다. (D)는 탈피 후 동료에게서 다시 얻어야 한다는 문장과 일치한다. 지문 요지: 흰개미의 목재 소화는 중첩된 미생물 의존에 기반하며 이것이 사회성을 강제한다.",
+    "keyExpressions": [
+      {
+        "en": "cellulose",
+        "ko": "셀룰로스"
+      },
+      {
+        "en": "lignin",
+        "ko": "리그닌"
+      },
+      {
+        "en": "hindgut",
+        "ko": "후장"
+      },
+      {
+        "en": "harbor",
+        "ko": "품다, 서식시키다"
+      },
+      {
+        "en": "obligatory",
+        "ko": "필수적인, 의무적인"
+      }
+    ],
+    "tips": "부정 사실 정보 유형에서 지문이 부정문으로 못 박은 사실(not inherited through eggs)은 거의 언제나 정답의 재료가 된다. not, never, rather than 같은 부정 표현에 밑줄을 긋고, 그것을 그대로 긍정으로 뒤집은 보기를 찾아라. 나머지 세 보기는 지문에서 근거 위치를 확인해 하나씩 소거하되, 표현이 바뀌어 있어도 의미가 같으면 '있는 것'으로 처리해야 한다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "C4 광합성의 진화",
+    "question": "Photosynthesis in most plants proceeds through the C3 pathway, in which the enzyme rubisco fixes atmospheric carbon dioxide into a three-carbon compound. Rubisco, however, is notoriously imprecise: it also binds oxygen, initiating a wasteful process called photorespiration that consumes energy and releases previously fixed carbon. Under hot, dry conditions, when leaf pores close to conserve water and internal oxygen concentrations rise, photorespiration can squander as much as a third of the carbon a plant captures.\\n\\nThe C4 pathway represents an anatomical and biochemical solution to this inefficiency. In C4 plants such as maize and sugarcane, initial carbon fixation occurs in outer mesophyll cells using an enzyme that has no affinity for oxygen. The resulting four-carbon acid is then shuttled inward to specialized bundle-sheath cells, where it releases carbon dioxide at concentrations high enough to saturate rubisco and suppress photorespiration almost entirely. This division of labor imposes an additional energetic cost, which explains why C4 plants dominate in hot, sunlit grasslands but seldom displace C3 species in cool or shaded habitats.\\n\\nAccording to the passage, what happens when leaf pores close during hot, dry conditions?\\n(A) Rubisco loses its ability to bind carbon dioxide permanently.\\n(B) Oxygen concentrations inside the leaf increase, promoting photorespiration.\\n(C) The four-carbon acid is converted back into a three-carbon compound.\\n(D) Bundle-sheath cells begin performing initial carbon fixation.",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The first paragraph states that when leaf pores close to conserve water, internal oxygen concentrations rise, and that this drives photorespiration, which can waste up to a third of fixed carbon. Choice (A) misstates the passage: rubisco remains able to bind carbon dioxide but is described as imprecise because it also binds oxygen. Choice (D) reverses the described anatomy, since initial fixation occurs in mesophyll cells, not bundle-sheath cells. Choice (C) describes no process mentioned in the text.",
+    "answerKo": "정답은 (B)이다. 첫 문단에서 덥고 건조한 조건에서 잎의 기공이 물을 아끼려고 닫히면 내부 산소 농도가 상승하고, 그 결과 광호흡이 일어나 고정된 탄소의 최대 3분의 1까지 낭비될 수 있다고 명시한다. (A)는 루비스코가 이산화탄소 결합 능력을 영구히 잃는다고 했으나 지문은 단지 산소도 결합한다는 부정확성만 언급한다. (D)는 최초 탄소 고정이 엽육세포에서 일어난다는 지문 내용과 반대다. 지문 요지는 C4 경로가 광호흡을 억제하는 해부학적·생화학적 해결책이지만 추가 에너지 비용을 수반한다는 것이다.",
+    "keyExpressions": [
+      {
+        "en": "photorespiration",
+        "ko": "광호흡"
+      },
+      {
+        "en": "carbon fixation",
+        "ko": "탄소 고정"
+      },
+      {
+        "en": "bundle-sheath cells",
+        "ko": "유관속초 세포"
+      },
+      {
+        "en": "affinity for oxygen",
+        "ko": "산소에 대한 친화성"
+      },
+      {
+        "en": "division of labor",
+        "ko": "분업"
+      }
+    ],
+    "tips": "사실 정보 유형은 지문에 명시된 문장을 그대로 확인하는 문제다. 질문의 핵심어(leaf pores close, hot dry)를 지문에서 스캔해 해당 문장만 정밀하게 읽어라. 함정은 지문의 단어를 그대로 쓰면서 인과나 주체를 뒤바꾸는 선택지(D)와, 정도를 과장하는 표현(permanently, always)이 들어간 선택지(A)다. 지문에 없는 새로운 과정을 서술하는 보기는 즉시 제거하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "동물 매개 종자 확산",
+    "question": "Plants cannot move, but their seeds can, and many flowering species have evolved fleshy fruits that recruit animals as unwitting couriers. The nutritional reward of pulp induces birds and mammals to swallow seeds whole; the seeds then pass through the digestive tract intact, protected by tough coats, and are deposited at some distance from the parent plant. This service is valuable because seedlings germinating beneath their parent face intense competition for light and are more readily located by specialized seed predators and pathogens.\\n\\nThe partnership is nonetheless imperfect. Dispersers are not motivated to place seeds in favorable soil, and a considerable fraction of fruit is consumed by animals that crush seeds rather than transport them. Field studies further indicate that dispersal distances follow a steeply skewed distribution: most seeds land within a few dozen meters, while a very small minority travel kilometers. Ecologists nonetheless regard these rare long-distance events as disproportionately consequential, since they determine how quickly a plant population can colonize newly available habitat or shift its range in response to a changing climate.\\n\\nWhich of the following can be inferred from the passage about plant populations facing rapid climate change?\\n(A) They depend heavily on the uncommon seeds carried unusually far by dispersers.\\n(B) They will produce fruits with thicker seed coats to survive digestion.\\n(C) They benefit most from seedlings that germinate beneath the parent plant.\\n(D) They rely primarily on animals that crush seeds during feeding.",
+    "targetLevel": "추론",
+    "answerEn": "(A) The final sentence states that rare long-distance dispersal events determine how quickly a population can colonize new habitat or shift its range as climate changes, so populations facing rapid change must depend on those uncommon far-traveling seeds. Choice (C) contradicts the first paragraph, which describes germination beneath the parent as disadvantageous because of competition and predators. Choice (D) is wrong because seed-crushing animals are presented as a loss, not a dispersal mechanism. Choice (B) invents an evolutionary response that the passage never suggests.",
+    "answerKo": "정답은 (A)이다. 마지막 문장에서 드문 장거리 확산 사건이 개체군의 신규 서식지 정착 속도와 기후 변화에 따른 분포 이동을 결정한다고 했으므로, 급격한 기후 변화에 직면한 개체군은 멀리 운반되는 소수의 종자에 크게 의존한다고 추론할 수 있다. (C)는 모주 아래 발아가 경쟁과 포식으로 불리하다는 1문단과 모순된다. (D)의 종자를 부수는 동물은 확산 수단이 아니라 손실 요인이다. (B)는 지문에 없는 진화적 반응을 지어낸 것이다.",
+    "keyExpressions": [
+      {
+        "en": "unwitting courier",
+        "ko": "자기도 모르게 운반자 역할을 하는 존재"
+      },
+      {
+        "en": "germinate",
+        "ko": "발아하다"
+      },
+      {
+        "en": "seed predator",
+        "ko": "종자 포식자"
+      },
+      {
+        "en": "skewed distribution",
+        "ko": "한쪽으로 치우친 분포"
+      },
+      {
+        "en": "disproportionately consequential",
+        "ko": "비중에 비해 결과가 큰"
+      }
+    ],
+    "tips": "추론 문제의 정답은 지문에 직접 쓰여 있지는 않지만 한 문장에서 논리적으로 곧바로 따라 나온다. 지문을 넘어서는 상상은 금물이며, '지문 + 한 걸음'이 원칙이다. 함정은 지문의 어휘를 재활용하되 지문이 부정적으로 평가한 요소를 긍정적으로 뒤집는 보기(C, D)다. 지문 마지막 문장이 추론의 근거가 되는 경우가 많으니 결론부를 주목하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "균근 공생 관계",
+    "question": "Beneath nearly every forest lies an interface that is easy to overlook: the junction between fine plant roots and the filaments of soil fungi. In mycorrhizal associations, fungal hyphae extend far beyond the zone of soil that roots alone can exploit, absorbing phosphorus and nitrogen from mineral particles and delivering these nutrients to the host plant. In exchange, the fungus receives sugars manufactured in the leaves, sometimes amounting to a fifth of the carbon the plant fixes each season.\\n\\nThe relationship is not fixed charity but a negotiated exchange whose terms shift with circumstance. When soil phosphorus is abundant, plants curtail the carbon they allocate to fungal partners, and colonization of roots declines accordingly. Under nutrient-poor conditions the reverse occurs. Experiments using isotopic labels have further demonstrated that plants preferentially direct carbon toward fungal strains that deliver the most nutrients, while fungi channel nutrients toward the most generous hosts. Such reciprocal discrimination helps explain why the partnership has persisted for hundreds of millions of years without collapsing into exploitation by one side.\\n\\nWhy does the author mention experiments using isotopic labels?\\n(A) To demonstrate that fungi can survive independently of host plants\\n(B) To provide evidence that both partners reward cooperative counterparts\\n(C) To show that phosphorus is more valuable to plants than nitrogen\\n(D) To question whether mycorrhizal associations are truly ancient",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The isotopic-label experiments are introduced immediately before the statement that plants send carbon to the most productive fungal strains while fungi send nutrients to the most generous hosts, so their rhetorical function is to supply evidence of mutual reward. Choice (D) inverts the author's purpose, since the paragraph concludes that the partnership has persisted for hundreds of millions of years. Choice (A) is never claimed anywhere in the passage. Choice (C) misuses the phosphorus discussion, which concerns changing allocation rather than ranking nutrients.",
+    "answerKo": "정답은 (B)이다. 동위원소 표지 실험 언급 직후에 식물은 가장 많은 양분을 주는 균주에 탄소를 몰아주고 균류는 가장 관대한 숙주에 양분을 보낸다는 서술이 이어지므로, 이 실험의 수사적 기능은 상호 보상의 증거 제시다. (D)는 이 공생이 수억 년 지속되었다는 결론과 정반대다. (A)는 지문에 전혀 없는 주장이고, (C)는 인 농도 논의를 양분 가치 서열로 왜곡했다. 지문 요지는 균근 공생이 상황에 따라 조건이 조정되는 협상적 교환이라는 것이다.",
+    "keyExpressions": [
+      {
+        "en": "mycorrhizal association",
+        "ko": "균근 공생"
+      },
+      {
+        "en": "hyphae",
+        "ko": "균사"
+      },
+      {
+        "en": "allocate carbon",
+        "ko": "탄소를 배분하다"
+      },
+      {
+        "en": "reciprocal discrimination",
+        "ko": "상호 선별"
+      },
+      {
+        "en": "collapse into exploitation",
+        "ko": "착취 관계로 전락하다"
+      }
+    ],
+    "tips": "수사적 의도 문제는 '무엇을 말했는가'가 아니라 '왜 그 자리에 넣었는가'를 묻는다. 해당 문장 바로 앞뒤 문장을 읽고 그것이 뒷받침하는 주장을 찾아라. 함정은 그 문장의 내용을 정확히 요약했지만 목적이 아닌 보기, 그리고 저자의 논지와 반대되는 방향(회의 제기)의 보기다. 문단의 결론 문장과 방향이 일치하는 보기를 고르면 안전하다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "식물의 화학적 방어",
+    "question": "Lacking the option of flight, plants defend themselves chemically. Their tissues contain secondary metabolites such as alkaloids, terpenes, and phenolics, compounds that play no direct role in growth or reproduction but that deter, poison, or impair the digestion of herbivores. Nicotine paralyzes insect nervous systems; tannins bind proteins in the gut and reduce the nutritional value of foliage. Because manufacturing and storing such compounds diverts resources from growth, plants that invest heavily in defense typically grow more slowly than their less protected neighbors.\\n\\nThis cost has favored the evolution of induced defenses, which are deployed only after damage is detected. Chewing by a caterpillar triggers a cascade of hormonal signals that within hours elevates toxin concentrations in the wounded leaf and, more remarkably, in undamaged leaves elsewhere on the plant. Some species release volatile compounds that attract parasitic wasps preying on the herbivores, an indirect defense that recruits a third party. Constitutive defenses, maintained at all times, remain more common in long-lived tissues where the probability of attack is high and the delay of induction would prove costly.\\n\\nThe word 'deter' in the passage is closest in meaning to\\n(A) discourage\\n(B) identify\\n(C) nourish\\n(D) tolerate",
+    "targetLevel": "어휘",
+    "answerEn": "(A) The verb 'deter' appears in a list with 'poison' and 'impair the digestion of' herbivores, all describing ways defensive compounds work against plant eaters, so 'discourage' fits the hostile sense. Choice (C) reverses the meaning, since nourishing herbivores is the opposite of defense. Choice (D) also contradicts the defensive context established by the surrounding examples of nicotine and tannins. Choice (B) describes detection, which is a different function discussed only later in connection with induced defenses.",
+    "answerKo": "정답은 (A)이다. deter는 poison, impair the digestion과 나란히 나열되어 초식동물에 불리하게 작용하는 방식들을 묘사하므로 '단념시키다, 억제하다'라는 뜻의 discourage가 가장 가깝다. (C) nourish와 (D) tolerate는 방어라는 문맥과 정반대 방향이다. (B) identify는 손상 감지를 뜻하는데 이는 유도 방어를 설명하는 뒷부분의 다른 기능이다. 지문 요지는 화학 방어에 비용이 들기 때문에 유도 방어가 진화했다는 것이다.",
+    "keyExpressions": [
+      {
+        "en": "secondary metabolite",
+        "ko": "이차 대사산물"
+      },
+      {
+        "en": "herbivore",
+        "ko": "초식동물"
+      },
+      {
+        "en": "induced defense",
+        "ko": "유도 방어"
+      },
+      {
+        "en": "volatile compound",
+        "ko": "휘발성 화합물"
+      },
+      {
+        "en": "constitutive defense",
+        "ko": "상시 방어"
+      }
+    ],
+    "tips": "어휘 문제는 사전적 의미보다 문맥이 우선이다. 해당 단어가 속한 나열 구조나 병렬 동사를 확인하면 의미 방향(긍정·부정)이 즉시 드러난다. 함정은 단어의 다른 뜻이거나, 지문 다른 부분에서 실제로 언급된 개념을 가져와 그럴듯하게 만든 보기(B)다. 방향이 반대인 보기부터 지우고 남은 것 중 대입해 읽어보라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "장내 미생물 군집",
+    "question": "The interior of the vertebrate intestine hosts a dense assemblage of bacteria, archaea, and fungi whose combined genetic repertoire vastly exceeds that of the host itself. These residents ferment dietary fibers that host enzymes cannot break down, releasing short-chain fatty acids that nourish the cells lining the colon and influence metabolism throughout the body. They also occupy physical and nutritional niches that would otherwise be available to invading pathogens, a phenomenon known as colonization resistance.\\n\\nThe composition of this community is neither random nor entirely stable. Diet exerts the strongest measurable influence: a sustained shift toward fiber-rich foods can reshape relative abundances within days. Broad-spectrum antibiotics, by contrast, cause abrupt reductions in diversity, and although the community usually rebounds, certain lineages may fail to return for months or may vanish altogether. Researchers increasingly emphasize that functional redundancy matters more than taxonomic identity, because unrelated species frequently perform equivalent metabolic tasks. A community that appears drastically altered at the level of species names may therefore continue to deliver the same services to its host.\\n\\nAccording to the passage, all of the following are effects of the gut community EXCEPT\\n(A) fermenting fibers that host enzymes cannot digest\\n(B) producing compounds that nourish colon cells\\n(C) limiting the resources available to invading pathogens\\n(D) generating enzymes that the host uses to digest fiber directly",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) The passage says microbes themselves ferment fibers that host enzymes cannot break down; it never states that microbes supply enzymes to the host for direct digestion, making (D) the unsupported option. Choices (A) and (B) restate the first paragraph, where fermentation yields short-chain fatty acids that nourish colon-lining cells. Choice (C) paraphrases colonization resistance, described as occupying niches otherwise available to pathogens. The distinction in (D) is subtle but real: the work is done by the microbes, not transferred to the host.",
+    "answerKo": "정답은 (D)이다. 지문은 미생물이 숙주 효소가 분해하지 못하는 섬유를 스스로 발효한다고 했을 뿐, 숙주가 사용할 효소를 미생물이 제공한다고는 말하지 않는다. (A)와 (B)는 1문단의 발효와 단쇄지방산에 의한 결장 세포 영양 공급을 그대로 옮긴 것이고, (C)는 정착 저항성을 바꿔 쓴 것이다. (D)는 '누가 소화하는가'라는 주체를 바꾼 미묘한 함정이다. 지문 요지는 장내 군집이 기능적으로 중요하며 종 구성보다 기능적 중복성이 핵심이라는 것이다.",
+    "keyExpressions": [
+      {
+        "en": "genetic repertoire",
+        "ko": "유전적 목록, 유전자 총체"
+      },
+      {
+        "en": "short-chain fatty acid",
+        "ko": "단쇄지방산"
+      },
+      {
+        "en": "colonization resistance",
+        "ko": "정착 저항성"
+      },
+      {
+        "en": "broad-spectrum antibiotic",
+        "ko": "광범위 항생제"
+      },
+      {
+        "en": "functional redundancy",
+        "ko": "기능적 중복성"
+      }
+    ],
+    "tips": "부정 사실 정보는 세 개가 지문에 있고 하나만 없거나 왜곡된 문제다. 보기 순서대로 지문에서 근거 문장을 찾아 체크 표시하는 소거법이 가장 빠르다. 함정은 지문 단어를 그대로 쓰되 행위 주체나 대상을 슬쩍 바꾼 보기(D)다. 기억에 의존하지 말고 반드시 해당 문장으로 되돌아가 확인하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "질소 고정 뿌리혹",
+    "question": "Nitrogen constitutes nearly four-fifths of the atmosphere, yet plants cannot use it in gaseous form because the triple bond joining the two nitrogen atoms is exceptionally difficult to break. Certain soil bacteria possess nitrogenase, an enzyme capable of severing that bond and converting nitrogen gas into ammonia. Legumes exploit this capacity by housing such bacteria in root nodules, structures the plant constructs after an elaborate exchange of chemical signals confirms the identity of a suitable partner.\\n\\nMaintaining the arrangement is demanding. Nitrogenase is irreversibly destroyed by oxygen, so nodule tissue produces leghemoglobin, an oxygen-binding pigment that keeps free oxygen vanishingly low while still supplying the bacteria with the respiration they require. The host also expends substantial photosynthate on its tenants. Should a nodule's occupants deliver little ammonia, the plant restricts oxygen and carbon to it, and the nodule withers. This sanctioning mechanism is thought to stabilize the association by making cheating unprofitable for the bacteria.\\n\\nThe word 'it' in the passage (in 'the plant restricts oxygen and carbon to it') refers to\\n(A) the nodule\\n(B) leghemoglobin\\n(C) nitrogenase\\n(D) the atmosphere",
+    "targetLevel": "지시 대상",
+    "answerEn": "(A) The clause reads that if a nodule's occupants deliver little ammonia, the plant restricts oxygen and carbon to it, and the next clause states that the nodule withers, confirming the nodule as the referent. Choice (B) is wrong because leghemoglobin is a pigment produced within the nodule and is not something supplied with carbon. Choice (C) names an enzyme rather than a structure that could receive resources. Choice (D) is a distant noun with no grammatical or logical connection to the sentence.",
+    "answerKo": "정답은 (A)이다. 해당 문장은 '어떤 뿌리혹의 거주 세균이 암모니아를 거의 공급하지 않으면 식물이 그것에 산소와 탄소를 제한한다'이며 바로 뒤에 '그 뿌리혹은 시든다'가 이어지므로 it은 nodule을 가리킨다. (B) 레그헤모글로빈은 뿌리혹 내부에서 생산되는 색소로 자원을 공급받는 대상이 아니다. (C)는 효소이고 (D)는 문장과 논리적 연결이 없는 먼 명사다. 지문 요지는 제재 기제가 세균의 무임승차를 막아 공생을 안정시킨다는 것이다.",
+    "keyExpressions": [
+      {
+        "en": "triple bond",
+        "ko": "삼중 결합"
+      },
+      {
+        "en": "nitrogenase",
+        "ko": "질소고정효소"
+      },
+      {
+        "en": "root nodule",
+        "ko": "뿌리혹"
+      },
+      {
+        "en": "photosynthate",
+        "ko": "광합성 산물"
+      },
+      {
+        "en": "sanctioning mechanism",
+        "ko": "제재 기제"
+      }
+    ],
+    "tips": "지시 대상 문제는 대명사 바로 앞 명사를 반사적으로 고르지 말고, 대명사 자리에 각 보기를 넣어 문장이 성립하는지 확인하라. 단수·복수 일치와 문법적 역할이 1차 필터다. 이 문제처럼 다음 문장이 정답을 확인해 주는 경우가 많으니 한 문장 더 읽어라. 함정은 근접해 있지만 의미상 자원을 받을 수 없는 명사(B, C)다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "사막 식물의 수분 전략",
+    "question": "Desert plants confront a fundamental conflict: the same pores that admit carbon dioxide also release water vapor. Crassulacean acid metabolism, or CAM, resolves this conflict by separating gas exchange from photosynthesis in time. CAM plants open their stomata at night, when cool air holds the evaporative gradient in check, and store the absorbed carbon dioxide as an organic acid in large vacuoles. During the day the stomata remain sealed while the stored acid is broken down and the released carbon dioxide feeds the photosynthetic machinery behind closed pores.\\n\\nThe strategy conserves water with remarkable efficiency, but it constrains productivity. The quantity of carbon a CAM plant can process is limited by the volume of acid its vacuoles can hold overnight, so growth rates are typically slow. Some species accordingly display flexibility, operating as ordinary C3 plants when moisture is plentiful and switching to CAM only under drought. This facultative behavior suggests that CAM is best understood not as a superior form of photosynthesis but as an expensive insurance policy purchased when water becomes the limiting resource.\\n\\nWhich of the sentences below best expresses the essential information in the highlighted sentence? 'This facultative behavior suggests that CAM is best understood not as a superior form of photosynthesis but as an expensive insurance policy purchased when water becomes the limiting resource.'\\n(A) The ability to switch pathways shows CAM is a costly safeguard adopted when water is scarce rather than an inherently better system.\\n(B) Plants that switch between pathways photosynthesize more efficiently than those restricted to one.\\n(C) CAM plants must purchase water at high cost in order to photosynthesize during drought.\\n(D) Because CAM is superior, plants abandon C3 photosynthesis whenever water is limited.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(A) The original sentence makes two claims: switching behavior reveals that CAM is not intrinsically superior, and that it functions as a costly safeguard deployed under water limitation; (A) preserves both. Choice (D) directly contradicts the original by asserting that CAM is superior. Choice (B) introduces a comparison of efficiency between switchers and non-switchers that the sentence does not make. Choice (C) misreads the metaphor of an insurance policy as literal purchasing of water.",
+    "answerKo": "정답은 (A)이다. 원문은 두 가지를 말한다. 첫째, 전환 가능한 행동은 CAM이 본질적으로 우월한 광합성이 아님을 시사한다. 둘째, CAM은 물이 제한 요인일 때 구입하는 값비싼 보험이다. (A)는 두 요소를 모두 보존한다. (D)는 CAM이 우월하다고 해 원문과 정반대다. (B)는 원문에 없는 효율 비교를 추가했고, (C)는 보험이라는 비유를 물을 실제로 구매한다는 뜻으로 오독했다. 지문 요지는 CAM이 물 절약과 생산성 저하의 맞교환이라는 것이다.",
+    "keyExpressions": [
+      {
+        "en": "gas exchange",
+        "ko": "기체 교환"
+      },
+      {
+        "en": "stomata",
+        "ko": "기공"
+      },
+      {
+        "en": "vacuole",
+        "ko": "액포"
+      },
+      {
+        "en": "facultative",
+        "ko": "조건에 따라 선택적인"
+      },
+      {
+        "en": "limiting resource",
+        "ko": "제한 자원"
+      }
+    ],
+    "tips": "문장 재진술은 원문의 핵심 명제와 논리 관계(not A but B, 인과, 양보)를 그대로 옮긴 보기를 고르는 문제다. 원문에서 접속 표현을 먼저 표시하고 그 관계가 보존됐는지 확인하라. 함정은 관계를 뒤집는 보기(D), 없는 비교를 넣는 보기(B), 비유를 문자 그대로 해석한 보기(C)다. 길이가 비슷하다고 정답인 것은 아니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "지의류의 이중 생물",
+    "question": "A lichen looks like a single organism but is in fact a composite. A fungus supplies the structural body, anchoring the assemblage to rock or bark and shielding its partner from desiccation and ultraviolet light; an alga or cyanobacterium housed within that body performs photosynthesis and supplies carbohydrates. [1] The resulting association tolerates conditions that defeat most life, colonizing bare stone, arctic tundra, and desert crusts. [2]\\n\\nEarly naturalists disputed whether the arrangement was cooperation or captivity, and the question has not entirely disappeared. [3] The fungus determines the shape of the thallus, regulates the flow of nutrients, and can be cultured only with difficulty apart from its partner, whereas many of the algae involved grow perfectly well on their own. [4] Recent sequencing work has complicated the picture further by revealing a second, consistently present yeast embedded in the outer layer of many lichens, indicating that what was long treated as a two-member partnership is frequently a community of three or more.\\n\\nLook at the four squares [1], [2], [3], [4] that indicate where the following sentence could be added to the passage. Where would the sentence best fit?\\nInserted sentence: 'Such asymmetry has led some biologists to describe the relationship as a form of controlled parasitism.'\\n(A) [1]\\n(B) [2]\\n(C) [3]\\n(D) [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(D) The inserted sentence begins with 'Such asymmetry,' which requires a preceding description of an unequal relationship; the sentence before [4] supplies exactly that by contrasting the fungus's dependence and control with the algae's independence. Placing it at [3] would leave 'such asymmetry' with no antecedent, since the asymmetry is described only afterward. Positions [1] and [2] sit in the descriptive first paragraph, before the debate over cooperation versus captivity is even raised. The inserted sentence also leads naturally into the following discussion of how sequencing complicated this view.",
+    "answerKo": "정답은 (D)이다. 삽입 문장은 'Such asymmetry'로 시작하므로 앞에 비대칭 관계에 대한 서술이 반드시 있어야 한다. [4] 바로 앞 문장이 균류의 지배력과 조류의 독립성을 대비해 그 비대칭을 제시한다. [3]에 넣으면 지시어가 가리킬 선행 내용이 없다. [1]과 [2]는 논쟁이 제기되기 전 묘사 부분이라 부적절하다. 지문 요지는 지의류가 단일 생물처럼 보이지만 실제로는 셋 이상의 구성원으로 이루어진 복합체라는 것이다.",
+    "keyExpressions": [
+      {
+        "en": "composite",
+        "ko": "복합체"
+      },
+      {
+        "en": "desiccation",
+        "ko": "건조, 탈수"
+      },
+      {
+        "en": "thallus",
+        "ko": "엽상체"
+      },
+      {
+        "en": "asymmetry",
+        "ko": "비대칭"
+      },
+      {
+        "en": "controlled parasitism",
+        "ko": "통제된 기생"
+      }
+    ],
+    "tips": "문장 삽입은 삽입 문장의 연결 신호(such, this, however, in contrast, 대명사)를 먼저 찾는 것이 핵심이다. 그 신호가 요구하는 선행 정보가 실제로 앞에 있는 위치만 정답이 될 수 있다. 함정은 주제어가 비슷해 그럴듯해 보이지만 지시 대상이 아직 등장하지 않은 앞쪽 위치다. 정답 후보를 넣고 앞뒤 문장을 이어 읽어 흐름이 끊기지 않는지 확인하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "꽃가루받이 상호작용",
+    "question": "Flowers are advertisements, and their features are shaped by the sensory abilities of the animals they must attract. Bees perceive ultraviolet wavelengths invisible to humans, and many bee-pollinated flowers bear ultraviolet patterns that guide visitors toward nectar. Flowers pollinated by birds tend to be red, odorless, and equipped with sturdy tubes suited to hovering visitors, while those visited by nocturnal moths open after dusk, are pale, and emit strong fragrance. Such recurring combinations of traits are called pollination syndromes.\\n\\nThe concept, though useful, has proven less predictive than once assumed. Surveys of actual flower visitors reveal that most plants receive pollen from a range of species, and specialized morphology does not reliably exclude unintended visitors. Some animals rob nectar by piercing the base of a corolla, obtaining the reward without contacting reproductive structures at all. Botanists now generally treat syndromes as descriptions of the most effective pollinators rather than as evidence of exclusive partnerships, a revision that emphasizes ecological flexibility over tightly matched pairs.\\n\\nAn introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage.\\nIntroductory sentence: Floral traits are shaped by pollinator sensory abilities, but the resulting categories describe tendencies rather than exclusive relationships.\\n(A) Recurring trait combinations such as ultraviolet patterns or nocturnal fragrance correspond to particular groups of pollinators.\\n(B) Field surveys show that most plants are actually visited by a variety of animal species.\\n(C) Bird-pollinated flowers are the most successful of all floral types.\\n(D) Nectar robbers can take rewards without performing pollination, weakening strict trait-visitor matching.\\n(E) Ultraviolet light is invisible to humans because of the structure of the human eye.\\n(F) Moths are gradually replacing bees as the dominant pollinators worldwide.",
+    "targetLevel": "지문 요약",
+    "answerEn": "(A), (B), (D) are correct. (A) captures the pollination-syndrome concept developed in the first paragraph, while (B) and (D) present the two main pieces of evidence in the second paragraph that undermine strict specialization: broad visitor surveys and nectar robbing. (C) makes a ranking claim the passage never advances. (E) is a minor factual aside that merely elaborates a detail about human vision. (F) invents a global trend in pollinator dominance found nowhere in the text.",
+    "answerKo": "정답은 (A), (B), (D)이다. (A)는 1문단의 수분 증후군 개념을, (B)와 (D)는 2문단에서 엄격한 특수화를 약화시키는 두 근거인 다양한 방문자 조사와 꿀 도둑질을 요약한다. (C)는 지문에 없는 우열 비교이며, (E)는 자외선 관련 지엽적 세부 사항이라 요약에 부적합하다. (F)는 지문에 전혀 없는 세계적 추세를 지어낸 것이다. 지문 요지는 수분 증후군이 배타적 짝짓기가 아니라 가장 효과적인 수분매개자에 대한 기술이라는 것이다.",
+    "keyExpressions": [
+      {
+        "en": "pollination syndrome",
+        "ko": "수분 증후군"
+      },
+      {
+        "en": "nocturnal",
+        "ko": "야행성의"
+      },
+      {
+        "en": "corolla",
+        "ko": "화관"
+      },
+      {
+        "en": "morphology",
+        "ko": "형태"
+      },
+      {
+        "en": "ecological flexibility",
+        "ko": "생태적 유연성"
+      }
+    ],
+    "tips": "지문 요약은 각 문단의 주요 논지를 대표하는 보기 세 개를 고르는 문제다. 세부 사례, 지엽적 부연, 지문에 없는 일반화는 모두 오답이다. 도입 문장이 요약의 방향을 제시하므로 그와 논리적으로 이어지는 보기를 우선 고려하라. 함정은 사실이지만 너무 지엽적인 보기(E)와 지문 범위를 넘어선 과장(C, F)이다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "세균의 정족수 감지",
+    "question": "Bacteria are often imagined as solitary cells, yet many coordinate their behavior through quorum sensing. Each cell continuously secretes a small signaling molecule; as the population grows within a confined space, the concentration of that molecule rises in proportion to cell density. When the concentration crosses a threshold, receptors trigger a coordinated change in gene expression across the population. In this way a colony can act only when enough cells are present for the action to succeed.\\n\\nThe advantage is evident in pathogenesis. A few bacteria releasing toxins would merely alert host defenses while accomplishing nothing; a dense population releasing them simultaneously can overwhelm those defenses. Quorum sensing likewise governs biofilm construction and the production of light in marine symbionts. Because the mechanism regulates virulence rather than growth itself, drugs that block signal receptors have attracted interest as therapies that disarm bacteria without killing them, an approach expected to generate weaker selective pressure for resistance than conventional antibiotics.\\n\\nIt can be inferred from the passage that drugs blocking quorum sensing receptors would\\n(A) eliminate bacterial populations more rapidly than antibiotics\\n(B) leave bacteria alive but unable to mount coordinated attacks\\n(C) prevent bacteria from secreting any signaling molecules\\n(D) increase the rate at which resistant strains emerge",
+    "targetLevel": "추론",
+    "answerEn": "(B) The final sentence describes such drugs as disarming bacteria without killing them, and the passage explains that quorum sensing governs coordinated actions like toxin release and biofilm formation, so blocked receptors would leave cells alive but uncoordinated. Choice (A) contradicts the explicit statement that the drugs do not kill. Choice (D) reverses the prediction that weaker selective pressure would slow resistance. Choice (C) confuses blocking reception with halting secretion, two different steps in the pathway described.",
+    "answerKo": "정답은 (B)이다. 마지막 문장은 이 약물이 세균을 죽이지 않고 무장해제한다고 했고, 지문은 정족수 감지가 독소 방출과 생물막 형성 같은 협동 행동을 조절한다고 설명하므로 수용체가 차단되면 세균은 살아 있되 협동 공격을 못 한다고 추론된다. (A)는 죽이지 않는다는 서술과 모순되고, (D)는 내성 압력이 약할 것이라는 예측과 정반대다. (C)는 수용체 차단과 분비 중단을 혼동한 것이다.",
+    "keyExpressions": [
+      {
+        "en": "quorum sensing",
+        "ko": "정족수 감지"
+      },
+      {
+        "en": "cell density",
+        "ko": "세포 밀도"
+      },
+      {
+        "en": "gene expression",
+        "ko": "유전자 발현"
+      },
+      {
+        "en": "virulence",
+        "ko": "병원성, 독력"
+      },
+      {
+        "en": "selective pressure",
+        "ko": "선택압"
+      }
+    ],
+    "tips": "추론 문제에서 마지막 문단의 전망·응용 서술은 자주 정답의 근거가 된다. 지문이 명시한 인과 사슬(수용체 차단 → 협동 불가 → 독성 감소)을 그대로 따라가면 답이 나온다. 함정은 지문의 예측을 정반대로 뒤집은 보기(D)와, 메커니즘의 단계를 혼동시키는 보기(C)다. '분비'와 '수용'처럼 비슷해 보이는 단계를 구분하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "낙엽수의 계절 적응",
+    "question": "Deciduous trees in temperate zones shed their leaves each autumn, an apparently wasteful act that is in fact carefully economical. Leaves are thin and poorly insulated, and in freezing weather the water column supplying them is prone to blockage by air bubbles. Retaining foliage through winter would therefore expose the tree to damage while yielding little photosynthesis under short, dim days. Before abscission, the tree withdraws nitrogen, phosphorus, and mobile nutrients from the leaf blade, recovering as much as half of the leaf's investment for storage in stems and roots.\\n\\nThe timing of this process is governed principally by night length, a signal that is unaffected by the year-to-year variation of temperature. Trees that relied on warmth alone would risk being caught by an early frost with their nutrients still stranded in the canopy. Photoperiod thus functions as a conservative calendar. Warming climates have accordingly produced an asymmetry: spring leaf-out, which responds strongly to temperature, has advanced markedly, whereas autumn senescence, anchored to day length, has shifted comparatively little.\\n\\nAccording to the passage, why do trees rely on night length rather than temperature to time leaf senescence?\\n(A) Night length is a more reliable signal that does not vary unpredictably from year to year.\\n(B) Temperature cannot be detected by the tissues of woody plants.\\n(C) Night length allows trees to retain foliage throughout the winter months.\\n(D) Temperature signals cause nutrients to be withdrawn too early in the season.",
+    "targetLevel": "사실 정보",
+    "answerEn": "(A) The second paragraph states that night length is unaffected by year-to-year temperature variation and that trees relying on warmth alone would risk an early frost stranding their nutrients, identifying reliability as the reason. Choice (C) contradicts the passage, which explains that retaining foliage through winter would be damaging. Choice (D) reverses the stated risk, which is withdrawal occurring too late rather than too early. Choice (B) asserts an inability to sense temperature that the passage denies by noting spring leaf-out responds strongly to temperature.",
+    "answerKo": "정답은 (A)이다. 2문단은 밤 길이가 해마다 변동하는 기온의 영향을 받지 않으며, 온기에만 의존하는 나무는 이른 서리에 붙잡혀 양분이 수관에 갇힐 위험이 있다고 설명한다. 즉 신뢰성이 이유다. (C)는 겨울철 잎 유지가 해롭다는 서술과 모순되고, (D)는 위험 방향을 뒤집었다(너무 늦게가 문제). (B)는 봄 개엽이 온도에 강하게 반응한다는 서술로 반박된다. 지문 요지는 광주기가 보수적 달력 역할을 해 온난화 하에서 봄·가을 반응의 비대칭이 생긴다는 것이다.",
+    "keyExpressions": [
+      {
+        "en": "deciduous",
+        "ko": "낙엽성의"
+      },
+      {
+        "en": "abscission",
+        "ko": "탈리, 잎 떨어짐"
+      },
+      {
+        "en": "photoperiod",
+        "ko": "광주기"
+      },
+      {
+        "en": "senescence",
+        "ko": "노화, 노쇠"
+      },
+      {
+        "en": "canopy",
+        "ko": "수관, 숲우듬지"
+      }
+    ],
+    "tips": "사실 정보 문제 중 이유를 묻는 유형은 지문의 because, therefore, thus 같은 인과 표지를 찾으면 근거 문장이 바로 나온다. 함정은 지문의 위험 요소를 반대 방향으로 서술한 보기(D)와, 지문이 명시적으로 부정한 내용을 단정하는 보기(B, C)다. 극단적 표현(cannot, throughout)이 들어간 보기는 특히 의심하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "부생균의 분해 작용",
+    "question": "Forests would suffocate beneath their own debris were it not for saprotrophic fungi. Wood is composed largely of cellulose and lignin, and lignin in particular is a chemically irregular polymer that resists attack by most enzymes. White-rot fungi secrete oxidative enzymes that degrade lignin, exposing the cellulose beneath and returning carbon to the atmosphere and mineral nutrients to the soil. Brown-rot fungi take a different route, using chemical reactions to disrupt cellulose while leaving modified lignin behind as a brown residue.\\n\\nThe geological record suggests how consequential these capacities are. During the Carboniferous period, vast quantities of plant material accumulated without fully decaying and were eventually compressed into coal. One influential hypothesis attributes this accumulation to a lag between the evolution of lignified wood and the later appearance of fungi able to break it down. Critics respond that the burial was driven mainly by swampy, oxygen-poor basins in which decay of any kind proceeded slowly, and the debate remains unresolved.\\n\\nDirections: Complete the table by matching each statement with the type of fungus it describes.\\nWhite-rot fungi\\nBrown-rot fungi\\n(A) Secrete oxidative enzymes that break down lignin\\n(B) Leave a modified lignin residue behind\\n(C) Expose cellulose by removing the surrounding polymer\\n(D) Disrupt cellulose through chemical reactions\\n(E) Are responsible for forming coal deposits directly\\n(F) Cannot obtain nutrients from woody tissue",
+    "targetLevel": "표 채우기",
+    "answerEn": "White-rot fungi: (A) and (C); Brown-rot fungi: (B) and (D). The passage says white-rot fungi secrete oxidative enzymes that degrade lignin and thereby expose the cellulose beneath, matching (A) and (C). It says brown-rot fungi use chemical reactions to disrupt cellulose and leave modified lignin as a brown residue, matching (D) and (B). Choice (E) is wrong because coal formation is attributed to the absence or delay of fungal decay, not to fungal action. Choice (F) contradicts the entire passage, which describes both groups obtaining nutrition from wood.",
+    "answerKo": "백색부후균은 (A)와 (C), 갈색부후균은 (B)와 (D)이다. 지문은 백색부후균이 산화효소를 분비해 리그닌을 분해하고 그 아래 셀룰로스를 드러낸다고 했고, 갈색부후균은 화학 반응으로 셀룰로스를 파괴하며 변형된 리그닌을 갈색 잔여물로 남긴다고 했다. (E)는 석탄 형성이 균류 분해의 지연 또는 부재로 설명되므로 오답이다. (F)는 두 균류 모두 목질에서 영양을 얻는다는 지문 전체와 모순된다.",
+    "keyExpressions": [
+      {
+        "en": "saprotrophic",
+        "ko": "부생성의, 죽은 유기물을 분해하는"
+      },
+      {
+        "en": "lignin",
+        "ko": "리그닌"
+      },
+      {
+        "en": "oxidative enzyme",
+        "ko": "산화 효소"
+      },
+      {
+        "en": "residue",
+        "ko": "잔여물"
+      },
+      {
+        "en": "remains unresolved",
+        "ko": "미해결로 남아 있다"
+      }
+    ],
+    "tips": "표 채우기는 지문이 두 대상을 대조하는 구조일 때 출제된다. 먼저 각 대상의 특징을 지문에서 밑줄 긋고 보기와 1대1로 대응시켜라. 함정은 두 대상 모두에 해당하는 것처럼 보이도록 일반화한 보기와, 지문의 인과를 뒤집은 보기(E)다. 어느 쪽에도 속하지 않는 오답이 반드시 포함되므로 모든 보기를 배치하려 하지 마라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "침입 식물의 확산",
+    "question": "When a plant species is transported beyond its native range, it usually fails to establish; occasionally it flourishes to a degree unattainable at home. One explanation invokes escape from natural enemies. In its original habitat a species is attacked by herbivores and pathogens that have adapted to it over evolutionary time, and resources devoted to defense against them are unavailable for growth. Freed from those enemies, an introduced population may reallocate its chemical investment toward rapid expansion.\\n\\nA second explanation concerns novel weaponry. Some invaders release compounds into the soil that inhibit the germination of neighboring plants. Native competitors, having never encountered these substances, may lack tolerance, whereas the species that evolved alongside the invader in its homeland have long since acquired resistance. The two explanations are not mutually exclusive, and evidence for each varies by case. What both share is an emphasis on the ecological context of the recipient community rather than on any intrinsic superiority of the invading species itself.\\n\\nThe author discusses the resistance of plants in the invader's homeland primarily in order to\\n(A) argue that invasive species are inherently more competitive than natives\\n(B) explain why the invader's chemicals harm new neighbors but not old ones\\n(C) suggest that native plants should be relocated to control invasions\\n(D) demonstrate that soil chemistry is unimportant to plant competition",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The mention of homeland plants having acquired resistance completes a contrast: naive competitors in the new range lack tolerance precisely because they never encountered the compounds, whereas long-term neighbors did. Choice (A) contradicts the closing sentence, which denies any intrinsic superiority of the invader. Choice (D) is the opposite of the paragraph's point, since soil chemicals are presented as decisive. Choice (C) proposes a management action the passage never mentions.",
+    "answerKo": "정답은 (B)이다. 원산지 식물들이 이미 내성을 획득했다는 언급은 대비를 완성한다. 즉 새 서식지의 경쟁자는 그 물질을 접한 적이 없어 내성이 없고, 오랜 이웃은 있다는 설명이다. (A)는 침입종의 본질적 우월성을 부정하는 마지막 문장과 모순된다. (D)는 토양 화학물질이 결정적이라는 문단 취지와 반대다. (C)는 지문에 없는 관리 방안을 제시했다. 지문 요지는 침입 성공이 수용 군집의 생태적 맥락에 달려 있다는 것이다.",
+    "keyExpressions": [
+      {
+        "en": "native range",
+        "ko": "원산 분포지"
+      },
+      {
+        "en": "natural enemy",
+        "ko": "천적"
+      },
+      {
+        "en": "reallocate",
+        "ko": "재배분하다"
+      },
+      {
+        "en": "novel weaponry",
+        "ko": "새로운 무기(가설)"
+      },
+      {
+        "en": "mutually exclusive",
+        "ko": "상호 배타적인"
+      }
+    ],
+    "tips": "수사적 의도 문제는 해당 언급이 완성하는 대비나 인과를 파악하는 것이 핵심이다. 특히 whereas, unlike, having never 같은 대조 표지 주변을 확인하라. 함정은 지문 마지막 결론과 정면으로 충돌하는 보기(A)와, 지문에 없는 실용적 제안(C)이다. 저자의 전체 논지 방향과 어긋나면 아무리 그럴듯해도 오답이다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "극한 환경 미생물",
+    "question": "Microorganisms inhabit environments once assumed to be sterile: brine pools saturated with salt, acidic drainage from mines, and hydrothermal vents where water emerges above the ordinary boiling point. Such extremophiles are not merely enduring these conditions but require them, growing poorly or not at all under moderate ones. Their proteins are stabilized by additional ionic bonds and compact folding; their membranes contain lipids that resist dissolution at high temperature; and specialized pumps expel excess ions or maintain internal acidity within a tolerable range.\\n\\nThe study of these organisms has reshaped several fields. Heat-stable enzymes recovered from thermophilic bacteria made automated DNA amplification practical, since the enzyme need not be replenished after each heating cycle. More broadly, the discovery that life persists where liquid water exists under pressure and chemical energy is available has widened the range of settings considered plausible for life beyond Earth, redirecting attention toward subsurface oceans on icy moons rather than warm planetary surfaces alone.\\n\\nAccording to the passage, why were heat-stable enzymes significant for DNA amplification?\\n(A) They allowed the reaction to proceed without adding fresh enzyme after each heating step.\\n(B) They eliminated the need to heat samples during amplification.\\n(C) They made it possible to grow thermophilic bacteria in laboratories.\\n(D) They increased the acidity tolerance of laboratory reactions.",
+    "targetLevel": "사실 정보",
+    "answerEn": "(A) The passage states that heat-stable enzymes from thermophilic bacteria made automated DNA amplification practical because the enzyme need not be replenished after each heating cycle. Choice (B) misreads this: heating remains part of the process, and it is the enzyme's survival of heating that matters. Choice (C) reverses cause and effect, since culturing the bacteria was a source of the enzymes rather than a result. Choice (D) imports acidity, which the passage associates with membrane and pump adaptations, not with amplification.",
+    "answerKo": "정답은 (A)이다. 지문은 호열성 세균에서 얻은 내열성 효소가 가열 주기마다 효소를 새로 넣을 필요를 없애 자동화된 DNA 증폭을 실용화했다고 명시한다. (B)는 가열 자체가 불필요해졌다고 오독한 것으로, 가열은 여전히 과정의 일부다. (C)는 인과를 뒤집었고, (D)는 막과 이온 펌프 적응에 관한 산성 내성 내용을 증폭 문제에 잘못 끌어왔다. 지문 요지는 극한 미생물 연구가 생명공학과 우주생물학의 시야를 넓혔다는 것이다.",
+    "keyExpressions": [
+      {
+        "en": "extremophile",
+        "ko": "극한 환경 생물"
+      },
+      {
+        "en": "hydrothermal vent",
+        "ko": "열수 분출공"
+      },
+      {
+        "en": "ionic bond",
+        "ko": "이온 결합"
+      },
+      {
+        "en": "replenish",
+        "ko": "보충하다"
+      },
+      {
+        "en": "subsurface ocean",
+        "ko": "지하 바다"
+      }
+    ],
+    "tips": "사실 정보 문제는 질문의 핵심 명사구(heat-stable enzymes, DNA amplification)를 지문에서 찾아 그 문장만 정독하면 된다. 함정은 지문 문장을 살짝 비틀어 없어진 것을 바꿔치기한 보기(B)와 인과를 역전시킨 보기(C)다. 지문의 다른 문단에서 가져온 개념(D)도 흔한 오답 패턴이므로 근거 문장과 같은 문단인지 확인하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "식물학·미생물",
+    "topic": "토양 미생물과 탄소",
+    "question": "Soils store more carbon than the atmosphere and all vegetation combined, and the size of that reservoir is determined less by how much plant material enters the soil than by how quickly microorganisms process it. Bacteria and fungi consume dead roots and litter, respiring part of the carbon back to the atmosphere and incorporating the remainder into their own bodies. When those cells die, their residues bind to mineral surfaces, where they can persist for centuries because physical protection, not chemical resistance, is what keeps them out of reach.\\n\\nThis understanding overturns an older assumption that stable soil carbon consisted of intrinsically indigestible plant compounds. It also implies that soil carbon storage is sensitive to conditions governing microbial activity. Warming accelerates respiration, releasing carbon faster, though the effect may weaken as microbial communities adjust. Disturbance that breaks apart soil aggregates exposes previously shielded residues to decomposers, a process that helps account for the substantial carbon losses observed when grasslands are converted to cultivated fields.\\n\\nAll of the following are mentioned in the passage as factors affecting soil carbon storage EXCEPT\\n(A) the rate at which microorganisms respire carbon back to the atmosphere\\n(B) the binding of microbial residues to mineral surfaces\\n(C) the physical breakup of soil aggregates by disturbance\\n(D) the total quantity of rainfall received by a region annually\\n(E) warming temperatures that accelerate microbial activity\\n(F) the intrinsic chemical resistance of stable plant compounds",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) and (F) are not supported. Rainfall is never mentioned anywhere in the passage, and the second paragraph explicitly rejects the older assumption that stable soil carbon consists of intrinsically indigestible plant compounds, stating instead that physical protection rather than chemical resistance preserves it. Choices (A), (B), (C), and (E) each restate mechanisms the passage presents: respiration losses, mineral binding, aggregate disruption, and warming-driven acceleration. (F) is the most tempting distractor because the idea appears in the text, but only as a view being overturned.",
+    "answerKo": "정답은 (D)와 (F)이다. 강수량은 지문 어디에도 언급되지 않는다. (F)는 2문단이 명시적으로 반박하는 옛 가정으로, 지문은 화학적 저항성이 아니라 물리적 보호가 탄소를 보존한다고 말한다. (A) 호흡 손실, (B) 광물 표면 결합, (C) 토양 입단 파괴, (E) 온난화에 의한 가속은 모두 지문에 제시된 요인이다. (F)가 가장 매력적인 오답인 이유는 그 개념이 지문에 등장하되 부정되는 견해로만 등장하기 때문이다.",
+    "keyExpressions": [
+      {
+        "en": "reservoir",
+        "ko": "저장고"
+      },
+      {
+        "en": "litter",
+        "ko": "낙엽 부스러기, 임상 유기물"
+      },
+      {
+        "en": "mineral surface",
+        "ko": "광물 표면"
+      },
+      {
+        "en": "soil aggregate",
+        "ko": "토양 입단"
+      },
+      {
+        "en": "overturn an assumption",
+        "ko": "가정을 뒤엎다"
+      }
+    ],
+    "tips": "부정 사실 정보에서 가장 위험한 함정은 지문에 '등장은 하지만 저자가 반박하는' 내용을 정답 요인으로 착각하는 것이다. 각 보기를 찾을 때 그 문장이 긍정 서술인지 반박 대상인지 반드시 구분하라. 아예 언급이 없는 보기(D)는 비교적 쉽게 걸러지므로, 언급 여부와 진위 여부를 두 단계로 나눠 점검하는 것이 안전하다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "항성의 일생과 진화",
+    "question": "Stars are not permanent fixtures of the sky but dynamic bodies whose life histories are governed almost entirely by their initial mass. A star begins as a contracting cloud of gas and dust; when its core temperature reaches roughly ten million kelvin, hydrogen fusion ignites, and the outward pressure of radiation balances the inward pull of gravity. This equilibrium, known as the main sequence, occupies about ninety percent of a star's existence.\n\nThe balance is temporary. Once the core's hydrogen is exhausted, fusion migrates to a surrounding shell, the outer envelope swells, and the star becomes a red giant. Low-mass stars such as the Sun eventually shed their envelopes and leave behind a dense white dwarf. Massive stars, by contrast, continue fusing progressively heavier elements until iron accumulates in the core. Iron fusion consumes rather than releases energy, so the core collapses catastrophically, producing a supernova whose remnant may be a neutron star or a black hole.\n\nAccording to the passage, which of the following is true about the main sequence stage?\n(A) It ends when a star's outer envelope is completely lost.\n(B) It represents the majority of a star's lifetime and involves hydrogen fusion in the core.\n(C) It occurs only in stars more massive than the Sun.\n(D) It begins after the star has become a red giant.",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The passage states that hydrogen fusion ignites when the core reaches about ten million kelvin and that this equilibrium, called the main sequence, 'occupies about ninety percent of a star's existence.' Choice (B) captures both facts. (A) confuses the main sequence with the later loss of the envelope by low-mass stars. (C) is contradicted because the Sun itself is described as a main-sequence star. (D) reverses the sequence, since the red giant phase follows the exhaustion of core hydrogen.",
+    "answerKo": "정답은 (B)입니다. 지문은 중심핵 온도가 약 1천만 켈빈에 도달하면 수소 핵융합이 시작되고, 이 평형 상태를 주계열이라 부르며 별 일생의 약 90퍼센트를 차지한다고 명시합니다. (A)는 저질량 별이 외피를 잃는 후기 단계와 혼동한 것이고, (C)는 태양도 주계열 별로 언급되므로 틀립니다. (D)는 적색거성이 주계열 이후 단계이므로 순서가 뒤바뀐 오답입니다.",
+    "keyExpressions": [
+      {
+        "en": "equilibrium",
+        "ko": "평형 상태"
+      },
+      {
+        "en": "main sequence",
+        "ko": "주계열"
+      },
+      {
+        "en": "envelope",
+        "ko": "(항성의) 외피"
+      },
+      {
+        "en": "catastrophically",
+        "ko": "파국적으로"
+      },
+      {
+        "en": "remnant",
+        "ko": "잔해"
+      }
+    ],
+    "tips": "사실 정보 유형은 지문에 명시된 내용만 정답이 됩니다. 문제의 핵심어(main sequence)를 지문에서 찾아 해당 문장과 앞뒤 한 문장을 정독하세요. 선택지가 지문의 표현을 그대로 쓰지 않고 바꿔 쓴 경우가 많으므로 의미 등가 여부를 따지고, 단계의 '순서'를 뒤집은 선택지는 전형적인 함정입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "외계행성 탐사 기법",
+    "question": "Detecting planets around other stars is extraordinarily difficult because a planet's feeble reflected light is overwhelmed by the glare of its host star. Astronomers therefore rely mainly on indirect techniques. The radial velocity method measures the slight wobble a planet induces in its star, detected as a periodic shift in the star's spectral lines. Because the size of the wobble depends on planetary mass, this technique favors massive planets in close orbits.\n\nThe transit method, employed by the Kepler mission, monitors the tiny dip in brightness that occurs when a planet crosses in front of its star. Transits reveal a planet's radius and, combined with radial velocity data, its density. However, transits require a nearly edge-on orbital alignment, so only a small fraction of existing planetary systems can be found this way. Direct imaging, though far rarer, remains valuable because it permits spectroscopic analysis of a planet's atmosphere.\n\nAccording to the passage, all of the following are stated about the transit method EXCEPT:\n(A) It measures a decrease in the observed brightness of a star.\n(B) It can yield a planet's radius.\n(C) It requires a particular orbital orientation relative to Earth.\n(D) It allows direct spectroscopic study of planetary atmospheres.",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) The passage attributes spectroscopic analysis of a planet's atmosphere to direct imaging, not to the transit method, so (D) is the statement not supported. (A) is stated as the 'tiny dip in brightness.' (B) is stated because transits 'reveal a planet's radius.' (C) is stated in the requirement of a 'nearly edge-on orbital alignment.' Negative factual questions require locating three supported statements and eliminating them.",
+    "answerKo": "정답은 (D)입니다. 지문에서 행성 대기의 분광 분석을 가능하게 하는 것은 통과(트랜싯)법이 아니라 직접 촬영법이라고 했습니다. (A)는 밝기의 미세한 감소, (B)는 반지름 측정, (C)는 거의 옆에서 보는 궤도 정렬 요건으로 모두 지문에 명시되어 있습니다. 부정 사실 정보 문제는 지문에 있는 세 개를 소거하는 방식으로 풉니다.",
+    "keyExpressions": [
+      {
+        "en": "feeble",
+        "ko": "미약한"
+      },
+      {
+        "en": "induce",
+        "ko": "유발하다"
+      },
+      {
+        "en": "periodic shift",
+        "ko": "주기적 이동"
+      },
+      {
+        "en": "edge-on alignment",
+        "ko": "측면 정렬"
+      },
+      {
+        "en": "spectroscopic",
+        "ko": "분광학적인"
+      }
+    ],
+    "tips": "부정 사실 정보(EXCEPT/NOT) 유형은 '지문에 없는 것' 또는 '지문과 어긋난 것'을 고릅니다. 선택지 네 개를 지문 순서대로 대조하며 근거를 찾은 것에 표시하고, 근거를 찾지 못한 하나를 답으로 확정하세요. 특히 지문의 다른 항목에 속한 특징을 엉뚱한 대상에 붙인 '속성 뒤바꾸기' 함정을 경계해야 합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "태양계의 형성 과정",
+    "question": "The prevailing account of solar system formation, the nebular hypothesis, holds that roughly 4.6 billion years ago a vast cloud of gas and dust began to collapse under its own gravity. As the cloud contracted, conservation of angular momentum caused it to spin faster and flatten into a rotating disk, with the majority of its mass concentrating at the center to form the proto-Sun.\n\nWithin the disk, temperature varied sharply with distance. Near the center, only metals and silicates could condense into solids, producing the small, rocky inner planets. Beyond the so-called frost line, water, ammonia, and methane froze, supplying abundant solid material that permitted rapid growth of massive cores capable of capturing hydrogen and helium directly from the disk. The resulting giant planets therefore differ fundamentally in composition from their inner counterparts, and this compositional divide remains the strongest evidence supporting the model.\n\nIt can be inferred from the passage that if the frost line had been located much closer to the proto-Sun, then\n(A) the Sun would have contained less mass than it does today.\n(B) icy material could have condensed at smaller orbital distances, possibly allowing giant planets to form nearer the Sun.\n(C) the disk would have stopped rotating before the planets formed.\n(D) no rocky planets of any kind could have formed in the solar system.",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage explains that beyond the frost line ices condensed, providing the abundant solids needed for massive cores that captured gas. Moving the frost line inward would therefore make icy solids available at smaller radii, permitting giant planet formation closer in. (A) is unsupported because the proto-Sun's mass depended on central collapse, not the frost line. (C) contradicts the stated conservation of angular momentum. (D) overstates the inference, since some region interior to any frost line would still be too hot for ices.",
+    "answerKo": "정답은 (B)입니다. 지문은 설선 바깥에서 물·암모니아·메탄이 얼어 고체 물질이 풍부해졌고 그 덕분에 거대한 핵이 빠르게 성장해 가스를 포획했다고 설명합니다. 따라서 설선이 안쪽에 있었다면 더 가까운 궤도에서도 얼음이 응결해 거대 행성이 형성될 수 있었으리라 추론됩니다. (A)는 태양 질량과 설선이 무관하므로, (C)는 각운동량 보존과 모순되므로, (D)는 과도한 일반화이므로 오답입니다.",
+    "keyExpressions": [
+      {
+        "en": "nebular hypothesis",
+        "ko": "성운설"
+      },
+      {
+        "en": "angular momentum",
+        "ko": "각운동량"
+      },
+      {
+        "en": "condense",
+        "ko": "응결하다"
+      },
+      {
+        "en": "frost line",
+        "ko": "설선, 동결선"
+      },
+      {
+        "en": "compositional divide",
+        "ko": "조성상의 구분"
+      }
+    ],
+    "tips": "추론 문제는 지문에 직접 쓰여 있지 않지만 논리적으로 반드시 따라 나오는 내용을 고릅니다. 가정형(if ~ had been) 문제는 지문이 제시한 인과 사슬을 찾아 그 조건을 바꾸면 결과가 어떻게 변하는지 따라가세요. '전혀', '결코' 같은 극단적 표현이 들어간 선택지는 대개 과도한 추론입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "소행성과 운석 연구",
+    "question": "Asteroids are rocky remnants left over from the era of planet formation, most of them confined to a broad belt between Mars and Jupiter. Planetary scientists once assumed the belt was the debris of a shattered planet, but the total mass of all known asteroids amounts to less than five percent of the Moon's. The modern explanation is that Jupiter's powerful gravitational influence repeatedly disturbed the orbits of nearby planetesimals, raising their collision speeds so much that impacts fragmented bodies rather than merging them.\n\nMeteorites, the fragments that survive passage through the atmosphere, are correspondingly precious. Chondrites, the most primitive class, contain mineral grains essentially unaltered since the birth of the solar system, and radiometric dating of these grains yields the standard age of 4.56 billion years. Without such samples, astronomers would have no laboratory access to material of that antiquity, since terrestrial rocks have all been reprocessed by geological activity.\n\nWhy does the author mention that 'terrestrial rocks have all been reprocessed by geological activity'?\n(A) To argue that Earth is geologically younger than the asteroid belt\n(B) To explain why meteorites are uniquely valuable for determining the solar system's age\n(C) To suggest that radiometric dating cannot be performed on Earth\n(D) To contrast the composition of chondrites with that of Jupiter",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The clause appears immediately after the claim that without meteorite samples astronomers would lack laboratory access to primordial material; the reprocessing of Earth rocks is the reason no such material survives on Earth, which establishes the unique value of meteorites. (A) misstates the point, since reprocessing concerns rock histories, not Earth's age. (C) is too broad because dating is in fact performed on terrestrial rocks, just not on primordial ones. (D) introduces a comparison the passage never makes.",
+    "answerKo": "정답은 (B)입니다. 해당 구절은 운석 시료가 없다면 그토록 오래된 물질을 실험실에서 다룰 수 없다는 주장 바로 뒤에 나오며, 지구 암석은 지질 활동으로 재가공되어 원시 물질이 남아 있지 않음을 설명합니다. 즉 운석의 고유한 가치를 뒷받침하는 근거입니다. (A)는 논점을 왜곡했고, (C)는 지나치게 광범위하며, (D)는 지문에 없는 비교입니다.",
+    "keyExpressions": [
+      {
+        "en": "planetesimal",
+        "ko": "미행성체"
+      },
+      {
+        "en": "fragment",
+        "ko": "조각내다, 파편"
+      },
+      {
+        "en": "chondrite",
+        "ko": "콘드라이트 운석"
+      },
+      {
+        "en": "radiometric dating",
+        "ko": "방사성 연대 측정"
+      },
+      {
+        "en": "antiquity",
+        "ko": "오래됨, 태고"
+      }
+    ],
+    "tips": "수사적 의도 문제는 '왜 언급했는가'를 묻습니다. 인용된 문장 자체보다 그 앞뒤 문장의 주장을 확인하는 것이 핵심입니다. 대개 그 문장은 바로 앞 주장의 근거·예시·대조 역할을 합니다. 내용이 사실이더라도 앞 주장과 연결되지 않는 선택지는 오답입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "은하의 구조와 분류",
+    "question": "Galaxies are conventionally sorted into three broad morphological classes. Spirals, of which the Milky Way is one, possess a flattened rotating disk threaded by luminous arms, a central bulge, and an extended halo of old stars and globular clusters. Ellipticals lack a disk entirely; their stars follow randomly oriented orbits, and they contain little cold gas, so star formation within them has largely ceased. Irregular galaxies show no coherent structure and are often small companions of larger systems.\n\nThis taxonomy, however, obscures a deeper truth. Observations of rotation curves reveal that the outer regions of spiral disks orbit far faster than the visible mass can explain. To keep such galaxies gravitationally bound, astronomers postulate an enveloping halo of dark matter comprising perhaps eighty percent of the total mass. Galactic morphology, then, describes only the luminous minority of what a galaxy actually contains.\n\nThe word 'obscures' in the passage is closest in meaning to\n(A) conceals\n(B) exaggerates\n(C) confirms\n(D) simplifies",
+    "targetLevel": "어휘",
+    "answerEn": "(A) In context, the taxonomy 'obscures a deeper truth' about dark matter, meaning it hides or masks that truth, so 'conceals' is the closest synonym. The following sentences reveal something the classification scheme fails to show, supporting a meaning of hiding. (C) is the opposite of the intended sense. (B) and (D) describe distortion or reduction rather than concealment, and neither fits the contrast signaled by 'however.'",
+    "answerKo": "정답은 (A)입니다. 문맥상 형태 분류 체계가 '더 깊은 진실을 가린다'는 뜻이므로 conceals(감추다)가 가장 가깝습니다. 뒤 문장에서 분류로는 드러나지 않는 암흑물질 이야기가 이어지는 점이 근거입니다. (C) confirms는 정반대이고, (B)와 (D)는 각각 과장·단순화로 however가 신호하는 대조 관계에 맞지 않습니다.",
+    "keyExpressions": [
+      {
+        "en": "morphological",
+        "ko": "형태학적인"
+      },
+      {
+        "en": "globular cluster",
+        "ko": "구상성단"
+      },
+      {
+        "en": "taxonomy",
+        "ko": "분류 체계"
+      },
+      {
+        "en": "rotation curve",
+        "ko": "회전 곡선"
+      },
+      {
+        "en": "postulate",
+        "ko": "가정하다"
+      }
+    ],
+    "tips": "어휘 문제는 사전적 의미보다 문맥이 우선입니다. 해당 단어가 포함된 문장을 읽고 앞뒤 문장이 만드는 논리 관계(대조·인과·예시)를 파악한 뒤, 선택지를 원문 자리에 넣어 문장이 자연스러운지 확인하세요. however, but 같은 연결어는 정답 방향을 알려주는 결정적 단서입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "우주 망원경의 이점",
+    "question": "Earth's atmosphere is both a shield and an obstacle. It absorbs most ultraviolet, X-ray, and infrared radiation, and turbulence in the air blurs incoming starlight, limiting the resolution achievable by even the largest ground-based instruments. Placing observatories above the atmosphere removes both handicaps at once, which is why orbiting telescopes have transformed nearly every branch of astronomy.\n\nThe Hubble Space Telescope, launched in 1990, demonstrated the advantage vividly once its optical flaw was corrected: it produced images sharp enough to resolve individual stars in neighboring galaxies. Its successor, the James Webb Space Telescope, was optimized instead for infrared wavelengths, which are strongly absorbed at ground level. Because the expansion of the universe stretches light from the earliest galaxies into the infrared, only such an instrument can observe them, and it must be kept extremely cold so that its own thermal emission does not swamp the faint signals it seeks.\n\nThe word 'them' in the passage refers to\n(A) infrared wavelengths\n(B) the earliest galaxies\n(C) faint signals\n(D) ground-based instruments",
+    "targetLevel": "지시 대상",
+    "answerEn": "(B) The sentence states that expansion stretches light from the earliest galaxies into the infrared, and that 'only such an instrument can observe them'; the object being observed is the earliest galaxies. (A) is incorrect because wavelengths are the medium, not the object of observation, and the clause already refers to them separately. (C) appears later in the sentence and cannot be the antecedent of an earlier pronoun. (D) is unrelated and belongs to the first paragraph.",
+    "answerKo": "정답은 (B)입니다. 해당 문장은 우주 팽창이 초기 은하의 빛을 적외선 영역으로 늘린다고 한 뒤 '그런 장비만이 그것들을 관측할 수 있다'고 하므로, 관측 대상은 초기 은하입니다. (A)는 관측 수단인 파장이고, (C)는 대명사보다 뒤에 등장해 선행사가 될 수 없으며, (D)는 첫 문단 소재로 무관합니다.",
+    "keyExpressions": [
+      {
+        "en": "turbulence",
+        "ko": "난류"
+      },
+      {
+        "en": "resolution",
+        "ko": "해상도, 분해능"
+      },
+      {
+        "en": "optical flaw",
+        "ko": "광학적 결함"
+      },
+      {
+        "en": "thermal emission",
+        "ko": "열복사"
+      },
+      {
+        "en": "swamp",
+        "ko": "압도하다, 뒤덮다"
+      }
+    ],
+    "tips": "지시 대상 문제는 대명사가 포함된 문장과 바로 앞 문장만 정독하면 대부분 해결됩니다. 대명사의 수(단수·복수)와 격을 먼저 확인해 후보를 좁히고, 선택한 명사를 대명사 자리에 대입해 문장이 논리적으로 성립하는지 검증하세요. 대명사 뒤에 나오는 명사는 선행사가 될 수 없습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "블랙홀의 형성과 관측",
+    "question": "A black hole is a region where gravity has become so concentrated that no signal, not even light, can escape from within its boundary, the event horizon. Stellar-mass black holes form when the iron core of a massive star collapses beyond the point at which any known pressure can support it. Supermassive varieties, millions to billions of times the Sun's mass, occupy the centers of most large galaxies, though the mechanism by which they grew so large so early remains disputed.\n\nBecause black holes emit no light of their own, they are detected exclusively through their effects on surrounding matter. Gas spiraling inward forms an accretion disk that is heated by friction to temperatures high enough to radiate X-rays, and stars orbiting an invisible companion betray its mass through their motions. More recently, interferometric imaging has captured the silhouette of the horizon itself against the glowing gas behind it.\n\nWhich of the following best expresses the essential information in the highlighted sentence: 'Because black holes emit no light of their own, they are detected exclusively through their effects on surrounding matter.'?\n(A) Black holes are invisible, so astronomers identify them only by observing how they influence nearby material.\n(B) Black holes emit faint light that can be detected when nearby matter is absent.\n(C) Surrounding matter prevents astronomers from detecting the light produced by black holes.\n(D) Astronomers have concluded that black holes cannot be detected by any method.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(A) The original sentence has two parts: black holes produce no light, and therefore detection depends solely on their influence on nearby matter. (A) preserves both the cause and the exclusive means of detection. (B) contradicts the claim that they emit no light. (C) reverses the logic by making surrounding matter an obstacle rather than the means of detection. (D) contradicts the passage, which describes several successful detection techniques.",
+    "answerKo": "정답은 (A)입니다. 원문은 '스스로 빛을 내지 않는다'는 원인과 '주변 물질에 미치는 영향으로만 탐지된다'는 결과, 두 요소로 구성됩니다. (A)는 두 요소를 모두 유지합니다. (B)는 빛을 방출하지 않는다는 전제와 모순되고, (C)는 주변 물질을 탐지 수단이 아닌 방해물로 뒤집었으며, (D)는 실제 탐지 사례를 서술한 지문과 어긋납니다.",
+    "keyExpressions": [
+      {
+        "en": "event horizon",
+        "ko": "사건의 지평선"
+      },
+      {
+        "en": "accretion disk",
+        "ko": "강착 원반"
+      },
+      {
+        "en": "betray",
+        "ko": "드러내다, 내비치다"
+      },
+      {
+        "en": "interferometric",
+        "ko": "간섭계의"
+      },
+      {
+        "en": "silhouette",
+        "ko": "윤곽, 실루엣"
+      }
+    ],
+    "tips": "문장 재진술 유형은 원문의 핵심 정보와 논리 관계를 모두 보존한 선택지를 고릅니다. 먼저 원문을 주어·동사 중심의 짧은 절로 쪼개고, 인과·양보·조건 등 연결 관계를 표시하세요. 세부 단어가 비슷해 보여도 인과의 방향을 뒤집거나 정보를 추가·삭제한 선택지는 오답입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "우주 팽창과 적색이동",
+    "question": "[1] In the 1920s Edwin Hubble measured the distances to a number of nebulae and found that nearly all of them were receding from the Milky Way. [2] Moreover, the recession speed of a galaxy proved to be roughly proportional to its distance, a relation now known as Hubble's law. [3] The straightforward interpretation is that space itself is expanding, carrying galaxies apart like raisins in rising dough. [4]\n\nThis expansion also explains the cosmic microwave background, a faint glow of radiation filling the sky in every direction. If the universe was once far denser and hotter, it must have been filled with a hot plasma opaque to light; as expansion cooled it, atoms formed and the radiation was released. Stretched by billions of years of expansion, that ancient light now appears not as visible glare but as microwaves at a temperature of only 2.7 kelvin.\n\nLook at the four squares [1], [2], [3], [4] that indicate where the following sentence could be added to the passage.\nInserted sentence: 'Their motion was revealed by a shift of their spectral lines toward longer, redder wavelengths.'\nWhere would the sentence best fit?\n(A) [1]\n(B) [2]\n(C) [3]\n(D) [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(A) The inserted sentence explains how the recession was detected, and its pronoun 'Their' must refer to the nebulae introduced in the first sentence. Placing it at [1], immediately after that sentence, supplies the evidence for the recession before the passage moves on to the distance relation signaled by 'Moreover.' Position [2] would separate the recession claim from its supporting evidence and break the flow into Hubble's law. Positions [3] and [4] come after the interpretation has shifted to expanding space, where a return to spectral evidence would be abrupt.",
+    "answerKo": "정답은 (A)입니다. 삽입 문장의 'Their'는 첫 문장에 소개된 성운들을 가리키며, 후퇴 운동이 어떻게 관측되었는지를 설명합니다. 따라서 후퇴를 언급한 문장 직후인 [1]이 적절합니다. [2]에 넣으면 Moreover로 이어지는 거리-속도 관계 흐름이 끊기고, [3]과 [4]는 이미 공간 팽창 해석으로 넘어간 뒤라 분광 증거로 되돌아가는 것이 부자연스럽습니다.",
+    "keyExpressions": [
+      {
+        "en": "recede",
+        "ko": "멀어지다, 후퇴하다"
+      },
+      {
+        "en": "proportional",
+        "ko": "비례하는"
+      },
+      {
+        "en": "cosmic microwave background",
+        "ko": "우주 마이크로파 배경"
+      },
+      {
+        "en": "opaque",
+        "ko": "불투명한"
+      },
+      {
+        "en": "spectral line",
+        "ko": "스펙트럼선"
+      }
+    ],
+    "tips": "문장 삽입 유형은 삽입 문장 속의 대명사(Their, this, such)와 연결어를 먼저 확인해 '무엇 다음에 와야 하는가'를 파악하세요. 지시어의 선행사가 바로 앞에 있어야 하며, 삽입 후 앞뒤 문장이 매끄럽게 이어지는지 소리 내어 읽듯 점검하는 것이 가장 확실한 검증법입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "화성 탐사와 물의 흔적",
+    "question": "Mars today is a cold, arid world whose thin atmosphere cannot sustain liquid water at the surface. Yet orbital imagery reveals branching valley networks, deltas, and layered sedimentary deposits that on Earth would be attributed without hesitation to flowing water. Mineralogical surveys reinforce the impression: clays and sulfates, which form only in the presence of water, are widespread in the planet's ancient southern highlands.\n\nRovers have supplied confirmation from the ground. In Gale Crater, Curiosity documented cross-bedded sandstones and fine mudstones consistent with a long-lived lake, together with the chemical ingredients life would require. The central question has therefore shifted from whether Mars once had water to why it lost it. The leading explanation invokes the loss of the planet's global magnetic field, after which the solar wind gradually stripped away the atmosphere and the surface pressure fell below the threshold at which liquid water is stable.\n\nAn introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage.\nIntroductory sentence: Although Mars is now dry, multiple lines of evidence indicate that liquid water was once abundant there.\n(A) Landforms such as valley networks and deltas resemble features produced by flowing water on Earth.\n(B) Water-formed minerals including clays and sulfates occur widely in ancient Martian terrain.\n(C) Curiosity discovered living microorganisms in the sediments of Gale Crater.\n(D) The loss of the planet's magnetic field allowed the solar wind to erode the atmosphere, ending surface water stability.\n(E) Mars has a thinner atmosphere than Venus does.\n(F) Sedimentary rock is more common on Mars than on any other planet.",
+    "targetLevel": "지문 요약",
+    "answerEn": "(A), (B), and (D) are correct. (A) and (B) summarize the two categories of evidence for past water, geomorphological and mineralogical, that the passage develops in its first paragraph and confirms with rover data. (D) captures the passage's explanation of how that water was lost, the second major idea. (C) misstates the text, which says Curiosity found the chemical ingredients life would require, not life itself. (E) and (F) introduce comparisons the passage never makes.",
+    "answerKo": "정답은 (A), (B), (D)입니다. (A)와 (B)는 지문이 제시한 과거 물 존재의 두 축, 즉 지형학적 증거와 광물학적 증거를 요약합니다. (D)는 물이 사라진 이유라는 두 번째 핵심 논지를 담습니다. (C)는 큐리오시티가 생명체가 아니라 생명에 필요한 화학 성분을 발견했다고 한 지문을 왜곡했고, (E)와 (F)는 지문에 없는 비교입니다.",
+    "keyExpressions": [
+      {
+        "en": "arid",
+        "ko": "건조한"
+      },
+      {
+        "en": "sedimentary deposit",
+        "ko": "퇴적층"
+      },
+      {
+        "en": "cross-bedded",
+        "ko": "사층리를 이룬"
+      },
+      {
+        "en": "invoke",
+        "ko": "근거로 들다"
+      },
+      {
+        "en": "threshold",
+        "ko": "임계점, 문턱값"
+      }
+    ],
+    "tips": "지문 요약 유형은 문단별 중심 생각을 골라야 하며, 지엽적 사실이나 지문에 없는 비교는 배제합니다. 도입 문장이 제시하는 요약의 방향을 먼저 확인하고, 각 선택지가 문단 전체를 대표하는지 아니면 한 문장짜리 세부인지 구분하세요. 지문 내용을 살짝 과장하거나 대상을 바꾼 선택지가 대표적 오답입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "혜성의 구조와 기원",
+    "question": "A comet is essentially a mixture of ice and dust that remains inert throughout most of its orbit. Its solid nucleus, typically only a few kilometers across, is darker than charcoal. When the nucleus approaches within a few astronomical units of the Sun, however, volatile ices sublimate directly into gas, releasing entrained dust and enveloping the nucleus in a diffuse coma that may exceed the diameter of a planet.\n\nTwo distinct tails then develop, and they are physically unrelated. The dust tail consists of grains pushed gently outward by radiation pressure; because the grains retain some of the nucleus's orbital motion, this tail curves. The ion tail, by contrast, is composed of gas molecules ionized by ultraviolet sunlight and swept directly away by the solar wind, so it points almost exactly opposite the Sun regardless of the comet's direction of travel. Short-period comets originate in the Kuiper Belt, while long-period ones fall inward from the distant Oort Cloud.\n\nAccording to the passage, the ion tail differs from the dust tail in that the ion tail\n(A) is composed of larger particles that reflect more sunlight\n(B) points directly away from the Sun because the solar wind carries its material outward\n(C) forms only when a comet is far from the Sun\n(D) curves because it retains the orbital motion of the nucleus",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The passage states that the ion tail's ionized gas is 'swept directly away by the solar wind, so it points almost exactly opposite the Sun.' (A) is wrong because ions are gas molecules, not larger grains. (C) contradicts the passage, which explains that activity begins as the nucleus approaches the Sun. (D) describes the dust tail, whose grains retain orbital motion and therefore curve.",
+    "answerKo": "정답은 (B)입니다. 지문은 이온 꼬리가 태양풍에 의해 곧바로 밀려나 태양 반대 방향을 거의 정확히 가리킨다고 명시합니다. (A)는 이온이 기체 분자이므로 틀리고, (C)는 태양에 접근할 때 활동이 시작된다는 서술과 모순되며, (D)는 궤도 운동을 유지해 휘어지는 먼지 꼬리의 특징을 잘못 옮긴 것입니다.",
+    "keyExpressions": [
+      {
+        "en": "inert",
+        "ko": "활성이 없는"
+      },
+      {
+        "en": "sublimate",
+        "ko": "승화하다"
+      },
+      {
+        "en": "entrained",
+        "ko": "휩쓸려 딸려 나온"
+      },
+      {
+        "en": "coma",
+        "ko": "코마, 혜성의 대기"
+      },
+      {
+        "en": "radiation pressure",
+        "ko": "복사압"
+      }
+    ],
+    "tips": "두 대상을 비교하는 지문에서는 각 대상의 속성을 표처럼 정리하며 읽으세요. 사실 정보 문제의 오답은 대개 다른 대상의 속성을 가져다 붙이는 방식으로 만들어집니다. 문제에서 묻는 대상(ion tail)을 지문에서 찾은 뒤, 그 문장 안에서만 근거를 확인하는 것이 안전합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "별의 거리 측정법",
+    "question": "Determining stellar distances requires a ladder of techniques, each calibrated by the one below it. The lowest rung is trigonometric parallax, the apparent shift of a nearby star against distant background objects as Earth moves from one side of its orbit to the other. Parallax is purely geometric and therefore assumption-free, but the angles involved shrink with distance, so even space-based measurements become unreliable beyond a few thousand parsecs.\n\nFor greater distances astronomers turn to standard candles, objects whose intrinsic luminosity can be inferred independently. Cepheid variables serve this role because the period of their pulsation is tightly correlated with luminosity; comparing intrinsic and apparent brightness yields distance. Beyond the reach of individual Cepheids, Type Ia supernovae take over, since these explosions occur at a characteristic mass and thus a nearly uniform peak brightness. Each rung inherits the uncertainties of those beneath it, which is why an error in the parallax scale propagates all the way to measurements of the expansion rate of the universe.\n\nIt can be inferred from the passage that trigonometric parallax is regarded as especially trustworthy because\n(A) it can be applied to objects at any distance from Earth\n(B) it depends on geometry rather than on assumptions about an object's intrinsic brightness\n(C) it was developed before the other techniques described\n(D) it produces measurements that require no calibration of any kind for supernovae",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage calls parallax 'purely geometric and therefore assumption-free,' in contrast with standard candles, which require inferring intrinsic luminosity. The reliability therefore rests on its independence from such assumptions. (A) contradicts the statement that parallax becomes unreliable beyond a few thousand parsecs. (C) is never mentioned. (D) misreads the ladder metaphor, since higher rungs are in fact calibrated by parallax.",
+    "answerKo": "정답은 (B)입니다. 지문은 시차법을 '순수하게 기하학적이며 따라서 가정이 필요 없다'고 서술하며, 이는 고유 광도를 추정해야 하는 표준 촛불 방식과 대비됩니다. (A)는 수천 파섹 너머에서 신뢰도가 떨어진다는 서술과 모순되고, (C)는 언급이 없으며, (D)는 상위 단계가 시차법으로 보정된다는 사다리 비유를 잘못 이해한 것입니다.",
+    "keyExpressions": [
+      {
+        "en": "calibrate",
+        "ko": "보정하다"
+      },
+      {
+        "en": "parallax",
+        "ko": "시차"
+      },
+      {
+        "en": "intrinsic luminosity",
+        "ko": "고유 광도"
+      },
+      {
+        "en": "pulsation",
+        "ko": "맥동"
+      },
+      {
+        "en": "propagate",
+        "ko": "전파되다"
+      }
+    ],
+    "tips": "추론 문제 중 '왜 신뢰받는가'를 묻는 유형은 지문 속 대조 구조를 활용하세요. 저자가 A는 ~하지만 B는 ~하다고 서술한 부분이 곧 추론의 근거입니다. 지문의 한계(수천 파섹 너머 불확실) 서술을 무시하고 '어떤 거리에서도 가능'처럼 확대한 선택지는 반드시 배제해야 합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "목성형 행성의 위성계",
+    "question": "The giant planets are accompanied by miniature systems of moons that behave in some respects like solar systems in their own right. Jupiter's four Galilean satellites orbit in the plane of the planet's equator and decrease in density with distance, a pattern echoing the arrangement of the planets around the Sun and suggesting that they condensed from a disk of material surrounding the young Jupiter.\n\nTheir most striking feature, however, is tidal heating. Because the inner three moons are locked in an orbital resonance, their mutual gravitational tugs keep their orbits slightly elliptical, so Jupiter's tidal force on each moon varies over the course of an orbit. The resulting flexing generates internal heat. On Io the effect drives continuous volcanism, while on Europa it is thought to maintain a liquid ocean beneath an icy crust. Such heating requires no sunlight whatsoever, which greatly widens the range of environments where liquid water, and conceivably life, might persist.\n\nThe word 'echoing' in the passage is closest in meaning to\n(A) resembling\n(B) replacing\n(C) disturbing\n(D) predicting",
+    "targetLevel": "어휘",
+    "answerEn": "(A) The clause says the moons' pattern of decreasing density 'echoes' the arrangement of planets around the Sun, and the following clause draws an analogy about condensing from a disk, so the sense is one of similarity: 'resembling.' (B) and (C) imply substitution or interference, which no part of the comparison supports. (D) suggests a temporal forecast, but the passage is drawing a structural parallel, not a prediction.",
+    "answerKo": "정답은 (A)입니다. 위성들의 밀도가 거리에 따라 감소하는 양상이 태양 주위 행성 배열과 '유사하다'는 뜻이며, 뒤이어 원반에서 응결했다는 유비가 이어집니다. 따라서 resembling이 적절합니다. (B)와 (C)는 대체·방해의 의미로 문맥과 무관하고, (D)는 예측을 뜻해 구조적 유사성 서술과 맞지 않습니다.",
+    "keyExpressions": [
+      {
+        "en": "satellite",
+        "ko": "위성"
+      },
+      {
+        "en": "orbital resonance",
+        "ko": "궤도 공명"
+      },
+      {
+        "en": "tidal heating",
+        "ko": "조석 가열"
+      },
+      {
+        "en": "flexing",
+        "ko": "휘어짐, 변형"
+      },
+      {
+        "en": "persist",
+        "ko": "지속되다"
+      }
+    ],
+    "tips": "어휘 문제에서 비유적 동사(echo, betray, harbor 등)가 나오면 문자적 의미가 아니라 문장 내 논리적 역할을 따지세요. 이 문장이 유사성을 말하는지, 인과를 말하는지 판단한 뒤 그에 맞는 선택지를 고르면 됩니다. 뒤 문장의 suggesting 같은 신호어가 결정적 단서가 됩니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "태양의 활동과 자기장",
+    "question": "The Sun is not a placid sphere of gas but a magnetically active star whose behavior varies on an approximately eleven-year cycle. Because the Sun rotates faster at its equator than at its poles, magnetic field lines frozen into the plasma become progressively wound and twisted. Where concentrated bundles of field break through the visible surface, they inhibit the upwelling of hot gas, producing sunspots that appear dark only because they are cooler than their surroundings.\n\nStored magnetic energy is released explosively. Flares emit bursts of X-rays and ultraviolet light that reach Earth in about eight minutes, while coronal mass ejections hurl billions of tons of plasma outward over one to three days. When such a cloud strikes Earth's magnetosphere it can induce currents in power grids, disrupt radio communications, and damage satellite electronics. Space weather forecasting has consequently become a practical concern rather than a purely scientific one.\n\nAccording to the passage, sunspots appear dark because\n(A) they contain no magnetic field\n(B) they are cooler than the surrounding surface because concentrated magnetic fields suppress the rise of hot gas\n(C) they are located deep beneath the visible surface of the Sun\n(D) they absorb the X-rays emitted during solar flares",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The passage states that concentrated bundles of magnetic field breaking through the surface 'inhibit the upwelling of hot gas, producing sunspots that appear dark only because they are cooler than their surroundings.' (A) inverts the explanation, since sunspots are regions of intense field. (C) contradicts the statement that the field breaks through the visible surface. (D) confuses sunspots with flares, which the passage treats as a separate phenomenon.",
+    "answerKo": "정답은 (B)입니다. 지문은 집중된 자기장 다발이 표면을 뚫고 나오면서 뜨거운 기체의 상승을 억제해 주변보다 온도가 낮아지고, 그래서 어둡게 보인다고 설명합니다. (A)는 자기장이 강한 영역이라는 사실과 정반대이고, (C)는 가시 표면을 뚫고 나온다는 서술과 모순되며, (D)는 흑점과 플레어를 혼동한 오답입니다.",
+    "keyExpressions": [
+      {
+        "en": "placid",
+        "ko": "잔잔한, 평온한"
+      },
+      {
+        "en": "inhibit",
+        "ko": "억제하다"
+      },
+      {
+        "en": "upwelling",
+        "ko": "상승, 용승"
+      },
+      {
+        "en": "coronal mass ejection",
+        "ko": "코로나 질량 방출"
+      },
+      {
+        "en": "magnetosphere",
+        "ko": "자기권"
+      }
+    ],
+    "tips": "인과를 묻는 사실 정보 문제(because)는 지문에서 원인을 나타내는 표현(because, so, produce, lead to)을 찾아 표시하세요. 정답은 지문의 인과 사슬을 그대로 옮긴 선택지입니다. 원인과 결과를 뒤집거나, 지문의 다른 현상을 원인으로 끌어온 선택지는 배제합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "성간 물질과 별 탄생",
+    "question": "The space between stars is far from empty. It contains a tenuous medium of gas and dust that, though it averages fewer than one atom per cubic centimeter, accumulates over vast volumes into an enormous reservoir of material. Roughly one percent of its mass consists of solid grains of silicate and carbon, and these grains dim and redden the light of background stars, an effect that misled early astronomers into underestimating galactic distances.\n\nThe medium is not uniform. In dense molecular clouds, dust shields the interior from ultraviolet radiation, permitting hydrogen to exist as molecules and temperatures to fall to ten kelvin or so. Under such conditions gravity can finally overcome thermal pressure, and fragments of the cloud collapse into protostars. Newborn massive stars then flood their surroundings with radiation and eventually explode, dispersing the remaining gas and enriching it with heavy elements. Star formation thus both consumes the interstellar medium and continuously renews it.\n\nWhich of the following best expresses the essential information in the highlighted sentence: 'Star formation thus both consumes the interstellar medium and continuously renews it.'?\n(A) The interstellar medium will eventually be exhausted by the formation of new stars.\n(B) Forming stars uses up interstellar material while also returning enriched material to it.\n(C) The interstellar medium is renewed only when star formation stops entirely.\n(D) Stars form more rapidly in regions where the interstellar medium has been enriched.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(B) The sentence asserts a dual effect: star formation depletes the medium and simultaneously replenishes it, as the preceding sentence explains through dispersal and enrichment by dying massive stars. (B) preserves both halves. (A) drops the renewal half and adds an unsupported prediction. (C) reverses the relationship by making renewal conditional on the cessation of star formation. (D) states a different claim about formation rates that the sentence does not make.",
+    "answerKo": "정답은 (B)입니다. 원문은 별 형성이 성간 물질을 소비하는 동시에 갱신한다는 이중 효과를 말하며, 앞 문장에서 대질량 별의 폭발이 가스를 흩뜨리고 중원소로 풍부하게 만든다고 설명했습니다. (A)는 갱신 측면을 빠뜨렸고, (B)만 두 측면을 모두 담습니다. (C)는 관계를 뒤집었고, (D)는 원문에 없는 형성 속도 주장입니다.",
+    "keyExpressions": [
+      {
+        "en": "tenuous",
+        "ko": "희박한"
+      },
+      {
+        "en": "reservoir",
+        "ko": "저장고"
+      },
+      {
+        "en": "molecular cloud",
+        "ko": "분자운"
+      },
+      {
+        "en": "thermal pressure",
+        "ko": "열압력"
+      },
+      {
+        "en": "disperse",
+        "ko": "흩뿌리다"
+      }
+    ],
+    "tips": "문장 재진술에서 both A and B 구조가 나오면 두 요소를 모두 포함한 선택지만 정답이 될 수 있습니다. 한쪽만 옮기거나, 원문에 없는 예측·조건을 덧붙인 선택지는 즉시 제외하세요. 앞뒤 문장을 함께 읽어 두 요소가 각각 무엇을 가리키는지 확인하면 정확도가 높아집니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "천문학·우주",
+    "topic": "두 유형의 초신성",
+    "question": "Astronomers recognize two fundamentally different kinds of supernovae, distinguished less by appearance than by cause. Core-collapse supernovae mark the death of a single star of at least eight solar masses. Once iron accumulates in the core, no further fusion can release energy; the core implodes within seconds and the rebounding shock expels the star's outer layers, leaving a neutron star or black hole behind. Because such stars are short-lived, these events occur almost exclusively in regions of ongoing star formation, and their peak brightness varies considerably from case to case.\n\nType Ia supernovae arise instead in binary systems containing a white dwarf that accretes matter from a companion. When the dwarf nears a critical mass, runaway carbon fusion destroys it completely, leaving no compact remnant at all. Since the explosion always occurs at nearly the same mass, the peak luminosity is highly uniform, which is what makes these events useful as distance indicators. They are also observed in old elliptical galaxies where no young stars remain.\n\nDirections: Complete the table by matching each statement with the type of supernova it describes.\nStatements:\n(A) Requires a star of at least eight solar masses\n(B) Leaves behind a neutron star or black hole\n(C) Occurs in binary systems involving a white dwarf\n(D) Produces explosions of nearly uniform peak brightness\n(E) Destroys the exploding object entirely, leaving no remnant\n(F) Occurs only in galaxies that contain no dust",
+    "targetLevel": "표 채우기",
+    "answerEn": "Core-collapse: (A), (B). Type Ia: (C), (D), (E). The passage assigns the eight-solar-mass threshold and the neutron star or black hole remnant to core-collapse events. It assigns the white dwarf binary origin, the uniform peak luminosity that enables distance measurement, and the complete destruction of the dwarf to Type Ia events. (F) is not used because the passage mentions old elliptical galaxies, saying nothing about dust content, so it belongs to neither category.",
+    "answerKo": "정답은 중력 붕괴형에 (A), (B), Ia형에 (C), (D), (E)입니다. 지문은 태양 질량 8배 이상이라는 조건과 중성자별·블랙홀 잔해를 중력 붕괴형에, 백색왜성 쌍성계 기원, 균일한 최대 광도, 완전한 파괴를 Ia형에 배정합니다. (F)는 지문이 늙은 타원은하를 언급했을 뿐 먼지 함량은 말하지 않으므로 어느 쪽에도 해당하지 않습니다.",
+    "keyExpressions": [
+      {
+        "en": "core-collapse",
+        "ko": "중력 붕괴"
+      },
+      {
+        "en": "implode",
+        "ko": "내파하다"
+      },
+      {
+        "en": "accrete",
+        "ko": "강착하다, 끌어모으다"
+      },
+      {
+        "en": "runaway fusion",
+        "ko": "폭주 핵융합"
+      },
+      {
+        "en": "compact remnant",
+        "ko": "조밀 잔해"
+      }
+    ],
+    "tips": "표 채우기 유형은 두 범주를 나누어 설명하는 지문에서 출제됩니다. 읽으면서 각 문단이 어느 범주를 다루는지 표시하고 속성을 메모하세요. 선택지 중 한두 개는 어느 범주에도 속하지 않는 미사용 항목이며, 지문에 아예 없는 정보(먼지 함량 등)가 그 역할을 합니다. 범주를 바꿔 놓은 선택지에 특히 주의하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "판구조론의 등장",
+    "question": "For most of the nineteenth century, geologists regarded the continents as permanent fixtures anchored in place since the earth cooled. This assumption was challenged in 1912 by Alfred Wegener, who noted that the coastlines of South America and Africa fit together with remarkable precision and that identical fossil reptiles occurred on both landmasses. Wegener proposed that a single supercontinent had fragmented and that its pieces had drifted apart over geological time.\n\nHis hypothesis was nevertheless rejected for decades, largely because he could not identify a force capable of pushing continents through solid oceanic rock. The mechanism emerged only in the 1960s, when surveys of the seafloor revealed long volcanic ridges where new crust is continuously generated. Magnetic stripes recorded in that crust preserved reversals of the earth's magnetic field in symmetrical bands, demonstrating that the ocean floor itself spreads outward. Continents, it turned out, do not plow through the crust but ride passively upon moving plates.\n\nAccording to the passage, why was Wegener's hypothesis initially rejected?\n(A) His fossil evidence was later shown to be inaccurate.\n(B) He could not explain what force moved the continents.\n(C) The coastlines of Africa and South America do not truly match.\n(D) Geologists had already proposed a competing theory of seafloor spreading.",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The passage states explicitly that Wegener's hypothesis was rejected for decades 'largely because he could not identify a force capable of pushing continents through solid oceanic rock.' This is a direct restatement of the reason given in the text. Option A is contradicted because the fossil evidence is presented as supporting his case. Option C misreads the passage, which affirms that the coastlines fit with remarkable precision. Option D reverses the chronology, since seafloor spreading was discovered only in the 1960s.",
+    "answerKo": "정답은 (B)입니다. 지문은 베게너의 가설이 수십 년간 거부된 이유가 '단단한 해양 암석을 뚫고 대륙을 밀어낼 수 있는 힘을 제시하지 못했기 때문'이라고 명시합니다. (A)는 화석 증거가 오히려 근거로 제시되므로 틀렸고, (C)는 해안선이 정확히 맞물린다는 서술과 반대입니다. (D)는 해저 확장설이 1960년대에야 등장했으므로 시간 순서가 어긋납니다.",
+    "keyExpressions": [
+      {
+        "en": "permanent fixture",
+        "ko": "영구히 고정된 것"
+      },
+      {
+        "en": "supercontinent",
+        "ko": "초대륙"
+      },
+      {
+        "en": "oceanic crust",
+        "ko": "해양 지각"
+      },
+      {
+        "en": "magnetic reversal",
+        "ko": "지자기 역전"
+      },
+      {
+        "en": "seafloor spreading",
+        "ko": "해저 확장"
+      }
+    ],
+    "tips": "사실 정보 유형은 지문에 명시된 내용만 정답이 됩니다. 문제의 핵심어(rejected, because)를 지문에서 찾아 해당 문장 한두 개만 정밀하게 읽으세요. 상식이나 배경지식으로 추론하지 말고, 오답은 대개 지문의 단어를 재사용하되 관계를 뒤집는 방식으로 만들어집니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "빙하기의 주기",
+    "question": "Over the past 2.6 million years, the earth has repeatedly swung between prolonged glacial intervals and shorter warm periods called interglacials. Ice cores drilled from Antarctica and Greenland preserve a continuous record of these oscillations in the form of trapped air bubbles and variations in oxygen isotope ratios. The record indicates that during peak glaciations, ice sheets more than three kilometers thick covered much of northern Europe and North America, and global sea level stood roughly 120 meters below its present position.\n\nThe pacing of these cycles is generally attributed to slow, predictable variations in the earth's orbit, an idea formalized by Milutin Milankovitch. Changes in orbital eccentricity, axial tilt, and the timing of the seasons alter the amount of sunlight reaching high northern latitudes in summer. Because these variations alone are too weak to produce the observed temperature swings, researchers argue that feedbacks involving carbon dioxide and the reflectivity of ice must substantially amplify the initial orbital signal.\n\nWhich of the following can be inferred from the passage about orbital variations?\n(A) They are the sole cause of glacial cycles.\n(B) They act as a trigger whose effect is magnified by other processes.\n(C) They have only affected the Southern Hemisphere.\n(D) They occur unpredictably and cannot be calculated.",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage says orbital variations are 'too weak to produce the observed temperature swings' and that feedbacks 'substantially amplify the initial orbital signal.' The logical inference is that orbits initiate the cycle while other mechanisms enlarge its effect. Option A contradicts the statement about insufficiency. Option C is wrong because the text emphasizes summer sunlight at high northern latitudes. Option D conflicts with the description of the variations as slow and predictable.",
+    "answerKo": "정답은 (B)입니다. 지문은 궤도 변화만으로는 관측된 온도 변동을 만들기에 '너무 약하다'고 하고, 이산화탄소와 얼음 반사율 피드백이 초기 신호를 '크게 증폭'한다고 설명합니다. 따라서 궤도 변화는 방아쇠 역할을 하고 다른 과정이 효과를 확대한다는 추론이 가능합니다. (A)는 단독 원인이 아니라는 서술과 모순되고, (C)는 북반구 고위도를 언급한 점과 어긋나며, (D)는 예측 가능하다는 서술과 반대입니다.",
+    "keyExpressions": [
+      {
+        "en": "interglacial",
+        "ko": "간빙기"
+      },
+      {
+        "en": "oxygen isotope ratio",
+        "ko": "산소 동위원소 비율"
+      },
+      {
+        "en": "orbital eccentricity",
+        "ko": "궤도 이심률"
+      },
+      {
+        "en": "axial tilt",
+        "ko": "자전축 기울기"
+      },
+      {
+        "en": "feedback",
+        "ko": "되먹임 작용"
+      }
+    ],
+    "tips": "추론 문제는 지문에 직접 쓰여 있지 않지만 논리적으로 반드시 뒤따르는 내용을 고릅니다. '너무 약하다', '증폭한다' 같은 정도 표현과 인과 연결어에 주목하세요. 지나치게 강한 단정(sole, always, never)이 들어간 선택지는 대체로 오답입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "화산 분화의 유형",
+    "question": "Volcanoes differ dramatically in the violence of their eruptions, and the decisive variable is the chemistry of the magma that feeds them. Basaltic magma, rich in iron and magnesium but poor in silica, flows readily and allows dissolved gases to escape gradually. Eruptions of this type, typified by the shield volcanoes of Hawaii, produce broad rivers of lava that advance slowly enough for observers to walk beside them.\n\nMagma with a high silica content behaves in the opposite manner. Its molecules link into long chains that make the melt extremely viscous, so expanding gas bubbles cannot escape and instead build enormous pressure beneath a plug of hardened rock. When that plug finally fails, the magma is torn apart in a fraction of a second, generating columns of ash that can reach the stratosphere and avalanches of superheated gas and debris. Such explosive eruptions account for the overwhelming majority of volcanic fatalities recorded in historical times.\n\nWhy does the author mention that observers can walk beside Hawaiian lava flows?\n(A) To warn readers about the dangers of volcano tourism\n(B) To illustrate how slowly and predictably low-silica lava moves\n(C) To argue that shield volcanoes are more common than other types\n(D) To explain how scientists collect samples of molten rock",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The detail appears in a sentence describing basaltic eruptions as gentle because gases escape gradually. Being able to walk beside a flow is a concrete image that conveys the slow, non-explosive character of low-silica lava, setting up the contrast with the violent eruptions described next. The passage offers no warning about tourism, makes no claim about relative frequency, and never discusses sampling methods.",
+    "answerKo": "정답은 (B)입니다. 해당 세부 사항은 가스가 서서히 빠져나가 분화가 온순하다는 문장 안에 등장하며, 용암 옆을 걸을 수 있다는 구체적 이미지는 저실리카 용암의 느리고 비폭발적인 성격을 보여줍니다. 이는 뒤에 이어지는 폭발적 분화와의 대조를 준비하는 장치입니다. 관광 경고, 빈도 주장, 시료 채취는 지문에 없습니다.",
+    "keyExpressions": [
+      {
+        "en": "basaltic magma",
+        "ko": "현무암질 마그마"
+      },
+      {
+        "en": "silica content",
+        "ko": "규산염 함량"
+      },
+      {
+        "en": "viscous",
+        "ko": "점성이 높은"
+      },
+      {
+        "en": "shield volcano",
+        "ko": "순상 화산"
+      },
+      {
+        "en": "stratosphere",
+        "ko": "성층권"
+      }
+    ],
+    "tips": "수사적 의도 문제는 '왜 이 정보를 넣었는가'를 묻습니다. 해당 문장 자체가 아니라 앞뒤 문장의 논지를 확인해 그 세부 사항이 어떤 주장을 뒷받침하는지 파악하세요. 대조, 예시, 근거 제시 중 어떤 기능인지 정하면 답이 좁혀집니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "퇴적층과 지층 누중",
+    "question": "Sedimentary rocks form when particles of sand, silt, and clay settle out of water or air and are gradually compacted and cemented into stone. Because deposition proceeds layer upon layer, the resulting sequence records the passage of time in a physical form: in any undisturbed succession, the strata at the bottom were laid down before those above them. This principle of superposition, articulated by Nicolaus Steno in the seventeenth century, remains the foundation of stratigraphy.\n\nThe utility of the principle is limited by the incompleteness of the record. Erosion may strip away material already deposited, and long intervals may pass during which nothing accumulates at all, leaving surfaces known as unconformities. Tectonic forces can also fold or even overturn a sequence, placing older beds above younger ones. Geologists therefore correlate sections from many localities and use fossil assemblages to establish which layers are contemporaneous, reconstructing a composite history that no single outcrop preserves.\n\nAccording to the passage, all of the following complicate the use of the principle of superposition EXCEPT:\n(A) the removal of deposited material by erosion\n(B) intervals during which no sediment accumulates\n(C) the folding or overturning of rock sequences\n(D) the cementing of loose particles into solid stone",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) Cementation is described in the first paragraph as part of the normal process by which sedimentary rock forms, not as a complication. The second paragraph lists erosion, non-deposition producing unconformities, and tectonic folding or overturning as the factors that limit the principle, which makes A, B, and C all stated in the text. Because the question asks for the exception, the answer is the one item that appears elsewhere in the passage with a different function.",
+    "answerKo": "정답은 (D)입니다. 입자가 굳어 암석이 되는 고결 작용은 첫 단락에서 퇴적암 형성의 정상적 과정으로 소개될 뿐 한계 요인이 아닙니다. 두 번째 단락은 침식, 퇴적 중단으로 생긴 부정합, 습곡과 역전을 한계로 열거하므로 (A)(B)(C)는 모두 언급된 내용입니다.",
+    "keyExpressions": [
+      {
+        "en": "superposition",
+        "ko": "지층 누중의 법칙"
+      },
+      {
+        "en": "stratigraphy",
+        "ko": "층서학"
+      },
+      {
+        "en": "unconformity",
+        "ko": "부정합"
+      },
+      {
+        "en": "fossil assemblage",
+        "ko": "화석 군집"
+      },
+      {
+        "en": "outcrop",
+        "ko": "노두"
+      }
+    ],
+    "tips": "부정 사실 정보는 세 개가 지문에 있고 하나만 없거나 다릅니다. 선택지마다 근거 문장을 찾아 체크 표시를 하며 소거하세요. 지문에 등장하지만 문맥상 역할이 다른 표현이 함정으로 자주 쓰입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "해류의 열 수송",
+    "question": "The ocean transports heat on a scale comparable to that of the atmosphere. Warm surface water carried northward by the Gulf Stream releases enormous quantities of energy to the air above the North Atlantic, which is one reason northwestern Europe enjoys winters far milder than other regions at similar latitudes. As this water cools and becomes saltier through evaporation, its density increases until it sinks to great depths and begins a slow return journey toward the equator.\n\nThis overturning circulation is sensitive to the freshwater balance of the northern ocean. A large influx of fresh water, whether from melting ice or increased river discharge, lowers surface salinity and can prevent the water from becoming dense enough to sink. Sediment cores suggest that such disruptions occurred at the close of the last glaciation, when meltwater from the retreating North American ice sheet reorganized circulation and plunged the region back into near-glacial conditions for more than a millennium.\n\nThe word 'influx' in the passage is closest in meaning to\n(A) inflow\n(B) shortage\n(C) evaporation\n(D) freezing",
+    "targetLevel": "어휘",
+    "answerEn": "(A) The sentence describes fresh water arriving from melting ice or river discharge and lowering surface salinity, so 'influx' must mean a large quantity flowing in. 'Inflow' captures exactly that sense. 'Shortage' reverses the meaning, since a lack of fresh water would raise rather than lower salinity. 'Evaporation' and 'freezing' name unrelated physical processes, and evaporation is elsewhere associated with increasing salinity.",
+    "answerKo": "정답은 (A)입니다. 해당 문장은 융빙수나 하천 유입으로 담수가 들어와 표층 염분을 낮춘다고 설명하므로 influx는 '대량 유입'을 뜻합니다. (B) 부족은 의미가 정반대이고, (C) 증발은 지문에서 오히려 염분을 높이는 과정으로 나오며, (D) 결빙은 무관합니다.",
+    "keyExpressions": [
+      {
+        "en": "overturning circulation",
+        "ko": "열염 순환"
+      },
+      {
+        "en": "salinity",
+        "ko": "염분"
+      },
+      {
+        "en": "density",
+        "ko": "밀도"
+      },
+      {
+        "en": "meltwater",
+        "ko": "융빙수"
+      },
+      {
+        "en": "discharge",
+        "ko": "유출량"
+      }
+    ],
+    "tips": "어휘 문제는 사전적 의미보다 문맥 대입이 우선입니다. 해당 단어를 가리고 문장을 읽어 빈칸에 들어갈 의미를 먼저 스스로 정한 뒤 선택지를 보세요. 앞뒤 문장의 인과 관계가 결정적 단서가 됩니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "사막화의 원인",
+    "question": "Desertification refers to the persistent degradation of dryland ecosystems, a process that reduces the capacity of soil to support vegetation. It is often imagined as an advancing wall of sand, but researchers describe it more accurately as a patchwork of deterioration spreading outward from points of intensive human use, such as wells, croplands, and grazing areas. Once protective plant cover is stripped away, wind and infrequent but heavy rains remove the thin layer of fertile topsoil that took centuries to accumulate.\n\nDrought alone rarely produces permanent damage, since dryland plants are adapted to survive long dry spells and recover when rain returns. The lasting harm arises when drought coincides with pressures that prevent recovery, such as herds too large for the land to sustain or the cultivation of marginal soils. Under these conditions the loss of vegetation raises surface reflectivity and reduces moisture returned to the air, changes that may themselves discourage rainfall and lock the landscape into its degraded state.\n\nIn the sentence 'Under these conditions the loss of vegetation raises surface reflectivity and reduces moisture returned to the air, changes that may themselves discourage rainfall,' the word 'themselves' refers to\n(A) dryland plants\n(B) the changes in reflectivity and moisture\n(C) herds of livestock\n(D) marginal soils",
+    "targetLevel": "지시 대상",
+    "answerEn": "(B) The pronoun 'themselves' attaches to the appositive noun 'changes,' which summarizes the two effects just named: increased surface reflectivity and reduced moisture returned to the air. The sentence asserts that these very changes can suppress rainfall, creating a self-reinforcing cycle. Dryland plants, livestock, and marginal soils appear elsewhere in the paragraph but are not the grammatical antecedent of the pronoun.",
+    "answerKo": "정답은 (B)입니다. themselves는 바로 앞의 동격 명사 changes를 가리키며, 이는 지표 반사율 증가와 대기 중 수분 감소라는 두 변화를 요약한 말입니다. 문장은 이 변화들 자체가 강수를 억제해 악순환을 만든다고 말합니다. 나머지 선택지는 문단에 등장하지만 문법적 선행사가 아닙니다.",
+    "keyExpressions": [
+      {
+        "en": "desertification",
+        "ko": "사막화"
+      },
+      {
+        "en": "degradation",
+        "ko": "황폐화"
+      },
+      {
+        "en": "topsoil",
+        "ko": "표토"
+      },
+      {
+        "en": "marginal soil",
+        "ko": "한계 토양"
+      },
+      {
+        "en": "reflectivity",
+        "ko": "반사율"
+      }
+    ],
+    "tips": "지시 대상 문제는 대명사 바로 앞에서 수와 격이 맞는 명사를 찾는 것이 기본입니다. 찾은 후보를 대명사 자리에 넣어 문장이 논리적으로 성립하는지 확인하세요. 멀리 떨어진 주제어보다 가까운 명사구가 정답인 경우가 많습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "지진과 단층 운동",
+    "question": "Earthquakes originate along faults, fractures in the crust where two blocks of rock move past one another. Friction ordinarily locks the two sides together while tectonic stress accumulates in the surrounding rock, storing elastic energy much as a bent stick stores it before snapping. When the accumulated stress exceeds the strength of the lock, the fault slips abruptly and the stored energy radiates outward as seismic waves. The rock on either side springs back toward its unstrained shape, a behavior known as elastic rebound.\n\nThis model explains why large earthquakes tend to recur on the same structures at irregular intervals, but it has not yielded reliable short-term prediction. The stress accumulated on a given segment cannot be measured directly, and the strength of a locked fault varies with fluid pressure and rock composition in ways that remain poorly constrained. Consequently, seismologists concentrate on forecasting long-term probabilities and on engineering buildings to withstand the shaking that will inevitably come.\n\nWhich of the sentences below best expresses the essential information in the highlighted sentence? 'The stress accumulated on a given segment cannot be measured directly, and the strength of a locked fault varies with fluid pressure and rock composition in ways that remain poorly constrained.'\n(A) Measuring fluid pressure directly would allow seismologists to predict all earthquakes.\n(B) Neither the stress on a fault nor its strength can be determined accurately, which limits prediction.\n(C) Rock composition is the only factor that determines when a fault will slip.\n(D) Faults with high fluid pressure accumulate stress more slowly than other faults.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(B) The original sentence makes two parallel points: stress cannot be measured directly, and fault strength depends on variables that are poorly understood. Option B combines both ideas and preserves the implication, stated in the surrounding text, that these gaps limit prediction. Option A reverses the sentence into an unwarranted promise, option C wrongly elevates one variable to sole importance, and option D introduces a causal claim about accumulation rates that the original never makes.",
+    "answerKo": "정답은 (B)입니다. 원문은 응력을 직접 측정할 수 없다는 점과 단층 강도가 잘 규명되지 않은 변수에 좌우된다는 점을 나란히 제시합니다. (B)는 두 요소를 모두 담고 예측이 어렵다는 문맥적 함의도 유지합니다. (A)는 근거 없는 약속으로 뒤집었고, (C)는 한 변수만 절대화했으며, (D)는 원문에 없는 인과를 덧붙였습니다.",
+    "keyExpressions": [
+      {
+        "en": "fault",
+        "ko": "단층"
+      },
+      {
+        "en": "elastic rebound",
+        "ko": "탄성 반발"
+      },
+      {
+        "en": "seismic wave",
+        "ko": "지진파"
+      },
+      {
+        "en": "fluid pressure",
+        "ko": "공극 유체 압력"
+      },
+      {
+        "en": "forecast probability",
+        "ko": "확률 예측"
+      }
+    ],
+    "tips": "문장 재진술은 원문의 핵심 정보를 빠짐없이, 그러나 새로운 정보 없이 옮긴 것을 고릅니다. 원문을 주어-동사 단위로 쪼개 몇 개의 정보 덩어리가 있는지 세고, 선택지가 그 덩어리를 모두 담는지 확인하세요. 하나라도 누락되거나 추가되면 오답입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "화석 형성 조건",
+    "question": "Fossilization is an exceptional event rather than a routine one. When an organism dies, its remains are ordinarily consumed by scavengers or broken down by bacteria within a matter of weeks. [1] Preservation requires rapid burial in an environment where oxygen is scarce and decay proceeds slowly, conditions most often met on the floors of lakes, lagoons, and shallow seas. [2] Even then, only durable tissues such as bone, shell, and wood normally survive long enough to be mineralized.\n\n[3] The result is a record that is systematically biased toward certain organisms and settings. Marine invertebrates with hard shells are abundantly represented, while soft-bodied creatures and animals living in eroding uplands are largely absent. [4] Paleontologists compensate for these gaps by studying rare deposits of extraordinary preservation, in which fine sediment and chemical conditions captured skin, feathers, and even stomach contents, offering a fuller picture of ancient communities.\n\nLook at the four squares that indicate where the following sentence could be added to the passage. Where would the sentence best fit?\nInserted sentence: 'Groundwater must then percolate through the sediment, gradually replacing original material with minerals such as silica or calcite.'\n(A) [1]\n(B) [2]\n(C) [3]\n(D) [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(C) The inserted sentence begins with 'then' and describes mineralization, the step that follows the statement that durable tissues 'survive long enough to be mineralized' at square [2]'s sentence. Placing it at [3] continues the sequence of preservation stages before the paragraph shifts to the bias of the record. At [1] or [2] the mineralization step would precede the burial conditions it depends on, and at [4] it would interrupt the discussion of missing organisms.",
+    "answerKo": "정답은 (C)입니다. 삽입 문장은 then으로 시작해 광물화 과정을 설명하는데, 이는 [2] 뒤 문장에서 '광물화될 만큼 오래 남는다'고 한 내용에 자연스럽게 이어집니다. [3]에 넣으면 보존 단계의 순서가 완결된 뒤 화석 기록의 편향으로 화제가 전환됩니다. [1]이나 [2]는 매몰 조건보다 광물화가 앞서게 되고, [4]는 결손 생물 논의를 끊습니다.",
+    "keyExpressions": [
+      {
+        "en": "fossilization",
+        "ko": "화석화"
+      },
+      {
+        "en": "scavenger",
+        "ko": "청소동물"
+      },
+      {
+        "en": "mineralize",
+        "ko": "광물화하다"
+      },
+      {
+        "en": "soft-bodied",
+        "ko": "연체성의"
+      },
+      {
+        "en": "percolate",
+        "ko": "스며들다"
+      }
+    ],
+    "tips": "문장 삽입은 삽입문의 연결 신호(then, however, such, this)를 먼저 확인해 앞 문장에 무엇이 와야 하는지 정하세요. 그 다음 각 네모 앞뒤를 읽어 대명사와 시간 순서가 어긋나지 않는 자리를 고릅니다. 넣은 뒤 문단을 다시 읽어 흐름이 끊기지 않는지 검증하는 것이 안전합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "대기 이산화탄소와 온실효과",
+    "question": "The earth's surface is warmed by sunlight and cooled by radiating energy back toward space at infrared wavelengths. Certain atmospheric gases, notably water vapor, carbon dioxide, and methane, absorb a portion of that outgoing radiation and re-emit it in all directions, returning some of the energy to the surface. Without this natural greenhouse effect, the planet's average temperature would fall roughly thirty degrees Celsius below its present value, and liquid water would be rare.\n\nOver geological time the atmospheric concentration of carbon dioxide has been regulated by a slow exchange between rock and air. Rainwater charged with the gas chemically attacks silicate minerals, and the products are carried to the sea and buried as carbonate sediment; volcanic activity returns the carbon to the atmosphere. Because the weathering reaction proceeds faster in warm conditions, it acts as a thermostat, drawing down carbon dioxide when the climate heats and allowing it to rebuild when the climate cools.\n\nDirections: Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage.\nIntroductory sentence: Atmospheric greenhouse gases and geological processes together regulate the earth's temperature.\n(A) Gases such as carbon dioxide absorb outgoing infrared radiation and return energy to the surface, keeping the planet far warmer than it would otherwise be.\n(B) Methane is more abundant in the atmosphere than water vapor.\n(C) Silicate weathering removes carbon dioxide from the air and stores it in marine carbonate sediment, while volcanoes return it.\n(D) Because weathering speeds up as temperature rises, the rock-air exchange acts as a long-term climate thermostat.\n(E) Liquid water is rare on the surfaces of most planets in the solar system.\n(F) Rainwater becomes acidic only in regions with heavy volcanic activity.",
+    "targetLevel": "지문 요약",
+    "answerEn": "(A), (C), (D) These three choices correspond to the passage's major claims: the radiative mechanism of the greenhouse effect, the geological carbon cycle linking weathering, burial, and volcanism, and the temperature dependence of weathering that makes the cycle self-regulating. Choice B invents a comparison the passage never makes. Choice E extends a passing remark about liquid water into a claim about other planets. Choice F contradicts the general description of rainwater charged with carbon dioxide.",
+    "answerKo": "정답은 (A), (C), (D)입니다. 각각 온실효과의 복사 메커니즘, 풍화-매몰-화산으로 이어지는 지질학적 탄소 순환, 그리고 온도에 따라 풍화 속도가 달라져 순환이 자기조절 기능을 한다는 지문의 세 축을 담고 있습니다. (B)는 지문에 없는 비교이고, (E)는 지나가는 언급을 태양계 전체로 확대했으며, (F)는 빗물이 일반적으로 이산화탄소를 머금는다는 서술과 어긋납니다.",
+    "keyExpressions": [
+      {
+        "en": "infrared radiation",
+        "ko": "적외선 복사"
+      },
+      {
+        "en": "greenhouse effect",
+        "ko": "온실효과"
+      },
+      {
+        "en": "silicate weathering",
+        "ko": "규산염 풍화"
+      },
+      {
+        "en": "carbonate sediment",
+        "ko": "탄산염 퇴적물"
+      },
+      {
+        "en": "thermostat",
+        "ko": "온도 조절 장치"
+      }
+    ],
+    "tips": "지문 요약은 각 단락의 주제문을 포괄하는 선택지 세 개를 고릅니다. 지엽적 세부 사항, 지문에 없는 비교, 과도한 일반화는 배제하세요. 도입 문장이 제시한 범위를 벗어나는 진술도 오답 신호입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "암석의 순환",
+    "question": "Rocks are conventionally divided into three families defined by their origin. Igneous rocks crystallize from molten material, either slowly at depth, which produces coarse crystals, or rapidly at the surface, which produces fine ones. Sedimentary rocks form from fragments and chemical precipitates deposited in layers and later compacted. Metamorphic rocks arise when preexisting rock of any type is subjected to heat and pressure sufficient to recrystallize its minerals without melting it entirely.\n\nThese categories are not permanent destinations but stages in a continuous cycle. Uplift exposes deep rock to weathering, which produces sediment; burial converts sediment to sedimentary rock; deeper burial and tectonic compression transform it into metamorphic rock; and further heating melts it to magma, from which igneous rock crystallizes anew. Material may skip stages or repeat them many times, so a single mineral grain now sitting in a beach may have passed through several complete circuits over billions of years.\n\nDirections: Complete the table by matching each description with the rock type it characterizes.\nCategories: Igneous / Sedimentary / Metamorphic\n(A) Crystallizes from molten material, with crystal size depending on cooling rate\n(B) Forms from deposited fragments and precipitates that are later compacted\n(C) Results from recrystallization under heat and pressure without complete melting\n(D) Is produced only at the boundaries between tectonic plates\n(E) Can never be converted into any other rock type\n(F) Contains layers that record the order of deposition",
+    "targetLevel": "표 채우기",
+    "answerEn": "Igneous: (A); Sedimentary: (B) and (F); Metamorphic: (C). Choice A restates the definition of igneous rock and its dependence on cooling rate. Choices B and F both describe sedimentary rock, since the passage links it to deposited layers that preserve sequence. Choice C matches the definition of metamorphism as recrystallization short of melting. Choices D and E are distractors: the passage never restricts any rock type to plate boundaries and explicitly states that material circulates among all three families.",
+    "answerKo": "정답은 화성암 (A), 퇴적암 (B)와 (F), 변성암 (C)입니다. (A)는 냉각 속도에 따라 결정 크기가 달라진다는 화성암 정의이고, (B)와 (F)는 퇴적물이 층을 이루며 순서를 기록한다는 퇴적암 특징입니다. (C)는 완전히 녹지 않은 채 재결정된다는 변성암 정의와 일치합니다. (D)는 지문에 없는 제한이고, (E)는 암석이 순환한다는 서술과 정면으로 모순됩니다.",
+    "keyExpressions": [
+      {
+        "en": "igneous rock",
+        "ko": "화성암"
+      },
+      {
+        "en": "precipitate",
+        "ko": "침전물"
+      },
+      {
+        "en": "metamorphic",
+        "ko": "변성의"
+      },
+      {
+        "en": "recrystallize",
+        "ko": "재결정되다"
+      },
+      {
+        "en": "uplift",
+        "ko": "융기"
+      }
+    ],
+    "tips": "표 채우기는 각 범주의 정의 문장을 먼저 표시한 뒤 선택지를 대조하세요. 두 범주에 모두 해당할 듯한 선택지는 지문이 어느 쪽 설명에 넣었는지로 판단합니다. 지문에 아예 없는 진술과 지문과 모순되는 진술이 항상 두 개 정도 섞여 있으므로 먼저 소거하면 빠릅니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "섭입대와 조산 운동",
+    "question": "Where an oceanic plate converges with a continental one, the denser oceanic slab bends downward and descends into the mantle along a subduction zone. As the slab sinks, rising temperature and pressure drive water out of the minerals within it. That water enters the overlying mantle wedge and lowers the melting point of the rock there, generating magma that rises to build a chain of volcanoes parallel to the trench.\n\nSubduction also constructs mountains by mechanical means. Sediment scraped from the descending plate accumulates against the continental margin, and repeated compression thickens the crust until it stands high above sea level. When an ocean basin closes entirely and two continents meet, neither is dense enough to subduct, and the collision produces ranges of exceptional height. The Himalayas, still rising as India presses northward into Asia, illustrate the outcome of such a collision.\n\nAccording to the passage, what role does water play in the formation of volcanoes above subduction zones?\n(A) It cools the descending slab and prevents it from melting.\n(B) It lowers the melting point of rock in the mantle above the slab.\n(C) It carries sediment from the trench to the continental margin.\n(D) It increases the density of the oceanic plate.",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The first paragraph states that water driven out of the sinking slab 'enters the overlying mantle wedge and lowers the melting point of the rock there,' producing the magma that feeds the volcanic chain. Option A inverts this by claiming water prevents melting. Option C confuses water with the mechanical accumulation of sediment described in the second paragraph. Option D attributes to water an effect on density that the passage assigns to the oceanic plate's composition.",
+    "answerKo": "정답은 (B)입니다. 첫 단락은 침강하는 슬래브에서 빠져나온 물이 상부 맨틀 쐐기로 들어가 그곳 암석의 녹는점을 낮추어 마그마를 만든다고 명시합니다. (A)는 이를 정반대로 뒤집었고, (C)는 둘째 단락의 퇴적물 부착과 혼동한 것이며, (D)는 지문에 없는 밀도 효과를 물에 돌린 오답입니다.",
+    "keyExpressions": [
+      {
+        "en": "subduction zone",
+        "ko": "섭입대"
+      },
+      {
+        "en": "mantle wedge",
+        "ko": "맨틀 쐐기"
+      },
+      {
+        "en": "melting point",
+        "ko": "녹는점"
+      },
+      {
+        "en": "trench",
+        "ko": "해구"
+      },
+      {
+        "en": "continental margin",
+        "ko": "대륙 주변부"
+      }
+    ],
+    "tips": "사실 정보는 문제의 키워드(water, volcanoes)가 함께 등장하는 문장을 찾는 것이 최단 경로입니다. 여러 단락에 비슷한 어휘가 흩어져 있을 때는 문제에서 한정한 범위(섭입대 위 화산)에 해당하는 문장만 근거로 삼으세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "엘니뇨 현상",
+    "question": "Under normal conditions, easterly trade winds push warm surface water toward the western Pacific, allowing cold, nutrient-rich water to rise along the coast of South America. This upwelling sustains one of the most productive fisheries on earth. Every few years, however, the trade winds weaken, the pool of warm water slides eastward, and upwelling is suppressed. The resulting condition, known as El Nino, was named by Peruvian fishermen who noticed its arrival near Christmas.\n\nThe consequences extend far beyond the eastern Pacific. Because the position of the warm pool determines where air rises and rainfall concentrates, a shift of a few thousand kilometers rearranges weather across much of the globe, bringing drought to Indonesia and Australia while soaking normally arid parts of Peru. Understanding this teleconnection transformed seasonal forecasting, since the ocean changes slowly enough that its state months in advance carries genuine predictive information about distant continents.\n\nWhich of the following can be inferred about seasonal weather forecasting from the passage?\n(A) It became more useful once the slow evolution of ocean conditions was recognized.\n(B) It remains impossible for regions outside the Pacific.\n(C) It depends primarily on measuring rainfall in Indonesia.\n(D) It was developed by Peruvian fishermen in the nineteenth century.",
+    "targetLevel": "추론",
+    "answerEn": "(A) The final sentence says forecasting was transformed because the ocean changes slowly enough that its state months ahead carries predictive information. The reasonable inference is that recognizing this slow evolution made forecasts more useful. Option B contradicts the emphasis on distant continents. Option C elevates one detail into the principal method. Option D confuses the naming of El Nino with the development of forecasting.",
+    "answerKo": "정답은 (A)입니다. 마지막 문장은 해양이 느리게 변하기 때문에 몇 달 전 상태가 실질적 예측 정보를 담으며 이것이 계절 예보를 바꿔놓았다고 말합니다. 따라서 해양 변화의 느린 속도를 인식하면서 예보가 유용해졌다는 추론이 타당합니다. (B)는 원격 상관을 강조한 서술과 모순되고, (C)는 세부를 주된 방법으로 과장했으며, (D)는 명칭 유래와 예보 발달을 혼동했습니다.",
+    "keyExpressions": [
+      {
+        "en": "trade winds",
+        "ko": "무역풍"
+      },
+      {
+        "en": "upwelling",
+        "ko": "용승"
+      },
+      {
+        "en": "nutrient-rich",
+        "ko": "영양분이 풍부한"
+      },
+      {
+        "en": "teleconnection",
+        "ko": "원격 상관"
+      },
+      {
+        "en": "seasonal forecasting",
+        "ko": "계절 예보"
+      }
+    ],
+    "tips": "추론 문제에서는 마지막 문장의 인과 표현(since, because)이 자주 근거가 됩니다. 지문이 말한 사실에서 한 걸음만 나아간 선택지를 고르고, 두 걸음 이상 비약하거나 지문 범위를 넘는 단정은 버리세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "빙하의 침식 작용",
+    "question": "A glacier is not merely a mass of stationary ice but a slowly moving body that reshapes the ground beneath it. Ice near the base deforms under the weight above and, where meltwater is present, slides across the bedrock. Rock fragments frozen into the sole of the glacier act as cutting tools, grinding the surface into a fine powder and leaving parallel scratches that record the direction of flow. Where ice thickens in a hollow, it excavates the depression into a steep-walled basin.\n\nThe debris carried by a glacier is eventually released. Material shoved ahead of the advancing ice or dumped as it melts forms ridges called moraines, whose positions mark former ice margins. Unlike sediment sorted by rivers, glacial deposits mix boulders and clay indiscriminately, a texture that allows geologists to identify ancient glaciations in rocks hundreds of millions of years old and to reconstruct how far the ice once reached.\n\nAll of the following are mentioned in the passage as evidence of glacial activity EXCEPT:\n(A) parallel scratches on bedrock\n(B) ridges of debris marking former ice margins\n(C) deposits mixing boulders and clay without sorting\n(D) layers of volcanic ash between ice sheets",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) Volcanic ash is never mentioned anywhere in the passage. The scratches produced by embedded rock fragments, the moraines that mark former margins, and the unsorted mixture of boulders and clay are all named explicitly as records of glacial action. Since the question asks which item is not mentioned, the volcanic ash option is the answer.",
+    "answerKo": "정답은 (D)입니다. 화산재는 지문 어디에도 언급되지 않습니다. 빙하 밑에 박힌 암편이 만든 평행 찰흔, 과거 빙하 말단을 표시하는 모레인, 자갈과 점토가 분급 없이 섞인 퇴적물은 모두 빙하 활동의 증거로 명시되어 있습니다.",
+    "keyExpressions": [
+      {
+        "en": "bedrock",
+        "ko": "기반암"
+      },
+      {
+        "en": "meltwater",
+        "ko": "융빙수"
+      },
+      {
+        "en": "striation",
+        "ko": "찰흔"
+      },
+      {
+        "en": "moraine",
+        "ko": "빙퇴석"
+      },
+      {
+        "en": "sorted sediment",
+        "ko": "분급된 퇴적물"
+      }
+    ],
+    "tips": "부정 사실 정보에서 정답은 지문에 아예 없는 항목이거나 지문과 반대인 항목입니다. 선택지를 지문 순서대로 대응시키며 빠르게 위치를 확인하고, 끝까지 근거를 못 찾은 하나를 답으로 확정하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "대멸종과 운석 충돌",
+    "question": "For decades the disappearance of the dinosaurs was explained by gradual processes such as cooling climate or competition from mammals. In 1980 a research team reported an unexpected observation: a thin clay layer marking the end of the Cretaceous contained iridium at concentrations dozens of times higher than normal crustal rock. Because iridium is abundant in meteorites but scarce at the earth's surface, the team proposed that a large asteroid had struck the planet.\n\nThe proposal met vigorous resistance until a buried crater roughly 180 kilometers across was identified beneath the Yucatan Peninsula and dated to precisely the same moment. Debris ejected by the impact would have heated the atmosphere, ignited fires, and lofted dust that dimmed sunlight for months, collapsing the food chains that depend on photosynthesis. Some researchers maintain that massive volcanic eruptions in India were already stressing ecosystems, and that the impact delivered a final blow to a biosphere weakened in advance.\n\nWhy does the author mention volcanic eruptions in India?\n(A) To identify an alternative explanation that some researchers combine with the impact hypothesis\n(B) To prove that the asteroid impact never occurred\n(C) To explain the origin of the iridium found in the clay layer\n(D) To describe how the Yucatan crater was first discovered",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(A) The final sentence introduces the Indian eruptions as a view held by 'some researchers' who argue that ecosystems were already stressed and that the impact finished them off. Its rhetorical function is to present a complementary rather than a competing account. Option B overstates the point into outright rejection of the impact. Option C misassigns the iridium, which the passage attributes to meteorites. Option D confuses the eruptions with the crater's discovery.",
+    "answerKo": "정답은 (A)입니다. 마지막 문장은 인도의 대규모 화산 활동을 '일부 연구자'의 견해로 소개하며, 이미 약해진 생태계에 충돌이 결정타를 가했다고 설명합니다. 즉 충돌설을 부정하는 것이 아니라 보완하는 설명으로 제시된 것입니다. (B)는 과도한 부정이고, (C)는 이리듐의 출처를 잘못 돌렸으며, (D)는 크레이터 발견 과정과 혼동했습니다.",
+    "keyExpressions": [
+      {
+        "en": "iridium",
+        "ko": "이리듐"
+      },
+      {
+        "en": "crustal rock",
+        "ko": "지각 암석"
+      },
+      {
+        "en": "impact hypothesis",
+        "ko": "충돌 가설"
+      },
+      {
+        "en": "eject debris",
+        "ko": "파편을 분출하다"
+      },
+      {
+        "en": "food chain",
+        "ko": "먹이 사슬"
+      }
+    ],
+    "tips": "수사적 의도 문제에서 '일부 학자는', '그러나' 같은 표현 뒤에 오는 내용은 대개 대안이나 보완 견해입니다. 그 정보가 기존 주장을 반박하는지, 보강하는지, 조건을 다는지 구분하면 선택지가 쉽게 갈립니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "지질학·기후",
+    "topic": "방사성 연대 측정",
+    "question": "The absolute age of a rock can be determined because certain isotopes decay at rates that are unaffected by temperature, pressure, or chemical environment. Each unstable isotope transforms into a stable daughter product with a characteristic half-life, the interval required for half of the remaining parent atoms to decay. By measuring the ratio of parent to daughter atoms in a mineral, a geologist can calculate how much time has elapsed since the mineral crystallized and closed to the exchange of these elements.\n\nThe method is powerful but demands care. Different isotope pairs suit different intervals: carbon-14 is useless beyond about fifty thousand years, whereas uranium-lead dating of the mineral zircon reliably reaches back billions of years. A sample that has been reheated may have lost daughter atoms, yielding an age that is too young, so analysts routinely date several minerals from the same rock and accept the result only when independent systems converge.\n\nThe word 'converge' in the passage is closest in meaning to\n(A) agree\n(B) disappear\n(C) accelerate\n(D) separate",
+    "targetLevel": "어휘",
+    "answerEn": "(A) The sentence describes analysts dating several minerals and accepting a result only when independent systems 'converge,' which in context means that the separate measurements arrive at the same answer. 'Agree' expresses precisely that. 'Separate' is the opposite, and neither 'disappear' nor 'accelerate' makes sense applied to results from independent dating systems.",
+    "answerKo": "정답은 (A)입니다. 해당 문장은 여러 광물을 각각 연대 측정한 뒤 독립적인 방법들이 converge할 때만 결과를 받아들인다고 설명하므로, 서로 같은 값으로 '일치한다'는 뜻입니다. (D) 갈라지다는 정반대이고, (B) 사라지다와 (C) 가속되다는 측정 결과에 붙일 수 없는 의미입니다.",
+    "keyExpressions": [
+      {
+        "en": "half-life",
+        "ko": "반감기"
+      },
+      {
+        "en": "daughter product",
+        "ko": "딸 원소"
+      },
+      {
+        "en": "crystallize",
+        "ko": "결정화하다"
+      },
+      {
+        "en": "zircon",
+        "ko": "지르콘"
+      },
+      {
+        "en": "independent system",
+        "ko": "독립적인 측정계"
+      }
+    ],
+    "tips": "어휘 문제에서 only when, unless 같은 조건절은 단어의 방향성을 알려줍니다. 여러 측정을 비교하는 문맥이라면 일치와 불일치 중 어느 쪽이 신뢰의 근거가 되는지 따져 보세요. 선택지 중 정반대 의미가 함정으로 자주 등장합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "대륙횡단철도의 건설",
+    "question": "The completion of the first transcontinental railroad in 1869 transformed the economic geography of the United States. Federal land grants, which transferred more than one hundred million acres to private railroad corporations, financed construction that private capital alone would not have underwritten. The Central Pacific and Union Pacific companies recruited enormous labor forces, including thousands of Chinese immigrants who blasted tunnels through the Sierra Nevada under hazardous conditions.\nOnce operational, the line reduced the journey from the Atlantic to the Pacific coast from roughly six months to under two weeks. This compression of travel time altered commodity markets: perishable goods, mail, and manufactured products moved at unprecedented speed, and regional price differences narrowed considerably. Railroads also standardized time, dividing the continent into four zones in 1883 so that schedules could be coordinated. The consequences extended beyond commerce, since settlement patterns increasingly followed the routes that surveyors and financiers had chosen.\n\nAccording to the passage, what made construction of the transcontinental railroad financially possible?\n(A) Direct investment from European banking houses\n(B) Federal grants of public land to railroad corporations\n(C) Wages voluntarily reduced by immigrant laborers\n(D) Revenue collected from the standardization of time zones",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The passage states that federal land grants transferred more than one hundred million acres to private railroad corporations and that these grants financed construction that private capital alone would not have underwritten. This directly identifies land grants as the enabling financial mechanism. Choice (A) is never mentioned. Choice (C) confuses the labor discussion with financing, and (D) reverses chronology, since time zones came in 1883, after completion.",
+    "answerKo": "정답은 (B)입니다. 지문은 연방 정부가 1억 에이커가 넘는 토지를 민간 철도 회사에 이전했으며, 민간 자본만으로는 감당하지 못했을 건설 비용을 이 토지 불하가 충당했다고 명시합니다. 따라서 재정적 가능성의 핵심은 연방 토지 불하입니다. (A) 유럽 은행 투자는 언급이 없고, (C)는 노동 관련 서술을 재정 문제로 잘못 연결한 것이며, (D)의 표준시는 1869년 완공 이후인 1883년의 일이므로 시간 순서상 맞지 않습니다.",
+    "keyExpressions": [
+      {
+        "en": "land grant",
+        "ko": "토지 불하, 정부가 무상으로 주는 토지"
+      },
+      {
+        "en": "underwrite",
+        "ko": "(비용을) 부담하다, 인수하다"
+      },
+      {
+        "en": "perishable goods",
+        "ko": "부패하기 쉬운 상품"
+      },
+      {
+        "en": "compression of travel time",
+        "ko": "이동 시간의 단축"
+      },
+      {
+        "en": "settlement pattern",
+        "ko": "정착 양상"
+      }
+    ],
+    "tips": "사실 정보 문제는 지문에 명시된 문장을 찾아 그대로 확인하면 됩니다. 질문의 핵심어(financially possible)를 지문의 동의 표현(financed, underwritten)과 연결해 해당 문장을 특정하세요. 선택지 중 지문에 등장하지만 질문과 다른 논점을 다루는 것(시간대 표준화 등)이 함정으로 자주 나옵니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "19세기 후반 대량 이민",
+    "question": "Between 1880 and 1920, roughly twenty million immigrants entered the United States, a wave dominated by arrivals from southern and eastern Europe rather than the northwestern European countries that had supplied earlier migrations. Steamship companies, competing fiercely for steerage passengers, cut fares to levels that made transatlantic passage affordable for peasant families, while letters and prepaid tickets sent home by earlier migrants created chains of movement linking specific villages to specific American neighborhoods.\nOn arrival, most newcomers settled in industrial cities of the Northeast and Midwest, where unskilled factory positions were plentiful. Mutual aid societies, foreign-language newspapers, and religious congregations cushioned the transition, offering insurance benefits and employment information that no public agency then provided. Nativist critics nevertheless portrayed the newcomers as unassimilable, and their agitation eventually produced the restrictive quota legislation of the 1920s.\n\nAccording to the passage, all of the following contributed to the growth of immigration EXCEPT\n(A) reduced fares resulting from competition among steamship lines\n(B) prepaid tickets sent by immigrants already in America\n(C) the availability of unskilled industrial employment\n(D) government agencies that supplied newcomers with insurance",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) The passage explicitly says that mutual aid societies and congregations offered insurance benefits and employment information that no public agency then provided. Government provision of insurance therefore did not exist and cannot have encouraged immigration. The other three options appear directly in the text: fare cuts by competing steamship companies, prepaid tickets creating chain migration, and plentiful unskilled factory positions in northeastern and midwestern cities.",
+    "answerKo": "정답은 (D)입니다. 지문은 상호부조 단체와 종교 공동체가 '당시 어떤 공공 기관도 제공하지 않던' 보험 혜택과 취업 정보를 제공했다고 분명히 말합니다. 즉 정부 기관의 보험 제공은 존재하지 않았습니다. 나머지 (A) 증기선 회사 간 경쟁에 따른 운임 인하, (B) 선이민자가 보낸 선불 승선권, (C) 미숙련 공장 일자리의 풍부함은 모두 지문에 근거가 있습니다.",
+    "keyExpressions": [
+      {
+        "en": "steerage",
+        "ko": "(선박의) 3등 선실"
+      },
+      {
+        "en": "chain migration",
+        "ko": "연쇄 이주"
+      },
+      {
+        "en": "mutual aid society",
+        "ko": "상호부조 단체"
+      },
+      {
+        "en": "unassimilable",
+        "ko": "동화될 수 없는"
+      },
+      {
+        "en": "quota legislation",
+        "ko": "이민 할당 법안"
+      }
+    ],
+    "tips": "부정 사실 정보(EXCEPT) 문제는 선택지 네 개를 각각 지문과 대조해 근거가 있는 세 개를 소거하는 방식이 가장 안전합니다. 특히 no, never, none 같은 부정어가 붙은 문장은 정답 근거가 되기 쉬우니 표시해 두세요. 기억에 의존하지 말고 반드시 위치를 확인해야 합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "도시 주택난과 공동주택",
+    "question": "The rapid concentration of industrial workers in American cities after 1870 outpaced the capacity of existing housing stock. Landlords responded by subdividing older single-family residences and by erecting tenements designed to maximize the number of rentable units on narrow lots. In New York, buildings covering ninety percent of their lots left interior rooms without direct light or ventilation, and communal privies in rear yards served dozens of families.\nReformers documented these conditions with statistics and, later, photographs, arguing that disease and disorder originated in the built environment rather than in the character of the residents. The Tenement House Act of 1901 mandated interior courtyards, indoor plumbing, and fireproof stairwells for new construction. Compliance costs, however, discouraged builders from serving the lowest-income tenants at all, and the poorest households often relocated to older buildings that the statute did not reach.\n\nWhich of the following can be inferred from the passage about the Tenement House Act of 1901?\n(A) It improved housing standards but did not benefit the poorest tenants uniformly\n(B) It was repealed shortly after passage because of builder opposition\n(C) It applied retroactively to every tenement then standing in New York\n(D) It eliminated overcrowding in American industrial cities within a decade",
+    "targetLevel": "추론",
+    "answerEn": "(A) The final sentences indicate that compliance costs discouraged builders from serving the lowest-income tenants and that the poorest households moved into older buildings outside the statute's reach. The reasonable inference is that the law raised standards for new construction while leaving the poorest inadequately served. Nothing suggests repeal, so (B) fails. The statute governed new construction, contradicting (C), and (D) overstates its effects far beyond the text.",
+    "answerKo": "정답은 (A)입니다. 지문 마지막 부분은 규제 준수 비용 때문에 건설업자들이 최저소득층을 위한 주택 공급을 아예 꺼렸고, 가장 가난한 가구는 법이 적용되지 않는 낡은 건물로 옮겨갔다고 설명합니다. 여기서 이 법이 기준은 높였으나 최빈곤층에게는 혜택이 고르게 돌아가지 않았다는 추론이 가능합니다. (B) 폐지, (C) 소급 적용, (D) 10년 내 과밀 해소는 모두 근거가 없거나 지문과 어긋납니다.",
+    "keyExpressions": [
+      {
+        "en": "housing stock",
+        "ko": "주택 재고, 주택 공급량"
+      },
+      {
+        "en": "tenement",
+        "ko": "(빈민가의) 공동주택"
+      },
+      {
+        "en": "ventilation",
+        "ko": "환기"
+      },
+      {
+        "en": "built environment",
+        "ko": "인공 환경, 건조 환경"
+      },
+      {
+        "en": "compliance cost",
+        "ko": "규제 준수 비용"
+      }
+    ],
+    "tips": "추론 문제의 정답은 지문에 직접 쓰이지 않았지만 한두 단계 논리로 반드시 따라 나오는 진술입니다. 지나치게 강한 표현(eliminated, every, all)이 들어간 선택지는 대개 오답입니다. 마지막 문장의 however, yet 같은 역접 뒤에 추론 단서가 숨어 있는 경우가 많습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "대공황의 원인 논쟁",
+    "question": "Historians debating the severity of the Great Depression distinguish between the causes of the downturn and the causes of its extraordinary duration. The stock market collapse of October 1929 destroyed paper wealth, but equities were held by a small minority of households, and the market alone cannot account for a contraction in which industrial output fell by nearly half. Attention has therefore shifted to the banking system, where roughly nine thousand institutions failed between 1930 and 1933.\nWhy dwell on these bank failures? Because each closure destroyed deposits, extinguished long-standing credit relationships, and frightened surviving banks into hoarding reserves rather than lending. The money supply contracted by about a third, and deflation raised the real burden of existing debts on farmers and manufacturers alike. In this account, an ordinary recession became a catastrophe because monetary institutions transmitted and amplified the initial shock.\n\nWhy does the author ask 'Why dwell on these bank failures?'\n(A) To question whether bank failures actually occurred on that scale\n(B) To introduce the reasons that banking collapse explains the depth of the contraction\n(C) To suggest that historians have exaggerated the role of the stock market\n(D) To contrast American banking practices with those of other nations",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The rhetorical question functions as a transition: immediately after it, the author lists consequences of bank closures, including destroyed deposits, broken credit relationships, hoarded reserves, monetary contraction, and deflation. The question therefore sets up an explanation of why banking collapse accounts for the severity of the downturn. It does not cast doubt on the failures themselves, as (A) claims. The stock market point was made earlier, and no international comparison appears, ruling out (C) and (D).",
+    "answerKo": "정답은 (B)입니다. 이 수사의문문은 전환 장치로, 바로 뒤에서 은행 파산이 예금 소멸, 신용 관계 단절, 지급준비금 사재기, 통화량 축소, 디플레이션으로 이어졌다는 설명이 이어집니다. 즉 은행 붕괴가 왜 불황의 심각성을 설명하는지를 도입하는 역할입니다. (A)처럼 파산 사실 자체를 의심하는 것이 아니며, (C) 주식시장 논의는 앞 단락에서 이미 끝났고 (D) 국제 비교는 등장하지 않습니다.",
+    "keyExpressions": [
+      {
+        "en": "contraction",
+        "ko": "(경제) 수축, 위축"
+      },
+      {
+        "en": "extinguish credit relationships",
+        "ko": "신용 관계를 소멸시키다"
+      },
+      {
+        "en": "hoard reserves",
+        "ko": "지급준비금을 쌓아두다"
+      },
+      {
+        "en": "deflation",
+        "ko": "디플레이션, 물가 하락"
+      },
+      {
+        "en": "amplify a shock",
+        "ko": "충격을 증폭시키다"
+      }
+    ],
+    "tips": "수사적 의도 문제는 '무슨 내용인가'가 아니라 '왜 여기에 썼는가'를 묻습니다. 해당 문장 바로 앞뒤 문맥에서 기능(예시 제시, 반박, 전환, 강조)을 파악하세요. 특히 수사의문문은 곧이어 나오는 설명을 도입하는 기능일 때가 압도적으로 많습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "뉴딜 정책의 구제 사업",
+    "question": "Franklin Roosevelt's administration confronted an unemployment rate near twenty-five percent by creating agencies that hired the jobless directly. The Civilian Conservation Corps enrolled young men in forestry and erosion control; the Works Progress Administration employed millions in construction, and also engaged artists, writers, and musicians in documentary projects. Advocates insisted that wage work preserved skills and self-respect in ways that simple cash relief could not.\nCritics from the business community objected that such programs competed with private employment and burdened future taxpayers, while some reformers complained that wage scales were set too low to disturb local labor markets, particularly in the South. Roosevelt himself remained cautious about permanent federal employment, viewing the agencies as temporary expedients. Nevertheless, the physical legacy was substantial: thousands of schools, bridges, and post offices remained in daily use generations later.\n\nThe word 'expedients' in the passage is closest in meaning to\n(A) obligations\n(B) practical measures adopted for a temporary purpose\n(C) financial guarantees\n(D) formal negotiations",
+    "targetLevel": "어휘",
+    "answerEn": "(B) The sentence describes Roosevelt as cautious about permanent federal employment and as viewing the agencies as temporary expedients. The adjective 'temporary' and the contrast with 'permanent' show that expedients are stopgap practical solutions rather than lasting commitments. Neither obligations nor guarantees nor negotiations fits a term paired with 'temporary' in describing emergency agencies.",
+    "answerKo": "정답은 (B)입니다. 해당 문장은 루스벨트가 영구적인 연방 고용에는 신중했으며 이 기구들을 temporary expedients로 여겼다고 서술합니다. permanent와의 대조, 그리고 temporary라는 수식어에서 expedient가 '임시방편적인 실용적 조치'임을 알 수 있습니다. 의무, 재정 보증, 공식 협상은 모두 이 문맥과 어울리지 않습니다.",
+    "keyExpressions": [
+      {
+        "en": "erosion control",
+        "ko": "토양 침식 방지"
+      },
+      {
+        "en": "cash relief",
+        "ko": "현금 구제"
+      },
+      {
+        "en": "wage scale",
+        "ko": "임금 수준, 임금 체계"
+      },
+      {
+        "en": "expedient",
+        "ko": "임시방편, 편의적 수단"
+      },
+      {
+        "en": "physical legacy",
+        "ko": "물리적 유산"
+      }
+    ],
+    "tips": "어휘 문제는 단어를 몰라도 문맥 단서로 풀 수 있습니다. 같은 문장 안의 수식어(temporary)와 대조어(permanent)를 먼저 찾아 의미 범위를 좁히세요. 선택지를 원래 자리에 넣어 읽었을 때 문장의 논리가 유지되는지 확인하는 것이 마지막 검증 단계입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "미국노동총연맹의 전략",
+    "question": "The American Federation of Labor, founded in 1886 under Samuel Gompers, organized skilled craftsmen into autonomous national unions rather than attempting to unite all wage earners in a single body. Its leaders concentrated on wages, hours, and working conditions, deliberately avoiding the broad social programs that had absorbed earlier organizations such as the Knights of Labor. This narrow focus reflected a judgment that skilled workers possessed bargaining leverage that unskilled laborers, easily replaced, did not.\nThe strategy produced durable institutions and rising membership, yet it left the majority of the industrial workforce outside organized labor entirely. Immigrants, women, and African Americans were frequently excluded from craft locals by apprenticeship rules and explicit bars. Only in the 1930s, when industrial unionism gathered force in steel and automobiles, did organizers systematically pursue the semiskilled masses whom the federation had long neglected.\n\nThe word 'it' in the passage refers to\n(A) the strategy\n(B) rising membership\n(C) organized labor\n(D) the industrial workforce",
+    "targetLevel": "지시 대상",
+    "answerEn": "(A) The sentence reads that the strategy produced durable institutions and rising membership, yet it left the majority of the industrial workforce outside organized labor. The subject of the clause before 'yet' is 'the strategy', and the pronoun continues that subject across the coordinating conjunction. Membership and the workforce are objects rather than agents, and organized labor appears only inside the prepositional phrase that follows the pronoun.",
+    "answerKo": "정답은 (A)입니다. 해당 문장은 '그 전략이 지속적인 제도와 회원 증가를 낳았지만, it은 산업 노동력의 다수를 조직 노동 바깥에 남겨두었다'는 구조입니다. yet 앞 절의 주어가 the strategy이고 대명사가 그 주어를 이어받습니다. rising membership과 industrial workforce는 목적어이며, organized labor는 대명사 뒤 전치사구 안에 있어 지시 대상이 될 수 없습니다.",
+    "keyExpressions": [
+      {
+        "en": "craftsman",
+        "ko": "숙련 기능공"
+      },
+      {
+        "en": "bargaining leverage",
+        "ko": "협상력, 교섭상의 지렛대"
+      },
+      {
+        "en": "apprenticeship rule",
+        "ko": "도제 규정"
+      },
+      {
+        "en": "industrial unionism",
+        "ko": "산업별 노동조합주의"
+      },
+      {
+        "en": "semiskilled",
+        "ko": "반숙련의"
+      }
+    ],
+    "tips": "지시 대상 문제는 대명사의 수(단수·복수)와 격을 먼저 확인해 후보를 줄이세요. 그다음 대명사 자리에 각 선택지를 대입해 문장이 의미상 성립하는지 봅니다. 등위접속사(and, but, yet) 뒤의 대명사는 앞 절의 주어를 이어받는 경우가 가장 흔합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "홈스테드법과 서부 정착",
+    "question": "The Homestead Act of 1862 offered one hundred sixty acres of public land to any adult citizen who would reside on the claim for five years and make improvements upon it. Congress intended the statute to populate the interior with independent family farmers, and roughly four hundred thousand households eventually obtained title. The distribution of benefits, however, diverged sharply from the design, since speculators and railroad agents acquired vast acreages through fraudulent filings and dummy claimants.\nEnvironmental conditions compounded the difficulty. West of the hundredth meridian, annual rainfall rarely supported the intensive cultivation that a quarter section presupposed, and drought cycles ruined settlers who had arrived during unusually wet years. Many claimants abandoned their land before proving up, selling improvements to neighbors who consolidated holdings into ranches far larger than the statute had imagined.\n\nWhich of the sentences below best expresses the essential information in the highlighted sentence? 'The distribution of benefits, however, diverged sharply from the design, since speculators and railroad agents acquired vast acreages through fraudulent filings and dummy claimants.'\n(A) Congress designed the law carefully, but few citizens understood how to file claims properly\n(B) The law worked as intended because speculators also improved the land they obtained\n(C) Contrary to the law's purpose, fraudulent claims allowed speculators and railroads to obtain enormous tracts\n(D) Railroad agents opposed the statute because it reduced the acreage available for track construction",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(C) The original sentence contains two elements: outcomes departed from the law's intent, and the reason was that speculators and railroad agents used fraudulent filings to gain huge acreages. Choice (C) preserves both the contrast and the causal explanation without adding new claims. Choice (A) invents a problem of filing competence, (B) reverses the meaning entirely, and (D) introduces opposition that the sentence never mentions.",
+    "answerKo": "정답은 (C)입니다. 원문은 두 요소로 이루어져 있습니다. 첫째 실제 혜택 분배가 입법 의도와 크게 어긋났다는 대조, 둘째 그 이유가 투기꾼과 철도 대리인의 허위 신청과 명의만 빌린 청구인 때문이라는 인과입니다. (C)는 이 두 요소를 그대로 보존합니다. (A)는 없는 내용을 추가했고, (B)는 의미를 정반대로 뒤집었으며, (D)는 반대 입장이라는 새로운 정보를 만들어냈습니다.",
+    "keyExpressions": [
+      {
+        "en": "public land",
+        "ko": "공유지, 국유지"
+      },
+      {
+        "en": "obtain title",
+        "ko": "소유권을 취득하다"
+      },
+      {
+        "en": "speculator",
+        "ko": "투기꾼"
+      },
+      {
+        "en": "fraudulent filing",
+        "ko": "허위 신청"
+      },
+      {
+        "en": "prove up",
+        "ko": "(정착 요건을 충족해) 소유권을 확정하다"
+      }
+    ],
+    "tips": "문장 재진술 문제는 원문의 핵심 뼈대(주어·동사·논리 관계)를 먼저 요약한 뒤 선택지와 비교하세요. however, since 같은 접속 표현이 나타내는 대조와 인과 관계가 유지되는지가 판별 기준입니다. 의미를 뒤집거나 지문에 없는 정보를 넣은 선택지는 즉시 제외합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "철강 산업과 수직 통합",
+    "question": "[1] Andrew Carnegie built his steel empire not merely by adopting the Bessemer process but by controlling every stage of production. [2] His companies purchased iron ore ranges in Minnesota, acquired the ships and rail lines that carried the ore to Pennsylvania, and operated the coke works that fueled the furnaces. [3] Because no supplier could impose a markup at any point, costs per ton fell steadily even when demand slackened. [4]\nCompetitors who bought inputs on the open market found themselves unable to match these prices during downturns, and many sold out on unfavorable terms. Carnegie also invested aggressively in new equipment during depressions, when construction was cheap, so that recovery found his mills technologically ahead. The result was a firm whose dominance rested on cost accounting and timing as much as on any single technological advantage.\n\nLook at the four squares [1], [2], [3], [4] that indicate where the following sentence could be added to the passage. Where would the sentence best fit? 'This arrangement, known as vertical integration, eliminated the profits that independent middlemen would otherwise have collected.'\n(A) [1]\n(B) [2]\n(C) [3]\n(D) [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(C) The inserted sentence names and defines the arrangement just described, so it must follow the concrete list of ore ranges, ships, rail lines, and coke works given in sentence 2. Placing it at [3] also creates a smooth link to the next sentence, which begins 'Because no supplier could impose a markup' and elaborates on eliminated middleman profits. At [1] or [2] the phrase 'this arrangement' would have no clear referent, and at [4] it would interrupt the causal chain already completed.",
+    "answerKo": "정답은 (C)입니다. 삽입 문장은 앞서 묘사된 방식을 '수직 통합'이라 명명하고 정의하므로, 광산·선박·철도·코크스 공장을 열거한 문장 뒤에 와야 합니다. 또한 [3]에 넣으면 다음 문장의 '어떤 공급자도 마진을 붙일 수 없었기 때문에'와 중간상 이윤 제거라는 내용이 자연스럽게 연결됩니다. [1]이나 [2] 자리에서는 this arrangement가 가리킬 대상이 없고, [4]는 이미 완결된 인과 흐름을 끊습니다.",
+    "keyExpressions": [
+      {
+        "en": "vertical integration",
+        "ko": "수직 통합"
+      },
+      {
+        "en": "iron ore range",
+        "ko": "철광석 광산 지대"
+      },
+      {
+        "en": "coke works",
+        "ko": "코크스 제조 공장"
+      },
+      {
+        "en": "impose a markup",
+        "ko": "이윤을 덧붙이다"
+      },
+      {
+        "en": "cost accounting",
+        "ko": "원가 회계"
+      }
+    ],
+    "tips": "문장 삽입 문제는 삽입 문장 속의 지시어(this, such, these)와 연결어(however, therefore)를 단서로 삼습니다. 지시어가 가리킬 구체적 내용이 이미 등장한 직후 자리가 정답일 확률이 높습니다. 후보 자리에 넣고 앞뒤 문장을 소리 내어 이어 읽으며 흐름이 끊기지 않는지 확인하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "더스트볼과 농민 이주",
+    "question": "During the 1930s a prolonged drought struck the southern Great Plains, a region that homesteaders had plowed intensively during the wheat boom of the previous two decades. Deep plowing had destroyed the native grasses whose root systems anchored the topsoil, and when the rains failed, high winds lifted the exposed soil into dust storms that darkened skies as far east as Washington. Contemporaries named the afflicted area the Dust Bowl.\nRoughly two and a half million people left the plains states during the decade, though the popular image of families fleeing directly from dust storms to California oversimplifies the movement. Many migrants came from cotton districts where mechanization and federal acreage reduction payments had displaced tenants, and the majority relocated to nearby towns rather than to the Pacific coast. Federal soil conservation districts, established in 1935, eventually promoted contour plowing and shelterbelts.\n\nWhat can be inferred about the popular image of Dust Bowl migration?\n(A) It correctly describes the experience of nearly all plains migrants\n(B) It attributes to dust storms movements that often had other economic causes\n(C) It was invented by federal soil conservation officials in 1935\n(D) It underestimated the total number of people who left the plains",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage says the popular image oversimplifies matters and then notes that many migrants came from cotton districts displaced by mechanization and acreage reduction payments, while most moved to nearby towns. The inference is that the familiar picture credits dust storms with migrations that frequently had separate economic causes. Choice (A) contradicts the word 'oversimplifies'. No origin for the image is given, so (C) fails, and the text supplies a large migration figure without suggesting the image undercounted it.",
+    "answerKo": "정답은 (B)입니다. 지문은 대중적 이미지가 실제를 지나치게 단순화한다고 지적한 뒤, 많은 이주민이 기계화와 연방 경작면적 축소 보조금으로 밀려난 목화 지대 출신이었고 대다수는 캘리포니아가 아닌 인근 도시로 이동했다고 밝힙니다. 따라서 그 이미지가 다른 경제적 원인에 의한 이동까지 모래폭풍 탓으로 돌린다는 추론이 가능합니다. (A)는 oversimplifies와 모순되고, (C)와 (D)는 근거가 없습니다.",
+    "keyExpressions": [
+      {
+        "en": "prolonged drought",
+        "ko": "장기 가뭄"
+      },
+      {
+        "en": "topsoil",
+        "ko": "표토, 겉흙"
+      },
+      {
+        "en": "tenant",
+        "ko": "소작농, 차지인"
+      },
+      {
+        "en": "acreage reduction payment",
+        "ko": "경작 면적 축소 보조금"
+      },
+      {
+        "en": "shelterbelt",
+        "ko": "방풍림"
+      }
+    ],
+    "tips": "추론 문제에서 저자가 통념을 언급하며 oversimplifies, misleading, popular belief 같은 표현을 쓰면, 곧이어 나오는 수정 정보가 정답의 근거입니다. 통념과 실제의 차이를 한 문장으로 정리해 두면 선택지 판별이 빨라집니다. 지문 밖 배경지식으로 판단하지 않도록 주의하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "1877년 대철도파업",
+    "question": "In July 1877, the Baltimore and Ohio Railroad announced its third wage reduction of the year, and firemen at Martinsburg, West Virginia, refused to move freight trains. The stoppage spread along the trunk lines within days, reaching Pittsburgh, Chicago, and St. Louis, where sympathetic workers in other trades joined the protest. No national organization directed the movement; it propagated through the rail network itself, since crews traveling between terminals carried news of the walkout.\nState militias proved unreliable because their members often sympathized with the strikers, and governors requested federal troops. President Hayes complied, and soldiers dispersed crowds in several cities after clashes that left more than one hundred dead. The strike collapsed within a month, yet it convinced many employers that permanent armories and professional police forces were necessary, while persuading workers that lasting organization was indispensable.\n\nAccording to the passage, why did the strike spread so quickly?\n(A) A national labor federation coordinated simultaneous walkouts\n(B) News traveled with rail crews moving between terminals\n(C) State militias joined the strikers and blocked the trunk lines\n(D) Federal troops were slow to arrive in the affected cities",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The passage states that no national organization directed the movement and that it propagated through the rail network itself because crews traveling between terminals carried news of the walkout. That sentence answers the question directly. Choice (A) is explicitly denied. Militias sympathized but did not join and blockade lines, so (C) misstates the text, and troop timing is never offered as a cause of the spread.",
+    "answerKo": "정답은 (B)입니다. 지문은 어떤 전국 조직도 이 운동을 지휘하지 않았으며, 종착역 사이를 오가는 승무원들이 파업 소식을 전하면서 철도망 자체를 통해 확산되었다고 명시합니다. (A)는 지문이 직접 부정하는 내용입니다. (C)의 민병대는 동조했을 뿐 파업에 합류해 간선을 봉쇄했다는 서술은 없고, (D) 연방군 도착 시점은 확산의 원인으로 제시되지 않았습니다.",
+    "keyExpressions": [
+      {
+        "en": "wage reduction",
+        "ko": "임금 삭감"
+      },
+      {
+        "en": "trunk line",
+        "ko": "간선 철도"
+      },
+      {
+        "en": "propagate",
+        "ko": "퍼지다, 전파되다"
+      },
+      {
+        "en": "militia",
+        "ko": "민병대"
+      },
+      {
+        "en": "indispensable",
+        "ko": "필수적인, 없어서는 안 될"
+      }
+    ],
+    "tips": "원인을 묻는 사실 정보 문제는 지문에서 because, since, so that 같은 인과 표지를 찾아 답을 확정하세요. 선택지 중 지문이 명시적으로 부정한 내용(no national organization)을 그대로 뒤집어 놓은 오답이 흔합니다. 사건의 결과와 원인을 혼동하지 않도록 시점을 구분해 읽으세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "진보시대의 규제 개혁",
+    "question": "Progressive reformers between 1900 and 1917 sought to subject industrial capitalism to expert supervision rather than to dismantle it. Their characteristic instrument was the administrative commission, a body staffed by specialists and insulated from ordinary electoral pressure. The Hepburn Act strengthened the Interstate Commerce Commission's authority over railroad rates, and the Federal Trade Commission, created in 1914, was empowered to investigate and prohibit unfair competitive practices.\nThis faith in expertise had ambiguous consequences. Commissions accumulated technical knowledge that legislatures could not match, but they also developed close relationships with the industries they supervised, since regulated firms supplied much of the information on which decisions depended. Later critics described this tendency as capture, arguing that agencies gradually came to define the public interest in terms congenial to the regulated. Reformers of the period rarely anticipated such an outcome.\n\nThe word 'congenial' in the passage is closest in meaning to\n(A) agreeable or favorable\n(B) unfamiliar\n(C) legally binding\n(D) temporary",
+    "targetLevel": "어휘",
+    "answerEn": "(A) The clause states that agencies came to define the public interest in terms congenial to the regulated, illustrating capture by industry. For that criticism to make sense, the terms must be ones the regulated firms find agreeable or favorable. 'Unfamiliar' would contradict the argument, while 'legally binding' and 'temporary' describe properties unrelated to whose interests the definitions serve.",
+    "answerKo": "정답은 (A)입니다. 해당 절은 규제 기관이 공익을 피규제 산업에 congenial한 방식으로 정의하게 되었다고 하며, 이는 이른바 포획(capture) 현상을 설명합니다. 이 비판이 성립하려면 그 정의가 피규제 기업에게 '마음에 드는, 유리한' 것이어야 합니다. '낯선'은 논지와 모순되고, '법적 구속력 있는'과 '일시적인'은 이해관계와 무관한 속성입니다.",
+    "keyExpressions": [
+      {
+        "en": "administrative commission",
+        "ko": "행정 위원회"
+      },
+      {
+        "en": "insulated from electoral pressure",
+        "ko": "선거 압력으로부터 차단된"
+      },
+      {
+        "en": "unfair competitive practice",
+        "ko": "불공정 경쟁 행위"
+      },
+      {
+        "en": "regulatory capture",
+        "ko": "규제 포획"
+      },
+      {
+        "en": "congenial",
+        "ko": "마음에 맞는, 우호적인"
+      }
+    ],
+    "tips": "어휘 문제에서 해당 단어가 논증의 일부라면, 그 논증이 성립하는 방향으로 의미를 정하면 됩니다. 여기서는 capture라는 비판이 성립해야 하므로 '피규제자에게 유리한'이라는 방향이 확정됩니다. 어원(congenial의 gen-, 같은 성향)도 보조 단서로 활용하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "와그너법과 단체교섭",
+    "question": "The National Labor Relations Act of 1935, commonly called the Wagner Act, guaranteed private-sector employees the right to organize and to bargain collectively through representatives of their own choosing. It established a board empowered to conduct representation elections and to order remedies for unfair labor practices such as firing union supporters or refusing to negotiate. Before this statute, employers could dismiss organizers with little legal consequence, and courts routinely issued injunctions against strikes.\nUnion membership expanded from roughly three million to more than ten million within a decade, concentrated in mass-production industries that craft unions had ignored. The law did not cover agricultural or domestic workers, exclusions that fell heavily on African American and Mexican American laborers. Congress subsequently amended the framework in 1947 to restrict certain union tactics, but the basic machinery of certified bargaining representatives endured.\n\nWhich of the following can be inferred about labor organizing before 1935?\n(A) Courts generally protected workers who attempted to form unions\n(B) Organizers faced dismissal and legal obstacles that limited union growth\n(C) Agricultural workers were the most heavily unionized group\n(D) Collective bargaining was prohibited by federal statute in all industries",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage notes that before the act employers could dismiss organizers with little legal consequence and that courts routinely issued injunctions against strikes, while membership then grew from three million to over ten million after passage. Together these facts support the inference that dismissal and judicial obstacles had previously constrained organizing. Choice (A) reverses the role of the courts, (C) contradicts the note that farm workers were excluded and marginal, and (D) overstates, since no general federal ban is described.",
+    "answerKo": "정답은 (B)입니다. 지문은 이 법 이전에는 고용주가 조직가를 별다른 법적 책임 없이 해고할 수 있었고 법원이 파업 금지 명령을 일상적으로 내렸다고 밝히며, 법 제정 후 조합원이 300만에서 1000만 이상으로 늘었다고 합니다. 이를 종합하면 이전에는 해고와 사법적 장애가 조직화를 제약했다는 추론이 가능합니다. (A)는 법원의 역할을 반대로 서술했고, (C)와 (D)는 근거가 없습니다.",
+    "keyExpressions": [
+      {
+        "en": "bargain collectively",
+        "ko": "단체교섭을 하다"
+      },
+      {
+        "en": "unfair labor practice",
+        "ko": "부당 노동 행위"
+      },
+      {
+        "en": "injunction",
+        "ko": "(법원의) 금지 명령"
+      },
+      {
+        "en": "mass-production industry",
+        "ko": "대량생산 산업"
+      },
+      {
+        "en": "certified bargaining representative",
+        "ko": "공인된 교섭 대표"
+      }
+    ],
+    "tips": "'이전 상황'을 묻는 추론 문제는 지문에서 before, previously, until then 같은 시간 표지가 있는 문장을 먼저 찾으세요. 법 제정 전후의 대조가 제시되면 그 차이 자체가 정답의 근거입니다. 지문이 부분적 제약을 말했는데 선택지가 전면 금지로 확대하면 오답입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "프런티어 종결 논쟁",
+    "question": "In 1893 the historian Frederick Jackson Turner argued that the existence of free land and its steady recession westward explained American development. The frontier, in his account, repeatedly stripped settlers of European habits and forced them to improvise institutions, producing individualism, practicality, and democratic sentiment. Turner drew on the census of 1890, which reported that a continuous frontier line could no longer be identified, and he warned that a formative influence had come to an end.\nSubsequent scholarship has qualified nearly every element of the thesis. Historians point out that the West was never empty, that federal spending on surveys, forts, and irrigation shaped settlement decisively, and that mining and ranching were corporate enterprises requiring substantial capital. Turner's essay nonetheless retains interest as evidence of how Americans of his generation interpreted their own past.\n\nDirections: Select the THREE answer choices that express the most important ideas in the passage.\nIntroductory sentence: Turner's frontier thesis proposed an explanation of American development that later historians substantially revised.\n(A) Turner claimed that receding free land shaped American individualism and democracy\n(B) The census of 1890 reported that no continuous frontier line remained\n(C) Later historians stressed federal spending, corporate capital, and prior Native occupation\n(D) Turner's essay still matters as a document of how his generation understood the past\n(E) Irrigation projects in the West were financed entirely by private ranchers\n(F) Turner delivered his argument to an audience of professional historians in 1893",
+    "targetLevel": "지문 요약",
+    "answerEn": "(A), (C), (D) are the major ideas. (A) states the thesis itself, (C) summarizes the scholarly revision that occupies the second paragraph, and (D) gives the author's concluding evaluation of the essay's continuing value. (B) is an accurate supporting detail rather than a main idea, (E) contradicts the statement that federal spending on irrigation shaped settlement, and (F) is a minor circumstance not emphasized in the passage.",
+    "answerKo": "정답은 (A), (C), (D)입니다. (A)는 터너 명제의 핵심 주장, (C)는 둘째 단락 전체를 차지하는 후대 학계의 수정 내용, (D)는 저자의 마무리 평가에 해당합니다. (B)의 1890년 인구조사 결과는 주장을 뒷받침하는 세부 사항일 뿐 대의가 아니며, (E)는 연방 지출이 관개를 포함해 정착을 좌우했다는 서술과 모순되고, (F)는 지문이 강조하지 않은 부수적 정황입니다.",
+    "keyExpressions": [
+      {
+        "en": "recession of free land",
+        "ko": "무상 토지 경계의 후퇴"
+      },
+      {
+        "en": "improvise institutions",
+        "ko": "제도를 즉흥적으로 만들어내다"
+      },
+      {
+        "en": "formative influence",
+        "ko": "형성적 영향"
+      },
+      {
+        "en": "qualify a thesis",
+        "ko": "학설에 단서를 달다, 제한적으로 수정하다"
+      },
+      {
+        "en": "corporate enterprise",
+        "ko": "기업 형태의 사업"
+      }
+    ],
+    "tips": "지문 요약 문제는 각 단락의 중심 문장을 한 줄로 요약한 뒤 선택지와 대조하세요. 사실이지만 지엽적인 세부(연도, 통계 하나)는 정답에서 제외됩니다. 지문과 모순되는 선택지와 지문에 없는 선택지를 먼저 지우면 대개 세 개가 남습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "자동차 산업과 조립라인",
+    "question": "Henry Ford's moving assembly line, introduced at Highland Park in 1913, reduced the time required to assemble a Model T chassis from more than twelve hours to about ninety minutes. Work was subdivided into narrow repetitive operations, and the conveyor set the pace rather than the worker. Costs fell so steeply that the price of the car declined even as output multiplied, bringing automobile ownership within reach of ordinary wage earners.\nThe human consequences were less favorable. Monotony and the relentless line speed produced annual labor turnover exceeding three hundred percent, a rate that threatened production itself. Ford responded in 1914 with the five-dollar day, roughly doubling prevailing wages, on condition that workers accept inspection of their household habits by a company sociological department. Turnover fell dramatically, and other manufacturers, initially hostile, gradually adopted comparable wage strategies.\n\nDirections: Complete the table by matching each statement with the category it describes.\nCategories: PRODUCTION EFFECTS / LABOR EFFECTS\n(A) Assembly time for a chassis fell to roughly ninety minutes\n(B) Annual worker turnover exceeded three hundred percent\n(C) Car prices declined while output increased\n(D) Wages were doubled under the five-dollar day\n(E) Work was broken into narrow repetitive operations\n(F) A sociological department inspected employees' household habits",
+    "targetLevel": "표 채우기",
+    "answerEn": "PRODUCTION EFFECTS: (A), (C), (E). LABOR EFFECTS: (B), (D), (F). The first group concerns output and manufacturing method: shortened assembly time, falling prices with rising volume, and the subdivision of tasks that made the line possible. The second group concerns the workforce: extreme turnover caused by monotony, the doubled wage introduced to stop it, and the company inspection attached as a condition. Note that (E) is classified by its role as a production technique even though it also affected workers.",
+    "answerKo": "생산 측면은 (A), (C), (E)이고 노동 측면은 (B), (D), (F)입니다. 앞 묶음은 조립 시간 단축, 생산량 증가와 동시에 이루어진 가격 하락, 조립라인을 가능하게 한 작업의 세분화 등 생산 방식과 산출에 관한 항목입니다. 뒤 묶음은 단조로움이 초래한 극심한 이직률, 이를 막기 위한 임금 두 배 인상, 그 조건으로 붙은 회사의 생활 실태 조사 등 노동력에 관한 항목입니다. (E)는 노동자에게도 영향을 주지만 생산 기법으로 분류합니다.",
+    "keyExpressions": [
+      {
+        "en": "moving assembly line",
+        "ko": "이동식 조립라인"
+      },
+      {
+        "en": "chassis",
+        "ko": "(자동차의) 차대"
+      },
+      {
+        "en": "labor turnover",
+        "ko": "노동 이직률"
+      },
+      {
+        "en": "line speed",
+        "ko": "라인 속도, 작업 속도"
+      },
+      {
+        "en": "prevailing wage",
+        "ko": "통상 임금, 시세 임금"
+      }
+    ],
+    "tips": "표 채우기 문제는 두 범주의 기준을 먼저 한 단어로 정의한 뒤 각 항목을 분류하세요. 여기서는 '생산 방식·산출'과 '노동자·고용'이 기준입니다. 애매한 항목은 지문에서 그 내용이 어느 단락에 배치되었는지를 보면 저자의 분류 의도를 알 수 있습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "미국사·산업화",
+    "topic": "테네시강 유역 개발청",
+    "question": "The Tennessee Valley Authority, created in 1933, was the most ambitious regional planning experiment of the New Deal. Congress authorized a public corporation to build dams on the Tennessee River system for flood control, navigation, and the generation of electricity, and to promote fertilizer production and soil restoration across seven states. Within a decade the agency had constructed sixteen dams and extended power lines into counties where fewer than three percent of farms had previously enjoyed electric service.\nPrivate utilities challenged the authority in court, contending that federal power generation constituted unfair competition, but the Supreme Court sustained the program. Less often noted at the time, reservoirs displaced roughly fifteen thousand families, and the benefits of cheap power flowed unevenly, since segregated hiring restricted African American workers largely to unskilled construction jobs.\n\nThe author mentions that fewer than three percent of farms had electric service in order to\n(A) explain why private utilities filed suit against the authority\n(B) emphasize how limited rural electrification was before the agency acted\n(C) argue that dam construction was more important than fertilizer production\n(D) suggest that the agency's power lines were poorly maintained",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The statistic appears immediately after the claim that the agency extended power lines into previously unserved counties, and its function is to quantify how little rural electrification existed beforehand, thereby measuring the scale of the achievement. It is not offered as a motive for the utilities' lawsuit, which is explained separately as a complaint about unfair competition. No comparison of dams with fertilizer is made, and maintenance is never discussed.",
+    "answerKo": "정답은 (B)입니다. 이 통계는 기관이 이전에 전기가 들어가지 않던 카운티까지 송전선을 연장했다는 서술 바로 뒤에 나오며, 그 이전 농촌 전화(電化) 수준이 얼마나 낮았는지를 수치로 보여줌으로써 성과의 규모를 드러냅니다. 민간 전력회사의 소송 이유는 별도로 '불공정 경쟁'이라 설명되므로 (A)는 틀리고, (C) 댐과 비료의 비교나 (D) 유지보수 문제는 지문에 없습니다.",
+    "keyExpressions": [
+      {
+        "en": "regional planning",
+        "ko": "지역 개발 계획"
+      },
+      {
+        "en": "flood control",
+        "ko": "홍수 통제"
+      },
+      {
+        "en": "public corporation",
+        "ko": "공기업, 공공 법인"
+      },
+      {
+        "en": "rural electrification",
+        "ko": "농촌 전화(전기 보급)"
+      },
+      {
+        "en": "segregated hiring",
+        "ko": "인종 분리 채용"
+      }
+    ],
+    "tips": "수사적 의도 문제에서 숫자나 통계가 인용되면 대개 앞 문장의 주장을 뒷받침하거나 규모를 실감하게 하려는 목적입니다. 해당 통계 바로 앞 문장을 찾아 무엇을 주장하고 있는지 확인하세요. 지문에 등장하지만 다른 문단의 논점을 끌어온 선택지가 전형적인 함정입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "로마의 도로망",
+    "question": "The Roman road network, which eventually extended more than eighty thousand kilometers, was conceived primarily as an instrument of military logistics rather than commerce. Legions required the capacity to move rapidly from one frontier to another, and the engineers who designed the viae accordingly favored straight alignments, durable stone foundations, and gradients that a marching column could sustain. Roads were built in layers: a bed of packed sand, a course of rubble, a layer of concrete, and finally fitted paving stones with a slight camber to shed rainwater.\n\nThe commercial consequences, though unintended, proved enormous. Merchants exploited the same corridors that carried soldiers, and provincial towns that lay along a major via grew far faster than settlements only a short distance away. Imperial administration likewise depended on the network: the cursus publicus, a relay of stations supplying fresh horses, allowed official dispatches to travel roughly eighty kilometers in a single day, binding distant provinces to the capital.\n\nAccording to paragraph 1, Roman engineers designed the roads with straight alignments mainly in order to\n(A) reduce the quantity of paving stone required for construction\n(B) enable military units to move quickly between frontiers\n(C) allow rainwater to drain away from the road surface\n(D) connect as many provincial market towns as possible",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The first paragraph states that the network was conceived as an instrument of military logistics and that legions required the capacity to move rapidly from one frontier to another. The clause 'and the engineers who designed the viae accordingly favored straight alignments' directly links the design choice to that military need. Choice (C) confuses the camber, not the alignment, with drainage. Choice (D) reverses the passage, which calls commercial growth an unintended consequence.",
+    "answerKo": "정답은 (B)이다. 1단락은 도로망이 군사 병참 수단으로 구상되었고 군단이 국경 사이를 빠르게 이동할 필요가 있었다고 밝힌 뒤, '그에 따라(accordingly)' 기술자들이 직선 노선을 선호했다고 설명한다. 즉 직선 설계의 목적은 군사 이동 속도이다. (C)의 배수는 직선이 아니라 노면의 완만한 경사(camber) 기능이며, (A)는 언급이 없다. (D)의 상업적 효과는 2단락에서 '의도되지 않은 결과'로 서술되므로 설계 목적이 될 수 없다.",
+    "keyExpressions": [
+      {
+        "en": "military logistics",
+        "ko": "군사 병참"
+      },
+      {
+        "en": "alignment",
+        "ko": "노선 배치, 정렬"
+      },
+      {
+        "en": "gradient",
+        "ko": "경사도"
+      },
+      {
+        "en": "unintended consequence",
+        "ko": "의도하지 않은 결과"
+      },
+      {
+        "en": "relay station",
+        "ko": "중계 역참"
+      }
+    ],
+    "tips": "사실 정보 문제는 문제에 명시된 단락 범위 안에서만 근거를 찾는다. 질문의 핵심어(straight alignments)를 지문에서 찾고 그 앞뒤의 인과 표지어(accordingly, because, in order to)를 확인하면 정답 근거 문장이 확정된다. 다른 단락의 사실을 끌어온 선택지가 대표적 오답이다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "실크로드 교역",
+    "question": "The Silk Road was never a single highway but a shifting web of caravan routes linking Chang'an to the Mediterranean through the oases of Central Asia. Few merchants traveled its entire length. Instead, goods passed through many hands, each intermediary adding a margin, so that Chinese silk reaching Rome might cost dozens of times its price of origin. The trade depended on political conditions: it flourished when large states such as Han China, Parthia, and later the Mongol khanates secured the intervening territory, and it contracted sharply when those powers fragmented.\n\nWhat moved along the routes was not only merchandise. Buddhism entered China with Central Asian traders and missionaries, papermaking spread westward, and pathogens traveled as readily as textiles. Some historians argue that the plague outbreaks of the fourteenth century followed commercial arteries opened by Mongol unification, a reminder that connection carried costs as well as benefits.\n\nAccording to the passage, all of the following moved along the Silk Road EXCEPT\n(A) religious beliefs such as Buddhism\n(B) technical knowledge such as papermaking\n(C) disease-causing organisms\n(D) large numbers of merchants completing the full journey",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) The passage explicitly says that few merchants traveled its entire length and that goods passed through many intermediaries, so option (D) contradicts the text. Buddhism, papermaking, and pathogens are all named in the second paragraph as things that moved along the routes. In negative factual questions the three incorrect options are all stated somewhere in the passage, and the answer is the one that is either absent or reversed.",
+    "answerKo": "정답은 (D)이다. 지문은 '전 구간을 여행한 상인은 거의 없었다'고 명시하고 물품이 여러 중개인의 손을 거쳤다고 설명하므로, 상인이 대규모로 전 구간을 이동했다는 진술은 지문과 반대된다. (A) 불교, (B) 제지술, (C) 병원균은 모두 2단락에 이동한 것으로 열거되어 있다. 부정 사실 정보 유형에서는 지문에 언급된 세 개를 소거하는 방식이 가장 안전하다.",
+    "keyExpressions": [
+      {
+        "en": "intermediary",
+        "ko": "중개인, 중간 상인"
+      },
+      {
+        "en": "margin",
+        "ko": "이윤, 마진"
+      },
+      {
+        "en": "fragment",
+        "ko": "분열되다"
+      },
+      {
+        "en": "pathogen",
+        "ko": "병원체"
+      },
+      {
+        "en": "commercial artery",
+        "ko": "교역 간선로"
+      }
+    ],
+    "tips": "EXCEPT/NOT 유형은 정답보다 오답을 먼저 확정한다. 선택지 세 개를 지문 문장과 하나씩 대조해 밑줄을 치고, 근거를 찾지 못했거나 지문과 반대되는 하나를 고른다. 지문 내용을 과장하거나 정도를 뒤집은 선택지(few → large numbers)가 자주 정답이다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "중세 유럽의 길드",
+    "question": "Craft guilds in medieval European towns regulated far more than the quality of goods. A guild fixed the number of apprentices a master could train, the hours during which work could be performed, and often the price at which finished articles could be sold. Entry to mastership required years of service, the production of a masterpiece judged by senior members, and, increasingly after the fourteenth century, a substantial entrance fee.\n\nHistorians disagree about the net effect of these arrangements. Defenders note that guilds transmitted skills reliably in an age without formal technical schooling and that their standards protected consumers who could not easily judge workmanship. Critics observe that as fees rose, mastership tended to pass within a narrowing circle of families, and that guild statutes in several cities explicitly forbade the adoption of labor-saving devices.\n\nWhich of the following can be inferred from paragraph 2 about guilds in the later medieval period?\n(A) They abandoned the requirement of producing a masterpiece.\n(B) They became less open to newcomers from outside established families.\n(C) They lost the authority to set prices for finished goods.\n(D) They were the principal sponsors of technical schools in towns.",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage states that entrance fees rose after the fourteenth century and that mastership tended to pass within a narrowing circle of families. Taken together, these statements support the inference that access for outsiders became more restricted. Nothing indicates the masterpiece requirement was dropped or that price-setting authority was lost, and the passage says guilds operated in an age without formal technical schooling, which rules out (D).",
+    "answerKo": "정답은 (B)이다. 지문은 14세기 이후 가입비가 크게 올랐고 장인 지위가 '점점 좁아지는 가문 집단' 안에서 세습되는 경향을 보였다고 서술한다. 이 두 진술을 결합하면 외부인의 진입이 어려워졌다는 추론이 성립한다. (A) 걸작 제출 요건 폐지, (C) 가격 결정권 상실은 언급이 없고, (D)는 지문이 '정규 기술 교육이 없던 시대'라고 한 것과 모순된다.",
+    "keyExpressions": [
+      {
+        "en": "apprentice",
+        "ko": "도제, 견습공"
+      },
+      {
+        "en": "mastership",
+        "ko": "장인 자격"
+      },
+      {
+        "en": "workmanship",
+        "ko": "장인의 솜씨"
+      },
+      {
+        "en": "statute",
+        "ko": "규약, 법령"
+      },
+      {
+        "en": "labor-saving device",
+        "ko": "노동 절약 장치"
+      }
+    ],
+    "tips": "추론 문제의 정답은 지문에 직접 쓰여 있지는 않지만 두세 문장을 결합하면 반드시 도출되는 내용이다. '상상'이 아니라 '한 걸음'만 나아가야 한다. 지문에 근거 문장을 지목할 수 없는 선택지, 지문의 조건을 무시한 일반화 선택지는 제거한다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "대항해 시대의 항해",
+    "question": "Portuguese expansion in the fifteenth century is often narrated as a story of daring, but it rested on incremental technical solutions. The caravel, with its lateen sails, could sail closer to the wind than earlier square-rigged vessels, which mattered enormously on a coast where the prevailing winds blew steadily southward. Returning home along the African shore was nearly impossible; captains instead learned to swing far out into the open Atlantic to catch westerlies, a maneuver known as the volta do mar.\n\nConsider what this required. A pilot had to sail deliberately away from the land he wished to reach, trusting a mental model of the wind system rather than the evidence of his eyes. Systematic record-keeping made such trust possible: each voyage's observations of winds, currents, and latitudes were compiled by the crown, so that knowledge accumulated instead of dying with individual sailors.\n\nWhy does the author state 'A pilot had to sail deliberately away from the land he wished to reach'?\n(A) To argue that Portuguese pilots frequently became lost at sea\n(B) To emphasize that the technique demanded reliance on abstract knowledge rather than direct observation\n(C) To explain why the caravel replaced square-rigged vessels\n(D) To show that the African coast offered few safe harbors",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The sentence follows the invitation 'Consider what this required' and is immediately explained by the clause about trusting a mental model of the wind system rather than the evidence of his eyes. Its rhetorical function is therefore to dramatize the counterintuitive, knowledge-dependent nature of the volta do mar and to set up the point about systematic record-keeping. The other choices name details that appear elsewhere in the passage or not at all.",
+    "answerKo": "정답은 (B)이다. 해당 문장은 'Consider what this required'라는 유도 문장 뒤에 놓이고, 곧바로 '눈에 보이는 증거가 아니라 바람 체계에 대한 머릿속 모형을 신뢰해야 했다'는 설명이 이어진다. 즉 이 문장의 수사적 기능은 볼타 두 마르가 직관에 반하며 축적된 지식에 의존했음을 부각해 뒤의 기록 관리 논의를 준비하는 것이다. (A)는 지문에 없는 부정적 진술이고, (C)와 (D)는 다른 정보와 혼동한 오답이다.",
+    "keyExpressions": [
+      {
+        "en": "incremental",
+        "ko": "점진적인, 단계적인"
+      },
+      {
+        "en": "prevailing wind",
+        "ko": "탁월풍, 우세풍"
+      },
+      {
+        "en": "maneuver",
+        "ko": "기동, 조작"
+      },
+      {
+        "en": "counterintuitive",
+        "ko": "직관에 반하는"
+      },
+      {
+        "en": "accumulate",
+        "ko": "축적되다"
+      }
+    ],
+    "tips": "수사적 의도 문제는 문장의 내용이 아니라 '왜 여기 놓였는가'를 묻는다. 인용 문장의 바로 앞뒤 문장을 읽어 그 문장이 무엇을 예시하거나 강조하는지 파악하라. 앞에 Consider, For example, Yet 같은 신호어가 있으면 결정적 단서가 된다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "산업혁명의 확산",
+    "question": "Industrialization did not radiate evenly outward from Britain. Belgium, with coal seams near navigable water and a dense network of skilled metalworkers, adopted mechanized production within a generation. Elsewhere the process was slower and took different forms. In Prussia the state itself supplied much of the initial capital, founding technical institutes and financing railways that private investors judged too risky, while in Russia industrial growth remained concentrated in a few enclaves largely owned by foreign firms.\n\nLatecomers enjoyed one conspicuous advantage: they could import proven machinery and hire experienced engineers rather than repeat costly experiments. Yet the same advantage entailed dependence. Countries that acquired technology ready-made often developed weaker traditions of independent innovation, and their new industries remained vulnerable to decisions taken in distant boardrooms.\n\nThe word 'conspicuous' in the passage is closest in meaning to\n(A) temporary\n(B) obvious\n(C) unfair\n(D) modest",
+    "targetLevel": "어휘",
+    "answerEn": "(B) 'Conspicuous' means easily noticed or clearly visible, so 'obvious' is the closest synonym. The context supports this reading: the sentence introduces an advantage that is then plainly described, namely importing proven machinery instead of repeating costly experiments. Nothing in the sentence suggests the advantage was short-lived (A) or slight (D), and the moral judgment implied by (C) is absent.",
+    "answerKo": "정답은 (B)이다. conspicuous는 '눈에 잘 띄는, 명백한'이라는 뜻이므로 obvious가 가장 가깝다. 문맥상 뒤이어 '검증된 기계를 수입하고 숙련 기술자를 고용할 수 있었다'는 분명한 이점이 제시되므로 '명백한 이점'이라는 해석이 자연스럽다. (A) 일시적, (D) 미미한은 오히려 뒤 문장의 내용과 충돌하고, (C) 불공정한은 도덕적 판단으로 문맥에 없다.",
+    "keyExpressions": [
+      {
+        "en": "radiate outward",
+        "ko": "바깥으로 퍼져 나가다"
+      },
+      {
+        "en": "navigable",
+        "ko": "항행이 가능한"
+      },
+      {
+        "en": "enclave",
+        "ko": "고립된 지역, 거점"
+      },
+      {
+        "en": "entail",
+        "ko": "수반하다, 초래하다"
+      },
+      {
+        "en": "ready-made",
+        "ko": "기성의, 완성된 형태의"
+      }
+    ],
+    "tips": "어휘 문제는 단어를 몰라도 문맥으로 풀 수 있다. 해당 단어를 빈칸으로 두고 앞뒤 문장이 요구하는 의미(긍정/부정, 정도)를 먼저 정한 뒤 선택지를 대입해 읽어 본다. 뒤에 Yet 같은 역접이 오면 앞 내용이 명백한 장점이어야 한다는 식의 논리 단서도 활용하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "계몽주의 사상",
+    "question": "Eighteenth-century Enlightenment writers seldom agreed with one another, yet they shared a procedural conviction: that inherited authority should be required to justify itself before the tribunal of reason. Institutions long defended by custom, from judicial torture to censorship, were examined as though they were hypotheses. Some thinkers concluded that reform could be entrusted to enlightened monarchs; others, notably Rousseau, insisted that legitimacy could arise only from the collective will of citizens.\n\nThe movement's social base was as distinctive as its ideas. Salons hosted by aristocratic women, subscription libraries, and coffeehouses created spaces where the manuscript could circulate and be criticized before publication. These venues mattered because they made argument public. Ideas that might once have remained private correspondence acquired an audience that could judge them, and this audience gradually came to be called opinion.\n\nThe word 'they' in the passage refers to\n(A) Enlightenment writers\n(B) institutions long defended by custom\n(C) hypotheses\n(D) enlightened monarchs",
+    "targetLevel": "지시 대상",
+    "answerEn": "(B) The sentence reads 'Institutions long defended by custom ... were examined as though they were hypotheses.' The pronoun 'they' occupies the subject slot of the subordinate clause and must match the plural subject of the main clause, namely the institutions. Substituting 'institutions' produces a coherent statement: the institutions were treated as if they were hypotheses to be tested. Choice (C) cannot be correct because 'hypotheses' is the predicate noun of the same clause.",
+    "answerKo": "정답은 (B)이다. 해당 문장은 '관습으로 오래 옹호되어 온 제도들이 마치 그것들이 가설인 양 검토되었다'로, as though 절의 주어인 they는 주절의 복수 주어 institutions를 받는다. institutions를 대입하면 '제도가 마치 검증 대상 가설처럼 다뤄졌다'는 자연스러운 문장이 된다. (C) hypotheses는 같은 절의 보어이므로 지시 대상이 될 수 없고, (A)와 (D)는 절 구조상 연결되지 않는다.",
+    "keyExpressions": [
+      {
+        "en": "inherited authority",
+        "ko": "세습된 권위"
+      },
+      {
+        "en": "tribunal",
+        "ko": "법정, 심판대"
+      },
+      {
+        "en": "legitimacy",
+        "ko": "정당성, 정통성"
+      },
+      {
+        "en": "circulate",
+        "ko": "유통되다, 회람되다"
+      },
+      {
+        "en": "venue",
+        "ko": "장소, 무대"
+      }
+    ],
+    "tips": "지시 대상 문제는 대명사의 수(단수/복수)와 격, 그리고 절 구조를 먼저 확인한다. 후보를 실제로 대명사 자리에 대입해 읽었을 때 의미가 통하는지 검증하라. 같은 절 안의 보어나 목적어는 보통 지시 대상이 될 수 없다는 문법 원칙도 유용하다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "한자동맹의 상업 질서",
+    "question": "The Hanseatic League was not a state, and it possessed neither a permanent army nor a fixed capital. It was an association of merchant communities in northern German towns that coordinated to secure privileges in foreign ports. Its principal weapon was collective withdrawal: when a ruler infringed Hansa rights, member towns could agree to suspend trade with his territory, depriving it of grain, timber, and Baltic fish until concessions were granted.\n\nThis instrument worked only so long as members preferred solidarity to short-term gain. Because a town that quietly continued trading during an embargo could capture the whole market, the League devoted much of its diplomacy to policing its own membership, and its decline in the sixteenth century owed as much to internal defection as to the rise of territorial states.\n\nWhich of the following best expresses the essential information in the highlighted sentence: 'This instrument worked only so long as members preferred solidarity to short-term gain'?\n(A) The embargo was effective only while member towns valued unity above immediate profit.\n(B) Members of the League rarely profited from trade embargoes.\n(C) Solidarity among members increased whenever short-term profits declined.\n(D) The League preferred long-term agreements to temporary trading privileges.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(A) The highlighted sentence states a condition: the boycott functioned only while members chose collective solidarity over immediate individual profit. Choice (A) preserves both the conditional relationship and the contrast between unity and immediate gain. Choice (B) drops the condition and adds a claim about profitability, (C) reverses the direction of causation, and (D) substitutes an unrelated preference about types of agreements.",
+    "answerKo": "정답은 (A)이다. 하이라이트 문장은 '이 수단(통상 중단)은 회원들이 단기 이익보다 결속을 우선할 때만 효력을 가졌다'는 조건 관계를 담고 있다. (A)는 조건('only while')과 대비(결속 대 즉각적 이익)를 모두 유지한다. (B)는 조건을 없애고 수익성이라는 새 주장을 넣었고, (C)는 인과의 방향을 뒤집었으며, (D)는 계약 기간에 관한 무관한 내용으로 바꿔치기했다.",
+    "keyExpressions": [
+      {
+        "en": "privilege",
+        "ko": "특권"
+      },
+      {
+        "en": "infringe",
+        "ko": "침해하다"
+      },
+      {
+        "en": "embargo",
+        "ko": "통상 금지"
+      },
+      {
+        "en": "solidarity",
+        "ko": "연대, 결속"
+      },
+      {
+        "en": "defection",
+        "ko": "이탈, 배신"
+      }
+    ],
+    "tips": "문장 재진술은 원문의 핵심 구조(조건, 인과, 대조, 양보)를 그대로 옮겼는지 본다. 어휘가 비슷하다고 정답이 아니며, 조건절이 사라지거나 인과 방향이 바뀌거나 새로운 정보가 추가된 선택지는 모두 오답이다. 먼저 원문을 한국어 한 문장으로 요약한 뒤 선택지와 비교하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "몽골 제국의 역참제",
+    "question": "[1] The Mongol empire governed distances that no previous Eurasian state had attempted to administer directly. [2] Its solution was the yam, a chain of relay posts spaced roughly a day's ride apart along principal routes, each stocked with horses, fodder, and lodging. [3] Officials carrying a paiza, an inscribed tablet of wood or precious metal, could requisition fresh mounts and continue without delay, so that messages crossed thousands of kilometers in weeks rather than months. [4]\n\nThe burden fell on nearby communities, which were required to supply the animals and provisions. Travelers such as Marco Polo described the system with admiration, but local chronicles record complaints about the cost, and later dynasties inherited both the infrastructure and the resentment it had generated.\n\nLook at the four squares that indicate where the following sentence could be added to the passage: 'Speed of this kind was a political asset, since revolt in a distant province could be reported before it consolidated.'\nWhere would the sentence best fit?\n(A) Square [1]\n(B) Square [2]\n(C) Square [3]\n(D) Square [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(D) The inserted sentence begins with 'Speed of this kind', a backward-referring phrase that requires a prior statement about how fast messages traveled. That statement appears immediately before square [4], where the passage notes that messages crossed thousands of kilometers in weeks rather than months. Placing the sentence earlier would leave 'speed of this kind' without an antecedent, and it also rounds off the paragraph by drawing a political conclusion before the passage turns to local burdens.",
+    "answerKo": "정답은 (D)이다. 삽입 문장은 'Speed of this kind(이런 종류의 속도)'로 시작하는데, 이는 앞에 속도를 구체적으로 언급한 문장이 있어야 성립한다. 그 문장은 '수천 킬로미터를 몇 달이 아니라 몇 주에 주파했다'는 [4] 바로 앞 문장이다. 또한 삽입 문장은 속도의 정치적 함의로 1단락을 마무리해 지역 부담을 다루는 2단락으로 자연스럽게 넘어가게 한다. 더 앞에 넣으면 지시 표현이 가리킬 대상이 없다.",
+    "keyExpressions": [
+      {
+        "en": "relay post",
+        "ko": "역참"
+      },
+      {
+        "en": "requisition",
+        "ko": "징발하다, 요청해 받다"
+      },
+      {
+        "en": "provisions",
+        "ko": "보급품, 식량"
+      },
+      {
+        "en": "consolidate",
+        "ko": "공고해지다, 세력을 굳히다"
+      },
+      {
+        "en": "resentment",
+        "ko": "원망, 반감"
+      }
+    ],
+    "tips": "문장 삽입은 삽입 문장의 연결 장치를 먼저 표시한다. this, such, of this kind, however, therefore 같은 표현은 앞 문장이 무엇을 말해야 하는지 알려 준다. 후보 위치에 넣어 읽으며 대명사가 가리킬 대상이 앞에 있는지, 논리 흐름이 끊기지 않는지 확인하면 대개 한 곳만 남는다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "프랑스 혁명의 전개",
+    "question": "The French Revolution began as a fiscal crisis. Decades of war had left the monarchy unable to service its debts, and privileged orders resisted taxation, forcing Louis XVI to convene the Estates-General in 1789 for the first time in 175 years. Disputes over voting procedure quickly became disputes over sovereignty, and the Third Estate declared itself a National Assembly claiming to represent the nation as such.\n\nWhat followed was not a single program but a sequence of contests. The abolition of seigneurial dues and the Declaration of the Rights of Man dismantled the legal framework of the old order, yet questions of who counted as a citizen, how the church should be governed, and whether the king could be trusted divided the revolutionaries themselves. War with neighboring monarchies after 1792 intensified these divisions and helped justify emergency measures.\n\nDirections: Select THREE answer choices that express the most important ideas in the passage.\nIntroductory sentence: The French Revolution developed out of a financial emergency into a prolonged struggle over the basis of political authority.\n(A) A fiscal crisis compelled the monarchy to summon the Estates-General, where procedural disputes turned into a claim of national sovereignty.\n(B) Revolutionary legislation abolished the legal structures of the old order but left fundamental questions unresolved.\n(C) Louis XVI had ruled for 175 years before the Estates-General met.\n(D) External war after 1792 deepened internal divisions and provided justification for emergency government.\n(E) The Declaration of the Rights of Man was written primarily by members of the clergy.\n(F) Privileged orders welcomed new taxation as a means of preserving the monarchy.",
+    "targetLevel": "지문 요약",
+    "answerEn": "(A), (B), (D) These three choices track the passage's main line of argument: the fiscal origin and the shift to a sovereignty dispute, the dismantling of the old legal order alongside unresolved questions, and the radicalizing effect of foreign war. Choice (C) misreads the 175 years, which refers to the interval since the last meeting of the Estates-General. Choice (E) introduces information the passage never provides, and (F) contradicts the statement that privileged orders resisted taxation.",
+    "answerKo": "정답은 (A), (B), (D)이다. 세 선택지는 각각 재정 위기에서 주권 논쟁으로의 전환, 구체제 법질서 해체와 미해결 쟁점, 1792년 이후 대외 전쟁이 초래한 급진화라는 지문의 세 축을 반영한다. (C)는 175년을 왕의 재위 기간으로 오독한 것으로, 실제로는 삼부회가 소집되지 않은 기간이다. (E)는 지문에 없는 정보이며, (F)는 특권 신분이 과세에 저항했다는 진술과 정면으로 어긋난다.",
+    "keyExpressions": [
+      {
+        "en": "fiscal crisis",
+        "ko": "재정 위기"
+      },
+      {
+        "en": "service a debt",
+        "ko": "부채를 상환하다"
+      },
+      {
+        "en": "sovereignty",
+        "ko": "주권"
+      },
+      {
+        "en": "dismantle",
+        "ko": "해체하다"
+      },
+      {
+        "en": "emergency measures",
+        "ko": "비상조치"
+      }
+    ],
+    "tips": "지문 요약은 세부 사실이 아니라 각 단락의 핵심 주장을 고른다. 도입 문장이 요약의 방향을 정해 주므로 그것과 논리적으로 이어지는 선택지를 우선한다. 지문에 있더라도 지엽적인 사례, 지문에 없는 정보, 지문을 뒤집은 진술은 모두 제거 대상이다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "대서양 삼각무역",
+    "question": "The Atlantic economy of the seventeenth and eighteenth centuries is conventionally described as triangular. European ports dispatched manufactured goods, notably textiles, firearms, and metalware, to West African coasts, where they were exchanged for captive people. Those captives were carried across the Atlantic in the Middle Passage and sold to plantation owners in the Caribbean and the Americas.\n\nThe plantations produced sugar, tobacco, and later cotton, commodities that returned to Europe for processing and sale. Historians caution that the geometry was untidy: many voyages ran between only two of the three points, and some vessels sailed directly between the Americas and Africa. Nevertheless the model captures a genuine structural fact, namely that European merchants profited at every leg of the circuit while the human cost fell overwhelmingly on Africans.\n\nDirections: Complete the table by matching each statement with the category it describes.\nCategory 1: THE CONVENTIONAL TRIANGULAR MODEL   Category 2: HISTORIANS' QUALIFICATIONS\n(A) Manufactured goods such as firearms and textiles were shipped from Europe to West Africa.\n(B) Numerous voyages connected only two of the three regions.\n(C) Plantation commodities were carried to Europe for processing and sale.\n(D) Some ships sailed directly between the Americas and Africa.\n(E) Captive Africans were transported across the Middle Passage to American plantations.\n(F) Europe abandoned Atlantic commerce during the eighteenth century.",
+    "targetLevel": "표 채우기",
+    "answerEn": "Category 1: (A), (C), (E); Category 2: (B), (D). The first paragraph and the opening of the second lay out the three legs of the classic model, which correspond exactly to choices (A), (C), and (E). The qualifications introduced by 'Historians caution that the geometry was untidy' are the two-point voyages and the direct Americas-Africa sailings, choices (B) and (D). Choice (F) is not supported anywhere and is the distractor left unused.",
+    "answerKo": "정답은 범주 1에 (A), (C), (E), 범주 2에 (B), (D)이다. 1단락과 2단락 앞부분은 유럽에서 아프리카로 제조품, 아프리카에서 아메리카로 노예, 아메리카에서 유럽으로 상품이라는 삼각 모델의 세 구간을 서술한다. 반면 'Historians caution that the geometry was untidy' 이후의 문장들이 제시하는 두 지점만 오가는 항해와 아메리카-아프리카 직항이 학자들의 단서 조항에 해당한다. (F)는 지문에 근거가 없는 미사용 오답이다.",
+    "keyExpressions": [
+      {
+        "en": "dispatch",
+        "ko": "발송하다, 보내다"
+      },
+      {
+        "en": "commodity",
+        "ko": "상품, 산물"
+      },
+      {
+        "en": "qualification",
+        "ko": "단서, 유보 조건"
+      },
+      {
+        "en": "leg of a circuit",
+        "ko": "순환 경로의 한 구간"
+      },
+      {
+        "en": "overwhelmingly",
+        "ko": "압도적으로"
+      }
+    ],
+    "tips": "표 채우기는 지문의 대조 구조를 먼저 파악한다. 여기서는 '통설 모델'과 'Nevertheless/caution 이후의 수정'이 경계선이다. 각 선택지가 어느 단락, 어느 신호어 뒤에 나오는지 표시하며 분류하면 빠르다. 사용되지 않는 오답이 한두 개 있다는 점을 기억하고, 지문에 없는 진술은 즉시 배제하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "로마 공화정의 제도",
+    "question": "The Roman Republic distributed power among institutions that checked one another. Two consuls, elected annually, held supreme civil and military authority, but each could veto the other's decisions, and their brief term limited the accumulation of personal power. The Senate, composed largely of former magistrates, controlled finance and foreign policy in practice, though its resolutions were formally advisory.\n\nPlebeian pressure produced a further institution. After repeated withdrawals from the city, the plebeians won the right to elect tribunes whose persons were declared inviolable and who could block acts of magistrates on behalf of individual citizens. The system's stability rested less on written rules than on shared expectations about how officeholders would behave, which is why the political crises of the first century BCE, when generals commanded armies loyal to themselves, proved so destructive.\n\nAccording to paragraph 1, what limited a consul's ability to accumulate personal power?\n(A) The requirement that consuls consult the tribunes before acting\n(B) The advisory character of senatorial resolutions\n(C) The short term of office and the colleague's power of veto\n(D) The Senate's formal control of military appointments",
+    "targetLevel": "사실 정보",
+    "answerEn": "(C) Paragraph 1 states that each consul could veto the other's decisions and that their brief term limited the accumulation of personal power, which matches choice (C) precisely. Choice (A) refers to tribunes, introduced only in paragraph 2. Choice (B) describes the Senate's resolutions but is not presented as a limit on consuls, and (D) misstates the passage, which says the Senate controlled finance and foreign policy in practice.",
+    "answerKo": "정답은 (C)이다. 1단락은 두 집정관이 서로의 결정을 거부할 수 있었고 임기가 1년으로 짧아 개인 권력 축적이 제한되었다고 명시한다. (A)의 호민관은 2단락에서야 등장하는 별개 제도이고, (B)의 원로원 결의가 형식상 자문적이라는 서술은 집정관 견제 수단으로 제시되지 않았다. (D)는 원로원이 실질적으로 통제한 것이 재정과 외교라는 지문 내용을 군사 인사로 바꾼 오답이다.",
+    "keyExpressions": [
+      {
+        "en": "veto",
+        "ko": "거부권을 행사하다"
+      },
+      {
+        "en": "magistrate",
+        "ko": "정무관"
+      },
+      {
+        "en": "advisory",
+        "ko": "자문의, 권고적인"
+      },
+      {
+        "en": "inviolable",
+        "ko": "불가침의"
+      },
+      {
+        "en": "officeholder",
+        "ko": "공직자"
+      }
+    ],
+    "tips": "사실 정보 문제에서 단락이 지정되면 그 밖의 내용은 아무리 사실이어도 오답이다. 다른 단락의 용어(여기서는 tribunes)를 끌어온 선택지를 경계하라. 또 in practice, formally 같은 부사가 붙은 표현은 선택지에서 미묘하게 바뀌는 경우가 많으므로 원문 어구와 정확히 대조해야 한다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "인쇄술과 종교개혁",
+    "question": "Movable-type printing reached Europe in the mid-fifteenth century and within decades transformed the economics of persuasion. A pamphlet of eight pages could be set, printed, and distributed cheaply, and printers, who were businessmen rather than theologians, reprinted whatever sold. Luther's vernacular tracts sold extraordinarily well, and unauthorized reprints appeared in dozens of towns within weeks of first publication.\n\nHistorians nonetheless resist the claim that printing caused the Reformation. Earlier reform movements had circulated widely in manuscript, and printing served Luther's Catholic opponents as well, though they wrote more often in Latin and for a narrower readership. What the press did was to alter the scale and speed of religious controversy, making it difficult for authorities to suppress a text once copies existed in many places at once.\n\nAccording to the passage, which of the following is NOT true of printing in the Reformation era?\n(A) Printers reproduced texts chiefly according to commercial demand.\n(B) Catholic writers also used the press, often in Latin.\n(C) Printing made it harder for authorities to suppress a widely copied text.\n(D) Historians generally agree that printing was the direct cause of the Reformation.",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) The second paragraph states explicitly that historians resist the claim that printing caused the Reformation, so choice (D) reverses the passage. The other three options are directly supported: printers reprinted whatever sold, Catholic opponents used the press but wrote more often in Latin, and copies existing in many places at once frustrated suppression.",
+    "answerKo": "정답은 (D)이다. 2단락은 '역사가들은 인쇄술이 종교개혁을 일으켰다는 주장에 저항한다'고 명시하므로 인쇄술이 직접 원인이라는 데 합의한다는 진술은 지문과 반대이다. (A)는 인쇄업자가 팔리는 것을 재인쇄했다는 서술, (B)는 가톨릭 측도 인쇄술을 썼으나 주로 라틴어였다는 서술, (C)는 여러 곳에 사본이 있으면 억압이 어려웠다는 서술로 각각 뒷받침된다.",
+    "keyExpressions": [
+      {
+        "en": "movable type",
+        "ko": "활자, 활판"
+      },
+      {
+        "en": "vernacular",
+        "ko": "자국어의, 토착어의"
+      },
+      {
+        "en": "tract",
+        "ko": "소책자, 논설"
+      },
+      {
+        "en": "unauthorized",
+        "ko": "무단의, 허가받지 않은"
+      },
+      {
+        "en": "suppress",
+        "ko": "억압하다, 탄압하다"
+      }
+    ],
+    "tips": "부정 사실 정보 유형에서는 지문에 등장하는 '학계 견해' 문장을 특히 주의한다. resist, question, caution 같은 동사는 통념을 부정하는 신호이며, 선택지가 이를 긍정으로 뒤집으면 그것이 정답이다. 선택지 옆에 근거 문장 번호를 적어 두면 소거가 빨라진다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "오스만 제국의 통치",
+    "question": "The Ottoman state administered a population of many languages and faiths without demanding uniformity. Non-Muslim communities were organized as legally recognized bodies whose leaders collected taxes, maintained courts for matters of personal status, and answered to the sultan for the community's conduct. Such arrangements reduced the cost of governing, since the imperial center did not need to supply judges or record keepers for every locality.\n\nThe system also shaped identity in ways its architects did not foresee. Because rights and obligations attached to membership in a religious community rather than to individual subjects, communal boundaries hardened over generations. When nationalist movements emerged in the nineteenth century, they often found ready-made constituencies in precisely these long-established corporate divisions.\n\nWhat can be inferred from the passage about nineteenth-century nationalist movements in Ottoman territories?\n(A) They were deliberately encouraged by earlier Ottoman administrators.\n(B) They were able to draw on communal identities that imperial administration had reinforced.\n(C) They arose mainly among Muslim populations of the empire.\n(D) They demanded that the state supply judges to every locality.",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage says that rights and obligations attached to religious community membership, that communal boundaries hardened over generations, and that nationalists found ready-made constituencies in these divisions. The inference follows that nationalism could exploit identities strengthened by Ottoman administrative practice. Choice (A) contradicts the statement that the effect was unforeseen by the system's architects, while (C) and (D) have no textual basis.",
+    "answerKo": "정답은 (B)이다. 지문은 권리와 의무가 개인이 아니라 종교 공동체 소속에 결부되었고 그 결과 공동체 경계가 세대를 거치며 굳어졌으며, 민족주의 운동이 바로 그런 구획에서 '이미 만들어진 지지 기반'을 발견했다고 서술한다. 따라서 제국 행정이 강화한 집단 정체성을 민족주의가 활용했다는 추론이 성립한다. (A)는 '설계자들이 예견하지 못한 결과'라는 진술과 모순되고 (C), (D)는 근거가 없다.",
+    "keyExpressions": [
+      {
+        "en": "uniformity",
+        "ko": "획일성"
+      },
+      {
+        "en": "personal status",
+        "ko": "신분 관계, 속인적 지위"
+      },
+      {
+        "en": "communal boundary",
+        "ko": "공동체 간 경계"
+      },
+      {
+        "en": "constituency",
+        "ko": "지지 기반, 유권자층"
+      },
+      {
+        "en": "corporate division",
+        "ko": "집단별 구획"
+      }
+    ],
+    "tips": "추론 문제에서 정답은 흔히 지문 마지막 문장의 함의에 있다. did not foresee, unintended 같은 표현이 나오면 '의도했다'는 선택지는 곧바로 소거된다. 또 지문이 언급하지 않은 집단이나 요구를 새로 들여오는 선택지는 근거 부족으로 배제하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "베스트팔렌 조약",
+    "question": "The treaties signed at Osnabruck and Munster in 1648 ended a war that had devastated central Europe for a generation. Their provisions were practical rather than philosophical: they redrew boundaries, settled the status of confessional minorities within the Holy Roman Empire, and confirmed that member principalities could conduct their own foreign relations, provided these were not directed against the emperor.\n\nIt is worth pausing over that last qualification. Later writers described 1648 as the birth of a system of equal sovereign states, yet the settlement itself preserved an imperial framework and imposed conditions on princely autonomy. The Westphalian model, in other words, is largely a nineteenth-century reconstruction, useful for organizing thought about international order but a poor description of what the negotiators believed they were doing.\n\nWhy does the author write 'It is worth pausing over that last qualification'?\n(A) To signal that the condition just mentioned undermines a familiar interpretation of the treaties\n(B) To indicate that the negotiations at Osnabruck lasted longer than expected\n(C) To introduce a list of the boundaries redrawn in 1648\n(D) To praise the drafters for the precision of their legal language",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(A) The 'last qualification' is the proviso that princely foreign relations must not be directed against the emperor. The author pauses over it because it shows that sovereignty in 1648 was conditional, which contradicts the later view of Westphalia as the birth of fully equal sovereign states. The sentence thus functions as a transition from description to critical reassessment. The other choices describe rhetorical purposes the following sentences do not perform.",
+    "answerKo": "정답은 (A)이다. '마지막 단서 조항'은 제후의 외교가 황제를 겨냥해서는 안 된다는 조건을 가리킨다. 저자가 이 대목에 멈춰 서는 이유는 1648년의 주권이 조건부였음을 보여 주기 위함이며, 이는 베스트팔렌을 완전한 주권 국가 체제의 탄생으로 보는 통설과 충돌한다. 즉 이 문장은 서술에서 비판적 재평가로 넘어가는 전환 장치다. 나머지 선택지가 말하는 기능은 뒤 문장에서 수행되지 않는다.",
+    "keyExpressions": [
+      {
+        "en": "provision",
+        "ko": "조항, 규정"
+      },
+      {
+        "en": "confessional",
+        "ko": "종파의, 신앙 고백상의"
+      },
+      {
+        "en": "qualification",
+        "ko": "단서, 제한 조건"
+      },
+      {
+        "en": "autonomy",
+        "ko": "자율성, 자치"
+      },
+      {
+        "en": "reconstruction",
+        "ko": "재구성, 사후적 구성"
+      }
+    ],
+    "tips": "수사적 의도 문제에서 '잠시 멈춰 보자', '주목하라' 류의 문장은 거의 항상 뒤에 오는 반전이나 재평가를 예고한다. 인용 문장 다음 두세 문장을 읽고 저자가 무엇을 뒤집는지 확인하면 정답이 보인다. yet, in other words 같은 표지어가 결정적 단서다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "세계사·정치사",
+    "topic": "영국 의회의 성장",
+    "question": "English parliamentary institutions grew out of the crown's need for money. Because customary revenues rarely sufficed for war, medieval kings summoned assemblies of magnates and, later, representatives of shires and boroughs to consent to extraordinary taxation. Consent was not a courtesy; a levy granted by such an assembly was far easier to collect than one imposed unilaterally.\n\nOver time the assemblies converted this fiscal leverage into political claims. Petitions for the redress of grievances were presented before supply was voted, and by the fifteenth century the practice of attaching conditions to grants had become entrenched. The seventeenth-century conflicts between crown and Parliament were bitter precisely because both sides could appeal to precedent, each insisting that the other had departed from an established constitution.\n\nThe word 'entrenched' in the passage is closest in meaning to\n(A) firmly established\n(B) widely criticized\n(C) legally prohibited\n(D) recently proposed",
+    "targetLevel": "어휘",
+    "answerEn": "(A) 'Entrenched' describes a practice that has become firmly fixed and difficult to change, so 'firmly established' is the closest match. Context supports this: the sentence traces a development 'over time' and states that by the fifteenth century the practice 'had become' entrenched, implying consolidation rather than novelty. Choice (D) contradicts that time frame, and neither criticism (B) nor prohibition (C) is suggested.",
+    "answerKo": "정답은 (A)이다. entrenched는 관행이나 제도가 굳게 자리 잡아 바꾸기 어려운 상태를 뜻하므로 firmly established가 가장 가깝다. 문맥상 'Over time'으로 시작해 '15세기에 이르러 ~하게 되었다'는 시간적 축적을 서술하므로 정착의 의미가 자연스럽다. (D) 최근 제안된은 시간 흐름과 모순되고, (B) 비판받는, (C) 법으로 금지된은 문맥에 근거가 없다.",
+    "keyExpressions": [
+      {
+        "en": "customary revenue",
+        "ko": "관례적 세입"
+      },
+      {
+        "en": "consent to taxation",
+        "ko": "과세에 동의하다"
+      },
+      {
+        "en": "unilaterally",
+        "ko": "일방적으로"
+      },
+      {
+        "en": "redress of grievances",
+        "ko": "고충의 시정"
+      },
+      {
+        "en": "precedent",
+        "ko": "선례"
+      }
+    ],
+    "tips": "어휘 문제는 문장 전체의 시간 흐름과 논리 방향을 활용한다. over time, by the fifteenth century, had become 같은 표현이 있으면 '정착, 확립'류 의미가 유력하다. 선택지를 원문에 대입해 읽었을 때 앞뒤 문장과 어색함이 없는지 반드시 확인하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "메소포타미아 관개 농업",
+    "question": "The alluvial plain of southern Mesopotamia received less than 200 millimeters of rainfall annually, an amount far below the threshold required for reliable cereal cultivation. Yet by the fourth millennium BCE this region supported some of the densest populations in the ancient world. The explanation lies in the construction of an extensive network of canals that diverted water from the Euphrates, whose bed lay above the surrounding floodplain and therefore permitted gravity-fed distribution without mechanical lifting. Communities excavated feeder channels perpendicular to the main watercourse and allowed silt-laden water to spread across leveled fields.\n\nThis system, however, carried an inherent liability. Irrigation water evaporating under intense heat deposited dissolved mineral salts in the upper soil horizons. Over centuries, accumulating salinity depressed yields and forced cultivators to abandon wheat in favor of barley, a more salt-tolerant grain. Textual records from the third millennium BCE document precisely this substitution, suggesting that the agricultural foundation of early urbanism was gradually undermined by the very technology that created it.\n\nAccording to paragraph 1, why was the Euphrates particularly suitable for irrigation in southern Mesopotamia?\n(A) Its waters contained unusually low concentrations of dissolved salt.\n(B) Its channel was elevated relative to the adjacent fields, allowing water to flow by gravity.\n(C) It flooded at precisely the time when cereal crops required moisture.\n(D) It carried less silt than other rivers in the region.",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The passage states that the Euphrates bed 'lay above the surrounding floodplain and therefore permitted gravity-fed distribution without mechanical lifting.' This elevation is explicitly identified as the reason the river suited canal irrigation. Choice (A) contradicts the second paragraph, which stresses dissolved mineral salts. Choice (C) is never mentioned, and (D) reverses the passage's reference to silt-laden water.",
+    "answerKo": "정답은 (B)입니다. 1단락은 유프라테스강의 하상이 주변 범람원보다 높아서 기계적 양수 없이 중력만으로 물을 배분할 수 있었다고 명시합니다. (A)는 2단락의 염분 축적 서술과 배치되고, (C)는 언급되지 않았으며, (D)는 '실트가 많은 물'이라는 본문 표현과 반대입니다.",
+    "keyExpressions": [
+      {
+        "en": "alluvial plain",
+        "ko": "충적 평야"
+      },
+      {
+        "en": "gravity-fed distribution",
+        "ko": "중력에 의한 물 배분"
+      },
+      {
+        "en": "silt-laden",
+        "ko": "토사(실트)를 머금은"
+      },
+      {
+        "en": "soil horizon",
+        "ko": "토양층"
+      },
+      {
+        "en": "salt-tolerant",
+        "ko": "염분에 내성이 있는"
+      }
+    ],
+    "tips": "사실 정보 문제는 문제에 명시된 단락 범위 안에서만 근거를 찾습니다. 질문의 핵심어(Euphrates, suitable)를 지문에서 스캔한 뒤, 그 문장의 인과 연결어(therefore, because)를 확인하면 정답이 바로 나옵니다. 다른 단락 정보를 끌어와 만든 오답에 주의하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "마야 저지대 도시 붕괴",
+    "question": "Between roughly 800 and 950 CE, the great centers of the southern Maya lowlands ceased erecting dated stone monuments, monumental construction halted, and populations in many districts fell by more than half. Early explanations invoked a single catastrophe such as foreign invasion or peasant revolt, but sustained excavation has not produced the destruction layers such scenarios predict. Instead, the archaeological record indicates a staggered, region-by-region decline extending over a century and a half.\n\nCurrent interpretations emphasize the convergence of several stresses. Sediment cores from lake beds record a sequence of severe multi-decade droughts coinciding with the terminal period. Simultaneously, intensified agriculture on thin tropical soils had reduced fertility, while competitive warfare among rival dynasties diverted labor toward fortification. None of these factors alone appears sufficient, yet a political system whose legitimacy rested on royal ritual efficacy would have been especially vulnerable when rulers proved unable to deliver rain or victory.\n\nWhich of the following can be inferred from the passage about Maya kingship?\n(A) Maya rulers held no authority beyond ceremonial functions.\n(B) The authority of rulers depended in part on perceived success in ritual and warfare.\n(C) Maya kings deliberately abandoned their cities to escape drought.\n(D) Royal power increased as environmental conditions worsened.",
+    "targetLevel": "추론",
+    "answerEn": "(B) The final sentence notes that legitimacy 'rested on royal ritual efficacy' and that rulers were vulnerable when unable to deliver rain or victory. It follows that popular acceptance of kingship was tied to demonstrated ritual and military success. (A) overstates the point by denying all practical authority, (C) invents an action not described, and (D) contradicts the logic of vulnerability.",
+    "answerKo": "정답은 (B)입니다. 마지막 문장이 왕권의 정당성이 '의례적 효력'에 근거했고, 비나 승리를 가져오지 못할 때 취약했다고 서술하므로, 왕의 권위가 의례·전쟁의 성공 여부와 연결되어 있었다고 추론할 수 있습니다. (A)는 지나친 확대 해석, (C)는 근거 없는 창작, (D)는 논리적으로 반대입니다.",
+    "keyExpressions": [
+      {
+        "en": "monumental construction",
+        "ko": "기념비적 건축"
+      },
+      {
+        "en": "destruction layer",
+        "ko": "파괴층"
+      },
+      {
+        "en": "staggered decline",
+        "ko": "시차를 둔 쇠퇴"
+      },
+      {
+        "en": "sediment core",
+        "ko": "퇴적물 시추 코어"
+      },
+      {
+        "en": "ritual efficacy",
+        "ko": "의례의 효력"
+      }
+    ],
+    "tips": "추론 문제는 본문에 직접 쓰이지 않았지만 한 걸음만 논리적으로 나아간 선택지를 고릅니다. '전혀', '모든', '결코' 같은 극단어가 들어간 선택지는 대개 과잉 추론입니다. 마지막 문장의 조건절이나 양보절이 추론의 근거가 되는 경우가 많습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "이집트 피라미드 건축",
+    "question": "The construction of the Great Pyramid at Giza required the placement of approximately 2.3 million limestone blocks within the reign of a single king. Because no contemporary text describes the method, engineers have reconstructed it from quarry marks, tool scars, and the remains of ramps. Most reconstructions assume a combination of straight and spiraling earthen ramps, sledges dragged over wetted sand to reduce friction, and levers for final positioning.\n\nEqually significant was the organizational infrastructure. Excavation of a settlement south of the plateau revealed bakeries, breweries, and dormitories capable of provisioning thousands of workers, along with animal bone deposits indicating a substantial meat ration. Written accounts on papyri recovered at a Red Sea port record the rotation of labor gangs transporting casing stone by boat. Such evidence has displaced the older image of coerced foreign slaves, replacing it with a picture of organized, state-supported conscript labor drawn from the Egyptian countryside.\n\nWhich of the following is NOT mentioned in the passage as evidence used to reconstruct pyramid building?\n(A) Marks left in quarries by ancient tools\n(B) Papyrus documents recording the movement of stone\n(C) Architectural plans drawn by the pyramid's designers\n(D) Food-production facilities near the construction site",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(C) The passage explicitly states that 'no contemporary text describes the method,' and no drawn plans are mentioned anywhere. Quarry marks appear in paragraph 1, bakeries and breweries in paragraph 2, and the Red Sea papyri record stone transport. Since (A), (B), and (D) are all present, (C) is the correct answer to a NOT question.",
+    "answerKo": "정답은 (C)입니다. 지문은 '당대의 어떤 기록도 공법을 설명하지 않는다'고 밝히며 설계도 언급은 전혀 없습니다. (A) 채석장 흔적, (B) 홍해 항구 파피루스, (D) 제빵소·양조장은 모두 본문에 등장하므로 NOT 문제의 답이 될 수 없습니다.",
+    "keyExpressions": [
+      {
+        "en": "quarry mark",
+        "ko": "채석 흔적"
+      },
+      {
+        "en": "spiraling ramp",
+        "ko": "나선형 경사로"
+      },
+      {
+        "en": "provision",
+        "ko": "식량을 공급하다"
+      },
+      {
+        "en": "casing stone",
+        "ko": "외장석"
+      },
+      {
+        "en": "conscript labor",
+        "ko": "징집 노동"
+      }
+    ],
+    "tips": "부정 사실 정보는 선택지 네 개를 하나씩 지문과 대조하는 소거법이 가장 안전합니다. 지문에 나온 세 개에 표시를 하고 남는 하나를 고르세요. 'no text describes' 같은 부정 표현이 나오는 문장은 정답의 단서일 확률이 높습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "구석기 동굴벽화",
+    "question": "The painted caves of southwestern Europe, dating from roughly 35,000 to 12,000 years ago, present a strikingly narrow subject range. Large herbivores such as horses, bison, and aurochs dominate, while plants, landscapes, and detailed human figures are almost entirely absent. Moreover, the animals depicted do not correspond closely to the species most frequently found in the food refuse of the same sites, which weakens the simplest interpretation that the images served as a straightforward record of diet.\n\nSeveral scholars have therefore proposed that the paintings functioned within ritual or instructional contexts. Their placement supports this: many images occupy deep, acoustically resonant chambers reachable only by difficult passage, rather than the illuminated cave mouths where daily life occurred. The deliberate choice of remote, hard-to-access surfaces implies that viewing was restricted and perhaps ceremonially controlled, a pattern difficult to reconcile with purely decorative motives.\n\nWhy does the author mention 'the food refuse of the same sites'?\n(A) To demonstrate that Paleolithic people had a varied diet\n(B) To argue that the caves were used primarily as dwellings\n(C) To provide evidence against the view that the paintings simply recorded what people ate\n(D) To explain why certain animal species became extinct",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(C) The clause immediately following the reference states that the mismatch 'weakens the simplest interpretation that the images served as a straightforward record of diet.' The detail therefore functions as counterevidence to a hypothesis, setting up the ritual explanation in paragraph 2. The other choices describe topics the passage either does not pursue or explicitly contradicts.",
+    "answerKo": "정답은 (C)입니다. 해당 표현 바로 뒤 문장이 '이는 그림이 식단의 기록이라는 가장 단순한 해석을 약화시킨다'고 명시하므로, 음식 잔해 언급은 특정 가설에 대한 반증 자료로 기능합니다. 나머지 선택지는 지문이 다루지 않거나 오히려 반대되는 내용입니다.",
+    "keyExpressions": [
+      {
+        "en": "herbivore",
+        "ko": "초식동물"
+      },
+      {
+        "en": "food refuse",
+        "ko": "음식 잔해"
+      },
+      {
+        "en": "acoustically resonant",
+        "ko": "음향적으로 울림이 좋은"
+      },
+      {
+        "en": "restricted viewing",
+        "ko": "제한된 관람"
+      },
+      {
+        "en": "decorative motive",
+        "ko": "장식적 동기"
+      }
+    ],
+    "tips": "수사적 의도 문제는 인용된 표현의 앞뒤 한 문장을 반드시 읽습니다. 특히 뒤 문장의 however, therefore, which weakens 같은 연결 표현이 그 정보의 '역할'을 알려줍니다. 정답은 내용 요약이 아니라 '왜 썼는가'라는 기능을 서술해야 합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "폴리네시아 원거리 항해",
+    "question": "The settlement of the remote Pacific islands ranks among the most demanding maritime achievements in human history. Voyagers crossing thousands of kilometers of open ocean possessed neither compass nor chronometer, yet they located targets as small as isolated atolls. Ethnographic study of surviving navigational traditions in the Caroline Islands reveals a sophisticated mental system: a star compass dividing the horizon by the rising and setting points of named stars, combined with close reading of swell patterns refracted around distant land.\n\nExperimental voyages have tested these methods directly. In the 1970s a double-hulled canoe built on archaeological and ethnographic models sailed from Hawaii to Tahiti guided solely by traditional techniques, arriving within the expected margin. Such demonstrations did not prove that ancient navigators used identical procedures, but they established the feasibility of intentional two-way voyaging and effectively ended the once-common assumption that the islands were populated by canoes blown accidentally off course.\n\nThe word 'feasibility' in the passage is closest in meaning to\n(A) popularity\n(B) practicability\n(C) frequency\n(D) danger",
+    "targetLevel": "어휘",
+    "answerEn": "(B) In context, the experimental voyage 'established the feasibility of intentional two-way voyaging' — that is, it showed such voyaging was possible in practice. 'Practicability' captures this sense of being achievable. Popularity and frequency concern how often or how widely something occurred, which the demonstration could not establish, and danger is unrelated to the logic of the sentence.",
+    "answerKo": "정답은 (B)입니다. 문맥상 실험 항해는 의도적 왕복 항해가 '실행 가능함'을 입증했다는 의미이므로 practicability(실행 가능성)가 가장 가깝습니다. popularity와 frequency는 빈도·인기의 문제로 실험 하나로 증명될 수 없고, danger는 문장 논리와 무관합니다.",
+    "keyExpressions": [
+      {
+        "en": "chronometer",
+        "ko": "정밀 시계(경도 측정용)"
+      },
+      {
+        "en": "star compass",
+        "ko": "별 나침반"
+      },
+      {
+        "en": "swell pattern",
+        "ko": "너울 패턴"
+      },
+      {
+        "en": "refract",
+        "ko": "굴절하다"
+      },
+      {
+        "en": "two-way voyaging",
+        "ko": "왕복 항해"
+      }
+    ],
+    "tips": "어휘 문제는 단어의 사전적 뜻보다 문장 안 역할을 봅니다. 해당 단어를 빈칸으로 두고 문맥에 맞는 말을 스스로 떠올린 뒤 선택지와 대조하세요. 바로 뒤에 이어지는 대조 문장(ended the assumption that...)이 의미를 확정해 줍니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "인더스 문명 도시계획",
+    "question": "The cities of the Indus civilization, flourishing between about 2600 and 1900 BCE, display a degree of planning unmatched elsewhere in the Bronze Age. At Mohenjo-daro and Harappa, streets meet at right angles, brick sizes conform to a consistent ratio across hundreds of kilometers, and nearly every house connects to a covered drain running beneath the thoroughfare. Standardized stone weights follow a binary and decimal series with remarkable precision.\n\nWhat these features imply about political organization remains contested. Such uniformity would normally suggest centralized authority, yet the Indus cities have yielded no palaces, no royal tombs, and no unambiguous depictions of rulers — the very markers that identify kingship in Mesopotamia and Egypt. Some archaeologists therefore posit governance by councils of merchants or priests; others argue that shared craft traditions and commercial convenience could generate standardization without any coercive central state.\n\nThe word 'they' in the passage refers to\n(A) the Indus cities\n(B) palaces and royal tombs\n(C) archaeologists\n(D) standardized stone weights",
+    "targetLevel": "지시 대상",
+    "answerEn": "(A) The relevant clause reads 'yet the Indus cities have yielded no palaces' — the subject performing the yielding is the cities, and the pronoun in question stands in that same subject position. Grammatically the referent must be a plural noun capable of producing archaeological finds, which excludes archaeologists as illogical here, and palaces and weights are objects rather than sources of evidence.",
+    "answerKo": "정답은 (A)입니다. 문제의 대명사는 '궁전도 왕릉도 나오지 않았다'는 문장의 주어 자리를 대신하므로, 유물을 산출하는 주체인 인더스 도시들을 가리킵니다. 궁전·왕릉과 표준 추는 산출되는 대상이고, 고고학자는 의미상 어울리지 않습니다.",
+    "keyExpressions": [
+      {
+        "en": "conform to",
+        "ko": "~에 부합하다"
+      },
+      {
+        "en": "thoroughfare",
+        "ko": "큰길, 간선도로"
+      },
+      {
+        "en": "unambiguous",
+        "ko": "명백한, 모호하지 않은"
+      },
+      {
+        "en": "posit",
+        "ko": "상정하다, 가정하다"
+      },
+      {
+        "en": "coercive",
+        "ko": "강제적인"
+      }
+    ],
+    "tips": "지시 대상 문제는 대명사의 수(단수·복수)와 문장 내 역할(주어인지 목적어인지)을 먼저 확인합니다. 그런 다음 후보를 대명사 자리에 직접 넣어 읽어 보고 의미가 자연스러운지 검증하세요. 대개 정답은 같은 문장이나 바로 앞 문장에 있습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "방사성탄소 연대측정",
+    "question": "Radiocarbon dating rests on a simple premise: living organisms absorb carbon-14 from the atmosphere in a fixed proportion, and upon death this isotope decays at a known rate. Measuring the residual proportion therefore yields an estimate of elapsed time. When the method was introduced in the late 1940s, it transformed archaeology by supplying, for the first time, a chronology independent of historical texts or stylistic comparison.\n\nThe premise, however, proved to be an approximation. Atmospheric carbon-14 concentration has fluctuated over millennia in response to solar activity and changes in ocean circulation, so raw radiocarbon determinations deviate systematically from calendar years. Calibration curves built from tree rings of known age now correct these deviations. The correction is not trivial: for the fifth millennium BCE, uncalibrated dates can be several centuries too recent, an error large enough to reverse the apparent sequence of developments in different regions.\n\nWhich of the sentences below best expresses the essential information in the highlighted sentence? 'The correction is not trivial: for the fifth millennium BCE, uncalibrated dates can be several centuries too recent, an error large enough to reverse the apparent sequence of developments in different regions.'\n(A) Uncalibrated dates are always more accurate for recent periods than for ancient ones.\n(B) The calibration adjustment matters substantially, since uncorrected early dates may be centuries too late and could make one region wrongly appear to develop before another.\n(C) Tree-ring calibration eliminates all uncertainty from radiocarbon measurements taken in the fifth millennium BCE.\n(D) Archaeologists in different regions disagree about which calibration curve should be applied to early dates.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(B) The original sentence makes two linked claims: the correction is significant, and the size of the error for early periods is enough to distort the relative ordering of regional developments. Choice (B) preserves both. (C) overstates by claiming all uncertainty is removed, (A) reverses the meaning, and (D) introduces a scholarly dispute the sentence never mentions.",
+    "answerKo": "정답은 (B)입니다. 원문은 보정이 사소하지 않다는 점과, 오차 폭이 지역 간 발전 순서를 뒤집을 만큼 크다는 점 두 가지를 결합합니다. (B)는 두 요소를 모두 유지합니다. (C)는 '모든 불확실성 제거'로 과장, (A)는 의미 반전, (D)는 없던 학계 논쟁을 만들어 냅니다.",
+    "keyExpressions": [
+      {
+        "en": "isotope",
+        "ko": "동위원소"
+      },
+      {
+        "en": "residual proportion",
+        "ko": "잔존 비율"
+      },
+      {
+        "en": "deviate systematically",
+        "ko": "체계적으로 벗어나다"
+      },
+      {
+        "en": "calibration curve",
+        "ko": "보정 곡선"
+      },
+      {
+        "en": "apparent sequence",
+        "ko": "겉으로 보이는 순서"
+      }
+    ],
+    "tips": "문장 재진술은 원문의 핵심 명제 개수를 먼저 세십시오. 두 개면 정답도 두 개를 모두 담아야 합니다. 정보 누락, 극단어 추가(all, always, never), 인과 방향 뒤집기가 3대 오답 패턴입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "괴베클리 테페 유적",
+    "question": "[1] Excavations at Gobekli Tepe in southeastern Anatolia have uncovered circular enclosures of massive T-shaped limestone pillars, some exceeding five meters in height and carved with reliefs of foxes, snakes, and vultures. [2] Radiocarbon determinations place the earliest construction near 9500 BCE, several centuries before the appearance of domesticated cereals in the surrounding region. [3] Analysis of plant and animal remains from the site indicates a diet of wild gazelle and wild grasses, with no evidence of cultivation or herding. [4] The builders, in other words, were hunter-gatherers.\n\nThe implications reach beyond chronology. Scholars had long assumed that agriculture generated the food surpluses that made monumental construction possible, so that farming necessarily preceded temples. Gobekli Tepe inverts the expected order and has prompted the alternative suggestion that the labor demands of periodic ritual gatherings may themselves have encouraged the intensive exploitation, and eventually the domestication, of local wild grains.\n\nLook at the four squares [1] [2] [3] [4] that indicate where the following sentence could be added to the passage.\nInserted sentence: 'This dating alone would be remarkable, but the subsistence evidence makes the finding more startling still.'\nWhere would the sentence best fit?\n(A) [1]\n(B) [2]\n(C) [3]\n(D) [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(C) The inserted sentence refers back to 'this dating,' which requires the radiocarbon information at [2] to have been stated already, and it forecasts 'subsistence evidence,' which is exactly what follows at [3]. Position [3] thus bridges the two ideas. Placing it at [1] or [2] leaves 'this dating' without an antecedent, and at [4] the subsistence evidence has already been given, making the forecast redundant.",
+    "answerKo": "정답은 (C)입니다. 삽입 문장의 'this dating'은 앞에 연대 정보가 제시되어야 성립하므로 [2] 이후여야 하고, 'subsistence evidence'는 뒤에 나올 식생활 증거를 예고하므로 [3] 자리가 두 정보를 잇는 다리 역할을 합니다. [4]에 넣으면 이미 제시된 증거를 예고하는 셈이 되어 부자연스럽습니다.",
+    "keyExpressions": [
+      {
+        "en": "enclosure",
+        "ko": "울타리 구조물, 환상 유구"
+      },
+      {
+        "en": "relief",
+        "ko": "부조"
+      },
+      {
+        "en": "domesticated cereal",
+        "ko": "작물화된 곡물"
+      },
+      {
+        "en": "subsistence",
+        "ko": "생계, 식량 확보 방식"
+      },
+      {
+        "en": "food surplus",
+        "ko": "잉여 식량"
+      }
+    ],
+    "tips": "문장 삽입은 지시어(this, such, these)와 접속 표현이 결정적입니다. 삽입 문장이 무엇을 '되받는지', 무엇을 '예고하는지' 나누어 표시한 뒤, 그 둘 사이 위치를 고르세요. 넣은 후 앞뒤를 이어 읽어 대명사가 가리킬 대상이 있는지 확인하는 검산이 필요합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "로마 콘크리트 기술",
+    "question": "Roman builders developed a hydraulic mortar by mixing lime with volcanic ash from the region around Pozzuoli. Unlike ordinary lime mortar, which hardens only through slow reaction with atmospheric carbon dioxide, this mixture set underwater and produced a material of exceptional durability. Combined with facings of brick or small stones, it allowed the construction of vaults and domes on a scale that traditional cut-stone masonry could not achieve, culminating in the unreinforced concrete dome of the Pantheon.\n\nModern analysis has clarified why Roman marine structures have survived two millennia of wave action while contemporary concrete piers degrade within decades. Seawater percolating through the Roman material reacted with the volcanic ash to crystallize new interlocking minerals within cracks, so that the concrete effectively strengthened over time. Conventional Portland cement, by contrast, deteriorates as seawater corrodes the steel reinforcement within it. The Roman formula thus achieved longevity through chemical change rather than through resistance to it.\n\nWhich of the following can be inferred about modern concrete piers from the passage?\n(A) They are built without any form of internal reinforcement.\n(B) Their vulnerability derives partly from a component that Roman concrete lacked.\n(C) They contain more volcanic ash than Roman concrete did.\n(D) They cannot be constructed in seawater environments.",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage attributes modern deterioration to seawater corroding 'the steel reinforcement within it,' while Roman concrete is described only as ash, lime, and stone facings. The reader may therefore infer that steel is an element absent from the Roman formula and partly responsible for modern failure. (A) contradicts the mention of reinforcement, (C) reverses the composition, and (D) is refuted by the existence of the piers themselves.",
+    "answerKo": "정답은 (B)입니다. 본문은 현대 콘크리트의 열화 원인을 내부 강철 보강재의 부식으로 돌리는 반면, 로마 콘크리트는 석회·화산재·석재로만 서술됩니다. 따라서 강철이라는 요소가 로마 배합에는 없었고 현대의 취약성에 기여한다고 추론할 수 있습니다. (A)는 본문과 모순, (C)는 성분 반전, (D)는 부두가 실제로 존재한다는 사실에 반합니다.",
+    "keyExpressions": [
+      {
+        "en": "hydraulic mortar",
+        "ko": "수경성 모르타르"
+      },
+      {
+        "en": "volcanic ash",
+        "ko": "화산재"
+      },
+      {
+        "en": "unreinforced dome",
+        "ko": "무보강 돔"
+      },
+      {
+        "en": "percolate",
+        "ko": "스며들다"
+      },
+      {
+        "en": "interlocking mineral",
+        "ko": "서로 맞물리는 광물"
+      }
+    ],
+    "tips": "비교 구조(unlike, by contrast)가 있는 지문의 추론 문제는 두 대상의 '차이 항목'이 정답 근거입니다. 표를 그리듯 A와 B의 속성을 나란히 정리하면, 한쪽에만 있는 요소가 무엇인지 즉시 보입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "안데스 잉카 도로망",
+    "question": "The Inca state administered an empire stretching more than four thousand kilometers along the Andes without the wheel, without draft animals capable of hauling carts, and without writing in the alphabetic sense. Its principal instrument of integration was a road network of some forty thousand kilometers, engineered with stone paving, retaining walls, drainage channels, and suspension bridges of braided fiber that were rewoven annually by neighboring communities as a labor obligation.\n\nAlong these roads stood way stations at regular intervals, stocked with food, cloth, and fuel from state warehouses. Relay runners carried messages and knotted cord records called quipu, covering distances that mounted couriers in contemporary Europe could not match. The system served administration and troop movement rather than commerce, since markets in the European sense were largely absent; goods circulated instead through state redistribution and reciprocal obligations between the ruler and subject communities.\n\nAccording to the passage, what was the primary purpose of the Inca road network?\n(A) To facilitate long-distance trade between merchant communities\n(B) To support governmental administration and the movement of armies\n(C) To allow farmers to transport crops to regional markets\n(D) To connect religious shrines located in the high mountains",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) Paragraph 2 states directly that 'the system served administration and troop movement rather than commerce.' The same sentence explains that markets in the European sense were largely absent, which eliminates (A) and (C). Religious shrines are never mentioned, so (D) has no textual basis.",
+    "answerKo": "정답은 (B)입니다. 2단락은 이 체계가 '상업이 아니라 행정과 군대 이동에 봉사했다'고 직접 서술합니다. 같은 문장에서 유럽식 시장이 거의 없었다고 밝히므로 (A)와 (C)는 배제되고, 종교 성소는 언급조차 없으므로 (D)도 근거가 없습니다.",
+    "keyExpressions": [
+      {
+        "en": "draft animal",
+        "ko": "짐을 끄는 가축"
+      },
+      {
+        "en": "retaining wall",
+        "ko": "옹벽"
+      },
+      {
+        "en": "labor obligation",
+        "ko": "노역 의무"
+      },
+      {
+        "en": "way station",
+        "ko": "중간 역참"
+      },
+      {
+        "en": "reciprocal obligation",
+        "ko": "호혜적 의무"
+      }
+    ],
+    "tips": "'primary purpose'처럼 목적을 묻는 사실 정보 문제는 rather than, not A but B 구문을 찾습니다. 그 구문의 B 쪽이 정답이고, A 쪽은 매력적인 오답으로 그대로 선택지에 등장하는 경우가 많습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "고대 문자의 해독",
+    "question": "Decipherment of an unknown script requires at least one of three advantages: a bilingual text, a known related language, or a recognizable proper name. The Rosetta Stone supplied the first for Egyptian hieroglyphs, since its Greek passage established both content and the phonetic values of royal names enclosed in cartouches. Michael Ventris, working on the Linear B tablets of Bronze Age Crete and Greece, had none of these directly, and proceeded instead by statistical analysis of sign distribution.\n\nVentris constructed a grid relating signs that appeared to share consonants or vowels, then tested the hypothesis, initially unwelcome to him, that the underlying language was an archaic form of Greek. Place names on Cretan tablets confirmed the reading. Linear A, by contrast, remains undeciphered: its sign values can be guessed from the related Linear B, but the language beneath appears unrelated to any known tongue, and no bilingual text has come to light.\n\nWhy does the author discuss Linear A at the end of the passage?\n(A) To show that statistical methods are generally unreliable\n(B) To illustrate what happens when the necessary advantages for decipherment are absent\n(C) To suggest that Linear A is older than Linear B\n(D) To argue that the Rosetta Stone was unnecessary for reading hieroglyphs",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The passage opens by listing three advantages that decipherment requires, then presents Egyptian and Linear B as cases where one was available. Linear A closes the argument as the contrasting case in which none applies: no bilingual text and no known related language. The mention therefore completes the framework rather than discrediting statistics or making chronological claims.",
+    "answerKo": "정답은 (B)입니다. 지문은 해독에 필요한 세 가지 이점을 제시한 뒤 이집트어와 선형문자 B를 성공 사례로 들고, 마지막에 선형문자 A를 '어떤 이점도 없는' 대조 사례로 배치합니다. 즉 도입부 틀을 완성하는 역할이며, 통계 기법 부정이나 연대 주장과는 무관합니다.",
+    "keyExpressions": [
+      {
+        "en": "bilingual text",
+        "ko": "이중 언어 병기 텍스트"
+      },
+      {
+        "en": "phonetic value",
+        "ko": "음가"
+      },
+      {
+        "en": "cartouche",
+        "ko": "카르투슈(왕명 테두리)"
+      },
+      {
+        "en": "sign distribution",
+        "ko": "기호 분포"
+      },
+      {
+        "en": "undeciphered",
+        "ko": "해독되지 않은"
+      }
+    ],
+    "tips": "수사적 의도 문제에서 사례가 지문 끝에 놓이면 대개 앞서 제시된 원칙이나 분류 틀을 확인·완성하는 기능을 합니다. 도입 문장의 '조건 목록'과 마지막 사례를 연결해 보면 답이 명확해집니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "신석기 혁명과 정주",
+    "question": "The transition from foraging to farming, traditionally called the Neolithic Revolution, was neither rapid nor obviously advantageous to those who made it. Skeletal remains from early farming communities in the Near East show reduced stature, more dental caries, and greater evidence of nutritional stress than those of preceding hunter-gatherers, whose broad diet supplied a wider range of nutrients. Farmers also worked longer hours and became vulnerable to crop failure in ways that mobile foragers were not.\n\nWhy, then, did agriculture spread? One answer stresses demography rather than welfare. Cereal cultivation, though nutritionally narrower, produced far more calories per unit of land and permitted the shortening of birth intervals once mothers no longer carried infants on seasonal moves. Farming populations consequently grew faster and expanded into neighboring territory, absorbing or displacing foragers regardless of whether individual farmers were healthier.\n\nDirections: Select THREE answer choices that express the most important ideas in the passage.\nIntroductory sentence: The adoption of agriculture had complex and often unfavorable consequences for early farming populations.\n(A) Skeletal evidence indicates that early farmers suffered poorer health than the foragers who preceded them.\n(B) Agriculture spread largely because it supported higher population growth rather than better individual welfare.\n(C) Hunter-gatherers were entirely unaware of how to cultivate plants.\n(D) Sedentary life allowed shorter intervals between births, accelerating population increase.\n(E) Dental caries were unknown before the Neolithic period anywhere in the world.\n(F) Farmers in the Near East deliberately chose crops that would improve their nutrition.",
+    "targetLevel": "지문 요약",
+    "answerEn": "(A), (B), (D) These three capture the passage's structure: the health costs documented in skeletons, the demographic rather than welfare explanation for agriculture's spread, and the mechanism of shortened birth intervals. (C) and (F) assert intentions and knowledge the passage never addresses, and (E) is an absolute claim about the whole world that the text does not support.",
+    "answerKo": "정답은 (A), (B), (D)입니다. 각각 골격 증거가 보여 준 건강 악화, 복지가 아니라 인구 성장으로 농경 확산을 설명하는 논리, 출산 간격 단축이라는 구체적 기제를 담아 지문의 뼈대를 이룹니다. (C)와 (F)는 지문이 다루지 않은 의도·지식을 가정하고, (E)는 전 세계를 대상으로 한 절대적 주장이라 근거가 없습니다.",
+    "keyExpressions": [
+      {
+        "en": "foraging",
+        "ko": "수렵채집"
+      },
+      {
+        "en": "dental caries",
+        "ko": "충치"
+      },
+      {
+        "en": "nutritional stress",
+        "ko": "영양 결핍 스트레스"
+      },
+      {
+        "en": "birth interval",
+        "ko": "출산 간격"
+      },
+      {
+        "en": "displace",
+        "ko": "몰아내다, 대체하다"
+      }
+    ],
+    "tips": "지문 요약은 각 단락의 주제문 세 개를 고른다는 감각으로 접근합니다. 세부 사례나 숫자만 반복하는 선택지, 지문에 없는 의도·감정을 부여한 선택지, everywhere·never 같은 절대어가 들어간 선택지는 우선 제외하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "수중 난파선 고고학",
+    "question": "A sunken ship differs from most terrestrial sites in one crucial respect: it is a closed deposit formed at a single moment. Objects on a land settlement accumulate over generations and are repeatedly disturbed, but a wreck preserves a cargo, a crew's possessions, and a vessel's fittings exactly as they were on one day. The Uluburun wreck off the Turkish coast, dated to about 1300 BCE, carried copper and tin ingots in the correct proportion for bronze, along with ebony, ivory, glass, and objects from at least seven cultures.\n\nRecovery, however, imposes severe constraints. Organic materials preserved for millennia in oxygen-poor sediment begin to disintegrate within hours of exposure, so timbers must be lifted into controlled baths and treated for years before display. Excavation depth limits diver working time to minutes per descent, making underwater projects far slower and more expensive than comparable work on land.\n\nWhich of the following is NOT mentioned in the passage as a characteristic of shipwreck sites?\n(A) They represent a single moment rather than long accumulation.\n(B) They may contain goods originating in many different cultures.\n(C) They frequently include written records naming the ship's owner.\n(D) They preserve organic materials that decay quickly once exposed.",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(C) Written records or ownership documents are never mentioned in the passage. The closed-deposit character appears in the first sentence, the multicultural cargo of Uluburun in paragraph 1, and the rapid decay of exposed organic material in paragraph 2. Because (A), (B), and (D) are all stated, (C) is the answer.",
+    "answerKo": "정답은 (C)입니다. 선주 이름이 적힌 문서 기록은 지문에 전혀 등장하지 않습니다. (A) 단일 시점의 폐쇄 퇴적, (B) 여러 문화권 화물, (D) 노출 시 급속히 분해되는 유기물은 모두 본문에 서술되어 있으므로 답이 될 수 없습니다.",
+    "keyExpressions": [
+      {
+        "en": "closed deposit",
+        "ko": "폐쇄 퇴적(단일 시점 매몰)"
+      },
+      {
+        "en": "terrestrial site",
+        "ko": "육상 유적"
+      },
+      {
+        "en": "ingot",
+        "ko": "주괴, 덩이쇠"
+      },
+      {
+        "en": "oxygen-poor sediment",
+        "ko": "산소가 희박한 퇴적층"
+      },
+      {
+        "en": "disintegrate",
+        "ko": "분해되다, 부서지다"
+      }
+    ],
+    "tips": "부정 사실 정보 문제에서 정답은 흔히 '그럴듯하지만 지문에 없는' 항목입니다. 배경지식으로 맞을 것 같은 선택지라도 지문에서 해당 표현을 찾지 못하면 그것이 답입니다. 반드시 본문 근거 위치를 손가락으로 짚어 확인하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "아나사지 절벽 주거",
+    "question": "In the canyons of the American Southwest, ancestral Puebloan communities of the twelfth and thirteenth centuries CE built multistory masonry villages within natural rock alcoves high above the valley floor. These cliff dwellings, reached only by hand-and-toe holds cut into vertical sandstone, required far greater labor than the open mesa-top pueblos that preceded them and placed residents inconveniently far from their fields.\n\nExplanations divide along two lines. One emphasizes defense, citing the timing of the shift, its coincidence with a prolonged regional drought recorded in tree rings, and evidence of violence at several contemporaneous sites; competition for shrinking resources, on this view, drove populations into defensible positions. The other emphasizes environment, noting that alcoves retain solar heat in winter, are shaded in summer, and often contain seep springs. The two accounts are not mutually exclusive, and most researchers now treat them as complementary.\n\nDirections: Complete the table by matching the statements below with the explanation they support.\nCategory 1: Defensive explanation. Category 2: Environmental explanation.\n(A) Alcoves stay warmer in winter and cooler in summer than exposed sites.\n(B) The shift coincided with a long drought documented in tree-ring records.\n(C) Signs of violent conflict appear at sites of the same period.\n(D) Many alcoves contain natural springs seeping from the rock.\n(E) Access required climbing holds cut into vertical cliff faces.\n(F) Cliff dwellings were built entirely of imported timber.",
+    "targetLevel": "표 채우기",
+    "answerEn": "Defensive: (B), (C), (E). Environmental: (A), (D). The drought, the evidence of violence, and the difficult restricted access all belong to the argument that competition pushed people into defensible locations. Thermal performance and seep springs are the comfort and resource advantages cited by the environmental account. (F) is unused because the passage describes masonry construction, not imported timber.",
+    "answerKo": "방어 설명은 (B), (C), (E)이고 환경 설명은 (A), (D)입니다. 가뭄, 동시대 폭력 흔적, 오르기 어려운 접근로는 모두 자원 경쟁으로 방어 위치를 택했다는 논거에 속합니다. 겨울 보온·여름 그늘과 용출수는 환경적 이점입니다. (F)는 본문이 석조 건축을 말하므로 어느 쪽에도 해당하지 않습니다.",
+    "keyExpressions": [
+      {
+        "en": "alcove",
+        "ko": "바위 그늘, 암벽 오목부"
+      },
+      {
+        "en": "masonry",
+        "ko": "석조 건축"
+      },
+      {
+        "en": "mesa-top",
+        "ko": "평평한 대지 위의"
+      },
+      {
+        "en": "defensible position",
+        "ko": "방어에 유리한 위치"
+      },
+      {
+        "en": "seep spring",
+        "ko": "스며 나오는 샘"
+      }
+    ],
+    "tips": "표 채우기는 지문이 두 개의 대립 설명을 제시할 때 자주 나옵니다. 읽으면서 각 근거 옆에 D(방어)/E(환경) 같은 약어를 표시해 두면 분류가 빨라집니다. 어느 쪽에도 속하지 않는 미사용 선택지가 반드시 한두 개 있다는 점을 기억하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "고고학·고대문명",
+    "topic": "고대 청동기 교역망",
+    "question": "Bronze requires copper and tin, but the two metals rarely occur together. Copper was abundant in Cyprus and Anatolia, whereas the nearest substantial tin sources lay in Afghanistan and, later, in Cornwall. The manufacture of bronze therefore obliged Bronze Age societies of the eastern Mediterranean to sustain exchange over distances of thousands of kilometers, an obligation that no earlier technology had imposed.\n\nLead-isotope analysis of finished objects allows metal to be traced to its ore field, revealing routes that texts alone would not disclose. The resulting picture is one of interdependence: palace economies of the Aegean, the Levant, and Egypt were linked in a system whose disruption around 1200 BCE coincided with widespread collapse. Whether the interruption of tin supply caused that collapse or merely accompanied it remains debated, but the episode illustrates how technological dependence on a scarce, distant resource can render prosperous societies fragile.\n\nThe word 'disclose' in the passage is closest in meaning to\n(A) reveal\n(B) exaggerate\n(C) prohibit\n(D) shorten",
+    "targetLevel": "어휘",
+    "answerEn": "(A) The sentence contrasts what lead-isotope analysis makes visible with what 'texts alone would not disclose' — that is, would not make known. 'Reveal' matches this sense precisely and echoes the verb 'revealing' used earlier in the same sentence. Exaggerate, prohibit, and shorten bear no relation to the act of making information available.",
+    "answerKo": "정답은 (A)입니다. 문장은 납 동위원소 분석이 드러내는 정보와 '문헌만으로는 드러나지 않을' 정보를 대비하므로 disclose는 '드러내다'의 의미이며 reveal이 정확히 대응합니다. 실제로 같은 문장 앞부분에 revealing이 이미 쓰여 단서를 줍니다.",
+    "keyExpressions": [
+      {
+        "en": "ore field",
+        "ko": "광상, 광석 산지"
+      },
+      {
+        "en": "lead-isotope analysis",
+        "ko": "납 동위원소 분석"
+      },
+      {
+        "en": "palace economy",
+        "ko": "궁정 경제"
+      },
+      {
+        "en": "interdependence",
+        "ko": "상호 의존"
+      },
+      {
+        "en": "fragile",
+        "ko": "취약한"
+      }
+    ],
+    "tips": "어휘 문제에서 같은 문장이나 인접 문장에 동의어가 반복되는 경우가 많습니다. revealing과 disclose처럼 어휘 반복(paraphrase)을 찾으면 사전 지식 없이도 답이 확정됩니다. 부정어(not)가 붙어 있으면 의미 방향을 뒤집지 말고 단어 자체의 뜻만 고르세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "고딕 성당의 구조 혁신",
+    "question": "The soaring interiors of twelfth-century French cathedrals were not merely aesthetic ambitions; they were the direct consequence of three interlocking structural devices. The pointed arch, unlike its rounded Romanesque predecessor, could be raised or flattened without altering its span, allowing builders to bring vaults of unequal width to a uniform crown height. The ribbed vault then concentrated the downward thrust of the ceiling onto a small number of discrete points rather than distributing it along a continuous wall.\n\nOnce loads were localized, masonry between those points became structurally redundant and could be replaced with glass. The flying buttress completed the system by transferring lateral thrust outward across an open arc to freestanding piers. Contemporary chroniclers rarely described these mechanics, praising instead the luminous effect the engineering produced. Modern analysis suggests that some buttresses were oversized relative to calculated need, indicating that builders worked from accumulated craft experience rather than quantitative theory.\n\nAccording to the passage, the ribbed vault contributed to Gothic construction primarily by\n(A) reducing the total weight of the stone used in the ceiling\n(B) channeling ceiling thrust to a limited number of specific points\n(C) permitting vaults of identical width to be built more rapidly\n(D) eliminating the need for exterior supporting piers",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B). The passage states directly that the ribbed vault 'concentrated the downward thrust of the ceiling onto a small number of discrete points rather than distributing it along a continuous wall.' Option B restates this concentration of load. Choice A confuses load path with material quantity, which the passage never discusses. Choice C reverses the point about unequal widths, which belongs to the pointed arch. Choice D contradicts the passage, since flying buttresses and freestanding piers remained essential.",
+    "answerKo": "정답은 (B). 지문은 리브 볼트가 천장의 하중을 연속된 벽 전체가 아니라 소수의 개별 지점에 집중시켰다고 명시한다. (A)의 무게 감소는 언급되지 않았고, (C)의 '동일한 폭'은 오히려 첨두아치가 해결한 '다른 폭' 문제를 뒤집은 것이다. (D)는 플라잉 버트레스와 독립 피어가 여전히 필요했다는 서술과 모순된다.",
+    "keyExpressions": [
+      {
+        "en": "pointed arch",
+        "ko": "첨두아치"
+      },
+      {
+        "en": "ribbed vault",
+        "ko": "리브 볼트(늑골 궁륭)"
+      },
+      {
+        "en": "lateral thrust",
+        "ko": "횡방향 추력"
+      },
+      {
+        "en": "structurally redundant",
+        "ko": "구조적으로 불필요한"
+      },
+      {
+        "en": "flying buttress",
+        "ko": "플라잉 버트레스(공중 부벽)"
+      }
+    ],
+    "tips": "사실 정보 문제는 반드시 지문에 명시된 문장 하나로 정답이 확정된다. 질문의 핵심어(ribbed vault)를 지문에서 찾아 그 문장만 정밀 독해하고, 인접 문장의 정보(첨두아치·버트레스)를 끌어와 만든 오답에 속지 않도록 주어를 확인하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "르네상스 선원근법",
+    "question": "Linear perspective, codified in Florence during the early fifteenth century, rests on a deceptively simple premise: parallel lines receding from the viewer appear to converge at a single vanishing point on the horizon. Filippo Brunelleschi demonstrated the principle through optical experiments, but it was Leon Battista Alberti who translated it into a written procedure that painters could follow without mathematical training. Alberti instructed artists to treat the picture surface as a transparent window intersecting a pyramid of visual rays.\n\nThe method imposed conditions as well as opportunities. It presumed a single motionless eye at a fixed distance, a constraint no actual viewer satisfies. It also privileged rectilinear architecture, which supplied the orthogonal lines the system required, and thus encouraged painters to set religious narratives inside contemporary Italian buildings. Northern European painters achieved comparable spatial depth through graded color and atmospheric softening, techniques that required no geometric construction whatsoever.\n\nAccording to the passage, all of the following are true of linear perspective EXCEPT:\n(A) It assumes an observer whose eye remains stationary.\n(B) Alberti made the technique accessible to painters lacking mathematical training.\n(C) It encouraged the depiction of narratives within architectural settings.\n(D) Northern European painters adopted it to achieve atmospheric depth.",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D). The final sentence says Northern European painters achieved depth 'through graded color and atmospheric softening, techniques that required no geometric construction whatsoever,' which means they did not rely on linear perspective. The other three choices are all stated: the single motionless eye, Alberti's written procedure for the mathematically untrained, and the preference for rectilinear architectural settings. Negative factual questions reward locating each supported option and eliminating it.",
+    "answerKo": "정답은 (D). 마지막 문장은 북유럽 화가들이 기하학적 작도가 전혀 필요 없는 색조와 대기 원근법으로 깊이를 얻었다고 하므로, 선원근법을 채택했다는 진술은 지문과 어긋난다. (A) 고정된 단일 시점, (B) 수학 훈련 없는 화가용 서술 절차, (C) 건축적 배경 선호는 모두 지문에 명시되어 있다.",
+    "keyExpressions": [
+      {
+        "en": "vanishing point",
+        "ko": "소실점"
+      },
+      {
+        "en": "orthogonal lines",
+        "ko": "직교선(투시 사선)"
+      },
+      {
+        "en": "picture surface",
+        "ko": "화면(그림 표면)"
+      },
+      {
+        "en": "rectilinear architecture",
+        "ko": "직선형 건축"
+      },
+      {
+        "en": "atmospheric softening",
+        "ko": "대기에 의한 흐림 효과"
+      }
+    ],
+    "tips": "부정 사실 정보는 '지문에 있는 것 3개를 지우는' 소거법이 원칙이다. 보기마다 근거 문장을 지문에서 손으로 짚어 표시하고, 근거를 못 찾은 하나를 답으로 택하라. 특히 대조 구문(however, whereas, no ... whatsoever) 뒤 문장이 정답 근거가 되는 경우가 많다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "인상주의와 야외 회화",
+    "question": "The Impressionists' preference for painting outdoors was enabled less by aesthetic conviction than by a change in materials. Until the 1840s, oil paint was stored in pig bladders that leaked and dried quickly once punctured, which effectively confined serious oil painting to the studio. The collapsible metal tube, patented in 1841, kept pigment workable for months and could be carried in a satchel. Simultaneously, the expansion of suburban rail lines placed riverbanks and coastal villages within a morning's travel of Paris.\n\nWorking before a motif that shifted with the weather, painters had to record impressions rapidly, and the broken brushstroke became a practical response to limited time rather than a manifesto. Critics initially read this facture as evidence of incompetence or unfinished work. Only later, when the paintings were exhibited indoors alongside academic canvases finished over many months, did the contrast begin to be interpreted as deliberate.\n\nWhich of the following can be inferred from the passage about academic painting of the period?\n(A) Academic painters refused to travel outside Paris on principle.\n(B) Academic canvases were produced through a slower studio-based process.\n(C) Academic painters had no access to collapsible metal paint tubes.\n(D) Academic critics preferred coastal subjects to urban ones.",
+    "targetLevel": "추론",
+    "answerEn": "(B). The passage contrasts Impressionist works with 'academic canvases finished over many months,' and earlier explains that pre-tube materials confined serious oil painting to the studio. Together these details support the inference that academic practice was slower and studio-centered. Choice A overstates a principle never mentioned; choice C is contradicted by the fact that tubes were commercially patented and thus generally available; choice D reverses the critics' actual objection, which concerned finish rather than subject.",
+    "answerKo": "정답은 (B). 지문은 인상주의 작품을 '여러 달에 걸쳐 완성된 아카데미 회화'와 대비시키며, 튜브 이전 재료가 진지한 유화를 화실에 묶어두었다고 설명한다. 두 정보를 결합하면 아카데미 회화가 느린 화실 중심 제작이었다는 추론이 가능하다. (A)는 근거 없는 과장, (C)는 상업 특허품이라는 사실과 모순, (D)는 비평의 쟁점(마무리 상태)을 소재 취향으로 바꿔치기한 오답이다.",
+    "keyExpressions": [
+      {
+        "en": "collapsible metal tube",
+        "ko": "접이식 금속 튜브"
+      },
+      {
+        "en": "motif",
+        "ko": "모티프(그리는 대상)"
+      },
+      {
+        "en": "broken brushstroke",
+        "ko": "끊어진 붓터치"
+      },
+      {
+        "en": "facture",
+        "ko": "화면 처리 방식"
+      },
+      {
+        "en": "academic canvas",
+        "ko": "아카데미풍 회화"
+      }
+    ],
+    "tips": "추론 문제의 정답은 '지문에 없지만 지문 두세 문장을 합치면 반드시 참'인 진술이다. 새로운 사실을 상상하지 말고, 대비 구문(alongside, whereas)에서 한쪽만 서술된 특성을 다른 쪽에 뒤집어 적용하는 방식으로 접근하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "바로크 통주저음",
+    "question": "The defining texture of Baroque music was the basso continuo, a notated bass line above which figures indicated the harmonies to be improvised by a keyboard or lute player. This practice reorganized musical thinking around a vertical axis. Renaissance polyphony had treated each voice as an independent melodic strand of roughly equal weight; continuo practice subordinated inner voices to a supporting harmonic function and elevated the outer lines.\n\nConsider what the figures actually withhold. They specify intervals above the bass but say nothing about spacing, register, or ornamentation, leaving those decisions to the performer in the moment. A surviving score is therefore closer to a set of instructions than to a finished object, and two historically informed performances of the same cantata may differ substantially in texture without either being incorrect. This indeterminacy frustrated nineteenth-century editors, who frequently published realizations that fixed every note.\n\nWhy does the author state that the figures 'say nothing about spacing, register, or ornamentation'?\n(A) To argue that Baroque notation was carelessly produced\n(B) To emphasize that the written score left significant choices to performers\n(C) To show that continuo players lacked formal musical training\n(D) To explain why Renaissance polyphony declined in popularity",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B). The sentence introduces what the notation omits, and the following sentences develop that omission into the claim that a score functions as instructions rather than a finished object, permitting divergent yet valid performances. The rhetorical purpose is therefore to stress performer choice. Choice A imposes a judgment of carelessness the author never makes; choice C reverses the implication, since improvising harmony requires considerable skill; choice D concerns a different paragraph's contrast and is not the function of this sentence.",
+    "answerKo": "정답은 (B). 해당 문장은 숫자저음 표기가 '생략한 것'을 제시하고, 이어지는 문장들이 그 생략을 근거로 악보가 완성물이 아닌 지시서이며 연주마다 달라질 수 있다고 전개한다. 따라서 목적은 연주자 재량의 강조다. (A)의 '부주의'는 저자의 판단이 아니고, (C)는 즉흥 실현이 고도의 훈련을 요한다는 점과 반대이며, (D)는 앞 단락의 대비를 잘못 끌어온 것이다.",
+    "keyExpressions": [
+      {
+        "en": "basso continuo",
+        "ko": "통주저음"
+      },
+      {
+        "en": "polyphony",
+        "ko": "다성음악"
+      },
+      {
+        "en": "subordinate",
+        "ko": "종속시키다"
+      },
+      {
+        "en": "indeterminacy",
+        "ko": "비확정성"
+      },
+      {
+        "en": "realization",
+        "ko": "실현(연주용 편곡)"
+      }
+    ],
+    "tips": "수사적 의도 문제는 인용된 문장 자체의 내용이 아니라 '앞뒤 문장과의 관계'가 답이다. 인용문 바로 다음 문장의 therefore, thus, so 같은 신호어를 찾아 저자가 그 언급으로 무엇을 결론지었는지 확인한 뒤 보기와 대조하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "모더니즘 건축과 강철",
+    "question": "The steel frame severed a partnership that had governed building for millennia: the wall no longer had to carry the roof. In load-bearing masonry construction, every window was a deliberate weakening of the structure, and height was purchased at the cost of ever-thicker bases. Once a skeleton of riveted steel assumed the vertical loads, the exterior became a curtain, free to be glass, terra-cotta, or nothing at all.\n\nArchitects did not exploit this liberty immediately. Early tall buildings in Chicago and New York wrapped their frames in classical ornament, as though the mass of stone were still doing the work. Only in the 1920s did designers such as Mies van der Rohe propose facades that openly acknowledged the frame behind them. The resulting aesthetic was often justified in moral terms, as honesty of structure, though its adoption also owed much to the lower cost of repetitive prefabricated components.\n\nThe word 'liberty' in the passage is closest in meaning to\n(A) freedom\n(B) permission\n(C) expense\n(D) tradition",
+    "targetLevel": "어휘",
+    "answerEn": "(A). In context, 'liberty' refers back to the newly available design possibility described in the preceding sentence, where the exterior became 'free to be glass, terra-cotta, or nothing at all.' The repetition of 'free' makes freedom the precise synonym. 'Permission' wrongly implies an authority granting approval; 'expense' and 'tradition' contradict the sentence, which contrasts the new possibility with the ornamental habits architects retained.",
+    "answerKo": "정답은 (A). 문맥상 liberty는 바로 앞 문장의 '외벽이 유리든 테라코타든 아무것도 아니든 자유로워졌다'는 내용을 되받는 말이므로 freedom이 정확한 동의어다. (B) permission은 허가를 내리는 주체를 전제해 어색하고, (C) expense와 (D) tradition은 새로 얻은 가능성과 기존 관습을 대비하는 문장 구조와 맞지 않는다.",
+    "keyExpressions": [
+      {
+        "en": "load-bearing masonry",
+        "ko": "내력 조적조"
+      },
+      {
+        "en": "steel frame",
+        "ko": "철골 골조"
+      },
+      {
+        "en": "curtain wall",
+        "ko": "커튼월(비내력 외벽)"
+      },
+      {
+        "en": "facade",
+        "ko": "파사드(정면)"
+      },
+      {
+        "en": "prefabricated component",
+        "ko": "사전 제작 부재"
+      }
+    ],
+    "tips": "어휘 문제는 단어의 사전적 뜻보다 문맥 동의어가 중요하다. 해당 단어를 가린 채 앞 문장에서 반복되는 어근(free → liberty)이나 대명사 연결을 찾아 빈칸에 넣어보고, 문장 전체가 자연스럽게 읽히는 보기를 고르라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "사진술의 등장과 회화",
+    "question": "When the daguerreotype was announced in 1839, portrait painters at the lower end of the market lost their livelihood within a decade. The miniature portrait, previously the standard memento of a family member, could now be produced in minutes at a fraction of the cost. Yet the effect on ambitious painting was more complicated than simple displacement.\n\nPhotography absorbed the documentary obligations that painting had carried, and in doing so it released painters from them. Freed from the duty of accurate likeness, some artists turned toward color, surface, and subjective sensation, qualities the early monochrome plate could not capture. Others borrowed from the new medium directly, adopting its abrupt croppings and blurred motion. Photography also served painters as a working tool: Eadweard Muybridge's sequential images of galloping horses corrected a convention of equine posture that artists had repeated for centuries, though several painters continued using the older, more legible convention deliberately.\n\nThe word 'them' in the passage refers to\n(A) portrait painters\n(B) documentary obligations\n(C) early monochrome plates\n(D) sequential images",
+    "targetLevel": "지시 대상",
+    "answerEn": "(B). The sentence reads that photography absorbed the documentary obligations painting had carried 'and in doing so it released painters from them,' where the plural pronoun must refer to the plural noun phrase 'documentary obligations.' The next sentence confirms the reading by restating the idea as 'freed from the duty of accurate likeness.' Choice A cannot work because painters are the object already named in the clause, and choices C and D appear only later in the paragraph.",
+    "answerKo": "정답은 (B). 해당 문장은 사진이 회화가 짊어졌던 기록의 의무를 흡수하고 '그로써 화가들을 그것들로부터 해방시켰다'는 구조이므로, 복수 대명사 them은 복수 명사구 documentary obligations를 가리킨다. 다음 문장의 '정확한 닮음의 의무에서 벗어나'가 이를 확인해 준다. (A)는 같은 절에 목적어로 이미 등장했고, (C)·(D)는 뒤에 나오는 명사라 지시 대상이 될 수 없다.",
+    "keyExpressions": [
+      {
+        "en": "daguerreotype",
+        "ko": "다게레오타입(초기 사진술)"
+      },
+      {
+        "en": "displacement",
+        "ko": "대체, 밀어냄"
+      },
+      {
+        "en": "accurate likeness",
+        "ko": "정확한 닮음(초상 재현)"
+      },
+      {
+        "en": "cropping",
+        "ko": "화면 잘라내기"
+      },
+      {
+        "en": "convention",
+        "ko": "관습, 통념적 표현법"
+      }
+    ],
+    "tips": "지시 대상 문제는 수 일치(단수/복수)와 위치가 핵심이다. 대명사는 거의 항상 앞에 나온 명사를 받으므로 뒤쪽 명사는 즉시 배제하고, 후보를 대명사 자리에 대입해 문장이 논리적으로 성립하는지 확인하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "비잔틴 모자이크",
+    "question": "Byzantine wall mosaics were not intended to be read as windows onto a physical world. Craftsmen set the glass tesserae at slightly irregular angles so that candlelight striking the surface would scatter unevenly, producing a shimmer that shifted as a worshipper moved through the church. Gold tesserae, made by sandwiching gold leaf between layers of clear glass, were deliberately tilted more steeply than the surrounding cubes.\n\nThe consequence was an image that refused to hold still. Figures placed against a gold ground appeared to float in an undefined luminous space rather than to occupy measurable depth, and this ambiguity was theologically useful, since the subjects depicted were understood to exist outside ordinary space and time. Later Western observers, trained by perspective painting to expect spatial consistency, frequently misread this flatness as a failure of technical skill rather than as a considered choice.\n\nWhich of the following best expresses the essential information in the highlighted sentence: 'Later Western observers, trained by perspective painting to expect spatial consistency, frequently misread this flatness as a failure of technical skill rather than as a considered choice.'?\n(A) Western observers eventually learned that Byzantine artists deliberately avoided perspective.\n(B) Because their expectations came from perspective painting, later Western viewers mistook an intentional flatness for incompetence.\n(C) Perspective painting was technically more difficult than Byzantine mosaic work.\n(D) Byzantine craftsmen lacked the training that later Western painters received.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(B). The original sentence has three components: the cause (expectations formed by perspective painting), the error (reading flatness as lack of skill), and the correction (it was in fact deliberate). Choice B preserves all three. Choice A reverses the outcome by claiming the observers understood correctly. Choice C introduces a comparison of difficulty that the sentence does not make. Choice D asserts a deficiency in Byzantine training, which is precisely the misreading the sentence rejects.",
+    "answerKo": "정답은 (B). 원문은 원인(원근법에 길든 기대), 오류(평면성을 기술 부족으로 오독), 정정(실제로는 의도된 선택)이라는 세 요소로 구성되며 (B)가 이를 모두 보존한다. (A)는 결국 올바로 이해했다는 식으로 결과를 뒤집었고, (C)는 없는 난이도 비교를 추가했으며, (D)는 문장이 반박하는 오해 자체를 그대로 진술한 함정이다.",
+    "keyExpressions": [
+      {
+        "en": "tesserae",
+        "ko": "테세라(모자이크 조각)"
+      },
+      {
+        "en": "gold ground",
+        "ko": "금빛 바탕"
+      },
+      {
+        "en": "luminous",
+        "ko": "빛나는"
+      },
+      {
+        "en": "spatial consistency",
+        "ko": "공간적 일관성"
+      },
+      {
+        "en": "considered choice",
+        "ko": "숙고된 선택"
+      }
+    ],
+    "tips": "문장 재진술은 원문을 요소별로 쪼개는 것이 정석이다. 인과·양보·부정(rather than) 관계를 각각 표시한 뒤, 보기 중 어느 하나라도 관계를 뒤집거나 새 비교를 넣었으면 즉시 탈락시켜라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "자포니슴과 일본 판화",
+    "question": "Japanese woodblock prints reached Europe in quantity after 1854, often arriving as packing material around exported ceramics. [1] Their impact on French art was rapid and specific. [2] European painting had inherited a set of conventions from the Renaissance: a centered subject, modeling by graded shadow, and a coherent recession into depth. The prints observed none of these.\n\n[3] Instead they used flat unmodeled areas of color bounded by contour, asymmetrical compositions in which the principal figure might be pushed to one edge, and high viewpoints that flattened the ground plane into a decorative pattern. [4] Degas adopted the abrupt framing, cutting figures at the edge of the canvas as a print might. Van Gogh copied several prints outright before absorbing their chromatic boldness. The borrowing was selective rather than wholesale, since few European artists adopted the collaborative workshop system through which the prints were actually produced.\n\nLook at the four squares [1], [2], [3], and [4] that indicate where the following sentence could be added to the passage.\nInsertion sentence: 'Each of these departures offered French painters a usable alternative rather than a mere curiosity.'\nWhere would the sentence best fit?\n(A) [1]\n(B) [2]\n(C) [3]\n(D) [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(D). The phrase 'each of these departures' requires a preceding list of specific deviations, which is supplied by the sentence at [3] describing flat color, asymmetry, and high viewpoints. The word 'usable' then sets up the examples of Degas and Van Gogh that immediately follow position [4]. At [1], [2], and [3] the plural 'these departures' would have no antecedent, since the conventions listed there belong to European painting rather than to the prints.",
+    "answerKo": "정답은 (D). 삽입 문장의 'each of these departures'는 앞에 구체적인 일탈 목록이 있어야 성립하는데, 그 목록은 [3] 뒤 문장(평면적 색면, 비대칭 구도, 높은 시점)이 제공한다. 또 'usable(활용 가능한)'이 바로 뒤의 드가·반 고흐 사례를 예고한다. [1]~[3] 위치에서는 복수 지시어가 받을 선행 목록이 없거나, 그 목록이 유럽 회화의 관습이라 의미가 어긋난다.",
+    "keyExpressions": [
+      {
+        "en": "woodblock print",
+        "ko": "목판화"
+      },
+      {
+        "en": "asymmetrical composition",
+        "ko": "비대칭 구도"
+      },
+      {
+        "en": "contour",
+        "ko": "윤곽선"
+      },
+      {
+        "en": "ground plane",
+        "ko": "지면(바닥 평면)"
+      },
+      {
+        "en": "departure",
+        "ko": "이탈, 관례에서 벗어남"
+      }
+    ],
+    "tips": "문장 삽입은 삽입문 속 연결 신호(these, such, instead, however)가 결정한다. 지시어가 받을 선행 명사가 실제로 존재하는 위치인지, 그리고 삽입 후 뒤 문장과의 흐름이 끊기지 않는지 두 방향을 모두 확인하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "낭만주의 교향곡의 확장",
+    "question": "Between Haydn's late symphonies and Mahler's, the genre changed in nearly every measurable dimension. Orchestras grew from roughly forty players to well over a hundred, driven by valve mechanisms that made brass instruments fully chromatic and by iron-framed concert halls that could absorb the resulting volume. Duration expanded correspondingly, with single movements sometimes exceeding the length of an entire Classical symphony.\n\nThese changes were not merely quantitative. Composers began attaching extramusical narratives to purely instrumental works, so that a symphony might trace a psychological trajectory rather than simply present and resolve thematic material. Berlioz supplied a printed program; Liszt compressed the multi-movement plan into a single continuous span. Meanwhile the concert audience shifted from aristocratic patrons to a ticket-buying public whose numbers justified the larger hall. Critics of the period disagreed sharply about whether narrative content enriched instrumental music or corrupted its independence.\n\nDirections: Select the THREE answer choices that express the most important ideas in the passage.\n(A) Technological and architectural developments permitted substantially larger orchestras.\n(B) Composers increasingly gave instrumental symphonies narrative or psychological content.\n(C) Haydn wrote more symphonies than Mahler did.\n(D) The audience for symphonies changed from aristocratic patrons to a paying public.\n(E) Liszt disliked Berlioz's use of printed programs.\n(F) Iron-framed halls were cheaper to construct than wooden ones.",
+    "targetLevel": "지문 요약",
+    "answerEn": "(A), (B), (D). The passage organizes the transformation of the symphony around three developments: material and technological growth of the orchestra and its venues, the adoption of extramusical narrative, and the social shift in audience. Choice C states a fact never given and is trivial even if true. Choice E invents a disagreement between two composers who are simply listed as parallel examples. Choice F adds a claim about construction cost that the passage does not make.",
+    "answerKo": "정답은 (A), (B), (D). 지문은 교향곡의 변화를 세 축으로 정리한다. 즉 악기·공연장 기술 발전에 따른 규모 확대, 기악곡에 서사·심리적 내용이 부여된 질적 변화, 그리고 귀족 후원에서 유료 대중으로의 청중 변화다. (C)는 지문에 없는 정보이며 지엽적이고, (E)는 병렬 예시로 나열된 두 작곡가 사이에 없는 갈등을 지어냈으며, (F)는 건축 비용이라는 언급되지 않은 주장이다.",
+    "keyExpressions": [
+      {
+        "en": "chromatic",
+        "ko": "반음계의"
+      },
+      {
+        "en": "extramusical narrative",
+        "ko": "음악 외적 서사"
+      },
+      {
+        "en": "thematic material",
+        "ko": "주제 선율 소재"
+      },
+      {
+        "en": "trajectory",
+        "ko": "궤적, 전개 경로"
+      },
+      {
+        "en": "patron",
+        "ko": "후원자"
+      }
+    ],
+    "tips": "지문 요약은 단락별 중심 주장을 한 문장씩 뽑아 세 개를 만드는 문제다. 세부 사례(베를리오즈, 리스트)나 지문에 없는 비교·비용 정보가 들어간 보기는 오답이므로, 각 단락의 주제문과 대응되는 보기만 남겨라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "아르누보와 아르데코",
+    "question": "Two decorative movements dominated European design in succession, and their differences were fundamental rather than stylistic preference alone. Art Nouveau, ascendant around 1900, took its vocabulary from organic growth: whiplash curves derived from stems and tendrils, asymmetry, and surfaces in which structure dissolved into ornament. Its objects were largely handmade, and their labor cost restricted them to wealthy clients, a contradiction for a movement that spoke of renewing everyday life.\n\nArt Deco, consolidated at the 1925 Paris exposition, reversed nearly every one of these premises. It favored geometry over botany, symmetry over asymmetry, and stepped or faceted forms drawn from machinery and archaeology alike. Crucially, it embraced serial production in materials such as chrome, bakelite, and cast glass, which allowed a recognizable luxury idiom to reach a middle-class market. Both movements, however, applied ornament to a form rather than deriving form from structural necessity.\n\nDirections: Complete the table by matching each statement with the movement it describes.\nArt Nouveau: ___, ___\nArt Deco: ___, ___, ___\n(A) Drew its motifs from plant growth and asymmetry\n(B) Relied largely on handmade production for wealthy buyers\n(C) Was consolidated at a Paris exposition in 1925\n(D) Used chrome, bakelite, and cast glass in serial production\n(E) Preferred geometric and symmetrical forms\n(F) Rejected all use of applied ornament",
+    "targetLevel": "표 채우기",
+    "answerEn": "Art Nouveau: (A), (B). Art Deco: (C), (D), (E). The first paragraph assigns organic motifs, asymmetry, and costly handwork to Art Nouveau, while the second assigns the 1925 exposition, industrial materials in serial production, and geometry with symmetry to Art Deco. Choice F belongs to neither movement, since the closing sentence states that both applied ornament to form rather than rejecting it.",
+    "answerKo": "아르누보: (A), (B). 아르데코: (C), (D), (E). 첫 단락은 식물적 모티프·비대칭·고비용 수공예를 아르누보에, 둘째 단락은 1925년 파리 박람회, 크롬·베이클라이트 등 대량생산 재료, 기하학적 대칭을 아르데코에 배정한다. (F)는 두 운동 모두 형태에 장식을 덧붙였다는 마지막 문장과 정면으로 어긋나므로 어느 쪽에도 속하지 않는 미사용 보기다.",
+    "keyExpressions": [
+      {
+        "en": "whiplash curve",
+        "ko": "채찍처럼 휘는 곡선"
+      },
+      {
+        "en": "tendril",
+        "ko": "덩굴손"
+      },
+      {
+        "en": "serial production",
+        "ko": "대량 연속 생산"
+      },
+      {
+        "en": "faceted form",
+        "ko": "다면체 형태"
+      },
+      {
+        "en": "idiom",
+        "ko": "양식, 표현 어법"
+      }
+    ],
+    "tips": "표 채우기는 두 대상의 대비 구조를 이용한다. 단락이 대상별로 나뉘어 있으므로 각 단락에서 특징을 항목화한 뒤 배정하고, 마지막에 '양쪽 모두' 또는 '어느 쪽도 아님'을 서술한 문장을 근거로 미사용 보기를 걸러내라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "로마네스크 수도원 건축",
+    "question": "Romanesque monastic churches, built across Europe between roughly 1000 and 1150, were shaped by two practical demands that had little to do with aesthetics. The first was fire. Earlier basilicas were roofed with timber, and a single lightning strike could destroy a century of work, so builders replaced wooden ceilings with barrel vaults of stone. The second was pilgrimage. Churches on the routes to Santiago de Compostela received crowds that had to reach the relics without interrupting the monks' liturgical schedule.\n\nThe response was the ambulatory, a curved aisle running behind the main altar with small chapels radiating from it, permitting a continuous one-way circulation of visitors around the sanctuary. Stone vaulting, however, imposed a penalty: its enormous weight required thick walls pierced by few and small openings, producing the dim interiors that later observers contrasted unfavorably with Gothic luminosity.\n\nAccording to the passage, the ambulatory was developed primarily in order to\n(A) reduce the risk of fire in timber-roofed basilicas\n(B) allow pilgrims to circulate without disturbing monastic services\n(C) support the weight of stone barrel vaulting\n(D) increase the amount of light entering the sanctuary",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B). The passage names pilgrimage as the second practical demand and states that the ambulatory permitted 'a continuous one-way circulation of visitors around the sanctuary' without interrupting the monks' liturgical schedule. Choice A belongs to the first demand, answered by stone vaulting rather than by the ambulatory. Choice C confuses the ambulatory with structural support, which the passage attributes to thick walls. Choice D contradicts the passage, which says vaulting produced dim interiors.",
+    "answerKo": "정답은 (B). 지문은 두 번째 실용적 요구로 순례를 들고, 앰뷸러토리가 수도사들의 전례 일정을 방해하지 않으면서 방문객이 성소 주위를 한 방향으로 계속 돌 수 있게 했다고 명시한다. (A)는 첫 번째 요구인 화재에 대한 답(석조 볼트)이고, (C)는 구조 지지 기능(두꺼운 벽)과 혼동한 것이며, (D)는 어두운 실내를 낳았다는 서술과 모순된다.",
+    "keyExpressions": [
+      {
+        "en": "barrel vault",
+        "ko": "반원통형 볼트"
+      },
+      {
+        "en": "ambulatory",
+        "ko": "앰뷸러토리(주보랑)"
+      },
+      {
+        "en": "radiating chapel",
+        "ko": "방사형 예배당"
+      },
+      {
+        "en": "relic",
+        "ko": "성유물"
+      },
+      {
+        "en": "liturgical",
+        "ko": "전례의"
+      }
+    ],
+    "tips": "사실 정보 문제에서 지문이 '원인 두 가지'를 제시하면 오답은 대개 원인과 해결책을 서로 뒤바꾼다. 문제의 대상(ambulatory)이 어느 요구에 대한 답인지 짝을 정확히 맞춘 뒤 보기를 검토하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "프레스코 기법의 제약",
+    "question": "True fresco, or buon fresco, requires the painter to work on a layer of lime plaster while it remains wet. As the plaster cures, calcium hydroxide reacts with carbon dioxide in the air and forms a crystalline calcium carbonate skin that binds the pigment into the wall itself. The resulting image is not a coating but part of the masonry, which explains its extraordinary durability in dry climates.\n\nThe chemistry dictates the procedure. Because the reaction cannot be paused, the artist plasters only the area he can finish in one day, a unit called the giornata, and the seams between these patches remain visible under raking light. Because the plaster is alkaline, pigments that decompose in lime, including most blues, must be applied afterward in a separate binder that adheres poorly and often flakes away. Corrections are essentially impossible without chiseling out the section.\n\nAccording to the passage, all of the following are true of buon fresco EXCEPT:\n(A) The pigment becomes chemically bound within the wall surface.\n(B) Painters work in daily sections whose joins can later be detected.\n(C) Blue pigments generally survive as well as other colors do.\n(D) Mistakes cannot easily be corrected once the plaster has cured.",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(C). The passage states that pigments which decompose in lime, 'including most blues,' must be added later in a separate binder that 'adheres poorly and often flakes away,' so blues survive worse, not equally well. The remaining options are explicit: pigment binds into the wall through carbonation, giornate leave visible seams under raking light, and correction requires chiseling out the section.",
+    "answerKo": "정답은 (C). 지문은 석회에서 분해되는 안료, 특히 대부분의 청색은 나중에 별도 매재로 칠해야 하며 접착이 약해 자주 박락된다고 밝히므로 다른 색만큼 잘 남는다는 진술은 틀렸다. (A) 탄산화로 벽에 결합, (B) 조르나타 이음매의 가시성, (D) 수정 불가는 모두 지문에 명시되어 있다.",
+    "keyExpressions": [
+      {
+        "en": "lime plaster",
+        "ko": "석회 회반죽"
+      },
+      {
+        "en": "calcium carbonate",
+        "ko": "탄산칼슘"
+      },
+      {
+        "en": "giornata",
+        "ko": "조르나타(하루 작업 구획)"
+      },
+      {
+        "en": "alkaline",
+        "ko": "알칼리성의"
+      },
+      {
+        "en": "raking light",
+        "ko": "사광(비스듬한 조명)"
+      }
+    ],
+    "tips": "부정 사실 문제에서 '정도'를 나타내는 표현(as well as, equally, always)이 들어간 보기는 우선 의심하라. 지문이 예외나 결함(poorly, flakes away)을 언급한 부분이 곧 정답 근거인 경우가 많다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "12음 기법의 논리",
+    "question": "Arnold Schoenberg's twelve-tone method, formulated in the early 1920s, arose from a problem of coherence rather than a desire for novelty. Once composers abandoned tonality, they lost the hierarchical system by which a listener could sense that one pitch was central and others subordinate. Without that hierarchy, extended forms threatened to become arbitrary sequences of events. Schoenberg's solution was to fix the twelve chromatic pitches in a chosen order, or row, and to derive all melodic and harmonic material from that ordering and its transformations.\n\nThe method guaranteed that no pitch would be repeated often enough to acquire the gravitational pull of a tonic. It also supplied a principle of unity that operated below the level of audible theme, since transposed or inverted forms of the row are difficult to recognize by ear. Schoenberg nevertheless retained traditional formal outlines such as the suite and the variation set.\n\nWhich of the following can be inferred from the passage about Schoenberg's attitude toward musical tradition?\n(A) He sought to eliminate every inherited element from his compositions.\n(B) He regarded coherence in large forms as a value worth preserving.\n(C) He believed listeners could easily identify inverted forms of a row.\n(D) He considered tonality superior to the twelve-tone method.",
+    "targetLevel": "추론",
+    "answerEn": "(B). The passage presents the method as an answer to the loss of coherence in extended forms and notes that Schoenberg 'retained traditional formal outlines such as the suite and the variation set.' Both details imply he valued large-scale coherence inherited from tradition. Choice A is contradicted by his retention of traditional forms. Choice C reverses the statement that transformed rows are hard to hear. Choice D misrepresents a method devised as a replacement for tonality, not a concession to it.",
+    "answerKo": "정답은 (B). 지문은 12음 기법을 대규모 형식의 일관성 상실에 대한 해답으로 제시하고, 쇤베르크가 모음곡·변주곡 같은 전통적 형식 틀을 유지했다고 밝힌다. 두 진술을 합치면 그가 전통에서 물려받은 대규모 일관성을 가치 있게 여겼다는 추론이 나온다. (A)는 전통 형식 유지와 모순, (C)는 귀로 알아채기 어렵다는 서술의 반대, (D)는 조성을 대체하려 한 취지를 뒤집은 것이다.",
+    "keyExpressions": [
+      {
+        "en": "tonality",
+        "ko": "조성"
+      },
+      {
+        "en": "hierarchical",
+        "ko": "위계적인"
+      },
+      {
+        "en": "tonic",
+        "ko": "으뜸음"
+      },
+      {
+        "en": "transposition",
+        "ko": "이조"
+      },
+      {
+        "en": "inversion",
+        "ko": "전위(음정 뒤집기)"
+      }
+    ],
+    "tips": "추론 문제에서 nevertheless, yet, still 같은 양보 접속사 뒤 문장은 저자가 숨긴 태도를 드러내는 결정적 단서다. 그 문장을 앞 내용과 결합해 '따라서 그는 무엇을 중시했는가'를 한 문장으로 정리한 뒤 보기와 맞춰라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "바우하우스의 교육 개혁",
+    "question": "The Bauhaus, founded in Weimar in 1919, replaced the academy's division between fine and applied art with a workshop structure borrowed from the medieval building lodge. Students were called apprentices, instructors were called masters, and every entrant completed a preliminary course before specializing in metal, textile, cabinetry, or wall painting. Each workshop was supervised by two masters, one an artist and one a trained craftsman.\n\nWhy insist on this doubled supervision, which was administratively awkward and expensive? The school's premise was that neither figure alone could produce designers fit for industry: the artist commanded form but not material behavior, the craftsman the reverse. Only sustained contact between the two, the founders argued, would yield objects that were manufacturable as well as considered. The arrangement lasted less than a decade, ending once graduates trained under it could themselves teach both dimensions.\n\nWhy does the author ask why the school insisted on 'this doubled supervision, which was administratively awkward and expensive'?\n(A) To criticize the Bauhaus for wasting institutional resources\n(B) To introduce the reasoning behind a costly but deliberate policy\n(C) To show that the workshop system failed within a decade\n(D) To compare Bauhaus salaries with those of traditional academies",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B). The rhetorical question acknowledges an apparent drawback and then hands the paragraph over to the school's justification, stated in the sentences that follow about the complementary limits of artist and craftsman. Its function is thus to set up an explanation. Choice A mistakes the concession for the author's own criticism. Choice C misreads the ending of the arrangement, which the passage attributes to success rather than failure. Choice D introduces a salary comparison that never appears.",
+    "answerKo": "정답은 (B). 이 수사의문문은 겉보기 단점(번거롭고 비쌈)을 먼저 인정한 뒤, 이어지는 문장들에서 예술가와 장인의 상호 보완이라는 학교의 논거를 제시하는 도입 장치다. (A)는 양보를 저자의 비판으로 오해했고, (C)는 제도의 종료를 실패로 읽었으나 지문은 그것을 성공의 결과로 설명하며, (D)의 급여 비교는 언급조차 없다.",
+    "keyExpressions": [
+      {
+        "en": "applied art",
+        "ko": "응용미술"
+      },
+      {
+        "en": "preliminary course",
+        "ko": "예비 과정"
+      },
+      {
+        "en": "apprentice",
+        "ko": "도제"
+      },
+      {
+        "en": "manufacturable",
+        "ko": "제조 가능한"
+      },
+      {
+        "en": "premise",
+        "ko": "전제"
+      }
+    ],
+    "tips": "수사의문문이 인용되면 정답은 거의 항상 '뒤에 나올 설명을 도입하기 위해'다. 질문 직후 문장에 근거·목적을 나타내는 표현(premise, argued, because)이 있는지 확인하고, 저자 본인의 비판으로 읽는 오답을 경계하라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "예술사·건축·음악",
+    "topic": "판테온의 콘크리트 돔",
+    "question": "The dome of the Pantheon, completed around 126 CE, remains the largest unreinforced concrete dome ever built, and it stands because its builders varied the material as the structure rose. Roman concrete was a mixture of lime, volcanic ash, and aggregate, and the choice of aggregate was adjusted deliberately: heavy travertine near the base, lighter tuff at mid-height, and porous pumice at the crown. The wall thickness diminishes correspondingly, from about six meters at the springing to roughly one and a half at the oculus.\n\nThe coffers recessed into the interior surface are usually admired as decoration, but they also remove material from a zone where it contributes little strength. The unglazed oculus, nearly nine meters across, further lightens the crown while admitting the building's only direct daylight. No modern equivalent has surpassed the span, largely because reinforced concrete made such graduated solutions unnecessary.\n\nThe word 'diminishes' in the passage is closest in meaning to\n(A) decreases\n(B) hardens\n(C) spreads\n(D) collapses",
+    "targetLevel": "어휘",
+    "answerEn": "(A). The clause specifies a change 'from about six meters at the springing to roughly one and a half at the oculus,' a numerical reduction, so 'diminishes' means decreases. 'Hardens' describes curing rather than dimension; 'spreads' would imply lateral extension, which the figures contradict; 'collapses' denotes structural failure, the opposite of a passage emphasizing that the dome still stands.",
+    "answerKo": "정답은 (A). 해당 절은 두께가 '기부 약 6미터에서 오쿨루스 약 1.5미터로' 변한다는 수치를 제시하므로 diminishes는 감소를 뜻한다. (B) hardens는 경화라는 다른 개념이고, (C) spreads는 수치와 맞지 않는 확산의 의미이며, (D) collapses는 돔이 여전히 서 있다는 지문 전체의 논지와 정반대다.",
+    "keyExpressions": [
+      {
+        "en": "unreinforced concrete",
+        "ko": "무근 콘크리트"
+      },
+      {
+        "en": "aggregate",
+        "ko": "골재"
+      },
+      {
+        "en": "springing",
+        "ko": "아치 기부(시작점)"
+      },
+      {
+        "en": "coffer",
+        "ko": "우물반자(격자형 함몰 장식)"
+      },
+      {
+        "en": "oculus",
+        "ko": "오쿨루스(돔 정상의 원형 개구부)"
+      }
+    ],
+    "tips": "어휘 문제에 수치나 방향을 나타내는 from A to B 구조가 함께 나오면 그 수치가 곧 정답 근거다. 단어 뜻을 몰라도 6미터에서 1.5미터라는 변화만 읽으면 '감소'를 확정할 수 있으므로 주변 데이터를 먼저 보라."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "작업기억과 장기기억",
+    "question": "Psychologists distinguish between working memory, a limited system that holds information for immediate use, and long-term memory, a durable store of virtually unlimited capacity. Working memory typically retains only about four meaningful units at a time, and its contents decay within seconds unless actively rehearsed. Because of this narrow bottleneck, the amount of new material a learner can process in a single moment is severely constrained.\n\nLong-term memory, by contrast, is not limited by capacity but by accessibility. Information that has been encoded may remain in storage indefinitely yet prove impossible to retrieve without an appropriate cue. Experiments demonstrate that participants who fail to recall a word spontaneously often identify it correctly when given its first letter, indicating that the trace itself was intact. Consequently, many apparent instances of forgetting reflect retrieval failure rather than the genuine loss of stored information.\n\nAccording to paragraph 2, what do cued-recall experiments demonstrate?\n(A) Long-term memory has a strictly limited capacity.\n(B) Forgetting often reflects a failure to access intact memories.\n(C) Rehearsal is the only way to transfer information to storage.\n(D) Retrieval cues create memories that did not previously exist.",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The passage states that participants who cannot spontaneously recall a word often identify it when given its first letter, and that this indicates 'the trace itself was intact.' The concluding sentence makes the point explicit: many cases of forgetting reflect retrieval failure rather than genuine loss. Choice (A) contradicts the claim that long-term memory is not limited by capacity. Choices (C) and (D) introduce ideas the paragraph never asserts.",
+    "answerKo": "정답은 (B)입니다. 둘째 단락은 스스로 단어를 떠올리지 못한 참가자도 첫 글자를 단서로 주면 정확히 답한다는 실험을 소개하며, 이는 기억 흔적 자체는 온전히 남아 있음을 보여준다고 설명합니다. 마지막 문장에서 '망각의 상당수는 저장 정보의 소실이 아니라 인출 실패'라고 직접 정리하므로 (B)가 정답입니다. (A)는 장기기억이 용량 제한을 받지 않는다는 서술과 모순되고, (C)와 (D)는 단락에 근거가 없습니다.",
+    "keyExpressions": [
+      {
+        "en": "working memory",
+        "ko": "작업기억"
+      },
+      {
+        "en": "decay",
+        "ko": "쇠퇴하다, 사라지다"
+      },
+      {
+        "en": "bottleneck",
+        "ko": "병목, 제약 지점"
+      },
+      {
+        "en": "retrieval failure",
+        "ko": "인출 실패"
+      },
+      {
+        "en": "encode",
+        "ko": "부호화하다"
+      }
+    ],
+    "tips": "사실 정보 문제는 질문에 명시된 단락 범위 안에서만 근거를 찾습니다. 질문의 핵심어(cued-recall, demonstrate)를 지문 표현(given its first letter, indicating)과 짝지어 해당 문장을 특정한 뒤, 그 문장을 그대로 바꿔 말한 선택지를 고르세요. 지문 밖 상식으로 추론하면 오답에 빠집니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "아동의 어휘 폭발기",
+    "question": "Between roughly eighteen and twenty-four months, most children undergo what researchers call the vocabulary spurt, a period during which the rate of word learning accelerates dramatically. A toddler who had been acquiring one or two words per week may suddenly add several words per day. Diary studies conducted across many languages confirm that this acceleration is not confined to a single culture or linguistic environment.\n\nExplanations for the spurt remain contested. Some theorists attribute it to a conceptual insight: the child grasps that every object bears a name and therefore begins actively soliciting labels. Others argue that no discrete insight occurs at all, and that the apparent surge is a statistical artifact produced by gradually improving memory and articulation. A third account emphasizes caregiver input, noting that adults expand their vocabulary as children become more responsive conversational partners.\n\nThe passage mentions all of the following as proposed explanations of the vocabulary spurt EXCEPT\n(A) a sudden conceptual realization that objects have names\n(B) gradual gains in memory and articulatory skill\n(C) richer vocabulary supplied by caregivers\n(D) formal instruction in grammatical rules by teachers",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) The second paragraph lists three explanations: a conceptual insight that objects have names, a statistical artifact arising from improving memory and articulation, and increased caregiver input. Formal grammatical instruction by teachers is never mentioned anywhere in the passage. Choices (A), (B), and (C) each correspond directly to one of the three stated accounts, so only (D) is unsupported.",
+    "answerKo": "정답은 (D)입니다. 둘째 단락은 세 가지 설명을 제시합니다. 첫째, 사물에는 이름이 있다는 개념적 통찰, 둘째, 기억과 발음 능력의 점진적 향상이 만들어낸 통계적 착시, 셋째, 양육자 입력의 증가입니다. 이는 각각 (A), (B), (C)에 대응합니다. 교사의 문법 규칙 교육은 지문 어디에도 언급되지 않으므로 (D)가 정답입니다.",
+    "keyExpressions": [
+      {
+        "en": "vocabulary spurt",
+        "ko": "어휘 폭발기"
+      },
+      {
+        "en": "accelerate",
+        "ko": "가속되다"
+      },
+      {
+        "en": "contested",
+        "ko": "논쟁적인"
+      },
+      {
+        "en": "statistical artifact",
+        "ko": "통계적 착시, 인위적 산물"
+      },
+      {
+        "en": "solicit",
+        "ko": "요청하다, 구하다"
+      }
+    ],
+    "tips": "부정 사실 정보(EXCEPT) 문제는 세 개의 정답 근거를 지문에서 하나씩 찾아 지우는 소거법이 가장 안전합니다. 선택지 옆에 근거 문장 번호를 표시하면서 진행하고, 근거를 찾지 못한 하나가 답입니다. 시간을 아끼려 감으로 고르면 뒤집힌 논리에 걸리기 쉽습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "내재적 동기와 보상",
+    "question": "Motivation researchers have long observed that external rewards can undermine the very behavior they are intended to encourage. In a classic study, preschoolers who enjoyed drawing were promised a certificate for producing a picture. When the reward was later withdrawn, these children drew markedly less during free play than peers who had never been promised anything.\n\nThe standard interpretation invokes self-perception. Children infer their own motives from their behavior, and a salient external incentive supplies a ready explanation: I drew because I wanted the certificate. Once the incentive disappears, the inferred reason disappears with it, and interest declines. Importantly, the effect depends on how the reward is framed. Unexpected rewards delivered after the fact, or rewards explicitly tied to the quality of performance, generally leave intrinsic interest intact, since they function as information about competence rather than as a bribe.\n\nIt can be inferred from the passage that a reward is LEAST likely to reduce intrinsic interest when it is\n(A) promised in advance for merely engaging in the activity\n(B) given unexpectedly in recognition of skilled work\n(C) large enough to be highly salient to the child\n(D) repeated at regular intervals over many sessions",
+    "targetLevel": "추론",
+    "answerEn": "(B) The final sentences state that unexpected rewards given after the fact, and rewards tied to performance quality, leave intrinsic interest intact because they convey information about competence. An unexpected reward for skilled work combines both protective features, so it is least likely to be damaging. Choice (A) describes exactly the condition that produced the undermining effect in the study. Choices (C) and (D) emphasize salience and repetition, which the passage links to the incentive becoming a ready external explanation.",
+    "answerKo": "정답은 (B)입니다. 마지막 두 문장은 사전에 예고되지 않은 사후 보상과 수행의 질에 연동된 보상은 내재적 흥미를 훼손하지 않으며, 뇌물이 아니라 유능감에 관한 정보로 기능한다고 밝힙니다. (B)는 이 두 조건을 모두 갖추므로 가장 안전합니다. (A)는 실험에서 흥미 저하를 일으킨 조건 그 자체이고, (C)와 (D)는 보상이 두드러진 외적 이유로 작동하게 만드는 방향이라 오답입니다.",
+    "keyExpressions": [
+      {
+        "en": "undermine",
+        "ko": "약화시키다, 훼손하다"
+      },
+      {
+        "en": "intrinsic interest",
+        "ko": "내재적 흥미"
+      },
+      {
+        "en": "salient",
+        "ko": "두드러진"
+      },
+      {
+        "en": "self-perception",
+        "ko": "자기 지각"
+      },
+      {
+        "en": "competence",
+        "ko": "유능감, 능력"
+      }
+    ],
+    "tips": "추론 문제의 정답은 지문에 직접 쓰여 있지 않지만 반드시 한 걸음 안에서 도출됩니다. 지문이 제시한 조건과 결과의 연결(예고된 보상은 해롭다, 사후·수행 연동 보상은 무해하다)을 정리한 뒤, 그 규칙을 새 상황에 적용하세요. 두 걸음 이상 상상이 필요하면 오답입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "확증 편향의 작동",
+    "question": "Confirmation bias refers to the tendency to seek, interpret, and remember evidence in ways that support existing beliefs. In a well-known task, participants were given a number sequence and asked to discover the rule generating it. Nearly all proposed a hypothesis and then tested only sequences consistent with it, rarely attempting the disconfirming tests that would have exposed their error.\n\nWhy should such a costly habit persist? One answer is that confirmation is cognitively cheap. Generating instances that fit a belief requires little effort, whereas imagining counterexamples demands that one deliberately work against one's own expectations. Another answer is social. In an argumentative context, the function of reasoning may be less to reach the truth than to defend a position persuasively, and a debater who marshals supporting evidence is rhetorically effective even when factually mistaken.\n\nWhy does the author ask 'Why should such a costly habit persist?'\n(A) To suggest that confirmation bias is actually beneficial in scientific work\n(B) To introduce explanations for the persistence of a seemingly irrational tendency\n(C) To criticize participants who failed the number sequence task\n(D) To question whether confirmation bias exists at all",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The question opens the second paragraph and is immediately followed by two answers, marked by 'One answer' and 'Another answer.' Its rhetorical function is therefore to set up the explanations that follow, not to make a claim of its own. Choice (A) overstates the passage, which calls the habit costly rather than beneficial. Choices (C) and (D) misread the tone: the author neither blames the participants nor doubts that the bias is real.",
+    "answerKo": "정답은 (B)입니다. 이 의문문은 둘째 단락의 첫 문장으로, 바로 뒤에 'One answer', 'Another answer'라는 신호어와 함께 두 가지 설명이 이어집니다. 즉 비합리적으로 보이는 습관이 왜 지속되는지에 대한 설명을 도입하는 장치입니다. (A)는 지문이 이 습관을 costly라고 평가한 점과 어긋나고, (C)와 (D)는 저자의 어조를 잘못 읽은 선택지입니다.",
+    "keyExpressions": [
+      {
+        "en": "confirmation bias",
+        "ko": "확증 편향"
+      },
+      {
+        "en": "disconfirming",
+        "ko": "반증하는"
+      },
+      {
+        "en": "counterexample",
+        "ko": "반례"
+      },
+      {
+        "en": "marshal evidence",
+        "ko": "증거를 동원하다"
+      },
+      {
+        "en": "persist",
+        "ko": "지속되다"
+      }
+    ],
+    "tips": "수사적 의도 문제는 인용된 문장 자체의 뜻이 아니라 그것이 글에서 하는 역할을 묻습니다. 해당 문장의 바로 앞뒤를 읽고 '예시 제시', '설명 도입', '반론 소개', '대조' 중 무엇인지 판단하세요. 특히 의문문 뒤에 답이 곧바로 나온다면 거의 항상 도입 기능입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "이중언어자의 통제 능력",
+    "question": "Bilingual speakers face a continual management problem: both of their languages remain active even when only one is being used. To speak Korean without intrusions from English, the bilingual must suppress the competing lexicon moment by moment. Neuroimaging studies indicate that this suppression recruits the same frontal control networks engaged by nonlinguistic tasks requiring the inhibition of a dominant response.\n\nSome researchers have proposed that a lifetime of such practice confers a broader cognitive advantage. Early studies reported that bilingual children outperformed monolinguals on conflict tasks, and that bilingual adults showed later onset of dementia symptoms. Recent work, however, has been more equivocal. Large replications with better-matched samples frequently find negligible differences, and analysts note that studies reporting positive results have historically been easier to publish, inflating the apparent size of the effect.\n\nThe word 'equivocal' in the passage is closest in meaning to\n(A) strongly supportive\n(B) unusually careful\n(C) uncertain and open to differing interpretations\n(D) deliberately dishonest",
+    "targetLevel": "어휘",
+    "answerEn": "(C) In context, 'equivocal' describes recent work that contrasts with the confident early findings: replications find negligible differences, and publication bias is suspected. The word therefore means uncertain or open to more than one interpretation. Choice (A) would reverse the contrast signaled by 'however.' Choices (B) and (D) attach evaluative meanings that the sentence does not support.",
+    "answerKo": "정답은 (C)입니다. 문제의 단어가 포함된 문장은 'however'로 앞의 긍정적 초기 연구와 대비되며, 뒤이어 재현 연구가 차이를 거의 발견하지 못했고 출판 편향 가능성이 있다는 내용이 나옵니다. 따라서 equivocal은 '불확실한, 해석이 갈리는'이라는 뜻입니다. (A)는 대조 관계를 뒤집고, (B)와 (D)는 문맥이 뒷받침하지 않는 평가적 의미입니다.",
+    "keyExpressions": [
+      {
+        "en": "suppress",
+        "ko": "억제하다"
+      },
+      {
+        "en": "lexicon",
+        "ko": "어휘 목록"
+      },
+      {
+        "en": "inhibition",
+        "ko": "억제"
+      },
+      {
+        "en": "replication",
+        "ko": "재현 연구"
+      },
+      {
+        "en": "negligible",
+        "ko": "무시할 만한"
+      }
+    ],
+    "tips": "어휘 문제는 단어의 사전적 의미보다 문맥 신호가 우선입니다. 앞뒤의 however, therefore, 세미콜론 같은 연결 장치와 바로 뒤의 부연 문장을 근거로 뜻을 정한 뒤, 선택지를 원문 자리에 넣어 읽어 확인하세요. 아는 단어라도 반드시 대입 검증을 거치는 것이 안전합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "수면과 기억 공고화",
+    "question": "Sleep does not merely rest the brain; it actively reorganizes what was learned during the preceding day. During slow-wave sleep, patterns of neural firing recorded while an animal explored a maze are spontaneously replayed, often at compressed speed. This replay is thought to transfer fragile hippocampal traces into more stable cortical networks, a process termed consolidation.\n\nBehavioral evidence in humans converges with these findings. Participants who learn a finger-tapping sequence and then sleep show substantial overnight gains in speed and accuracy, whereas those who remain awake for an equivalent interval show none. Crucially, the benefit is selective. Material that learners were told would be tested later improves more than material they believed was irrelevant, suggesting that consolidation is guided by the learner's goals rather than operating indiscriminately on everything encoded.\n\nThe word 'indiscriminately' in the passage is closest in meaning to\n(A) without distinguishing among items\n(B) with unusual precision\n(C) very slowly\n(D) only under supervision",
+    "targetLevel": "어휘",
+    "answerEn": "(A) The final clause contrasts goal-guided consolidation with a process that would act 'indiscriminately on everything encoded.' The phrase 'on everything' signals a lack of selection, so the word means without making distinctions. Choice (B) reverses the intended sense, since the sentence emphasizes selectivity as the alternative. Choices (C) and (D) introduce speed and supervision, neither of which is at issue.",
+    "answerKo": "정답은 (A)입니다. 마지막 문장은 학습자의 목표에 따라 선택적으로 일어나는 공고화와, 부호화된 '모든 것'에 무차별적으로 작용하는 과정을 대비합니다. 'on everything encoded'라는 표현이 선별 없음을 알려주므로 indiscriminately는 '구별 없이, 무차별적으로'라는 뜻입니다. (B)는 의미를 정반대로 뒤집고, (C)와 (D)는 문맥과 무관한 속도·감독 개념입니다.",
+    "keyExpressions": [
+      {
+        "en": "consolidation",
+        "ko": "공고화"
+      },
+      {
+        "en": "slow-wave sleep",
+        "ko": "서파 수면"
+      },
+      {
+        "en": "replay",
+        "ko": "재생, 재현"
+      },
+      {
+        "en": "converge",
+        "ko": "수렴하다, 일치하다"
+      },
+      {
+        "en": "selective",
+        "ko": "선택적인"
+      }
+    ],
+    "tips": "어휘 문제에서 정답 근거는 대개 같은 문장 안의 대조 구조에 있습니다. rather than, whereas, instead of 뒤에 오는 표현은 문제 단어의 반대 개념을 알려주므로, 그 반대말을 먼저 정하고 뒤집으면 정확합니다. 선택지 중 의미를 180도 반대로 만든 함정이 반드시 하나 있습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "결정적 시기 가설",
+    "question": "The critical period hypothesis holds that the capacity to acquire a language with full native competence is confined to a developmental window that closes around puberty. Evidence comes partly from tragic cases of children deprived of linguistic input in early childhood, who later acquired vocabulary but never mastered complex syntax. It also comes from studies of immigrants, whose ultimate grammatical proficiency correlates strongly with age of arrival.\n\nCritics respond that these findings admit alternative readings. Deprived children typically suffered malnutrition and social isolation as well, so their linguistic outcomes cannot be attributed to timing alone. Late arrivals also differ from early ones in schooling, social integration, and the sheer quantity of input they receive. These confounds do not refute the hypothesis, but they show that the decline in attainment need not reflect a biologically scheduled loss of capacity.\n\nThe word 'they' in the last sentence refers to\n(A) late arrivals\n(B) the confounds\n(C) early ones\n(D) linguistic outcomes",
+    "targetLevel": "지시 대상",
+    "answerEn": "(B) The final sentence begins 'These confounds do not refute the hypothesis, but they show that...' The pronoun sits in the second clause of a sentence whose subject is 'These confounds,' and only that noun makes the predicate coherent: confounds are what show that the decline need not be biological. Choices (A) and (C) come from the previous sentence and are not the grammatical subject continued here. Choice (D) appears earlier still and cannot 'show' anything about the hypothesis.",
+    "answerKo": "정답은 (B)입니다. 마지막 문장은 'These confounds do not refute the hypothesis, but they show that...' 구조로, 대명사 they는 같은 문장의 주어인 These confounds를 그대로 이어받습니다. 의미상으로도 '혼입 변수들이 능력 감소가 생물학적 예정 때문만은 아님을 보여준다'가 자연스럽습니다. (A)와 (C)는 앞 문장의 명사이고, (D)는 더 앞에 있어 문법적으로도 의미상으로도 연결되지 않습니다.",
+    "keyExpressions": [
+      {
+        "en": "critical period",
+        "ko": "결정적 시기"
+      },
+      {
+        "en": "deprived of",
+        "ko": "박탈당한"
+      },
+      {
+        "en": "syntax",
+        "ko": "통사, 문장 구조"
+      },
+      {
+        "en": "confound",
+        "ko": "혼입 변수"
+      },
+      {
+        "en": "attainment",
+        "ko": "도달 수준, 성취"
+      }
+    ],
+    "tips": "지시 대상 문제는 먼저 대명사의 수와 격을 확인하고, 같은 문장 또는 바로 앞 문장에서 후보를 찾습니다. 등위접속사 but, and로 연결된 절의 대명사는 앞 절의 주어를 받는 경우가 압도적으로 많습니다. 마지막에 후보를 대명사 자리에 넣어 읽어 의미가 통하는지 검증하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "절차기억과 서술기억",
+    "question": "Neuropsychological research has established that memory is not a single faculty. Patients with damage to the medial temporal lobes may be unable to report any recollection of events from the previous hour, yet they improve steadily on motor tasks such as tracing a figure seen in a mirror. Each session they insist they have never attempted the task, and each session their performance is better than the last.\n\nThis dissociation supports a distinction between declarative memory, which supports conscious recollection of facts and events, and procedural memory, which underlies skills expressed through performance. The two systems depend on different neural structures and follow different rules: declarative learning can occur after a single exposure, whereas procedural learning accumulates gradually across repetitions and is relatively resistant to forgetting once established.\n\nWhich of the following best expresses the essential information in the underlined sentence: 'Each session they insist they have never attempted the task, and each session their performance is better than the last.'?\n(A) Patients remember the task but cannot physically perform it.\n(B) Patients deny any memory of the task while their skill continues to improve.\n(C) Patients improve only when reminded of earlier sessions.\n(D) Patients perform inconsistently from one session to the next.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(B) The original sentence pairs two facts: patients sincerely report no memory of ever doing the task, and their measured performance nonetheless rises session by session. Choice (B) preserves both halves and the contrast between them. Choice (A) inverts the relationship. Choice (C) adds a condition about reminders that the sentence does not contain, and (D) contradicts the steady improvement described.",
+    "answerKo": "정답은 (B)입니다. 원문은 두 사실을 병치합니다. 하나는 환자들이 매번 과제를 해본 적 없다고 주장한다는 것, 다른 하나는 그럼에도 수행이 매 회기 향상된다는 것입니다. (B)는 이 두 요소와 둘 사이의 대조를 모두 유지합니다. (A)는 관계를 거꾸로 뒤집었고, (C)는 원문에 없는 조건을 추가했으며, (D)는 꾸준한 향상이라는 사실과 모순됩니다.",
+    "keyExpressions": [
+      {
+        "en": "dissociation",
+        "ko": "해리, 분리 현상"
+      },
+      {
+        "en": "declarative memory",
+        "ko": "서술기억"
+      },
+      {
+        "en": "procedural memory",
+        "ko": "절차기억"
+      },
+      {
+        "en": "medial temporal lobe",
+        "ko": "내측 측두엽"
+      },
+      {
+        "en": "exposure",
+        "ko": "노출, 접함"
+      }
+    ],
+    "tips": "문장 재진술 문제는 원문을 핵심 명제 두세 개로 쪼개고 그 사이의 논리 관계(대조, 인과, 조건)를 표시하는 것부터 시작합니다. 정답은 모든 핵심 명제와 관계를 보존하고, 오답은 관계를 뒤집거나 없는 조건을 덧붙입니다. 어려운 단어를 그대로 반복한 선택지가 정답이라는 보장은 없습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "손실 회피와 프레이밍",
+    "question": "Standard economic models assume that people evaluate outcomes in terms of final states of wealth. [1] Behavioral research has shown instead that judgments are made relative to a reference point, and that losses loom larger than equivalent gains. [2] Doubling a sum feels considerably less pleasant than losing half of it feels painful.\n\nThis asymmetry gives descriptions enormous power. [3] When a medical treatment is described as saving ninety percent of patients, it is chosen far more often than when it is described as leading to ten percent mortality, though the two statements are numerically identical. [4] Physicians are not exempt: studies show that experienced clinicians shift their recommendations with the framing just as laypeople do, which suggests that expertise does not by itself protect against the effect.\n\nLook at the four squares that indicate where the following sentence could be added to the passage.\nInsert sentence: 'The very same option can therefore be made attractive or unattractive simply by changing the wording.'\nWhere would the sentence best fit?\n(A) [1]\n(B) [2]\n(C) [3]\n(D) [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(C) The inserted sentence begins with 'therefore,' so it must follow a statement about the power of descriptions, and it must precede a concrete illustration of rewording. Position [3] sits directly after 'This asymmetry gives descriptions enormous power' and directly before the treatment-framing example, making the chain claim-generalization-example complete. Placing it at [1] or [2] would precede the idea of description entirely, and [4] would separate the example from the follow-up about physicians.",
+    "answerKo": "정답은 (C)입니다. 삽입 문장은 therefore로 시작하므로 앞에 '설명 방식이 큰 힘을 갖는다'는 진술이 와야 하고, 뒤에는 표현만 바꾼 구체적 사례가 이어져야 자연스럽습니다. [3]은 'This asymmetry gives descriptions enormous power' 바로 뒤이자 치료 사례 바로 앞이라 주장-일반화-예시의 흐름이 완성됩니다. [1]과 [2]는 아직 표현 문제가 등장하기 전이고, [4]에 넣으면 예시와 의사 관련 후속 논의가 끊깁니다.",
+    "keyExpressions": [
+      {
+        "en": "reference point",
+        "ko": "준거점"
+      },
+      {
+        "en": "loom larger",
+        "ko": "더 크게 다가오다"
+      },
+      {
+        "en": "asymmetry",
+        "ko": "비대칭성"
+      },
+      {
+        "en": "mortality",
+        "ko": "사망률"
+      },
+      {
+        "en": "exempt",
+        "ko": "예외인, 면제된"
+      }
+    ],
+    "tips": "문장 삽입은 삽입 문장의 연결 신호어(therefore, however, such, this)를 먼저 표시하는 것이 핵심입니다. 신호어는 앞 문장이 무엇이어야 하는지를 지정하고, 지시어는 앞에 언급된 명사를 요구합니다. 후보 위치에 넣어 앞뒤를 소리 내어 읽어보고 대명사 연결이 끊기지 않는 자리를 고르세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "수화의 언어적 지위",
+    "question": "For much of the twentieth century, sign languages were dismissed as crude pantomime rather than genuine languages. Linguistic analysis overturned this view. American Sign Language possesses a phonology built from handshape, location, and movement, a morphology that systematically modifies signs to mark aspect and agreement, and a syntax with hierarchical structure comparable to that of spoken languages.\n\nDevelopmental evidence proved equally decisive. Deaf infants exposed to a sign language babble manually before producing their first signs, pass through the same milestones on the same schedule as hearing infants, and make analogous errors of overregularization. Moreover, when deaf children in Nicaragua were brought together without a shared language, successive cohorts of pupils elaborated an initially rudimentary system into a fully grammatical one, a sequence that closely parallels documented cases of spoken creole formation.\n\nWhich of the following can be inferred about the Nicaraguan case?\n(A) The children were explicitly taught grammar by their instructors.\n(B) Grammatical complexity can emerge within a community without an existing model.\n(C) Sign languages develop more slowly than spoken languages.\n(D) The first cohort produced a fully grammatical language immediately.",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage says the children were brought together 'without a shared language' and that successive cohorts turned a rudimentary system into a fully grammatical one. The unavoidable inference is that grammatical structure arose from within the community rather than being copied from an existing model. Choice (A) contradicts the absence of a shared language and is never mentioned. Choice (D) is ruled out by the word 'successive,' and (C) makes a comparison the passage does not draw.",
+    "answerKo": "정답은 (B)입니다. 지문은 아이들이 공통 언어 없이 모였고, 이어지는 세대의 학생들이 초보적 체계를 완전한 문법 체계로 발전시켰다고 서술합니다. 따라서 기존 모델 없이 공동체 내부에서 문법적 복잡성이 생겨날 수 있다는 추론이 가능합니다. (A)는 공통 언어가 없었다는 서술과 충돌하고, (D)는 successive라는 표현과 모순되며, (C)는 지문이 하지 않은 비교입니다.",
+    "keyExpressions": [
+      {
+        "en": "pantomime",
+        "ko": "몸짓 흉내"
+      },
+      {
+        "en": "morphology",
+        "ko": "형태론"
+      },
+      {
+        "en": "overregularization",
+        "ko": "과잉 규칙화"
+      },
+      {
+        "en": "cohort",
+        "ko": "집단, 세대"
+      },
+      {
+        "en": "rudimentary",
+        "ko": "초보적인"
+      }
+    ],
+    "tips": "추론 문제에서 강한 단어(only, immediately, always)가 들어간 선택지는 대개 오답입니다. 지문의 시간 표현(successive, gradually)이나 조건 표현(without, unless)을 근거로 선택지를 하나씩 검증하세요. 정답은 지문 문장 한두 개를 논리적으로 한 걸음 확장한 것에 그칩니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "목격자 기억의 재구성",
+    "question": "Memory for events is reconstructive rather than reproductive. Rather than replaying a stored recording, the rememberer assembles a plausible account from fragments, guided by expectations about what typically happens. This process ordinarily produces serviceable recollections, but it also makes memory vulnerable to information encountered after the event itself.\n\nExperiments on eyewitness testimony demonstrate the vulnerability clearly. Viewers of a filmed collision who were later asked how fast the cars were going when they smashed into each other estimated higher speeds, and were more likely to report broken glass that never appeared, than viewers asked about cars that hit each other. A single verb altered what participants sincerely believed they had seen. Because confident testimony is highly persuasive to jurors, such distortions carry consequences well beyond the laboratory.\n\nAccording to the passage, what effect did the verb 'smashed' have on participants?\n(A) It made them refuse to estimate the speed of the cars.\n(B) It raised their speed estimates and increased false reports of broken glass.\n(C) It caused them to doubt the accuracy of their own memories.\n(D) It made them recall the film more accurately than other participants.",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The second paragraph reports two measured effects of the stronger verb: higher speed estimates and a greater likelihood of reporting broken glass that was never shown. Choice (B) captures both. Choice (D) reverses the finding, since the reports were less accurate, not more. Choices (A) and (C) describe behaviors the passage never mentions; participants sincerely believed their altered recollections.",
+    "answerKo": "정답은 (B)입니다. 둘째 단락은 'smashed'라는 동사가 두 가지 결과를 낳았다고 보고합니다. 속도 추정치가 더 높아졌고, 실제로는 없었던 깨진 유리를 봤다고 보고할 확률이 커졌습니다. (B)가 두 결과를 모두 담고 있습니다. (D)는 정확도가 오히려 떨어졌다는 사실과 반대이고, (A)와 (C)는 지문에 없는 행동으로, 참가자들은 왜곡된 기억을 진심으로 믿었습니다.",
+    "keyExpressions": [
+      {
+        "en": "reconstructive",
+        "ko": "재구성적인"
+      },
+      {
+        "en": "plausible",
+        "ko": "그럴듯한"
+      },
+      {
+        "en": "eyewitness testimony",
+        "ko": "목격자 증언"
+      },
+      {
+        "en": "distortion",
+        "ko": "왜곡"
+      },
+      {
+        "en": "persuasive",
+        "ko": "설득력 있는"
+      }
+    ],
+    "tips": "사실 정보 문제는 실험 결과를 묻는 경우가 많고, 정답은 결과를 둘 이상 포함하기도 합니다. 선택지가 결과의 절반만 담고 있으면 불완전한 답일 수 있으니, 지문에서 and로 연결된 결과를 모두 확인하세요. 방향을 반대로 뒤집은 선택지가 대표적 함정입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "분산 학습의 효과",
+    "question": "When learners must master material for a later test, the scheduling of study sessions matters as much as their total duration. Massed practice, in which repetitions follow one another closely, produces rapid gains and a comfortable sense of fluency. Distributed practice, in which the same repetitions are separated by intervals of hours or days, feels more effortful and yields poorer performance during learning itself.\n\nOn delayed tests, however, the ordering reverses decisively. Learners who spaced their sessions retain substantially more, often twice as much after a month. The difficulty introduced by forgetting between sessions is productive: retrieving a partly faded trace strengthens it far more than restudying material still fresh in mind. Unfortunately, learners judge their progress by how fluent study feels at the time, and therefore reliably prefer the schedule that serves them worse.\n\nWhy does the author describe the difficulty of distributed practice as 'productive'?\n(A) To emphasize that spacing reduces the total time required to study\n(B) To explain why an experience that feels worse produces better retention\n(C) To argue that learners should avoid forgetting at all costs\n(D) To show that massed practice is useless for any purpose",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The word 'productive' introduces the mechanism that resolves the paradox set up earlier: spaced study feels harder yet produces better delayed retention because retrieving a faded trace strengthens it. Calling the difficulty productive tells the reader that the extra effort is the cause of the benefit, not a drawback. Choice (A) concerns total study time, which the passage holds constant. Choice (C) contradicts the claim that forgetting between sessions helps, and (D) overstates, since massed practice does produce rapid initial gains.",
+    "answerKo": "정답은 (B)입니다. 지문은 분산 학습이 학습 중에는 더 힘들고 성적도 낮은데 지연 시험에서는 훨씬 우수하다는 역설을 제시한 뒤, 그 어려움을 'productive'라 부르며 이유를 설명합니다. 즉 희미해진 기억을 인출하는 노력 자체가 기억을 강화한다는 것으로, 힘든 경험이 더 나은 파지를 낳는 이유를 밝히는 표현입니다. (A)는 총 학습량이 동일하다는 전제와 어긋나고, (C)는 망각이 도움이 된다는 주장과 반대이며, (D)는 지나친 일반화입니다.",
+    "keyExpressions": [
+      {
+        "en": "massed practice",
+        "ko": "집중 학습"
+      },
+      {
+        "en": "distributed practice",
+        "ko": "분산 학습"
+      },
+      {
+        "en": "fluency",
+        "ko": "유창함, 익숙한 느낌"
+      },
+      {
+        "en": "retain",
+        "ko": "파지하다, 기억에 남기다"
+      },
+      {
+        "en": "trace",
+        "ko": "기억 흔적"
+      }
+    ],
+    "tips": "수사적 의도 문제에서 인용된 표현이 역설을 해소하는 자리에 놓여 있다면, 정답은 대개 '왜 그런지 설명하기 위해'입니다. 인용 문장 바로 뒤의 콜론이나 because 절이 결정적 근거가 되니 반드시 확인하세요. 지문이 인정한 장점을 전면 부정하는 선택지는 과장 오답입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "언어 상대성 논쟁",
+    "question": "The linguistic relativity hypothesis proposes that the categories encoded in a language shape how its speakers perceive and reason about the world. In its strong form, the claim is that language determines thought, so that distinctions absent from one's vocabulary are unavailable to the mind. This version has few defenders, since speakers routinely notice differences their language does not name and readily learn new terms for them.\n\nA weaker form has fared better. Languages that use absolute directions such as north and south rather than left and right require constant attention to orientation, and speakers of such languages show remarkable spatial reckoning abilities. Similarly, the boundaries a language draws among color terms measurably affect the speed of discrimination near those boundaries, though not the ability to discriminate. Language, on this account, biases habitual attention without imposing hard limits.\n\nDirections: Complete the table by matching each statement with the version of the hypothesis it describes. (Select 4 of the 6 statements.)\nCategories: STRONG FORM / WEAK FORM\n(A) Thought is limited to distinctions the language names.\n(B) Speakers of absolute-direction languages develop unusual spatial skills.\n(C) Color boundaries affect the speed but not the possibility of discrimination.\n(D) The hypothesis has few defenders today.\n(E) All languages encode the same categories.\n(F) Vocabulary size determines intelligence.",
+    "targetLevel": "표 채우기",
+    "answerEn": "STRONG FORM: (A), (D). WEAK FORM: (B), (C). The strong version is defined in paragraph 1 as the claim that language determines thought and that unnamed distinctions are unavailable, and the same paragraph notes it has few defenders. Paragraph 2 supplies the evidence associated with the weak version: enhanced spatial reckoning among absolute-direction speakers and faster, though not uniquely possible, color discrimination. Options (E) and (F) are distractors; the passage never claims that all languages encode identical categories or that vocabulary size determines intelligence.",
+    "answerKo": "강한 형태: (A), (D) / 약한 형태: (B), (C). 첫 단락은 강한 형태를 '언어가 사고를 결정하며 어휘에 없는 구분은 사고할 수 없다'로 정의하고, 이 견해를 지지하는 학자가 거의 없다고 밝히므로 (A)와 (D)가 여기에 속합니다. 둘째 단락은 약한 형태의 근거로 절대 방향 언어 사용자의 뛰어난 공간 감각과, 색 경계가 변별 속도에는 영향을 주지만 변별 가능성 자체는 막지 않는다는 결과를 듭니다. (E)와 (F)는 지문에 없는 내용입니다.",
+    "keyExpressions": [
+      {
+        "en": "linguistic relativity",
+        "ko": "언어 상대성"
+      },
+      {
+        "en": "encode",
+        "ko": "부호화하다, 담아내다"
+      },
+      {
+        "en": "reckoning",
+        "ko": "판단, 계산"
+      },
+      {
+        "en": "discrimination",
+        "ko": "변별, 구별"
+      },
+      {
+        "en": "habitual attention",
+        "ko": "습관적 주의"
+      }
+    ],
+    "tips": "표 채우기 문제는 지문이 두 대상을 대조하는 구조일 때 출제됩니다. 읽으면서 각 단락이 어느 범주를 다루는지 표시해 두면 분류가 빨라집니다. 어느 쪽에도 속하지 않는 오답 두 개는 대개 지문에 아예 없는 진술이니, 근거 문장을 찾지 못한 항목은 과감히 버리세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "자기 결정성 이론",
+    "question": "Self-determination theory proposes that motivation varies not merely in amount but in kind. It identifies three basic psychological needs whose satisfaction sustains engagement: autonomy, the sense that one's actions originate with oneself; competence, the experience of effectiveness; and relatedness, the feeling of connection to others. Environments that support these needs foster motivation that persists without external monitoring.\n\nThe theory has been applied widely in classrooms and workplaces. Teachers who offer meaningful choices, provide rationales for required tasks, and acknowledge students' perspectives produce learners who report deeper interest and who process material more thoroughly. Controlling environments that rely on deadlines, surveillance, and contingent praise generate compliance, but compliance evaporates when the controls are removed. The practical lesson is that supporting autonomy is not a matter of abandoning structure; clear expectations and autonomy support routinely coexist.\n\nWhich of the following best expresses the essential information in the underlined sentence: 'Controlling environments that rely on deadlines, surveillance, and contingent praise generate compliance, but compliance evaporates when the controls are removed.'?\n(A) Controlling methods produce obedience that disappears once the controls end.\n(B) Deadlines and surveillance never produce any behavior change at all.\n(C) Students who are monitored eventually come to enjoy their work.\n(D) Removing controls is the only way to create lasting compliance.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(A) The original makes two linked claims: controlling environments do generate compliance, and that compliance does not survive the removal of the controls. Choice (A) preserves both, including the concession that compliance is initially produced. Choice (B) denies the first half. Choice (C) contradicts the sentence entirely, and (D) reverses the causal direction, treating removal as a means of producing compliance.",
+    "answerKo": "정답은 (A)입니다. 원문은 두 가지를 함께 말합니다. 통제적 환경은 순응을 만들어내지만, 통제가 사라지면 그 순응도 사라진다는 것입니다. (A)는 순응이 일단 발생한다는 양보와 이후 소멸한다는 결과를 모두 유지합니다. (B)는 앞 절을 부정하고, (C)는 문장 전체와 모순되며, (D)는 인과 방향을 뒤집어 통제 제거를 순응의 수단으로 오해했습니다.",
+    "keyExpressions": [
+      {
+        "en": "autonomy",
+        "ko": "자율성"
+      },
+      {
+        "en": "relatedness",
+        "ko": "관계성"
+      },
+      {
+        "en": "rationale",
+        "ko": "근거, 이유 설명"
+      },
+      {
+        "en": "contingent praise",
+        "ko": "조건부 칭찬"
+      },
+      {
+        "en": "compliance",
+        "ko": "순응"
+      }
+    ],
+    "tips": "문장 재진술에서 but, although, while이 들어간 원문은 양보와 주장이 함께 있는 구조입니다. 정답은 두 절을 모두 살리고, 오답은 둘 중 하나를 삭제하거나 부정합니다. 특히 '전혀 없다', '유일한 방법이다' 같은 극단 표현이 추가된 선택지는 거의 언제나 오답입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "심리학·언어학",
+    "topic": "스트레스와 인지 수행",
+    "question": "The relationship between physiological arousal and cognitive performance is not linear. Moderate arousal improves attention and speeds decision making, whereas very low arousal leaves attention unfocused and very high arousal narrows it excessively. The resulting inverted-U function has been documented across tasks ranging from simple reaction times to complex problem solving, though the peak occurs at lower arousal for demanding tasks than for easy ones.\n\nThe mechanisms are increasingly well understood. Short bursts of stress hormones enhance the encoding of emotionally significant information, which is why vivid memories often form around threatening events. Sustained elevation, however, impairs the hippocampus and disrupts the prefrontal circuits that support working memory and flexible planning. Chronic stress therefore tends to shift behavior away from deliberate, goal-directed control and toward rigid habitual routines that require fewer executive resources.\n\nDirections: An introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas.\nIntroductory sentence: Arousal and stress affect cognition in ways that depend on their intensity and duration.\n(A) Performance peaks at moderate arousal and declines when arousal is too low or too high.\n(B) Brief stress responses can strengthen memory for emotionally significant events.\n(C) Prolonged stress impairs working memory and pushes behavior toward habit.\n(D) Simple reaction time tasks are the only tasks ever studied by researchers.\n(E) Stress hormones are produced exclusively by the hippocampus.\n(F) Vivid memories are always more accurate than ordinary memories.",
+    "targetLevel": "지문 요약",
+    "answerEn": "(A), (B), (C). These three statements capture the passage's main claims: the inverted-U relation between arousal and performance, the memory-enhancing effect of brief stress, and the damage done by sustained stress along with the resulting shift toward habitual behavior. Choice (D) misrepresents the passage, which explicitly mentions a range of tasks up to complex problem solving. Choice (E) invents an anatomical claim, and (F) asserts accuracy, whereas the passage speaks only of vividness.",
+    "answerKo": "정답은 (A), (B), (C)입니다. 세 선택지는 각각 지문의 핵심 주장을 담고 있습니다. 각성과 수행의 역U자 관계, 짧은 스트레스 반응의 기억 강화 효과, 그리고 지속적 스트레스가 작업기억을 손상시키고 행동을 습관 쪽으로 밀어낸다는 점입니다. (D)는 단순 반응 시간부터 복잡한 문제 해결까지 다양한 과제가 언급된 사실과 어긋나고, (E)는 지문에 없는 해부학적 주장이며, (F)는 생생함을 정확성으로 바꿔치기한 오답입니다.",
+    "keyExpressions": [
+      {
+        "en": "arousal",
+        "ko": "각성"
+      },
+      {
+        "en": "inverted-U function",
+        "ko": "역U자 함수"
+      },
+      {
+        "en": "sustained elevation",
+        "ko": "지속적 상승"
+      },
+      {
+        "en": "prefrontal circuit",
+        "ko": "전전두 회로"
+      },
+      {
+        "en": "executive resources",
+        "ko": "집행 기능 자원"
+      }
+    ],
+    "tips": "지문 요약 문제는 각 단락의 주제문을 한 문장으로 압축한 뒤 선택지와 대조하는 방식이 효율적입니다. 정답은 단락 수준의 큰 주장이고, 오답은 세부 사례이거나 지문에 없는 내용, 또는 always·only 같은 극단어가 붙은 변형입니다. 사실이라도 지엽적이면 요약에 들어가지 않습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "비교우위와 국제 무역",
+    "question": "Comparative advantage, first articulated by David Ricardo in 1817, holds that a nation can gain from trade even when it produces every good less efficiently than its trading partners. What matters is not absolute productivity but opportunity cost: the quantity of one good a country must forgo in order to produce an additional unit of another. A country that sacrifices less wheat to make a bolt of cloth should specialize in cloth and exchange its surplus for wheat produced elsewhere at lower relative cost.\n\nThe doctrine has proved remarkably durable, yet its assumptions are restrictive. Ricardo treated labor as the sole input and assumed that it could not cross national borders, conditions rarely satisfied in modern economies. Contemporary theorists therefore supplement the model with economies of scale, product differentiation, and transport costs. Even so, the central insight endures: specialization according to relative cost enlarges the total output available to all trading partners.\n\nAccording to paragraph 1, a country should specialize in producing a good when\n(A) it can produce that good using fewer workers than any other country\n(B) it gives up less of an alternative good to produce that good\n(C) the good can be transported to foreign markets at low cost\n(D) domestic demand for the good exceeds domestic supply",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The passage states explicitly that what matters is not absolute productivity but opportunity cost, defined as the quantity of one good that must be forgone to produce another. The wheat-and-cloth illustration shows that the country sacrificing less wheat should specialize in cloth. Choice (A) describes absolute advantage, which the passage rejects as the decisive criterion. Choices (C) and (D) mention transport costs and demand, factors that are either raised only as later refinements or never discussed.",
+    "answerKo": "정답은 (B). 지문은 절대적 생산성이 아니라 기회비용, 즉 한 재화를 추가로 생산하기 위해 포기해야 하는 다른 재화의 양이 특화의 기준이라고 명시한다. 밀과 옷감의 예에서 밀을 덜 포기하는 나라가 옷감에 특화해야 한다고 설명한다. (A)는 지문이 부정하는 절대우위 개념이고, (C)의 운송비는 후대 이론의 보완 요소로만 언급되며, (D)의 국내 수요는 언급되지 않는다.",
+    "keyExpressions": [
+      {
+        "en": "comparative advantage",
+        "ko": "비교우위"
+      },
+      {
+        "en": "opportunity cost",
+        "ko": "기회비용"
+      },
+      {
+        "en": "forgo",
+        "ko": "포기하다"
+      },
+      {
+        "en": "specialize in",
+        "ko": "~에 특화하다"
+      },
+      {
+        "en": "economies of scale",
+        "ko": "규모의 경제"
+      }
+    ],
+    "tips": "사실 정보 문제는 문제에 지정된 단락 안에서만 근거를 찾는다. 보기의 핵심어(opportunity cost, absolute productivity)를 지문 표현과 일대일로 대조하고, 지문이 명시적으로 부정한 개념(절대우위)이 보기로 나오면 즉시 소거한다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "중앙은행의 통화 정책",
+    "question": "Central banks influence economic activity chiefly by adjusting short-term interest rates. When policymakers judge that inflation is accelerating, they raise the rate at which commercial banks borrow reserves, and this increase propagates through mortgage rates, corporate lending, and consumer credit. Higher borrowing costs discourage investment and postpone household purchases, gradually cooling aggregate demand. The mechanism is indirect and slow: economists commonly estimate that the full effect of a rate change appears only after twelve to eighteen months.\n\nBecause of this lag, monetary authorities must act on forecasts rather than on current data, a requirement that invites error. Tightening too aggressively can push an economy into recession, while hesitating can allow inflationary expectations to become embedded in wage bargaining. To reduce uncertainty, many central banks now publish explicit inflation targets and detailed accounts of their deliberations, on the theory that predictable policy is itself a stabilizing force.\n\nAll of the following are mentioned in the passage as features of monetary policy EXCEPT\n(A) a delay of roughly a year or more before rate changes take full effect\n(B) the transmission of policy rates into mortgage and corporate lending rates\n(C) the publication of inflation targets to make policy more predictable\n(D) the direct purchase of government bonds to expand the money supply",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) The passage discusses interest-rate adjustment, the twelve-to-eighteen-month lag, transmission through mortgage and corporate lending, and the publication of inflation targets, which correspond to (A), (B), and (C). Bond purchases, or quantitative easing, are never mentioned. Negative fact questions reward locating the three supported statements rather than evaluating whether the remaining one is plausible in general.",
+    "answerKo": "정답은 (D). 지문은 금리 조정, 12~18개월의 시차, 주택담보대출과 기업 대출로의 파급, 인플레이션 목표 공표를 언급하므로 (A)(B)(C)는 모두 근거가 있다. 국채 직접 매입(양적 완화)은 전혀 언급되지 않는다. 부정 사실 정보 문제는 상식적으로 맞는 진술이라도 지문에 없으면 정답이 된다.",
+    "keyExpressions": [
+      {
+        "en": "aggregate demand",
+        "ko": "총수요"
+      },
+      {
+        "en": "borrowing costs",
+        "ko": "차입 비용"
+      },
+      {
+        "en": "propagate",
+        "ko": "파급되다"
+      },
+      {
+        "en": "inflationary expectations",
+        "ko": "인플레이션 기대"
+      },
+      {
+        "en": "tighten policy",
+        "ko": "긴축하다"
+      }
+    ],
+    "tips": "EXCEPT 문제는 정답을 찾는 게 아니라 근거 있는 보기 3개를 지우는 문제다. 보기마다 지문에서 해당 문장을 찾아 체크 표시를 하고, 끝까지 찾지 못한 하나를 고른다. 배경지식으로 그럴듯한 보기에 끌리지 않도록 주의한다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "광고와 소비자 행동",
+    "question": "Advertising researchers distinguish between informative and persuasive appeals. Informative advertising conveys verifiable attributes such as price, durability, or nutritional content, and it is most effective for goods that consumers purchase infrequently and evaluate deliberately. Persuasive advertising, by contrast, works through repetition, imagery, and association, cultivating familiarity rather than knowledge. Experiments show that mere exposure to a brand name, even without any accompanying claim, measurably increases the likelihood that shoppers will select the product from a crowded shelf.\n\nThis finding complicates the assumption that consumers weigh costs and benefits before every purchase. For inexpensive, frequently repurchased items, the mental effort of comparison may exceed the money at stake, so shoppers reasonably rely on recognition as a shortcut. Advertisers exploit this tendency by concentrating expenditure on categories where deliberation is least likely, which explains why campaigns for soft drinks and detergents emphasize mood and jingles rather than specifications.\n\nWhich of the following can be inferred from the passage about advertisements for expensive household appliances?\n(A) They are unlikely to have any measurable effect on consumer choice\n(B) They are more likely than soft drink advertisements to present concrete product attributes\n(C) They rely primarily on repetition to create brand familiarity\n(D) They are typically cheaper to produce than campaigns for detergents",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage links informative advertising to goods that are purchased infrequently and evaluated deliberately, and it states that persuasive, mood-based campaigns concentrate on categories where deliberation is least likely, such as soft drinks and detergents. An expensive appliance is an infrequent, deliberate purchase, so its advertising should emphasize verifiable attributes. Choice (C) reverses this logic, while (A) and (D) make claims about effectiveness and production cost that the passage does not support.",
+    "answerKo": "정답은 (B). 지문은 정보 제공형 광고가 드물게 구매하고 신중히 비교하는 재화에 효과적이라고 했고, 설득형 광고는 숙고가 적은 품목(청량음료, 세제)에 집중된다고 했다. 값비싼 가전은 신중한 구매이므로 검증 가능한 속성을 제시할 가능성이 높다. (C)는 논리를 뒤집었고, (A)와 (D)는 지문이 다루지 않은 효과와 제작비를 주장한다.",
+    "keyExpressions": [
+      {
+        "en": "verifiable attributes",
+        "ko": "검증 가능한 속성"
+      },
+      {
+        "en": "mere exposure",
+        "ko": "단순 노출"
+      },
+      {
+        "en": "deliberate",
+        "ko": "숙고하는"
+      },
+      {
+        "en": "shortcut",
+        "ko": "어림짐작, 지름길"
+      },
+      {
+        "en": "at stake",
+        "ko": "걸려 있는"
+      }
+    ],
+    "tips": "추론 문제는 지문에 없는 사례를 지문의 원리에 대입하는 문제다. 지문에서 두 유형을 가르는 기준(구매 빈도와 숙고 정도)을 먼저 확정한 뒤, 문제에 나온 사례가 어느 쪽에 속하는지 판단하면 답이 한 줄로 도출된다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "기업의 조직 구조",
+    "question": "Large firms must choose how to group their activities. A functional structure gathers employees by specialty, placing all engineers in one unit and all marketers in another, which deepens expertise and avoids duplicating scarce skills. Its weakness appears when products must move quickly: each department optimizes its own performance, and coordination across departments requires escalation to senior managers who may lack detailed knowledge of any single product line.\n\nA divisional structure instead organizes around products or regions, giving each division its own engineers, marketers, and accountants. Consider a manufacturer whose refrigerator division can redesign a component without negotiating with a central engineering office; decisions that once consumed months are settled in days. The price of this autonomy is redundancy, since similar capabilities are duplicated across divisions, and the danger that divisions will pursue local goals at the expense of the corporation as a whole.\n\nWhy does the author mention a manufacturer whose refrigerator division can redesign a component?\n(A) To show that refrigerator production is unusually difficult to coordinate\n(B) To illustrate the speed advantage that divisional autonomy provides\n(C) To argue that central engineering offices should be eliminated\n(D) To demonstrate that redundancy is less costly than it appears",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The example immediately follows the description of divisional structure and is introduced to make its benefit concrete: decisions that formerly took months are resolved in days because no negotiation with a central office is required. It is an illustration of speed, not a claim about refrigerators specifically, as (A) suggests. The passage treats redundancy as the cost of autonomy, so (C) and (D) misstate the author's balanced position.",
+    "answerKo": "정답은 (B). 냉장고 사업부 예시는 사업부제 설명 바로 뒤에 나와 그 이점을 구체화한다. 중앙 부서와 협의할 필요가 없어 수개월 걸리던 결정이 며칠 만에 끝난다는 서술이 핵심이다. (A)처럼 냉장고 산업 자체를 말하려는 것이 아니며, 지문은 중복을 자율성의 대가로 인정하므로 (C)(D)는 저자의 균형 잡힌 입장을 왜곡한다.",
+    "keyExpressions": [
+      {
+        "en": "functional structure",
+        "ko": "기능별 조직"
+      },
+      {
+        "en": "escalation",
+        "ko": "상위 보고, 상신"
+      },
+      {
+        "en": "autonomy",
+        "ko": "자율성"
+      },
+      {
+        "en": "redundancy",
+        "ko": "중복"
+      },
+      {
+        "en": "at the expense of",
+        "ko": "~을 희생하여"
+      }
+    ],
+    "tips": "수사적 의도 문제는 예시 자체의 내용이 아니라 그 예시가 뒷받침하는 앞뒤 주장을 답으로 고른다. 예시 문장 바로 앞 문장을 다시 읽고 그것을 그대로 일반화한 보기를 선택하면 정확도가 높아진다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "도시의 집적 경제",
+    "question": "Cities persist despite high rents because proximity generates productivity gains that economists call agglomeration economies. Three mechanisms are usually identified. Dense labor markets allow employers and workers to find better matches, so a specialized engineer is less likely to remain unemployed or misassigned. Concentrated demand supports suppliers of narrow inputs, from patent attorneys to precision machining shops, that could not survive in a small town. Finally, ideas circulate through informal contact, and empirical work on patent citations suggests that innovations are disproportionately built upon by inventors located nearby.\n\nThese advantages are not unlimited. Congestion, housing scarcity, and rising land prices erode the gains, and the net benefit of density eventually plateaus. Yet the persistence of expensive metropolitan centers in an era of inexpensive telecommunication indicates that face-to-face interaction remains difficult to replicate remotely, particularly for tasks that are ambiguous and require rapid mutual adjustment.\n\nThe word 'plateaus' in the passage is closest in meaning to\n(A) collapses suddenly\n(B) stops increasing\n(C) becomes measurable\n(D) spreads outward",
+    "targetLevel": "어휘",
+    "answerEn": "(B) The sentence states that congestion, housing scarcity, and rising land prices erode the gains, so the net benefit eventually levels off rather than continuing to rise. 'Plateaus' as a verb means to reach a stable level after a period of growth. Choice (A) is too extreme, since the passage describes gradual erosion rather than sudden collapse, and (C) and (D) have no support in the surrounding sentence.",
+    "answerKo": "정답은 (B). 혼잡, 주택 부족, 지가 상승이 이득을 잠식한다는 문맥이므로 밀집의 순편익이 계속 커지지 않고 일정 수준에서 멈춘다는 뜻이다. 동사 plateau는 상승 후 평평해진다는 의미다. (A)는 급격한 붕괴로 지문의 점진적 잠식과 어긋나고, (C)(D)는 문맥적 근거가 없다.",
+    "keyExpressions": [
+      {
+        "en": "agglomeration economies",
+        "ko": "집적 경제"
+      },
+      {
+        "en": "labor market matching",
+        "ko": "노동시장 매칭"
+      },
+      {
+        "en": "erode",
+        "ko": "잠식하다"
+      },
+      {
+        "en": "plateau",
+        "ko": "정체되다"
+      },
+      {
+        "en": "face-to-face interaction",
+        "ko": "대면 상호작용"
+      }
+    ],
+    "tips": "어휘 문제는 단어를 몰라도 앞뒤 문장의 방향성으로 푼다. 앞에 부정적 요인이 나열되고 뒤에 but/yet이 이어지면 해당 단어는 상승의 중단을 뜻할 가능성이 크다. 보기를 원문 자리에 넣어 읽어 보는 대입 확인은 필수다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "외부효과와 시장 실패",
+    "question": "Markets allocate resources efficiently only when prices reflect all costs and benefits of a transaction. An externality arises when they do not. A factory that discharges effluent into a river imposes cleanup and health costs on downstream residents who are not parties to any sale, and because these costs never enter the firm's accounts, the firm produces more than the socially optimal quantity. Positive externalities create the mirror problem: a homeowner who restores a historic facade confers benefits on neighbors and passersby, and consequently undertakes too little restoration.\n\nEconomists have proposed several remedies. Taxes calibrated to the external damage force producers to internalize it, while tradable permits cap total emissions and let firms that can abate cheaply sell the right to those that cannot. Each approach demands information about damages that regulators often lack, and this difficulty, rather than any dispute about the underlying principle, explains much of the controversy surrounding environmental policy.\n\nThe word 'it' in the phrase 'force producers to internalize it' refers to\n(A) the external damage\n(B) the tax\n(C) the socially optimal quantity\n(D) the firm's accounts",
+    "targetLevel": "지시 대상",
+    "answerEn": "(A) The clause reads that taxes calibrated to the external damage force producers to internalize it, and internalizing means bringing the previously uncounted external cost into the firm's own decision. The nearest and grammatically sensible antecedent is 'the external damage'. Producers do not internalize a tax in the technical sense used here, so (B) is wrong, and (C) and (D) belong to earlier sentences and do not fit the verb.",
+    "answerKo": "정답은 (A). 해당 절은 외부 피해에 맞추어 부과된 세금이 생산자로 하여금 그것을 내부화하게 한다는 뜻이며, 내부화란 계산에 잡히지 않던 외부 비용을 기업의 의사결정에 반영시키는 것이다. 가장 가깝고 문법적으로 자연스러운 선행사는 the external damage다. (B)는 내부화의 대상이 아니고, (C)(D)는 앞 단락의 표현으로 동사와 어울리지 않는다.",
+    "keyExpressions": [
+      {
+        "en": "externality",
+        "ko": "외부효과"
+      },
+      {
+        "en": "socially optimal quantity",
+        "ko": "사회적 최적 생산량"
+      },
+      {
+        "en": "internalize",
+        "ko": "내부화하다"
+      },
+      {
+        "en": "tradable permit",
+        "ko": "거래 가능 배출권"
+      },
+      {
+        "en": "abate",
+        "ko": "저감하다"
+      }
+    ],
+    "tips": "지시 대상 문제는 대명사를 보기 단어로 직접 치환해 문장을 다시 읽는다. 수 일치와 동사의 논리적 목적어 여부를 함께 확인하면 근접한 명사구 중 하나로 빠르게 좁힐 수 있다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "공공재와 무임승차",
+    "question": "A public good has two defining properties: it is non-rival, meaning that one person's consumption does not diminish what remains for others, and non-excludable, meaning that those who decline to pay cannot practically be prevented from benefiting. National defense and a lighthouse beam are the standard illustrations. Because each individual can enjoy the good regardless of contribution, rational self-interest counsels withholding payment, and voluntary funding therefore falls short of the amount that everyone would prefer if all contributed together.\n\nThis free-rider logic supplies the conventional justification for compulsory taxation. Historians of technology, however, note that lighthouses in eighteenth-century Britain were often built by private parties who collected fees at harbors, since ships that used the light also had to dock. The episode suggests that excludability is not a fixed property of a good but depends on available institutions and enforcement technologies.\n\nWhich of the following best expresses the essential information in the underlined sentence: 'Because each individual can enjoy the good regardless of contribution, rational self-interest counsels withholding payment, and voluntary funding therefore falls short of the amount that everyone would prefer if all contributed together.'?\n(A) People contribute voluntarily only when they expect others to contribute as well\n(B) Since benefits arrive whether or not one pays, self-interested individuals refuse to pay, leaving voluntary provision below the collectively preferred level\n(C) Rational individuals prefer public goods to private goods because they need not pay for them\n(D) Voluntary contributions are sufficient when everyone recognizes a shared interest",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(B) The original sentence contains three linked claims: benefits accrue regardless of payment, self-interest therefore favors not paying, and the resulting voluntary funding is less than what all would jointly prefer. Choice (B) preserves each link in the same order. Choice (A) adds a conditional about expectations that the sentence never states, (C) invents a preference ranking between good types, and (D) asserts the opposite conclusion.",
+    "answerKo": "정답은 (B). 원문은 세 요소가 인과로 연결된다. 기여 여부와 무관하게 혜택을 누린다, 따라서 합리적 이기심은 납부 회피를 권한다, 그 결과 자발적 재원은 모두가 함께 기여할 때 원하는 수준에 못 미친다. (B)는 세 고리를 그대로 보존한다. (A)는 타인의 기여 기대라는 조건을 추가하고, (C)는 재화 선호 순위를 지어내며, (D)는 결론을 정반대로 뒤집는다.",
+    "keyExpressions": [
+      {
+        "en": "non-rival",
+        "ko": "비경합적인"
+      },
+      {
+        "en": "non-excludable",
+        "ko": "배제 불가능한"
+      },
+      {
+        "en": "free rider",
+        "ko": "무임승차자"
+      },
+      {
+        "en": "compulsory taxation",
+        "ko": "강제 조세"
+      },
+      {
+        "en": "fall short of",
+        "ko": "~에 미치지 못하다"
+      }
+    ],
+    "tips": "문장 재진술은 원문의 인과 관계와 논리 방향을 그대로 보존한 보기를 고르는 문제다. 원문을 조건-결과-귀결의 세 조각으로 쪼갠 뒤 보기마다 조각이 빠졌는지 새로 추가됐는지 확인하면 오답의 과장과 역전을 잡아낼 수 있다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "브랜드 자산의 가치",
+    "question": "[1] Brand equity refers to the additional value a product commands solely because of the name attached to it. [2] Blind taste tests routinely find that consumers cannot distinguish leading colas from rivals, yet the same consumers report markedly greater satisfaction when the label is visible. [3] Accountants have long struggled to record this asset, since a brand generates no invoice and depreciates on no fixed schedule. [4] Firms that acquire a competitor, however, must assign a value to the purchased name, which is why balance sheets often list large intangible assets after a merger.\n\nBrand equity also functions as insurance. A company with a strong reputation recovers more quickly from a product recall, because customers attribute the failure to bad luck rather than to habitual carelessness. That tolerance is finite: repeated failures convert the accumulated goodwill into liability, and the very visibility that once attracted buyers amplifies the damage.\n\nLook at the four squares that indicate where the following sentence could be added to the passage.\nInsert sentence: 'The premium is therefore psychological in origin, though its financial consequences are entirely concrete.'\nWhere would the sentence best fit?\n(A) [1]\n(B) [2]\n(C) [3]\n(D) [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(C) The inserted sentence begins with 'therefore', so it must follow evidence that the premium arises from perception. Sentence [2] supplies exactly that evidence with the blind taste test, and the phrase about concrete financial consequences leads naturally into the accounting discussion that follows. Placing it at [1] or [2] would leave 'therefore' without support, and placing it at [4] would interrupt the continuous treatment of accounting.",
+    "answerKo": "정답은 (C). 삽입 문장은 therefore로 시작하므로 프리미엄이 인식에서 비롯된다는 근거 뒤에 와야 한다. 블라인드 테스트를 설명하는 [2] 문장이 바로 그 근거이며, 재무적 결과가 구체적이라는 뒷부분은 이어지는 회계 논의로 자연스럽게 연결된다. [1]이나 [2] 위치에서는 therefore가 받을 근거가 없고, [4]는 회계 논의를 중간에 끊는다.",
+    "keyExpressions": [
+      {
+        "en": "brand equity",
+        "ko": "브랜드 자산"
+      },
+      {
+        "en": "command a premium",
+        "ko": "프리미엄을 얻다"
+      },
+      {
+        "en": "intangible asset",
+        "ko": "무형 자산"
+      },
+      {
+        "en": "product recall",
+        "ko": "제품 리콜"
+      },
+      {
+        "en": "goodwill",
+        "ko": "영업권, 신뢰 자산"
+      }
+    ],
+    "tips": "문장 삽입은 삽입문의 연결어와 지시어를 먼저 본다. therefore, this, such a 등은 앞 문장이 반드시 특정 내용을 담고 있어야 함을 뜻하므로, 그 요구를 충족하는 문장 바로 뒤 네모를 고르고 뒤 문장과의 흐름까지 확인한다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "글로벌 공급망의 재편",
+    "question": "For three decades manufacturers pursued lean supply chains, holding minimal inventory and sourcing each component from whichever supplier offered the lowest delivered cost. The approach freed capital and lowered prices, and it depended on predictable shipping, stable trade rules, and suppliers concentrated in a few low-wage regions. Its fragility became visible when a single port closure or semiconductor shortage halted assembly lines on other continents within weeks.\n\nFirms have responded in three ways. Some hold larger buffer inventories, accepting carrying costs as the price of continuity. Others qualify second and third suppliers in different countries, a practice that raises procurement expense but limits exposure to any one disruption. A third group relocates production nearer to final markets, trading low wages for shorter and more predictable transit. Governments have encouraged the last strategy with subsidies, though economists warn that politically motivated relocation may entrench inefficiency long after the original risk recedes.\n\nDirections: Select THREE answer choices that express the most important ideas in the passage.\nIntroductory sentence: Lean global supply chains delivered cost savings but exposed manufacturers to serious disruption risk.\n(A) Lean sourcing lowered costs by minimizing inventory and choosing the cheapest suppliers, but it assumed stable shipping and trade conditions\n(B) Semiconductor shortages are caused primarily by port closures\n(C) Firms now hold larger inventories or qualify additional suppliers, accepting higher costs in exchange for resilience\n(D) Relocating production closer to markets shortens transit but sacrifices low wages, and state subsidies for it may preserve inefficiency\n(E) Carrying costs are the largest single expense faced by modern manufacturers\n(F) Most governments have banned imports of critical components",
+    "targetLevel": "지문 요약",
+    "answerEn": "(A), (C), (D) These three choices track the passage's structure: the logic and hidden assumptions of lean sourcing, the inventory and multi-supplier responses, and the relocation strategy with its subsidy-related caution. Choice (B) invents a causal link between port closures and chip shortages, which the passage lists as separate examples. Choice (E) is an unsupported superlative, and (F) describes a trade ban that never appears in the text.",
+    "answerKo": "정답은 (A)(C)(D). 세 보기는 각각 린 소싱의 원리와 전제, 재고 확대 및 복수 공급처 확보 대응, 생산 이전 전략과 보조금에 대한 경고라는 지문의 세 축을 그대로 담는다. (B)는 항만 폐쇄와 반도체 부족을 인과로 엮었지만 지문은 둘을 별개의 예로 나열한다. (E)는 근거 없는 최상급 진술이고, (F)의 수입 금지는 지문에 없다.",
+    "keyExpressions": [
+      {
+        "en": "lean supply chain",
+        "ko": "저재고 공급망"
+      },
+      {
+        "en": "buffer inventory",
+        "ko": "완충 재고"
+      },
+      {
+        "en": "carrying cost",
+        "ko": "재고 유지 비용"
+      },
+      {
+        "en": "procurement",
+        "ko": "조달"
+      },
+      {
+        "en": "entrench",
+        "ko": "고착시키다"
+      }
+    ],
+    "tips": "요약 문제는 단락별 주제문 3개를 뽑는 작업이다. 세부 수치나 개별 사례를 담은 보기, 지문에 없는 인과나 최상급을 넣은 보기는 우선 소거하고, 각 단락을 한 문장으로 압축한 보기만 남긴다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "노동 분업과 생산성",
+    "question": "Adam Smith opened his inquiry with a pin factory in which ten workers, each performing one narrow operation, produced far more pins per day than the same workers could have made individually. Division of labor raises output for three reasons: repetition builds dexterity, workers waste no time switching between tasks, and narrowly defined operations are easier to mechanize. The gains are bounded by the extent of the market, since a firm cannot profitably employ a specialist whose single operation is not demanded in volume.\n\nLater observers recorded costs that Smith acknowledged only briefly. Workers confined to one motion lose the broader understanding that allows them to diagnose defects, and monotony depresses attentiveness and raises turnover. Some twentieth-century manufacturers therefore reversed course, rotating employees among tasks or assigning teams responsibility for an entire subassembly, and reported improvements in quality even where measured output per hour declined slightly.\n\nDirections: Complete the table by matching each statement with the category it describes.\nCategories: Benefits of narrow division of labor / Costs or limits of narrow division of labor\n(A) Repetition of a single operation increases manual skill\n(B) Workers lose the ability to recognize defects across the process\n(C) Tasks defined narrowly are more readily replaced by machines\n(D) Monotonous work reduces attention and increases employee turnover\n(E) Gains cannot exceed what the size of the market will absorb\n(F) Rotating workers among tasks always lowers total production costs",
+    "targetLevel": "표 채우기",
+    "answerEn": "Benefits: (A), (C). Costs or limits: (B), (D), (E). The first paragraph attributes gains to dexterity from repetition and to easier mechanization, while noting that the extent of the market bounds those gains, which makes (E) a limit rather than a benefit. The second paragraph supplies the human costs in (B) and (D). Choice (F) is not usable because the passage reports that output per hour sometimes declined slightly under rotation.",
+    "answerKo": "정답은 이점 (A)(C), 비용 및 한계 (B)(D)(E)다. 첫 단락은 반복에 따른 숙련과 기계화 용이성을 이점으로 들고, 시장 규모가 이득의 상한을 정한다고 하므로 (E)는 이점이 아니라 한계다. 둘째 단락은 결함 인지 능력 상실과 단조로움에 따른 주의력 저하 및 이직을 비용으로 제시한다. (F)는 순환 근무 시 시간당 산출이 다소 감소했다는 서술과 배치되어 사용할 수 없다.",
+    "keyExpressions": [
+      {
+        "en": "division of labor",
+        "ko": "분업"
+      },
+      {
+        "en": "dexterity",
+        "ko": "손재주, 숙련"
+      },
+      {
+        "en": "extent of the market",
+        "ko": "시장의 크기"
+      },
+      {
+        "en": "turnover",
+        "ko": "이직률"
+      },
+      {
+        "en": "subassembly",
+        "ko": "부분 조립품"
+      }
+    ],
+    "tips": "표 채우기는 지문의 단락 구분이 곧 범주 구분인 경우가 많다. 각 보기를 읽고 첫 단락에서 왔는지 둘째 단락에서 왔는지 표시한 뒤, always나 never 같은 절대 표현이 든 보기는 미사용 보기로 분류한다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "관세와 보호무역주의",
+    "question": "A tariff is a tax levied on imported goods, and its immediate effect is to raise the domestic price of the taxed item. Domestic producers gain, since they can sell more at a higher price, and the treasury collects revenue on whatever quantity continues to arrive. Consumers, however, pay more and buy less, and standard analysis finds that their losses exceed the combined gains of producers and government, leaving a net reduction in national welfare.\n\nTariffs nonetheless persist, and their political durability has a structural explanation. Benefits concentrate on a small, organized group of firms and their employees, who have strong incentives to lobby, while costs disperse across millions of consumers who each lose a trivial sum and rarely notice. The asymmetry means that legislators hear intensely from beneficiaries and almost never from those who pay.\n\nAccording to paragraph 2, tariffs remain politically durable primarily because\n(A) they generate revenue that governments cannot obtain elsewhere\n(B) their benefits are concentrated while their costs are spread thinly\n(C) consumers generally support protecting domestic industries\n(D) economists disagree about whether tariffs reduce national welfare",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The second paragraph states that benefits concentrate on a small organized group with strong lobbying incentives while costs disperse across millions of consumers who each lose a trivial amount. That asymmetry is named as the structural explanation for tariff persistence. Revenue is mentioned in paragraph 1 but not as the reason for durability, so (A) is misplaced, and (C) and (D) contradict or go beyond the text.",
+    "answerKo": "정답은 (B). 둘째 단락은 이익이 조직화된 소수 기업과 종업원에게 집중되어 로비 유인이 크고, 비용은 각자 손실이 미미한 수백만 소비자에게 분산된다고 설명하며 이 비대칭을 관세 지속의 구조적 이유로 제시한다. 관세 수입은 첫 단락에 나오지만 지속 이유로 언급되지 않았고, (C)(D)는 지문과 어긋나거나 근거가 없다.",
+    "keyExpressions": [
+      {
+        "en": "levy a tariff",
+        "ko": "관세를 부과하다"
+      },
+      {
+        "en": "national welfare",
+        "ko": "국민 후생"
+      },
+      {
+        "en": "lobby",
+        "ko": "로비하다"
+      },
+      {
+        "en": "disperse",
+        "ko": "분산되다"
+      },
+      {
+        "en": "asymmetry",
+        "ko": "비대칭"
+      }
+    ],
+    "tips": "단락이 지정된 사실 정보 문제는 반드시 그 단락에서만 근거를 찾는다. 다른 단락에 나온 진실한 내용(관세 수입)이 오답으로 배치되는 것이 전형적인 함정이므로, 문제의 primarily 같은 한정어에도 주의한다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "인플레이션 기대의 형성",
+    "question": "Expectations about future prices shape present behavior. If workers anticipate that the cost of living will rise by five percent, they bargain for comparable wage increases; if firms expect their suppliers to raise prices, they mark up their own products in advance. Inflation can therefore become self-sustaining, continuing after the shock that originally triggered it has passed. Economists describe this dynamic as the entrenchment of expectations, and it is the outcome central bankers most wish to avoid.\n\nSurveys of households and the pricing of inflation-indexed bonds provide two imperfect windows into these expectations. Household surveys tend to overstate expected inflation, partly because respondents weight the prices of food and fuel, which they purchase frequently, more heavily than statistical agencies do. Bond markets offer a forecast backed by money at risk, but the figure they yield also embeds a premium for bearing inflation risk, and separating the two components requires assumptions that reasonable analysts dispute.\n\nThe passage mentions all of the following EXCEPT\n(A) wage bargaining responds to anticipated increases in living costs\n(B) household surveys tend to produce higher inflation expectations than other measures\n(C) bond-based measures include compensation for bearing inflation risk\n(D) central banks publish their own forecasts to anchor household expectations",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) Wage bargaining based on anticipated living costs appears in the first paragraph, and the second paragraph describes the upward bias of household surveys and the risk premium embedded in bond-based measures, covering (A), (B), and (C). The passage says central bankers wish to avoid entrenched expectations but never states that they publish forecasts to anchor them.",
+    "answerKo": "정답은 (D). 생활비 상승 예상에 따른 임금 협상은 첫 단락에, 가계 조사의 상향 편의와 채권 지표에 포함된 인플레이션 위험 프리미엄은 둘째 단락에 나오므로 (A)(B)(C)는 근거가 있다. 지문은 중앙은행이 기대의 고착을 피하고 싶어 한다고만 했을 뿐, 기대를 안정시키기 위해 전망치를 공표한다는 내용은 없다.",
+    "keyExpressions": [
+      {
+        "en": "entrenchment of expectations",
+        "ko": "기대의 고착"
+      },
+      {
+        "en": "cost of living",
+        "ko": "생활비"
+      },
+      {
+        "en": "mark up",
+        "ko": "가격을 올려 붙이다"
+      },
+      {
+        "en": "inflation-indexed bond",
+        "ko": "물가연동채"
+      },
+      {
+        "en": "risk premium",
+        "ko": "위험 프리미엄"
+      }
+    ],
+    "tips": "부정 사실 정보 문제에서는 지문에 등장한 주체(중앙은행)가 오답 보기에 다시 나와 그럴듯한 행동을 하는 경우가 많다. 주체가 아니라 서술된 행위가 지문에 있는지를 기준으로 판단해야 한다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "정보 비대칭과 중고차 시장",
+    "question": "When one party to a transaction knows more than the other, markets can unravel. The classic illustration is the used-car market, in which sellers know whether a vehicle is sound but buyers do not. Unable to verify quality, buyers offer only an average price. Owners of genuinely reliable cars find that price too low and withdraw, which lowers the average quality of what remains, which in turn lowers the price buyers are willing to offer. In the limiting case only defective vehicles are traded.\n\nInstitutions arise to interrupt this spiral. Warranties are costly for sellers of bad cars and cheap for sellers of good ones, so offering one credibly signals quality. Independent inspection services, dealer reputations sustained by repeat business, and mandatory disclosure rules perform similar work. Each device transfers information at some expense, and the cost of doing so is itself a real economic cost of asymmetric information.\n\nIt can be inferred from the passage that a used-car dealer who expects no repeat customers\n(A) will charge lower prices than dealers with established reputations\n(B) faces weaker incentives to represent vehicle quality honestly\n(C) will always offer longer warranties to attract buyers\n(D) can verify vehicle quality more cheaply than independent inspectors\n\n",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage lists dealer reputations sustained by repeat business among the devices that credibly convey information. If repeat business is absent, that disciplining mechanism disappears, so the incentive to be honest weakens. Choice (C) reverses the logic, since warranties are costly precisely for sellers of poor vehicles. Choices (A) and (D) concern pricing and inspection costs, neither of which the passage connects to repeat business.",
+    "answerKo": "정답은 (B). 지문은 반복 거래에 의해 유지되는 딜러 평판을 정보 전달 장치의 하나로 든다. 반복 거래가 없으면 그 규율 장치가 사라지므로 정직하게 품질을 알릴 유인이 약해진다. (C)는 품질이 나쁜 판매자에게 보증이 비싸다는 설명과 반대이며, (A)와 (D)는 가격이나 검사 비용을 반복 거래와 연결한 근거가 없다.",
+    "keyExpressions": [
+      {
+        "en": "asymmetric information",
+        "ko": "정보 비대칭"
+      },
+      {
+        "en": "unravel",
+        "ko": "와해되다"
+      },
+      {
+        "en": "signal quality",
+        "ko": "품질을 신호로 알리다"
+      },
+      {
+        "en": "repeat business",
+        "ko": "반복 거래"
+      },
+      {
+        "en": "mandatory disclosure",
+        "ko": "의무 공시"
+      }
+    ],
+    "tips": "추론 문제는 지문의 메커니즘에서 조건 하나를 제거했을 때의 결과를 묻는 형태가 많다. 어떤 장치가 어떤 조건 덕분에 작동하는지 표시해 두고, 그 조건이 사라진 상황을 그대로 대입하면 된다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "벤처 자본과 혁신 투자",
+    "question": "Venture capital finances companies whose assets are ideas rather than machinery, a profile that conventional lenders find nearly impossible to evaluate. A bank asks what collateral can be seized if a loan sours; a software startup can offer almost none. Venture investors accept this exposure by taking equity, so that a single extraordinary success can offset many failures. Portfolio arithmetic drives the strategy: if nine of ten investments return nothing, the tenth must return more than tenfold merely to break even.\n\nThis structure explains behavior that appears reckless from outside. Consider a firm that continues funding a company with no revenue for six years; the investors are not ignoring losses but preserving an option whose value depends on an improbable but enormous payoff. The same arithmetic discourages investment in businesses that would reliably yield modest returns, which is one reason ordinary small enterprises rarely attract venture money.\n\nWhy does the author mention a firm that continues funding a company with no revenue for six years?\n(A) To criticize venture investors for ignoring financial discipline\n(B) To explain that seemingly irrational persistence follows from portfolio arithmetic\n(C) To show that most software startups eventually become profitable\n(D) To argue that banks should adopt equity financing\n\n",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The example is introduced immediately after the claim that the portfolio structure explains behavior that appears reckless, and the following clause states that investors are preserving an option with an improbable but enormous payoff. The mention therefore illustrates rational persistence, not a criticism, ruling out (A). The passage makes no claim about eventual profitability rates, so (C) fails, and (D) recommends a change in banking that is never proposed.",
+    "answerKo": "정답은 (B). 이 예시는 포트폴리오 구조가 무모해 보이는 행동을 설명한다는 주장 바로 뒤에 나오고, 이어지는 절은 투자자가 확률은 낮지만 보상이 큰 옵션을 유지하는 것이라고 밝힌다. 따라서 비판이 아니라 합리적 지속의 예시이므로 (A)는 틀리다. (C)의 수익성 통계는 언급이 없고, (D)의 은행 제도 변경 제안도 지문에 없다.",
+    "keyExpressions": [
+      {
+        "en": "venture capital",
+        "ko": "벤처 캐피털"
+      },
+      {
+        "en": "collateral",
+        "ko": "담보"
+      },
+      {
+        "en": "take equity",
+        "ko": "지분을 취득하다"
+      },
+      {
+        "en": "break even",
+        "ko": "손익분기점에 이르다"
+      },
+      {
+        "en": "payoff",
+        "ko": "보상, 수익"
+      }
+    ],
+    "tips": "수사적 의도 문제에서 Consider, For example, Take the case of 로 시작하는 문장은 앞 문장의 주장을 구체화한다. 예시 앞 문장을 그대로 일반 명제로 바꾼 보기를 고르고, 저자의 태도가 중립적 설명인지 비판인지도 확인한다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "경제·무역·경영",
+    "topic": "가격 차별 전략",
+    "question": "Firms with some control over price often charge different customers different amounts for an identical product. Airlines are the familiar case: two passengers in adjacent seats may have paid amounts that differ by a factor of four, depending on when they booked and whether they stayed over a weekend. Such practices require that the seller can separate customer groups and prevent resale, since a discount is worthless to the firm if the buyer can simply sell the ticket to someone who would have paid full fare.\n\nEconomic assessments of the practice are less hostile than public reaction suggests. By capturing revenue from travelers with high willingness to pay, airlines can profitably serve price-sensitive customers who would otherwise be excluded entirely. The distribution of gains shifts toward the seller, but total output rises. Whether the arrangement is equitable is a separate question that price theory alone cannot settle.\n\nThe word 'equitable' in the passage is closest in meaning to\n(A) fair\n(B) profitable\n(C) efficient\n(D) predictable\n\n",
+    "targetLevel": "어휘",
+    "answerEn": "(A) The sentence contrasts the shift of gains toward the seller with a separate question that price theory cannot settle, signaling a normative judgment about distribution. 'Equitable' means just or fair. Efficiency in (C) is precisely what the preceding sentence already addresses through rising total output, so treating it as a separate question would be redundant, and (B) and (D) do not fit a normative contrast.",
+    "answerKo": "정답은 (A). 해당 문장은 이익 배분이 판매자 쪽으로 기운다는 서술 뒤에 가격 이론만으로는 답할 수 없는 별개의 문제를 제시하므로 분배의 정당성에 관한 규범적 판단을 가리킨다. equitable은 공정한이라는 뜻이다. (C) 효율성은 바로 앞 문장에서 총산출 증가로 이미 다루었으므로 별개의 문제일 수 없고, (B)(D)는 규범적 대비와 어울리지 않는다.",
+    "keyExpressions": [
+      {
+        "en": "price discrimination",
+        "ko": "가격 차별"
+      },
+      {
+        "en": "willingness to pay",
+        "ko": "지불 용의"
+      },
+      {
+        "en": "prevent resale",
+        "ko": "재판매를 막다"
+      },
+      {
+        "en": "price-sensitive",
+        "ko": "가격에 민감한"
+      },
+      {
+        "en": "equitable",
+        "ko": "공정한"
+      }
+    ],
+    "tips": "어휘 문제에서 앞뒤에 but, however, a separate question 같은 대비 표현이 있으면 해당 단어는 앞 개념과 다른 축의 의미다. 효율과 형평처럼 학술 지문이 자주 대비시키는 개념 쌍을 알아 두면 판단이 빨라진다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "생물다양성 감소와 생태 보험",
+    "question": "Global assessments indicate that the current rate of species extinction exceeds the background rate documented in the fossil record by a factor of at least one hundred. Ecologists attribute this acceleration primarily to habitat conversion, as forests and grasslands are transformed into cropland and settlements. Fragmentation compounds the problem: when continuous habitat is divided into isolated patches, populations lose genetic exchange and become vulnerable to local extinction.\n\nThe consequences extend beyond the disappearance of individual species. Experimental plots planted with varying numbers of species consistently produce more biomass and recover more rapidly from drought when species richness is high. This relationship, known as the diversity-stability hypothesis, suggests that richness functions as a form of ecological insurance. Because different species respond differently to the same environmental stress, a diverse assemblage is statistically more likely to contain organisms that survive an unusual year, thereby sustaining the functions on which neighboring ecosystems depend.\n\nAccording to paragraph 2, experimental plots containing many species differ from species-poor plots in that they\n(A) require less water during periods of normal rainfall\n(B) generate greater biomass and rebound faster after drought\n(C) contain organisms that respond identically to environmental stress\n(D) resist the process of habitat fragmentation more effectively",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) Paragraph 2 states directly that plots with higher species richness produce more biomass and recover more rapidly from drought. Choice (A) is never mentioned, since water requirements under normal rainfall are not discussed. Choice (C) reverses the passage, which stresses that species respond differently to the same stress. Choice (D) confuses the fragmentation point, which belongs to paragraph 1 and concerns habitat geometry rather than plot experiments.",
+    "answerKo": "정답은 (B)입니다. 두 번째 단락은 종 풍부도가 높은 실험 구획이 더 많은 생물량을 생산하고 가뭄에서 더 빨리 회복한다고 직접 서술합니다. (A)의 물 요구량은 언급되지 않았고, (C)는 '종마다 스트레스에 다르게 반응한다'는 내용을 정반대로 뒤집은 오답입니다. (D)의 서식지 파편화는 1단락 소재이므로 문제에서 지정한 단락 범위를 벗어납니다.",
+    "keyExpressions": [
+      {
+        "en": "background rate",
+        "ko": "배경 (자연 상태) 비율"
+      },
+      {
+        "en": "habitat conversion",
+        "ko": "서식지 전환"
+      },
+      {
+        "en": "fragmentation",
+        "ko": "파편화, 단편화"
+      },
+      {
+        "en": "species richness",
+        "ko": "종 풍부도"
+      },
+      {
+        "en": "assemblage",
+        "ko": "군집, 생물 집합"
+      }
+    ],
+    "tips": "사실 정보 유형은 반드시 문제에서 지정한 단락 안에서만 근거를 찾습니다. 보기의 핵심 명사(biomass, drought)를 지문에서 스캔해 위치를 잡은 뒤, 동사와 비교 방향(more/less)이 일치하는지 확인하세요. 다른 단락의 사실을 가져온 보기가 가장 흔한 함정입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "습지 복원 사업의 성과",
+    "question": "Wetland restoration has become a standard tool of watershed management. Engineers typically begin by removing drainage tiles and breaching agricultural levees so that water can once again spread across a floodplain. Once hydrology is reestablished, native sedges and rushes often recolonize from seed banks that have remained dormant in the soil for decades, reducing the need for costly replanting.\n\nThe measured benefits are substantial. Restored marshes intercept nitrogen and phosphorus running off adjacent farmland, lowering the nutrient loads that trigger algal blooms downstream. They also store floodwater, shaving peak river discharge during heavy storms. Waterfowl return within a few seasons, and amphibian populations frequently rebound. Yet restoration rarely reproduces the original ecosystem exactly. Soil carbon accumulates slowly, and the invertebrate communities of restored sites remain simpler than those of undisturbed reference wetlands even after twenty years. Practitioners therefore describe restoration as recovery of function rather than of full historical composition.\n\nAll of the following are mentioned as benefits of restored wetlands EXCEPT\n(A) the interception of agricultural nutrients\n(B) the storage of floodwater during storms\n(C) the rapid return of waterfowl populations\n(D) the swift accumulation of carbon in the soil",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) The passage explicitly says that soil carbon accumulates slowly, which contradicts the idea of swift accumulation. Choices (A), (B), and (C) all appear in paragraph 2 as documented benefits: nutrient interception, floodwater storage, and the return of waterfowl within a few seasons. Negative fact questions reward locating the three supported items first and eliminating them.",
+    "answerKo": "정답은 (D)입니다. 지문은 토양 탄소가 '천천히' 축적된다고 밝혀 '빠른 축적'을 부정합니다. (A) 영양염 차단, (B) 홍수 저류, (C) 물새의 빠른 복귀는 모두 2단락에 이점으로 명시되어 있습니다. 부정 사실 문제는 지지되는 세 개를 먼저 지우고 남는 것을 고르는 것이 안전합니다.",
+    "keyExpressions": [
+      {
+        "en": "floodplain",
+        "ko": "범람원"
+      },
+      {
+        "en": "seed bank",
+        "ko": "종자 은행 (토양 내 매토종자)"
+      },
+      {
+        "en": "nutrient load",
+        "ko": "영양염 부하"
+      },
+      {
+        "en": "peak discharge",
+        "ko": "최대 유량"
+      },
+      {
+        "en": "reference wetland",
+        "ko": "기준 습지 (비교 대상 자연 습지)"
+      }
+    ],
+    "tips": "EXCEPT/NOT 문제는 '틀린 것'이 아니라 '지문에 없거나 지문과 반대인 것'을 찾는 문제입니다. 보기 네 개를 지문 순서대로 대조 표시하며 소거하고, slowly/rarely 같은 속도·빈도 부사가 보기의 rapid, swift와 충돌하는지 특히 주의하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "외래종의 침입 경로",
+    "question": "Most introduced species fail to establish themselves, but the small fraction that succeed can reorganize an entire ecosystem. Ballast water discharged by cargo vessels has carried larvae of mollusks and crustaceans across oceans, while the ornamental plant trade has moved thousands of species between continents. Establishment is most likely where the recipient environment resembles the climate of the donor region and where native competitors have already been weakened by disturbance.\n\nInvasive populations frequently grow faster in their new range than at home. One widely discussed explanation, the enemy release hypothesis, holds that specialized pathogens and herbivores do not accompany the traveling species. Freed from these constraints, the invader can allocate resources formerly devoted to chemical defense toward growth and reproduction. Managers accordingly monitor ports and nurseries most closely, since interception at the point of entry costs far less than eradication after an invader has spread across a landscape.\n\nWhich of the following can be inferred from the passage about eradication programs?\n(A) They are generally cheaper than monitoring ports and nurseries.\n(B) They are undertaken only after an invader has begun to spread widely.\n(C) They become more expensive the later they are attempted.\n(D) They succeed most often in regions climatically unlike the donor region.",
+    "targetLevel": "추론",
+    "answerEn": "(C) The final sentence states that interception at the point of entry costs far less than eradication after an invader has spread, which implies that delay raises cost. Choice (A) reverses this comparison. Choice (B) overstates the text, which describes a cost comparison rather than a rule about when eradication begins. Choice (D) misuses the climate-matching detail, which concerns establishment probability, not eradication success.",
+    "answerKo": "정답은 (C)입니다. 마지막 문장에서 '유입 지점 차단이 확산 후 박멸보다 훨씬 저렴하다'고 했으므로, 대응이 늦어질수록 비용이 커진다는 추론이 성립합니다. (A)는 비교를 뒤집었고, (B)는 '~할 때만'이라는 단정으로 과잉 일반화했으며, (D)의 기후 유사성은 정착 확률에 관한 것이지 박멸 성공률과 무관합니다.",
+    "keyExpressions": [
+      {
+        "en": "ballast water",
+        "ko": "선박 평형수"
+      },
+      {
+        "en": "establish (a population)",
+        "ko": "정착하다"
+      },
+      {
+        "en": "enemy release hypothesis",
+        "ko": "천적 해방 가설"
+      },
+      {
+        "en": "allocate resources",
+        "ko": "자원을 배분하다"
+      },
+      {
+        "en": "eradication",
+        "ko": "근절, 박멸"
+      }
+    ],
+    "tips": "추론 문제의 정답은 지문에서 한 걸음만 나아간 논리적 귀결입니다. 비교 표현(costs far less than)이 나오면 그 비교를 뒤집거나 정도를 한 단계 확장한 진술이 정답이 되는 경우가 많습니다. only, always 같은 절대어가 들어간 보기는 대개 과잉 추론입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "산불 관리와 처방화입",
+    "question": "For most of the twentieth century, forest agencies treated every fire as an emergency to be suppressed. The policy was intuitive and, in the short term, effective. Over decades, however, suppression allowed dead branches, needles, and dense understory saplings to accumulate on forest floors that had historically burned at intervals of five to twenty years.\n\nThe result was a change in fire behavior rather than a reduction in fire. When ignition finally occurred in these fuel-laden stands, flames climbed the ladder of small trees into the canopy and produced crown fires that killed even thick-barked pines adapted to survive surface burns. Consider the paradox: a century of protection produced forests less able to withstand fire than those that burned regularly. Managers now set low-intensity prescribed fires under controlled weather conditions, deliberately consuming fuel before it can support a catastrophic event.\n\nWhy does the author state that a century of protection produced forests less able to withstand fire?\n(A) To question whether prescribed burning is scientifically justified\n(B) To emphasize that suppression produced an outcome opposite to its intent\n(C) To argue that thick-barked pines were never adapted to fire\n(D) To illustrate how quickly understory saplings grow after a fire",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The sentence is introduced by the word paradox and summarizes the irony developed throughout paragraph 2: a policy designed to protect forests left them more vulnerable. Choice (A) inverts the passage, which presents prescribed fire as the corrective response. Choice (C) contradicts the statement that such pines survive surface burns. Choice (D) mistakes a supporting detail about fuel accumulation for the rhetorical purpose.",
+    "answerKo": "정답은 (B)입니다. 해당 문장은 paradox라는 단어로 도입되어, 보호를 위한 진화 정책이 오히려 숲을 더 취약하게 만들었다는 역설을 요약합니다. (A)는 처방화입을 해법으로 제시한 글의 논지와 반대이고, (C)는 두꺼운 껍질 소나무가 지표화에 적응했다는 서술과 충돌하며, (D)는 세부 사항을 목적으로 오인한 오답입니다.",
+    "keyExpressions": [
+      {
+        "en": "suppression",
+        "ko": "(산불) 진화, 억제"
+      },
+      {
+        "en": "understory",
+        "ko": "하층 식생"
+      },
+      {
+        "en": "fuel load",
+        "ko": "연료 축적량"
+      },
+      {
+        "en": "crown fire",
+        "ko": "수관화"
+      },
+      {
+        "en": "prescribed fire",
+        "ko": "처방화입, 계획 소각"
+      }
+    ],
+    "tips": "수사적 의도 문제는 '내용이 무엇인가'가 아니라 '왜 여기 놓였는가'를 묻습니다. 해당 문장 바로 앞뒤 문장과의 관계(예시, 대조, 요약)를 먼저 확인하고, paradox, however, for example 같은 신호어를 근거로 삼으세요. 지문 정보를 정확히 반복만 하는 보기는 목적 답이 아닐 때가 많습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "재생에너지 간헐성 문제",
+    "question": "Wind and solar generation share a characteristic that distinguishes them from coal or nuclear plants: their output is dictated by weather rather than by operators. Grid engineers call this property intermittency. Because electricity must be produced and consumed almost simultaneously, a grid drawing heavily on variable sources requires mechanisms to reconcile supply with demand at every moment.\n\nSeveral strategies mitigate the difficulty. Geographic dispersion helps, since wind speeds at distant sites are only loosely correlated, and long transmission lines can move surplus power from windy regions to calm ones. Storage, principally in batteries and pumped hydroelectric reservoirs, shifts midday solar output into the evening peak. Demand response programs pay industrial consumers to curtail use briefly when generation falls. None of these measures is sufficient alone, but together they have allowed several grids to operate reliably with variable sources supplying more than half of annual electricity.\n\nThe word 'curtail' in the passage is closest in meaning to\n(A) reduce\n(B) monitor\n(C) forecast\n(D) subsidize",
+    "targetLevel": "어휘",
+    "answerEn": "(A) Demand response programs pay consumers to cut their consumption when generation is low, so curtail means to reduce or cut back. Choice (B) describes measuring use rather than lowering it. Choice (C) refers to prediction, which is not the action being paid for. Choice (D) names a financial transfer, echoing the word pay but not the meaning of curtail itself.",
+    "answerKo": "정답은 (A)입니다. 수요반응 프로그램은 발전량이 떨어질 때 소비자가 사용을 '줄이도록' 대가를 지불하므로 curtail은 reduce와 같습니다. (B)는 감시, (C)는 예측이며, (D)는 앞의 pay라는 단어에 이끌린 오답으로 curtail 자체의 뜻이 아닙니다.",
+    "keyExpressions": [
+      {
+        "en": "intermittency",
+        "ko": "간헐성"
+      },
+      {
+        "en": "geographic dispersion",
+        "ko": "지리적 분산"
+      },
+      {
+        "en": "pumped hydroelectric storage",
+        "ko": "양수 발전 저장"
+      },
+      {
+        "en": "demand response",
+        "ko": "수요 반응"
+      },
+      {
+        "en": "curtail",
+        "ko": "줄이다, 축소하다"
+      }
+    ],
+    "tips": "어휘 문제는 단어의 사전적 뜻보다 문맥상 대체 가능성이 우선입니다. 해당 단어를 가린 채 문장을 읽고 빈칸에 들어갈 의미를 스스로 정한 뒤 보기와 대조하세요. 주변 단어(pay, when generation falls)에서 연상되는 오답을 경계해야 합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "어업 자원과 어획 할당제",
+    "question": "Open-access fisheries invite a familiar dilemma. Because no vessel owns the fish that remain in the water, each operator has an incentive to catch as much as possible before a competitor does. The predictable outcome is a race to fish that drives stocks below the level producing maximum sustainable yield and leaves fleets oversized and unprofitable.\n\nCatch share systems address the incentive directly. A regulator sets a total allowable catch and allocates a fixed percentage of it to each participant, typically as a transferable quota. Because a vessel's entitlement no longer depends on outracing rivals, operators can fish when weather and markets are favorable, reduce bycatch, and support conservative limits that raise the value of their holdings. Critics note, however, that quotas often consolidate in fewer hands, weakening small coastal communities. They therefore recommend caps on ownership.\n\nThe word 'They' in the passage refers to\n(A) quotas\n(B) critics\n(C) operators\n(D) coastal communities",
+    "targetLevel": "지시 대상",
+    "answerEn": "(B) The preceding sentence reports that critics observe a tendency toward consolidation, and the following clause recommends caps on ownership, a recommendation that belongs to those same critics. Choice (A) is a noun that cannot make recommendations. Choice (C) refers to quota holders, who would be the targets of such caps rather than their advocates. Choice (D) names those harmed, not the speakers.",
+    "answerKo": "정답은 (B)입니다. 앞 문장에서 비판자들이 쿼터 집중 문제를 지적했고, 뒤이어 소유 상한을 권고하는 주체 역시 그 비판자들입니다. (A) 쿼터는 권고를 할 수 없는 사물이고, (C) 사업자는 상한 규제의 대상이며, (D) 연안 공동체는 피해자이지 발화 주체가 아닙니다.",
+    "keyExpressions": [
+      {
+        "en": "open-access fishery",
+        "ko": "개방 접근 어장"
+      },
+      {
+        "en": "maximum sustainable yield",
+        "ko": "최대 지속 가능 어획량"
+      },
+      {
+        "en": "total allowable catch",
+        "ko": "총허용어획량"
+      },
+      {
+        "en": "transferable quota",
+        "ko": "양도 가능 할당량"
+      },
+      {
+        "en": "bycatch",
+        "ko": "부수 어획, 혼획"
+      }
+    ],
+    "tips": "지시 대상 문제는 대명사의 수(단수·복수)와 격을 먼저 확인해 후보를 좁힙니다. 그다음 대명사 자리에 후보 명사를 실제로 대입해 문장이 논리적으로 성립하는지 검증하세요. 대개 정답은 바로 앞 문장의 주어입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "산호초 백화 현상",
+    "question": "Reef-building corals depend on symbiotic algae that live inside their tissues and supply most of the energy the animal requires. When sea temperatures rise even one or two degrees above the usual summer maximum for several weeks, the partnership breaks down. The coral expels the algae, exposing its white skeleton, a condition known as bleaching.\n\nBleaching is not immediately fatal. If cooler water returns quickly, corals can reacquire algae and resume growth, though they typically reproduce poorly for a season or two. If heat stress persists, however, starvation follows, and reef structures begin to erode faster than they accrete. Recovery between events historically took ten to fifteen years, but marine heat waves now recur at shorter intervals in many regions, so reefs are increasingly asked to rebuild in less time than the process requires.\n\nWhich sentence best expresses the essential information in the underlined sentence in paragraph 2?\n(A) Reefs recover within ten to fifteen years unless heat waves become more intense.\n(B) Because heat waves now return sooner than reefs need to recover, rebuilding is often incomplete.\n(C) Marine heat waves have become less frequent, giving reefs more time to rebuild.\n(D) Reefs that erode quickly are the ones most likely to experience repeated heat waves.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(B) The original sentence contrasts a historical recovery period of ten to fifteen years with shortening intervals between heat waves, concluding that reefs lack sufficient time. Choice (B) preserves both the causal link and the consequence. Choice (A) drops the shortening interval that drives the point. Choice (C) reverses the frequency claim. Choice (D) inverts cause and effect by making erosion the predictor of heat waves.",
+    "answerKo": "정답은 (B)입니다. 원문은 '과거 회복에 10~15년이 걸렸다'는 사실과 '해양 열파 간격이 짧아졌다'는 사실을 대조해 회복 시간이 부족하다는 결론을 냅니다. (B)는 인과와 결과를 모두 보존합니다. (A)는 핵심인 간격 단축을 누락했고, (C)는 빈도를 반대로 서술했으며, (D)는 원인과 결과를 뒤집었습니다.",
+    "keyExpressions": [
+      {
+        "en": "symbiotic algae",
+        "ko": "공생 조류"
+      },
+      {
+        "en": "expel",
+        "ko": "방출하다, 내보내다"
+      },
+      {
+        "en": "bleaching",
+        "ko": "백화 현상"
+      },
+      {
+        "en": "accrete",
+        "ko": "부착 성장하다, 축적되다"
+      },
+      {
+        "en": "marine heat wave",
+        "ko": "해양 열파"
+      }
+    ],
+    "tips": "문장 재진술은 원문의 핵심 논리 관계(대조, 인과, 조건)를 그대로 유지한 보기를 고르는 문제입니다. 원문에서 접속사와 비교 표현을 표시한 뒤, 그 관계가 보기에서 뒤집히거나 빠졌는지 점검하세요. 어려운 단어를 그대로 반복한 보기는 오히려 함정인 경우가 많습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "도시 녹지와 열섬 완화",
+    "question": "Dense urban cores are measurably warmer than the countryside surrounding them. [1] Asphalt and masonry absorb solar radiation during the day and release it slowly after sunset, while the scarcity of vegetation removes the cooling that evaporation would otherwise provide. [2] Nighttime temperature differences of several degrees between the city center and outlying rural stations are routine in large metropolitan areas during summer, and they persist for hours after sunset.\n\nUrban vegetation counteracts both mechanisms. [3] Tree canopies intercept sunlight before it reaches paving, and transpiration converts absorbed energy into water vapor rather than heat. Measurements in shaded streets often record surface temperatures far below those of adjacent exposed pavement. [4] Planners increasingly treat canopy cover as public health infrastructure rather than ornament, since heat-related illness concentrates in neighborhoods where tree cover is thinnest.\n\nLook at the four squares that indicate where the following sentence could be added to the passage.\nThis effect is known as the urban heat island.\nWhere would the sentence best fit?\n(A) [1]\n(B) [2]\n(C) [3]\n(D) [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(C) The inserted sentence names the phenomenon described by the preceding material, so it must follow a complete description of the warming and its magnitude. Position [3] comes directly after the statement about routine nighttime differences and before the passage turns to vegetation, making it the natural place for a summarizing label. Positions [1] and [2] precede the explanation, leaving the demonstrative 'This effect' without a full referent, and [4] sits inside the discussion of vegetation.",
+    "answerKo": "정답은 (C)입니다. 삽입 문장은 앞에서 설명한 현상에 '도시 열섬'이라는 이름을 붙이는 요약 문장이므로, 야간 기온 차까지 서술이 끝난 직후인 [3] 자리가 적절합니다. [1]과 [2]는 설명이 완결되기 전이라 This effect가 가리킬 내용이 부족하고, [4]는 이미 식생 논의로 넘어간 뒤라 흐름이 끊깁니다.",
+    "keyExpressions": [
+      {
+        "en": "masonry",
+        "ko": "석조·벽돌 구조물"
+      },
+      {
+        "en": "solar radiation",
+        "ko": "태양 복사"
+      },
+      {
+        "en": "transpiration",
+        "ko": "증산 작용"
+      },
+      {
+        "en": "canopy cover",
+        "ko": "수관 피복률"
+      },
+      {
+        "en": "heat-related illness",
+        "ko": "온열 질환"
+      }
+    ],
+    "tips": "문장 삽입은 삽입 문장의 연결 신호(This, Such, However, 지시형용사)를 먼저 봅니다. This effect처럼 앞 내용을 통째로 받는 표현이면, 그 내용이 완전히 서술된 직후 자리를 고르세요. 삽입 후 앞뒤를 이어 읽어 대명사가 정확히 무엇을 가리키는지 확인하는 것이 마지막 검증 단계입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "야생동물 이동통로 설계",
+    "question": "Roads divide habitat as effectively as clearcutting. Animals that avoid crossing pavement become confined to shrinking patches, and those that attempt it are frequently killed. Wildlife crossings, either overpasses planted with native vegetation or underpasses set beneath elevated roadway, restore movement between separated populations.\n\nDesign details determine whether such structures work. Fencing that funnels animals toward the entrance is essential, because without it most individuals continue to cross at random points. Wide, open overpasses suit large ungulates such as elk, which hesitate to enter confined spaces, whereas amphibians and small mammals use narrow culverts readily. Genetic sampling has confirmed the biological payoff: populations on either side of well-designed crossings show renewed gene flow within a few generations, and vehicle collisions along fenced segments typically fall by more than half.\n\nAn introductory sentence for a brief summary of the passage is provided below. Complete the summary by selecting the THREE answer choices that express the most important ideas.\nWildlife crossings are engineered to reconnect habitats divided by roads.\n(A) Roads fragment habitat and cause direct mortality among animals attempting to cross.\n(B) Fencing that guides animals to crossing entrances is necessary for the structures to function.\n(C) Elk are the only species known to use vegetated overpasses.\n(D) Different species require different crossing designs, from wide overpasses to narrow culverts.\n(E) Clearcutting has been shown to be more damaging than road construction.\n(F) Genetic and collision data confirm that well-designed crossings restore gene flow and reduce deaths.",
+    "targetLevel": "지문 요약",
+    "answerEn": "(A), (D), and (F) capture the passage's three major ideas: the problem created by roads, the species-specific design requirement, and the measured evidence of success. Choice (B) is true but functions as a supporting detail within the design discussion rather than a main idea. Choice (C) contradicts the mention of amphibians and small mammals using culverts. Choice (E) misuses the comparison to clearcutting, which was an analogy rather than a ranking of harm.",
+    "answerKo": "정답은 (A), (D), (F)입니다. 각각 도로가 만드는 문제, 종별로 다른 설계 요구, 유전자·충돌 자료로 확인된 효과라는 세 축을 담습니다. (B)는 사실이지만 설계 논의의 하위 세부이고, (C)는 양서류와 소형 포유류 언급과 모순되며, (E)는 벌목을 비유로 든 문장을 피해 규모 비교로 오독한 오답입니다.",
+    "keyExpressions": [
+      {
+        "en": "clearcutting",
+        "ko": "개벌, 모두베기"
+      },
+      {
+        "en": "overpass / underpass",
+        "ko": "생태 육교 / 지하 통로"
+      },
+      {
+        "en": "funnel (v.)",
+        "ko": "한곳으로 유도하다"
+      },
+      {
+        "en": "ungulate",
+        "ko": "유제류 (발굽 동물)"
+      },
+      {
+        "en": "gene flow",
+        "ko": "유전자 흐름"
+      }
+    ],
+    "tips": "지문 요약은 단락별 중심 문장 세 개를 고르는 문제입니다. 사실이지만 지엽적인 세부, 지문에 없는 비교, 지문과 모순되는 진술이 전형적인 세 가지 오답 유형입니다. 도입 문장이 제시한 주제 범위를 벗어난 보기는 옳더라도 제외하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "토양 침식과 보전 농법",
+    "question": "Conventional tillage turns the soil before planting, burying residue and creating a smooth seedbed. The practice controls weeds mechanically, but it also pulverizes soil aggregates and leaves bare ground exposed to rain. Raindrop impact then seals the surface, runoff accelerates, and topsoil that required centuries to form can be carried away in a single season.\n\nConservation tillage takes the opposite approach. Seed is drilled directly through the residue of the previous crop, which shields the surface and slows water movement. Earthworm channels and root pores remain intact, so infiltration improves and organic matter accumulates near the surface. The tradeoff is a heavier reliance on herbicides, since weeds are no longer buried, and a cooler, wetter spring seedbed that can delay germination in northern fields.\n\nComplete the table by matching each statement with the practice it describes.\nConventional tillage / Conservation tillage\n(A) Leaves the soil surface bare and vulnerable to raindrop impact\n(B) Preserves earthworm channels and improves infiltration\n(C) Controls weeds mechanically by burying them\n(D) Requires greater use of chemical herbicides\n(E) Eliminates the need for any planting equipment\n(F) Can delay germination because the seedbed stays cool and wet",
+    "targetLevel": "표 채우기",
+    "answerEn": "Conventional tillage: (A) and (C); Conservation tillage: (B), (D), and (F). Paragraph 1 attributes bare exposed ground and mechanical weed burial to conventional practice, while paragraph 2 assigns intact biopores, herbicide dependence, and cool wet seedbeds to conservation tillage. Choice (E) is not supported, since conservation tillage still requires a drill to place seed through residue.",
+    "answerKo": "관행 경운은 (A), (C)이고 보전 경운은 (B), (D), (F)입니다. 1단락은 나지 노출과 기계적 잡초 매몰을 관행 경운의 특징으로, 2단락은 생물 공극 보존, 제초제 의존 증가, 차갑고 습한 파종상을 보전 경운의 특징으로 서술합니다. (E)는 파종기가 여전히 필요하다는 점에서 지지되지 않는 오답입니다.",
+    "keyExpressions": [
+      {
+        "en": "tillage",
+        "ko": "경운, 밭갈이"
+      },
+      {
+        "en": "soil aggregate",
+        "ko": "토양 입단"
+      },
+      {
+        "en": "crop residue",
+        "ko": "작물 잔사"
+      },
+      {
+        "en": "infiltration",
+        "ko": "침투 (물이 토양에 스며듦)"
+      },
+      {
+        "en": "germination",
+        "ko": "발아"
+      }
+    ],
+    "tips": "표 채우기는 두 대상의 대조 구조를 이용합니다. 지문이 단락별로 한 대상씩 설명하는 경우가 많으니 단락 경계를 기준으로 보기를 배분하세요. 어느 쪽에도 명시되지 않은 보기가 반드시 한두 개 섞여 있으므로, 근거 문장을 찾지 못한 보기는 과감히 버립니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "해양 플라스틱과 미세플라스틱",
+    "question": "Plastic entering the ocean does not remain intact for long at the surface. Ultraviolet light weakens polymer chains, and wave action breaks the embrittled material into progressively smaller fragments. Particles below five millimeters are classified as microplastics, and they are now recovered from polar sea ice, deep-sea sediments, and the digestive tracts of organisms at every trophic level.\n\nSurface cleanup captures only a modest share of the total. Buoyancy varies with polymer density and with the biofilm that accumulates on floating debris; as organisms colonize a fragment, it grows heavier and sinks, removing it from view without removing it from the ecosystem. Researchers accordingly emphasize source reduction, including redesign of packaging and improved waste collection in coastal regions that lack formal disposal systems, as the intervention most likely to change the total load.\n\nAccording to paragraph 2, what causes floating plastic fragments to sink?\n(A) Exposure to ultraviolet light at the ocean surface\n(B) The accumulation of biofilm and colonizing organisms\n(C) Collisions with deep-sea sediments\n(D) Improved waste collection in coastal regions",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) Paragraph 2 states that buoyancy varies with the biofilm accumulating on debris and that colonization makes a fragment heavier until it sinks. Choice (A) belongs to paragraph 1, where ultraviolet light causes fragmentation rather than sinking. Choice (C) reverses the sequence, since sediments are where sunken particles arrive. Choice (D) names a policy response, not a physical cause.",
+    "answerKo": "정답은 (B)입니다. 2단락은 부유물에 생물막이 쌓이고 생물이 정착하면서 무거워져 가라앉는다고 설명합니다. (A)의 자외선은 1단락에서 파편화의 원인일 뿐 침강 원인이 아니고, (C)는 침강 후 도달하는 장소를 원인으로 착각한 것이며, (D)는 물리적 원인이 아니라 정책 대응입니다.",
+    "keyExpressions": [
+      {
+        "en": "embrittle",
+        "ko": "취성화하다, 부서지기 쉽게 만들다"
+      },
+      {
+        "en": "microplastics",
+        "ko": "미세플라스틱"
+      },
+      {
+        "en": "trophic level",
+        "ko": "영양 단계"
+      },
+      {
+        "en": "buoyancy",
+        "ko": "부력"
+      },
+      {
+        "en": "source reduction",
+        "ko": "원천 감축"
+      }
+    ],
+    "tips": "원인을 묻는 사실 정보 문제는 인과 신호어(as, because, so, cause)를 먼저 표시합니다. 시간 순서상 앞 단계(파편화)와 뒤 단계(침강)를 혼동시키는 보기가 자주 나오므로, 질문이 묻는 결과가 정확히 무엇인지 다시 확인하고 그 직전 원인만 고르세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "이탄지의 탄소 저장",
+    "question": "Peatlands cover roughly three percent of the land surface yet hold about twice the carbon stored in all the world's forests. The reason lies in waterlogged soils. Saturation excludes oxygen, decomposition slows to a crawl, and partially decayed plant material accumulates layer upon layer over thousands of years.\n\nDrainage reverses the process abruptly. When ditches lower the water table, oxygen penetrates the peat, microbial respiration resumes, and carbon that took millennia to accumulate is released within decades. Drained peat also compacts and subsides, and in dry seasons it becomes flammable, producing smoldering fires that are difficult to extinguish and that emit dense smoke. Rewetting, achieved by blocking ditches and restoring the water table, halts most of these losses, although the restored surface often supports different plant communities from those present before drainage.\n\nAccording to the passage, all of the following result from draining peatlands EXCEPT\n(A) the resumption of microbial respiration\n(B) subsidence and compaction of the peat surface\n(C) increased vulnerability to smoldering fires\n(D) the immediate return of the original plant community",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) The passage says that rewetting often supports plant communities different from those present before drainage, so the original community does not simply return. Choices (A), (B), and (C) are each named in paragraph 2 as consequences of lowering the water table. Note that (D) also misattributes an effect of rewetting to drainage itself.",
+    "answerKo": "정답은 (D)입니다. 지문은 재습지화 이후에도 배수 이전과 다른 식물 군락이 형성되는 경우가 많다고 하여 원래 군락의 즉각적 복귀를 부정합니다. (A) 미생물 호흡 재개, (B) 지반 침하, (C) 훈소 화재 취약성은 모두 배수의 결과로 명시되어 있습니다. (D)는 재습지화 관련 내용을 배수의 결과로 잘못 옮긴 점도 오답 근거입니다.",
+    "keyExpressions": [
+      {
+        "en": "peatland",
+        "ko": "이탄지"
+      },
+      {
+        "en": "waterlogged",
+        "ko": "물에 잠긴, 과습한"
+      },
+      {
+        "en": "water table",
+        "ko": "지하수면"
+      },
+      {
+        "en": "subside",
+        "ko": "침하하다"
+      },
+      {
+        "en": "rewetting",
+        "ko": "재습지화"
+      }
+    ],
+    "tips": "부정 사실 문제에서 오답 보기는 대개 지문에 있는 표현을 쓰되 주체나 조건을 바꿉니다. 이 문제처럼 '배수의 결과'를 물었는데 '재습지화의 결과'를 가져오는 식입니다. 각 보기 옆에 근거 문장의 주어를 적어 두면 이런 뒤바꿈을 빠르게 잡아낼 수 있습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "종자은행과 유전자원 보전",
+    "question": "Seed banks preserve plant genetic diversity by drying seeds to low moisture content and storing them below freezing, conditions under which many species remain viable for decades or longer. The approach is inexpensive relative to maintaining living collections and allows thousands of accessions to occupy a single facility. Duplicate samples are commonly deposited in a second location as insurance against fire, war, or equipment failure.\n\nThe method has limits. Roughly a tenth of flowering plants produce recalcitrant seeds that cannot survive desiccation, including many tropical trees and most oaks; these must be conserved as living plants or as tissue cultures. Moreover, a stored seed represents a genetic snapshot. While the population from which it came continues to adapt to shifting pests and climate, the banked sample does not, so material reintroduced after a long interval may be poorly matched to conditions in its former range.\n\nWhat can be inferred from the passage about seeds reintroduced to the wild after long storage?\n(A) They will always fail to germinate under field conditions.\n(B) They may be less well adapted than wild populations that continued evolving.\n(C) They are typically recalcitrant and cannot survive drying.\n(D) They carry greater genetic diversity than the populations they replace.",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage explains that wild populations keep adapting while a banked sample stays frozen in time, which implies a possible mismatch in adaptation. Choice (A) overstates the point with the absolute word always, since the text says only that material may be poorly matched. Choice (C) confuses stored orthodox seeds with recalcitrant species that cannot be banked at all. Choice (D) is unsupported, as nothing compares diversity levels.",
+    "answerKo": "정답은 (B)입니다. 야생 집단은 계속 적응하지만 저장된 종자는 유전적 스냅숏에 머무르므로, 오래 뒤 재도입된 종자는 적응도가 떨어질 수 있다는 추론이 성립합니다. (A)는 always라는 절대어로 과장했고, (C)는 저장 가능한 종자와 건조에 견디지 못하는 종자를 혼동했으며, (D)는 비교 근거가 지문에 없습니다.",
+    "keyExpressions": [
+      {
+        "en": "accession",
+        "ko": "수집 계통, 보존 자원"
+      },
+      {
+        "en": "recalcitrant seed",
+        "ko": "난저장성 종자"
+      },
+      {
+        "en": "desiccation",
+        "ko": "건조"
+      },
+      {
+        "en": "tissue culture",
+        "ko": "조직 배양"
+      },
+      {
+        "en": "reintroduce",
+        "ko": "재도입하다"
+      }
+    ],
+    "tips": "추론 문제에서 may, can, likely 같은 완화 표현이 들어간 보기는 정답 확률이 높고, always, never, only가 들어간 보기는 대개 오답입니다. 지문의 조건절과 시간 표현(after a long interval)을 그대로 유지하는 보기를 고르세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "댐 철거와 하천 복원",
+    "question": "Thousands of small dams built for mills and local power generation no longer serve any economic purpose, and many have deteriorated beyond safe repair. Removing them is often cheaper than rebuilding them, and the ecological argument is straightforward: an obstructed river cannot deliver migratory fish to their spawning grounds, and sediment trapped behind a barrier never reaches the estuaries and beaches that depend on it.\n\nRemoval is nonetheless disruptive in the short term. Decades of accumulated sediment move downstream in the first high flows, temporarily burying gravel beds and raising turbidity. Engineers therefore stage removals over several seasons where possible. It is worth asking what the alternative would cost. Aging structures fail eventually, and an uncontrolled breach releases the same sediment without any of the planning that protects downstream habitat.\n\nIn paragraph 2, the author raises the question of what the alternative would cost primarily in order to\n(A) suggest that dam removal projects are usually too expensive to justify\n(B) argue that planned removal is preferable to eventual uncontrolled failure\n(C) explain why sediment accumulates behind dams over several decades\n(D) question whether migratory fish actually benefit from removal",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The rhetorical question is immediately answered by the observation that aging dams fail on their own and release sediment without planning, so the comparison serves to defend planned removal despite its short-term disruption. Choice (A) contradicts the earlier statement that removal is often cheaper than rebuilding. Choice (C) treats a background detail as the purpose. Choice (D) misreads the passage, which presents fish passage as a clear benefit.",
+    "answerKo": "정답은 (B)입니다. 저자가 던진 질문은 곧바로 '노후 댐은 결국 붕괴하며 계획 없이 같은 퇴적물을 방출한다'는 답으로 이어지므로, 단기 교란에도 불구하고 계획적 철거가 낫다는 논지를 뒷받침합니다. (A)는 철거가 재건보다 저렴하다는 서술과 모순되고, (C)는 배경 정보를 목적으로 오인했으며, (D)는 어류 이동 편익을 명시한 지문과 어긋납니다.",
+    "keyExpressions": [
+      {
+        "en": "spawning ground",
+        "ko": "산란장"
+      },
+      {
+        "en": "estuary",
+        "ko": "하구"
+      },
+      {
+        "en": "turbidity",
+        "ko": "탁도"
+      },
+      {
+        "en": "stage (v.) a removal",
+        "ko": "단계적으로 시행하다"
+      },
+      {
+        "en": "uncontrolled breach",
+        "ko": "통제되지 않은 붕괴"
+      }
+    ],
+    "tips": "수사적 질문이 나오면 그 직후 문장이 곧 저자의 답이자 의도입니다. 질문 자체를 정답으로 착각하지 말고, 바로 뒤 문장이 강화하는 주장이 무엇인지 확인하세요. 앞 단락과 모순되는 보기는 즉시 소거할 수 있습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "환경·생태 보전",
+    "topic": "보호구역 관광의 수용력",
+    "question": "Protected areas increasingly depend on visitor fees to fund patrols, research, and community programs. Tourism thus converts scenic value into conservation revenue and gives nearby residents a financial stake in keeping wildlife alive. Yet visitation carries costs of its own. Trails widen and braid where foot traffic is heavy, vehicles compact soil, and nesting birds abandon sites near popular viewpoints.\n\nManagers respond by regulating the distribution of use rather than merely its volume. Permit quotas cap daily entries on fragile routes, hardened boardwalks concentrate walkers on durable surfaces, and seasonal closures shield breeding areas during sensitive weeks. Fees are sometimes tiered to divert demand from congested sectors toward underused ones. The guiding principle is that a park's capacity is not a single fixed number but a set of thresholds that vary by site, season, and the type of activity permitted.\n\nThe word 'thresholds' in the passage is closest in meaning to\n(A) limits\n(B) revenues\n(C) pathways\n(D) surveys",
+    "targetLevel": "어휘",
+    "answerEn": "(A) The sentence contrasts a single fixed number with a set of thresholds varying by site and season, so the word denotes limits or ceilings on use. Choice (B) recalls the fee discussion but does not fit a statement about capacity. Choice (C) is suggested by the mention of trails yet makes the sentence incoherent. Choice (D) refers to studies, which are never described as varying by activity type.",
+    "answerKo": "정답은 (A)입니다. '하나의 고정된 숫자가 아니라 장소·계절·활동별로 달라지는 thresholds'라는 대조 구조에서, 이 단어는 이용의 한계치를 뜻합니다. (B)는 요금 논의에 이끌린 오답, (C)는 trail이라는 단어에서 연상된 오답, (D)는 조사·설문으로 문맥에 맞지 않습니다.",
+    "keyExpressions": [
+      {
+        "en": "visitor fee",
+        "ko": "입장료, 탐방료"
+      },
+      {
+        "en": "braid (v.) of trails",
+        "ko": "(길이) 여러 갈래로 갈라지다"
+      },
+      {
+        "en": "permit quota",
+        "ko": "허가 인원 상한"
+      },
+      {
+        "en": "seasonal closure",
+        "ko": "계절별 출입 통제"
+      },
+      {
+        "en": "threshold",
+        "ko": "한계점, 임계치"
+      }
+    ],
+    "tips": "어휘 문제에서 문장 안의 대조 구조(not a single fixed number but a set of ...)는 결정적 단서입니다. 앞의 표현과 반대되거나 그것을 정교화하는 의미를 고르세요. 지문의 다른 소재(요금, 탐방로)에서 연상되는 단어는 대체로 함정입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "구텐베르크 활판 인쇄",
+    "question": "The printing press that Johannes Gutenberg assembled in Mainz around 1450 was less a single invention than a convergence of several existing technologies. Wine and olive presses supplied the mechanism for applying uniform pressure; metallurgy contributed an alloy of lead, tin, and antimony that expanded slightly upon cooling, allowing cast letters to fill their molds precisely; and oil-based varnish inks, borrowed from panel painters, adhered to metal type where water-based scribal inks would have beaded and run.\n\nGutenberg's decisive contribution was the adjustable hand mold, a device that permitted a single craftsman to cast thousands of identical types of varying widths from a common matrix. This standardization made typesetting economically viable at scale. Within fifty years, presses operated in more than two hundred European towns, and the cost of a book fell to a small fraction of its manuscript equivalent, transforming the economics of textual reproduction.\n\nAccording to the passage, which of the following made large-scale typesetting economically practical?\n(A) The substitution of water-based inks for oil-based varnishes\n(B) The adjustable hand mold that produced uniform type of varying widths\n(C) The construction of presses in over two hundred European towns\n(D) The adoption of the screw mechanism from wine and olive presses",
+    "targetLevel": "사실 정보",
+    "answerEn": "(B) The passage states directly that Gutenberg's decisive contribution was the adjustable hand mold, which allowed one craftsman to cast thousands of identical types from a common matrix, and that 'this standardization made typesetting economically viable at scale.' Choice (A) reverses the actual relationship, since oil-based inks replaced water-based ones. Choice (C) describes a consequence of the press rather than its cause. Choice (D) names a borrowed component, but the passage credits the hand mold, not the press mechanism, with the economic breakthrough.",
+    "answerKo": "정답 (B). 지문은 구텐베르크의 결정적 기여가 '조절 가능한 활자 주조 기구(adjustable hand mold)'이며, 이것이 표준화를 통해 대규모 조판을 경제적으로 가능하게 했다고 명시합니다. (A)는 잉크의 방향이 반대이고, (C)는 원인이 아니라 결과이며, (D)는 차용된 부품일 뿐 경제성의 핵심으로 지목되지 않았습니다.",
+    "keyExpressions": [
+      {
+        "en": "convergence of technologies",
+        "ko": "기술들의 수렴·융합"
+      },
+      {
+        "en": "uniform pressure",
+        "ko": "균일한 압력"
+      },
+      {
+        "en": "alloy",
+        "ko": "합금"
+      },
+      {
+        "en": "matrix",
+        "ko": "주형·모형"
+      },
+      {
+        "en": "economically viable",
+        "ko": "경제적으로 실행 가능한"
+      }
+    ],
+    "tips": "사실 정보 유형은 지문에 '명시된' 문장을 찾는 것이 핵심입니다. 문제의 키워드(economically practical)를 지문에서 그대로 또는 동의어로 찾으면 됩니다. 여기서는 'economically viable at scale'이 신호이며, 바로 앞 문장의 주어가 정답입니다. 상식이나 배경지식으로 추론하지 말고 문장 단위로 대조하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "대서양 해저 전신케이블",
+    "question": "The first transatlantic telegraph cable, completed in 1858, failed after only three weeks. Its copper conductor was insulated with gutta-percha, a tree resin that hardened underwater, but the cable had been manufactured in two separate factories using different twisting conventions and stored in the sun, which degraded the insulation. Operators, frustrated by weak signals, applied ever-higher voltages until the insulation broke down entirely.\n\nThe 1866 cable succeeded for reasons that were as much institutional as technical. William Thomson's mirror galvanometer detected minute currents, eliminating the need for destructive voltages, and his mathematical analysis of signal retardation dictated a thicker conductor. Equally important, a single contractor now controlled manufacture, testing, and laying, and the Great Eastern, a commercially unsuccessful steamship, was large enough to carry the entire length in one hold, removing the splices that had weakened earlier attempts.\n\nAccording to the passage, all of the following contributed to the failure of the 1858 cable EXCEPT\n(A) manufacture in two factories with inconsistent methods\n(B) exposure of the cable to sunlight during storage\n(C) the application of excessively high voltages by operators\n(D) the use of gutta-percha as an insulating material",
+    "targetLevel": "부정 사실 정보",
+    "answerEn": "(D) The passage presents gutta-percha as a functional insulator that 'hardened underwater'; the problem lay in how it was stored and how it was later abused by high voltages, not in the material itself. Choices (A), (B), and (C) are each explicitly listed as causes of the 1858 failure: divergent factory conventions, sun-damaged insulation, and escalating operator voltages. In EXCEPT questions the three wrong answers are all stated in the text, so the correct answer is the one that appears in a different role or not at all.",
+    "answerKo": "정답 (D). 구타페르카는 실패 원인이 아니라 수중에서 경화되는 정상적인 절연재로 소개됩니다. 문제는 보관 방식과 과도한 전압이었습니다. (A) 두 공장의 상이한 제조 방식, (B) 햇빛 노출로 인한 절연 열화, (C) 운영자의 고전압 인가는 모두 지문에 원인으로 명시되어 있습니다.",
+    "keyExpressions": [
+      {
+        "en": "conductor",
+        "ko": "도체"
+      },
+      {
+        "en": "insulation",
+        "ko": "절연(체)"
+      },
+      {
+        "en": "degrade",
+        "ko": "열화되다, 성능이 떨어지다"
+      },
+      {
+        "en": "retardation",
+        "ko": "지연"
+      },
+      {
+        "en": "splice",
+        "ko": "이음매, 접합부"
+      }
+    ],
+    "tips": "부정 사실 정보(EXCEPT/NOT) 유형은 보기 4개를 하나씩 지문과 대조해 '있다/없다'를 체크하는 소거법이 정석입니다. 세 개에 표시가 되면 남는 하나가 정답입니다. 특히 지문에 등장하지만 '역할이 다른' 항목이 함정으로 자주 나오므로, 단어가 나왔다는 이유만으로 소거하지 마세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "라이트 형제의 조종 원리",
+    "question": "Most nineteenth-century aeronautical experimenters assumed that the central problem of flight was lift, and they pursued ever more powerful engines and larger wings. Otto Lilienthal's gliding accidents suggested a different diagnosis to the Wright brothers, who concluded that the unsolved difficulty was control. A machine that could not be balanced in three axes would be destroyed regardless of how much lift it generated.\n\nTheir solution, wing warping, twisted the trailing edges of the wings in opposite directions, raising one side and lowering the other. Early trials revealed an unexpected coupling: the descending wing experienced greater drag and the aircraft yawed backward into a turn. The brothers added a movable rear rudder linked to the warping mechanism, so that a single control input produced a coordinated turn. This linkage, rather than the engine, constituted their patentable insight.\n\nWhat can be inferred from the passage about the aeronautical experimenters who preceded the Wright brothers?\n(A) They had already achieved coordinated turns but lacked adequate engines.\n(B) Their emphasis on lift left a fundamental problem of stability unaddressed.\n(C) They deliberately rejected wing warping as mechanically unsound.\n(D) They regarded Lilienthal's accidents as evidence that flight was impossible.",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage says earlier experimenters 'assumed that the central problem of flight was lift' and pursued engines and wings, while the Wrights concluded the unsolved difficulty was control. The inference is that the earlier focus left balance and control unresolved. (A) contradicts the text, since coordinated turns were the Wrights' own achievement. (C) is unsupported because wing warping is presented as the Wrights' innovation, not something predecessors evaluated. (D) misreads the role of Lilienthal, whose accidents redirected rather than discouraged inquiry.",
+    "answerKo": "정답 (B). 이전 실험가들이 '양력'을 중심 문제로 가정해 엔진과 날개 크기에 집중했다는 서술과, 라이트 형제가 미해결 과제를 '조종'으로 규정했다는 서술을 결합하면 안정성 문제가 방치되어 있었다는 추론이 성립합니다. (A)는 지문과 모순, (C)와 (D)는 근거 없는 확장입니다.",
+    "keyExpressions": [
+      {
+        "en": "lift",
+        "ko": "양력"
+      },
+      {
+        "en": "three axes",
+        "ko": "3축"
+      },
+      {
+        "en": "trailing edge",
+        "ko": "(날개의) 뒷전"
+      },
+      {
+        "en": "drag",
+        "ko": "항력"
+      },
+      {
+        "en": "yaw",
+        "ko": "좌우 방향 회전(요잉)"
+      }
+    ],
+    "tips": "추론 문제는 '지문에 없지만 지문으로부터 반드시 따라 나오는' 한 걸음만 허용합니다. 두 문장을 연결해 얻어지는 결론이 대개 정답이며, 지문과 모순되거나 지문 밖 지식이 필요한 보기는 즉시 제거하세요. 특히 '이미 성취했다'처럼 시점을 뒤집는 보기를 조심하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "트랜지스터와 진공관 대체",
+    "question": "Vacuum tubes performed switching and amplification reliably, but they consumed large amounts of power, generated heat that limited packing density, and burned out unpredictably. A machine containing eighteen thousand tubes could be expected to fail somewhere within hours, and much of an operator's day was spent locating the offending component.\n\nWhen Bardeen, Brattain, and Shockley demonstrated the point-contact transistor in 1947, the immediate advantage was not speed. Early transistors were noisy and fragile, and their electrical characteristics varied unacceptably from unit to unit. What made them compelling was that they were solid: nothing evaporated, nothing burned out, and nothing needed to be heated before it would conduct. Manufacturers therefore tolerated a decade of disappointing yields, confident that a device with no moving parts and no filament would eventually be produced to consistent specifications.\n\nWhy does the author mention 'a machine containing eighteen thousand tubes'?\n(A) To illustrate how rapidly vacuum tube computers could process data\n(B) To show that the scale of tube-based machines made failure a routine occurrence\n(C) To argue that early computers were larger than early transistor devices\n(D) To explain why manufacturers accepted poor transistor yields",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The detail appears immediately after the claim that tubes 'burned out unpredictably,' and it quantifies the consequence: such a machine 'could be expected to fail somewhere within hours.' The example therefore dramatizes the reliability problem created by scale. (A) is irrelevant, since processing speed is not the point of the sentence. (C) concerns physical size, a comparison the passage never makes here. (D) names a later argument in the second paragraph that this detail sets up only indirectly.",
+    "answerKo": "정답 (B). '18,000개의 진공관' 언급은 바로 앞의 '예측 불가능한 소손' 주장을 구체적 규모로 뒷받침하며, 몇 시간 내 고장이 일상적이었음을 보여줍니다. (A) 처리 속도, (C) 크기 비교는 논점이 아니고, (D)는 두 번째 단락의 별개 논지입니다.",
+    "keyExpressions": [
+      {
+        "en": "amplification",
+        "ko": "증폭"
+      },
+      {
+        "en": "packing density",
+        "ko": "집적 밀도"
+      },
+      {
+        "en": "solid-state",
+        "ko": "고체 상태의, 반도체식의"
+      },
+      {
+        "en": "yield",
+        "ko": "(제조) 수율"
+      },
+      {
+        "en": "specification",
+        "ko": "규격, 사양"
+      }
+    ],
+    "tips": "수사적 의도 문제는 '왜 저자가 이 예를 넣었는가'를 묻습니다. 해당 문장 바로 '앞' 문장에 있는 주장을 찾으면 대개 그 주장을 뒷받침하는 것이 목적입니다. 예시 자체의 내용을 요약한 보기는 오답인 경우가 많으니, 기능(예증·대조·반박)을 명시한 보기를 고르세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "베서머 제강법",
+    "question": "Before 1856, steel was a luxury material produced in crucibles a few kilograms at a time. Henry Bessemer's converter blew cold air through molten pig iron, and the oxygen in the air burned away carbon and silicon so violently that the charge required no external fuel. Twenty tons could be decarburized in twenty minutes.\n\nThe process proved erratic in practice. Bessemer's own iron happened to be low in phosphorus, whereas most British and continental ores were not, and phosphorus made the resulting metal brittle. The silica lining of the converter could not remove it. Only in 1878, when Thomas and Gilchrist substituted a basic lining of dolomite that chemically captured phosphorus in the slag, did the method become general. Until then, licensees who had paid handsomely for the patent found their steel unusable.\n\nThe word 'erratic' in the passage is closest in meaning to\n(A) inconsistent\n(B) expensive\n(C) dangerous\n(D) gradual",
+    "targetLevel": "어휘",
+    "answerEn": "(A) The sentence introduces a paragraph explaining that the process worked with Bessemer's own low-phosphorus iron but failed with ordinary ores, producing brittle metal. That variability of outcome defines 'erratic' as inconsistent or unpredictable. (B) is wrong because cost is not at issue in this paragraph, and the process actually eliminated fuel costs. (C) is plausible from the word 'violently' in the previous paragraph but is not what the sentence claims. (D) contradicts the emphasis on speed established by 'twenty minutes.'",
+    "answerKo": "정답 (A). 'erratic'은 '일정하지 않은, 변덕스러운'이라는 뜻이며, 뒤이어 광석의 인 함량에 따라 결과가 달라졌다는 설명이 문맥 단서가 됩니다. (B) 비용, (C) 위험성, (D) 점진성은 해당 단락의 논지와 무관합니다.",
+    "keyExpressions": [
+      {
+        "en": "crucible",
+        "ko": "도가니"
+      },
+      {
+        "en": "molten",
+        "ko": "용융된"
+      },
+      {
+        "en": "decarburize",
+        "ko": "탈탄하다"
+      },
+      {
+        "en": "brittle",
+        "ko": "부서지기 쉬운, 취성의"
+      },
+      {
+        "en": "slag",
+        "ko": "슬래그, 광재"
+      }
+    ],
+    "tips": "어휘 문제는 단어의 사전적 의미보다 '문맥이 요구하는 의미'가 우선입니다. 해당 단어가 들어간 문장 다음에 오는 설명이 곧 그 단어의 정의 역할을 하는 경우가 많습니다. 지문에 나온 다른 인상적인 단어(violently 등)에 이끌린 보기는 함정입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "런던 하수도 체계",
+    "question": "The London sewer system built under Joseph Bazalgette between 1859 and 1875 was designed on a premise now known to be false. Bazalgette and his contemporaries believed that cholera spread through foul air, and the intercepting sewers were intended to carry stench away from the population rather than to protect drinking water.\n\nThe engineering nevertheless proved sound. By diverting waste downstream of the metropolis, the system removed sewage from the tidal reaches where water companies drew their supply, and cholera disappeared from the capital. Bazalgette also made a decision his commissioners questioned: after calculating the diameter required for the anticipated population, he doubled it. He reportedly explained that such a work would be built only once, and that unforeseen growth would otherwise overwhelm it. That margin allowed the system to serve a city several times the size he designed for.\n\nThe word 'it' in the passage (in the phrase 'would otherwise overwhelm it') refers to\n(A) unforeseen growth\n(B) the system\n(C) the diameter\n(D) the population",
+    "targetLevel": "지시 대상",
+    "answerEn": "(B) The clause states that unforeseen growth 'would otherwise overwhelm it,' and the thing capable of being overwhelmed by population growth is the sewer system he had designed and would build only once. (A) is the subject of the same clause and cannot also be its object. (C) is a measurement, not something growth overwhelms in idiomatic terms, and the diameter had already been doubled. (D) reverses the logic, since population growth is what does the overwhelming.",
+    "answerKo": "정답 (B). 'unforeseen growth would otherwise overwhelm it'에서 압도당하는 대상은 앞 문장의 '한 번만 지어질 공사물', 즉 하수 체계입니다. (A)는 같은 절의 주어라 목적어가 될 수 없고, (C)는 이미 두 배로 늘린 수치이며, (D)는 주체와 객체를 뒤바꾼 것입니다.",
+    "keyExpressions": [
+      {
+        "en": "premise",
+        "ko": "전제"
+      },
+      {
+        "en": "intercepting sewer",
+        "ko": "차집 하수관"
+      },
+      {
+        "en": "tidal reach",
+        "ko": "조수의 영향을 받는 구간"
+      },
+      {
+        "en": "margin",
+        "ko": "여유분, 여유 용량"
+      },
+      {
+        "en": "unforeseen",
+        "ko": "예견되지 않은"
+      }
+    ],
+    "tips": "지시 대상 문제는 대명사를 보기 단어로 직접 바꿔 넣어 문장이 자연스러운지 확인하세요. 같은 절의 주어는 목적어 대명사의 지시 대상이 될 수 없다는 문법 원칙이 강력한 소거 도구입니다. 가장 가까운 명사가 아니라 '의미상 성립하는' 명사를 고르는 것이 중요합니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "컨테이너 해상운송",
+    "question": "Before containerization, cargo moved as break bulk: barrels, sacks, and crates handled individually by longshoremen. Loading a ship could take a week, labor accounted for well over half the cost of ocean shipping, and pilferage was routine. Malcom McLean, a trucking operator rather than a shipping man, saw that the inefficiency lay not in any single step but in the repeated transfer between modes of transport.\n\nHis 1956 conversion of a tanker to carry truck trailer bodies was technically trivial. The obstacles were institutional: ports had to invest in cranes before any ships used them, railways and truckers had to agree on dimensions, and dockworkers' unions faced the elimination of most of their members' jobs. Standardization on a small set of box sizes, achieved only in the mid-1960s, was the precondition for the network effects that followed.\n\nWhich of the following best expresses the essential information in the highlighted sentence? 'Malcom McLean, a trucking operator rather than a shipping man, saw that the inefficiency lay not in any single step but in the repeated transfer between modes of transport.'\n(A) McLean's background in trucking prevented him from understanding shipping operations.\n(B) McLean identified the handoffs between transport modes, not any individual operation, as the source of waste.\n(C) McLean believed that trucking was inherently more efficient than ocean shipping.\n(D) McLean concluded that each separate step in cargo handling needed to be improved.",
+    "targetLevel": "문장 재진술",
+    "answerEn": "(B) The original sentence contains two ideas: McLean came from trucking rather than shipping, and he located inefficiency in the repeated transfers between modes rather than in any one step. Choice (B) preserves the second and essential contrast accurately. (A) turns his outsider status into a deficiency, which the sentence does not say. (C) introduces a comparison of the two industries that is absent. (D) states the opposite of 'not in any single step.'",
+    "answerKo": "정답 (B). 원문의 핵심은 '단일 공정이 아니라 운송 수단 간 반복 환적에 비효율이 있다'는 대조입니다. (B)가 이를 그대로 옮겼습니다. (A)는 외부인이라는 사실을 결함으로 왜곡했고, (C)는 없는 비교이며, (D)는 원문의 부정 구조를 뒤집었습니다.",
+    "keyExpressions": [
+      {
+        "en": "break bulk",
+        "ko": "개품(낱개) 화물"
+      },
+      {
+        "en": "pilferage",
+        "ko": "좀도둑질, 화물 절취"
+      },
+      {
+        "en": "mode of transport",
+        "ko": "운송 수단"
+      },
+      {
+        "en": "precondition",
+        "ko": "선결 조건"
+      },
+      {
+        "en": "network effect",
+        "ko": "네트워크 효과"
+      }
+    ],
+    "tips": "문장 재진술은 '핵심 정보 보존 + 왜곡 없음' 두 조건을 모두 만족해야 합니다. 원문의 not A but B 구조를 그대로 유지했는지 확인하는 것이 가장 빠른 판별법이며, 원문에 없는 비교급이나 인과관계를 추가한 보기는 오답입니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "고딕 성당 구조 혁신",
+    "question": "Gothic builders sought height and light, but a tall stone vault exerts outward thrust at its base that will push the walls apart. [1] Romanesque churches resisted this thrust with massive walls pierced by only small openings. [2] The pointed arch, adopted from earlier Islamic architecture, directed a greater share of the load downward rather than outward, reducing the thrust that had to be contained.\n\n[3] The flying buttress carried the remaining thrust across open air to freestanding piers outside the building, so that the wall itself no longer needed to be a structural mass. [4] Wall surfaces could then be replaced almost entirely by glass. Failures such as the 1284 collapse of the Beauvais choir showed that these techniques were being pushed to limits their builders could estimate only by precedent, not by calculation.\n\nLook at the four squares that indicate where the following sentence could be added to the passage: 'Two further devices allowed the walls to become thinner.'\nWhere would the sentence best fit?\n(A) [1]\n(B) [2]\n(C) [3]\n(D) [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(B) The inserted sentence announces two devices, and the two devices that follow are the pointed arch and the flying buttress, introduced in that order. Placing it at [2] positions the announcement immediately before the first device and after the description of the older massive-wall solution it improves upon. (A) would separate the thrust problem from the Romanesque response. (C) leaves the pointed arch outside the pair it introduces. (D) comes after both devices have already been described.",
+    "answerKo": "정답 (B). 삽입 문장이 '두 가지 장치'를 예고하므로, 첨두아치와 플라잉 버트레스가 차례로 소개되기 직전인 [2]가 적절합니다. [1]은 로마네스크식 해법 설명을 끊고, [3]은 첨두아치를 예고 범위 밖으로 밀어내며, [4]는 두 장치가 모두 서술된 뒤라 늦습니다.",
+    "keyExpressions": [
+      {
+        "en": "vault",
+        "ko": "궁륭, 볼트 천장"
+      },
+      {
+        "en": "outward thrust",
+        "ko": "바깥으로 미는 힘, 측압"
+      },
+      {
+        "en": "pointed arch",
+        "ko": "첨두 아치"
+      },
+      {
+        "en": "flying buttress",
+        "ko": "공중 부벽"
+      },
+      {
+        "en": "precedent",
+        "ko": "선례"
+      }
+    ],
+    "tips": "문장 삽입은 삽입 문장 속의 연결 신호(this, such, two further, however 등)를 먼저 잡으세요. 'two further devices'처럼 개수를 예고하는 표현은 그 개수만큼의 항목 바로 앞에 와야 합니다. 넣은 뒤 앞뒤 문장이 자연스럽게 이어지는지 반드시 다시 읽어 확인하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "증기기관의 발전 과정",
+    "question": "Thomas Newcomen's atmospheric engine of 1712 raised water from mines by condensing steam inside a cylinder to create a partial vacuum, allowing atmospheric pressure to drive the piston down. Because the cylinder had to be cooled at every stroke and reheated before the next, most of the fuel was spent warming metal rather than doing work. The engine was viable only at coalfields where fuel was nearly free.\n\nJames Watt's separate condenser of 1765 kept the working cylinder permanently hot, cutting coal consumption by roughly three quarters and making steam power economical far from the mines. Later, Watt's rotative motion and governor extended the engine from pumping to driving machinery at a steady speed. High-pressure engines developed by Trevithick and others eventually made steam power compact enough for locomotives, though at a cost in boiler safety that Watt had deliberately avoided.\n\nDirections: Select the THREE answer choices that express the most important ideas in the passage. Some sentences do not belong because they express ideas not presented in the passage or are minor details.\nIntroductory sentence: The steam engine advanced through a sequence of improvements that each removed a specific limitation.\n(A) Newcomen's engine wasted fuel by heating and cooling the same cylinder, restricting it to coalfields.\n(B) Watt's separate condenser sharply reduced fuel use and freed steam power from coal-rich locations.\n(C) The piston in Newcomen's engine was driven downward by atmospheric pressure.\n(D) High-pressure designs made engines compact enough for transport but raised boiler safety risks.\n(E) Trevithick was a more original engineer than Watt.\n(F) Watt deliberately refused to work with high-pressure steam.",
+    "targetLevel": "지문 요약",
+    "answerEn": "(A), (B), (D) These three trace the sequence the introductory sentence promises: a defining inefficiency, its resolution by the separate condenser, and the later shift to high pressure with its trade-off. (C) is an accurate but subordinate mechanical detail rather than a main idea. (E) offers a comparative judgment the passage never makes. (F) is mentioned only as a clause qualifying (D) and is too minor to stand alone as a summary point.",
+    "answerKo": "정답 (A), (B), (D). 도입 문장이 '한계를 차례로 제거한 개량의 연속'을 예고하므로, 뉴커먼의 연료 낭비 한계, 와트의 분리 응축기에 의한 해결, 고압 엔진의 소형화와 안전 문제라는 세 단계가 핵심입니다. (C)는 세부 작동 원리, (E)는 지문에 없는 비교 평가, (F)는 (D)에 종속된 부수 정보입니다.",
+    "keyExpressions": [
+      {
+        "en": "partial vacuum",
+        "ko": "부분 진공"
+      },
+      {
+        "en": "stroke",
+        "ko": "행정, 스트로크"
+      },
+      {
+        "en": "separate condenser",
+        "ko": "분리 응축기"
+      },
+      {
+        "en": "rotative motion",
+        "ko": "회전 운동"
+      },
+      {
+        "en": "governor",
+        "ko": "조속기"
+      }
+    ],
+    "tips": "지문 요약은 '단락별 중심 생각'을 뽑는 문제입니다. 정답 세 개는 대개 각 단락 또는 각 논리 단계에 하나씩 대응합니다. 사실이지만 지엽적인 기계적 세부, 지문에 없는 우열 비교, 다른 보기의 부속 절에 불과한 내용은 모두 제외하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "교량 구조 형식 비교",
+    "question": "A suspension bridge hangs its deck from cables that are themselves anchored in massive blocks on shore. The cables work purely in tension, and because steel wire is extremely strong in tension, such bridges achieve the longest spans built. Their weakness is stiffness: a light deck suspended from flexible cables can oscillate in wind, as the 1940 failure of the Tacoma Narrows bridge demonstrated.\n\nAn arch bridge instead carries load in compression along a curved member, transmitting thrust into the abutments at each end. Compression suits masonry and concrete, materials weak in tension, and arches are correspondingly stiff, but they demand rock or equally firm ground to resist the horizontal thrust. A cantilever bridge is built outward from piers in balanced halves, requiring no falsework in the channel below, which made it the standard choice for deep or fast-moving water before modern erection techniques.\n\nDirections: Complete the table by matching each statement with the bridge type it characterizes.\nCategories: SUSPENSION / ARCH / CANTILEVER\n(A) Achieves the longest spans because its main members act in tension\n(B) Requires firm ground capable of resisting horizontal thrust\n(C) Can be erected without temporary supports in the water below\n(D) Is vulnerable to wind-induced oscillation of a light deck\n(E) Carries its load in compression, suiting masonry and concrete\n(F) Uses cables anchored on shore rather than in the riverbed",
+    "targetLevel": "표 채우기",
+    "answerEn": "SUSPENSION: (A), (D); ARCH: (B), (E); CANTILEVER: (C). Statement (F) is a true but redundant restatement of the anchoring described for suspension bridges and adds no distinguishing information, so it functions as a distractor. The passage assigns tension and long spans plus wind oscillation to suspension bridges, compression and thrust-resisting foundations to arches, and construction without falsework to cantilevers.",
+    "answerKo": "현수교: (A), (D) / 아치교: (B), (E) / 캔틸레버교: (C). (F)는 현수교 설명의 단순 반복으로 변별력이 없는 오답 보기입니다. 인장·최장 경간·바람에 의한 진동은 현수교, 압축·수평 추력을 견디는 지반은 아치교, 하부 가설재 없이 시공 가능한 점은 캔틸레버교의 특징입니다.",
+    "keyExpressions": [
+      {
+        "en": "tension",
+        "ko": "인장(력)"
+      },
+      {
+        "en": "compression",
+        "ko": "압축(력)"
+      },
+      {
+        "en": "abutment",
+        "ko": "교대, 받침벽"
+      },
+      {
+        "en": "falsework",
+        "ko": "가설 지지 구조물"
+      },
+      {
+        "en": "oscillate",
+        "ko": "진동하다"
+      }
+    ],
+    "tips": "표 채우기는 지문이 대개 '항목별 단락'으로 구성되므로, 각 단락에서 그 항목만의 고유 특징에 밑줄을 치며 읽으세요. 두 항목에 모두 해당될 수 있는 일반적 서술이나, 이미 다른 보기와 내용이 겹치는 중복 진술은 오답인 경우가 많습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "모스 부호와 전신망",
+    "question": "Early electrical telegraphs in Britain used needle instruments in which several wires deflected pointers toward letters printed on a dial. The scheme was intuitive and required no training, but each additional wire multiplied the cost of a line, and the wires were the dominant expense of any long circuit.\n\nSamuel Morse and Alfred Vail took the opposite approach, encoding the alphabet as sequences of long and short pulses on a single wire. The burden shifted from the apparatus to the operator, who had to memorize the code, but a single conductor could now carry any message. Vail is thought to have assigned the shortest symbols to the most frequent English letters by counting the type in a printer's case, a decision that reduced average transmission time considerably. Operators soon learned to read messages by ear rather than from the paper tape the receiver produced.\n\nAccording to the passage, what was the principal advantage of the Morse system over needle telegraphs?\n(A) It required no training on the part of operators.\n(B) It transmitted messages onto paper tape automatically.\n(C) It reduced the number of wires needed for a circuit to one.\n(D) It used symbols of equal length for every letter.",
+    "targetLevel": "사실 정보",
+    "answerEn": "(C) The passage identifies wires as 'the dominant expense of any long circuit' for needle systems and then states that under Morse's scheme 'a single conductor could now carry any message.' (A) describes the needle instruments, not Morse, whose operators had to memorize the code. (B) mentions the paper tape, but the passage treats it as incidental and notes operators preferred reading by ear. (D) contradicts the description of shorter symbols assigned to frequent letters.",
+    "answerKo": "정답 (C). 지문은 바늘식 전신에서 전선이 최대 비용 요인이었고, 모스 방식에서는 단일 도체로 모든 메시지를 보낼 수 있게 되었다고 명시합니다. (A)는 바늘식의 특징이고, (B)는 부수적 사실이며, (D)는 빈도에 따라 부호 길이를 달리했다는 서술과 모순됩니다.",
+    "keyExpressions": [
+      {
+        "en": "deflect",
+        "ko": "편향시키다"
+      },
+      {
+        "en": "circuit",
+        "ko": "회로, 회선"
+      },
+      {
+        "en": "encode",
+        "ko": "부호화하다"
+      },
+      {
+        "en": "conductor",
+        "ko": "도체, 전선"
+      },
+      {
+        "en": "transmission",
+        "ko": "전송"
+      }
+    ],
+    "tips": "사실 정보 문제에서 두 대상을 비교하는 지문은 특징이 서로 뒤바뀐 보기가 반드시 출제됩니다. 읽을 때 A방식과 B방식의 특징을 간단히 표로 나누어 메모해두면 이런 함정을 즉시 걸러낼 수 있습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "제트엔진의 등장",
+    "question": "The piston engine and propeller that carried aviation through the 1930s faced a ceiling that was aerodynamic rather than mechanical. As a propeller's tip speed approaches the speed of sound, shock waves form and thrust collapses, so higher aircraft speeds could not be obtained simply by adding power. [1] Frank Whittle in Britain and Hans von Ohain in Germany independently proposed compressing air with a turbine-driven compressor, burning fuel continuously, and extracting thrust from the exhaust jet.\n\n[2] The concept was straightforward; the metallurgy was not. Turbine blades had to spin in gas at temperatures approaching their own melting point while sustaining enormous centrifugal loads. [3] Early engines were rated in tens of hours between overhauls. Nickel-based superalloys, and later internally cooled hollow blades, gradually raised operating temperatures and with them efficiency. [4] Thus a propulsion idea patented in 1930 became commercially practical only in the 1950s.\n\nLook at the four squares that indicate where the following sentence could be added to the passage: 'Progress therefore depended less on aerodynamic theory than on the development of new alloys.'\nWhere would the sentence best fit?\n(A) [1]\n(B) [2]\n(C) [3]\n(D) [4]",
+    "targetLevel": "문장 삽입",
+    "answerEn": "(C) The inserted sentence draws a conclusion ('therefore') from the metallurgical difficulties just described, and it introduces the alloys that the following sentence goes on to name. Position [3] sits after the statement of blade temperature and centrifugal loads and before the discussion of nickel-based superalloys. (A) and (B) precede any mention of materials problems. (D) comes after the alloy discussion has concluded, leaving 'therefore' without its immediate cause.",
+    "answerKo": "정답 (C). 삽입 문장의 'therefore'는 앞서 서술된 야금학적 난제로부터의 결론이며, 뒤이어 니켈계 초합금이 구체적으로 등장하므로 [3]이 가장 자연스럽습니다. [1], [2]는 재료 문제가 언급되기 전이고, [4]는 합금 논의가 끝난 뒤라 인과 연결이 끊깁니다.",
+    "keyExpressions": [
+      {
+        "en": "tip speed",
+        "ko": "익단 속도"
+      },
+      {
+        "en": "shock wave",
+        "ko": "충격파"
+      },
+      {
+        "en": "centrifugal load",
+        "ko": "원심 하중"
+      },
+      {
+        "en": "superalloy",
+        "ko": "초합금"
+      },
+      {
+        "en": "overhaul",
+        "ko": "분해 정비"
+      }
+    ],
+    "tips": "삽입 문장에 therefore, thus, as a result 같은 결과 연결어가 있으면 '원인 문장 바로 뒤'가 자리입니다. 동시에 삽입 문장이 도입한 소재(여기서는 alloys)가 그 다음 문장에서 구체화되는지 확인하면 위치를 확정할 수 있습니다."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "포틀랜드 시멘트와 철근",
+    "question": "Concrete is exceptionally strong in compression and weak in tension, a combination that confined it for centuries to arches, domes, and foundations where loads press rather than pull. A concrete beam spanning between two supports cracks along its underside, where bending places the material in tension, long before the compressed upper surface approaches its limit.\n\nEmbedding steel bars near that lower face resolves the mismatch, since steel is strong precisely where concrete is deficient. The partnership depends on two coincidences. The two materials expand at nearly identical rates when heated, so temperature changes do not shear them apart, and the alkaline environment of cured cement passivates the steel, protecting it from corrosion. Where that alkalinity is lost, through carbonation or the intrusion of chloride from seawater or de-icing salt, the steel rusts, expands, and splits the concrete that was meant to shield it.\n\nWhat can be inferred about reinforced concrete structures exposed to seawater?\n(A) They will crack on their upper compressed surfaces first.\n(B) They are likely to deteriorate faster than comparable inland structures.\n(C) Their steel reinforcement expands at a different rate from the concrete.\n(D) They require no protective alkaline environment.",
+    "targetLevel": "추론",
+    "answerEn": "(B) The passage states that chloride intrusion from seawater destroys the alkalinity that passivates the steel, after which the steel rusts, expands, and splits the concrete. It follows that marine exposure accelerates deterioration relative to structures without that chloride source. (A) contradicts the account of cracking on the tension face. (C) misstates the thermal coincidence, which holds regardless of environment. (D) reverses the passage, which makes alkalinity essential to protection.",
+    "answerKo": "정답 (B). 해수의 염화물이 알칼리성을 파괴해 철근을 부식시키고 팽창시켜 콘크리트를 갈라놓는다는 서술로부터, 해양 노출 구조물이 더 빨리 열화된다는 추론이 성립합니다. (A)는 인장면 균열 설명과 모순, (C)는 열팽창 계수 일치라는 전제를 왜곡, (D)는 지문을 뒤집은 진술입니다.",
+    "keyExpressions": [
+      {
+        "en": "in tension / in compression",
+        "ko": "인장 상태 / 압축 상태"
+      },
+      {
+        "en": "bending",
+        "ko": "휨, 굽힘"
+      },
+      {
+        "en": "passivate",
+        "ko": "부동태화하다, 보호막을 형성하다"
+      },
+      {
+        "en": "carbonation",
+        "ko": "탄산화"
+      },
+      {
+        "en": "chloride",
+        "ko": "염화물"
+      }
+    ],
+    "tips": "추론 문제에서 지문이 '조건 → 결과' 인과 사슬을 제시하면, 그 사슬의 마지막 단계를 특정 상황에 적용한 보기가 정답입니다. 지문의 인과를 반대로 뒤집거나, 전제 조건을 부정하는 보기는 명확한 오답이므로 빠르게 소거하세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "집적회로와 무어의 법칙",
+    "question": "In 1965 Gordon Moore observed that the number of components economically placed on a single chip had roughly doubled each year since 1959 and predicted the trend would continue for a decade. The observation was not a law of physics. It described an economic equilibrium in which the cost of the increasingly elaborate equipment required for finer features was repaid by the larger number of circuits each wafer yielded.\n\nThe industry subsequently treated the projection as a schedule. Equipment makers, materials suppliers, and design tool vendors coordinated their roadmaps around an agreed cadence, so that a prediction became partly self-fulfilling. Physical limits nevertheless assert themselves: as features approach the dimensions of a few atoms, leakage currents rise and manufacturing variability grows. Recent gains have come less from shrinking transistors than from stacking them vertically and specializing chip architectures for particular workloads.\n\nWhy does the author state that Moore's observation 'was not a law of physics'?\n(A) To argue that Moore's prediction turned out to be inaccurate\n(B) To emphasize that the trend rested on economic and coordinated industrial conditions\n(C) To show that physicists disagreed with Moore's methods\n(D) To explain why leakage currents increase at small dimensions",
+    "targetLevel": "수사적 의도",
+    "answerEn": "(B) The denial is immediately followed by a positive characterization: the trend 'described an economic equilibrium,' and the next paragraph shows the industry coordinating roadmaps to sustain it. The phrase therefore reframes the observation as contingent on economics and cooperation rather than physical necessity. (A) is wrong because the passage treats the prediction as broadly borne out. (C) invents a dispute the text never mentions. (D) refers to a later point about physical limits, not to the purpose of this phrase.",
+    "answerKo": "정답 (B). '물리 법칙이 아니었다'는 부정 뒤에 곧바로 '경제적 균형을 서술한 것'이라는 대체 설명이 이어지고, 다음 단락에서 업계의 조율이 이를 자기충족적으로 만들었다고 서술합니다. 즉 필연이 아닌 경제적·산업적 조건임을 강조하려는 의도입니다.",
+    "keyExpressions": [
+      {
+        "en": "equilibrium",
+        "ko": "균형"
+      },
+      {
+        "en": "wafer",
+        "ko": "웨이퍼"
+      },
+      {
+        "en": "cadence",
+        "ko": "주기, 리듬"
+      },
+      {
+        "en": "self-fulfilling",
+        "ko": "자기충족적인"
+      },
+      {
+        "en": "leakage current",
+        "ko": "누설 전류"
+      }
+    ],
+    "tips": "수사적 의도에서 'X was not Y' 형태의 부정문은 거의 항상 바로 뒤 문장의 긍정적 재규정과 짝을 이룹니다. 부정된 내용 자체를 반복한 보기보다, 그 부정을 통해 저자가 세우려는 새로운 규정을 담은 보기를 고르세요."
+  },
+  {
+    "exam": "TOEFL Reading",
+    "category": "기술사·발명·공학",
+    "topic": "상수도와 도시 위생",
+    "question": "Nineteenth-century cities outgrew the wells and cisterns that had served them, and the aqueducts built to replace those sources transformed urban life in ways their promoters had not anticipated. Piped supply was justified chiefly by fire protection and by the convenience of not carrying water, yet its most consequential effect was on the removal of waste. Abundant water made the flush closet practical, and the flush closet overwhelmed the cesspools that cities had relied on for centuries.\n\nEngineers were thus obliged to build sewers to carry away the very water they had brought in, and the sewage they discharged contaminated the rivers from which downstream cities drew their own supply. Each municipal solution generated a problem at the next scale, and the sequence terminated only with the acceptance that treatment, not merely conveyance, was a public responsibility.\n\nThe phrase 'the very water they had brought in' refers to\n(A) water drawn from wells and cisterns\n(B) the piped supply delivered by the new aqueducts\n(C) river water taken by downstream cities\n(D) treated effluent discharged from sewage plants",
+    "targetLevel": "지시 대상",
+    "answerEn": "(B) The sentence says engineers had to build sewers to carry away the very water 'they had brought in,' and what engineers had brought in was the piped aqueduct supply described in the first paragraph. (A) names the older sources the aqueducts replaced, which engineers did not bring in. (C) describes water withdrawn elsewhere and later in the causal chain. (D) refers to treatment, which the passage presents as a still later development.",
+    "answerKo": "정답 (B). '그들이 끌어들인 바로 그 물'은 앞 단락에서 기술자들이 수도관으로 공급한 상수, 즉 새 수도교의 급수를 가리킵니다. (A)는 대체된 옛 수원, (C)는 인과 사슬의 뒷단계, (D)는 더 나중에 등장하는 처리수입니다.",
+    "keyExpressions": [
+      {
+        "en": "cistern",
+        "ko": "물탱크, 저수조"
+      },
+      {
+        "en": "aqueduct",
+        "ko": "수도교, 도수로"
+      },
+      {
+        "en": "cesspool",
+        "ko": "오수 구덩이"
+      },
+      {
+        "en": "conveyance",
+        "ko": "수송, 이송"
+      },
+      {
+        "en": "municipal",
+        "ko": "지방자치의, 시의"
+      }
+    ],
+    "tips": "지시 대상 문제에서 'the very N they had V-ed' 같은 강조 구문은 앞서 서술된 특정 행위의 목적어를 가리킵니다. 문장의 주어(여기서는 engineers)가 실제로 한 행동을 지문에서 찾으면 지시 대상이 자동으로 확정됩니다."
   }
 ];

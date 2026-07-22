@@ -169,6 +169,7 @@
   .topic-badge{font-size:11px;font-weight:800;padding:2px 9px;border-radius:99px;color:var(--accent);background:var(--accent-weak);border:1px solid transparent}
   .lvl-badge{font-size:11px;font-weight:700;padding:2px 9px;border-radius:99px;color:var(--star);background:transparent;border:1px solid var(--star)}
   .sp-q{font-size:15px;font-weight:700;line-height:1.5}
+  .passage{font-size:14.5px;line-height:1.85;background:var(--surface-2);border-radius:var(--radius-sm);padding:16px 18px;border-left:3px solid var(--accent);white-space:normal}
   .sp-toggle{flex-shrink:0;font-size:14px;color:var(--faint);transition:transform .2s;margin-top:2px}
   .sp-item.open .sp-toggle{transform:rotate(180deg)}
   .sp-body{display:none;padding:0 16px 18px}
@@ -324,6 +325,7 @@
       <span class="ic">🔎</span>
       <input id="read-search" type="search" placeholder="유형·지문 검색 (예: inference, 천문)…" />
     </div>
+    <div class="filter-row" id="read-level"></div>
     <div class="filter-row" id="read-cat"></div>
     <div class="filter-row" id="read-topic"></div>
     <div class="count-line" id="read-count"></div>
@@ -573,9 +575,10 @@
   function makeExamPanel(prefix, exams, opt){
     opt = opt || {};
     const POOL = TOPICS.filter(t=>exams.indexOf(t.exam)>=0);
-    let fExam="all", fCat="all", fTopic="all";
+    let fExam="all", fCat="all", fTopic="all", fLevel="all";
     const byExam = t => fExam==="all"||t.exam===fExam;
     const examBox = $(prefix+"-exam");
+    const levelBox = $(prefix+"-level");
 
     $(prefix+"-search").addEventListener("input",render);
     if(exams.length>1 && examBox){
@@ -585,6 +588,16 @@
       }));
     }
 
+    function buildLevels(){
+      if(!levelBox)return;
+      const lvs=Array.from(new Set(POOL.map(t=>t.targetLevel).filter(Boolean)));
+      levelBox.innerHTML='<button data-lvf="all" aria-pressed="true">'+(opt.levelAllLabel||"전체 유형")+'</button>'+
+        lvs.map(c=>'<button data-lvf="'+esc(c)+'" aria-pressed="false">'+esc(c)+'</button>').join('');
+      levelBox.querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{
+        levelBox.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+        fLevel=b.dataset.lvf; render();
+      }));
+    }
     function buildCats(){
       const cats=Array.from(new Set(POOL.filter(byExam).map(t=>t.category).filter(Boolean)));
       $(prefix+"-cat").innerHTML='<button data-cat="all" aria-pressed="true">전체 분류</button>'+
@@ -612,6 +625,7 @@
       if(!byExam(t))return false;
       if(fCat!=="all"&&t.category!==fCat)return false;
       if(fTopic!=="all"&&t.topic!==fTopic)return false;
+      if(fLevel!=="all"&&t.targetLevel!==fLevel)return false;
       if(q&&!((t.question||"").toLowerCase().includes(q)||(t.category||"").toLowerCase().includes(q)||(t.topic||"").toLowerCase().includes(q)||(t.answerEn||"").toLowerCase().includes(q)||(t.answerKo||"").includes(q)))return false;
       return true;
     });
@@ -629,11 +643,12 @@
               (t.category?'<span class="cat-badge">'+esc(t.category)+'</span>':'')+
               (t.topic?'<span class="topic-badge">'+esc(t.topic)+'</span>':'')+
               (t.targetLevel?'<span class="lvl-badge">'+esc(t.targetLevel)+'</span>':'')+'</div>'+
-            '<div class="sp-q">'+esc(t.question).replace(/\n/g,"<br/>")+'</div>'+
+            '<div class="sp-q">'+(HEAD_TOPIC?esc(t.topic):esc(t.question).replace(/\n/g,"<br/>"))+'</div>'+
           '</div>'+
           '<div class="sp-toggle">▼</div>'+
         '</div>'+
         '<div class="sp-body">'+
+          (HEAD_TOPIC?'<div class="sp-sec-title">'+PASSAGE_TITLE+'</div><div class="passage">'+esc(t.question).replace(/\n/g,"<br/>")+'</div>':'')+
           '<div class="sp-controls">'+
             '<button data-act="play">▶ '+PLAY+'</button>'+
             '<button data-act="stop">■ 정지</button>'+
@@ -657,16 +672,18 @@
     });
     }
 
+    const HEAD_TOPIC = !!opt.headTopic;
+    const PASSAGE_TITLE = opt.passageTitle || "📄 지문·문제";
     const PLAY = opt.playLabel || "원어민 음성";
     const KO_LABEL = opt.koLabel || "한글 번역";
     const ANS_TITLE = opt.ansTitle || "";
-    buildCats(); buildTopics();
+    buildLevels(); buildCats(); buildTopics();
     return render;
   }
 
   const renderSpeak = makeExamPanel("speak",["OPIc","TOEIC","TOEFL"]);
-  const renderWrite  = makeExamPanel("write",["TOEFL Writing"],{playLabel:"에세이 낭독",ansTitle:"📝 모범 답안"});
-  const renderRead   = makeExamPanel("read",["TOEFL Reading"],{playLabel:"영어 해설 듣기",koLabel:"한글 해설",ansTitle:"✅ 정답·풀이"});
+  const renderWrite  = makeExamPanel("write",["TOEFL Writing"],{playLabel:"에세이 낭독",ansTitle:"📝 모범 답안",headTopic:true,passageTitle:"📄 문제 (지문·강의·토론)"});
+  const renderRead   = makeExamPanel("read",["TOEFL Reading"],{playLabel:"영어 해설 듣기",koLabel:"한글 해설",ansTitle:"✅ 정답·풀이",levelAllLabel:"전체 문제 유형",headTopic:true,passageTitle:"📄 지문·문제"});
 
   // ---- 초기화 ----
   $("reset-btn").addEventListener("click",()=>{ if(confirm("모든 학습 기록(외움/즐겨찾기)을 지울까요?")){ store={known:{},star:{}}; save(); updateProgress(); renderCard(); if($("panel-browse").classList.contains("active"))renderBrowse(); toast("학습 기록을 초기화했습니다"); } });
