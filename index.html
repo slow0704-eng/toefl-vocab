@@ -130,9 +130,30 @@
   @keyframes optPop{0%{transform:scale(1)}35%{transform:scale(1.035)}100%{transform:scale(1)}}
   @keyframes optShake{10%,90%{transform:translateX(-3px)}20%,80%{transform:translateX(5px)}30%,50%,70%{transform:translateX(-7px)}40%,60%{transform:translateX(7px)}}
 
-  /* 연속 정답 배지 */
+  /* 연속 정답 배지 — 콤보가 쌓일수록 등급이 올라간다 */
   .streak{font-size:12px;font-weight:800;padding:4px 11px;border-radius:99px;color:#fff;background:linear-gradient(135deg,#f59e0b,#ef4444);box-shadow:0 2px 10px rgba(239,68,68,.35);animation:streakIn .4s cubic-bezier(.3,1.5,.5,1);white-space:nowrap}
   @keyframes streakIn{0%{transform:scale(.4);opacity:0}60%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
+  .streak.t1{background:linear-gradient(135deg,#f97316,#dc2626);box-shadow:0 2px 11px rgba(220,38,38,.45)}
+  .streak.t2{background:linear-gradient(135deg,#8b5cf6,#d946ef);box-shadow:0 2px 13px rgba(217,70,239,.5)}
+  .streak.t3{background:linear-gradient(135deg,#06b6d4,#3b82f6);box-shadow:0 2px 13px rgba(59,130,246,.5)}
+  .streak.t4{background:linear-gradient(135deg,#f43f5e,#8b5cf6,#3b82f6);box-shadow:0 2px 15px rgba(139,92,246,.55)}
+  .streak.t5{background:linear-gradient(135deg,#fbbf24,#f43f5e,#8b5cf6);box-shadow:0 2px 18px rgba(244,63,94,.6);animation:streakIn .4s cubic-bezier(.3,1.5,.5,1),streakGlow 1.3s .4s infinite alternate}
+  @keyframes streakGlow{from{filter:brightness(1)}to{filter:brightness(1.28)}}
+  .best-combo{color:var(--faint);font-weight:700;font-size:12.5px}
+  .rec-tag{font-size:11.5px;font-weight:800;color:#fff;background:linear-gradient(135deg,#fbbf24,#f43f5e);padding:3px 10px;border-radius:99px;white-space:nowrap;animation:streakIn .45s cubic-bezier(.3,1.5,.5,1)}
+  .combo-sum{max-width:320px;margin:18px auto 0;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 16px}
+  .combo-sum .cs-row{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13.5px;color:var(--dim);padding:4px 0}
+  .combo-sum .cs-row b{color:var(--text);font-weight:800}
+  .combo-sum .cs-new{margin-top:9px;font-size:13.5px;font-weight:800;color:#fff;background:linear-gradient(135deg,#fbbf24,#f43f5e);padding:7px;border-radius:8px}
+  .combo-sum .cs-hint{margin-top:9px;font-size:12.5px;color:var(--accent);font-weight:700}
+
+  /* 콤보 마일스톤 팝업 */
+  .combo-pop{position:fixed;left:50%;top:36%;transform:translate(-50%,-50%);z-index:95;pointer-events:none;text-align:center;font-weight:900;letter-spacing:-1.5px;animation:comboPop 1.35s cubic-bezier(.2,1.25,.4,1) forwards}
+  .combo-pop .n{font-size:58px;line-height:1;background:linear-gradient(135deg,#f59e0b,#ef4444,#8b5cf6);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 20px rgba(239,68,68,.35))}
+  .combo-pop .rec{margin-top:8px;display:inline-block;font-size:14px;color:#fff;background:linear-gradient(135deg,#fbbf24,#f43f5e);padding:4px 14px;border-radius:99px;letter-spacing:0;box-shadow:0 3px 14px rgba(244,63,94,.45)}
+  .combo-pop .t{font-size:17px;margin-top:7px;color:var(--text);letter-spacing:-.4px}
+  @keyframes comboPop{0%{opacity:0;transform:translate(-50%,-50%) scale(.45)}16%{opacity:1;transform:translate(-50%,-50%) scale(1.14)}28%{transform:translate(-50%,-50%) scale(1)}72%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-62%) scale(1.03)}}
+  @media (max-width:560px){ .combo-pop .n{font-size:44px} }
 
   .quiz-foot{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
   .quiz-next{background:var(--accent);border:none;color:#fff;padding:12px 26px;border-radius:var(--radius-sm);font-weight:700;font-size:14px;visibility:hidden}
@@ -182,7 +203,7 @@
 
   @media (prefers-reduced-motion:reduce){
     .opt.correct,.opt.wrong,.streak,.quiz-next.on,.quiz-score b.bump,.reveal,.reveal .plus,.result .big{animation:none}
-    #confetti{display:none}
+    #confetti,.combo-pop{display:none}
   }
 
   /* 검색/필터 공통 */
@@ -611,9 +632,17 @@
       const tab=b.dataset.tab;
       document.body.classList.toggle("speaking-mode", tab==="speak"||tab==="write"||tab==="read"||tab==="gram");
       stopSpeak();
-      if(tab==="quiz") startQuiz();
+      // 탭을 다시 열 때 이미 채점된 화면이 남아 있으면 다음 문제로 넘긴다
+      // (진행 중인 세션과 콤보는 유지 — 잠깐 다른 탭을 봤다고 초기화되지 않게)
+      if(tab==="quiz"){
+        if(!quiz || !$("quiz-body").innerHTML) startQuiz();
+        else if(quiz.answered){ quiz.i++; renderQuiz(); }
+      }
       if(tab==="browse") renderBrowse();
-      if(tab==="gram" && !$("gram-body").innerHTML) startGram();
+      if(tab==="gram"){
+        if(!$("gram-body").innerHTML) startGram();
+        else if(gMode==="solve" && gram && gram.answered){ gram.i++; renderGram(); }
+      }
       if(tab==="speak") renderSpeak();
       if(tab==="write") renderWrite();
       if(tab==="read") renderRead();
@@ -640,15 +669,74 @@
     if(soundOn)beep("ok");
   });
 
+  // ---- 콤보 (연속 정답) — 어휘 퀴즈·문법 공용 ----
+  const COMBO_KEY="toefl-vocab-best-combo";
+  let bestCombo=(function(){ try{ const v=JSON.parse(localStorage.getItem(COMBO_KEY)); return (v&&typeof v==="object")?{quiz:v.quiz||0,gram:v.gram||0}:{quiz:0,gram:0}; }catch(e){ return {quiz:0,gram:0}; } })();
+  function saveBestCombo(){ try{ localStorage.setItem(COMBO_KEY,JSON.stringify(bestCombo)); }catch(e){} }
+  // 연속 정답 수에 따라 등급이 올라간다
+  const COMBO_TIERS=[
+    {min:15,icon:"👑",name:"전설",cls:"t5"},
+    {min:10,icon:"🌟",name:"압도적",cls:"t4"},
+    {min:7, icon:"💎",name:"완벽 모드",cls:"t3"},
+    {min:5, icon:"⚡",name:"무서운 기세",cls:"t2"},
+    {min:3, icon:"🔥",name:"불붙었다",cls:"t1"},
+    {min:2, icon:"🔥",name:"",cls:"t0"}
+  ];
+  function comboTier(n){ for(let i=0;i<COMBO_TIERS.length;i++){ if(n>=COMBO_TIERS[i].min)return COMBO_TIERS[i]; } return null; }
+  function comboBadge(n){
+    const t=comboTier(n); if(!t)return "";
+    return '<span class="streak '+t.cls+'">'+t.icon+' '+n+'연속'+(t.name?' · '+t.name:'')+'</span>';
+  }
+  // 3·5·7·10연속과 그 이후 5의 배수, 그리고 신기록에서 화면 중앙 팝업
+  function comboPopup(n,record){
+    if(reduceMotion)return;
+    const milestone = n>=3 && (n<10 ? (n===3||n===5||n===7) : n%5===0);
+    if(!milestone && !record)return;
+    const t=comboTier(n)||COMBO_TIERS[COMBO_TIERS.length-1];
+    const old=document.querySelector(".combo-pop"); if(old&&old.parentNode)old.parentNode.removeChild(old); // 빠르게 연달아 맞혀도 겹치지 않게
+    const el=document.createElement("div");
+    el.className="combo-pop";
+    el.innerHTML='<div class="n">'+t.icon+' '+n+' COMBO</div>'+
+      (record?'<div class="rec">🏆 신기록!</div>':'')+
+      (t.name?'<div class="t">'+t.name+'!</div>':'');
+    document.body.appendChild(el);
+    setTimeout(()=>{ if(el.parentNode)el.parentNode.removeChild(el); },1400);
+  }
+  // 정답 처리 공용: 콤보 갱신 → 신기록 여부 반환
+  // 신기록 축하는 한 연속(streak)당 한 번만 — 매 문제마다 뜨면 감흥이 없다
+  function registerCombo(sess,mode){
+    const s=sess.streak;
+    if(s===1) sess.streakBase=bestCombo[mode];   // 이번 연속이 넘어야 할 기준 기록
+    let record=false;
+    if(s>=3 && s>(sess.streakBase||0) && !sess.recordShown){ record=true; sess.recordShown=true; }
+    if(s>bestCombo[mode]){ bestCombo[mode]=s; saveBestCombo(); }
+    return record;
+  }
+  function bestLabel(mode){ return bestCombo[mode]>=2 ? ' <span class="best-combo">· 최고 🔥'+bestCombo[mode]+'</span>' : ''; }
+  // 결과 화면의 콤보 요약 — 개인 기록과 비교해 다음 도전 목표를 보여준다
+  function comboSummary(s,mode){
+    if(!s)return "";
+    const newRec = s.best>=3 && s.best>s.prevBest;
+    const need = bestCombo[mode]+1-s.best;
+    return '<div class="combo-sum">'+
+      '<div class="cs-row"><span>이번 판 최고 콤보</span>'+(s.best>=2?comboBadge(s.best):'<b>🔥 '+s.best+'연속</b>')+'</div>'+
+      '<div class="cs-row"><span>개인 최고 기록</span><b>🏆 '+bestCombo[mode]+'연속</b></div>'+
+      (newRec?'<div class="cs-new">🎊 신기록 달성!</div>'
+             :(need>0&&need<=5?'<div class="cs-hint">기록 경신까지 '+need+'연속 남았어요!</div>':''))+
+    '</div>';
+  }
+
   // 정답/오답 효과음 (WebAudio — 외부 파일 없이 즉석 생성)
   let audioCtx=null;
-  function beep(kind){
+  function beep(kind,combo){
     if(!soundOn)return;
     try{
       const AC=window.AudioContext||window.webkitAudioContext; if(!AC)return;
       audioCtx=audioCtx||new AC();
       if(audioCtx.state==="suspended")audioCtx.resume();
-      const notes = kind==="ok" ? [[784,0,.10],[1175,.08,.20]] : [[233,0,.14],[175,.10,.20]];
+      // 콤보가 쌓일수록 반음씩 높아져 상승감을 준다 (최대 1옥타브)
+      const m=Math.pow(2,Math.min(12,Math.max(0,(combo||1)-1))/12);
+      const notes = kind==="ok" ? [[784*m,0,.10],[1175*m,.08,.20]] : [[233,0,.14],[175,.10,.20]];
       notes.forEach(n=>{
         const o=audioCtx.createOscillator(), g=audioCtx.createGain();
         o.type = kind==="ok" ? "triangle" : "sawtooth";
@@ -687,7 +775,7 @@
     const list=pool.slice(0,Math.min(10,pool.length)).map(w=>({
       w:w, dir: quizDir==="mix" ? (Math.random()<.5?"w2k":"k2w") : quizDir
     }));
-    quiz={list:list,i:0,score:0,answered:false,streak:0,best:0};
+    quiz={list:list,i:0,score:0,answered:false,streak:0,best:0,prevBest:bestCombo.quiz,records:0};
     renderQuiz();
   }
   // 보기 3개: 같은 난이도에서 우선 뽑고, 뜻·단어가 겹치지 않게 고른다
@@ -698,7 +786,7 @@
     for(let i=0;i<pool.length&&out.length<3;i++){ const w=pool[i]; if(usedKo[w.ko])continue; usedKo[w.ko]=1; out.push(w); }
     return out;
   }
-  function streakHTML(){ return quiz&&quiz.streak>=2 ? '<span class="streak">🔥 '+quiz.streak+'연속</span>' : ''; }
+  function streakHTML(){ return quiz ? comboBadge(quiz.streak) : ''; }
   function renderQuiz(){
     if(!quiz)return;
     if(!quiz.list.length){ $("quiz-body").innerHTML='<div class="empty">이 조건에 해당하는 단어가 없습니다.<br/>난이도·주제 필터를 넓혀 보세요.</div>'; return; }
@@ -719,7 +807,7 @@
     $("quiz-body").innerHTML='<div class="quiz-card">'+
       '<div class="quiz-progress"><i style="width:'+pct+'%"></i></div>'+head+
       opts.map((o,i)=>'<button class="opt" data-w="'+esc(o.word)+'"><span class="key">'+(i+1)+'</span>'+esc(k2w?o.word:o.ko)+'</button>').join('')+
-      '<div class="quiz-foot"><span class="quiz-score">점수 <b id="quiz-score-n">'+quiz.score+'</b> / '+quiz.list.length+'</span>'+
+      '<div class="quiz-foot"><span class="quiz-score">점수 <b id="quiz-score-n">'+quiz.score+'</b> / '+quiz.list.length+bestLabel("quiz")+'</span>'+
       '<button class="quiz-next" id="quiz-next">다음 →</button></div>'+
       '<div id="quiz-reveal"></div>'+
       '<div class="quiz-hint">키보드: <b>1~4</b> 답 고르기 · <b>Enter</b> 다음 문제</div>'+
@@ -731,18 +819,22 @@
   function answer(btn,q){
     if(quiz.answered)return; quiz.answered=true;
     const correct=btn.dataset.w===q.word;
+    let record=false;
     if(correct){
       quiz.score++; quiz.streak++; quiz.best=Math.max(quiz.best,quiz.streak);
       btn.classList.add("correct");
       store.known[q.word]=true; save(); updateProgress();
-      beep("ok");
-      confetti(quiz.streak>=5?70:quiz.streak>=3?45:26);
+      record=registerCombo(quiz,"quiz");
+      if(record)quiz.records++;
+      beep("ok",quiz.streak);
+      confetti(record?110:quiz.streak>=10?90:quiz.streak>=5?70:quiz.streak>=3?45:26);
+      comboPopup(quiz.streak,record);
       const sn=$("quiz-score-n"); sn.textContent=quiz.score; sn.classList.add("bump");
       // 진행바를 정답 직후 한 칸 채워 성취감을 준다
       const barI=document.querySelector(".quiz-progress > i");
       if(barI)barI.style.width=Math.round((quiz.i+1)/quiz.list.length*100)+"%";
     }else{
-      quiz.streak=0;
+      quiz.streak=0; quiz.recordShown=false;   // 연속이 끊기면 다음 연속에서 다시 신기록 도전
       btn.classList.add("wrong");
       beep("no");
     }
@@ -750,7 +842,7 @@
     // 상단 연속 배지도 이번 채점 결과로 즉시 갱신 (해설의 배지와 숫자가 어긋나지 않게)
     const sb=$("quiz-streak"); if(sb) sb.innerHTML=streakHTML();
     // 정답 해설: 판정 + 단어·뜻·예문 (다음 버튼 아래에 표시)
-    const streakLine = correct&&quiz.streak>=2 ? ' <span class="streak">🔥 '+quiz.streak+'연속</span>' : '';
+    const streakLine = correct ? ' '+comboBadge(quiz.streak)+(record?' <span class="rec-tag">🏆 신기록</span>':'') : '';
     $("quiz-reveal").innerHTML='<div class="reveal '+(correct?"ok":"no")+'">'+
       '<div class="verdict">'+(correct?'🎉 정답! <span class="plus">+1</span>':'💡 아쉬워요 — 정답은')+streakLine+'</div>'+
       '<div class="rv-word">'+esc(q.word)+' <button class="speak" id="quiz-speak2" style="vertical-align:middle;margin-left:4px;padding:4px 10px">🔊</button></div>'+
@@ -767,10 +859,10 @@
     const perfect=quiz.score===quiz.list.length;
     const msg=perfect?"완벽해요! 만점입니다 🏆":pct>=80?"훌륭해요! 🎉":pct>=50?"좋아요, 조금만 더! 💪":"복습이 필요해요 📖";
     $("quiz-body").innerHTML='<div class="result"><div class="big">'+quiz.score+' / '+quiz.list.length+'</div><p>'+msg+' ('+pct+'%)</p>'+
-      '<button class="btn good" style="max-width:220px;margin:0 auto" id="quiz-restart">다시 풀기 (Enter)</button>'+
-      (quiz.best>=2?'<div class="best">최고 연속 정답 🔥 '+quiz.best+'개</div>':'')+'</div>';
+      comboSummary(quiz,"quiz")+
+      '<button class="btn good" style="max-width:220px;margin:14px auto 0" id="quiz-restart">다시 풀기 (Enter)</button></div>';
     $("quiz-restart").addEventListener("click",startQuiz);
-    if(pct>=80){ confetti(perfect?140:80); beep("ok"); }
+    if(pct>=80){ confetti(perfect?140:80); beep("ok",quiz.best); }
   }
   // ---- 퀴즈 키보드 조작 ----
   document.addEventListener("keydown",e=>{
@@ -1030,7 +1122,7 @@
     $("gram-count").textContent = pool.length+"문항"+(gMode==="solve"&&pool.length?" 중 10문항 출제":"");
     if(!pool.length){ gram=null; $("gram-body").innerHTML='<div class="empty">조건에 맞는 문제가 없습니다.<br/>유형·난이도 필터를 넓혀 보세요.</div>'; return; }
     if(gMode==="list"){ gram=null; renderGramList(pool); return; }
-    gram={list:shuffled(pool).slice(0,Math.min(10,pool.length)),i:0,score:0,answered:false,streak:0,best:0};
+    gram={list:shuffled(pool).slice(0,Math.min(10,pool.length)),i:0,score:0,answered:false,streak:0,best:0,prevBest:bestCombo.gram,records:0};
     renderGram();
   }
   function renderGram(){
@@ -1048,7 +1140,7 @@
         '<span class="lv-badge '+LV[g.level].c+'">'+LV[g.level].n+'</span></div>'+
       gramSentence(g)+
       g.opts.map((o,i)=>'<button class="opt" data-i="'+i+'"><span class="key ab">'+AB[i]+'</span>'+esc(o)+'</button>').join('')+
-      '<div class="quiz-foot"><span class="quiz-score">점수 <b id="gram-score-n">'+gram.score+'</b> / '+gram.list.length+'</span>'+
+      '<div class="quiz-foot"><span class="quiz-score">점수 <b id="gram-score-n">'+gram.score+'</b> / '+gram.list.length+bestLabel("gram")+'</span>'+
       '<button class="quiz-next" id="gram-next">다음 →</button></div>'+
       '<div id="gram-reveal"></div>'+
       '<div class="quiz-hint">키보드: <b>A~D</b> 또는 <b>1~4</b> 답 고르기 · <b>Enter</b> 다음 문제</div>'+
@@ -1056,23 +1148,28 @@
     $("gram-body").querySelectorAll(".opt").forEach(o=>o.addEventListener("click",()=>answerGram(parseInt(o.dataset.i,10),g)));
     $("gram-next").addEventListener("click",()=>{ gram.i++; renderGram(); });
   }
-  function gramStreakHTML(){ return gram&&gram.streak>=2 ? '<span class="streak">🔥 '+gram.streak+'연속</span>' : ''; }
+  function gramStreakHTML(){ return gram ? comboBadge(gram.streak) : ''; }
   function answerGram(pick,g){
     if(gram.answered)return; gram.answered=true;
     const correct = pick===g.ans;
     const btns=$("gram-body").querySelectorAll(".opt");
+    let record=false;
     if(correct){
       gram.score++; gram.streak++; gram.best=Math.max(gram.best,gram.streak);
-      beep("ok"); confetti(gram.streak>=5?70:gram.streak>=3?45:26);
+      record=registerCombo(gram,"gram");
+      if(record)gram.records++;
+      beep("ok",gram.streak);
+      confetti(record?110:gram.streak>=10?90:gram.streak>=5?70:gram.streak>=3?45:26);
+      comboPopup(gram.streak,record);
       const sn=$("gram-score-n"); sn.textContent=gram.score; sn.classList.add("bump");
       const bi=document.querySelector("#gram-body .quiz-progress > i");
       if(bi)bi.style.width=Math.round((gram.i+1)/gram.list.length*100)+"%";
-    }else{ gram.streak=0; beep("no"); btns[pick].classList.add("wrong"); }
+    }else{ gram.streak=0; gram.recordShown=false; beep("no"); btns[pick].classList.add("wrong"); }
     btns.forEach((b,i)=>{ b.disabled=true; if(i===g.ans)b.classList.add("correct"); });
     const sb=$("gram-streak"); if(sb)sb.innerHTML=gramStreakHTML();
     $("gram-reveal").innerHTML='<div class="reveal '+(correct?"ok":"no")+'">'+
       '<div class="verdict">'+(correct?'🎉 정답! <span class="plus">+1</span>':'💡 아쉬워요 — 정답은 ('+AB[g.ans]+')')+
-        (correct&&gram.streak>=2?' <span class="streak">🔥 '+gram.streak+'연속</span>':'')+'</div>'+
+        (correct?' '+comboBadge(gram.streak)+(record?' <span class="rec-tag">🏆 신기록</span>':''):'')+'</div>'+
       gramSentence(g,g.opts[g.ans],"gram-list-q")+
       '<div class="gram-ko">'+esc(g.ko)+'</div>'+
       '<div class="gram-exp">'+esc(g.exp)+'</div>'+
@@ -1085,10 +1182,10 @@
     const perfect=gram.score===gram.list.length;
     const msg=perfect?"완벽해요! 만점입니다 🏆":pct>=80?"훌륭해요! 🎉":pct>=50?"좋아요, 조금만 더! 💪":"해설을 다시 보며 복습해요 📖";
     $("gram-body").innerHTML='<div class="result"><div class="big">'+gram.score+' / '+gram.list.length+'</div><p>'+msg+' ('+pct+'%)</p>'+
-      '<button class="btn good" style="max-width:220px;margin:0 auto" id="gram-restart">새 문제 풀기 (Enter)</button>'+
-      (gram.best>=2?'<div class="best">최고 연속 정답 🔥 '+gram.best+'개</div>':'')+'</div>';
+      comboSummary(gram,"gram")+
+      '<button class="btn good" style="max-width:220px;margin:14px auto 0" id="gram-restart">새 문제 풀기 (Enter)</button></div>';
     $("gram-restart").addEventListener("click",startGram);
-    if(pct>=80){ confetti(perfect?140:80); beep("ok"); }
+    if(pct>=80){ confetti(perfect?140:80); beep("ok",gram.best); }
   }
   // 문제 보기 모드: 제목만 보이고 누르면 정답·해석·해설 펼침
   function renderGramList(pool){
