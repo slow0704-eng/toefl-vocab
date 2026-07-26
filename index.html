@@ -166,6 +166,20 @@
   .result p{color:var(--dim);margin:6px 0 22px}
   .result .best{font-size:13px;color:var(--faint);margin-top:14px}
 
+  /* 문법 (토익 Part 5) */
+  .gram-q{font-size:18px;line-height:1.85;font-weight:600;margin:4px 0 22px;word-break:keep-all}
+  .gram-q .blank{display:inline-block;min-width:80px;border-bottom:2.5px solid var(--accent);margin:0 4px;vertical-align:-3px}
+  .gram-q .filled{color:var(--good);border-bottom:2.5px solid var(--good);padding:0 5px;font-weight:800}
+  .opt .key.ab{font-size:11px}
+  .gram-list-q{font-size:15px;font-weight:600;line-height:1.7;word-break:keep-all}
+  .gram-list-q .blank{display:inline-block;min-width:58px;border-bottom:2px solid var(--accent);margin:0 3px;vertical-align:-2px}
+  .gram-ans{font-size:15px;font-weight:800;color:var(--good);margin-bottom:8px}
+  .gram-opts{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 12px}
+  .gram-opts span{font-size:12.5px;padding:4px 11px;border-radius:99px;border:1px solid var(--border);background:var(--surface);color:var(--dim)}
+  .gram-opts span.ok{border-color:var(--good);background:var(--good-weak);color:var(--good);font-weight:800}
+  .gram-exp{font-size:13.5px;color:var(--text);background:var(--lv2-w);border-radius:8px;padding:11px 13px;border-left:3px solid var(--lv2);margin-top:8px}
+  .gram-ko{font-size:13.5px;color:var(--dim);margin-top:2px}
+
   @media (prefers-reduced-motion:reduce){
     .opt.correct,.opt.wrong,.streak,.quiz-next.on,.quiz-score b.bump,.reveal,.reveal .plus,.result .big{animation:none}
     #confetti{display:none}
@@ -313,6 +327,7 @@
     <button role="tab" aria-selected="true" data-tab="flash">🃏 카드</button>
     <button role="tab" aria-selected="false" data-tab="quiz">✍️ 퀴즈</button>
     <button role="tab" aria-selected="false" data-tab="browse">📚 단어장</button>
+    <button role="tab" aria-selected="false" data-tab="gram">📝 문법</button>
     <button role="tab" aria-selected="false" data-tab="speak">🎤 스피킹</button>
     <button role="tab" aria-selected="false" data-tab="write">✍️ 라이팅</button>
     <button role="tab" aria-selected="false" data-tab="read">📖 리딩</button>
@@ -397,6 +412,23 @@
     <div id="browse-list"></div>
   </section>
 
+  <!-- 문법 (토익 Part 5 형식) -->
+  <section class="panel" id="panel-gram">
+    <div class="search-box">
+      <span class="ic">🔎</span>
+      <input id="gram-search" type="search" placeholder="문장·해설 검색 (예: 관계대명사, because)…" />
+    </div>
+    <div class="lv-row" id="gram-lv"></div>
+    <div class="tp-row" id="gram-cat"></div>
+    <div class="filter-row" id="gram-mode">
+      <button data-gmode="solve" aria-pressed="true">🎯 문제 풀기</button>
+      <button data-gmode="list" aria-pressed="false">📚 문제 보기</button>
+      <button id="gram-shuffle" style="margin-left:auto">🔀 새 세트</button>
+    </div>
+    <div class="count-line" id="gram-count"></div>
+    <div id="gram-body"></div>
+  </section>
+
   <!-- 스피킹 -->
   <section class="panel" id="panel-speak">
     <div class="search-box">
@@ -445,13 +477,14 @@
 
 <footer>
   <div class="wrap">
-    TOEFL 어휘 <span id="foot-total"></span>개(난이도 4단계 · 주제 13종) + 오픽·토익스피킹·토플(스피킹/라이팅/리딩) 문항 <span id="foot-speak"></span>개 · 진행 상황 자동 저장
+    TOEFL 어휘 <span id="foot-total"></span>개(난이도 4단계 · 주제 13종) + 토익 Part 5 문법 <span id="foot-gram"></span>문항 + 오픽·토익스피킹·토플(스피킹/라이팅/리딩) 문항 <span id="foot-speak"></span>개 · 진행 상황 자동 저장
     <div class="toolbar-mini"><button id="reset-btn">↺ 학습 기록 초기화</button></div>
   </div>
 </footer>
 
 <script src="words.js"></script>
 <script src="speaking.js"></script>
+<script src="grammar.js"></script>
 <script>
 "use strict";
 (function(){
@@ -486,6 +519,7 @@
     const total=WORDS.length, known=WORDS.filter(w=>isKnown(w.word)).length;
     $("known-count").textContent=known; $("total-count").textContent=total;
     $("foot-total").textContent=total; $("foot-speak").textContent=TOPICS.length;
+    $("foot-gram").textContent=(window.GRAMMAR_QUESTIONS||[]).length;
     const pct=total?Math.round(known/total*100):0;
     $("pct").textContent=pct+"%"; $("bar-fill").style.width=pct+"%";
   }
@@ -575,10 +609,11 @@
       document.querySelectorAll('.panel').forEach(p=>p.classList.remove("active"));
       $("panel-"+b.dataset.tab).classList.add("active");
       const tab=b.dataset.tab;
-      document.body.classList.toggle("speaking-mode", tab==="speak"||tab==="write"||tab==="read");
+      document.body.classList.toggle("speaking-mode", tab==="speak"||tab==="write"||tab==="read"||tab==="gram");
       stopSpeak();
       if(tab==="quiz") startQuiz();
       if(tab==="browse") renderBrowse();
+      if(tab==="gram" && !$("gram-body").innerHTML) startGram();
       if(tab==="speak") renderSpeak();
       if(tab==="write") renderWrite();
       if(tab==="read") renderRead();
@@ -945,6 +980,158 @@
   $("btn-print").addEventListener("click",printList);
   $("btn-csv").addEventListener("click",downloadCSV);
 
+  // ---- 문법 (토익 Part 5 형식) ----
+  const GRAM = (window.GRAMMAR_QUESTIONS || []).slice();
+  const GCATS = (function(){ const s=[]; GRAM.forEach(g=>{ if(s.indexOf(g.cat)<0)s.push(g.cat); }); return s; })();
+  const AB = ["A","B","C","D"];
+  let gLv=0, gCat="all", gMode="solve", gram=null;
+
+  function gramPool(){
+    const q=($("gram-search").value||"").trim().toLowerCase();
+    return GRAM.filter(g=>{
+      if(gLv!==0 && g.level!==gLv)return false;
+      if(gCat!=="all" && g.cat!==gCat)return false;
+      if(q && !((g.q||"").toLowerCase().includes(q)||(g.ko||"").includes(q)||(g.exp||"").includes(q)||
+                (g.cat||"").includes(q)||(g.sub||"").includes(q)||(g.opts||[]).join(" ").toLowerCase().includes(q)))return false;
+      return true;
+    });
+  }
+  // 빈칸(----)을 밑줄 또는 정답이 채워진 형태로 렌더
+  function gramSentence(g, filled, cls){
+    const parts = esc(g.q).split("----");
+    const mid = filled ? '<span class="filled">'+esc(filled)+'</span>' : '<span class="blank"></span>';
+    return '<div class="'+(cls||"gram-q")+'">'+parts[0]+mid+(parts[1]||"")+'</div>';
+  }
+  function buildGramChips(){
+    const inCat = GRAM.filter(g=>gCat==="all"||g.cat===gCat);
+    $("gram-lv").innerHTML = [[0,"전체","--accent"],[1,"기초","--lv1"],[2,"중급","--lv2"],[3,"고급","--lv3"]].map(function(d){
+      const cnt = d[0]===0?inCat.length:inCat.filter(g=>g.level===d[0]).length;
+      const dot = d[0]===0?"":'<span class="dot" style="background:var('+d[2]+')"></span>';
+      return '<button class="lv-chip" data-lv="'+d[0]+'" aria-pressed="'+(gLv===d[0])+'">'+dot+d[1]+' <span style="opacity:.7">'+cnt+'</span></button>';
+    }).join("");
+    const inLv = GRAM.filter(g=>gLv===0||g.level===gLv);
+    $("gram-cat").innerHTML = '<button class="tp-chip" data-gc="all" aria-pressed="'+(gCat==="all")+'">🗂 전체 유형<span class="c">'+inLv.length+'</span></button>'+
+      GCATS.map(function(c){
+        const n=inLv.filter(g=>g.cat===c).length;
+        return '<button class="tp-chip" data-gc="'+esc(c)+'" aria-pressed="'+(gCat===c)+'">'+esc(c)+'<span class="c">'+n+'</span></button>';
+      }).join("");
+    $("gram-lv").querySelectorAll(".lv-chip").forEach(b=>b.addEventListener("click",()=>{ gLv=parseInt(b.dataset.lv,10); buildGramChips(); startGram(); }));
+    $("gram-cat").querySelectorAll(".tp-chip").forEach(b=>b.addEventListener("click",()=>{ gCat=b.dataset.gc; buildGramChips(); startGram(); }));
+  }
+  $("gram-search").addEventListener("input",()=>{ buildGramChips(); startGram(); });
+  $("gram-mode").querySelectorAll("[data-gmode]").forEach(b=>b.addEventListener("click",()=>{
+    $("gram-mode").querySelectorAll("[data-gmode]").forEach(x=>x.setAttribute("aria-pressed",x===b));
+    gMode=b.dataset.gmode; startGram();
+  }));
+  $("gram-shuffle").addEventListener("click",()=>{ startGram(); toast(gMode==="solve"?"새 문제 세트를 뽑았습니다 🔀":"순서를 섞었습니다 🔀"); });
+
+  function startGram(){
+    const pool=gramPool();
+    $("gram-count").textContent = pool.length+"문항"+(gMode==="solve"&&pool.length?" 중 10문항 출제":"");
+    if(!pool.length){ gram=null; $("gram-body").innerHTML='<div class="empty">조건에 맞는 문제가 없습니다.<br/>유형·난이도 필터를 넓혀 보세요.</div>'; return; }
+    if(gMode==="list"){ gram=null; renderGramList(pool); return; }
+    gram={list:shuffled(pool).slice(0,Math.min(10,pool.length)),i:0,score:0,answered:false,streak:0,best:0};
+    renderGram();
+  }
+  function renderGram(){
+    if(!gram)return;
+    if(gram.i>=gram.list.length){ renderGramResult(); return; }
+    const g=gram.list[gram.i];
+    gram.answered=false;
+    const pct=Math.round(gram.i/gram.list.length*100);
+    $("gram-body").innerHTML='<div class="quiz-card">'+
+      '<div class="quiz-progress"><i style="width:'+pct+'%"></i></div>'+
+      '<div class="quiz-topline"><span class="quiz-q">빈칸에 알맞은 것을 고르세요 · '+(gram.i+1)+' / '+gram.list.length+'</span>'+
+        '<span id="gram-streak">'+gramStreakHTML()+'</span></div>'+
+      '<div class="sp-badges" style="margin-bottom:10px"><span class="cat-badge">'+esc(g.cat)+'</span>'+
+        (g.sub?'<span class="topic-tag">'+esc(g.sub)+'</span>':'')+
+        '<span class="lv-badge '+LV[g.level].c+'">'+LV[g.level].n+'</span></div>'+
+      gramSentence(g)+
+      g.opts.map((o,i)=>'<button class="opt" data-i="'+i+'"><span class="key ab">'+AB[i]+'</span>'+esc(o)+'</button>').join('')+
+      '<div class="quiz-foot"><span class="quiz-score">점수 <b id="gram-score-n">'+gram.score+'</b> / '+gram.list.length+'</span>'+
+      '<button class="quiz-next" id="gram-next">다음 →</button></div>'+
+      '<div id="gram-reveal"></div>'+
+      '<div class="quiz-hint">키보드: <b>A~D</b> 또는 <b>1~4</b> 답 고르기 · <b>Enter</b> 다음 문제</div>'+
+    '</div>';
+    $("gram-body").querySelectorAll(".opt").forEach(o=>o.addEventListener("click",()=>answerGram(parseInt(o.dataset.i,10),g)));
+    $("gram-next").addEventListener("click",()=>{ gram.i++; renderGram(); });
+  }
+  function gramStreakHTML(){ return gram&&gram.streak>=2 ? '<span class="streak">🔥 '+gram.streak+'연속</span>' : ''; }
+  function answerGram(pick,g){
+    if(gram.answered)return; gram.answered=true;
+    const correct = pick===g.ans;
+    const btns=$("gram-body").querySelectorAll(".opt");
+    if(correct){
+      gram.score++; gram.streak++; gram.best=Math.max(gram.best,gram.streak);
+      beep("ok"); confetti(gram.streak>=5?70:gram.streak>=3?45:26);
+      const sn=$("gram-score-n"); sn.textContent=gram.score; sn.classList.add("bump");
+      const bi=document.querySelector("#gram-body .quiz-progress > i");
+      if(bi)bi.style.width=Math.round((gram.i+1)/gram.list.length*100)+"%";
+    }else{ gram.streak=0; beep("no"); btns[pick].classList.add("wrong"); }
+    btns.forEach((b,i)=>{ b.disabled=true; if(i===g.ans)b.classList.add("correct"); });
+    const sb=$("gram-streak"); if(sb)sb.innerHTML=gramStreakHTML();
+    $("gram-reveal").innerHTML='<div class="reveal '+(correct?"ok":"no")+'">'+
+      '<div class="verdict">'+(correct?'🎉 정답! <span class="plus">+1</span>':'💡 아쉬워요 — 정답은 ('+AB[g.ans]+')')+
+        (correct&&gram.streak>=2?' <span class="streak">🔥 '+gram.streak+'연속</span>':'')+'</div>'+
+      gramSentence(g,g.opts[g.ans],"gram-list-q")+
+      '<div class="gram-ko">'+esc(g.ko)+'</div>'+
+      '<div class="gram-exp">'+esc(g.exp)+'</div>'+
+    '</div>';
+    const nb=$("gram-next"); nb.style.visibility="visible"; nb.classList.add("on");
+    nb.textContent=gram.i===gram.list.length-1?"결과 보기 →":"다음 →";
+  }
+  function renderGramResult(){
+    const pct=Math.round(gram.score/gram.list.length*100);
+    const perfect=gram.score===gram.list.length;
+    const msg=perfect?"완벽해요! 만점입니다 🏆":pct>=80?"훌륭해요! 🎉":pct>=50?"좋아요, 조금만 더! 💪":"해설을 다시 보며 복습해요 📖";
+    $("gram-body").innerHTML='<div class="result"><div class="big">'+gram.score+' / '+gram.list.length+'</div><p>'+msg+' ('+pct+'%)</p>'+
+      '<button class="btn good" style="max-width:220px;margin:0 auto" id="gram-restart">새 문제 풀기 (Enter)</button>'+
+      (gram.best>=2?'<div class="best">최고 연속 정답 🔥 '+gram.best+'개</div>':'')+'</div>';
+    $("gram-restart").addEventListener("click",startGram);
+    if(pct>=80){ confetti(perfect?140:80); beep("ok"); }
+  }
+  // 문제 보기 모드: 제목만 보이고 누르면 정답·해석·해설 펼침
+  function renderGramList(pool){
+    $("gram-body").innerHTML=pool.map((g,i)=>
+      '<div class="sp-item" data-i="'+i+'">'+
+        '<div class="sp-head"><div style="flex:1;min-width:0">'+
+          '<div class="sp-badges"><span class="cat-badge">'+esc(g.cat)+'</span>'+
+            (g.sub?'<span class="topic-tag">'+esc(g.sub)+'</span>':'')+
+            '<span class="lv-badge '+LV[g.level].c+'">'+LV[g.level].n+'</span></div>'+
+          gramSentence(g,null,"gram-list-q")+
+        '</div><div class="sp-toggle">▼</div></div>'+
+        '<div class="sp-body">'+
+          '<div class="gram-ans">정답 ('+AB[g.ans]+') '+esc(g.opts[g.ans])+'</div>'+
+          '<div class="gram-opts">'+g.opts.map((o,k)=>'<span class="'+(k===g.ans?"ok":"")+'">('+AB[k]+') '+esc(o)+'</span>').join('')+'</div>'+
+          gramSentence(g,g.opts[g.ans],"gram-list-q")+
+          '<div class="gram-ko">'+esc(g.ko)+'</div>'+
+          '<div class="gram-exp">'+esc(g.exp)+'</div>'+
+        '</div>'+
+      '</div>').join('');
+    $("gram-body").querySelectorAll(".sp-item").forEach(item=>{
+      item.querySelector(".sp-head").addEventListener("click",()=>item.classList.toggle("open"));
+    });
+  }
+  // 문법 키보드 조작 (A~D / 1~4 / Enter)
+  document.addEventListener("keydown",e=>{
+    if(!$("panel-gram").classList.contains("active"))return;
+    if(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA")return;
+    if(e.ctrlKey||e.altKey||e.metaKey)return;
+    const restart=$("gram-restart");
+    if(restart){ if(e.code==="Enter"||e.code==="Space"){ e.preventDefault(); restart.click(); } return; }
+    if(!gram||gMode!=="solve")return;
+    const opts=Array.prototype.slice.call($("gram-body").querySelectorAll(".opt"));
+    if(!opts.length)return;
+    const k=String(e.key||"").toUpperCase();
+    let idx=AB.indexOf(k);
+    if(idx<0){ const n=parseInt(e.key,10); if(n>=1&&n<=opts.length)idx=n-1; }
+    if(!gram.answered && idx>=0 && idx<opts.length){ e.preventDefault(); opts[idx].click(); return; }
+    if(e.code==="Enter"||e.code==="Space"||e.code==="ArrowRight"){
+      e.preventDefault();
+      if(gram.answered && $("gram-next")) $("gram-next").click();
+    }
+  });
+
   // ---- 스피킹 · 라이팅 · 리딩 (공용 패널) ----
   // prefix: DOM id 접두사, exams: 이 패널이 다루는 시험 목록, playLabel: 음성 버튼 문구
   function makeExamPanel(prefix, exams, opt){
@@ -1085,6 +1272,7 @@
   if(!WORDS.length){ document.querySelector("main").innerHTML='<div class="empty" style="margin-top:40px">words.js 를 불러오지 못했습니다.</div>'; return; }
   $("quiz-sound").setAttribute("aria-pressed",soundOn);
   $("quiz-sound").textContent=soundOn?"🔊 효과음":"🔇 효과음";
+  buildGramChips();
   syncBrowseView();
   updateProgress();
   rebuildOrder();
