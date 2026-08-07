@@ -93,6 +93,7 @@
     $("known-count").textContent=known; $("total-count").textContent=total;
     $("foot-total").textContent=total; $("foot-speak").textContent=TOPICS.length;
     $("foot-gram").textContent=(window.GRAMMAR_QUESTIONS||[]).length;
+    $("foot-struct").textContent=(window.STRUCTURES||[]).length;
     const d=window.DET_DATA||{};
     $("foot-det").textContent=((d.readComplete||[]).length+(d.listenType||[]).length+
       (d.passageComplete||[]).length+(d.writeSpeak||[]).length+(d.readSelect?d.readSelect.fake.length:0));
@@ -185,7 +186,7 @@
       document.querySelectorAll('.panel').forEach(p=>p.classList.remove("active"));
       $("panel-"+b.dataset.tab).classList.add("active");
       const tab=b.dataset.tab;
-      document.body.classList.toggle("speaking-mode", tab==="speak"||tab==="write"||tab==="read"||tab==="gram"||tab==="det"||tab==="info");
+      document.body.classList.toggle("speaking-mode", tab==="speak"||tab==="write"||tab==="read"||tab==="gram"||tab==="struct"||tab==="det"||tab==="info");
       stopSpeak();
       // 탭을 다시 열 때 이미 채점된 화면이 남아 있으면 다음 문제로 넘긴다
       // (진행 중인 세션과 콤보는 유지 — 잠깐 다른 탭을 봤다고 초기화되지 않게)
@@ -197,6 +198,10 @@
       if(tab==="gram"){
         if(!$("gram-body").innerHTML) startGram();
         else if(gMode==="solve" && gram && gram.answered){ gram.i++; renderGram(); }
+      }
+      if(tab==="struct"){
+        if(!$("struct-body").innerHTML) startStruct();
+        else if(sMode==="solve" && struct && struct.answered){ struct.i++; renderStruct(); }
       }
       if(tab==="det"){
         if(!$("det-body").innerHTML){ buildDetLv(); startDet(); }
@@ -250,7 +255,7 @@
 
   // ---- 콤보 (연속 정답) — 어휘 퀴즈·문법 공용 ----
   const COMBO_KEY="toefl-vocab-best-combo";
-  let bestCombo=(function(){ const v=ls.getJSON(COMBO_KEY,null); return (v&&typeof v==="object")?{quiz:v.quiz||0,gram:v.gram||0,det:v.det||0}:{quiz:0,gram:0,det:0}; })();
+  let bestCombo=(function(){ const v=ls.getJSON(COMBO_KEY,null); return (v&&typeof v==="object")?{quiz:v.quiz||0,gram:v.gram||0,det:v.det||0,struct:v.struct||0}:{quiz:0,gram:0,det:0,struct:0}; })();
   function saveBestCombo(){ ls.setJSON(COMBO_KEY,bestCombo); }
   // 연속 정답 수에 따라 등급이 올라간다
   const COMBO_TIERS=[
@@ -902,6 +907,203 @@
     }
   });
 
+  // ---- 구문 (문장 구조) ----
+  const STRUCTS = (window.STRUCTURES || []).slice();
+  const SCATS = (function(){ const s=[]; STRUCTS.forEach(x=>{ if(s.indexOf(x.cat)<0)s.push(x.cat); }); return s; })();
+  const STOPICS = (function(){
+    const have={}; STRUCTS.forEach(x=>{ if(x.topic)have[x.topic]=1; });
+    const list=TOPIC_ORDER.filter(t=>have[t]);
+    Object.keys(have).forEach(t=>{ if(list.indexOf(t)<0)list.push(t); });
+    return list;
+  })();
+  let sLv=0, sCat="all", sTopic="all", sMode="solve", struct=null;
+
+  /* 난이도·유형·주제 세 축을 함께 쓰므로, 칩 개수를 계산할 때는
+     자기 자신의 축만 빼고 나머지 조건을 적용한다(skip). */
+  function structMatch(x, skip){
+    if(skip!=="lv" && sLv!==0 && x.level!==sLv) return false;
+    if(skip!=="cat" && sCat!=="all" && x.cat!==sCat) return false;
+    if(skip!=="topic" && sTopic!=="all" && x.topic!==sTopic) return false;
+    const q=($("struct-search").value||"").trim().toLowerCase();
+    if(q && !((x.pat||"").toLowerCase().includes(q) || (x.en||"").toLowerCase().includes(q) ||
+              (x.ko||"").includes(q) || (x.note||"").includes(q) ||
+              (x.cat||"").includes(q) || (x.topic||"").includes(q))) return false;
+    return true;
+  }
+  function structPool(){ return STRUCTS.filter(x=>structMatch(x)); }
+
+  function buildStructChips(){
+    const forLv = STRUCTS.filter(x=>structMatch(x,"lv"));
+    $("struct-lv").innerHTML = LV_DEFS.map(function(d){
+      const v=d[0];
+      const cnt = v===0?forLv.length:forLv.filter(x=>x.level===v).length;
+      const dot = v===0?"":'<span class="dot" style="background:var('+d[2]+')"></span>';
+      return '<button class="lv-chip" data-lv="'+v+'" aria-pressed="'+(sLv===v)+'"'+(cnt?'':' style="opacity:.35"')+'>'+dot+d[1]+' <span style="opacity:.7">'+cnt+'</span></button>';
+    }).join("");
+    const forCat = STRUCTS.filter(x=>structMatch(x,"cat"));
+    $("struct-cat").innerHTML = '<button class="tp-chip" data-sc="all" aria-pressed="'+(sCat==="all")+'">🗂 전체 유형<span class="c">'+forCat.length+'</span></button>'+
+      SCATS.map(function(c){
+        const n=forCat.filter(x=>x.cat===c).length;
+        return '<button class="tp-chip" data-sc="'+esc(c)+'" aria-pressed="'+(sCat===c)+'"'+(n?'':' style="opacity:.35"')+'>'+esc(c)+'<span class="c">'+n+'</span></button>';
+      }).join("");
+    const forTp = STRUCTS.filter(x=>structMatch(x,"topic"));
+    $("struct-topic").innerHTML = '<button class="tp-chip" data-st="all" aria-pressed="'+(sTopic==="all")+'">🗂 전체 주제<span class="c">'+forTp.length+'</span></button>'+
+      STOPICS.map(function(t){
+        const n=forTp.filter(x=>x.topic===t).length;
+        return '<button class="tp-chip" data-st="'+esc(t)+'" aria-pressed="'+(sTopic===t)+'"'+(n?'':' style="opacity:.35"')+'>'+esc(t)+'<span class="c">'+n+'</span></button>';
+      }).join("");
+    qsa(".lv-chip",$("struct-lv")).forEach(b=>b.addEventListener("click",()=>{ sLv=parseInt(b.dataset.lv,10); buildStructChips(); startStruct(); }));
+    qsa("[data-sc]",$("struct-cat")).forEach(b=>b.addEventListener("click",()=>{ sCat=b.dataset.sc; buildStructChips(); startStruct(); }));
+    qsa("[data-st]",$("struct-topic")).forEach(b=>b.addEventListener("click",()=>{ sTopic=b.dataset.st; buildStructChips(); startStruct(); }));
+  }
+
+  // 예문에서 blank 자리를 빈칸 또는 정답이 채워진 형태로 렌더
+  function structSentence(x, filled){
+    const i=x.en.indexOf(x.blank);
+    const mid = filled ? '<span class="blank filled">'+esc(filled)+'</span>' : '<span class="blank">______</span>';
+    return esc(x.en.slice(0,i))+mid+esc(x.en.slice(i+x.blank.length));
+  }
+  // 구조 보기 모드: 핵심부에 밑줄을 그어 어디가 그 구조인지 드러낸다
+  function structHighlight(x){
+    const i=x.en.indexOf(x.blank);
+    return esc(x.en.slice(0,i))+'<span class="hl">'+esc(x.blank)+'</span>'+esc(x.en.slice(i+x.blank.length));
+  }
+
+  $("struct-search").addEventListener("input",()=>{ buildStructChips(); startStruct(); });
+  qsa("[data-smode]",$("struct-mode")).forEach(b=>b.addEventListener("click",()=>{
+    qsa("[data-smode]",$("struct-mode")).forEach(x=>x.setAttribute("aria-pressed",x===b));
+    sMode=b.dataset.smode; startStruct();
+  }));
+  $("struct-shuffle").addEventListener("click",()=>{
+    startStruct();
+    toast(sMode==="solve"?"새 문제 세트를 뽑았습니다 🔀":"구조 유형 순서로 정렬했습니다");
+  });
+
+  function startStruct(){
+    const pool=structPool();
+    $("struct-count").textContent = pool.length+"개 구문"+(sMode==="solve"&&pool.length?" 중 "+Math.min(10,pool.length)+"문항 출제":"");
+    if(!pool.length){ struct=null; $("struct-body").innerHTML='<div class="empty">조건에 맞는 구문이 없습니다.<br/>유형·주제·난이도 필터를 넓혀 보세요.</div>'; return; }
+    if(sMode==="list"){ struct=null; renderStructList(pool); return; }
+    struct={
+      list: shuffled(pool).slice(0,Math.min(10,pool.length)).map(x=>({x:x, opts:shuffled([x.blank].concat(x.opts))})),
+      i:0, score:0, answered:false, streak:0, best:0, prevBest:bestCombo.struct, records:0, missed:[]
+    };
+    renderStruct();
+  }
+  function renderStruct(){
+    if(!struct)return;
+    if(struct.i>=struct.list.length){ renderStructResult(); return; }
+    const it=struct.list[struct.i], x=it.x;
+    struct.answered=false;
+    const pct=Math.round(struct.i/struct.list.length*100);
+    $("struct-body").innerHTML='<div class="quiz-card">'+
+      '<div class="quiz-progress"><i style="width:'+pct+'%"></i></div>'+
+      '<div class="quiz-topline"><span class="quiz-q">빈칸에 알맞은 것을 고르세요 · '+(struct.i+1)+' / '+struct.list.length+'</span>'+
+        '<span id="struct-streak">'+comboBadge(struct.streak)+'</span></div>'+
+      '<div class="sp-badges" style="margin-bottom:10px"><span class="cat-badge">'+esc(x.cat)+'</span>'+
+        '<span class="topic-tag">'+esc(x.topic)+'</span>'+
+        '<span class="lv-badge '+LV[x.level].c+'">'+LV[x.level].n+'</span></div>'+
+      '<div class="st-q">'+structSentence(x)+'</div>'+
+      it.opts.map((o,i)=>'<button class="opt" data-o="'+esc(o)+'"><span class="key ab">'+AB[i]+'</span>'+esc(o)+'</button>').join('')+
+      '<div class="quiz-foot"><span class="quiz-score">점수 <b id="struct-score-n">'+struct.score+'</b> / '+struct.list.length+bestLabel("struct")+'</span>'+
+      '<button class="quiz-next" id="struct-next">다음 →</button></div>'+
+      '<div id="struct-reveal"></div>'+
+      '<div class="quiz-hint">키보드: <b>A~D</b> 또는 <b>1~4</b> 답 고르기 · <b>Enter</b> 다음 문제</div>'+
+    '</div>';
+    qsa(".opt",$("struct-body")).forEach(b=>b.addEventListener("click",()=>answerStruct(b,it)));
+    $("struct-next").addEventListener("click",()=>{ struct.i++; renderStruct(); });
+  }
+  function answerStruct(btn,it){
+    if(struct.answered)return; struct.answered=true;
+    const x=it.x, correct=btn.dataset.o===x.blank;
+    let record=false;
+    if(correct){
+      struct.score++; struct.streak++; struct.best=Math.max(struct.best,struct.streak);
+      record=registerCombo(struct,"struct");
+      if(record)struct.records++;
+      beep("ok",struct.streak);
+      confetti(record?110:struct.streak>=10?90:struct.streak>=5?70:struct.streak>=3?45:26);
+      comboPopup(struct.streak,record);
+      const sn=$("struct-score-n"); sn.textContent=struct.score; sn.classList.add("bump");
+      const bi=document.querySelector("#struct-body .quiz-progress > i");
+      if(bi)bi.style.width=Math.round((struct.i+1)/struct.list.length*100)+"%";
+    }else{
+      struct.streak=0; struct.recordShown=false; beep("no");
+      btn.classList.add("wrong"); struct.missed.push(x);
+    }
+    qsa(".opt",$("struct-body")).forEach(b=>{ b.disabled=true; if(b.dataset.o===x.blank)b.classList.add("correct"); });
+    // 빈칸에 정답을 채워 구조가 완성된 모습을 그대로 보여 준다
+    const qBox=$("struct-body").querySelector(".st-q");
+    if(qBox)qBox.innerHTML=structSentence(x,x.blank);
+    const sb=$("struct-streak"); if(sb)sb.innerHTML=comboBadge(struct.streak);
+    $("struct-reveal").innerHTML='<div class="reveal '+(correct?"ok":"no")+'">'+
+      '<div class="verdict">'+(correct?'🎉 정답! <span class="plus">+1</span>':'💡 아쉬워요 — 정답은 '+esc(x.blank))+
+        (correct?' '+comboBadge(struct.streak)+(record?' <span class="rec-tag">🏆 신기록</span>':''):'')+'</div>'+
+      '<div class="st-pat">'+esc(x.pat)+'</div>'+
+      '<div class="st-ko">'+esc(x.ko)+'</div>'+
+      '<div class="st-note">'+esc(x.note)+'</div>'+
+      '<div class="sp-controls" style="margin:12px 0 0"><button id="struct-say">🔊 예문 듣기</button></div>'+
+    '</div>';
+    $("struct-say").addEventListener("click",e=>{ e.stopPropagation(); speak(x.en,{rate:.88}); });
+    const nb=$("struct-next"); nb.style.visibility="visible"; nb.classList.add("on");
+    nb.textContent=struct.i===struct.list.length-1?"결과 보기 →":"다음 →";
+  }
+  function renderStructResult(){
+    const pct=Math.round(struct.score/struct.list.length*100);
+    const perfect=struct.score===struct.list.length;
+    const msg=perfect?"완벽해요! 만점입니다 🏆":pct>=80?"훌륭해요! 🎉":pct>=50?"좋아요, 조금만 더! 💪":"구조 설명을 다시 보며 복습해요 📖";
+    const missed = struct.missed.length
+      ? '<div class="missed-title">틀린 구문 '+struct.missed.length+'개</div><div class="missed">'+
+        struct.missed.map(x=>'<div><b>'+esc(x.pat)+'</b><span class="p">'+esc(x.cat)+'</span></div>').join('')+'</div>'
+      : '';
+    $("struct-body").innerHTML='<div class="result"><div class="big">'+struct.score+' / '+struct.list.length+'</div><p>'+msg+' ('+pct+'%)</p>'+
+      comboSummary(struct,"struct")+missed+
+      '<button class="btn good" style="max-width:220px;margin:14px auto 0" id="struct-restart">새 문제 풀기 (Enter)</button></div>';
+    $("struct-restart").addEventListener("click",startStruct);
+    if(pct>=80){ confetti(perfect?140:80); beep("ok",struct.best); }
+  }
+  // 구조 보기 모드: 구조명만 보이고 누르면 예문·해석·설명 펼침
+  function renderStructList(pool){
+    $("struct-body").innerHTML=pool.map((x,i)=>
+      '<div class="sp-item" data-i="'+i+'">'+
+        '<div class="sp-head"><div style="flex:1;min-width:0">'+
+          '<div class="sp-badges"><span class="cat-badge">'+esc(x.cat)+'</span>'+
+            '<span class="topic-tag">'+esc(x.topic)+'</span>'+
+            '<span class="lv-badge '+LV[x.level].c+'">'+LV[x.level].n+'</span></div>'+
+          '<div class="st-pat">'+esc(x.pat)+'</div>'+
+        '</div><div class="sp-toggle">▼</div></div>'+
+        '<div class="sp-body">'+
+          '<div class="st-en">'+structHighlight(x)+'</div>'+
+          '<div class="st-ko">'+esc(x.ko)+'</div>'+
+          '<div class="st-note">'+esc(x.note)+'</div>'+
+          '<div class="sp-controls" style="margin:12px 0 0"><button data-say="'+esc(x.en)+'">🔊 예문 듣기</button></div>'+
+        '</div>'+
+      '</div>').join('');
+    qsa(".sp-item",$("struct-body")).forEach(item=>{
+      item.querySelector(".sp-head").addEventListener("click",()=>{ const o=item.classList.toggle("open"); if(!o)stopSpeak(); });
+      const say=item.querySelector("[data-say]");
+      if(say)say.addEventListener("click",e=>{ e.stopPropagation(); speak(say.dataset.say,{rate:.88}); });
+    });
+  }
+  // 구문 키보드 조작 (A~D / 1~4 / Enter)
+  document.addEventListener("keydown",e=>{
+    if(!$("panel-struct").classList.contains("active"))return;
+    if(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA")return;
+    if(e.ctrlKey||e.altKey||e.metaKey)return;
+    const restart=$("struct-restart");
+    if(restart){ if(e.code==="Enter"||e.code==="Space"){ e.preventDefault(); restart.click(); } return; }
+    if(!struct||sMode!=="solve")return;
+    const opts=qsa(".opt",$("struct-body"));
+    if(!opts.length)return;
+    let idx=AB.indexOf(String(e.key||"").toUpperCase());
+    if(idx<0){ const n=parseInt(e.key,10); if(n>=1&&n<=opts.length)idx=n-1; }
+    if(!struct.answered && idx>=0 && idx<opts.length){ e.preventDefault(); opts[idx].click(); return; }
+    if(e.code==="Enter"||e.code==="Space"||e.code==="ArrowRight"){
+      e.preventDefault();
+      if(struct.answered && $("struct-next")) $("struct-next").click();
+    }
+  });
+
   // ---- 듀오링고 영어 테스트 (DET) ----
   const DET = window.DET_DATA || {};
   const DET_DESC = {
@@ -1437,6 +1639,7 @@
   $("quiz-sound").setAttribute("aria-pressed",soundOn);
   $("quiz-sound").textContent=soundOn?"🔊 효과음":"🔇 효과음";
   buildGramChips();
+  buildStructChips();
   syncBrowseView();
   updateProgress();
   rebuildOrder();

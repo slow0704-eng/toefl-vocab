@@ -300,6 +300,17 @@ body.hide-ko .w-row .k:not(.show),body.hide-ko .w-item .k:not(.show){filter:blur
 .kx b{color:var(--accent);font-weight:800;flex-shrink:0;min-width:42%}
 .tips{font-size:13.5px;color:var(--text);background:var(--lv2-w);border-radius:8px;padding:12px 14px;border-left:3px solid var(--lv2)}
 
+/* 구문 (문장 구조) */
+.st-pat{font-size:15px;font-weight:800;letter-spacing:-.2px;color:var(--accent)}
+.st-en{font-size:16.5px;line-height:1.8;font-weight:600;word-break:keep-all;margin-top:6px}
+.st-en .hl{color:var(--accent);font-weight:800;border-bottom:2px solid var(--accent);padding-bottom:1px}
+.st-ko{font-size:13.5px;color:var(--dim);margin-top:6px;word-break:keep-all}
+.st-note{font-size:13.5px;color:var(--text);background:var(--lv2-w);border-radius:8px;padding:11px 13px;border-left:3px solid var(--lv2);margin-top:10px;word-break:keep-all}
+/* 문제 화면의 빈칸 문장 */
+.st-q{font-size:18px;line-height:1.95;font-weight:600;word-break:keep-all;background:var(--surface-2);border-left:3px solid var(--accent);border-radius:var(--radius-sm);padding:18px 20px;margin:4px 0 12px}
+.st-q .blank{display:inline-block;min-width:120px;text-align:center;color:var(--accent);font-weight:800;border-bottom:2.5px solid var(--accent);letter-spacing:1px;vertical-align:-2px}
+.st-q .blank.filled{border-bottom-color:var(--good);color:var(--good)}
+
 /* 듀오링고 (DET) */
 .det-intro{font-size:13px;color:var(--dim);background:var(--surface-2);border-radius:var(--radius-sm);padding:12px 14px;margin:4px 0 14px;line-height:1.65}
 .det-intro b{color:var(--text)}
@@ -339,7 +350,6 @@ body.hide-ko .w-row .k:not(.show),body.hide-ko .w-item .k:not(.show){filter:blur
 .lt-diff{font-size:16px;line-height:1.9;margin-top:6px}
 .lt-diff .w-ok{color:var(--good);font-weight:700}
 .lt-diff .w-no{color:var(--bad);font-weight:700;text-decoration:line-through}
-.lt-diff .w-add{color:var(--lv2);font-weight:700}
 .lt-score{font-size:14px;font-weight:800;margin-bottom:8px}
 
 /* Speaking · Writing 목록 */
