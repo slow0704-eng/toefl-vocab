@@ -32,6 +32,7 @@
     <button role="tab" aria-selected="false" data-tab="browse">📚 단어장</button>
     <button role="tab" aria-selected="false" data-tab="gram">📝 문법</button>
     <button role="tab" aria-selected="false" data-tab="struct">🧩 구문</button>
+    <button role="tab" aria-selected="false" data-tab="slang">🎬 장르·슬랭</button>
     <button role="tab" aria-selected="false" data-tab="det">🦉 듀오링고</button>
     <button role="tab" aria-selected="false" data-tab="speak">🎤 스피킹</button>
     <button role="tab" aria-selected="false" data-tab="write">✍️ 라이팅</button>
@@ -159,6 +160,33 @@
     <div id="struct-body"></div>
   </section>
 
+  <!-- 장르·슬랭 -->
+  <section class="panel" id="panel-slang">
+    <div class="det-intro">🎬 <b>SF·판타지</b>는 작품을 읽고 보는 데, <b>힙합·스트리트 구어</b>는 가사와 실제 대화를 알아듣는 데 필요한 말들입니다. 같은 슬랭이라도 <b>어디서 써도 되는지</b>가 전혀 다르므로 항목마다 <b>사용 등급</b>을 붙였습니다.</div>
+    <div class="reg-legend">
+      <div><span class="reg-badge r1">🟢 어디서나</span><span>직장·시험·처음 만난 사람에게도 무난한 말. 대부분 표준 어휘입니다.</span></div>
+      <div><span class="reg-badge r2">🟡 친한 사이</span><span>또래·친구끼리는 자연스럽지만 격식 있는 자리에서는 쓰지 마세요.</span></div>
+      <div><span class="reg-badge r3">🔴 이해만</span><span>뜻은 알아 두되 직접 쓰지 마세요. 흑인 영어(AAVE) 고유 표현이거나, 비원어민이 쓰면 흉내 내는 것처럼 들려 무례해지기 쉬운 말입니다.</span></div>
+      <div style="color:var(--bad);font-weight:700">※ 가사에 나오는 인종적 멸칭(n-word)은 수록하지 않았습니다. 따라 부르기를 포함해 어떤 경우에도 쓰지 않는 것이 원칙입니다.</div>
+    </div>
+    <div class="search-box">
+      <span class="ic">🔎</span>
+      <input id="slang-search" type="search" placeholder="단어·뜻·예문·설명 검색 (예: flow, 잠수, 저격)…" />
+    </div>
+    <div class="tp-row" id="slang-domain"></div>
+    <div class="filter-title">분류</div>
+    <div class="tp-row" id="slang-cat"></div>
+    <div class="filter-title">사용 등급</div>
+    <div class="filter-row" id="slang-reg"></div>
+    <div class="filter-row" id="slang-mode">
+      <button data-slmode="list" aria-pressed="true">📚 단어·표현 보기</button>
+      <button data-slmode="quiz" aria-pressed="false">🎯 퀴즈</button>
+      <button id="slang-shuffle" style="margin-left:auto">🔀 새 세트</button>
+    </div>
+    <div class="count-line" id="slang-count"></div>
+    <div id="slang-body"></div>
+  </section>
+
   <!-- 듀오링고 (DET) -->
   <section class="panel" id="panel-det">
     <div class="det-intro">🦉 <b>듀오링고 영어 테스트(DET)</b>는 문제 유형이 토익·토플과 완전히 다릅니다. 실제 출제 형식 그대로 연습하세요.</div>
@@ -229,7 +257,7 @@
 
 <footer>
   <div class="wrap">
-    TOEFL 어휘 <span id="foot-total"></span>개(난이도 4단계 · 주제 13종) + 토익 Part 5 문법 <span id="foot-gram"></span>문항 + 구문 <span id="foot-struct"></span>개 + 듀오링고(DET) <span id="foot-det"></span>문항 + 오픽·토익스피킹·토플(스피킹/라이팅/리딩) 문항 <span id="foot-speak"></span>개 · 진행 상황 자동 저장
+    TOEFL 어휘 <span id="foot-total"></span>개(난이도 4단계 · 주제 13종) + 토익 Part 5 문법 <span id="foot-gram"></span>문항 + 구문 <span id="foot-struct"></span>개 + 장르·슬랭 <span id="foot-slang"></span>개 + 듀오링고(DET) <span id="foot-det"></span>문항 + 오픽·토익스피킹·토플(스피킹/라이팅/리딩) 문항 <span id="foot-speak"></span>개 · 진행 상황 자동 저장
     <div class="toolbar-mini"><button id="reset-btn">↺ 학습 기록 초기화</button></div>
   </div>
 </footer>
@@ -238,6 +266,7 @@
 <script src="speaking.js"></script>
 <script src="grammar.js"></script>
 <script src="structures.js"></script>
+<script src="slang.js"></script>
 <script src="duolingo.js"></script>
 <script src="exams.js"></script>
 <script src="app.js"></script>
