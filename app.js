@@ -187,7 +187,7 @@
       document.querySelectorAll('.panel').forEach(p=>p.classList.remove("active"));
       $("panel-"+b.dataset.tab).classList.add("active");
       const tab=b.dataset.tab;
-      document.body.classList.toggle("speaking-mode", tab==="speak"||tab==="write"||tab==="read"||tab==="gram"||tab==="struct"||tab==="slang"||tab==="det"||tab==="info");
+      document.body.classList.toggle("speaking-mode", tab==="speak"||tab==="write"||tab==="read"||tab==="gram"||tab==="struct"||tab==="slang"||tab==="det"||tab==="info"||tab==="topic");
       stopSpeak();
       // 탭을 다시 열 때 이미 채점된 화면이 남아 있으면 다음 문제로 넘긴다
       // (진행 중인 세션과 콤보는 유지 — 잠깐 다른 탭을 봤다고 초기화되지 않게)
@@ -211,6 +211,10 @@
       if(tab==="det"){
         if(!$("det-body").innerHTML){ buildDetLv(); startDet(); }
         else if(detMode==="passage" && det && det.answered){ det.i++; drawDetPassage(); }
+      }
+      if(tab==="topic"){
+        if(!$("topic-body").innerHTML){ buildTopicChips(); renderTopic(); }
+        else if(tMode==="solve" && tSes && tSes.answered){ tSes.i++; drawTopicQ(); }
       }
       if(tab==="info" && !$("info-body").innerHTML) renderInfo();
       if(tab==="speak") renderSpeak();
@@ -260,7 +264,7 @@
 
   // ---- 콤보 (연속 정답) — 어휘 퀴즈·문법 공용 ----
   const COMBO_KEY="toefl-vocab-best-combo";
-  let bestCombo=(function(){ const v=ls.getJSON(COMBO_KEY,null); return (v&&typeof v==="object")?{quiz:v.quiz||0,gram:v.gram||0,det:v.det||0,struct:v.struct||0,slang:v.slang||0}:{quiz:0,gram:0,det:0,struct:0,slang:0}; })();
+  let bestCombo=(function(){ const v=ls.getJSON(COMBO_KEY,null); return (v&&typeof v==="object")?{quiz:v.quiz||0,gram:v.gram||0,det:v.det||0,struct:v.struct||0,slang:v.slang||0,topic:v.topic||0}:{quiz:0,gram:0,det:0,struct:0,slang:0,topic:0}; })();
   function saveBestCombo(){ ls.setJSON(COMBO_KEY,bestCombo); }
   // 연속 정답 수에 따라 등급이 올라간다
   const COMBO_TIERS=[
@@ -1644,6 +1648,165 @@
       e.preventDefault();
       if(det.answered&&$("det-next-q"))$("det-next-q").click();
     }
+  });
+
+  // ---- 관심주제 리딩 (축구 · 영화) ----
+  const TR = window.TOPIC_READING || [];
+  const TCATS = (function(){ const s=[]; TR.forEach(p=>{ if(s.indexOf(p.series)<0)s.push(p.series); }); return s; })();
+  let tCat="all", tExam="all", tMode="read", tSes=null;
+
+  function topicList(){
+    const q=($("topic-search").value||"").trim().toLowerCase();
+    return TR.filter(p=>{
+      if(tCat!=="all"&&p.series!==tCat)return false;
+      if(tExam!=="all"&&p.exam!==tExam)return false;
+      if(q&&!((p.title+" "+p.topic+" "+p.passage+" "+p.ko+" "+p.type+" "+p.series).toLowerCase().includes(q)
+             &&true))return false;
+      return true;
+    });
+  }
+  function buildTopicChips(){
+    $("topic-cat").innerHTML='<button class="tp-chip" data-tc="all" aria-pressed="'+(tCat==="all")+'">🗂 전체<span class="c">'+TR.length+'</span></button>'+
+      TCATS.map(c=>{const n=TR.filter(p=>p.series===c).length;
+        return '<button class="tp-chip" data-tc="'+esc(c)+'" aria-pressed="'+(tCat===c)+'">'+esc(c)+'<span class="c">'+n+'</span></button>';}).join("");
+    $("topic-cat").querySelectorAll("[data-tc]").forEach(b=>b.addEventListener("click",()=>{tCat=b.dataset.tc;buildTopicChips();renderTopic();}));
+  }
+  $("topic-search").addEventListener("input",renderTopic);
+  $("topic-exam").querySelectorAll("[data-tex]").forEach(b=>b.addEventListener("click",()=>{
+    $("topic-exam").querySelectorAll("[data-tex]").forEach(x=>x.setAttribute("aria-pressed",x===b));
+    tExam=b.dataset.tex;renderTopic();}));
+  $("topic-exam").querySelectorAll("[data-tmode]").forEach(b=>b.addEventListener("click",()=>{
+    $("topic-exam").querySelectorAll("[data-tmode]").forEach(x=>x.setAttribute("aria-pressed",x===b));
+    tMode=b.dataset.tmode;tSes=null;stopSpeak();renderTopic();}));
+
+  function renderTopic(){
+    const list=topicList();
+    $("topic-count").textContent=list.length+"개 지문 · "+list.reduce((s,p)=>s+p.qs.length,0)+"문항";
+    if(!list.length){ $("topic-body").innerHTML='<div class="empty">해당하는 지문이 없습니다.</div>'; return; }
+    if(tMode==="solve") return renderTopicSolve(list);
+    // 읽기 모드: 제목만 보이고 펼치면 지문 → 해석 → 어휘 → 문제·해설
+    $("topic-body").innerHTML=list.map((p,i)=>{
+      const isDoc = p.exam==="TOEIC";
+      return '<div class="sp-item" data-i="'+i+'">'+
+        '<div class="sp-head"><div style="flex:1;min-width:0">'+
+          '<div class="sp-badges"><span class="exam-badge '+(p.exam==="TOEFL"?"toefl":"toeic")+'">'+p.exam+'</span>'+
+            '<span class="cat-badge">'+esc(p.type)+'</span>'+
+            '<span class="lv-badge '+LV[p.level].c+'">'+LV[p.level].n+'</span>'+
+            '<span class="topic-tag">'+p.qs.length+'문항</span></div>'+
+          '<div class="tp-title">'+esc(p.title)+'</div>'+
+          '<div class="tp-sub">'+esc(p.topic)+' · '+p.passage.split(/\s+/).length+' words</div>'+
+        '</div><div class="sp-toggle">▼</div></div>'+
+        '<div class="sp-body">'+
+          '<div class="sp-controls">'+
+            '<button data-act="play">▶ 지문 듣기</button><button data-act="stop">■ 정지</button>'+
+            '<button data-act="ko" aria-pressed="false">🇰🇷 한글 해석</button>'+
+            '<button data-act="dl">⬇ 음성 대본 저장</button></div>'+
+          '<div class="sp-sec-title">📄 지문</div>'+
+          '<div class="tp-passage'+(isDoc?" mono":"")+'">'+esc(p.passage)+'</div>'+
+          '<div class="ko-text" style="display:none;margin-top:12px"><div class="sp-sec-title">🇰🇷 해석</div><div class="tp-ko">'+esc(p.ko)+'</div></div>'+
+          '<div class="sp-sec-title">💡 핵심 어휘</div><div class="tp-gloss">'+
+            p.gloss.map(g=>'<span><b>'+esc(g.w)+'</b>'+esc(g.ko)+'</span>').join('')+'</div>'+
+          '<div class="sp-sec-title">❓ 문제 · 해설</div>'+
+          p.qs.map((q,k)=>'<div class="tp-qbox"><div class="tp-qn">Q'+(k+1)+'</div>'+
+            '<div class="q-text" style="font-size:14.5px;font-weight:700;line-height:1.8;white-space:pre-wrap;margin-bottom:10px">'+esc(q.q)+'</div>'+
+            '<div class="gram-opts">'+q.opts.map((o,j)=>'<span class="'+(j===q.ans?"ok":"")+'">('+AB[j]+') '+esc(o)+'</span>').join('')+'</div>'+
+            '<div class="gram-exp">정답 ('+AB[q.ans]+') · '+esc(q.exp)+'</div></div>').join('')+
+        '</div></div>';
+    }).join('');
+    $("topic-body").querySelectorAll(".sp-item").forEach(item=>{
+      const p=list[parseInt(item.dataset.i,10)];
+      item.querySelector(".sp-head").addEventListener("click",()=>{const o=item.classList.toggle("open");if(!o)stopSpeak();});
+      item.querySelector('[data-act="play"]').addEventListener("click",e=>{e.stopPropagation();
+        const b=e.currentTarget;b.textContent="🔊 재생 중…";
+        speak(p.passage,{rate:.92,onend:()=>b.textContent="▶ 지문 듣기"});});
+      item.querySelector('[data-act="stop"]').addEventListener("click",e=>{e.stopPropagation();stopSpeak();
+        item.querySelector('[data-act="play"]').textContent="▶ 지문 듣기";});
+      const kb=item.querySelector('[data-act="ko"]');
+      kb.addEventListener("click",e=>{e.stopPropagation();const on=kb.getAttribute("aria-pressed")==="true";
+        kb.setAttribute("aria-pressed",!on);item.querySelector(".ko-text").style.display=on?"none":"block";});
+      item.querySelector('[data-act="dl"]').addEventListener("click",e=>{e.stopPropagation();downloadScript(p);});
+    });
+  }
+  // 음성 대본(.txt) 저장 — 외부 TTS 도구에 그대로 넣어 쓸 수 있는 형식
+  function downloadScript(p){
+    const txt=[p.title,"("+p.exam+" · "+p.type+" · "+p.topic+")","",p.passage,"","--- 한글 해석 ---","",p.ko].join("\n");
+    const blob=new Blob([String.fromCharCode(0xFEFF)+txt],{type:"text/plain;charset=utf-8;"});
+    const url=URL.createObjectURL(blob),a=document.createElement("a");
+    a.href=url;a.download=p.title.replace(/[^\w가-힣 -]/g,"").slice(0,50)+".txt";
+    document.body.appendChild(a);a.click();document.body.removeChild(a);
+    setTimeout(()=>URL.revokeObjectURL(url),1500);
+    toast("음성 대본을 저장했습니다 ⬇");
+  }
+
+  // 문제 풀기 모드
+  function renderTopicSolve(list){
+    const qs=[];
+    list.forEach(p=>p.qs.forEach((q,k)=>qs.push(Object.assign({},q,{p:p,no:k+1}))));
+    if(!tSes||tSes.finished){ tSes={list:shuffled(qs).slice(0,Math.min(8,qs.length)),i:0,score:0,answered:false,streak:0,best:0,prevBest:bestCombo.topic||0}; }
+    drawTopicQ();
+  }
+  function drawTopicQ(){
+    if(tSes.i>=tSes.list.length){
+      const pct=Math.round(tSes.score/tSes.list.length*100);
+      $("topic-body").innerHTML='<div class="result"><div class="big">'+tSes.score+' / '+tSes.list.length+'</div>'+
+        '<p>'+(pct>=80?"훌륭해요! 🎉":pct>=50?"좋아요, 조금만 더! 💪":"지문을 다시 읽어 보세요 📖")+' ('+pct+'%)</p>'+
+        comboSummary(tSes,"topic")+
+        '<button class="btn good" style="max-width:220px;margin:14px auto 0" id="tp-restart">새 문제 풀기</button></div>';
+      tSes.finished=true;
+      $("tp-restart").addEventListener("click",()=>{tSes=null;renderTopic();});
+      if(pct>=80){confetti(80);beep("ok",tSes.best);}
+      return;
+    }
+    const it=tSes.list[tSes.i],p=it.p; tSes.answered=false;
+    $("topic-body").innerHTML='<div class="quiz-card">'+
+      '<div class="quiz-progress"><i style="width:'+Math.round(tSes.i/tSes.list.length*100)+'%"></i></div>'+
+      '<div class="quiz-topline"><span class="quiz-q">'+(tSes.i+1)+' / '+tSes.list.length+' · '+esc(p.title)+'</span><span id="tp-streak">'+comboBadge(tSes.streak)+'</span></div>'+
+      '<div class="sp-badges" style="margin-bottom:10px"><span class="exam-badge '+(p.exam==="TOEFL"?"toefl":"toeic")+'">'+p.exam+'</span>'+
+        '<span class="cat-badge">'+esc(p.type)+'</span><span class="lv-badge '+LV[p.level].c+'">'+LV[p.level].n+'</span></div>'+
+      '<div class="tp-passage'+(p.exam==="TOEIC"?" mono":"")+'" style="max-height:320px;overflow-y:auto;margin-bottom:16px">'+esc(p.passage)+'</div>'+
+      '<div class="q-text" style="font-size:15px;font-weight:700;line-height:1.8;white-space:pre-wrap;margin-bottom:14px">'+esc(it.q)+'</div>'+
+      it.opts.map((o,i)=>'<button class="opt" data-i="'+i+'"><span class="key ab">'+AB[i]+'</span>'+esc(o)+'</button>').join('')+
+      '<div class="quiz-foot"><span class="quiz-score">점수 <b id="tp-score">'+tSes.score+'</b> / '+tSes.list.length+bestLabel("topic")+'</span>'+
+      '<button class="quiz-next" id="tp-next">다음 →</button></div><div id="tp-reveal"></div>'+
+      '<div class="quiz-hint">키보드: <b>A~D</b> 또는 <b>1~4</b> · <b>Enter</b> 다음</div></div>';
+    $("topic-body").querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>answerTopic(parseInt(b.dataset.i,10),it)));
+    $("tp-next").addEventListener("click",()=>{tSes.i++;drawTopicQ();window.scrollTo({top:0,behavior:"smooth"});});
+  }
+  function answerTopic(pick,it){
+    if(tSes.answered)return; tSes.answered=true;
+    const ok=pick===it.ans,btns=$("topic-body").querySelectorAll(".opt");
+    let rec=false;
+    if(ok){
+      tSes.score++;tSes.streak++;tSes.best=Math.max(tSes.best,tSes.streak);
+      if(bestCombo.topic===undefined)bestCombo.topic=0;
+      rec=registerCombo(tSes,"topic");
+      beep("ok",tSes.streak);confetti(rec?110:tSes.streak>=5?70:tSes.streak>=3?45:26);
+      comboPopup(tSes.streak,rec);
+      const s=$("tp-score");s.textContent=tSes.score;s.classList.add("bump");
+      const bi=document.querySelector("#topic-body .quiz-progress > i");
+      if(bi)bi.style.width=Math.round((tSes.i+1)/tSes.list.length*100)+"%";
+    }else{tSes.streak=0;tSes.recordShown=false;beep("no");btns[pick].classList.add("wrong");}
+    btns.forEach((b,i)=>{b.disabled=true;if(i===it.ans)b.classList.add("correct");});
+    const sb=$("tp-streak");if(sb)sb.innerHTML=comboBadge(tSes.streak);
+    $("tp-reveal").innerHTML='<div class="reveal '+(ok?"ok":"no")+'">'+
+      '<div class="verdict">'+(ok?'🎉 정답! <span class="plus">+1</span>':'💡 아쉬워요 — 정답은 ('+AB[it.ans]+')')+
+        (ok?' '+comboBadge(tSes.streak)+(rec?' <span class="rec-tag">🏆 신기록</span>':''):'')+'</div>'+
+      '<div class="gram-exp">'+esc(it.exp)+'</div></div>';
+    const nb=$("tp-next");nb.style.visibility="visible";nb.classList.add("on");
+    nb.textContent=tSes.i===tSes.list.length-1?"결과 보기 →":"다음 →";
+  }
+  document.addEventListener("keydown",e=>{
+    if(!$("panel-topic").classList.contains("active"))return;
+    if(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA")return;
+    if(e.ctrlKey||e.altKey||e.metaKey)return;
+    if(tMode!=="solve"||!tSes||!tSes.list)return;
+    const opts=Array.prototype.slice.call($("topic-body").querySelectorAll(".opt"));
+    if(!opts.length)return;
+    let idx=AB.indexOf(String(e.key||"").toUpperCase());
+    if(idx<0){const n=parseInt(e.key,10);if(n>=1&&n<=opts.length)idx=n-1;}
+    if(!tSes.answered&&idx>=0&&idx<opts.length){e.preventDefault();opts[idx].click();return;}
+    if(e.code==="Enter"||e.code==="Space"||e.code==="ArrowRight"){e.preventDefault();
+      if(tSes.answered&&$("tp-next"))$("tp-next").click();}
   });
 
   // ---- 시험 정보 ----

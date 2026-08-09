@@ -34,6 +34,7 @@
     <button role="tab" aria-selected="false" data-tab="struct">🧩 구문</button>
     <button role="tab" aria-selected="false" data-tab="slang">🎬 장르·슬랭</button>
     <button role="tab" aria-selected="false" data-tab="det">🦉 듀오링고</button>
+    <button role="tab" aria-selected="false" data-tab="topic">⚽🎬 관심주제</button>
     <button role="tab" aria-selected="false" data-tab="speak">🎤 스피킹</button>
     <button role="tab" aria-selected="false" data-tab="write">✍️ 라이팅</button>
     <button role="tab" aria-selected="false" data-tab="read">📖 리딩</button>
@@ -202,6 +203,26 @@
     <div id="det-body"></div>
   </section>
 
+
+  <!-- 관심주제 리딩 (축구 · 영화) -->
+  <section class="panel" id="panel-topic">
+    <div class="det-intro">⚽🎬 <b>축구와 영화</b>를 소재로 한 TOEFL·TOEIC <b>고난도 지문</b>입니다. 익숙한 소재로 읽되 문장 수준과 문제 유형은 실제 시험 그대로입니다.</div>
+    <div class="search-box">
+      <span class="ic">🔎</span>
+      <input id="topic-search" type="search" placeholder="지문·해설 검색 (예: Cruyff, 번역, xG)…" />
+    </div>
+    <div class="tp-row" id="topic-cat"></div>
+    <div class="filter-row" id="topic-exam">
+      <button data-tex="all" aria-pressed="true">전체</button>
+      <button data-tex="TOEFL" aria-pressed="false">🎓 TOEFL 학술형</button>
+      <button data-tex="TOEIC" aria-pressed="false">💼 TOEIC 실무형</button>
+      <span style="flex:1"></span>
+      <button data-tmode="read" aria-pressed="true" class="tmode">📖 지문 읽기</button>
+      <button data-tmode="solve" aria-pressed="false" class="tmode">🎯 문제 풀기</button>
+    </div>
+    <div class="count-line" id="topic-count"></div>
+    <div id="topic-body"></div>
+  </section>
   <!-- 스피킹 -->
   <section class="panel" id="panel-speak">
     <div class="search-box">
@@ -269,6 +290,7 @@
 <script src="slang.js"></script>
 <script src="duolingo.js"></script>
 <script src="exams.js"></script>
+<script src="topics.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

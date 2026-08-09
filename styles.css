@@ -446,3 +446,16 @@ body.speaking-mode .progress-wrap,body.speaking-mode #shuffle-btn{display:none}
   .kx b{min-width:100%}
   .kx div{flex-direction:column;gap:2px}
 }
+
+/* 관심주제 리딩 (축구 · 영화) */
+.tp-passage{font-size:16px;line-height:2;white-space:pre-wrap;word-break:keep-all;background:var(--surface-2);border-radius:var(--radius-sm);padding:20px 22px;border-left:3px solid var(--accent)}
+.tp-passage.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;line-height:1.9;white-space:pre}
+.tp-ko{font-size:14.5px;line-height:1.95;white-space:pre-wrap;word-break:keep-all;color:var(--dim);background:var(--surface-2);border-radius:var(--radius-sm);padding:18px 20px;border-left:3px solid var(--good)}
+.tp-gloss{display:flex;flex-wrap:wrap;gap:7px}
+.tp-gloss span{font-size:12.5px;padding:6px 12px;border-radius:99px;background:var(--surface);border:1px solid var(--border)}
+.tp-gloss b{color:var(--accent);font-weight:800;margin-right:5px}
+.tp-title{font-size:17px;font-weight:800;line-height:1.5;letter-spacing:-.3px}
+.tp-sub{font-size:12.5px;color:var(--faint);margin-top:3px}
+.tmode[aria-pressed="true"]{background:var(--accent-2);border-color:var(--accent-2);color:#fff}
+.tp-qbox{margin-top:16px;border-top:1px solid var(--border);padding-top:16px}
+.tp-qn{font-size:12px;font-weight:800;color:var(--accent);margin-bottom:7px}
