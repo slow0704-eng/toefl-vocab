@@ -10,9 +10,10 @@
 <body>
 <header>
   <div class="wrap topbar">
-    <div class="brand"><span class="logo">📖</span><span>영어시험 올인원<span style="color:var(--faint);font-weight:600"> · 어휘 &amp; 스피킹 &amp; 라이팅</span></span></div>
+    <div class="brand"><span class="logo">📖</span><span>영어시험 올인원<span class="brand-sub"> · 어휘 &amp; 스피킹 &amp; 라이팅</span></span></div>
     <div class="spacer"></div>
     <button class="icon-btn" id="shuffle-btn" title="섞기">🔀</button>
+    <button class="icon-btn" id="tts-btn" title="음성 설정">🎙</button>
     <button class="icon-btn" id="theme-btn" title="테마">🌙</button>
   </div>
 </header>
@@ -26,7 +27,7 @@
     <div class="progress-bar"><i id="bar-fill"></i></div>
   </div>
 
-  <div class="tabs" role="tablist">
+  <div class="tab-wrap"><div class="tabs" role="tablist">
     <button role="tab" aria-selected="true" data-tab="flash">🃏 카드</button>
     <button role="tab" aria-selected="false" data-tab="quiz">✍️ 퀴즈</button>
     <button role="tab" aria-selected="false" data-tab="browse">📚 단어장</button>
@@ -39,7 +40,7 @@
     <button role="tab" aria-selected="false" data-tab="write">✍️ 라이팅</button>
     <button role="tab" aria-selected="false" data-tab="read">📖 리딩</button>
     <button role="tab" aria-selected="false" data-tab="info">ℹ️ 시험정보</button>
-  </div>
+  </div></div>
 
   <!-- 플래시카드 -->
   <section class="panel active" id="panel-flash">
@@ -283,6 +284,14 @@
   </div>
 </footer>
 
+<div class="tts-modal" id="tts-modal">
+  <div class="tts-in">
+    <button class="tts-close" id="tts-close">×</button>
+    <h3>🎙 음성(TTS) 설정</h3>
+    <div id="tts-body"></div>
+  </div>
+</div>
+
 <script src="words.js"></script>
 <script src="speaking.js"></script>
 <script src="grammar.js"></script>
@@ -292,5 +301,6 @@
 <script src="exams.js"></script>
 <script src="topics.js"></script>
 <script src="app.js"></script>
+
 </body>
 </html>
