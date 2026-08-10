@@ -30,7 +30,30 @@ button{font-family:inherit;cursor:pointer}
 .wrap{max-width:760px;margin:0 auto;padding:0 16px}
 
 header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--surface) 86%,transparent);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--border)}
-header .topbar{display:flex;align-items:center;gap:12px;height:60px}
+header .topbar{display:flex;align-items:center;gap:12px;height:60px;position:relative}
+
+/* 글자 크기 — 본문 영역만 배율을 준다. 헤더·모달은 그대로 두어
+   조절 UI 자체가 같이 커졌다 작아졌다 하지 않게 한다. */
+main,footer{zoom:var(--fs,1)}
+.fs-pop{display:none;position:absolute;right:0;top:calc(100% - 8px);z-index:40;width:236px;
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:14px}
+.fs-pop.on{display:block}
+.fs-title{font-size:12px;font-weight:800;color:var(--faint);margin-bottom:9px;letter-spacing:.02em}
+.fs-row{display:flex;align-items:center;gap:8px}
+.fs-row button{flex:0 0 46px;height:38px;border-radius:10px;border:1px solid var(--border);
+  background:var(--surface-2);color:var(--text);font-size:15px;font-weight:800}
+.fs-row button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.fs-row button:disabled{opacity:.35}
+.fs-now{flex:1;text-align:center;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums}
+.fs-steps{display:flex;gap:5px;margin-top:10px}
+.fs-steps button{flex:1;min-width:0;height:30px;border-radius:8px;border:1px solid var(--border);
+  background:var(--surface);color:var(--dim);font-size:10.5px;font-weight:700;padding:0;white-space:nowrap}
+.fs-steps button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.fs-reset{width:100%;margin-top:10px;height:32px;border-radius:8px;border:1px solid var(--border);
+  background:var(--surface-2);color:var(--text);font-size:12.5px;font-weight:700}
+.fs-reset:hover{border-color:var(--accent);color:var(--accent)}
+.fs-hint{font-size:11px;color:var(--faint);line-height:1.6;margin-top:9px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;letter-spacing:-.3px}
 .brand .logo{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#fff;font-size:16px}
 .spacer{flex:1}
@@ -539,5 +562,8 @@ body.speaking-mode .progress-wrap,body.speaking-mode #shuffle-btn{display:none}
 @media (max-width:560px){
   .brand-sub{display:none}
   .brand{font-size:15px;white-space:nowrap}
-  .topbar{gap:8px}
+  .topbar{gap:6px}
+  /* 아이콘 버튼이 4개라 좁은 화면에서는 조금 줄인다 */
+  .icon-btn{width:34px;height:34px;font-size:15px}
+  .fs-pop{width:min(236px,calc(100vw - 32px))}
 }

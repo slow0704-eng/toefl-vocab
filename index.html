@@ -13,8 +13,22 @@
     <div class="brand"><span class="logo">📖</span><span>영어시험 올인원<span class="brand-sub"> · 어휘 &amp; 스피킹 &amp; 라이팅</span></span></div>
     <div class="spacer"></div>
     <button class="icon-btn" id="shuffle-btn" title="섞기">🔀</button>
+    <button class="icon-btn" id="fs-btn" title="글자 크기" aria-haspopup="true" aria-expanded="false">🔠</button>
     <button class="icon-btn" id="tts-btn" title="음성 설정">🎙</button>
     <button class="icon-btn" id="theme-btn" title="테마">🌙</button>
+
+    <!-- 글자 크기 조절 -->
+    <div class="fs-pop" id="fs-pop" role="dialog" aria-label="글자 크기">
+      <div class="fs-title">글자 크기</div>
+      <div class="fs-row">
+        <button id="fs-minus" title="작게 (Ctrl+←)" aria-label="작게">A−</button>
+        <span class="fs-now" id="fs-now">100%</span>
+        <button id="fs-plus" title="크게 (Ctrl+→)" aria-label="크게">A+</button>
+      </div>
+      <div class="fs-steps" id="fs-steps"></div>
+      <button class="fs-reset" id="fs-reset">기본 크기로</button>
+      <div class="fs-hint" id="fs-hint">본문·문제·지문에 적용됩니다. 설정은 저장돼요.</div>
+    </div>
   </div>
 </header>
 

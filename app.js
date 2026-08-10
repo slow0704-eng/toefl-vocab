@@ -11,6 +11,7 @@
   const TOPICS = (window.SPEAKING_TOPICS || []).concat(window.SPEAKING_TOPICS_EXTRA || []);
   const LS_KEY = "toefl-vocab-progress-v1";
   const THEME_KEY = "toefl-vocab-theme";
+  const FS_KEY = "toefl-vocab-fontsize";
   const LV = {1:{n:"기초",c:"l1"},2:{n:"중급",c:"l2"},3:{n:"고급",c:"l3"},4:{n:"최고급",c:"l4"}};
   const LV_DEFS = [[0,"전체","--accent"],[1,"기초","--lv1"],[2,"중급","--lv2"],[3,"고급","--lv3"],[4,"최고급","--lv4"]];
   const TOPIC_ORDER = ["학문·연구","자연·환경","생물·의학","과학·기술","사회·정치","경제·경영","역사·문화","예술·문학","심리·감정","언어·논증","변화·수량","성질·상태","행동·관계"];
@@ -2432,6 +2433,64 @@
       const c=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";
       ls.set(THEME_KEY,c); apply(c);
     });
+  })();
+
+  // ---- 글자 크기 ----
+  // 본문(main·footer)에만 zoom 배율을 걸어 읽는 영역 전체를 함께 키운다.
+  // px 기반 스타일이 수백 군데라 rem 으로 바꾸는 대신 배율 한 번으로 처리한다.
+  // 헤더는 배율에서 빼 두었다 — 조절 버튼까지 같이 움직이면 쓰기 불편해서다.
+  (function(){
+    const STEPS=[{v:.85,n:"작게"},{v:1,n:"기본"},{v:1.15,n:"크게"},{v:1.3,n:"더크게"},{v:1.5,n:"최대"}];
+    const DEF=1;
+    let i = (function(){
+      const n=parseInt(ls.get(FS_KEY,String(DEF)),10);
+      return (n>=0&&n<STEPS.length)?n:DEF;
+    })();
+
+    const pop=$("fs-pop"), btn=$("fs-btn");
+    $("fs-steps").innerHTML=STEPS.map((s,k)=>
+      '<button data-fs="'+k+'" title="'+esc(s.n)+' · '+Math.round(s.v*100)+'%">'+esc(s.n)+'</button>').join('');
+
+    function apply(announce){
+      const s=STEPS[i];
+      document.documentElement.style.setProperty("--fs",String(s.v));
+      $("fs-now").textContent=Math.round(s.v*100)+"%";
+      $("fs-minus").disabled = i===0;
+      $("fs-plus").disabled  = i===STEPS.length-1;
+      qsa("[data-fs]",$("fs-steps")).forEach(b=>b.setAttribute("aria-pressed", String(parseInt(b.dataset.fs,10)===i)));
+      ls.set(FS_KEY,String(i));
+      if(announce) toast("글자 크기 "+s.n+" · "+Math.round(s.v*100)+"%");
+    }
+    function step(d){
+      const next=Math.min(STEPS.length-1,Math.max(0,i+d));
+      if(next===i)return;
+      i=next; apply(true);
+    }
+    function openPop(on){
+      pop.classList.toggle("on",on);
+      btn.setAttribute("aria-expanded",String(on));
+    }
+
+    btn.addEventListener("click",e=>{ e.stopPropagation(); openPop(!pop.classList.contains("on")); });
+    pop.addEventListener("click",e=>e.stopPropagation());
+    document.addEventListener("click",()=>openPop(false));
+    document.addEventListener("keydown",e=>{
+      if(e.key==="Escape"&&pop.classList.contains("on")){ openPop(false); btn.focus(); return; }
+      // Ctrl+← / Ctrl+→ 는 브라우저 기본 확대(Ctrl +/-)와 겹치지 않는 조합
+      if(!e.ctrlKey||e.altKey||e.metaKey)return;
+      if(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA")return;
+      if(e.key==="ArrowLeft"){ e.preventDefault(); step(-1); }
+      else if(e.key==="ArrowRight"){ e.preventDefault(); step(1); }
+    });
+    $("fs-minus").addEventListener("click",()=>step(-1));
+    $("fs-plus").addEventListener("click",()=>step(1));
+    $("fs-reset").addEventListener("click",()=>{ if(i!==DEF){ i=DEF; apply(true); } });
+    qsa("[data-fs]",$("fs-steps")).forEach(b=>b.addEventListener("click",()=>{
+      const k=parseInt(b.dataset.fs,10); if(k!==i){ i=k; apply(true); }
+    }));
+
+    apply(false);
+    if(!(window.CSS&&CSS.supports&&CSS.supports("zoom","1.5"))) $("fs-hint").textContent="이 브라우저는 글자 크기 조절을 지원하지 않습니다.";
   })();
 
   // ---- 탭바 (모바일: 탭이 12개라 가로 스크롤) ----
