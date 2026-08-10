@@ -8,7 +8,7 @@
    ============================================================ */
 (function(){
   const WORDS = (window.TOEFL_WORDS || []).slice();
-  const TOPICS = (window.SPEAKING_TOPICS || []).slice();
+  const TOPICS = (window.SPEAKING_TOPICS || []).concat(window.SPEAKING_TOPICS_EXTRA || []);
   const LS_KEY = "toefl-vocab-progress-v1";
   const THEME_KEY = "toefl-vocab-theme";
   const LV = {1:{n:"기초",c:"l1"},2:{n:"중급",c:"l2"},3:{n:"고급",c:"l3"},4:{n:"최고급",c:"l4"}};
