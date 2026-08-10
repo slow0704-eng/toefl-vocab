@@ -39,6 +39,7 @@
     <button role="tab" aria-selected="false" data-tab="speak">🎤 스피킹</button>
     <button role="tab" aria-selected="false" data-tab="write">✍️ 라이팅</button>
     <button role="tab" aria-selected="false" data-tab="read">📖 리딩</button>
+    <button role="tab" aria-selected="false" data-tab="ptype">📐 지문유형</button>
     <button role="tab" aria-selected="false" data-tab="info">ℹ️ 시험정보</button>
   </div></div>
 
@@ -217,6 +218,7 @@
       <button data-tex="all" aria-pressed="true">전체</button>
       <button data-tex="TOEFL" aria-pressed="false">🎓 TOEFL 학술형</button>
       <button data-tex="TOEIC" aria-pressed="false">💼 TOEIC 실무형</button>
+      <button data-tex="P7" aria-pressed="false">🗂 Part 7 멀티지문</button>
       <span style="flex:1"></span>
       <button data-tmode="read" aria-pressed="true" class="tmode">📖 지문 읽기</button>
       <button data-tmode="solve" aria-pressed="false" class="tmode">🎯 문제 풀기</button>
@@ -267,6 +269,23 @@
     <div id="read-list"></div>
   </section>
 
+  <!-- 지문 유형 (글의 짜임) -->
+  <section class="panel" id="panel-ptype">
+    <div class="det-intro">📐 리딩 탭이 <b>문제 유형</b>(추론·어휘…)과 <b>주제 분야</b>(천문학·미국사…)를 다룬다면, 여기서는 그 아래 축인 <b>글의 짜임</b>을 다룹니다. 같은 주제라도 전개 방식이 다르면 읽는 법과 출제 포인트가 달라집니다. 유형마다 <b>신호 표현 · 읽는 요령 · 출제 포인트</b>와 <b>문장별 구조 분석이 붙은 예문</b>이 있습니다.</div>
+    <div class="search-box">
+      <span class="ic">🔎</span>
+      <input id="ptype-search" type="search" placeholder="유형·신호 표현·예문 검색 (예: 인과, whereas, 공생)…" />
+    </div>
+    <div class="tp-row" id="ptype-group"></div>
+    <div class="filter-row" id="ptype-mode">
+      <button data-pmode="learn" aria-pressed="true">📖 유형 익히기</button>
+      <button data-pmode="quiz" aria-pressed="false">🎯 유형 맞히기</button>
+      <button id="ptype-shuffle" style="margin-left:auto">🔀 새 세트</button>
+    </div>
+    <div class="count-line" id="ptype-count"></div>
+    <div id="ptype-body"></div>
+  </section>
+
   <!-- 시험 정보 -->
   <section class="panel" id="panel-info">
     <div class="det-intro">ℹ️ 주요 영어 시험의 <b>문제 수 · 시간 · 과목 · 유형 · 점수</b>를 한눈에 비교합니다.</div>
@@ -300,6 +319,11 @@
 <script src="duolingo.js"></script>
 <script src="exams.js"></script>
 <script src="topics.js"></script>
+<script src="topics-tolkien.js"></script>
+<script src="topics-football.js"></script>
+<script src="topics-football2.js"></script>
+<script src="part7.js"></script>
+<script src="passages.js"></script>
 <script src="app.js"></script>
 
 </body>

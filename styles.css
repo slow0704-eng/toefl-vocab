@@ -454,7 +454,8 @@ body.speaking-mode .progress-wrap,body.speaking-mode #shuffle-btn{display:none}
 
 /* 관심주제 리딩 (축구 · 영화) */
 .tp-passage{font-size:16px;line-height:2;white-space:pre-wrap;word-break:keep-all;background:var(--surface-2);border-radius:var(--radius-sm);padding:20px 22px;border-left:3px solid var(--accent)}
-.tp-passage.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;line-height:1.9;white-space:pre}
+/* 실무 문서(이메일·공지)는 줄바꿈을 살리되 긴 줄은 접는다 — 모바일 좌우 스크롤 방지 */
+.tp-passage.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere}
 .tp-ko{font-size:14.5px;line-height:1.95;white-space:pre-wrap;word-break:keep-all;color:var(--dim);background:var(--surface-2);border-radius:var(--radius-sm);padding:18px 20px;border-left:3px solid var(--good)}
 .tp-gloss{display:flex;flex-wrap:wrap;gap:7px}
 .tp-gloss span{font-size:12.5px;padding:6px 12px;border-radius:99px;background:var(--surface);border:1px solid var(--border)}
@@ -464,6 +465,25 @@ body.speaking-mode .progress-wrap,body.speaking-mode #shuffle-btn{display:none}
 .tmode[aria-pressed="true"]{background:var(--accent-2);border-color:var(--accent-2);color:#fff}
 .tp-qbox{margin-top:16px;border-top:1px solid var(--border);padding-top:16px}
 .tp-qn{font-size:12px;font-weight:800;color:var(--accent);margin-bottom:7px}
+
+/* TOEIC Part 7 멀티 지문 */
+.tp-docs{max-height:360px;overflow-y:auto;margin-bottom:16px;border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 12px 4px}
+.tp-docs .tp-passage{margin-bottom:12px}
+.tp-doclabel{font-size:12px;font-weight:800;color:var(--dim);margin:4px 0 6px 2px}
+.link-tag{display:inline-block;font-size:10.5px;font-weight:800;padding:2px 8px;border-radius:99px;margin-right:7px;color:#fff;background:var(--accent-2);vertical-align:2px}
+
+/* 지문 유형 (글의 짜임) */
+.pt-note{font-size:14px;line-height:1.9;word-break:keep-all;background:var(--surface-2);border-radius:var(--radius-sm);padding:14px 16px;border-left:3px solid var(--accent)}
+.pt-points{margin:0;padding-left:20px}
+.pt-points li{font-size:13.5px;line-height:1.85;color:var(--dim);word-break:keep-all;margin-bottom:4px}
+.pt-map{display:flex;flex-direction:column;gap:6px}
+.pt-map-row{display:flex;gap:10px;align-items:flex-start;background:var(--surface-2);border-radius:var(--radius-sm);padding:9px 12px}
+.pt-part{flex:0 0 78px;font-size:12px;font-weight:800;color:var(--accent);line-height:1.7}
+.pt-role{flex:1;min-width:0;font-size:13px;line-height:1.7;word-break:keep-all}
+@media (max-width:520px){
+  .pt-map-row{flex-direction:column;gap:2px}
+  .pt-part{flex:none}
+}
 
 /* 음성(TTS) 설정 */
 .tts-modal{position:fixed;inset:0;background:rgba(10,14,24,.6);display:none;place-items:center;z-index:120;padding:18px;overflow-y:auto}
