@@ -463,7 +463,7 @@
 
   // ---- 콤보 (연속 정답) — 어휘 퀴즈·문법 공용 ----
   const COMBO_KEY="toefl-vocab-best-combo";
-  let bestCombo=(function(){ const v=ls.getJSON(COMBO_KEY,null); return (v&&typeof v==="object")?{quiz:v.quiz||0,gram:v.gram||0,det:v.det||0,struct:v.struct||0,slang:v.slang||0,topic:v.topic||0,ptype:v.ptype||0}:{quiz:0,gram:0,det:0,struct:0,slang:0,topic:0,ptype:0}; })();
+  let bestCombo=(function(){ const v=ls.getJSON(COMBO_KEY,null); return (v&&typeof v==="object")?{quiz:v.quiz||0,gram:v.gram||0,det:v.det||0,struct:v.struct||0,slang:v.slang||0,topic:v.topic||0,ptype:v.ptype||0,spass:v.spass||0}:{quiz:0,gram:0,det:0,struct:0,slang:0,topic:0,ptype:0,spass:0}; })();
   function saveBestCombo(){ ls.setJSON(COMBO_KEY,bestCombo); }
   // 연속 정답 수에 따라 등급이 올라간다
   const COMBO_TIERS=[
@@ -1125,6 +1125,10 @@
     return list;
   })();
   let sLv=0, sCat="all", sTopic="all", sMode="solve", struct=null;
+  // 지문형 — 한 지문에 구문 4~6개가 섞여 있고 문맥 속에서 차례로 고른다
+  const SPASS = (window.STRUCT_PASSAGES || []).slice();
+  const SPTOPICS = (function(){ const s=[]; SPASS.forEach(p=>{ if(s.indexOf(p.topic)<0)s.push(p.topic); }); return s; })();
+  let spTopic="all", sp=null;
 
   /* 난이도·유형·주제 세 축을 함께 쓰므로, 칩 개수를 계산할 때는
      자기 자신의 축만 빼고 나머지 조건을 적용한다(skip). */
@@ -1180,14 +1184,20 @@
   $("struct-search").addEventListener("input",()=>{ buildStructChips(); startStruct(); });
   qsa("[data-smode]",$("struct-mode")).forEach(b=>b.addEventListener("click",()=>{
     qsa("[data-smode]",$("struct-mode")).forEach(x=>x.setAttribute("aria-pressed",x===b));
-    sMode=b.dataset.smode; startStruct();
+    sMode=b.dataset.smode; sp=null; stopSpeak(); startStruct();
   }));
   $("struct-shuffle").addEventListener("click",()=>{
+    if(sMode==="passage") sp=null;
     startStruct();
-    toast(sMode==="solve"?"새 문제 세트를 뽑았습니다 🔀":"구조 유형 순서로 정렬했습니다");
+    toast(sMode==="list"?"구조 유형 순서로 정렬했습니다":"새 문제 세트를 뽑았습니다 🔀");
   });
 
   function startStruct(){
+    // 지문형은 필터 축이 달라서(구조 유형이 지문마다 여러 개) 칩 줄을 갈아 끼운다
+    const isP = sMode==="passage";
+    $("struct-filters").hidden = isP;
+    $("struct-pfilters").hidden = !isP;
+    if(isP) return startStructPassage();
     const pool=structPool();
     $("struct-count").textContent = pool.length+"개 구문"+(sMode==="solve"&&pool.length?" 중 "+Math.min(10,pool.length)+"문항 출제":"");
     if(!pool.length){ struct=null; $("struct-body").innerHTML='<div class="empty">조건에 맞는 구문이 없습니다.<br/>유형·주제·난이도 필터를 넓혀 보세요.</div>'; return; }
@@ -1293,6 +1303,172 @@
       if(say)say.addEventListener("click",e=>{ e.stopPropagation(); speak(say.dataset.say,{rate:.88}); });
     });
   }
+  /* ---- 구문 지문형 ----
+     낱개 문장이 아니라 한 문단을 통째로 놓고, 그 안의 빈칸을 앞에서부터
+     차례로 채운다. 이미 푼 자리는 지문 안에 정답이 박힌 채로 남아
+     뒤 문항을 풀 때 앞 구조를 다시 읽을 수 있게 했다. */
+  // 난이도 칩은 지문형에서 숨기므로 sLv 는 적용하지 않는다.
+  // (다른 모드에서 걸어 둔 난이도 때문에 보이지 않는 필터로 지문이 사라지면 안 된다)
+  function spPool(){
+    const q=($("struct-search").value||"").trim().toLowerCase();
+    return SPASS.filter(p=>{
+      if(spTopic!=="all" && p.topic!==spTopic) return false;
+      if(!q) return true;
+      const hay=[p.title,p.topic,p.sents.map(s=>s.en+" "+s.ko+" "+(s.pat||"")+" "+(s.cat||"")+" "+(s.note||"")).join(" ")].join(" ").toLowerCase();
+      return hay.includes(q);
+    });
+  }
+  function spItems(p){ return p.sents.filter(s=>s.blank!==undefined); }
+
+  function buildSpChips(){
+    $("struct-ptopic").innerHTML='<button class="tp-chip" data-sp="all" aria-pressed="'+(spTopic==="all")+'">🗂 전체<span class="c">'+SPASS.length+'</span></button>'+
+      SPTOPICS.map(function(t){
+        const n=SPASS.filter(p=>p.topic===t).length;
+        return '<button class="tp-chip" data-sp="'+esc(t)+'" aria-pressed="'+(spTopic===t)+'">'+esc(t)+'<span class="c">'+n+'</span></button>';
+      }).join("");
+    qsa("[data-sp]",$("struct-ptopic")).forEach(b=>b.addEventListener("click",()=>{
+      spTopic=b.dataset.sp; sp=null; buildSpChips(); startStructPassage();
+    }));
+  }
+
+  function startStructPassage(){
+    buildSpChips();
+    const pool=spPool();
+    const nq=pool.reduce((s,p)=>s+spItems(p).length,0);
+    $("struct-count").textContent = pool.length+"개 지문 · "+nq+"문항";
+    if(!pool.length){ sp=null; $("struct-body").innerHTML='<div class="empty">조건에 맞는 지문이 없습니다.<br/>주제 필터나 검색어를 넓혀 보세요.</div>'; return; }
+    if(!sp || sp.finished){
+      sp={ list:shuffled(pool), pi:0, qi:0, score:0, total:0, answered:false,
+           streak:0, best:0, prevBest:bestCombo.spass||0, marks:{} };
+    }
+    drawSpQ();
+  }
+
+  // 지문 렌더 — 이미 푼 빈칸은 정답이 박힌 채로, 현재 빈칸은 밑줄로 남긴다
+  function spPassageHTML(p, revealAll){
+    let n=0;
+    return p.sents.map(function(s){
+      if(s.blank===undefined) return esc(s.en);
+      const k=n++;
+      const i=s.en.indexOf(s.blank);
+      const head=esc(s.en.slice(0,i)), tail=esc(s.en.slice(i+s.blank.length));
+      let mid;
+      if(revealAll || sp.marks[k]){
+        const cls = revealAll ? "filled" : ("filled "+sp.marks[k]);
+        mid='<span class="blank '+cls+'">'+esc(s.blank)+'</span>';
+      }else if(k===sp.qi){
+        mid='<span class="blank cur">('+(k+1)+') ______</span>';
+      }else{
+        mid='<span class="blank">('+(k+1)+') ______</span>';
+      }
+      return head+mid+tail;
+    }).join(" ");
+  }
+
+  function drawSpQ(){
+    const p=sp.list[sp.pi], items=spItems(p);
+    if(sp.qi>=items.length) return drawSpDone();
+    const it=items[sp.qi];
+    if(!it._opts) it._opts=shuffled([it.blank].concat(it.opts));
+    sp.answered=false;
+    $("struct-body").innerHTML='<div class="quiz-card">'+
+      '<div class="quiz-progress"><i style="width:'+Math.round(sp.qi/items.length*100)+'%"></i></div>'+
+      '<div class="quiz-topline"><span class="quiz-q">지문 '+(sp.pi+1)+' / '+sp.list.length+' · 빈칸 '+(sp.qi+1)+' / '+items.length+'</span>'+
+        '<span id="sp-streak">'+comboBadge(sp.streak)+'</span></div>'+
+      '<div class="sp-badges" style="margin-bottom:10px"><span class="cat-badge">'+esc(p.topic)+'</span>'+
+        '<span class="lv-badge '+LV[p.level].c+'">'+LV[p.level].n+'</span>'+
+        '<span class="topic-tag">'+items.length+'문항</span></div>'+
+      '<div class="st-pass">'+spPassageHTML(p,false)+'</div>'+
+      '<div class="q-text" style="font-size:14.5px;font-weight:700;line-height:1.8;margin:14px 0 12px">'+
+        '('+(sp.qi+1)+') 빈칸에 들어갈 알맞은 형태를 고르세요.</div>'+
+      it._opts.map((o,i)=>'<button class="opt" data-i="'+i+'"><span class="key ab">'+AB[i]+'</span>'+esc(o)+'</button>').join('')+
+      '<div class="quiz-foot"><span class="quiz-score">점수 <b id="sp-score">'+sp.score+'</b> / '+sp.total+bestLabel("spass")+'</span>'+
+      '<button class="quiz-next" id="sp-next">다음 →</button></div><div id="sp-reveal"></div>'+
+      '<div class="quiz-hint">키보드: <b>A~D</b> 또는 <b>1~4</b> · <b>Enter</b> 다음</div></div>';
+    qsa(".opt",$("struct-body")).forEach(b=>b.addEventListener("click",()=>answerSp(parseInt(b.dataset.i,10),it)));
+    $("sp-next").addEventListener("click",()=>{ sp.qi++; drawSpQ(); window.scrollTo({top:0,behavior:"smooth"}); });
+  }
+
+  function answerSp(pick,it){
+    if(sp.answered)return; sp.answered=true;
+    const btns=qsa(".opt",$("struct-body"));
+    const ok = it._opts[pick]===it.blank;
+    sp.total++; sp.marks[sp.qi]= ok?"ok":"no";
+    let rec=false;
+    if(ok){
+      sp.score++; sp.streak++; sp.best=Math.max(sp.best,sp.streak);
+      if(bestCombo.spass===undefined)bestCombo.spass=0;
+      rec=registerCombo(sp,"spass");
+      beep("ok",sp.streak); confetti(rec?110:sp.streak>=5?70:sp.streak>=3?45:26);
+      comboPopup(sp.streak,rec);
+      const s=$("sp-score"); s.textContent=sp.score; s.classList.add("bump");
+    }else{ sp.streak=0; sp.recordShown=false; beep("no"); btns[pick].classList.add("wrong"); }
+    btns.forEach((b,i)=>{ b.disabled=true; if(it._opts[i]===it.blank)b.classList.add("correct"); });
+    const sb=$("sp-streak"); if(sb)sb.innerHTML=comboBadge(sp.streak);
+    // 지문 안의 해당 빈칸을 정답으로 채워 넣어, 다음 문항을 풀 때 앞 구조가 읽히게 한다
+    const box=document.querySelector("#struct-body .st-pass");
+    if(box) box.innerHTML=spPassageHTML(sp.list[sp.pi],false);
+    $("sp-reveal").innerHTML='<div class="reveal '+(ok?"ok":"no")+'">'+
+      '<div class="verdict">'+(ok?'🎉 정답! <span class="plus">+1</span>':'💡 아쉬워요 — 정답은 '+esc(it.blank))+
+        (ok?' '+comboBadge(sp.streak)+(rec?' <span class="rec-tag">🏆 신기록</span>':''):'')+'</div>'+
+      '<div class="sp-badges" style="margin:8px 0"><span class="cat-badge">'+esc(it.cat)+'</span>'+
+        '<span class="topic-tag">'+esc(it.pat)+'</span></div>'+
+      '<div class="gram-exp">'+esc(it.note)+'</div>'+
+      '<div class="st-ko" style="margin-top:10px">'+esc(it.ko)+'</div></div>';
+    const nb=$("sp-next"); nb.style.visibility="visible"; nb.classList.add("on");
+    nb.textContent = sp.qi===spItems(sp.list[sp.pi]).length-1 ? "지문 정리 보기 →" : "다음 →";
+  }
+
+  // 한 지문을 다 풀면 완성된 지문 · 해석 · 그 안에 나온 구문 정리를 보여 준다
+  function drawSpDone(){
+    const p=sp.list[sp.pi], items=spItems(p);
+    const last = sp.pi===sp.list.length-1;
+    $("struct-body").innerHTML='<div class="quiz-card">'+
+      '<div class="quiz-topline"><span class="quiz-q">지문 '+(sp.pi+1)+' / '+sp.list.length+' 완료 · '+esc(p.title)+'</span></div>'+
+      '<div class="sp-controls" style="margin:4px 0 12px">'+
+        '<button data-act="play">▶ 지문 듣기</button><button data-act="stop">■ 정지</button>'+
+        '<button data-act="ko" aria-pressed="false">🇰🇷 해석</button></div>'+
+      '<div class="st-pass">'+spPassageHTML(p,true)+'</div>'+
+      '<div class="ko-text" style="display:none;margin-top:12px"><div class="st-ko">'+
+        esc(p.sents.map(s=>s.ko).join(" "))+'</div></div>'+
+      '<div class="sp-sec-title">🧩 이 지문에 나온 구문</div>'+
+      items.map((it,k)=>'<div class="st-sum'+(sp.marks[k]==="no"?" miss":"")+'">'+
+        '<div class="st-sum-n">('+(k+1)+')'+(sp.marks[k]==="no"?' <span class="miss-tag">틀림</span>':'')+'</div>'+
+        '<div><div class="st-sum-pat">'+esc(it.pat)+'<span class="cat-badge" style="margin-left:7px">'+esc(it.cat)+'</span></div>'+
+        '<div class="st-sum-note">'+esc(it.note)+'</div></div></div>').join('')+
+      '<div class="sp-sec-title">💡 핵심 어휘</div><div class="tp-gloss">'+
+        p.gloss.map(g=>'<span><b>'+esc(g.w)+'</b>'+esc(g.ko)+'</span>').join('')+'</div>'+
+      '<div class="quiz-foot" style="margin-top:16px"><span class="quiz-score">누적 <b>'+sp.score+'</b> / '+sp.total+bestLabel("spass")+'</span>'+
+      '<button class="quiz-next on" id="sp-next" style="visibility:visible">'+(last?"결과 보기 →":"다음 지문 →")+'</button></div>'+
+      '</div>';
+    const box=$("struct-body");
+    box.querySelector('[data-act="play"]').addEventListener("click",e=>{
+      const b=e.currentTarget; b.textContent="🔊 재생 중…";
+      speakBest(p.sents.map(s=>s.en).join(" "),{rate:.9,onend:()=>b.textContent="▶ 지문 듣기"}); });
+    box.querySelector('[data-act="stop"]').addEventListener("click",()=>{ stopSpeak();
+      box.querySelector('[data-act="play"]').textContent="▶ 지문 듣기"; });
+    const kb=box.querySelector('[data-act="ko"]');
+    kb.addEventListener("click",()=>{ const on=kb.getAttribute("aria-pressed")==="true";
+      kb.setAttribute("aria-pressed",!on); box.querySelector(".ko-text").style.display=on?"none":"block"; });
+    $("sp-next").addEventListener("click",()=>{
+      stopSpeak();
+      if(last) return drawSpResult();
+      sp.pi++; sp.qi=0; sp.marks={}; drawSpQ(); window.scrollTo({top:0,behavior:"smooth"});
+    });
+  }
+
+  function drawSpResult(){
+    const pct=sp.total?Math.round(sp.score/sp.total*100):0;
+    const perfect=sp.total&&sp.score===sp.total;
+    const msg=perfect?"완벽해요! 만점입니다 🏆":pct>=80?"훌륭해요! 🎉":pct>=50?"좋아요, 조금만 더! 💪":"구문 정리를 다시 읽어 보세요 📖";
+    sp.finished=true;
+    $("struct-body").innerHTML='<div class="result"><div class="big">'+sp.score+' / '+sp.total+'</div>'+
+      '<p>'+msg+' ('+pct+'%)</p>'+comboSummary(sp,"spass")+
+      '<button class="btn good" style="max-width:220px;margin:14px auto 0" id="struct-restart">새 지문 세트 (Enter)</button></div>';
+    $("struct-restart").addEventListener("click",()=>{ sp=null; startStructPassage(); });
+    if(pct>=80){ confetti(perfect?140:80); beep("ok",sp.best); }
+  }
+
   // 구문 키보드 조작 (A~D / 1~4 / Enter)
   document.addEventListener("keydown",e=>{
     if(!$("panel-struct").classList.contains("active"))return;
@@ -1300,6 +1476,18 @@
     if(e.ctrlKey||e.altKey||e.metaKey)return;
     const restart=$("struct-restart");
     if(restart){ if(e.code==="Enter"||e.code==="Space"){ e.preventDefault(); restart.click(); } return; }
+    if(sMode==="passage"){
+      if(!sp)return;
+      const nb=$("sp-next"), pOpts=qsa(".opt",$("struct-body"));
+      let pi=AB.indexOf(String(e.key||"").toUpperCase());
+      if(pi<0){ const n=parseInt(e.key,10); if(n>=1&&n<=pOpts.length)pi=n-1; }
+      if(pOpts.length && !sp.answered && pi>=0 && pi<pOpts.length){ e.preventDefault(); pOpts[pi].click(); return; }
+      // 지문 정리 화면에는 옵션이 없고 '다음 지문' 버튼만 있다
+      if(e.code==="Enter"||e.code==="Space"||e.code==="ArrowRight"){
+        if(nb && (sp.answered || !pOpts.length)){ e.preventDefault(); nb.click(); }
+      }
+      return;
+    }
     if(!struct||sMode!=="solve")return;
     const opts=qsa(".opt",$("struct-body"));
     if(!opts.length)return;

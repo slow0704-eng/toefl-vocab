@@ -339,6 +339,31 @@ body.hide-ko .w-row .k:not(.show),body.hide-ko .w-item .k:not(.show){filter:blur
 .st-q .blank{display:inline-block;min-width:120px;text-align:center;color:var(--accent);font-weight:800;border-bottom:2.5px solid var(--accent);letter-spacing:1px;vertical-align:-2px}
 .st-q .blank.filled{border-bottom-color:var(--good);color:var(--good)}
 
+/* 구문 지문형 — 문단 안에 빈칸이 여러 개 */
+.st-pass{font-size:16px;line-height:2.05;word-break:keep-all;background:var(--surface-2);
+  border-radius:var(--radius-sm);padding:18px 20px;border-left:3px solid var(--accent)}
+.st-pass .blank{display:inline-block;min-width:104px;text-align:center;color:var(--faint);
+  font-weight:800;border-bottom:2.5px dashed var(--border);letter-spacing:.5px;vertical-align:-2px}
+.st-pass .blank.cur{color:var(--accent);border-bottom:2.5px solid var(--accent);
+  background:var(--lv2-w);border-radius:5px 5px 0 0;padding:0 6px}
+.st-pass .blank.filled{min-width:0;color:var(--good);border-bottom:2.5px solid var(--good);
+  letter-spacing:0;padding:0 2px}
+.st-pass .blank.filled.no{color:var(--bad);border-bottom-color:var(--bad)}
+/* 지문을 다 푼 뒤의 구문 정리 */
+.st-sum{display:flex;gap:11px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--border)}
+.st-sum:last-of-type{border-bottom:none}
+.st-sum-n{flex:0 0 42px;font-size:12.5px;font-weight:800;color:var(--accent);line-height:1.7}
+.st-sum.miss .st-sum-n{color:var(--bad)}
+.st-sum-pat{font-size:14px;font-weight:800;letter-spacing:-.2px}
+.st-sum-note{font-size:13px;line-height:1.75;color:var(--dim);word-break:keep-all;margin-top:4px}
+.miss-tag{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:99px;
+  background:var(--bad);color:#fff;vertical-align:1px}
+@media (max-width:520px){
+  .st-pass{font-size:15px;line-height:2;padding:15px 14px}
+  .st-sum{flex-direction:column;gap:3px}
+  .st-sum-n{flex:none}
+}
+
 /* 장르·슬랭 */
 .reg-badge{font-size:11px;font-weight:800;padding:2px 9px;border-radius:99px;white-space:nowrap}
 .reg-badge.r1{color:var(--good);background:var(--good-weak)}

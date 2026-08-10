@@ -163,14 +163,22 @@
       <span class="ic">🔎</span>
       <input id="struct-search" type="search" placeholder="구조명·예문·해설 검색 (예: 도치, whereas, 가정법)…" />
     </div>
-    <div class="lv-row" id="struct-lv"></div>
-    <div class="filter-title">구조 유형</div>
-    <div class="tp-row" id="struct-cat"></div>
-    <div class="filter-title">주제</div>
-    <div class="tp-row" id="struct-topic"></div>
+    <div id="struct-filters">
+      <div class="lv-row" id="struct-lv"></div>
+      <div class="filter-title">구조 유형</div>
+      <div class="tp-row" id="struct-cat"></div>
+      <div class="filter-title">주제</div>
+      <div class="tp-row" id="struct-topic"></div>
+    </div>
+    <div id="struct-pfilters" hidden>
+      <div class="det-intro">📄 한 지문 안에 서로 다른 구문 <b>4~6개</b>가 섞여 있습니다. 앞 문장의 구조를 잘못 읽으면 뒤 문장 해석이 통째로 어긋나므로, 문맥 속에서 차례로 골라 보세요. 다 풀면 <b>완성된 지문 · 해석 · 구문 정리</b>가 나옵니다.</div>
+      <div class="filter-title">지문 주제</div>
+      <div class="tp-row" id="struct-ptopic"></div>
+    </div>
     <div class="filter-row" id="struct-mode">
       <button data-smode="solve" aria-pressed="true">🎯 문제 풀기</button>
       <button data-smode="list" aria-pressed="false">📚 구조 보기</button>
+      <button data-smode="passage" aria-pressed="false">📄 지문형</button>
       <button id="struct-shuffle" style="margin-left:auto">🔀 새 세트</button>
     </div>
     <div class="count-line" id="struct-count"></div>
@@ -330,6 +338,7 @@
 <script src="speaking-extra.js"></script>
 <script src="grammar.js"></script>
 <script src="structures.js"></script>
+<script src="structures-passages.js"></script>
 <script src="slang.js"></script>
 <script src="duolingo.js"></script>
 <script src="exams.js"></script>
