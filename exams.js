@@ -81,17 +81,20 @@ window.EXAM_INFO = [
    }
   ],
   "types": [
-   "Read and Complete — 지문의 빈칸 글자 채우기 (c-test)",
-   "Read and Select — 실제 영단어 vs 존재하지 않는 단어 고르기",
-   "Listen and Type — 문장을 듣고 그대로 받아쓰기",
-   "Read Aloud — 화면의 문장을 소리 내어 읽기",
-   "Write About the Photo — 사진을 1문장 이상으로 묘사 (1분)",
-   "Speak About the Photo — 사진을 90초간 말로 묘사",
-   "Read, Then Write — 지문을 읽고 50단어 이상 작문 (5분)",
-   "Read/Listen, Then Speak — 읽거나 들은 뒤 90초 말하기",
-   "Interactive Reading — 빈칸 완성·정보 찾기·주제 파악·제목 붙이기",
-   "Interactive Listening — 대화에 응답한 뒤 대화 내용 요약",
-   "Summarize the Conversation — 들은 대화를 요약해 말하기"
+   "① Read and Select — 실제 영단어 vs 존재하지 않는 단어 고르기 (단어당 5초)",
+   "② Fill in the Blanks — 한 문장 속 지워진 글자 채우기 (문장당 20초)",
+   "③ Read and Complete — 지문의 빈칸 글자 채우기 c-test (지문당 3분)",
+   "④ Interactive Reading — 한 지문에 하위유형 5종이 6문항으로 (세트당 7~8분)",
+   "⑤ Listen and Type — 문장을 듣고 그대로 받아쓰기 (문장당 1분)",
+   "⑥ Interactive Listening — 듣고 채우기 → 응답 고르기 → 대화 요약 (6분 30초 + 75초)",
+   "⑦ Write About the Photo — 사진을 1문장 이상으로 묘사 (사진당 1분 · 3장)",
+   "⑧ Interactive Writing — 작문 후 이어지는 후속 질문에 답하기 (5분 + 3분)",
+   "⑨ Writing Sample — 학교에 함께 전송되는 장문 작문 (5분)",
+   "⑩ Speak About the Photo — 사진을 90초간 말로 묘사 (준비 20초)",
+   "⑪ Read, Then Speak — 읽고 90초 말하기 (준비 20초)",
+   "⑫ Interactive Speaking — AI 캐릭터와 대화 · 2주제 × 3문항 (문항당 35초) [2026 신설]",
+   "⑬ Speaking Sample — 학교에 함께 전송되는 3분 말하기 (준비 30초)",
+   "※ Read Aloud · Listen, Then Speak — 2026년 폐지 (Interactive Speaking으로 대체)"
   ],
   "tips": [
    "적응형이라 맞힐수록 어려운 문제가 나옴 — 초반 문항이 점수에 큰 영향",

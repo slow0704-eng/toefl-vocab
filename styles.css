@@ -592,3 +592,64 @@ body.speaking-mode .progress-wrap,body.speaking-mode #shuffle-btn{display:none}
   .icon-btn{width:34px;height:34px;font-size:15px}
   .fs-pop{width:min(236px,calc(100vw - 32px))}
 }
+
+/* ── DET 2026 보강 유형 ───────────────────────────────────── */
+/* 유형 칩의 문항 수 배지 */
+.tp-chip .tp-n{display:inline-block;margin-left:6px;padding:0 6px;border-radius:99px;font-size:10.5px;font-weight:800;
+  background:var(--surface-2);color:var(--dim);border:1px solid var(--border);vertical-align:1px}
+.tp-chip[aria-pressed="true"] .tp-n{background:rgba(255,255,255,.22);color:#fff;border-color:transparent}
+
+/* Fill in the Blanks — 20초 카운트다운 */
+.det-timerbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 16px}
+.det-timerbar .det-btn{flex:0 0 auto;min-width:0;padding:7px 12px;font-size:12px}
+.det-timer{font-size:14px;font-weight:800;color:var(--accent);background:var(--accent-weak);
+  border-radius:99px;padding:5px 14px;min-width:86px;text-align:center}
+.det-timer.hot{color:var(--bad);background:var(--bad-weak);animation:tick .6s ease-in-out infinite}
+@keyframes tick{50%{transform:scale(1.08)}}
+.fb-text{line-height:2.6}
+
+/* Interactive Reading */
+.ir-q{font-size:14px;font-weight:700;color:var(--text);margin-bottom:12px;line-height:1.6}
+.ir-stem{font-size:15.5px;line-height:2.1;background:var(--surface-2);border-radius:var(--radius-sm);
+  padding:16px 18px;border-left:3px solid var(--accent);margin-bottom:18px;word-break:keep-all}
+.ir-stem .blank{display:inline-block;min-width:96px;border-bottom:2.5px solid var(--accent);margin:0 4px;vertical-align:-3px}
+.ir-passage{margin-bottom:18px}
+.ir-sent{display:inline;border-radius:5px;padding:1px 2px;transition:.12s}
+/* 클릭 대상임이 한눈에 보이도록 문장마다 옅은 칸을 준다 */
+.ir-sent[role="button"]{cursor:pointer;background:var(--surface);box-shadow:0 0 0 1px var(--border);
+  padding:2px 5px;margin:0 1px}
+.ir-sent[role="button"]:hover,.ir-sent[role="button"]:focus{background:var(--accent-weak);color:var(--accent);
+  box-shadow:0 0 0 1.5px var(--accent);outline:none}
+.ir-sent.done{cursor:default;background:transparent;box-shadow:none}
+.ir-sent.hit{background:var(--good-weak);color:var(--good);font-weight:700;box-shadow:inset 0 -2px 0 var(--good)}
+.ir-sent.miss{background:var(--bad-weak);color:var(--bad);box-shadow:inset 0 -2px 0 var(--bad)}
+.ir-gap{display:inline-block;color:var(--accent);font-weight:800;font-size:13px;background:var(--accent-weak);
+  border:1.5px dashed var(--accent);border-radius:8px;padding:5px 12px;margin:2px 0}
+/* Identify the Idea — 복수 선택 */
+.ir-checks{display:flex;flex-direction:column;gap:9px;margin-bottom:4px}
+.ir-check{display:flex;align-items:flex-start;gap:11px;text-align:left;width:100%;padding:13px 15px;
+  border:1.5px solid var(--border);background:var(--surface);color:var(--text);
+  border-radius:var(--radius-sm);font-size:14px;line-height:1.55;transition:.12s}
+.ir-check .box{flex:0 0 auto;width:18px;height:18px;margin-top:1px;border:2px solid var(--border);border-radius:5px}
+.ir-check[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-weak);color:var(--accent)}
+.ir-check[aria-pressed="true"] .box{border-color:var(--accent);background:var(--accent);
+  box-shadow:inset 0 0 0 2px var(--accent-weak)}
+.ir-check.hit{border-color:var(--good);background:var(--good-weak);color:var(--good)}
+.ir-check.hit .box{border-color:var(--good);background:var(--good)}
+.ir-check.miss{border-color:var(--bad);background:var(--bad-weak);color:var(--bad)}
+.ir-check.miss .box{border-color:var(--bad);background:var(--bad)}
+.ir-check:disabled{opacity:1;cursor:default}
+
+/* Interactive Listening */
+.il-scene{font-size:12.5px;color:var(--dim);background:var(--surface-2);border-radius:var(--radius-sm);
+  padding:10px 13px;margin-bottom:4px;line-height:1.6}
+.il-say{font-size:14.5px;line-height:1.8;background:var(--surface-2);border-radius:var(--radius-sm);
+  padding:14px 16px;border-left:3px solid var(--accent-2);margin:14px 0 16px;color:var(--dim)}
+.il-text{line-height:2.6}
+
+/* 2026 폐지 유형 표시 */
+.legacy-badge{font-size:11px;font-weight:800;padding:2px 9px;border-radius:99px;
+  color:var(--bad);background:var(--bad-weak);border:1px solid transparent}
+.legacy-note{font-size:12.5px;line-height:1.65;color:var(--dim);background:var(--bad-weak);
+  border-left:3px solid var(--bad);border-radius:8px;padding:11px 14px;margin-bottom:6px}
+.legacy-note b{color:var(--text)}

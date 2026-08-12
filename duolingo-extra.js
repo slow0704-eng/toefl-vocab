@@ -1,0 +1,652 @@
+// 듀오링고 영어 테스트(DET) — 2026 개편 기준 누락 유형 보강 데이터
+//
+// 2026년 공식 문항 유형은 13종이다. 이 파일은 duolingo.js 에 없던 유형을 채운다.
+//   fillBlanks           : Fill in the Blanks   — 문장 속 일부 글자 채우기 (20초/문장)
+//   interactiveReading   : Interactive Reading  — 한 지문 + 하위유형 5종(6문항) 세트
+//   interactiveListening : Interactive Listening— 듣고 채우기 → 응답 고르기 → 대화 요약
+//   writeSpeakExtra      : Interactive Speaking / Writing Sample / Speaking Sample
+//
+// 난이도(level) 1=기초 2=중급 3=고급 — 앱의 난이도 칩과 그대로 연결된다.
+window.DET_EXTRA = {
+
+// ─────────────────────────────────────────────────────────────
+// Read and Select 난이도 보강
+// 기존 가짜 단어 181개가 전부 6글자 이상이라 '기초' 난이도를 만들 수 없었다.
+// 짧은 가짜 단어(4~5글자)와 아주 긴 가짜 단어(8글자 이상)를 채워
+//   기초 = 5글자 이하 · 중급 = 6~7글자 · 고급 = 8글자 이상
+// 세 구간 모두 실단어/가짜단어가 충분하도록 맞췄다.
+// 모두 영어 음운 규칙에 맞지만 실제로는 존재하지 않는 단어다.
+"readSelectExtra": {
+ "fake":[
+  "blask","brimp","clend","crast","dremp","drusk","flant","flisk","frell","glant",
+  "glisp","grast","gremp","harnt","helst","jorst","klemp","marth","melst","nirth",
+  "plost","prand","quorb","relph","sarnt","scrit","shund","slunt","snarp","stelb",
+  "strib","swalt","tarsk","thend","trisk","trund","vench","wexil","whorb","yalt",
+  "zant","brulk","chelm","dworn","flarn",
+  "abstrenity","complandor","deprastic","dislemnate","elaborance","emprovance",
+  "fascilent","grandulate","illustrant","impressule","indulgeant","infamiate",
+  "justifence","laborance","magnitent","mendicular","negotiance","obstrudent",
+  "pendulance","quantulate","sagacitude","speculance","stimulaic","subtilence",
+  "tempastive","tolerative","transmiate","ultimacize","vagrantile","velocitant","verbalance"
+ ]
+},
+
+// ─────────────────────────────────────────────────────────────
+// Fill in the Blanks — 한 문장에 지워진 단어 2~3개. {} 안이 지워지는 글자.
+// 실제 시험: 문장당 20초, 6~9문장 출제.
+// ─────────────────────────────────────────────────────────────
+"fillBlanks": [
+ {"level":1,"s":"The museum is clo{sed} on Mondays, so we should go on Tue{sday}.","ko":"박물관은 월요일에 문을 닫으니 화요일에 가는 게 좋겠다."},
+ {"level":1,"s":"She for{got} to bring her umbrella, and now it is rai{ning}.","ko":"그녀는 우산을 가져오는 걸 잊었는데 지금 비가 오고 있다."},
+ {"level":1,"s":"My apartment is only ten min{utes} away from the train sta{tion}.","ko":"우리 아파트는 기차역에서 10분 거리밖에 안 된다."},
+ {"level":1,"s":"Could you please rep{eat} the question a little more slo{wly}?","ko":"질문을 조금만 더 천천히 다시 말씀해 주시겠어요?"},
+ {"level":1,"s":"We deci{ded} to eat at home because the restaurant was too expen{sive}.","ko":"식당이 너무 비싸서 우리는 집에서 먹기로 했다."},
+ {"level":1,"s":"The teacher asked us to hand in our essays by Fri{day} mor{ning}.","ko":"선생님은 금요일 아침까지 에세이를 제출하라고 하셨다."},
+ {"level":1,"s":"He has been lear{ning} Spanish for almost three ye{ars}.","ko":"그는 거의 3년째 스페인어를 배우고 있다."},
+ {"level":1,"s":"There are not eno{ugh} chairs for every{one} in the meeting room.","ko":"회의실에 모두가 앉을 만큼 의자가 충분하지 않다."},
+ {"level":1,"s":"Please turn off the lights bef{ore} you lea{ve} the office.","ko":"사무실을 나가기 전에 불을 꺼 주세요."},
+ {"level":1,"s":"The package should arr{ive} some{time} next week.","ko":"소포는 다음 주 중에 도착할 것이다."},
+ {"level":1,"s":"I usually take a short walk aft{er} lun{ch}.","ko":"나는 보통 점심 후에 잠깐 산책을 한다."},
+ {"level":1,"s":"This coffee shop opens ear{ly} and closes at nine in the eve{ning}.","ko":"이 카페는 일찍 열고 저녁 9시에 닫는다."},
+ {"level":1,"s":"Our flight was dela{yed} beca{use} of the heavy snow.","ko":"폭설 때문에 우리 항공편이 지연되었다."},
+ {"level":1,"s":"She spe{aks} three languages and is now stud{ying} a fourth.","ko":"그녀는 3개 국어를 하고 지금은 네 번째 언어를 공부 중이다."},
+ {"level":1,"s":"The hotel provides free brea{kfast} for all gue{sts}.","ko":"그 호텔은 모든 투숙객에게 무료 조식을 제공한다."},
+
+ {"level":2,"s":"Researchers coll{ected} data from more than two thou{sand} households.","ko":"연구자들은 2천 가구가 넘는 곳에서 자료를 수집했다."},
+ {"level":2,"s":"The committee event{ually} agreed on a compr{omise} after a long debate.","ko":"위원회는 긴 논쟁 끝에 결국 타협안에 합의했다."},
+ {"level":2,"s":"Regular exercise can signif{icantly} reduce the ri{sk} of heart disease.","ko":"규칙적인 운동은 심장병 위험을 상당히 낮출 수 있다."},
+ {"level":2,"s":"The report descr{ibes} how rising costs have affe{cted} small businesses.","ko":"그 보고서는 비용 상승이 소규모 사업체에 어떤 영향을 주었는지 설명한다."},
+ {"level":2,"s":"Students who parti{cipate} in discussions tend to reme{mber} more material.","ko":"토론에 참여하는 학생들은 더 많은 내용을 기억하는 경향이 있다."},
+ {"level":2,"s":"The new policy will be intro{duced} grad{ually} over the next two years.","ko":"새 정책은 앞으로 2년에 걸쳐 점진적으로 도입될 것이다."},
+ {"level":2,"s":"Scientists are still uncer{tain} about the long-term eff{ects} of the drug.","ko":"과학자들은 그 약의 장기적 영향에 대해 아직 확신하지 못한다."},
+ {"level":2,"s":"The company anno{unced} that it would exp{and} into three new markets.","ko":"그 회사는 세 개의 신규 시장에 진출하겠다고 발표했다."},
+ {"level":2,"s":"Many species have adap{ted} to survive in extre{mely} dry conditions.","ko":"많은 종이 극도로 건조한 환경에서 살아남도록 적응해 왔다."},
+ {"level":2,"s":"The professor emph{asized} the impor{tance} of citing original sources.","ko":"교수는 원 출처를 인용하는 것의 중요성을 강조했다."},
+ {"level":2,"s":"Volunteers distr{ibuted} supplies to families affected by the flo{od}.","ko":"자원봉사자들이 홍수 피해 가정에 물품을 나눠 주었다."},
+ {"level":2,"s":"The survey reve{aled} a clear gap betw{een} rural and urban incomes.","ko":"그 조사는 농촌과 도시 소득 사이의 뚜렷한 격차를 드러냈다."},
+ {"level":2,"s":"Local officials appro{ved} the plan desp{ite} strong public opposition.","ko":"지역 관리들은 거센 반대에도 불구하고 그 계획을 승인했다."},
+ {"level":2,"s":"Modern factories rely on automated systems to main{tain} consi{stent} quality.","ko":"현대 공장은 일정한 품질을 유지하기 위해 자동화 시스템에 의존한다."},
+ {"level":2,"s":"The article compa{res} two very diff{erent} approaches to urban planning.","ko":"그 글은 도시 계획에 대한 매우 다른 두 접근법을 비교한다."},
+
+ {"level":3,"s":"The author's argument rests on a que{stionable} assum{ption} about human motivation.","ko":"저자의 논증은 인간 동기에 관한 의심스러운 가정에 기대고 있다."},
+ {"level":3,"s":"Critics dismi{ssed} the theory as specu{lative} and poorly supported by evidence.","ko":"비평가들은 그 이론을 사변적이고 근거가 부족하다며 일축했다."},
+ {"level":3,"s":"The treaty was negoti{ated} under circum{stances} that favored the larger nation.","ko":"그 조약은 강대국에 유리한 상황에서 협상되었다."},
+ {"level":3,"s":"Prolonged drought has accel{erated} the deter{ioration} of the region's farmland.","ko":"장기 가뭄이 그 지역 농지의 황폐화를 앞당겼다."},
+ {"level":3,"s":"Her conclusions were subs{equently} challenged by an indep{endent} panel of experts.","ko":"그녀의 결론은 이후 독립적인 전문가 위원회의 반박을 받았다."},
+ {"level":3,"s":"The mechanism by which the enzyme functions remains poorly under{stood}, despite decades of resea{rch}.","ko":"그 효소가 작동하는 기제는 수십 년의 연구에도 여전히 잘 알려져 있지 않다."},
+ {"level":3,"s":"Economists attri{bute} the recovery to a combi{nation} of low interest rates and rising exports.","ko":"경제학자들은 그 회복을 저금리와 수출 증가의 결합 덕으로 본다."},
+ {"level":3,"s":"The manuscript contains numerous margi{nal} notes that illum{inate} the writer's intentions.","ko":"그 필사본에는 저자의 의도를 밝혀 주는 여백 주석이 다수 있다."},
+ {"level":3,"s":"Bureaucratic dela{ys} have undermi{ned} public confidence in the reform program.","ko":"관료적 지연이 개혁 프로그램에 대한 대중의 신뢰를 훼손했다."},
+ {"level":3,"s":"The findings are consi{stent} with earlier studies but by no means conclu{sive}.","ko":"그 결과는 이전 연구와 일치하지만 결코 결정적이지는 않다."},
+ {"level":3,"s":"Ancient sediments preserve a remar{kably} detailed record of past clim{ate} shifts.","ko":"고대 퇴적층은 과거 기후 변동에 대한 놀랄 만큼 상세한 기록을 보존한다."},
+ {"level":3,"s":"The policy was implem{ented} without adequ{ate} consultation with local communities.","ko":"그 정책은 지역 사회와의 충분한 협의 없이 시행되었다."},
+ {"level":3,"s":"His prose is dense and allu{sive}, demanding consid{erable} patience from the reader.","ko":"그의 산문은 밀도 높고 암시적이어서 독자에게 상당한 인내를 요구한다."},
+ {"level":3,"s":"Migration patterns fluct{uate} in response to subtle envir{onmental} cues.","ko":"이동 양상은 미묘한 환경 신호에 반응해 변동한다."},
+ {"level":3,"s":"The court ultim{ately} ruled that the evidence was inadm{issible}.","ko":"법원은 결국 그 증거가 채택될 수 없다고 판결했다."}
+],
+
+// ─────────────────────────────────────────────────────────────
+// Interactive Reading — 지문 1개 + 하위유형 5종(총 6문항) 한 세트
+//   sentence  : Complete the Sentence  (지문과 별도 문장, 4지선다)
+//   passage   : Complete the Passage   (빠진 문장을 자리에 끼워 넣기)
+//   highlight : Highlight the Answer   (질문에 답하는 문장을 지문에서 클릭)
+//   idea      : Identify the Idea      (지문에 나온 내용 모두 고르기 · 복수정답)
+//   title     : Title the Passage      (제목 고르기)
+// sents = 지문을 문장 단위로 쪼갠 배열 (highlight 채점과 passage 빈자리에 쓰임)
+// ─────────────────────────────────────────────────────────────
+"interactiveReading": [
+ {
+  "level":1,
+  "topic":"자전거 공유 제도",
+  "ko":"자전거 공유가 학생에서 직장인으로 퍼지며 이용자가 늘었지만, 차선이 좁아졌다는 운전자 불만도 있다.",
+  "sents":[
+   "The city started a bike-sharing program three years ago.",
+   "Anyone can pick up a bicycle at one station and leave it at another.",
+   "A one-day pass costs less than a bus ticket.",
+   "At first, only students used the bikes.",
+   "Then offices near the river began to join, and the number of riders doubled in one summer.",
+   "The city now plans to add fifty new stations next year.",
+   "Not everyone is happy about the change.",
+   "Some drivers say the bike lanes have made the roads narrower and slower."
+  ],
+  "qs":[
+   {"t":"sentence","stem":"A one-day pass is ---- than a bus ticket, so many people are willing to try the bikes.","opts":["cheaper","heavier","longer","louder"],"ans":0,"exp":"뒤에 '그래서 많은 사람이 타 본다'가 오므로 값이 '더 싸다'는 뜻이 자연스럽다."},
+   {"t":"sentence","stem":"The number of riders ---- after workers near the river started using the bikes.","opts":["grew","fell","stopped","waited"],"ans":0,"exp":"지문에서 한 여름 만에 두 배가 되었다고 했으므로 '늘었다'가 맞다."},
+   {"t":"passage","at":6,"opts":[
+     "Not everyone is happy about the change.",
+     "The bikes are painted bright yellow.",
+     "Buses in the city run every ten minutes.",
+     "The program started in another country first."
+    ],"ans":0,"exp":"앞은 좋은 소식, 뒤는 운전자 불만이다. 사이에 흐름을 바꾸는 문장이 필요하다."},
+   {"t":"highlight","q":"Which sentence explains why some drivers do not like the program?","ans":7,"exp":"자전거 도로 때문에 차도가 좁아지고 느려졌다는 문장이 불만의 이유다."},
+   {"t":"idea","q":"이 지문에서 실제로 언급된 내용을 모두 고르세요.","opts":[
+     "Riders can return a bike to a different station.",
+     "The city wants to build more stations.",
+     "The program is free for everyone.",
+     "Some drivers complain that the roads are narrower."
+    ],"ans":[0,1,3],"exp":"하루 이용권이 버스 요금보다 싸다고 했을 뿐 무료라는 말은 없다."},
+   {"t":"title","opts":["A City on Two Wheels","How to Repair a Bicycle","The History of the City Bus","Where to Park Your Car"],"ans":0,"exp":"자전거로 달라진 도시 전체를 다루므로 가장 넓게 아우르는 제목이다."}
+  ]
+ },
+ {
+  "level":1,
+  "topic":"학교 급식 바꾸기",
+  "ko":"급식 메뉴를 바꾸자 불만이 컸지만, 학생 투표를 도입한 뒤 잔반이 줄었다.",
+  "sents":[
+   "Last year our school changed its lunch menu.",
+   "The kitchen now serves more vegetables and less fried food.",
+   "Many students complained during the first week.",
+   "They said the new meals were smaller and less tasty.",
+   "The cooks then asked students to vote on new dishes each month.",
+   "Since the vote started, most of the food is finished and less is thrown away.",
+   "The school saves money, and students eat what they chose."
+  ],
+  "qs":[
+   {"t":"sentence","stem":"The kitchen now serves more vegetables and ---- fried food than before.","opts":["less","more","only","every"],"ans":0,"exp":"채소를 '더' 주는 변화와 짝을 이루려면 튀김은 '덜' 주어야 한다."},
+   {"t":"sentence","stem":"Students were unhappy at first because the meals were smaller and, they said, less ----.","opts":["tasty","expensive","healthy","colorful"],"ans":0,"exp":"불만의 내용이므로 '맛이 덜하다'가 맞다. 건강해졌다는 것은 불만 이유가 될 수 없다."},
+   {"t":"passage","at":4,"opts":[
+     "The cooks then asked students to vote on new dishes each month.",
+     "The school closed the kitchen for a month.",
+     "Students began to bring lunch from home.",
+     "The cooks decided to serve fried food again."
+    ],"ans":0,"exp":"뒤 문장이 '투표가 시작된 뒤로'라고 시작하므로, 투표를 도입했다는 문장이 앞에 와야 한다."},
+   {"t":"highlight","q":"Which sentence shows the result of letting students vote?","ans":5,"exp":"음식이 남지 않고 버려지는 양이 줄었다는 문장이 투표의 결과다."},
+   {"t":"idea","q":"이 지문에서 실제로 언급된 내용을 모두 고르세요.","opts":[
+     "The menu was changed to include more vegetables.",
+     "Students were unhappy with the new meals at first.",
+     "The school stopped serving lunch altogether.",
+     "Less food is thrown away now."
+    ],"ans":[0,1,3],"exp":"급식을 아예 중단했다는 내용은 지문에 없다."},
+   {"t":"title","opts":["Letting Students Choose Lunch","How to Cook Vegetables","The Cost of School Buildings","A Guide to Healthy Sleep"],"ans":0,"exp":"메뉴 변경 자체가 아니라 '학생에게 고르게 한 것'이 문제를 푼 열쇠였다."}
+  ]
+ },
+ {
+  "level":2,
+  "topic":"도시 양봉",
+  "ko":"도시 양봉이 늘면서 오히려 야생 벌과 먹이 경쟁이 생겼고, 벌통보다 꽃을 늘리는 것이 낫다는 주장.",
+  "sents":[
+   "In cities from Paris to Seoul, beehives have begun to appear on the roofs of offices, schools, and apartment buildings.",
+   "Urban beekeeping was once dismissed as an eccentric hobby, but it is now promoted by city governments as a way to support pollinators.",
+   "City bees, it turns out, often do surprisingly well.",
+   "Parks, balconies, and roadside plantings provide a longer flowering season than the vast single-crop fields that surround many farms.",
+   "Pesticide use is also lower in most residential neighborhoods.",
+   "Still, the enthusiasm has produced an unexpected problem.",
+   "When hundreds of hives are placed within a few square kilometers, honeybees compete with wild bees and butterflies for a limited supply of flowers.",
+   "Several European cities have therefore begun to limit the number of hives permitted in dense districts.",
+   "Researchers now argue that planting more flowers matters more than adding more hives."
+  ],
+  "qs":[
+   {"t":"sentence","stem":"Rooftop hives were once treated as a private hobby, but many city governments now ---- them as environmental policy.","opts":["promote","forbid","ignore","tax"],"ans":0,"exp":"뒤에 'as environmental policy(환경 정책으로서)'가 오므로 도시가 적극적으로 '장려한다'는 뜻이 자연스럽다."},
+   {"t":"sentence","stem":"Because flowers in a neighborhood are ----, adding more hives does not automatically mean more food for bees.","opts":["limited","artificial","seasonal","fragrant"],"ans":0,"exp":"벌통을 늘려도 먹이가 늘지 않는 이유는 꽃의 양이 '한정되어' 있기 때문이다."},
+   {"t":"passage","at":5,"opts":[
+     "Still, the enthusiasm has produced an unexpected problem.",
+     "Honey produced in cities is therefore sweeter than rural honey.",
+     "Beekeeping equipment has become considerably cheaper in recent years.",
+     "Most city residents have never seen a beehive up close."
+    ],"ans":0,"exp":"앞부분은 도시 벌의 장점, 뒷문장은 야생벌과의 경쟁이라는 '문제'다. 흐름을 뒤집는 문제 제기 문장이 들어가야 한다."},
+   {"t":"highlight","q":"Which sentence explains why city bees can find food during a longer part of the year?","ans":3,"exp":"공원·발코니·가로변 식재가 단일 작물 밭보다 '개화기가 길다'고 설명한 문장이다."},
+   {"t":"idea","q":"이 지문에서 실제로 언급된 내용을 모두 고르세요.","opts":[
+     "City governments now see beekeeping as an environmental benefit.",
+     "Honeybees can crowd out other pollinating insects.",
+     "Urban honey sells for a higher price than rural honey.",
+     "Some cities have capped the number of hives allowed."
+    ],"ans":[0,1,3],"exp":"꿀 가격에 대한 언급은 지문에 전혀 없다. 나머지 셋은 각각 지문 2·7·8번째 문장에 나온다."},
+   {"t":"title","opts":["Too Many Hives, Too Few Flowers","How to Start a Rooftop Hive","The Decline of Rural Farming","Why Honey Prices Are Rising"],"ans":0,"exp":"지문 전체의 핵심은 '벌통은 늘었는데 꽃이 부족하다'는 불균형이다. 실용 안내나 가격 이야기가 아니다."}
+  ]
+ },
+ {
+  "level":2,
+  "topic":"야간열차의 부활",
+  "ko":"저가 항공에 밀려 사라지던 유럽 야간열차가 기후 인식 덕에 부활했지만, 채산성은 여전히 정부 지원에 기대고 있다.",
+  "sents":[
+   "Twenty years ago, most European night trains were being quietly withdrawn.",
+   "Budget airlines could cross the continent in two hours for the price of a taxi ride, and sleeper carriages were expensive to maintain.",
+   "By 2015 only a handful of routes survived.",
+   "The reversal came from an unexpected direction.",
+   "As travellers began to calculate the carbon cost of short flights, sleeping through a journey started to look attractive again.",
+   "Austrian and Swedish operators reopened routes that had been closed for a decade, and tickets frequently sold out months in advance.",
+   "The economics remain difficult, however.",
+   "A sleeper carriage carries far fewer passengers than a seated one, and staff must be paid through the night.",
+   "Most of the new services survive only because governments treat them as climate policy rather than as ordinary businesses."
+  ],
+  "qs":[
+   {"t":"sentence","stem":"Sleeper services were withdrawn in the 2000s largely because they could not ---- with cheap short-haul flights.","opts":["compete","comply","cooperate","coincide"],"ans":0,"exp":"'compete with ~'는 '~와 경쟁하다'. 저가 항공과의 가격 경쟁에서 밀렸다는 맥락이다."},
+   {"t":"sentence","stem":"Demand recovered as passengers became more ---- of the environmental cost of flying.","opts":["aware","careless","doubtful","tired"],"ans":0,"exp":"'be aware of ~'는 '~을 인식하다'. 탄소 비용을 따지기 시작했다는 지문 내용과 맞는다."},
+   {"t":"passage","at":3,"opts":[
+     "The reversal came from an unexpected direction.",
+     "Rail companies responded by lowering their ticket prices.",
+     "Airlines soon began to offer sleeper seats of their own.",
+     "The trains were then converted into freight carriages."
+    ],"ans":0,"exp":"앞은 쇠퇴, 뒤는 부활이다. 방향이 뒤집힌다는 전환 문장이 필요하다."},
+   {"t":"highlight","q":"Which sentence gives a reason why night trains are expensive to operate?","ans":7,"exp":"침대칸은 좌석칸보다 승객이 훨씬 적고 야간 인건비가 든다는 문장이 비용 이유를 설명한다."},
+   {"t":"idea","q":"이 지문에서 실제로 언급된 내용을 모두 고르세요.","opts":[
+     "Night trains had almost disappeared by the mid-2010s.",
+     "Environmental concern helped revive sleeper routes.",
+     "New night trains are now more profitable than airlines.",
+     "Public funding keeps many night services running."
+    ],"ans":[0,1,3],"exp":"'항공사보다 수익성이 좋다'는 말은 없다. 오히려 채산성이 어렵다고 명시한다."},
+   {"t":"title","opts":["Sleeping Through Europe — and Who Pays for It","How Budget Airlines Conquered Europe","The Engineering of Modern Railways","A Guide to Booking Cheap Train Tickets"],"ans":0,"exp":"부활과 그 비용 부담 주체(정부)를 함께 담은 제목이 지문 범위와 일치한다."}
+  ]
+ },
+ {
+  "level":2,
+  "topic":"박물관 도슨트의 변화",
+  "ko":"설명을 먼저 주기보다 스스로 찾게 할 때 관람객이 더 오래 기억한다는 연구와, 그에 따른 논쟁.",
+  "sents":[
+   "For most of the twentieth century, a museum visit followed a fixed script.",
+   "A guide led a group from object to object and delivered a prepared explanation of each one.",
+   "Visitors listened, occasionally asked a question, and moved on.",
+   "Recent research on how people learn in museums has undermined that model.",
+   "Studies show that visitors remember far more when they are asked to look for something themselves before an explanation is offered.",
+   "A group told simply to find the oldest object in a room will examine dozens of items closely.",
+   "The same group, handed the answer in advance, tends to glance and forget.",
+   "Some institutions have gone further and removed the guide entirely from certain galleries.",
+   "Others worry that without expert commentary, visitors will misread what they see."
+  ],
+  "qs":[
+   {"t":"sentence","stem":"Traditional museum tours assumed that visitors would learn mainly by ---- to an expert.","opts":["listening","objecting","travelling","pointing"],"ans":0,"exp":"준비된 설명을 전달하고 관람객은 듣는 구조였으므로 'listening to an expert'가 맞다."},
+   {"t":"sentence","stem":"The studies suggest that an explanation works best when it comes ---- the visitor's own search.","opts":["after","instead of","far from","regardless of"],"ans":0,"exp":"스스로 찾아본 '뒤에' 설명이 오면 기억이 오래간다는 것이 연구의 핵심이다."},
+   {"t":"passage","at":3,"opts":[
+     "Recent research on how people learn in museums has undermined that model.",
+     "Museum attendance has fallen sharply in recent years.",
+     "Guides are now required to hold advanced degrees.",
+     "Most museums have replaced their lighting systems."
+    ],"ans":0,"exp":"앞 세 문장이 '기존 방식', 뒤가 '연구 결과'다. 그 사이를 잇는 전환 문장이 필요하다."},
+   {"t":"highlight","q":"Which sentence describes what happens when visitors are given the answer before looking?","ans":6,"exp":"미리 답을 받은 집단은 '흘깃 보고 잊는다'고 한 문장이 정답이다."},
+   {"t":"idea","q":"이 지문에서 실제로 언급된 내용을 모두 고르세요.","opts":[
+     "Museums once relied on a fixed, guide-led format.",
+     "Searching before explaining improves what visitors remember.",
+     "Every museum has now removed its guides.",
+     "Some experts fear visitors will misinterpret exhibits on their own."
+    ],"ans":[0,1,3],"exp":"'일부 기관(Some institutions)'이 가이드를 없앴다고 했을 뿐 전부는 아니다. 전체화 표현에 주의."},
+   {"t":"title","opts":["Learning by Looking First","The History of the Modern Museum","Why Museum Tickets Cost So Much","Training the Next Generation of Guides"],"ans":0,"exp":"'먼저 스스로 보게 하라'가 지문 전체를 관통하는 주장이다."}
+  ]
+ },
+ {
+  "level":3,
+  "topic":"패스트패션의 숨은 비용",
+  "ko":"싼 옷값이 어디로 전가되는지 — 공급망 노동과 폐기물, 그리고 생산자 책임제 논의.",
+  "sents":[
+   "A garment that costs less than a sandwich has to be paid for somewhere along the line.",
+   "Fast fashion compresses the interval between a design sketch and a shop shelf from months to a matter of weeks.",
+   "That speed is achieved through a supply chain in which orders are placed late, changed often, and priced at the lowest bid.",
+   "Factories absorb the resulting uncertainty by relying on short-term contracts and unpaid overtime.",
+   "The environmental accounting is equally uncomfortable.",
+   "Synthetic fibres shed microplastics with every wash, and roughly three-fifths of all clothing produced is discarded within a year of manufacture.",
+   "Recycling offers only a partial remedy, since blended fabrics are difficult to separate into reusable materials.",
+   "Proposed solutions therefore focus less on disposal than on production itself.",
+   "Extended producer responsibility schemes, now under discussion in several countries, would require brands to bear the cost of a garment's entire life."
+  ],
+  "qs":[
+   {"t":"sentence","stem":"The low price of a fast-fashion garment is possible only because certain costs are ---- to workers and to the environment.","opts":["transferred","refunded","exaggerated","donated"],"ans":0,"exp":"첫 문장의 'has to be paid for somewhere along the line'이 곧 비용의 '전가'다."},
+   {"t":"sentence","stem":"Because blended fabrics resist separation, recycling remains at best a ---- solution.","opts":["partial","definitive","mandatory","redundant"],"ans":0,"exp":"'only a partial remedy'와 같은 의미. 'at best'가 한계를 나타내는 신호다."},
+   {"t":"passage","at":4,"opts":[
+     "The environmental accounting is equally uncomfortable.",
+     "Consumers have nevertheless continued to buy more clothing each year.",
+     "Cotton remains the most widely used natural fibre worldwide.",
+     "Factory workers rarely wear the clothes they produce."
+    ],"ans":0,"exp":"앞은 노동 비용, 뒤는 미세플라스틱·폐기물이다. 논점을 노동에서 환경으로 넘기는 문장이 필요하다."},
+   {"t":"highlight","q":"Which sentence explains how factories cope with unpredictable orders?","ans":3,"exp":"단기 계약과 무급 초과근무로 불확실성을 흡수한다는 문장이 그 방법을 설명한다."},
+   {"t":"idea","q":"이 지문에서 실제로 언급된 내용을 모두 고르세요.","opts":[
+     "Rapid production schedules push risk onto suppliers.",
+     "Most garments are discarded soon after they are made.",
+     "Recycling has largely solved the textile waste problem.",
+     "Some governments are considering making brands pay for disposal."
+    ],"ans":[0,1,3],"exp":"지문이 재활용을 '부분적 해결책'일 뿐이라고 못 박으므로, 재활용이 폐기물 문제를 해결했다는 진술만 지문과 반대다."},
+   {"t":"title","opts":["Who Pays for a Five-Dollar Shirt","A Short History of the Textile Industry","How to Wash Synthetic Clothing","The Rise of Luxury Fashion Brands"],"ans":0,"exp":"'싼 옷의 비용을 누가 치르는가'가 지문의 출발점이자 결론이다."}
+  ]
+ },
+ {
+  "level":3,
+  "topic":"수면과 기억 공고화",
+  "ko":"서파수면 중 신경 활동 재생이 기억을 해마에서 피질로 옮기지만, 배우지 않은 것을 만들어 내지는 못한다.",
+  "sents":[
+   "The brain does not simply rest during sleep; it edits.",
+   "During slow-wave sleep, patterns of neural firing recorded while an animal explores a maze are replayed, compressed into a fraction of the original time.",
+   "This replay appears to transfer fragile traces from the hippocampus, where new experiences are first held, to the cortex, where durable memories reside.",
+   "Evidence for the mechanism is unusually direct.",
+   "When researchers disrupt these replay events in rodents, performance on the task learned the previous day collapses, even though the animals appear otherwise healthy.",
+   "In humans, playing a sound associated with a learned task during slow-wave sleep measurably improves recall the following morning.",
+   "What sleep does not do is manufacture knowledge that was never encoded.",
+   "A night of rest strengthens and reorganizes what attention has already captured; it cannot substitute for the act of learning itself."
+  ],
+  "qs":[
+   {"t":"sentence","stem":"During slow-wave sleep, the neural activity of the previous day is ---- at high speed.","opts":["replayed","erased","invented","postponed"],"ans":0,"exp":"'replay(재생)'이 지문의 핵심 용어다. 압축된 형태로 다시 재생된다."},
+   {"t":"sentence","stem":"When replay is blocked in rodents, their performance on a recently learned task begins to ----.","opts":["deteriorate","stabilize","accelerate","persist"],"ans":0,"exp":"'collapses(무너진다)'와 같은 방향의 어휘를 골라야 한다."},
+   {"t":"passage","at":3,"opts":[
+     "Evidence for the mechanism is unusually direct.",
+     "Sleep researchers still disagree about how long the process takes.",
+     "Most rodents sleep for about twelve hours a day.",
+     "The cortex is the largest structure in the mammalian brain."
+    ],"ans":0,"exp":"뒤의 두 문장이 모두 '실험 증거'다. 증거를 소개하는 예고 문장이 들어가야 한다."},
+   {"t":"highlight","q":"Which sentence states a limit on what sleep can do for learning?","ans":6,"exp":"'배운 적 없는 지식은 만들어 내지 못한다'가 수면의 한계를 직접 말한 문장이다."},
+   {"t":"idea","q":"이 지문에서 실제로 언급된 내용을 모두 고르세요.","opts":[
+     "Memory traces move from the hippocampus toward the cortex during sleep.",
+     "Sound cues played during sleep can improve later recall.",
+     "Sleep can create memories of material that was never studied.",
+     "Interfering with replay damages recently learned skills."
+    ],"ans":[0,1,3],"exp":"마지막 두 문장이 '배우지 않은 내용을 수면이 만들어 낸다'는 진술을 명시적으로 부정한다."},
+   {"t":"title","opts":["The Editing Brain","How Many Hours of Sleep Do You Need?","Mapping the Rodent Hippocampus","Sound and Silence in the Laboratory"],"ans":0,"exp":"첫 문장의 'it edits'가 지문 전체의 비유이자 요지다."}
+  ]
+ },
+ {
+  "level":3,
+  "topic":"오픈소스의 경제학",
+  "ko":"핵심 인프라를 무보수 유지관리자가 떠받치는 구조와, 기업 후원이 닿지 않는 '롱테일' 문제.",
+  "sents":[
+   "It is a peculiar fact of the modern economy that much of its critical infrastructure is written by volunteers and given away.",
+   "Open-source libraries sit beneath banking systems, aircraft software, and the servers that deliver this sentence.",
+   "The puzzle is not why people use free code but why anyone maintains it.",
+   "Early explanations leaned on reputation: contributors were said to be building a public résumé.",
+   "That account explains the first commit far better than the ten-thousandth.",
+   "Surveys of long-term maintainers describe something closer to obligation, and increasingly to fatigue.",
+   "A single unpaid person may answer to millions of dependent projects, and burnout among maintainers is now a recognized security risk.",
+   "Corporate sponsorship has grown in response, though it tends to concentrate on the handful of projects that large firms already depend on.",
+   "The long tail of small, essential libraries remains largely unfunded."
+  ],
+  "qs":[
+   {"t":"sentence","stem":"Reputation theory explains why developers start contributing, but not why they ---- for years afterwards.","opts":["persist","withdraw","hesitate","compete"],"ans":0,"exp":"'첫 커밋'은 설명되지만 '만 번째 커밋'은 설명되지 않는다 → 오래 '지속하는' 이유."},
+   {"t":"sentence","stem":"Because so much software depends on a few unpaid maintainers, their exhaustion has become a ---- concern.","opts":["security","decorative","temporary","linguistic"],"ans":0,"exp":"지문이 번아웃을 'a recognized security risk'라고 못 박는다."},
+   {"t":"passage","at":2,"opts":[
+     "The puzzle is not why people use free code but why anyone maintains it.",
+     "Programming languages have multiplied over the past decade.",
+     "Most companies now write all of their software in-house.",
+     "Volunteers are usually paid a small hourly rate."
+    ],"ans":0,"exp":"앞은 현상 설명, 뒤부터는 '왜 유지하는가'에 대한 설명 시도들이다. 질문을 세우는 문장이 필요하다."},
+   {"t":"highlight","q":"Which sentence points out the weakness of the reputation explanation?","ans":4,"exp":"'첫 커밋은 잘 설명하지만 만 번째는 아니다'가 그 이론의 한계를 지적한다."},
+   {"t":"idea","q":"이 지문에서 실제로 언급된 내용을 모두 고르세요.","opts":[
+     "Essential software is often maintained without payment.",
+     "Reputation alone does not explain long-term maintenance.",
+     "Corporate money now reaches most open-source projects.",
+     "Maintainer burnout is treated as a security problem."
+    ],"ans":[0,1,3],"exp":"기업 후원은 '이미 의존하는 소수 프로젝트'에 몰린다고 했으므로, 대부분의 프로젝트에 돈이 닿는다는 진술만 지문과 반대다."},
+   {"t":"title","opts":["The Volunteers Holding Up the Internet","How to Choose a Programming Language","The History of Corporate Software","Why Banks Are Moving to the Cloud"],"ans":0,"exp":"무보수 자원자가 핵심 인프라를 떠받친다는 것이 지문의 주제다."}
+  ]
+ }
+],
+
+// ─────────────────────────────────────────────────────────────
+// Complete the Passage 난이도 보강 — 기존 30문항이 중급·고급뿐이라 기초를 채운다.
+// duolingo.js 의 passageComplete 와 같은 스키마로, 앱에서 하나로 합쳐 쓴다.
+// ─────────────────────────────────────────────────────────────
+"passageCompleteExtra": [
+ {"level":1,"cat":"논리 연결",
+  "passage":"The bus was twenty minutes late this morning, and the traffic on the bridge was worse than usual. ---- , I still managed to get to class before the lecture started.",
+  "opts":["However","Because","Instead","Therefore"],"ans":0,
+  "exp":"늦을 뻔한 상황과 제때 도착했다는 결과가 어긋나므로 역접의 연결어가 필요하다."},
+ {"level":1,"cat":"논리 연결",
+  "passage":"It rained heavily for five days without stopping. ---- , the outdoor concert in the park had to be canceled.",
+  "opts":["As a result","For example","By contrast","Nevertheless"],"ans":0,
+  "exp":"비가 계속 온 것이 원인, 공연 취소가 결과다. 결과를 이끄는 연결어를 고른다."},
+ {"level":1,"cat":"논리 연결",
+  "passage":"She practiced the same song every evening for a month. ---- , she still felt nervous the moment she walked onto the stage.",
+  "opts":["Even so","Therefore","For instance","In short"],"ans":0,
+  "exp":"충분히 연습했는데도 긴장했다는 뜻이므로 '그런데도'에 해당하는 표현이 와야 한다."},
+ {"level":1,"cat":"문맥 어휘",
+  "passage":"The museum does not charge admission on Sundays, so the main hall is usually very ---- on that day. Visitors often wait outside for half an hour.",
+  "opts":["crowded","empty","quiet","closed"],"ans":0,
+  "exp":"밖에서 30분씩 기다린다는 뒷문장이 '붐빈다'는 뜻을 확정해 준다."},
+ {"level":1,"cat":"문맥 어휘",
+  "passage":"I could not read the notice on the door from where I was standing. The letters were simply too ----.",
+  "opts":["small","loud","heavy","warm"],"ans":0,
+  "exp":"글자를 못 읽은 이유이므로 크기에 관한 말이어야 한다. 소리·무게는 글자와 어울리지 않는다."},
+ {"level":1,"cat":"문맥 어휘",
+  "passage":"This soup needs a little more salt. Right now it tastes rather ----, even though the vegetables are fresh.",
+  "opts":["plain","sweet","spicy","burnt"],"ans":0,
+  "exp":"소금이 더 필요하다는 말이므로 '싱겁다·심심하다'는 뜻이 이어져야 한다."},
+ {"level":1,"cat":"문장 완성",
+  "passage":"My sister moved to Canada last spring. Even though we are ten thousand kilometers apart, she ---- me almost every weekend.",
+  "opts":["calls","called","calling","to call"],"ans":0,
+  "exp":"'almost every weekend'는 반복되는 현재의 습관이므로 현재시제를 쓴다."},
+ {"level":1,"cat":"문장 완성",
+  "passage":"The theater was completely full by the time we got there. If we ---- twenty minutes earlier, we would have found seats near the front.",
+  "opts":["had arrived","arrive","arriving","will arrive"],"ans":0,
+  "exp":"'would have found'와 짝을 이루는 가정법 과거완료다. if절에는 had p.p.가 온다."},
+ {"level":1,"cat":"문장 완성",
+  "passage":"The library asks visitors to keep their phones on silent. Anyone ---- takes a call inside the reading room is asked to step into the hallway.",
+  "opts":["who","which","whose","what"],"ans":0,
+  "exp":"사람(Anyone)을 받으면서 뒤 동사 takes의 주어 역할을 하므로 주격 관계대명사 who가 맞다."},
+ {"level":1,"cat":"문맥 어휘",
+  "passage":"The recipe looked complicated at first, but the steps turned out to be quite ----. I finished the whole dish in under thirty minutes.",
+  "opts":["simple","dangerous","expensive","ancient"],"ans":0,
+  "exp":"'복잡해 보였지만'과 대조되고, 30분 만에 끝냈다는 결과와도 이어지는 말을 고른다."}
+],
+
+// ─────────────────────────────────────────────────────────────
+// Interactive Listening — 3부 구성
+//   p1 : Listen and Complete  — 문장을 듣고 빠진 단어 입력 ({} 안이 통째로 지워짐)
+//   p2 : Listen and Respond   — 상대 발화를 듣고 가장 적절한 응답 고르기
+//   p3 : Summarize the Conversation — 대화 요약 모범답변
+// ─────────────────────────────────────────────────────────────
+"interactiveListening": [
+ {
+  "level":1,
+  "topic":"도서관에서 자료 찾기",
+  "scene":"과제 자료를 찾으러 온 학생과 도서관 사서의 대화입니다.",
+  "p1":[
+   {"say":"The reference desk is on the second floor, next to the study rooms.","text":"The {reference} desk is on the second floor, next to the {study} rooms."},
+   {"say":"You can borrow up to five books for three weeks at a time.","text":"You can {borrow} up to five books for {three} weeks at a time."}
+  ],
+  "p2":[
+   {"say":"Hi — I'm looking for sources on urban planning. Where should I start?",
+    "opts":["Have you tried the library catalog on the computers by the entrance?","I think the cafeteria closes at eight.","You should return that book tomorrow."],
+    "ans":0,"exp":"'어디서 시작하면 되냐'는 질문에는 구체적인 출발점을 알려 주는 응답이 자연스럽다."},
+   {"say":"I searched the catalog, but I got over two thousand results.",
+    "opts":["Then you should probably read all of them.","Try narrowing it down with a date range and a subject filter.","The library is open until ten tonight."],
+    "ans":1,"exp":"결과가 너무 많다는 문제에는 '범위를 좁히는 방법'을 제안하는 응답이 맞다."},
+   {"say":"That helped a lot. Some of the articles are behind a paywall, though.",
+    "opts":["You can request those through interlibrary loan — it usually takes two days.","Paywalls are a good way to make money.","You should buy a new laptop."],
+    "ans":0,"exp":"접근이 막힌 논문에 대한 실질적 해결책을 제시하는 응답을 고른다."},
+   {"say":"Two days might be too late. My outline is due on Thursday.",
+    "opts":["Then just skip the outline.","In that case, use the open-access journals for now and add the rest later.","Thursday is my favorite day of the week."],
+    "ans":1,"exp":"마감이 촉박하다는 제약을 반영해 대안을 주는 응답이 적절하다."},
+   {"say":"That makes sense. Should I email you if I get stuck?",
+    "opts":["No, I never check my email.","Yes, or just stop by the desk — someone is here until six.","I can write the outline for you."],
+    "ans":1,"exp":"도움을 계속 받을 수 있는지 묻는 말에 이용 가능한 방법과 시간을 알려 주는 응답이 자연스럽다."}
+  ],
+  "p3":{
+   "q":"In your own words, summarize the conversation you just heard.",
+   "answerEn":"A student came to the library looking for sources on urban planning and was directed to the online catalog. When the search returned too many results, the librarian suggested filtering by date and subject. The student then ran into paywalled articles, and the librarian recommended interlibrary loan, which takes about two days. Because the student's outline was due on Thursday, the librarian advised using open-access journals first and adding the requested articles later. Finally, the librarian said the student could email or simply come back to the desk before six.",
+   "answerKo":"한 학생이 도시 계획 자료를 찾으러 도서관에 왔고 사서는 온라인 목록을 안내했다. 검색 결과가 너무 많자 사서는 연도와 주제로 범위를 좁히라고 제안했다. 학생이 유료 논문 문제를 말하자 사서는 이틀 정도 걸리는 상호대차를 권했다. 목요일이 마감이라 사서는 우선 오픈액세스 저널을 쓰고 나중에 신청 자료를 추가하라고 조언했다. 마지막으로 이메일을 보내거나 6시 전에 데스크에 다시 오면 된다고 했다.",
+   "kx":[{"en":"was directed to","ko":"~로 안내받았다"},{"en":"narrow it down","ko":"범위를 좁히다"},{"en":"behind a paywall","ko":"유료 장벽 뒤에 있는"},{"en":"interlibrary loan","ko":"상호대차"},{"en":"in the meantime","ko":"그 사이에"}],
+   "tips":"요약은 ① 누가·왜 왔는지 → ② 어떤 문제가 생겼는지 → ③ 어떤 해결책이 나왔는지 순서로 쓰면 75초 안에 안정적으로 끝납니다. 대화의 표현을 그대로 베끼지 말고 바꿔 쓰면(paraphrase) 점수에 유리합니다."
+  }
+ },
+ {
+  "level":2,
+  "topic":"조별 과제 일정 조율",
+  "scene":"발표 준비 중인 두 학생이 역할과 일정을 정하는 대화입니다.",
+  "p1":[
+   {"say":"Our presentation is scheduled for the first Monday after the break.","text":"Our {presentation} is scheduled for the first {Monday} after the break."},
+   {"say":"We still need someone to put the slides together.","text":"We still need someone to put the {slides} {together}."}
+  ],
+  "p2":[
+   {"say":"So, we have four sections and only three of us. How should we split it up?",
+    "opts":["Let's each take one and share the last section between two people.","I think the library closes at nine.","Maybe we should change the topic entirely."],
+    "ans":0,"exp":"분담 방법을 묻는 질문이므로 구체적인 배분안을 제시하는 응답이 맞다."},
+   {"say":"That works. I can do the introduction, but I'm away until Wednesday.",
+    "opts":["Then you probably shouldn't be in this group.","No problem — send me your draft Thursday and I'll merge it in.","The introduction is the least important part anyway."],
+    "ans":1,"exp":"일정 제약을 밝힌 상대에게 대안을 제시하는 협력적 응답을 고른다."},
+   {"say":"Do we need to submit the slides before the presentation, or just present them?",
+    "opts":["The syllabus says they're due the night before, at midnight.","I've never used presentation software.","We could just print everything out instead."],
+    "ans":0,"exp":"제출 여부를 묻는 사실 질문에는 근거(강의계획서)를 들어 답하는 것이 자연스럽다."},
+   {"say":"Midnight? Then we can't leave the design until the last day.",
+    "opts":["Right — let's aim to have all the content in by Saturday.","Design doesn't really matter for grades.","I'll ask the professor to move the deadline."],
+    "ans":0,"exp":"시간이 촉박하다는 결론에는 앞당긴 내부 마감을 제안하는 응답이 이어진다."},
+   {"say":"Should we run through it once together before class?",
+    "opts":["No, rehearsing usually makes people worse.","Yes — let's book a study room for Sunday afternoon.","I'd rather each of us practices alone at home."],
+    "ans":1,"exp":"함께 리허설하자는 제안에 시간과 장소를 정하며 동의하는 응답이 가장 자연스럽다."}
+  ],
+  "p3":{
+   "q":"In your own words, summarize the conversation you just heard.",
+   "answerEn":"Three students discussed how to divide a four-part presentation. They agreed that each person would take one section and share the remaining one. One student explained that he would be away until Wednesday, so he offered to send his draft on Thursday for someone else to merge. They then realized from the syllabus that the slides had to be submitted by midnight the night before, which meant the design could not be left to the last day. To stay on schedule they set an internal deadline of Saturday for all content and booked a study room on Sunday afternoon to rehearse.",
+   "answerKo":"세 학생이 네 파트로 된 발표를 어떻게 나눌지 의논했다. 각자 한 파트씩 맡고 남는 한 파트는 나눠 맡기로 했다. 한 학생이 수요일까지 자리를 비운다고 하자 목요일에 초안을 보내면 다른 사람이 합치기로 했다. 이어 강의계획서를 보니 슬라이드를 전날 자정까지 제출해야 해서 디자인을 마지막 날로 미룰 수 없다는 것을 알게 됐다. 그래서 토요일을 내부 마감으로 정하고 일요일 오후에 스터디룸을 예약해 리허설하기로 했다.",
+   "kx":[{"en":"split it up","ko":"나누다·분담하다"},{"en":"merge it in","ko":"합쳐 넣다"},{"en":"leave it until the last day","ko":"마지막 날까지 미루다"},{"en":"set an internal deadline","ko":"내부 마감을 정하다"},{"en":"run through it","ko":"한 번 훑어보다·리허설하다"}],
+   "tips":"'누가 무엇을 맡기로 했는지'와 '왜 일정을 앞당겼는지'라는 두 축만 정확히 담으면 충분합니다. 세부 시간을 전부 나열하려다 시간을 다 쓰는 실수가 가장 흔합니다."
+  }
+ },
+ {
+  "level":2,
+  "topic":"교수에게 과제 연장 요청",
+  "scene":"몸이 아파 마감을 놓친 학생이 교수 상담 시간에 연장을 요청하는 대화입니다.",
+  "p1":[
+   {"say":"I've attached a copy of the doctor's note to my email.","text":"I've {attached} a copy of the doctor's note to my {email}."},
+   {"say":"The deadline for the final draft has not changed.","text":"The {deadline} for the final draft has not {changed}."}
+  ],
+  "p2":[
+   {"say":"You missed Tuesday's deadline. Is everything all right?",
+    "opts":["I was sick for most of last week — I have a doctor's note if that helps.","Deadlines are not really my priority right now.","I forgot the assignment existed."],
+    "ans":0,"exp":"사정을 묻는 질문에는 사유를 밝히고 증빙을 제시하는 응답이 적절하다."},
+   {"say":"I see. How much of the paper have you actually finished?",
+    "opts":["I'd rather not say.","About two-thirds — the analysis section is still missing.","I plan to start it tonight."],
+    "ans":1,"exp":"진행 상황을 구체적으로 밝히는 응답이 신뢰를 준다."},
+   {"say":"All right. I can give you until Friday, but not longer.",
+    "opts":["Could I have two more weeks instead?","Thank you — Friday is enough to finish the analysis.","That is not really fair to me."],
+    "ans":1,"exp":"제안을 수용하고 실현 가능성을 확인해 주는 응답이 가장 무난하다."},
+   {"say":"One condition: the extension applies to this paper only.",
+    "opts":["Understood — the final draft is still due at the end of the month.","So the whole schedule moves back a week?","Does that mean I can skip the presentation too?"],
+    "ans":0,"exp":"조건을 정확히 이해했음을 확인하는 응답을 골라야 한다."},
+   {"say":"Good. And come to office hours next week if the analysis gives you trouble.",
+    "opts":["I doubt I'll need any help.","I'll do that — Wednesday afternoon works for me.","Could you just write that part for me?"],
+    "ans":1,"exp":"도움 제안에는 감사와 함께 구체적 시간을 정하는 응답이 자연스럽다."}
+  ],
+  "p3":{
+   "q":"In your own words, summarize the conversation you just heard.",
+   "answerEn":"A student met a professor to explain why a paper had been submitted late. The student had been ill for most of the previous week and offered a doctor's note as evidence. When asked about progress, the student said roughly two-thirds was complete and only the analysis section remained. The professor granted an extension until Friday, but made clear that it applied to this paper alone and that the final draft was still due at the end of the month. They agreed that the student would come to office hours on Wednesday afternoon if the analysis proved difficult.",
+   "answerKo":"한 학생이 과제를 늦게 낸 이유를 설명하러 교수를 찾아갔다. 학생은 지난주 대부분 아팠다며 진단서를 증빙으로 제시했다. 진행 상황을 묻자 약 3분의 2를 끝냈고 분석 부분만 남았다고 답했다. 교수는 금요일까지 연장을 허락했지만 이번 과제에만 해당하며 최종본 마감은 월말 그대로라고 분명히 했다. 두 사람은 분석이 어려우면 학생이 수요일 오후 상담 시간에 오기로 합의했다.",
+   "kx":[{"en":"a doctor's note","ko":"진단서·소견서"},{"en":"grant an extension","ko":"기한 연장을 허락하다"},{"en":"applies to ~ only","ko":"~에만 적용된다"},{"en":"office hours","ko":"교수 상담 시간"},{"en":"give someone trouble","ko":"~을 힘들게 하다"}],
+   "tips":"요약에서는 '조건이 붙은 허락'을 빠뜨리지 마세요. 연장을 받았다는 사실만 말하고 조건(이번 과제만·최종 마감은 그대로)을 빠뜨리면 내용 점수가 깎입니다."
+  }
+ },
+ {
+  "level":3,
+  "topic":"실험 결과 해석 논의",
+  "scene":"예상과 어긋난 실험 결과를 두고 두 학생이 다음 단계를 논의하는 대화입니다.",
+  "p1":[
+   {"say":"The second trial produced results that contradicted our initial hypothesis.","text":"The second trial produced results that {contradicted} our initial {hypothesis}."},
+   {"say":"We should repeat the measurement before drawing any conclusions.","text":"We should {repeat} the measurement before drawing any {conclusions}."}
+  ],
+  "p2":[
+   {"say":"The second run came out completely the opposite of the first. Did we do something wrong?",
+    "opts":["Probably — let's check whether the calibration drifted between runs.","Then the first result must have been the correct one.","We should just report the first run and move on."],
+    "ans":0,"exp":"원인을 단정하기 전에 확인 가능한 변수를 점검하자는 응답이 과학적으로 적절하다."},
+   {"say":"I checked the log — the instrument was recalibrated on Tuesday, between the two runs.",
+    "opts":["That's irrelevant to the measurement.","Then the difference may be an artifact rather than a real effect.","We should recalibrate it again right now."],
+    "ans":1,"exp":"교정 시점이 두 실험 사이라면 차이가 실제 효과가 아니라 '인위적 산물'일 수 있다."},
+   {"say":"So how do we tell an artifact from a real effect?",
+    "opts":["We can't — we'd have to start the whole project again.","By running both conditions again under identical settings and comparing.","By asking the professor which answer she expects."],
+    "ans":1,"exp":"동일 조건에서 재현해 비교하는 것이 인위적 산물을 가려내는 표준적 방법이다."},
+   {"say":"That will cost us another week. Is it worth delaying the report?",
+    "opts":["No — a clean negative result is worthless anyway.","Yes. Publishing a result we can't reproduce would be far more costly.","Let's just describe both runs and let the reader decide."],
+    "ans":1,"exp":"재현되지 않는 결과를 그대로 내는 위험이 더 크다는 판단이 논리적으로 이어진다."},
+   {"say":"Fair enough. Should we mention the calibration issue in the methods section?",
+    "opts":["Yes — anything that could explain the discrepancy has to be documented.","No, it would only confuse the reader.","Only if the professor asks about it."],
+    "ans":0,"exp":"결과 차이를 설명할 수 있는 요인은 방법론에 기록하는 것이 원칙이다."}
+  ],
+  "p3":{
+   "q":"In your own words, summarize the conversation you just heard.",
+   "answerEn":"Two students discovered that a second experimental run had produced results opposite to the first. Rather than assuming an error, they checked the equipment log and found that the instrument had been recalibrated between the two runs, which meant the difference might be an artifact instead of a genuine effect. They concluded that the only way to distinguish the two was to repeat both conditions under identical settings. Although this would delay the report by about a week, they agreed that publishing an unreproducible result would be far more damaging, and decided to document the calibration issue in the methods section.",
+   "answerKo":"두 학생은 두 번째 실험이 첫 번째와 정반대의 결과를 냈다는 것을 발견했다. 실수라고 단정하는 대신 장비 기록을 확인했고, 두 실험 사이에 장비가 재교정되었다는 사실을 찾아냈다. 그렇다면 차이는 실제 효과가 아니라 인위적 산물일 수 있었다. 둘을 구별할 유일한 방법은 동일한 조건에서 두 조건을 다시 실험하는 것이라고 결론지었다. 보고서가 일주일가량 늦어지지만, 재현되지 않는 결과를 발표하는 것이 훨씬 더 위험하다는 데 동의했고 교정 문제를 방법론에 기록하기로 했다.",
+   "kx":[{"en":"contradict the hypothesis","ko":"가설과 어긋나다"},{"en":"calibration drifted","ko":"교정값이 틀어졌다"},{"en":"an artifact rather than a real effect","ko":"실제 효과가 아닌 인위적 산물"},{"en":"under identical settings","ko":"동일한 조건에서"},{"en":"unreproducible result","ko":"재현되지 않는 결과"}],
+   "tips":"이 유형은 '문제 → 원인 가설 → 검증 방법 → 결정'의 4단 구조가 그대로 요약의 뼈대가 됩니다. 두 사람의 의견이 갈렸다가 합의에 이른 지점을 반드시 넣으세요."
+  }
+ }
+],
+
+// ─────────────────────────────────────────────────────────────
+// Interactive Speaking (2026 신설) / Writing Sample / Speaking Sample
+// duolingo.js 의 writeSpeak 와 같은 스키마 — 앱에서 하나로 합쳐 보여 준다.
+// ─────────────────────────────────────────────────────────────
+"writeSpeakExtra": [
+ {
+  "exam":"DET Speaking","category":"Interactive Speaking","level":2,
+  "topic":"통학·이동 (Bea와의 대화 3문항)","targetLevel":"문항당 35초 · 총 3문항",
+  "q":"[캐릭터 Bea와의 대화 — 한 주제에 3문항이 이어집니다]\n\nQ1. How do you usually get to school or work?\nQ2. What is the most annoying part of that trip?\nQ3. If you could change one thing about transportation in your city, what would it be?",
+  "answerEn":"Q1. I take the subway almost every day. My stop is about a ten-minute walk from home, and the ride itself takes around thirty-five minutes, so I usually read or listen to a podcast on the way.\n\nQ2. Honestly, the worst part is how crowded it gets between eight and nine in the morning. Sometimes I have to let two or three trains go before I can actually squeeze in, and by the time I arrive I already feel tired.\n\nQ3. If I could change one thing, I'd add more frequent trains during rush hour rather than building new lines. New lines take years and a lot of money, but running trains every two minutes instead of every five would fix the crowding almost immediately.",
+  "answerKo":"Q1. 저는 거의 매일 지하철을 탑니다. 역까지 집에서 걸어서 10분 정도 걸리고, 타는 시간은 35분쯤이라 보통 가는 길에 책을 읽거나 팟캐스트를 듣습니다.\n\nQ2. 솔직히 제일 힘든 건 아침 8시에서 9시 사이의 혼잡입니다. 가끔은 두세 대를 보내야 겨우 낄 수 있고, 도착할 때쯤엔 이미 지쳐 있습니다.\n\nQ3. 하나만 바꿀 수 있다면 새 노선을 짓기보다 출퇴근 시간대 배차를 늘리겠습니다. 새 노선은 몇 년과 큰돈이 들지만, 5분 간격을 2분 간격으로 바꾸면 혼잡은 거의 즉시 해결됩니다.",
+  "kx":[{"en":"a ten-minute walk from","ko":"~에서 걸어서 10분 거리"},{"en":"squeeze in","ko":"비집고 타다"},{"en":"by the time I arrive","ko":"도착할 때쯤엔"},{"en":"rather than -ing","ko":"~하기보다는"},{"en":"almost immediately","ko":"거의 즉시"}],
+  "tips":"Interactive Speaking은 대화이므로 문어체 암기 답안처럼 들리면 감점 요인입니다. Honestly / Actually / I'd say 같은 대화 신호어를 하나씩 넣고, 35초를 꽉 채우기보다 문장을 끝까지 매듭짓는 데 집중하세요. 3문항이 한 주제로 이어지므로 앞 답변에서 쓴 소재(지하철·혼잡)를 뒤에서 다시 활용하면 일관성 점수가 올라갑니다."
+ },
+ {
+  "exam":"DET Speaking","category":"Interactive Speaking","level":2,
+  "topic":"음식과 요리 (Oscar와의 대화 3문항)","targetLevel":"문항당 35초 · 총 3문항",
+  "q":"[캐릭터 Oscar와의 대화 — 한 주제에 3문항이 이어집니다]\n\nQ1. Do you cook for yourself, or do you usually eat out?\nQ2. What is one dish you would like to learn to make?\nQ3. Some people say cooking at home is a waste of time. What do you think?",
+  "answerEn":"Q1. I cook for myself maybe four nights a week. It's mostly simple things — rice, soup, some vegetables — because I get home late and I don't have the energy for anything complicated.\n\nQ2. I'd really like to learn how to make proper bread. I've tried twice and both times it came out dense and heavy, so clearly I'm doing something wrong with the rising time.\n\nQ3. I don't agree with that at all. Cooking takes maybe forty minutes, but it's cheaper, I know exactly what's in the food, and I actually find the chopping part relaxing after a long day. If someone works twelve-hour shifts, that's different — but for most people it's a matter of priorities, not time.",
+  "answerKo":"Q1. 저는 일주일에 네 번쯤 직접 해 먹습니다. 늦게 퇴근해서 복잡한 걸 할 힘이 없다 보니 대부분 밥, 국, 채소 같은 간단한 것들입니다.\n\nQ2. 제대로 된 빵 만드는 법을 꼭 배우고 싶습니다. 두 번 해 봤는데 두 번 다 빽빽하고 무겁게 나왔어요. 발효 시간에서 뭔가 잘못하고 있는 게 분명합니다.\n\nQ3. 전혀 동의하지 않습니다. 요리는 40분쯤 걸리지만 더 싸고, 뭐가 들어갔는지 정확히 알 수 있고, 긴 하루 끝에 재료 써는 일이 오히려 편안합니다. 12시간 교대 근무를 한다면 이야기가 다르지만, 대부분에게는 시간 문제가 아니라 우선순위 문제입니다.",
+  "kx":[{"en":"eat out","ko":"외식하다"},{"en":"came out dense","ko":"빽빽하게 나왔다"},{"en":"I don't agree with that at all","ko":"전혀 동의하지 않는다"},{"en":"a matter of priorities","ko":"우선순위의 문제"},{"en":"that's different","ko":"그건 경우가 다르다"}],
+  "tips":"3번처럼 의견을 묻는 문항에서는 '반대 → 이유 2~3개 → 예외 인정' 구조가 가장 안정적입니다. 예외를 한 문장 인정하면(If someone works twelve-hour shifts…) 사고의 깊이가 드러나 Conversation 하위 점수에 유리합니다."
+ },
+ {
+  "exam":"DET Speaking","category":"Interactive Speaking","level":3,
+  "topic":"기술과 학습 (Bea와의 대화 3문항)","targetLevel":"문항당 35초 · 총 3문항",
+  "q":"[캐릭터 Bea와의 대화 — 한 주제에 3문항이 이어집니다]\n\nQ1. How has technology changed the way you study?\nQ2. Is there anything about studying that technology has made worse?\nQ3. Should universities limit students' use of AI tools? Why or why not?",
+  "answerEn":"Q1. The biggest change is access. Ten years ago I would have spent an afternoon in a library tracking down one article; now I can find twenty in a few minutes and read them on my phone on the bus.\n\nQ2. Yes — attention, definitely. When everything is one tap away, I find it much harder to stay with a difficult text for an hour. I've started leaving my phone in another room, which tells you how bad it's got.\n\nQ3. I'd say regulate rather than ban. A blanket ban is unenforceable and it also punishes students who use these tools sensibly, for example to check their grammar or to explain a concept they've already read about. What universities should do is redesign assessment — more oral defence, more work produced in class — so that understanding, not output, is what gets graded.",
+  "answerKo":"Q1. 가장 큰 변화는 접근성입니다. 10년 전이라면 논문 한 편을 찾느라 도서관에서 오후를 보냈겠지만, 지금은 몇 분이면 스무 편을 찾아 버스에서 휴대폰으로 읽습니다.\n\nQ2. 네, 집중력은 확실히 나빠졌습니다. 모든 게 한 번의 터치 거리에 있으니 어려운 글을 한 시간 붙들고 있기가 훨씬 힘들어졌습니다. 요즘은 휴대폰을 다른 방에 두고 공부하는데, 그만큼 심각하다는 뜻이죠.\n\nQ3. 금지보다는 규제라고 봅니다. 전면 금지는 실효성이 없고, 문법 확인이나 이미 읽은 개념 설명처럼 분별 있게 쓰는 학생까지 벌하게 됩니다. 대학이 해야 할 일은 평가 방식을 다시 설계하는 것입니다. 구술 방어와 수업 중 과제를 늘려서 결과물이 아니라 이해도를 채점하도록 말이죠.",
+  "kx":[{"en":"track down","ko":"애써 찾아내다"},{"en":"one tap away","ko":"한 번의 터치 거리에"},{"en":"which tells you how bad it's got","ko":"그만큼 심각하다는 뜻이다"},{"en":"a blanket ban","ko":"전면 금지"},{"en":"unenforceable","ko":"시행이 불가능한"}],
+  "tips":"고득점 답변의 특징은 '양자택일을 거부하고 제3안을 제시하는 것'입니다. regulate rather than ban 처럼 입장을 한 구절로 압축한 뒤 근거를 붙이면 35초 안에 논리가 완성됩니다."
+ },
+ {
+  "exam":"DET Speaking","category":"Interactive Speaking","level":3,
+  "topic":"일과 삶의 균형 (Oscar와의 대화 3문항)","targetLevel":"문항당 35초 · 총 3문항",
+  "q":"[캐릭터 Oscar와의 대화 — 한 주제에 3문항이 이어집니다]\n\nQ1. What does a typical weekday look like for you?\nQ2. Do you think people in your country work too much?\nQ3. Whose responsibility is it to fix long working hours — companies, governments, or individuals?",
+  "answerEn":"Q1. It's fairly rigid. I'm at my desk by nine, I take about forty minutes for lunch, and I leave around seven, which means the evening is basically dinner and an hour of reading before I fall asleep.\n\nQ2. Yes, though I'd put it differently: we don't work more hours than we used to, we work more fragmented hours. Messages arrive at ten at night and nobody expects you to ignore them, so the working day never really closes.\n\nQ3. All three, but not equally. Individuals have the least leverage — you can't refuse to answer your manager at ten p.m. without consequences. Companies could change the norm overnight simply by not sending those messages. Governments matter most where companies won't move on their own, which is why rules like the right to disconnect exist in some countries. So I'd say governments set the floor and companies decide everything above it.",
+  "answerKo":"Q1. 꽤 규칙적입니다. 9시까지 자리에 앉고, 점심은 40분 정도 먹고, 7시쯤 퇴근합니다. 그러니 저녁은 사실상 식사와 잠들기 전 한 시간 독서가 전부입니다.\n\nQ2. 그렇습니다. 다만 표현을 좀 바꾸고 싶은데, 예전보다 '더 많이' 일한다기보다 '더 잘게 쪼개진' 시간에 일합니다. 밤 10시에 메시지가 오고 아무도 그걸 무시하리라 기대하지 않으니, 근무일이 제대로 끝나질 않습니다.\n\nQ3. 셋 다지만 비중은 다릅니다. 개인은 지렛대가 가장 약합니다. 밤 10시에 상사에게 답하지 않으면 불이익이 따르니까요. 기업은 그런 메시지를 보내지 않는 것만으로 하루아침에 관행을 바꿀 수 있습니다. 정부는 기업이 스스로 움직이지 않는 지점에서 가장 중요하고, 그래서 일부 국가에 연결되지 않을 권리 같은 규정이 있습니다. 결국 정부가 하한선을 정하고 그 위는 기업이 결정한다고 봅니다.",
+  "kx":[{"en":"fairly rigid","ko":"꽤 빡빡한·규칙적인"},{"en":"I'd put it differently","ko":"저라면 다르게 표현하겠습니다"},{"en":"fragmented hours","ko":"잘게 쪼개진 시간"},{"en":"have the least leverage","ko":"영향력이 가장 약하다"},{"en":"set the floor","ko":"최저 기준을 정하다"}],
+  "tips":"'셋 다'라고 답하면 보통 애매해지지만, 비중을 나누고(not equally) 각각의 역할을 한 문장씩 배분하면 오히려 가장 정교한 답이 됩니다. 마지막에 한 문장으로 요약(governments set the floor…)해 매듭을 지으세요."
+ },
+ {
+  "exam":"DET Writing","category":"Writing Sample","level":2,
+  "topic":"기억에 남는 실패 경험","targetLevel":"준비 30초 · 작성 5분 · 학교 전송용",
+  "q":"Describe a time when you failed at something important. What happened, and what did you learn from it? Write as much as you can.",
+  "answerEn":"In my second year of university I ran for president of our student film club and lost by a wide margin. I had assumed that being the most experienced member was enough, so I spent my campaign talking about the films I had made rather than what the club actually needed. My opponent did the opposite: she asked members what frustrated them, discovered that equipment was constantly unavailable, and built her entire platform around a booking system.\n\nWhat I learned was uncomfortable but useful. Experience is not an argument. People do not vote for the person with the longest record; they vote for the person who has understood their problem. Since then, whenever I propose something — a project at work, a topic for a group assignment — I begin by asking questions rather than by presenting my qualifications. It is a slower way to start, but it produces proposals that people actually want.\n\nI still think I would have been a competent president. I simply never gave anyone a reason to believe that, and that failure was entirely mine.",
+  "answerKo":"대학 2학년 때 영화 동아리 회장에 출마했다가 큰 표 차로 떨어졌다. 나는 가장 경력이 많은 부원이라는 사실만으로 충분하다고 여겨서, 동아리에 정작 필요한 것이 아니라 내가 만든 작품 이야기만 하며 선거를 치렀다. 상대 후보는 정반대였다. 부원들에게 무엇이 불편한지 물었고, 장비를 늘 쓸 수 없다는 문제를 찾아내 예약 시스템 하나로 공약 전체를 짰다.\n\n배운 것은 불편했지만 유용했다. 경력은 논거가 되지 못한다. 사람들은 이력이 가장 긴 사람이 아니라 자기 문제를 이해한 사람에게 표를 던진다. 그 뒤로 회사 프로젝트든 조별 과제 주제든 무언가를 제안할 때는 내 자격을 늘어놓기보다 질문부터 한다. 시작은 느리지만, 사람들이 실제로 원하는 제안이 나온다.\n\n지금도 나는 내가 유능한 회장이 됐을 거라고 생각한다. 다만 그렇게 믿을 이유를 아무에게도 주지 못했고, 그 실패는 온전히 내 몫이었다.",
+  "kx":[{"en":"lost by a wide margin","ko":"큰 표 차로 졌다"},{"en":"build a platform around","ko":"~을 중심으로 공약을 짜다"},{"en":"Experience is not an argument.","ko":"경력은 논거가 되지 못한다."},{"en":"give someone a reason to believe","ko":"믿을 이유를 주다"},{"en":"entirely mine","ko":"온전히 내 몫인"}],
+  "tips":"Writing Sample은 채점 점수에 직접 반영되지는 않지만 지원 학교에 그대로 전송됩니다. ① 구체적 사건 → ② 왜 실패했는지 자기 분석 → ③ 이후 행동이 어떻게 바뀌었는지, 이 3단 구조를 지키면 5분 안에 완결된 글이 나옵니다. 마지막 문단에서 변명하지 않고 책임을 인정하는 한 문장이 인상을 크게 좌우합니다."
+ },
+ {
+  "exam":"DET Writing","category":"Writing Sample","level":3,
+  "topic":"대학이 가르쳐야 할 것","targetLevel":"준비 30초 · 작성 5분 · 학교 전송용",
+  "q":"Some people believe universities should focus on preparing students for specific jobs. Others believe they should teach broad knowledge and critical thinking. Which position do you support, and why? Write as much as you can.",
+  "answerEn":"I support the broader model, though not for the reason usually given. The standard defence of a liberal education is that it makes people well-rounded, which is true but easy to dismiss as a luxury. The stronger argument is economic: job-specific training has a short shelf life.\n\nThe skills that made someone employable in my field ten years ago are now largely automated. What has not become obsolete is the ability to read a badly written specification, notice that it contradicts itself, and ask the right question before writing a single line of code. No one taught that as a subject; it came from four years of being asked to defend arguments and find the weak joint in someone else's reasoning.\n\nThis does not mean vocational training is worthless. A graduate who cannot do anything on the first day is a real problem, and universities that ignore this are being irresponsible. But the practical component should be the smaller part of a degree, because it is the part employers can supply themselves. Judgement, by contrast, takes years and cannot be delivered in a two-week onboarding course.\n\nA university that produces graduates who are immediately useful and permanently narrow has made a bad trade on the student's behalf.",
+  "answerKo":"나는 폭넓은 교육 쪽을 지지하지만, 흔히 드는 이유 때문은 아니다. 교양 교육에 대한 통상적 옹호는 '균형 잡힌 사람을 만든다'는 것인데, 맞는 말이지만 사치라고 일축당하기 쉽다. 더 강한 논거는 경제적인 것이다. 직무 특화 교육은 유통기한이 짧다.\n\n10년 전 내 분야에서 사람을 고용 가능하게 만들던 기술은 이제 대부분 자동화됐다. 낡지 않은 것은, 형편없이 쓰인 명세서를 읽고 그 안의 모순을 알아채고 코드 한 줄을 쓰기 전에 올바른 질문을 던지는 능력이다. 그건 과목으로 배운 적이 없다. 4년 동안 주장을 방어하고 남의 논리에서 약한 이음매를 찾으라는 요구를 받으며 생긴 것이다.\n\n직업 훈련이 무가치하다는 뜻은 아니다. 첫날 아무것도 못 하는 졸업생은 실제로 문제이고, 이를 무시하는 대학은 무책임하다. 다만 실무 요소는 학위의 작은 부분이어야 한다. 그건 고용주가 스스로 공급할 수 있는 부분이기 때문이다. 반면 판단력은 몇 년이 걸리고 2주짜리 입사 교육으로 전달될 수 없다.\n\n즉시 쓸모 있지만 영구히 좁은 졸업생을 배출하는 대학은 학생을 대신해 나쁜 거래를 한 것이다.",
+  "kx":[{"en":"not for the reason usually given","ko":"흔히 드는 이유 때문은 아니다"},{"en":"a short shelf life","ko":"짧은 유통기한"},{"en":"the weak joint in someone's reasoning","ko":"남의 논리에서 약한 이음매"},{"en":"employers can supply themselves","ko":"고용주가 스스로 공급할 수 있는"},{"en":"make a bad trade on someone's behalf","ko":"~를 대신해 나쁜 거래를 하다"}],
+  "tips":"찬반형 Writing Sample에서 점수를 가르는 것은 '반대편을 얼마나 정직하게 인정하는가'입니다. 3문단에서 상대 입장의 정당한 부분을 인정한 뒤 범위를 제한(should be the smaller part)하면, 단순 찬성보다 훨씬 성숙한 글로 읽힙니다."
+ },
+ {
+  "exam":"DET Writing","category":"Writing Sample","level":3,
+  "topic":"내 도시에 필요한 변화","targetLevel":"준비 30초 · 작성 5분 · 학교 전송용",
+  "q":"If you could change one thing about the city or town where you live, what would it be? Explain your choice in detail. Write as much as you can.",
+  "answerEn":"I would widen the pavements. It sounds trivial next to housing or transport, but almost every complaint people make about my city traces back to the same fact: the street was designed for cars and everything else was fitted into what was left.\n\nThe pavement outside my building is barely a metre wide, and half of that is taken by parked scooters and utility boxes. Two people cannot pass without one stepping into the road. A parent with a stroller simply cannot use it. The predictable result is that nobody walks anywhere they could drive, the small shops that depend on passing customers close one by one, and the street becomes a corridor rather than a place.\n\nWhat makes this worth choosing over grander projects is cost. A new subway line takes a decade and billions; repainting a road to take one metre from parking and give it to pedestrians takes a weekend. Cities that have done this consistently report more foot traffic for local businesses, not less, which undercuts the usual objection from shop owners.\n\nI am not arguing that pavements matter more than housing. I am arguing that they are the cheapest large improvement available, and that we have left them undone for forty years because they are unglamorous.",
+  "answerKo":"나라면 보도를 넓히겠다. 주택이나 교통 문제 옆에 두면 사소해 보이지만, 우리 도시에 대한 불만은 거의 전부 같은 사실로 되돌아간다. 거리는 자동차를 기준으로 설계되었고 나머지는 남은 자리에 끼워 넣어졌다는 것이다.\n\n우리 건물 앞 보도는 폭이 겨우 1미터인데 그마저 절반은 세워 둔 스쿠터와 전기함이 차지한다. 두 사람이 지나가려면 한 명은 차도로 내려서야 한다. 유모차를 끄는 부모는 아예 쓸 수 없다. 결과는 뻔하다. 차로 갈 수 있는 곳은 아무도 걸어가지 않고, 지나가는 손님에 기대는 작은 가게들이 하나씩 문을 닫고, 거리는 장소가 아니라 통로가 된다.\n\n이 문제를 더 거창한 사업보다 먼저 꼽는 이유는 비용이다. 새 지하철 노선은 10년과 수조 원이 들지만, 주차 공간에서 1미터를 떼어 보행자에게 주는 노면 재도색은 주말이면 끝난다. 이를 꾸준히 시행한 도시들은 지역 상권의 보행량이 오히려 늘었다고 보고하며, 이는 상인들의 통상적 반대 논리를 무너뜨린다.\n\n보도가 주택보다 중요하다고 주장하는 것이 아니다. 가장 값싼 큰 개선인데도 볼품없다는 이유로 40년간 방치되어 왔다는 것이 내 주장이다.",
+  "kx":[{"en":"traces back to","ko":"~로 거슬러 올라간다"},{"en":"fitted into what was left","ko":"남은 자리에 끼워 넣어진"},{"en":"a corridor rather than a place","ko":"장소가 아니라 통로"},{"en":"undercuts the usual objection","ko":"통상적인 반대 논리를 무너뜨린다"},{"en":"unglamorous","ko":"볼품없는·화려하지 않은"}],
+  "tips":"'하나만 바꾼다면' 문항에서는 거창한 답보다 작고 구체적인 답이 유리합니다. 다만 왜 그것이 작지 않은지(비용 대비 효과)를 반드시 논증하세요. 마지막 문단에서 자기 주장의 범위를 스스로 제한하면 과장 없이 설득력이 올라갑니다."
+ },
+ {
+  "exam":"DET Speaking","category":"Speaking Sample","level":2,
+  "topic":"나에게 영향을 준 사람","targetLevel":"준비 30초 · 말하기 3분 · 학교 전송용",
+  "q":"Talk about a person who has had a significant influence on you. Who is this person, and how have they shaped the way you think or act? Speak for up to three minutes.",
+  "answerEn":"The person I'd talk about is my grandmother, though not for the reason people usually expect. She wasn't especially warm, and she gave almost no advice. What she did was work, visibly and without complaint, in a way that quietly set a standard.\n\nShe ran a small fabric shop for over thirty years. I spent most of my school holidays there, and what struck me even as a child was how she treated a customer buying two metres of cheap lining exactly the same as one ordering silk for a wedding dress. She measured carefully, she cut carefully, she wrapped it properly. I once asked her why she bothered for such a small sale, and she said something I still repeat to myself: the work doesn't know how much it costs.\n\nThat sentence has shaped me more than any advice I've been given. It means that the quality of what you do shouldn't depend on who is watching or on how much you're being paid for it. In practice, it's why I still proofread an email that only one person will read, and why I find it genuinely difficult to hand in something I know is half-finished, even when nobody would notice.\n\nShe also taught me something about patience. She never rushed a customer who couldn't decide, and she never pretended a fabric was suitable when it wasn't, even though saying so cost her the sale. Watching that, year after year, I absorbed the idea that being trusted is worth more than being immediately successful.\n\nShe passed away four years ago. The shop is a coffee place now. But I still measure things twice.",
+  "answerKo":"제가 이야기하고 싶은 사람은 할머니입니다. 다만 사람들이 흔히 기대하는 이유 때문은 아닙니다. 할머니는 특별히 다정하지 않았고 조언도 거의 하지 않았습니다. 대신 눈에 보이게, 불평 없이 일하셨고 그것이 조용히 기준이 되었습니다.\n\n할머니는 작은 원단 가게를 30년 넘게 운영하셨습니다. 저는 방학 대부분을 그곳에서 보냈는데, 어린 마음에도 인상 깊었던 건 값싼 안감 2미터를 사는 손님과 웨딩드레스용 실크를 주문하는 손님을 똑같이 대한다는 점이었습니다. 정확히 재고, 정확히 자르고, 제대로 포장하셨습니다. 한번은 그렇게 작은 거래에 왜 공을 들이냐고 여쭤봤더니, 지금도 스스로에게 되뇌는 말을 하셨습니다. 일은 자기 값이 얼마인지 모른다고요.\n\n그 문장이 제가 받은 어떤 조언보다 저를 많이 만들었습니다. 하는 일의 질이 누가 보고 있는지, 얼마를 받는지에 좌우되어서는 안 된다는 뜻입니다. 실제로 한 사람만 읽을 이메일도 여전히 교정하고, 아무도 모를 상황에서도 덜 끝난 것을 제출하기가 정말 어렵습니다.\n\n인내에 대해서도 배웠습니다. 결정을 못 하는 손님을 재촉하지 않으셨고, 어울리지 않는 원단을 어울린다고 말하지 않으셨습니다. 그 말이 거래를 날려도요. 그걸 해마다 지켜보며 즉각적인 성공보다 신뢰받는 것이 더 값지다는 생각이 몸에 뱄습니다.\n\n할머니는 4년 전에 돌아가셨습니다. 그 가게는 지금 카페가 되었습니다. 하지만 저는 지금도 무엇이든 두 번 잽니다.",
+  "kx":[{"en":"not for the reason people usually expect","ko":"흔히 기대하는 이유 때문은 아니다"},{"en":"what struck me even as a child","ko":"어린 마음에도 인상 깊었던 것"},{"en":"why I still proofread","ko":"내가 여전히 ~을 교정하는 이유"},{"en":"absorb the idea that","ko":"~라는 생각이 몸에 배다"},{"en":"I still measure things twice","ko":"나는 지금도 두 번 잰다"}],
+  "tips":"Speaking Sample 3분은 생각보다 깁니다. '인물 소개 → 구체적 장면 하나 → 그 사람의 말 한 마디 → 지금 내 행동에 남은 흔적 → 마무리 이미지' 5단으로 짜면 시간이 자연스럽게 채워집니다. 추상적 칭찬(kind, hardworking)만 나열하면 1분도 못 채우고 막힙니다. 장면과 대사를 넣으세요."
+ },
+ {
+  "exam":"DET Speaking","category":"Speaking Sample","level":3,
+  "topic":"소수 의견을 지켰던 경험","targetLevel":"준비 30초 · 말하기 3분 · 학교 전송용",
+  "q":"Describe a situation in which you disagreed with a group. What was the disagreement about, how did you handle it, and what was the outcome? Speak for up to three minutes.",
+  "answerEn":"Last year I was on a four-person team preparing a market analysis, and I ended up being the only one who thought our central number was wrong. The team had estimated demand by surveying our own existing customers, and the figure that came back was enormously encouraging. My objection was simple: we had surveyed exactly the people who had already chosen us, so of course they liked the product. The number told us nothing about anyone else.\n\nHandling that was harder than noticing it. We were four days from presenting, everyone was tired, and I was the most junior person in the room. My first attempt went badly — I said the survey was biased, which sounded like I was calling their work sloppy, and the conversation immediately became defensive.\n\nSo I changed approach. Instead of arguing about the method, I asked whether we could run one quick test: put the same three questions to fifty people who had looked at our site and left without buying. It took an afternoon. The results were not just lower, they were lower by a factor of three.\n\nAt that point nobody needed convincing. We rewrote the projection, and more importantly we added a paragraph explaining who we had asked and who we had not, which our director later said was the most credible part of the report.\n\nWhat I took from it is that being right is only half the task. The disagreement went nowhere while I was defending a criticism, and resolved itself in one afternoon once I proposed something cheap and testable instead. I try to remember that the next time I'm certain and outnumbered.",
+  "answerKo":"작년에 저는 네 명으로 구성된 팀에서 시장 분석을 준비했는데, 핵심 수치가 틀렸다고 생각한 사람이 저 혼자였습니다. 팀은 기존 고객을 설문해 수요를 추정했고 결과는 대단히 고무적이었습니다. 제 반론은 단순했습니다. 우리는 이미 우리를 선택한 사람들만 조사한 것이니 당연히 제품을 좋아할 수밖에 없고, 그 숫자는 나머지 사람들에 대해 아무것도 말해 주지 않는다는 것이었습니다.\n\n문제를 알아채는 것보다 다루는 것이 더 어려웠습니다. 발표까지 나흘 남았고, 모두 지쳐 있었고, 저는 그 방에서 가장 연차가 낮았습니다. 첫 시도는 실패했습니다. 설문이 편향됐다고 말했는데, 그건 그들의 작업이 부실했다는 말로 들렸고 대화는 즉시 방어적으로 변했습니다.\n\n그래서 방식을 바꿨습니다. 방법론을 두고 논쟁하는 대신, 간단한 테스트 하나를 해 보자고 제안했습니다. 우리 사이트를 보고 구매하지 않고 떠난 50명에게 같은 질문 세 개를 던져 보자는 것이었죠. 반나절이면 됐습니다. 결과는 단지 낮은 정도가 아니라 3분의 1 수준이었습니다.\n\n그 시점엔 아무도 설득할 필요가 없었습니다. 우리는 추정치를 다시 썼고, 더 중요하게는 누구를 조사했고 누구를 조사하지 않았는지 설명하는 문단을 추가했습니다. 나중에 디렉터는 그 부분이 보고서에서 가장 신뢰가 가는 대목이었다고 했습니다.\n\n제가 얻은 교훈은 옳다는 것은 절반에 불과하다는 점입니다. 제가 비판을 방어하는 동안 논쟁은 한 발도 나아가지 않았고, 값싸고 검증 가능한 방안을 제안한 순간 반나절 만에 정리됐습니다. 확신은 있는데 수적으로 밀릴 때마다 그 일을 떠올리려 합니다.",
+  "kx":[{"en":"the only one who thought","ko":"~라고 생각한 유일한 사람"},{"en":"the most junior person in the room","ko":"그 자리에서 가장 연차가 낮은 사람"},{"en":"sounded like I was calling their work sloppy","ko":"그들의 작업이 부실하다는 말처럼 들렸다"},{"en":"lower by a factor of three","ko":"3분의 1 수준으로 낮은"},{"en":"certain and outnumbered","ko":"확신은 있지만 수적으로 밀리는"}],
+  "tips":"'집단과 의견이 갈린 경험'은 자칫 자기 자랑으로 흐르기 쉽습니다. 첫 시도가 실패했다는 대목을 꼭 넣으세요. 실패 → 접근 변경 → 결과 구조가 있으면 3분이 채워지면서 동시에 성찰 능력이 드러납니다."
+ },
+ {
+  "exam":"DET Speaking","category":"Speaking Sample","level":2,
+  "topic":"오래 지켜 온 습관 하나","targetLevel":"준비 30초 · 말하기 3분 · 학교 전송용",
+  "q":"Describe a habit or routine you have kept for a long time. Why did you start it, and what does it give you? Speak for up to three minutes.",
+  "answerEn":"For about seven years I've written three sentences in a notebook before I go to sleep. Not a diary exactly — three sentences, no more. One about something that happened, one about something I got wrong, and one about what I'll do first the next morning.\n\nI started it for an unremarkable reason. I was in a period where I couldn't sleep, and my mind would keep replaying the same unfinished tasks. Someone suggested writing them down so my brain would stop treating them as urgent. That part worked almost immediately, and the habit stayed even after the insomnia went away.\n\nWhat surprised me is what it turned into. The middle sentence — the one about what I got wrong — was uncomfortable at first, and for the first few months I wrote things like ‘was late again’ without thinking further. But writing the same failure fifteen times is impossible to ignore. It's much harder to lie to a notebook than to yourself, because the notebook keeps the receipts.\n\nThe third sentence has a different function. Deciding the next morning's first task the night before removes the twenty minutes I used to lose deciding what to do, and it means I start the day on something I chose while calm rather than something that shouted at me from my inbox.\n\nIt takes about ninety seconds. I've kept it through two moves and one job change, and it's the only routine I've never dropped — probably because the cost of doing it is smaller than the cost of thinking about whether to do it.",
+  "answerKo":"저는 7년쯤 잠들기 전에 공책에 세 문장을 씁니다. 정확히 일기는 아니고 딱 세 문장입니다. 하나는 그날 있었던 일, 하나는 내가 잘못한 것, 하나는 다음 날 아침 가장 먼저 할 일입니다.\n\n시작한 계기는 특별할 게 없습니다. 잠을 못 자던 시기가 있었는데, 끝내지 못한 일들이 머릿속에서 계속 반복 재생됐습니다. 누가 그걸 적어 두면 뇌가 더 이상 급한 일로 취급하지 않는다고 알려 줬습니다. 그건 거의 바로 효과가 있었고, 불면이 사라진 뒤에도 습관은 남았습니다.\n\n놀라운 건 이게 무엇으로 변했는가입니다. 가운데 문장, 잘못한 것을 적는 문장은 처음엔 불편했고 몇 달간은 '또 지각함' 정도로만 썼습니다. 그런데 같은 실패를 열다섯 번 쓰면 모른 척할 수가 없습니다. 공책에 거짓말하기가 자기 자신에게 거짓말하기보다 훨씬 어렵습니다. 공책은 기록을 남기니까요.\n\n세 번째 문장은 기능이 다릅니다. 다음 날 첫 일을 전날 밤에 정해 두면 무엇을 할지 고르느라 잃던 20분이 사라지고, 받은메일함이 소리치는 일이 아니라 차분할 때 내가 고른 일로 하루를 시작하게 됩니다.\n\n90초쯤 걸립니다. 이사 두 번과 이직 한 번을 거치면서도 유지했고, 제가 한 번도 놓지 않은 유일한 루틴입니다. 아마 하는 비용이 할지 말지 고민하는 비용보다 작기 때문일 겁니다.",
+  "kx":[{"en":"not a diary exactly","ko":"정확히 일기는 아니고"},{"en":"an unremarkable reason","ko":"특별할 것 없는 이유"},{"en":"keep replaying","ko":"계속 반복 재생되다"},{"en":"the notebook keeps the receipts","ko":"공책은 증거를 남긴다"},{"en":"shouted at me from my inbox","ko":"받은메일함에서 나를 재촉한 (일)"}],
+  "tips":"습관 이야기는 '무엇을 하는가'만 말하면 40초에 끝납니다. ① 어떻게 시작했는지 → ② 예상과 달라진 지점 → ③ 구체적 효과 → ④ 왜 지금까지 유지되는지, 네 축을 잡으면 3분이 자연스럽게 찹니다. 수치(7년·세 문장·90초)를 넣으면 말이 훨씬 구체적으로 들립니다."
+ }
+]
+};

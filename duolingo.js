@@ -1475,6 +1475,8 @@ window.DET_DATA = {
   {
    "exam": "DET Writing",
    "category": "Write About the Photo",
+
+   "level": 1,
    "topic": "카페에서 일하는 사람",
    "targetLevel": "1분 · 최소 1문장",
    "q": "[사진 상황] A woman is sitting alone at a small café table with a laptop open in front of her. A cup of coffee sits beside the keyboard, and large windows behind her show a busy street.\n\nWrite one or more sentences that describe the image.",
@@ -1507,6 +1509,8 @@ window.DET_DATA = {
   {
    "exam": "DET Writing",
    "category": "Write About the Photo",
+
+   "level": 1,
    "topic": "공원에서 노는 아이들",
    "targetLevel": "1분 · 최소 1문장",
    "q": "[사진 상황] Several children are playing on a wooden playground in a park. One child is climbing a ladder while two others are on the slide. A few parents are watching from a bench nearby.\n\nWrite one or more sentences that describe the image.",
@@ -1539,6 +1543,8 @@ window.DET_DATA = {
   {
    "exam": "DET Writing",
    "category": "Write About the Photo",
+
+   "level": 2,
    "topic": "붐비는 지하철역",
    "targetLevel": "1분 · 최소 1문장",
    "q": "[사진 상황] A crowded subway platform during rush hour. Passengers are standing behind a yellow line, many looking at their phones. A train is arriving on the right side of the image.\n\nWrite one or more sentences that describe the image.",
@@ -1571,6 +1577,8 @@ window.DET_DATA = {
   {
    "exam": "DET Writing",
    "category": "Write About the Photo",
+
+   "level": 1,
    "topic": "주방에서 요리하는 남성",
    "targetLevel": "1분 · 최소 1문장",
    "q": "[사진 상황] A man in an apron is chopping vegetables on a kitchen counter. A pot is steaming on the stove behind him, and a recipe book lies open next to the cutting board.\n\nWrite one or more sentences that describe the image.",
@@ -1603,6 +1611,8 @@ window.DET_DATA = {
   {
    "exam": "DET Writing",
    "category": "Write About the Photo",
+
+   "level": 2,
    "topic": "도서관에서 공부하는 학생들",
    "targetLevel": "1분 · 최소 1문장",
    "q": "[사진 상황] Three students are studying together at a long table in a library. Books and notebooks are spread across the table, and one student is pointing at a page while the others listen.\n\nWrite one or more sentences that describe the image.",
@@ -1635,6 +1645,8 @@ window.DET_DATA = {
   {
    "exam": "DET Writing",
    "category": "Read, Then Write",
+
+   "level": 2,
    "topic": "동아리 예산 요청",
    "targetLevel": "5분 · 50단어 이상",
    "q": "[지문] You are a member of a university photography club. The club has asked members to explain how the club should spend a small budget it received this year.\n\nWrite about how the club should use the money and why.",
@@ -1667,6 +1679,8 @@ window.DET_DATA = {
   {
    "exam": "DET Writing",
    "category": "Read, Then Write",
+
+   "level": 2,
    "topic": "재택근무 정책",
    "targetLevel": "5분 · 50단어 이상",
    "q": "[지문] Your company is deciding whether employees should work in the office five days a week, work entirely from home, or use a hybrid schedule.\n\nWrite about which option you think is best and explain your reasons.",
@@ -1699,6 +1713,8 @@ window.DET_DATA = {
   {
    "exam": "DET Writing",
    "category": "Read, Then Write",
+
+   "level": 2,
    "topic": "도시 자전거 도로 확충",
    "targetLevel": "5분 · 50단어 이상",
    "q": "[지문] Your city is considering removing one lane of car traffic on a main road to create a protected bicycle lane. Some residents support the plan; others worry about congestion.\n\nWrite about whether you support the plan and why.",
@@ -1731,6 +1747,8 @@ window.DET_DATA = {
   {
    "exam": "DET Writing",
    "category": "Read, Then Write",
+
+   "level": 3,
    "topic": "휴대전화 교내 사용 금지",
    "targetLevel": "5분 · 50단어 이상",
    "q": "[지문] A high school is considering banning smartphones during the entire school day, including breaks and lunch.\n\nWrite about whether you agree with this policy and explain your reasons.",
@@ -1763,6 +1781,8 @@ window.DET_DATA = {
   {
    "exam": "DET Writing",
    "category": "Read, Then Write",
+
+   "level": 3,
    "topic": "박물관 무료 입장",
    "targetLevel": "5분 · 50단어 이상",
    "q": "[지문] Some people believe that national museums should be free for everyone. Others argue that a small entrance fee helps maintain the collections.\n\nWrite about which view you agree with and why.",
@@ -1795,6 +1815,8 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Speak About the Photo",
+
+   "level": 1,
    "topic": "해변의 가족",
    "targetLevel": "준비 20초 · 말하기 90초",
    "q": "[사진 상황] A family is sitting on a beach under a large umbrella. Two children are building a sandcastle near the water while their parents watch from beach chairs.\n\nSpeak about the photo for 90 seconds.",
@@ -1827,6 +1849,8 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Speak About the Photo",
+
+   "level": 2,
    "topic": "농산물 시장",
    "targetLevel": "준비 20초 · 말하기 90초",
    "q": "[사진 상황] An outdoor farmers' market. A vendor is arranging apples on a wooden stand while a customer points at a basket of vegetables. Other stalls with flowers are visible behind them.\n\nSpeak about the photo for 90 seconds.",
@@ -1859,6 +1883,8 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Speak About the Photo",
+
+   "level": 2,
    "topic": "회의 중인 사무실",
    "targetLevel": "준비 20초 · 말하기 90초",
    "q": "[사진 상황] Four colleagues are having a meeting around a table in a bright office. One person is standing and presenting a chart on a screen; the others are taking notes.\n\nSpeak about the photo for 90 seconds.",
@@ -1891,6 +1917,8 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Read, Then Speak",
+
+   "level": 1,
    "topic": "좋아하는 식당 설명하기",
    "targetLevel": "준비 20초 · 말하기 90초",
    "q": "[지문] Talk about a restaurant you like.\n\n· Where is it and what kind of food does it serve?\n· How often do you go there and who do you go with?\n· Explain why you would recommend it to a visitor.",
@@ -1923,6 +1951,8 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Read, Then Speak",
+
+   "level": 2,
    "topic": "기억에 남는 여행",
    "targetLevel": "준비 20초 · 말하기 90초",
    "q": "[지문] Describe a trip that you remember well.\n\n· Where did you go and when?\n· What did you do there?\n· Explain why the trip was memorable for you.",
@@ -1955,6 +1985,8 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Read, Then Speak",
+
+   "level": 2,
    "topic": "배우고 싶은 기술",
    "targetLevel": "준비 20초 · 말하기 90초",
    "q": "[지문] Talk about a skill you would like to learn.\n\n· What is the skill and why are you interested in it?\n· How do you plan to learn it?\n· Explain how it would change your daily life.",
@@ -1987,6 +2019,8 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Read, Then Speak",
+
+   "level": 3,
    "topic": "살고 싶은 도시",
    "targetLevel": "준비 20초 · 말하기 90초",
    "q": "[지문] Describe a city where you would like to live.\n\n· Which city is it and where is it located?\n· What do you know about life there?\n· Explain why it would suit you.",
@@ -2019,6 +2053,10 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Listen, Then Speak",
+
+   "level": 2,
+
+   "legacy": true,
    "topic": "온라인 수업 vs 대면 수업",
    "targetLevel": "듣기 후 준비 20초 · 말하기 90초",
    "q": "[음성 질문] Some students prefer online classes because they save travel time, while others say they learn better in a classroom. Which do you prefer, and why?",
@@ -2051,6 +2089,10 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Listen, Then Speak",
+
+   "level": 3,
+
+   "legacy": true,
    "topic": "돈과 시간 중 무엇이 더 중요한가",
    "targetLevel": "듣기 후 준비 20초 · 말하기 90초",
    "q": "[음성 질문] Some people would accept a lower salary in exchange for more free time. Others prefer to earn as much as possible. What would you choose, and why?",
@@ -2083,6 +2125,10 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Listen, Then Speak",
+
+   "level": 3,
+
+   "legacy": true,
    "topic": "소셜 미디어의 영향",
    "targetLevel": "듣기 후 준비 20초 · 말하기 90초",
    "q": "[음성 질문] Do you think social media has had a mostly positive or mostly negative effect on the way people communicate?",
@@ -2115,6 +2161,8 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Summarize the Conversation",
+
+   "level": 2,
    "topic": "수강 신청 상담",
    "targetLevel": "대화 청취 후 요약 · 75초",
    "q": "[대화 요지] A student tells an advisor that he wants to drop a statistics course because he is falling behind. The advisor points out that dropping it now would delay his graduation by a semester, and suggests joining a weekly tutoring group and speaking to the professor about extra practice problems instead. The student agrees to try tutoring for three weeks before deciding.\n\nSummarize the conversation.",
@@ -2147,6 +2195,8 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Summarize the Conversation",
+
+   "level": 2,
    "topic": "기숙사 룸메이트 문제",
    "targetLevel": "대화 청취 후 요약 · 75초",
    "q": "[대화 요지] A student complains to a housing officer that her roommate plays music late at night. The officer explains that the quiet hours policy starts at 11 p.m. and suggests that the student first talk to her roommate directly, using a written agreement form. If the problem continues for two more weeks, the student may request a room change.\n\nSummarize the conversation.",
@@ -2183,6 +2233,8 @@ window.DET_DATA = {
   {
    "exam": "DET Speaking",
    "category": "Summarize the Conversation",
+
+   "level": 3,
    "topic": "환불 요청",
    "targetLevel": "대화 청취 후 요약 · 75초",
    "q": "[대화 요지] A customer says a jacket he ordered online arrived with a broken zipper. The service agent apologizes and offers either a full refund or a replacement sent by express delivery at no cost. The customer chooses the replacement but asks to keep the damaged jacket until the new one arrives. The agent agrees and emails a prepaid return label.\n\nSummarize the conversation.",
@@ -2215,6 +2267,8 @@ window.DET_DATA = {
   {
    "exam": "DET Writing",
    "category": "Interactive Writing",
+
+   "level": 3,
    "topic": "기억에 남는 선생님 (1단계→2단계)",
    "targetLevel": "1단계 5분 + 2단계 3분",
    "q": "[1단계] Write about a teacher who made a strong impression on you. What did they teach, and what were they like?\n[2단계] Now explain in more detail how that teacher changed the way you study or think.",
@@ -2247,6 +2301,8 @@ window.DET_DATA = {
   {
    "exam": "DET Writing",
    "category": "Interactive Writing",
+
+   "level": 3,
    "topic": "바꾸고 싶은 습관 (1단계→2단계)",
    "targetLevel": "1단계 5분 + 2단계 3분",
    "q": "[1단계] Describe a habit you would like to change. What is it, and when did it start?\n[2단계] Now explain what has made it difficult to change and what you plan to do about it.",

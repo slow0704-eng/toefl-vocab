@@ -1,6 +1,6 @@
 # 📖 영어시험 올인원 — Vocab · Speaking · Writing · Reading Trainer
 
-**난이도 4단계·주제별 TOEFL 어휘 1,421개** + **토익 Part 5 문법 300문항** + **학술 구문 140개** + **장르·슬랭 150개(SF·판타지 / 힙합 / 스트리트)** + **듀오링고(DET) 유형별 연습** + **오픽(OPIc)·토익스피킹·토플 스피킹/라이팅/리딩 문항 386개**로 공부하는 영어 학습 웹앱입니다. 주요 6개 시험의 **문제 수·시간·유형 정보**도 함께 정리했습니다.
+**난이도 4단계·주제별 TOEFL 어휘 1,421개** + **토익 Part 5 문법 300문항** + **학술 구문 140개** + **장르·슬랭 150개(SF·판타지 / 힙합 / 스트리트)** + **듀오링고(DET) 2026 공식 13유형 전부** + **오픽(OPIc)·토익스피킹·토플 스피킹/라이팅/리딩 문항 386개**로 공부하는 영어 학습 웹앱입니다. 주요 6개 시험의 **문제 수·시간·유형 정보**도 함께 정리했습니다.
 설치·서버 없이 `index.html`만 열면 바로 동작하며, 학습 진행 상황은 브라우저에 자동 저장됩니다.
 
 🔗 **라이브:** https://slow0704-eng.github.io/toefl-vocab/
@@ -130,22 +130,47 @@
 
 > ⚠️ 인종적 멸칭(n-word)은 등급을 매길 대상이 아니라서 **애초에 수록하지 않았습니다.** 가사에 나오더라도 비흑인은 따라 부르기를 포함해 어떤 경우에도 쓰지 않는 것이 원칙이며, 앱 안에서도 그렇게 안내합니다.
 
-### 🦉 듀오링고 영어 테스트(DET) — 유형별 실전 연습
+### 🦉 듀오링고 영어 테스트(DET) — **2026 개편 기준 공식 13유형 전부**
 
-DET는 문제 형식이 토익·토플과 완전히 달라서 형식 자체에 익숙해지는 것이 핵심입니다. 실제 출제 유형 그대로 구현했습니다.
+DET는 문제 형식이 토익·토플과 완전히 달라서 형식 자체에 익숙해지는 것이 핵심입니다. **2026년 공식 13유형을 하나도 빠짐없이** 실제 출제 형식 그대로 구현했고, 유형마다 **기초·중급·고급** 난이도 필터와 문항 수를 붙였습니다.
 
-| 유형 | 형식 | 분량 |
-|------|------|-----:|
-| 🔤 **Read and Select** | 9개 단어 중 **실제 존재하는 영단어**만 고르기 | 실단어 473 + 가짜 181 |
-| ✏️ **Read and Complete** | 지문에서 **글자가 지워진 단어** 채우기 (c-test) | 30지문 · 빈칸 150개 |
-| 🎧 **Listen and Type** | 문장을 듣고 **그대로 받아쓰기** | 65문장 |
-| 📖 **Complete the Passage** | 지문 빈칸 4지선다 (Interactive Reading) | 30문항 |
-| 🗣 **Speaking · Writing** | 사진 묘사·읽고 쓰기·듣고 말하기·대화 요약 **모범답변** | 25문항 |
+| 앱의 연습 유형 | 형식 | 전체 | 기초 | 중급 | 고급 |
+|------|------|-----:|-----:|-----:|-----:|
+| 🔤 **Read and Select** | 9개 단어 중 **실제 존재하는 영단어**만 고르기 | 2,097 | 360 | 904 | 833 |
+| ✍️ **Fill in the Blanks** | 한 문장 속 지워진 글자 채우기 · **20초 제한** | 45 | 15 | 15 | 15 |
+| ✏️ **Read and Complete** | 지문에서 글자가 지워진 단어 채우기 (c-test) | 30 | 5 | 13 | 12 |
+| 🎧 **Listen and Type** | 문장을 듣고 **그대로 받아쓰기** | 65 | 20 | 25 | 20 |
+| 📚 **Interactive Reading** | 한 지문 + **하위유형 5종이 6문항**으로 이어지는 세트 | 8세트<br/>(48문항) | 2 | 3 | 3 |
+| 📖 **Complete the Passage** | 지문 빈칸 4지선다 (위 하위유형 단독 반복) | 40 | 10 | 18 | 12 |
+| 🎬 **Interactive Listening** | 듣고 채우기 → 응답 고르기 → **대화 요약** 3부 세트 | 4세트<br/>(32문항) | 1 | 2 | 1 |
+| 🗣 **Speaking · Writing** | 주관식 10개 유형 **모범답변** | 35 | 5 | 17 | 13 |
 
-- **Read and Select** — 가짜 단어 181개는 영어 음운 규칙에 맞게 만들었고, 실제 어휘 1,421개와 **충돌 0건**을 자동 검증했습니다. 채점 시 🟢 맞게 고름 / 🔴 가짜를 고름 / 🟠 놓친 실제 단어로 구분 표시
+**공식 13유형 대응표** — Read Aloud와 Listen, Then Speak은 2026년 개편에서 폐지되고 **Interactive Speaking**으로 대체됐습니다. 폐지 유형도 구버전 대비용으로 남기되 `2026 폐지 유형` 배지와 안내를 붙였습니다.
+
+| # | 공식 유형 | 앱에서 |
+|---|-----------|--------|
+| ① | Read and Select | 🔤 Read and Select |
+| ② | Fill in the Blanks | ✍️ Fill in the Blanks |
+| ③ | Read and Complete | ✏️ Read and Complete |
+| ④ | Interactive Reading | 📚 세트 + 📖 Complete the Passage 단독 연습 |
+| ⑤ | Listen and Type | 🎧 Listen and Type |
+| ⑥ | Interactive Listening | 🎬 3부 세트 |
+| ⑦ | Write About the Photo | 🗣 모범답변 5문항 |
+| ⑧ | Interactive Writing | 🗣 모범답변 2문항 |
+| ⑨ | Writing Sample | 🗣 모범답변 3문항 |
+| ⑩ | Speak About the Photo | 🗣 모범답변 3문항 |
+| ⑪ | Read, Then Speak | 🗣 모범답변 4문항 |
+| ⑫ | **Interactive Speaking** (2026 신설) | 🗣 모범답변 4문항 (주제당 3문항 연속) |
+| ⑬ | Speaking Sample | 🗣 모범답변 3문항 |
+
+- **Read and Select** — 가짜 단어 257개는 영어 음운 규칙에 맞게 만들었고, 실제 어휘와 **충돌 0건**을 자동 검증했습니다. 난이도는 글자 수 구간(기초 5자 이하 · 중급 6~7자 · 고급 8자 이상)으로 나뉘며 **어느 난이도에서도 실단어와 가짜가 함께** 나옵니다. 채점 시 🟢 맞게 고름 / 🔴 가짜를 고름 / 🟠 놓친 실제 단어로 구분 표시
+- **Fill in the Blanks** — 실제 시험과 같은 **20초 카운트다운**이 돌고 5초부터 빨갛게 깜빡입니다. 시간이 다 되면 자동 채점되며, 버튼 하나로 시간제한을 끌 수 있습니다
 - **Read and Complete** — 빈칸마다 글자 수만큼 칸이 좁혀지고, `Enter`로 다음 빈칸 이동. 틀리면 정답을 옆에 초록색으로 표시하고 지문 해석 제공
 - **Listen and Type** — TTS로 재생하며 **실제 시험처럼 재생 3회 제한**. 🐢 느리게 듣기 지원. 채점은 단어 단위로 비교해 일치/불일치를 색으로 표시
-- **Speaking · Writing** — Write About the Photo / Read, Then Write / Speak About the Photo / Read, Then Speak / Listen, Then Speak / Summarize the Conversation / Interactive Writing 7개 유형. 각 문항에 영문 모범답변 · 한글 해석 · 핵심 표현 · 고득점 팁 · 원어민 음성 재생
+- **Interactive Reading** — 한 지문에 대해 Complete the Sentence → Complete the Passage → **Highlight the Answer**(지문에서 문장을 직접 클릭) → **Identify the Idea**(복수 정답) → Title the Passage가 차례로 나옵니다. 끝나면 전체 지문·해석·듣기·대본 저장 제공
+- **Interactive Listening** — Part 1 듣고 빈칸 채우기 → Part 2 대화 흐름에 맞는 응답 고르기(대사는 **채점 후에 공개**) → Part 3 75초 요약. 요약은 모범답변·한글 해석·핵심 표현·팁과 대화 대본 저장 지원
+- **보기 순서 자동 섞기** — Interactive Reading과 Complete the Passage는 풀 때마다 보기 순서를 다시 섞습니다. 위치로 정답을 찍을 수 없고 같은 문항을 다시 만나도 새롭습니다
+- **Speaking · Writing** — Write About the Photo / Read, Then Write / Speak About the Photo / Read, Then Speak / Summarize the Conversation / Interactive Writing / **Interactive Speaking** / **Writing Sample** / **Speaking Sample** + 폐지된 Listen, Then Speak까지 10개 유형. 각 문항에 영문 모범답변 · 한글 해석 · 핵심 표현 · 고득점 팁 · 원어민 음성 재생
 
 
 ### 🎧 음성 — 브라우저에서 돌아가는 오픈소스 TTS (Piper)
@@ -275,7 +300,8 @@ toefl-vocab/
 ├── grammar.js    # 토익 Part 5 문법 300문항 (유형·난이도·해설 포함)
 ├── structures.js # 학술 구문 140개 (구조 유형 13종 × 주제 13종)
 ├── slang.js      # 장르·슬랭 150개 (SF·판타지/힙합/스트리트 × 사용 등급)
-├── duolingo.js   # 듀오링고(DET) 유형별 데이터 (단어 판별·c-test·받아쓰기·지문완성·모범답변)
+├── duolingo.js   # 듀오링고(DET) 기본 유형 데이터 (단어 판별·c-test·받아쓰기·지문완성·모범답변)
+├── duolingo-extra.js # DET 2026 보강 (Fill in the Blanks·Interactive Reading/Listening/Speaking·Writing/Speaking Sample)
 ├── exams.js      # 6개 시험 정보 (문제수·시간·과목·유형·점수)
 └── speaking.js   # 스피킹·라이팅·리딩 문항 386개
 ```

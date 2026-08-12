@@ -214,12 +214,15 @@
 
   <!-- 듀오링고 (DET) -->
   <section class="panel" id="panel-det">
-    <div class="det-intro">🦉 <b>듀오링고 영어 테스트(DET)</b>는 문제 유형이 토익·토플과 완전히 다릅니다. 실제 출제 형식 그대로 연습하세요.</div>
+    <div class="det-intro">🦉 <b>듀오링고 영어 테스트(DET)</b>는 문제 유형이 토익·토플과 완전히 다릅니다. <b>2026년 개편 기준 공식 13유형</b>을 모두 담았고, 유형마다 <b>기초·중급·고급</b> 난이도와 문항 수를 표시했습니다. <br/>※ Read Aloud와 Listen, Then Speak은 2026년에 폐지되고 <b>Interactive Speaking</b>으로 대체됐습니다.</div>
     <div class="tp-row" id="det-mode">
       <button class="tp-chip" data-dm="select" aria-pressed="true">🔤 Read and Select</button>
+      <button class="tp-chip" data-dm="blanks" aria-pressed="false">✍️ Fill in the Blanks</button>
       <button class="tp-chip" data-dm="complete" aria-pressed="false">✏️ Read and Complete</button>
       <button class="tp-chip" data-dm="listen" aria-pressed="false">🎧 Listen and Type</button>
+      <button class="tp-chip" data-dm="iread" aria-pressed="false">📚 Interactive Reading</button>
       <button class="tp-chip" data-dm="passage" aria-pressed="false">📖 Complete the Passage</button>
+      <button class="tp-chip" data-dm="ilisten" aria-pressed="false">🎬 Interactive Listening</button>
       <button class="tp-chip" data-dm="ws" aria-pressed="false">🗣 Speaking · Writing</button>
     </div>
     <div class="det-desc" id="det-desc"></div>
@@ -341,6 +344,7 @@
 <script src="structures-passages.js"></script>
 <script src="slang.js"></script>
 <script src="duolingo.js"></script>
+<script src="duolingo-extra.js"></script>
 <script src="exams.js"></script>
 <script src="topics.js"></script>
 <script src="topics-tolkien.js"></script>
