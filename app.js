@@ -1748,12 +1748,20 @@
   // Read and Select 난이도 — 글자 수로 구간을 나눈다 (기초 ≤5 · 중급 6~7 · 고급 ≥8).
   // 가짜 단어도 같은 기준으로 나뉘어 있어 어느 난이도든 실단어·가짜가 함께 나온다.
   const selLv = w => w.length<=5 ? 1 : w.length<=7 ? 2 : 3;
+  // 채점 후 뜻을 공개하기 위한 사전.
+  // 어휘 1,421개는 words.js 에 뜻이 있고, 그 밖의 DET 전용 단어는 duolingo-extra.js 의 gloss 를 쓴다.
+  const SEL_GLOSS = (function(){
+    const m={};
+    Object.keys(((DETX.readSelectExtra||{}).gloss)||{}).forEach(k=>{ m[k.toLowerCase()]=DETX.readSelectExtra.gloss[k]; });
+    WORDS.forEach(function(w){ m[String(w.word).toLowerCase()]=(w.pos?w.pos+" ":"")+w.ko; });
+    return m;
+  })();
   const SEL_REAL = (function(){
     const seen={}, out=[];
     (((DET.readSelect||{}).real)||[]).concat(WORDS.map(w=>w.word)).forEach(function(w){
       const k=String(w).toLowerCase();
       if(!/^[a-z]+$/.test(k)||seen[k])return;
-      seen[k]=1; out.push({w:w,real:true,level:selLv(k)});
+      seen[k]=1; out.push({w:w,real:true,level:selLv(k),gloss:SEL_GLOSS[k]||""});
     });
     return out;
   })();
@@ -1864,6 +1872,10 @@
       if(picked&&it.real){ b.classList.add("hit"); hit++; }
       else if(picked&&!it.real){ b.classList.add("miss"); miss++; }
       else if(!picked&&it.real){ b.classList.add("missed"); missed++; }
+      // 채점과 함께 뜻을 공개한다 — 맞혔든 틀렸든 9개 전부 보여야 복습이 된다
+      b.classList.add("graded");
+      b.innerHTML='<span class="sw">'+esc(it.w)+'</span>'+
+        '<span class="sg">'+(it.real ? esc(it.gloss||"실제로 쓰이는 단어") : "✕ 존재하지 않는 단어")+'</span>';
     });
     const totalReal=det.items.filter(x=>x.real).length;
     const perfect = hit===totalReal && miss===0;
