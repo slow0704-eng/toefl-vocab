@@ -421,7 +421,9 @@
       else if(detMode==="ilisten" && det && det.answered && !det.finished){ det.si++; drawIL(); }
     }
     if(tab==="topic"){
-      if(!$("topic-body").innerHTML){ buildTopicChips(); renderTopic(); }
+      // 칩 유무로 판단한다. 2단 탭의 preset(예: TOEIC→Part 7)이 먼저 돌면서
+      // 이미 topic-body 를 그려 버리는 경우가 있어, body 로 보면 칩을 영영 못 만든다.
+      if(!$("topic-cat").innerHTML){ buildTopicChips(); renderTopic(); }
       else if(tMode==="solve" && tSes && tSes.answered){ tSes.i++; drawTopicQ(); }
     }
     if(tab==="ptype"){
@@ -2515,6 +2517,8 @@
   const TR = (function(){
     const list = (window.TOPIC_READING||[])
       .concat(window.TOPIC_READING_EXTRA||[])
+      .concat(window.TOPIC_READING_POTTER||[])   // 해리 포터 — 장소·기숙사·타 학교
+      .concat(window.TOPIC_READING_TOLKIEN2||[]) // 반지의 제왕 — 인물
       .concat(window.PART7_SINGLE||[]);          // Part 7 전반부 단일 지문
     (window.PART7||[]).concat(window.PART7_EXTRA||[]).forEach(function(s){
       list.push(Object.assign({},s,{
