@@ -125,6 +125,18 @@ main,footer{zoom:var(--fs,1)}
 .tp-row .tp-sep:first-child{border-left:none;padding-left:0}
 .tp-chip.zero{opacity:.42}
 
+/* Part 6 — 지문 안의 빈칸 */
+.p6-blank{display:inline-block;min-width:34px;padding:1px 8px;margin:0 2px;border-radius:6px;
+  background:var(--surface-2);color:var(--faint);font-weight:800;border:1px dashed var(--border)}
+.p6-blank.now{background:var(--accent-weak);color:var(--accent);border:1px solid var(--accent);
+  box-shadow:0 0 0 3px var(--accent-weak)}
+.p6-blank.done{background:var(--good-weak);color:var(--good);
+  border:1px solid transparent;font-weight:700}
+.tp-passage.p6-pass{max-height:340px;overflow-y:auto}
+.p6-cat{margin-left:8px;font-size:11px;font-weight:800;padding:2px 9px;border-radius:99px;
+  color:var(--accent-2);background:var(--accent-weak)}
+.p6-wrap{margin-top:14px;padding-top:4px;border-top:1px solid var(--border)}
+
 /* OPIc 유형 안내 카드 */
 .opic-guide{background:var(--accent-weak);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;margin:0 0 14px}
 .opic-guide .og-title{font-weight:800;font-size:15px;color:var(--accent);margin-bottom:6px}

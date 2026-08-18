@@ -241,6 +241,19 @@
     <div class="count-line" id="topic-count"></div>
     <div id="topic-body"></div>
   </section>
+  <!-- TOEIC Part 6 (장문 빈칸) -->
+  <section class="panel" id="panel-p6">
+    <div class="det-intro">📄 <b>Part 6</b>는 지문 하나에 빈칸 네 개가 뚫려 있습니다. Part 5와 달리 <b>빈칸 문장만 봐서는 답이 갈리지 않고</b>, 앞뒤 문장이 시제·대명사·연결어를 정합니다. 네 문항 중 하나는 반드시 <b>문장 삽입</b>이며, 이것은 문법이 아니라 흐름으로 풉니다.</div>
+    <div class="lv-row" id="p6-lv"></div>
+    <div class="filter-row" id="p6-mode">
+      <button data-p6mode="solve" aria-pressed="true">🎯 문제 풀기</button>
+      <button data-p6mode="list" aria-pressed="false">📚 지문 보기</button>
+      <button id="p6-shuffle" style="margin-left:auto">🔀 새 세트</button>
+    </div>
+    <div class="count-line" id="p6-count"></div>
+    <div id="p6-body"></div>
+  </section>
+
   <!-- OPIc (유형 12 · 설문 25 · 돌발 20 · 롤플레이 6 = 63) -->
   <section class="panel" id="panel-opic">
     <div class="det-intro" id="opic-intro"></div>
@@ -327,7 +340,7 @@
 
 <footer>
   <div class="wrap">
-    TOEFL 어휘 <span id="foot-total"></span>개(난이도 4단계 · 주제 13종) + 토익 Part 5 문법 <span id="foot-gram"></span>문항 + 구문 <span id="foot-struct"></span>개 + 장르·슬랭 <span id="foot-slang"></span>개 + 듀오링고(DET) <span id="foot-det"></span>문항 + 오픽·토익스피킹·토플(스피킹/라이팅/리딩) 문항 <span id="foot-speak"></span>개 · 진행 상황 자동 저장
+    TOEFL 어휘 <span id="foot-total"></span>개(난이도 4단계 · 주제 13종) + 토익 Part 5 문법 <span id="foot-gram"></span>문항 + Part 6 <span id="foot-p6"></span>문항 + Part 7 <span id="foot-p7"></span>문항 + 구문 <span id="foot-struct"></span>개 + 장르·슬랭 <span id="foot-slang"></span>개 + 듀오링고(DET) <span id="foot-det"></span>문항 + 오픽·토익스피킹·토플(스피킹/라이팅/리딩) 문항 <span id="foot-speak"></span>개 · 진행 상황 자동 저장
     <div class="toolbar-mini"><button id="reset-btn">↺ 학습 기록 초기화</button></div>
   </div>
 </footer>
@@ -343,6 +356,8 @@
 <script src="words.js"></script>
 <script src="speaking.js"></script>
 <script src="speaking-extra.js"></script>
+<script src="speaking-opic.js"></script>
+<script src="speaking-opic2.js"></script>
 <script src="grammar.js"></script>
 <script src="structures.js"></script>
 <script src="structures-passages.js"></script>
@@ -360,7 +375,9 @@
 <script src="topics-movies.js"></script>
 <script src="topics-matrix.js"></script>
 <script src="topics-tech.js"></script>
+<script src="part6.js"></script>
 <script src="part7.js"></script>
+<script src="part7-extra.js"></script>
 <script src="passages.js"></script>
 <script src="opic.js"></script>
 <script src="app.js"></script>

@@ -175,7 +175,7 @@
   const ROLEPLAY = [
     {id:"r01", no:"UNIT 01", name:"면접관에게 질문하기",
      desc:"Ava(면접관)에게 거꾸로 3~4개 질문. 의문문 어순만 정확하면 쉬운 점수.",
-     kw:["면접관","ask me three","ask me some questions","questions to me","ask ava"]},
+     kw:["면접관에게 질문하기","면접관에게 질문","면접관","ask me three","ask me some questions","questions to me","ask ava"]},
     {id:"r02", no:"UNIT 02", name:"주어진 상황에서 직접 질문하기",
      desc:"매장·센터에 찾아가 직접 묻는 상황. 가격·시간·조건 3종 질문을 준비한다.",
      kw:["회원 등록","등록 문의","질문하기","직접 질문","ask three questions about"]},
