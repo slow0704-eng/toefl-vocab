@@ -47,8 +47,13 @@
   <div class="tab-wrap"><div class="tabs" id="sub-tabs" role="tablist"></div></div>
   <div class="nav-note" id="nav-note"></div>
 
+  <!-- 홈 -->
+  <section class="panel active" id="panel-home">
+    <div id="home-body"></div>
+  </section>
+
   <!-- 플래시카드 -->
-  <section class="panel active" id="panel-flash">
+  <section class="panel" id="panel-flash">
     <div class="lv-row" id="flash-lv"></div>
     <div class="tp-row" id="flash-topic"></div>
     <div class="card-scene">
@@ -228,6 +233,7 @@
       <span class="ic">🔎</span>
       <input id="topic-search" type="search" placeholder="지문·해설 검색 (예: Cruyff, 번역, xG)…" />
     </div>
+    <div class="nav-note" id="topic-note"></div>
     <div class="tp-row" id="topic-cat"></div>
     <div class="filter-row" id="topic-exam">
       <button data-tex="all" aria-pressed="true">전체</button>
@@ -382,7 +388,28 @@
 <script src="part7-extra.js"></script>
 <script src="passages.js"></script>
 <script src="opic.js"></script>
-<script src="app.js"></script>
+
+<!-- 앱 로직 — 로드 순서가 의존 순서다. core → data → 공용 → 패널 → 내비 → 부팅 -->
+<script src="js/core.js"></script>
+<script src="js/data.js"></script>
+<script src="js/tts.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/panels/home.js"></script>
+<script src="js/panels/vocab.js"></script>
+<script src="js/panels/gram.js"></script>
+<script src="js/panels/struct.js"></script>
+<script src="js/panels/slang.js"></script>
+<script src="js/panels/det.js"></script>
+<script src="js/panels/topic.js"></script>
+<script src="js/panels/p6.js"></script>
+<script src="js/panels/ptype.js"></script>
+<script src="js/panels/exam.js"></script>
+<script src="js/panels/opic.js"></script>
+<script src="js/panels/info.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/boot.js"></script>
 
 </body>
 </html>
