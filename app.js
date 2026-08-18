@@ -380,54 +380,55 @@
   function shuffle(){ shuffleInPlace(order); idx=0; renderCard(); }
   $("shuffle-btn").addEventListener("click",()=>{ shuffle(); toast("순서를 섞었습니다 🔀"); });
 
-  // ---- 탭 ----
-  document.querySelectorAll('.tabs button').forEach(b=>{
-    b.addEventListener("click",()=>{
-      document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute("aria-selected",x===b));
-      document.querySelectorAll('.panel').forEach(p=>p.classList.remove("active"));
-      $("panel-"+b.dataset.tab).classList.add("active");
-      const tab=b.dataset.tab;
-      document.body.classList.toggle("speaking-mode", tab==="speak"||tab==="write"||tab==="read"||tab==="gram"||tab==="struct"||tab==="slang"||tab==="det"||tab==="info"||tab==="topic"||tab==="ptype");
-      stopSpeak();
-      // 탭을 다시 열 때 이미 채점된 화면이 남아 있으면 다음 문제로 넘긴다
-      // (진행 중인 세션과 콤보는 유지 — 잠깐 다른 탭을 봤다고 초기화되지 않게)
-      if(tab==="quiz"){
-        if(!quiz || !$("quiz-body").innerHTML) startQuiz();
-        else if(quiz.answered){ quiz.i++; renderQuiz(); }
-      }
-      if(tab==="browse") renderBrowse();
-      if(tab==="gram"){
-        if(!$("gram-body").innerHTML) startGram();
-        else if(gMode==="solve" && gram && gram.answered){ gram.i++; renderGram(); }
-      }
-      if(tab==="struct"){
-        if(!$("struct-body").innerHTML) startStruct();
-        else if(sMode==="solve" && struct && struct.answered){ struct.i++; renderStruct(); }
-      }
-      if(tab==="slang"){
-        if(!$("slang-body").innerHTML) startSlang();
-        else if(slMode==="quiz" && slang && slang.answered){ slang.i++; renderSlang(); }
-      }
-      if(tab==="det"){
-        if(!$("det-body").innerHTML){ buildDetLv(); startDet(); }
-        else if(detMode==="passage" && det && det.answered){ det.i++; drawDetPassage(); }
-        else if(detMode==="iread"   && det && det.answered && !det.finished){ det.qi++; drawIRead(); }
-        else if(detMode==="ilisten" && det && det.answered && !det.finished){ det.si++; drawIL(); }
-      }
-      if(tab==="topic"){
-        if(!$("topic-body").innerHTML){ buildTopicChips(); renderTopic(); }
-        else if(tMode==="solve" && tSes && tSes.answered){ tSes.i++; drawTopicQ(); }
-      }
-      if(tab==="ptype"){
-        if(!$("ptype-body").innerHTML){ buildPtypeChips(); renderPtype(); }
-        else if(pMode==="quiz" && pSes && pSes.answered){ pSes.i++; drawPtypeQ(); }
-      }
-      if(tab==="info" && !$("info-body").innerHTML) renderInfo();
-      if(tab==="speak") renderSpeak();
-      if(tab==="write") renderWrite();
-      if(tab==="read") renderRead();
-    });
-  });
+  // ---- 패널 열기 ----
+  // 내비게이션은 2단이다(시험 → 파트·유형). 어느 경로로 들어오든
+  // 실제로 화면을 바꾸는 일은 전부 여기서 한다.
+  const WIDE_PANELS = ["speak","write","read","gram","struct","slang","det","info","topic","ptype","opic"];
+  function enterPanel(tab){
+    document.querySelectorAll('.panel').forEach(p=>p.classList.remove("active"));
+    const panel=$("panel-"+tab);
+    if(!panel)return;
+    panel.classList.add("active");
+    document.body.classList.toggle("speaking-mode", WIDE_PANELS.indexOf(tab)>=0);
+    stopSpeak();
+    // 탭을 다시 열 때 이미 채점된 화면이 남아 있으면 다음 문제로 넘긴다
+    // (진행 중인 세션과 콤보는 유지 — 잠깐 다른 탭을 봤다고 초기화되지 않게)
+    if(tab==="quiz"){
+      if(!quiz || !$("quiz-body").innerHTML) startQuiz();
+      else if(quiz.answered){ quiz.i++; renderQuiz(); }
+    }
+    if(tab==="browse") renderBrowse();
+    if(tab==="gram"){
+      if(!$("gram-body").innerHTML) startGram();
+      else if(gMode==="solve" && gram && gram.answered){ gram.i++; renderGram(); }
+    }
+    if(tab==="struct"){
+      if(!$("struct-body").innerHTML) startStruct();
+      else if(sMode==="solve" && struct && struct.answered){ struct.i++; renderStruct(); }
+    }
+    if(tab==="slang"){
+      if(!$("slang-body").innerHTML) startSlang();
+      else if(slMode==="quiz" && slang && slang.answered){ slang.i++; renderSlang(); }
+    }
+    if(tab==="det"){
+      if(!$("det-body").innerHTML){ buildDetLv(); startDet(); }
+      else if(detMode==="passage" && det && det.answered){ det.i++; drawDetPassage(); }
+      else if(detMode==="iread"   && det && det.answered && !det.finished){ det.qi++; drawIRead(); }
+      else if(detMode==="ilisten" && det && det.answered && !det.finished){ det.si++; drawIL(); }
+    }
+    if(tab==="topic"){
+      if(!$("topic-body").innerHTML){ buildTopicChips(); renderTopic(); }
+      else if(tMode==="solve" && tSes && tSes.answered){ tSes.i++; drawTopicQ(); }
+    }
+    if(tab==="ptype"){
+      if(!$("ptype-body").innerHTML){ buildPtypeChips(); renderPtype(); }
+      else if(pMode==="quiz" && pSes && pSes.answered){ pSes.i++; drawPtypeQ(); }
+    }
+    if(tab==="info" && !$("info-body").innerHTML) renderInfo();
+    if(tab==="speak") renderSpeak();
+    if(tab==="write") renderWrite();
+    if(tab==="read") renderRead();
+  }
 
   // ---- 퀴즈 ----
   // w2k=단어→뜻, k2w=뜻→단어, blank=빈칸 채우기, mix=혼합
@@ -2906,6 +2907,66 @@
       '<div class="det-desc" style="margin-top:12px">※ 가로로 스크롤하면 6개 시험을 모두 비교할 수 있습니다.</div>';
   }
 
+  // ---- 문항 카드 (스피킹·라이팅·리딩·OPIc 공용) ----
+  function spItemMarkup(t,i,C){
+    const examCls=EXAM_CLS[t.exam]||"opic";
+    const examName=EXAM_NAME[t.exam]||t.exam;
+    const kx=(t.keyExpressions||[]).map(k=>'<div><b>'+esc(k.en)+'</b><span>'+esc(k.ko)+'</span></div>').join('');
+    return '<div class="sp-item" data-i="'+i+'">'+
+      '<div class="sp-head">'+
+        '<div style="flex:1;min-width:0">'+
+          '<div class="sp-badges"><span class="exam-badge '+examCls+'">'+esc(examName)+'</span>'+
+            (t.category?'<span class="cat-badge">'+esc(t.category)+'</span>':'')+
+            (t.topic?'<span class="topic-badge">'+esc(t.topic)+'</span>':'')+
+            (t.targetLevel?'<span class="lvl-badge">'+esc(t.targetLevel)+'</span>':'')+'</div>'+
+          '<div class="sp-q">'+(C.HEAD_TOPIC?esc(t.topic):esc(t.question).replace(/\n/g,"<br/>"))+'</div>'+
+        '</div>'+
+        '<div class="sp-toggle">▼</div>'+
+      '</div>'+
+      '<div class="sp-body">'+
+        (C.HEAD_TOPIC?'<div class="sp-sec-title">'+C.PASSAGE_TITLE+'</div><div class="passage">'+esc(t.question).replace(/\n/g,"<br/>")+'</div>':'')+
+        '<div class="sp-controls">'+
+          '<button data-act="play">▶ '+C.PLAY+'</button>'+
+          '<button data-act="dl">⬇ 음성</button><button data-act="dltxt">📄 대본</button>'+
+          '<button data-act="stop">■ 정지</button>'+
+          '<button data-act="ko" aria-pressed="false">🇰🇷 '+C.KO_LABEL+'</button>'+
+        '</div>'+
+        (C.ANS_TITLE?'<div class="sp-sec-title">'+C.ANS_TITLE+'</div>':'')+
+        '<div class="ans en-text">'+esc(t.answerEn).replace(/\n/g,"<br/>")+'</div>'+
+        '<div class="ans ko-text" style="display:none;margin-top:10px">'+esc(t.answerKo).replace(/\n/g,"<br/>")+'</div>'+
+        (kx?'<div class="sp-sec-title">💡 핵심 표현</div><div class="kx">'+kx+'</div>':'')+
+        (t.tips?'<div class="sp-sec-title">🎯 고득점 팁</div><div class="tips">'+esc(t.tips)+'</div>':'')+
+      '</div>'+
+    '</div>';
+  }
+  /* 재생 중 다른 항목을 누르면 speak() 가 이전 발화를 취소하는데,
+     취소된 발화의 onend 는 브라우저마다 오지 않아 이전 버튼이
+     "재생 중…" 에 멈춰 있었다. 새로 재생하기 전에 전부 되돌린다. */
+  function spResetPlay(box,C){ qsa('[data-act="play"]',box).forEach(b=>{ b.textContent="▶ "+C.PLAY; }); }
+
+  function spBind(box,slice,C,moreId,onMore){
+    qsa(".sp-item",box).forEach(item=>{
+      const t=slice[parseInt(item.dataset.i,10)];
+      item.querySelector(".sp-head").addEventListener("click",()=>{ const open=item.classList.toggle("open"); if(!open){ stopSpeak(); spResetPlay(box,C); } });
+      const playBtn=item.querySelector('[data-act="play"]');
+      playBtn.addEventListener("click",e=>{
+        e.stopPropagation();
+        spResetPlay(box,C);
+        playBtn.textContent="🔊 재생 중…";
+        speakBest(t.answerEn,{rate:.92,onend:()=>{ playBtn.textContent="▶ "+C.PLAY; }});
+      });
+      item.querySelector('[data-act="stop"]').addEventListener("click",e=>{ e.stopPropagation(); stopSpeak(); spResetPlay(box,C); });
+      const dlName=(t.topic||t.category||"answer");
+      item.querySelector('[data-act="dl"]').addEventListener("click",e=>{ e.stopPropagation(); ttsDownload(t.answerEn,dlName); });
+      item.querySelector('[data-act="dltxt"]').addEventListener("click",e=>{ e.stopPropagation();
+        scriptDownload([t.topic||"",t.question||"","",t.answerEn,"","--- 한글 ---","",t.answerKo||""].join("\n"),dlName); });
+      const koBtn=item.querySelector('[data-act="ko"]');
+      koBtn.addEventListener("click",e=>{ e.stopPropagation(); const on=koBtn.getAttribute("aria-pressed")==="true"; koBtn.setAttribute("aria-pressed",!on); item.querySelector(".ko-text").style.display=on?"none":"block"; });
+    });
+    const more=moreId&&$(moreId);
+    if(more&&onMore) more.addEventListener("click",onMore);
+  }
+
   // ---- 스피킹 · 라이팅 · 리딩 (공용 패널) ----
   // prefix: DOM id 접두사, exams: 이 패널이 다루는 시험 목록, playLabel: 음성 버튼 문구
   function makeExamPanel(prefix, exams, opt){
@@ -2957,65 +3018,10 @@
         fTopic=b.dataset.top; render();
       }));
     }
-    function itemMarkup(t,i){
-      const examCls=EXAM_CLS[t.exam]||"opic";
-      const examName=EXAM_NAME[t.exam]||t.exam;
-      const kx=(t.keyExpressions||[]).map(k=>'<div><b>'+esc(k.en)+'</b><span>'+esc(k.ko)+'</span></div>').join('');
-      return '<div class="sp-item" data-i="'+i+'">'+
-        '<div class="sp-head">'+
-          '<div style="flex:1;min-width:0">'+
-            '<div class="sp-badges"><span class="exam-badge '+examCls+'">'+esc(examName)+'</span>'+
-              (t.category?'<span class="cat-badge">'+esc(t.category)+'</span>':'')+
-              (t.topic?'<span class="topic-badge">'+esc(t.topic)+'</span>':'')+
-              (t.targetLevel?'<span class="lvl-badge">'+esc(t.targetLevel)+'</span>':'')+'</div>'+
-            '<div class="sp-q">'+(HEAD_TOPIC?esc(t.topic):esc(t.question).replace(/\n/g,"<br/>"))+'</div>'+
-          '</div>'+
-          '<div class="sp-toggle">▼</div>'+
-        '</div>'+
-        '<div class="sp-body">'+
-          (HEAD_TOPIC?'<div class="sp-sec-title">'+PASSAGE_TITLE+'</div><div class="passage">'+esc(t.question).replace(/\n/g,"<br/>")+'</div>':'')+
-          '<div class="sp-controls">'+
-            '<button data-act="play">▶ '+PLAY+'</button>'+
-            '<button data-act="dl">⬇ 음성</button><button data-act="dltxt">📄 대본</button>'+
-            '<button data-act="stop">■ 정지</button>'+
-            '<button data-act="ko" aria-pressed="false">🇰🇷 '+KO_LABEL+'</button>'+
-          '</div>'+
-          (ANS_TITLE?'<div class="sp-sec-title">'+ANS_TITLE+'</div>':'')+
-          '<div class="ans en-text">'+esc(t.answerEn).replace(/\n/g,"<br/>")+'</div>'+
-          '<div class="ans ko-text" style="display:none;margin-top:10px">'+esc(t.answerKo).replace(/\n/g,"<br/>")+'</div>'+
-          (kx?'<div class="sp-sec-title">💡 핵심 표현</div><div class="kx">'+kx+'</div>':'')+
-          (t.tips?'<div class="sp-sec-title">🎯 고득점 팁</div><div class="tips">'+esc(t.tips)+'</div>':'')+
-        '</div>'+
-      '</div>';
-    }
-    /* 재생 중 다른 항목을 누르면 speak() 가 이전 발화를 취소하는데,
-       취소된 발화의 onend 는 브라우저마다 오지 않아 이전 버튼이
-       "재생 중…" 에 멈춰 있었다. 새로 재생하기 전에 전부 되돌린다. */
-    function resetPlayLabels(box){
-      qsa('[data-act="play"]',box).forEach(b=>{ b.textContent="▶ "+PLAY; });
-    }
-    function bind(box,slice){
-      qsa(".sp-item",box).forEach(item=>{
-        const t=slice[parseInt(item.dataset.i,10)];
-        item.querySelector(".sp-head").addEventListener("click",()=>{ const open=item.classList.toggle("open"); if(!open){ stopSpeak(); resetPlayLabels(box); } });
-        const playBtn=item.querySelector('[data-act="play"]');
-        playBtn.addEventListener("click",e=>{
-          e.stopPropagation();
-          resetPlayLabels(box);
-          playBtn.textContent="🔊 재생 중…";
-          speakBest(t.answerEn,{rate:.92,onend:()=>{ playBtn.textContent="▶ "+PLAY; }});
-        });
-        item.querySelector('[data-act="stop"]').addEventListener("click",e=>{ e.stopPropagation(); stopSpeak(); resetPlayLabels(box); });
-        const dlName=(t.topic||t.category||"answer");
-        item.querySelector('[data-act="dl"]').addEventListener("click",e=>{ e.stopPropagation(); ttsDownload(t.answerEn,dlName); });
-        item.querySelector('[data-act="dltxt"]').addEventListener("click",e=>{ e.stopPropagation();
-          scriptDownload([t.topic||"",t.question||"","",t.answerEn,"","--- 한글 ---","",t.answerKo||""].join("\n"),dlName); });
-        const koBtn=item.querySelector('[data-act="ko"]');
-        koBtn.addEventListener("click",e=>{ e.stopPropagation(); const on=koBtn.getAttribute("aria-pressed")==="true"; koBtn.setAttribute("aria-pressed",!on); item.querySelector(".ko-text").style.display=on?"none":"block"; });
-      });
-      const more=$(prefix+"-more");
-      if(more) more.addEventListener("click",()=>{ shown+=EXAM_PAGE; render(false); });
-    }
+    function itemMarkup(t,i){ return spItemMarkup(t,i,CFG); }
+
+    function bind(box,slice){ spBind(box,slice,CFG,prefix+"-more",()=>{ shown+=EXAM_PAGE; render(false); }); }
+
     /** @param {boolean} [resetPage=true] false 면 "더 보기"로 펼친 범위를 유지한다. */
     function render(resetPage){
       if(resetPage!==false) shown=EXAM_PAGE;
@@ -3044,6 +3050,7 @@
     const PLAY = opt.playLabel || "원어민 음성";
     const KO_LABEL = opt.koLabel || "한글 번역";
     const ANS_TITLE = opt.ansTitle || "";
+    const CFG = {HEAD_TOPIC:HEAD_TOPIC, PASSAGE_TITLE:PASSAGE_TITLE, PLAY:PLAY, KO_LABEL:KO_LABEL, ANS_TITLE:ANS_TITLE};
     buildLevels(); buildCats(); buildTopics();
     return render;
   }
@@ -3140,27 +3147,214 @@
     if(!(window.CSS&&CSS.supports&&CSS.supports("zoom","1.5"))) $("fs-hint").textContent="이 브라우저는 글자 크기 조절을 지원하지 않습니다.";
   })();
 
-  // ---- 탭바 (모바일: 탭이 12개라 가로 스크롤) ----
-  // 선택한 탭을 항상 화면 안으로 끌어오고, 양옆에 더 있다는 것을 페이드로 알려 준다.
-  (function(){
-    const wrap=document.querySelector(".tab-wrap"), bar=document.querySelector(".tabs");
+  // ---- OPIc 패널 (유형 12 · 설문 25 · 돌발 20 · 롤플레이 6 = 63) ----
+  // 주제 축(설문·돌발·롤플레이)과 유형 축(질문 방식 12가지)은 서로 직각이다.
+  // 같은 문항이 '카페 가기'이면서 동시에 '기억에 남는 경험'일 수 있으므로
+  // 문항마다 두 축을 다 붙여 두고, 그룹에 따라 어느 축으로 자를지만 바꾼다.
+  const ONAV = window.OPIC_NAV || {groups:[],types:[]};
+  const OPIC_CFG = {HEAD_TOPIC:false, PASSAGE_TITLE:"", PLAY:"원어민 음성", KO_LABEL:"한글 번역", ANS_TITLE:"🗣 예시 답변"};
+  const OPIC_PAGE = 30;
+  const OPIC_POOL = TOPICS.filter(t=>t.exam==="OPIc").map(t=>{
+    const g = window.opicTag ? window.opicTag(t) : {};
+    return Object.assign({}, t, {_g:g.unitGroup||null, _u:g.unit||null, _t:g.type||null});
+  });
+  let oGroup="type", oUnit="all", oShown=OPIC_PAGE;
+
+  function oGroupDef(){ return (ONAV.groups||[]).filter(g=>g.id===oGroup)[0] || (ONAV.groups||[])[0]; }
+  function oAxisItems(g){ return g.axis==="type" ? (ONAV.types||[]) : (g.items||[]); }
+  function oInPool(g,t){ return g.axis==="type" ? true : t._g===g.id; }
+  function oKey(g,t){ return g.axis==="type" ? t._t : t._u; }
+
+  function setOpicGroup(id){ if(oGroup!==id){ oGroup=id; oUnit="all"; oShown=OPIC_PAGE; } }
+
+  function buildOpicChips(){
+    const g=oGroupDef(), items=oAxisItems(g);
+    const pool=OPIC_POOL.filter(t=>oInPool(g,t));
+    const n=k=>pool.filter(t=>oKey(g,t)===k).length;
+    const etc=pool.filter(t=>!oKey(g,t)).length;
+    $("opic-unit-title").textContent = g.axis==="type" ? "질문 유형 12" : g.name+" "+items.length;
+    let last=null, html='<button class="tp-chip" data-ou="all" aria-pressed="'+(oUnit==="all")+'">전체 <span class="c">'+pool.length+'</span></button>';
+    items.forEach(u=>{
+      if(u.group && u.group!==last){ last=u.group; html+='<span class="tp-sep">'+esc(u.group)+'</span>'; }
+      const c=n(u.id);
+      html+='<button class="tp-chip'+(c?'':' zero')+'" data-ou="'+u.id+'" aria-pressed="'+(oUnit===u.id)+'" title="'+esc(u.no+' '+u.name)+'">'+
+            (u.icon?u.icon+' ':'')+esc(u.no.replace("UNIT ","").replace("유형 ",""))+'. '+esc(u.name)+' <span class="c">'+c+'</span></button>';
+    });
+    if(etc) html+='<button class="tp-chip" data-ou="etc" aria-pressed="'+(oUnit==="etc")+'">📦 기타 <span class="c">'+etc+'</span></button>';
+    $("opic-units").innerHTML=html;
+    qsa("[data-ou]",$("opic-units")).forEach(b=>b.addEventListener("click",()=>{
+      oUnit=b.dataset.ou; oShown=OPIC_PAGE; buildOpicChips(); renderOpic();
+    }));
+  }
+
+  function opicGuide(){
+    const g=oGroupDef();
+    if(oUnit==="all"||oUnit==="etc") return "";
+    const u=oAxisItems(g).filter(x=>x.id===oUnit)[0];
+    if(!u) return "";
+    const frame=(u.frame||[]).map(f=>'<li>'+esc(f)+'</li>').join('');
+    if(!u.desc && !frame) return "";
+    return '<div class="opic-guide">'+
+      '<div class="og-title">'+(u.icon?u.icon+' ':'')+esc(u.no)+' '+esc(u.name)+'</div>'+
+      (u.desc?'<div class="og-desc">'+esc(u.desc)+'</div>':'')+
+      (frame?'<div class="og-frame-title">답변 뼈대 — 주제만 갈아 끼우면 된다</div><ol class="og-frame">'+frame+'</ol>':'')+
+    '</div>';
+  }
+
+  function renderOpic(resetPage){
+    if(resetPage!==false) oShown=OPIC_PAGE;
+    const g=oGroupDef();
+    $("opic-intro").innerHTML='<b>'+g.icon+' '+esc(g.name)+'</b> · '+esc(g.sub)+
+      ' — 아래 칩으로 좁혀 보세요. 문항마다 <b>주제</b>와 <b>질문 유형</b>이 함께 표시됩니다.';
+    $("opic-guide").innerHTML=opicGuide();
+    const q=($("opic-search").value||"").trim().toLowerCase();
+    const list=OPIC_POOL.filter(t=>{
+      if(!oInPool(g,t))return false;
+      if(oUnit==="etc"){ if(oKey(g,t))return false; }
+      else if(oUnit!=="all" && oKey(g,t)!==oUnit) return false;
+      if(q&&!((t.question||"").toLowerCase().includes(q)||(t.topic||"").toLowerCase().includes(q)||
+              (t.answerEn||"").toLowerCase().includes(q)||(t.answerKo||"").includes(q)))return false;
+      return true;
+    });
+    $("opic-count").textContent=list.length+"개 문항";
+    const box=$("opic-list");
+    if(!list.length){
+      box.innerHTML='<div class="empty">이 분류에는 아직 수록된 문항이 없습니다.<br/>다른 칩을 골라 보세요.</div>';
+      return;
+    }
+    const slice=list.slice(0,oShown);
+    const TY=ONAV.types||[];
+    box.innerHTML=slice.map((t,i)=>{
+      const ty=TY.filter(x=>x.id===t._t)[0];
+      return spItemMarkup(t,i,OPIC_CFG).replace('<div class="sp-toggle">',
+        (ty?'<span class="type-badge">'+ty.icon+' '+esc(ty.name.replace(/ —.*$/,""))+'</span>':'')+'<div class="sp-toggle">');
+    }).join('')+
+      (list.length>oShown?'<button class="more-btn" id="opic-more">더 보기 · '+(list.length-oShown)+'개 남음</button>':'');
+    spBind(box,slice,OPIC_CFG,"opic-more",()=>{ oShown+=OPIC_PAGE; renderOpic(false); });
+  }
+  $("opic-search").addEventListener("input",()=>renderOpic());
+
+  // ---- 2단 내비게이션 (시험 → 파트·유형) ----
+  // 1단은 "무슨 시험을 준비하는가", 2단은 "그 시험의 어느 파트·유형인가".
+  // 2단 항목은 대부분 기존 패널을 그대로 열되, 패널 안의 필터를 미리
+  // 눌러 둔다(pre). 예: TOEIC → 관심주제 는 실무형 필터가 켜진 채로 열린다.
+  function chipPre(boxId, sel){
+    const box=$(boxId); if(!box)return;
+    const b=box.querySelector(sel);
+    if(b && b.getAttribute("aria-pressed")!=="true") b.click();
+  }
+  const detTabs = qsa("[data-dm]",$("det-mode")).map(b=>({
+    id:"det-"+b.dataset.dm, label:b.innerHTML, panel:"det",
+    pre:()=>chipPre("det-mode",'[data-dm="'+b.dataset.dm+'"]')
+  }));
+  const opicTabs = (ONAV.groups||[]).map(g=>({
+    id:"opic-"+g.id, label:g.icon+" "+g.name+' <span class="tp-n">'+oAxisItems(g).length+'</span>',
+    panel:"opic", pre:()=>setOpicGroup(g.id)
+  }));
+
+  const NAV=[
+    {id:"common", icon:"📚", name:"공통",
+     note:"시험을 가리지 않고 쓰이는 어휘·구문. 어느 시험을 준비하든 여기가 기본기입니다.",
+     tabs:[
+       {id:"flash",  label:"🃏 카드",      panel:"flash"},
+       {id:"quiz",   label:"✍️ 퀴즈",      panel:"quiz"},
+       {id:"browse", label:"📚 단어장",    panel:"browse"},
+       {id:"struct", label:"🧩 구문",      panel:"struct"},
+       {id:"slang",  label:"🎬 장르·슬랭", panel:"slang"}
+     ]},
+    {id:"toefl", icon:"🎓", name:"TOEFL",
+     note:"학술 지문·통합형 과제. 리딩은 문제 유형과 글의 짜임을 따로 훈련하는 편이 빠릅니다.",
+     tabs:[
+       {id:"toefl-read",  label:"📖 리딩",         panel:"read"},
+       {id:"toefl-ptype", label:"📐 지문 유형",    panel:"ptype"},
+       {id:"toefl-topic", label:"⚽🎬 관심주제 지문", panel:"topic", pre:()=>chipPre("topic-exam",'[data-tex="TOEFL"]')},
+       {id:"toefl-speak", label:"🎤 스피킹",       panel:"speak", pre:()=>chipPre("speak-exam",'[data-exam="TOEFL"]')},
+       {id:"toefl-write", label:"✍️ 라이팅",       panel:"write"}
+     ]},
+    {id:"toeic", icon:"💼", name:"TOEIC",
+     note:"실무 영어. Part 5는 문법 단문, Part 7은 멀티지문 독해로 성격이 완전히 다릅니다.",
+     tabs:[
+       {id:"toeic-gram",  label:"📝 Part 5 문법",   panel:"gram"},
+       {id:"toeic-p7",    label:"🗂 Part 7 멀티지문", panel:"topic", pre:()=>chipPre("topic-exam",'[data-tex="P7"]')},
+       {id:"toeic-topic", label:"💻 관심주제 지문",  panel:"topic", pre:()=>chipPre("topic-exam",'[data-tex="TOEIC"]')},
+       {id:"toeic-speak", label:"🎤 토익스피킹",     panel:"speak", pre:()=>chipPre("speak-exam",'[data-exam="TOEIC"]')}
+     ]},
+    {id:"det", icon:"🦉", name:"듀오링고",
+     note:"2026 개편 기준 공식 13유형. 유형마다 제한 시간과 채점 기준이 다릅니다.",
+     tabs:detTabs},
+    {id:"opic", icon:"🗣", name:"OPIc",
+     note:"주제 63개(설문 25 · 돌발 20 · 롤플레이 6)와 질문 유형 12가지를 따로 훈련합니다.",
+     tabs:opicTabs},
+    {id:"info", icon:"ℹ️", name:"시험정보",
+     note:"주요 시험의 문항 수·시간·점수를 한 표에서 비교합니다.",
+     tabs:[{id:"info", label:"📊 시험 한눈에 비교", panel:"info"}]}
+  ];
+
+  const NAV_EXAM_KEY="eng-nav-exam", NAV_TAB_KEY="eng-nav-tab";
+  let navExam=NAV[0], navTab=NAV[0].tabs[0];
+
+  function navFind(exId,tabId){
+    const ex=NAV.filter(e=>e.id===exId)[0]||NAV[0];
+    const tab=ex.tabs.filter(t=>t.id===tabId)[0]||ex.tabs[0];
+    return {ex:ex, tab:tab};
+  }
+  function renderExamBar(){
+    $("exam-tabs").innerHTML=NAV.map(e=>
+      '<button role="tab" data-ex="'+e.id+'" aria-selected="'+(e.id===navExam.id)+'">'+
+        '<span class="ex-ic">'+e.icon+'</span>'+esc(e.name)+
+        '<span class="ex-n">'+e.tabs.length+'</span></button>').join('');
+    qsa("[data-ex]",$("exam-tabs")).forEach(b=>b.addEventListener("click",()=>goNav(b.dataset.ex,null)));
+  }
+  function renderSubBar(){
+    const one=navExam.tabs.length<2;
+    document.querySelector(".tab-wrap").style.display=one?"none":"";
+    $("sub-tabs").innerHTML=navExam.tabs.map(t=>
+      '<button role="tab" data-sub="'+t.id+'" aria-selected="'+(t.id===navTab.id)+'">'+t.label+'</button>').join('');
+    qsa("[data-sub]",$("sub-tabs")).forEach(b=>b.addEventListener("click",()=>goNav(navExam.id,b.dataset.sub)));
+    $("nav-note").textContent=navExam.note||"";
+  }
+  /** 시험/하위탭 이동. tabId 가 없으면 그 시험의 첫 탭을 연다. */
+  function goNav(exId,tabId){
+    const f=navFind(exId,tabId);
+    navExam=f.ex; navTab=f.tab;
+    ls.set(NAV_EXAM_KEY,navExam.id); ls.set(NAV_TAB_KEY,navTab.id);
+    renderExamBar(); renderSubBar();
+    if(navTab.pre) navTab.pre();
+    enterPanel(navTab.panel);
+    if(navTab.panel==="opic"){ buildOpicChips(); renderOpic(); }
+    revealSub();
+  }
+
+  // 모바일에서 탭이 넘칠 때: 고른 탭을 화면 안으로 끌어오고 양옆 페이드 표시
+  function markScroll(wrap,bar){
     if(!wrap||!bar)return;
-    function marks(){
-      const max=bar.scrollWidth-bar.clientWidth;
-      wrap.classList.toggle("more-l", bar.scrollLeft>4);
-      wrap.classList.toggle("more-r", bar.scrollLeft<max-4);
-    }
-    function reveal(btn){
-      if(!btn)return;
-      const b=btn.getBoundingClientRect(), r=bar.getBoundingClientRect();
-      if(b.left<r.left+8) bar.scrollLeft += b.left-r.left-16;
-      else if(b.right>r.right-8) bar.scrollLeft += b.right-r.right+16;
-    }
-    bar.addEventListener("scroll",marks,{passive:true});
-    window.addEventListener("resize",marks);
-    qsa(".tabs button",bar).forEach(b=>b.addEventListener("click",()=>setTimeout(()=>reveal(b),0)));
-    marks(); reveal(bar.querySelector('[aria-selected="true"]'));
+    const max=bar.scrollWidth-bar.clientWidth;
+    wrap.classList.toggle("more-l", bar.scrollLeft>4);
+    wrap.classList.toggle("more-r", bar.scrollLeft<max-4);
+  }
+  function revealIn(bar,btn){
+    if(!bar||!btn)return;
+    const b=btn.getBoundingClientRect(), r=bar.getBoundingClientRect();
+    if(b.left<r.left+8) bar.scrollLeft += b.left-r.left-16;
+    else if(b.right>r.right-8) bar.scrollLeft += b.right-r.right+16;
+  }
+  function revealSub(){
+    const w=document.querySelector(".tab-wrap"), b=$("sub-tabs");
+    const ew=document.querySelector(".exam-wrap"), eb=$("exam-tabs");
+    setTimeout(()=>{
+      markScroll(w,b); markScroll(ew,eb);
+      revealIn(b,b.querySelector('[aria-selected="true"]'));
+      revealIn(eb,eb.querySelector('[aria-selected="true"]'));
+    },0);
+  }
+  (function(){
+    const pairs=[[document.querySelector(".tab-wrap"),$("sub-tabs")],[document.querySelector(".exam-wrap"),$("exam-tabs")]];
+    pairs.forEach(pr=>{ if(pr[1]) pr[1].addEventListener("scroll",()=>markScroll(pr[0],pr[1]),{passive:true}); });
+    window.addEventListener("resize",()=>pairs.forEach(pr=>markScroll(pr[0],pr[1])));
   })();
+
+  // 듀오링고 유형 칩은 2단 탭으로 올라갔으니 패널 안에서는 감춘다
+  $("det-mode").hidden=true;
 
   // ---- 시작 ----
   if(!WORDS.length){ document.querySelector("main").innerHTML='<div class="empty" style="margin-top:40px">words.js 를 불러오지 못했습니다.</div>'; return; }
@@ -3173,4 +3367,5 @@
   updateProgress();
   rebuildOrder();
   renderCard();
+  goNav(ls.get(NAV_EXAM_KEY,"common"), ls.get(NAV_TAB_KEY,null));
 })();

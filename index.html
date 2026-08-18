@@ -41,21 +41,11 @@
     <div class="progress-bar"><i id="bar-fill"></i></div>
   </div>
 
-  <div class="tab-wrap"><div class="tabs" role="tablist">
-    <button role="tab" aria-selected="true" data-tab="flash">🃏 카드</button>
-    <button role="tab" aria-selected="false" data-tab="quiz">✍️ 퀴즈</button>
-    <button role="tab" aria-selected="false" data-tab="browse">📚 단어장</button>
-    <button role="tab" aria-selected="false" data-tab="gram">📝 문법</button>
-    <button role="tab" aria-selected="false" data-tab="struct">🧩 구문</button>
-    <button role="tab" aria-selected="false" data-tab="slang">🎬 장르·슬랭</button>
-    <button role="tab" aria-selected="false" data-tab="det">🦉 듀오링고</button>
-    <button role="tab" aria-selected="false" data-tab="topic">⚽🎬💻 관심주제</button>
-    <button role="tab" aria-selected="false" data-tab="speak">🎤 스피킹</button>
-    <button role="tab" aria-selected="false" data-tab="write">✍️ 라이팅</button>
-    <button role="tab" aria-selected="false" data-tab="read">📖 리딩</button>
-    <button role="tab" aria-selected="false" data-tab="ptype">📐 지문유형</button>
-    <button role="tab" aria-selected="false" data-tab="info">ℹ️ 시험정보</button>
-  </div></div>
+  <!-- 1단: 시험 -->
+  <div class="exam-wrap"><div class="exam-tabs" id="exam-tabs" role="tablist"></div></div>
+  <!-- 2단: 그 시험의 파트·유형 (1단 선택에 따라 JS가 다시 그린다) -->
+  <div class="tab-wrap"><div class="tabs" id="sub-tabs" role="tablist"></div></div>
+  <div class="nav-note" id="nav-note"></div>
 
   <!-- 플래시카드 -->
   <section class="panel active" id="panel-flash">
@@ -251,6 +241,20 @@
     <div class="count-line" id="topic-count"></div>
     <div id="topic-body"></div>
   </section>
+  <!-- OPIc (유형 12 · 설문 25 · 돌발 20 · 롤플레이 6 = 63) -->
+  <section class="panel" id="panel-opic">
+    <div class="det-intro" id="opic-intro"></div>
+    <div class="filter-title" id="opic-unit-title">분류</div>
+    <div class="tp-row" id="opic-units"></div>
+    <div id="opic-guide"></div>
+    <div class="search-box">
+      <span class="ic">🔎</span>
+      <input id="opic-search" type="search" placeholder="질문·답변 검색 (예: 카페, memorable, 분리수거)…" />
+    </div>
+    <div class="count-line" id="opic-count"></div>
+    <div id="opic-list"></div>
+  </section>
+
   <!-- 스피킹 -->
   <section class="panel" id="panel-speak">
     <div class="search-box">
@@ -358,6 +362,7 @@
 <script src="topics-tech.js"></script>
 <script src="part7.js"></script>
 <script src="passages.js"></script>
+<script src="opic.js"></script>
 <script src="app.js"></script>
 
 </body>
